@@ -126,7 +126,7 @@ const companiesData = [
   }
   ,{
     id: 182, company: 'Aevis', role: 'Spring Boot Developer Intern',
-    hiringLink: 'https://wellfound.com/jobs?job_listing_slug=3930376-spring-boot-developer-intern'
+    hiringLink: 'https://wellfound.com/l/2C5BcA'
   }
   ,{
     id: 183, company: 'GE Vernove', role: 'Software Engineering Specialist',

@@ -124,6 +124,18 @@ const companiesData = [
     id: 181, company: 'RxGPT', role: 'Frontend Intern',
     hiringLink: 'https://wellfound.com/jobs/3543681-front-end-intern'
   }
+  ,{
+    id: 182, company: 'Aevis', role: 'Spring Boot Developer Intern',
+    hiringLink: 'https://wellfound.com/jobs?job_listing_slug=3930376-spring-boot-developer-intern'
+  }
+  ,{
+    id: 183, company: 'GE Vernove', role: 'Software Engineering Specialist',
+    hiringLink: 'https://www.naukri.com/job-listings-software-engineering-specialist-ge-renewable-energy-technologies-private-limited-hyderabad-0-to-2-years-260226915915'
+  }
+  ,{
+    id: 184, company: 'QCS Ds Labs', role: 'Backend Engineer',
+    hiringLink: 'https://www.naukri.com/job-listings-back-end-developer-qcs-dc-labs-bengaluru-0-to-5-years-250226907416'
+  }
 ]
 
 export default companiesData

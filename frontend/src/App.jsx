@@ -22,7 +22,7 @@ import Resources from './pages/Resources'
 import Contact_us from './pages/Legal_Pages/Contact_us'
 import Disclaimer from './pages/Legal_Pages/Disclaimer'
 import PurchaseQueryPage from './pages/Legal_Pages/Purchase_query'
-import About_us from './pages/Legal_Pages/About_Us'
+import About_us from './pages/Legal_Pages/About_us'
 import Privacy_policy from './pages/Legal_Pages/Privacy_policy'
 import Terms_and_conditions from './pages/Legal_Pages/Terms_and_conditions'
 

@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { href: '/company-details', label: 'Job Posting' },
   { href: '/resources', label: 'Resources' },
   { href: '/subscribe-us', label: 'Subscribe' },
-  {href: '/about-us', label:'About Us'},
+  { href: '/about-us', label: 'About Us' },
   { href: '/contact-us', label: 'Contact Us' },
 ]
 
@@ -23,9 +23,8 @@ const Header = () => {
   const barColor = scrolled ? 'bg-gray-900' : 'bg-gray-700'
 
   return (
-    <div className={`sticky top-0 z-50 transition-all duration-500 ${
-      scrolled ? 'bg-white/30 backdrop-blur-2xl shadow-2xl border-b border-white/30' : 'bg-white shadow-lg'
-    }`}>
+    <div className={`sticky top-0 z-50 transition-all duration-500 ${scrolled ? 'bg-white/30 backdrop-blur-2xl shadow-2xl border-b border-white/30' : 'bg-white shadow-lg'
+      }`}>
       <div className="py-5 px-8 sm:px-8 flex justify-between items-center">
         <h2 className="md:ml-5 sm:ml-1 text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
           Dev Careers
@@ -69,9 +68,8 @@ const Header = () => {
         </div>
       </nav>
 
-      <div className={`h-1 transition-all duration-500 ${
-        scrolled ? 'bg-gradient-to-t from-orange-500/40 to-transparent' : 'bg-gradient-to-t from-orange-500 to-transparent'
-      }`} />
+      <div className={`h-1 transition-all duration-500 ${scrolled ? 'bg-gradient-to-t from-orange-500/40 to-transparent' : 'bg-gradient-to-t from-orange-500 to-transparent'
+        }`} />
     </div>
   )
 }

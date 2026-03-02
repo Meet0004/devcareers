@@ -688,7 +688,7 @@ const About_us = () => {
 
           <div className="mt-8 text-center bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 rounded-xl p-6">
             <p className="text-gray-700 font-medium text-lg">
-              🏆 <strong>Top 0.1%</strong> Creator on Topmate • <strong>399 Bookings</strong> • <strong>4.3/5 Rating</strong> from 11 Reviews
+              🏆 <strong>Top 0.1%</strong> Creator on Topmate • <strong> {import.meta.env.VITE_TOTAL_SALES} Bookings</strong> • <strong>4.3/5 Rating</strong> from all Reviews
             </p>
             <p className="text-sm text-gray-600 mt-2">
               Badges: Community Care • Curator • People's Choice • Top 1%

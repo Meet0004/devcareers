@@ -136,6 +136,18 @@ const companiesData = [
     id: 184, company: 'QCS Ds Labs', role: 'Backend Engineer',
     hiringLink: 'https://www.naukri.com/job-listings-back-end-developer-qcs-dc-labs-bengaluru-0-to-5-years-250226907416'
   }
+  ,{
+    id: 185, company: 'Tesla', role: 'Frontend Software Engineer',
+    hiringLink: 'https://unstop.com/o/bPMX3rJ?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554'
+  }
+  ,{
+    id: 186, company: 'S&P Global Market Intelligence', role:'Apprentice Softare Developmet Engineering',
+    hiringLink: 'https://www.naukri.com/job-listings-apprentice-software-development-engineering-sp-capital-iq-india-pvt-ltd-gurugram-0-to-1-years-270226917427'
+  }
+  ,{
+    id: 187, company: 'Slash labs', role: 'Junior Developer',
+    hiringLink: 'https://www.naukri.com/job-listings-junior-developer-slash-labs-sivakasi-0-to-1-years-260226918493'
+  }
 ]
 
 export default companiesData

@@ -379,7 +379,7 @@ function Disclaimer () {
               These terms shall be governed by and construed in accordance with the laws of
               India, without regard to its conflict of law provisions. Any disputes
               arising from these terms or use of the platform shall be subject to the exclusive
-              jurisdiction of the courts located in Hubballi, Karnataka, India.
+              jurisdiction of the courts located in Shimoga, Karnataka, India.
             </p>
           </section>
 

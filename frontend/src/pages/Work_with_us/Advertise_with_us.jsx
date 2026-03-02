@@ -384,7 +384,7 @@ const Advertise_with_us = () => {
                 <p className="text-white/70 text-xs">We respond within 6–48 hours</p>
               </div>
               <div className="bg-white/15 rounded-xl px-5 py-4 w-full max-w-xs text-sm space-y-1">
-                <p><strong>📧</strong> info.techjobalert@gmail.com</p>
+                <p><strong>📧</strong> {import.meta.env.VITE_RECIPIENT_EMAIL}</p>
                 <p><strong>📍</strong> Shimoga, Karnataka, India</p>
               </div>
             </div>
@@ -393,15 +393,6 @@ const Advertise_with_us = () => {
         </section>
 
       </div>
-
-      {/* Footer */}
-      <div className="bg-gray-900 text-white py-8 px-4 mt-4">
-        <div className="max-w-6xl mx-auto text-center space-y-2">
-          <p className="text-gray-400 text-sm">© 2026 DevCareers. All rights reserved.</p>
-          <p className="text-gray-300 font-medium">Built with ❤️ by Meet Soni for students everywhere</p>
-        </div>
-      </div>
-
     </div>
   )
 }

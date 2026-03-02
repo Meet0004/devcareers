@@ -87,7 +87,7 @@ const PurchaseQueryPage = () => {
       setSubmitted(true);
     } catch (err) {
       console.error('Submit failed:', err);
-      alert('Something went wrong. Please email us directly at info.techjobalert@gmail.com');
+      alert(`Something went wrong. Please email us directly at ${import.meta.env.VITE_RECIPIENT_EMAIL}`);
     } finally {
       setLoading(false);
     }
@@ -299,7 +299,7 @@ const PurchaseQueryPage = () => {
           <div className="px-8 pb-6">
             <p className="text-xs text-gray-400 text-center">
               Need immediate help? Email us at{' '}
-              <a href="mailto:info.techjobalert@gmail.com" className="text-amber-500 font-medium hover:underline">
+              <a href="mailto:meethcodes@gmail.com" className="text-amber-500 font-medium hover:underline">
                 {email}
               </a>
             </p>

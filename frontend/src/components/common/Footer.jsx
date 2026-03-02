@@ -74,7 +74,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="pt-4 border-t border-white/30 text-sm">
+        <div className="pt-4 border-t border-white/50 text-sm">
           <h3 className="font-bold text-white text-base mb-2 uppercase tracking-wide">Work With Us</h3>
           <ul className="space-y-2">
             {BUSINESS_LINKS.map(({ href, label }) => (
@@ -88,8 +88,10 @@ const Footer = () => (
 
     </div>
 
-    <p className="text-center mt-8 text-white/70 text-xs">
-      © 2025 Job Portal. All rights reserved.
+    <p className="text-center mt-8 text-whitetext-xs border-t border-white/60 pt-4">
+      <p className="text-white text-sm">Last updated: March 2026</p>
+      <p className="text-white text-sm">© 2026 DevCareers. All rights reserved.</p>
+      <p className="text-white font-medium">Built with ❤️ by Meet Soni for students everywhere</p>
     </p>
   </footer>
 )

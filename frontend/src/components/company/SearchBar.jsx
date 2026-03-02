@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Search } from 'lucide-react'
+import { Search, X } from 'lucide-react'
 import { placeholderWords } from '../../data/jobData/searchBarData'
 
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
@@ -8,6 +8,8 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
   const [isDeleting, setIsDeleting] = useState(false)
 
   useEffect(() => {
+    if (searchTerm) return
+
     const currentWord = placeholderWords[wordIndex]
     const typingSpeed = isDeleting ? 10 : 100
     const pauseTime = 300
@@ -30,7 +32,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
     }, typingSpeed)
 
     return () => clearTimeout(timer)
-  }, [placeholder, isDeleting, wordIndex])
+  }, [placeholder, isDeleting, wordIndex, searchTerm])
 
   return (
     <div className="mb-8">
@@ -39,13 +41,22 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
 
         <input
           type="text"
-          placeholder={`Seach for ${placeholder}`}
+          placeholder={`Search for ${placeholder}`}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full px-4 py-3 pl-11 border border-amber-300 rounded-lg
+          className="w-full px-4 py-3 pl-11 pr-10 border border-amber-300 rounded-lg
                      focus:outline-none focus:ring-2 focus:ring-amber-500
                      focus:border-transparent text-black"
         />
+
+        {searchTerm && (
+          <button
+            onClick={() => setSearchTerm('')}
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-black/40 hover:text-black/70 transition-colors"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        )}
       </div>
     </div>
   )

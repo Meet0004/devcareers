@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Legal_info () {
+function Disclaimer () {
   return (
-    <div className="min-h-screen bg-[#FFFDFB] px-4 py-12">
+    <div className="min-h-screen  bg-gradient-to-b from-white to-orange-50  px-4 py-12">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-black/10 shadow-sm p-6 md:p-10">
         <h2 className="text-2xl font-bold text-black mb-6 border-b border-black/10 pb-3">
           Legal Disclaimer
@@ -291,4 +291,4 @@ function Legal_info () {
   )
 }
 
-export default Legal_info
+export default Disclaimer

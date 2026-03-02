@@ -1,25 +1,97 @@
 import React from 'react'
+import { Youtube, MessageCircle, Linkedin } from 'lucide-react'
 
-const NAV_LINKS = [
+const youtube_link = import.meta.env.VITE_YOUTUBE_LINK
+const whatsapp_link = import.meta.env.VITE_WHATSAPP_LINK
+const QUICK_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/company-details', label: 'Job Posting' },
   { href: '/resources', label: 'Resources' },
+  { href: '/subscribe-us', label: 'Subscribe Us' },
+]
+
+const LEGAL_LINKS = [
   { href: '/contact-us', label: 'Contact Us' },
-  { href: '/legal-info', label: 'Legal' },
+  { href: '/about-us', label: 'About Us' },
+  { href: '/purchase-query', label: 'Purchase Query' },
+  { href: '/privacy-policy', label: 'Privacy Policy' },
+  { href: '/terms-and-conditions', label: 'Terms and Conditions' },
+  { href: '/disclaimer', label: 'Disclaimer' },
+]
+
+const SOCIAL_LINKS = [
+  { href: youtube_link, label: 'YouTube Channel', icon: <Youtube className="w-4 h-4" /> },
+  { href: whatsapp_link, label: 'WhatsApp Channel', icon: <MessageCircle className="w-4 h-4" /> },
+  { href: 'https://linkedin.com', label: 'LinkedIn Channel', icon: <Linkedin className="w-4 h-4" /> },
+]
+
+const BUSINESS_LINKS = [
+  { href: '/advertise-with-us', label: 'Advertise with Us' },
+  { href: '/partnership', label: 'Partnership' },
 ]
 
 const Footer = () => (
-  <div className="bg-white border-t-2 border-orange-500 py-6">
-    <div className="max-w-7xl mx-auto px-8 flex flex-wrap justify-center items-center gap-6 text-sm">
-      {NAV_LINKS.map(({ href, label }, i) => (
-        <React.Fragment key={href}>
-          <a href={href} className="text-gray-600 hover:text-orange-500 transition-colors">{label}</a>
-          {i < NAV_LINKS.length - 1 && <span className="text-gray-300">|</span>}
-        </React.Fragment>
-      ))}
+  <footer className="bg-[#ff802c] pt-10 pb-6">
+    <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-10 text-white">
+
+      {/* Column 1 */}
+      <div>
+        <h3 className="font-bold text-white text-base mb-4 uppercase tracking-wide">Quick Links</h3>
+        <ul className="space-y-2 text-sm">
+          {QUICK_LINKS.map(({ href, label }) => (
+            <li key={href}>
+              <a href={href} className="hover:underline hover:text-white/80 transition-colors">{label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Column 2 */}
+      <div>
+        <h3 className="font-bold text-white text-base mb-4 uppercase tracking-wide">Legal Links</h3>
+        <ul className="space-y-2 text-sm">
+          {LEGAL_LINKS.map(({ href, label }) => (
+            <li key={href}>
+              <a href={href} className="hover:underline hover:text-white/80 transition-colors">{label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Column 3 */}
+      <div className="flex flex-col gap-8">
+        <div>
+          <h3 className="font-bold text-white text-base mb-4 uppercase tracking-wide">Social Links</h3>
+          <ul className="space-y-2 text-sm">
+            {SOCIAL_LINKS.map(({ href, label, icon }) => (
+              <li key={href}>
+                <a href={href} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:underline hover:text-white/80 transition-colors">
+                  {icon} {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="pt-4 border-t border-white/30 text-sm">
+          <h3 className="font-bold text-white text-base mb-2 uppercase tracking-wide">Work With Us</h3>
+          <ul className="space-y-2">
+            {BUSINESS_LINKS.map(({ href, label }) => (
+              <li key={href}>
+                <a href={href} className="hover:underline hover:text-white/80 transition-colors">{label}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
     </div>
-    <p className="text-center mt-4 text-gray-600 text-xs">© 2025 Job Portal. All rights reserved.</p>
-  </div>
+
+    <p className="text-center mt-8 text-white/70 text-xs">
+      © 2025 Job Portal. All rights reserved.
+    </p>
+  </footer>
 )
 
 export default Footer

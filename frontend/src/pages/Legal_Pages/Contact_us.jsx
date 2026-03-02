@@ -46,7 +46,7 @@ const Contact_Us = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 px-4 py-12">
+    <div className="min-h-screen  bg-gradient-to-b from-white to-orange-50 px-4 py-12">
       <div className="max-w-4xl mx-auto">
 
         <div className="text-center mb-10">
@@ -54,7 +54,7 @@ const Contact_Us = () => {
           <p className="text-black/60 text-sm md:text-base">Have questions or need support? We're here to help.</p>
         </div>
 
-        <div className="bg-white rounded-2xl border border-orange-200 shadow-lg p-6 md:p-10 mb-6">
+        <div className=" bg-gradient-to-b from-white to-orange-50 rounded-2xl border border-orange-200 shadow-lg p-6 md:p-10 mb-6">
 
           {/* Email Section */}
           <div className="text-center mb-8 p-6 bg-gradient-to-r from-orange-50 to-orange-100 rounded-xl border border-orange-200">

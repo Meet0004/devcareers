@@ -86,7 +86,7 @@ const StatsCounter = () => {
   }, [isVisible])
 
   return (
-    <div ref={sectionRef} className="py-16 mb-5">
+    <div ref={sectionRef} className="py-16">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-3">Trusted by Professionals Worldwide</h2>

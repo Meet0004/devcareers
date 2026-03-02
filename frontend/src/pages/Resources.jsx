@@ -118,7 +118,7 @@ const organizedResources = useMemo(() => {
   });
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 text-center">
+    <div className=" bg-gradient-to-b from-white to-orange-50 rounded-lg shadow-md p-6 text-center">
       <ResourcesHeader />
 
       <TabSwitcher activeTab={activeTab} onTabChange={handleTabChange} />

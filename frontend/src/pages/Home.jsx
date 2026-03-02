@@ -6,7 +6,7 @@ import NaukriCareerVerseBanner from '../components/common/NaukriCareerVerseBanne
 const Home = () => {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-b from-white to-orange-50">
+      <div className="min-h-screen  bg-gradient-to-b from-white to-orange-50">
         <Hero />
 
         <div className="sm:px-10 md:px-100 px-10">
@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         
         <StatsCounter />
-        <Footer />
+        
       </div>
     </>
   )

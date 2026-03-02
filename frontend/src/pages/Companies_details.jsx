@@ -12,12 +12,11 @@ const Companies_details = () => {
     ? companiesData.find(c => c.company === companyName && c.role === role)
     : null
 
-  const filteredCompanies = companiesData.filter(item =>
-    item.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.role.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.location.toLowerCase().includes(searchTerm.toLowerCase())
-  )
-
+const filteredCompanies = companiesData.filter(item =>
+  item.company?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  item.role?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  item.location?.toLowerCase().includes(searchTerm.toLowerCase())
+)
   // Detail page
   if (companyName && role) {
     if (!selectedCompany) {

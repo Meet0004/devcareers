@@ -1036,6 +1036,108 @@ Education
 UG: Any Graduate
     `
   }
+  ,{
+    id:188, company:'ebay', role: 'Full stack Platform Engineer',
+    hiringLink:'https://unstop.com/o/Tg2I041?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+We are seeking a Platform Engineer who is passionate about shaping the future of developer productivity and continuous delivery at scale. In this role, you will design and develop technically challenging full-stack solutions (front-end and back-end) to power eBay’s next-generation developer platform. You will build scalable, reliable, and efficient platform capabilities that enable product teams to develop, test, and release software with high velocity.
+Your work will directly contribute to a company-wide initiative: Engineering Velocity, and you will collaborate across teams to solve complex engineering challenges and deliver impactful solutions that transform how eBay engineers work every day. Along the way, you’ll be part of a team that values innovation and collaboration—making the journey as rewarding as the results.
+What You’ll Do
+Partner with colleagues and customers across functions and geographies.
+Identify friction points in developer experience/productivity and design platform-level solutions.
+Design and develop technically challenging solutions across both front-end and back-end systems.
+Align stakeholders, propose improvements, and deliver solutions end-to-end.
+Assess risks, analyze trade-offs, and define mitigation strategies.
+Contribute to a culture of collaboration, innovation, and technical excellence.
+Communicate effectively within and across teams to drive alignment and execution.
+What You’ll Bring
+Education: BS/MS in Computer Science or equivalent experience.
+Technical Depth: Strong understanding of design patterns, layered architectures, core CS fundamentals (data structures, algorithms).
+Languages & Frameworks: Strong experience with JVM languages (Java, Kotlin); Spring Boot for REST APIs; scripting language proficiency (Python, Shell); frontend experience with React (or Angular) is a plus.
+Systems Design: Proven experience architecting backend systems; designing and operating large-scale, reliable, distributed systems; building event-driven, high-performance applications.
+DevOps & Platform: Knowledge of modern DevOps principles and continuous delivery practices; experience with Kubernetes and Tekton is a plus.
+AI/ML Exposure: Experience with MCP servers, AI agents, LLMs, and ML models is a plus.
+Productivity & Metrics: Familiarity with DORA metrics, Flow Framework, or developer productivity platform initiatives is a plus.
+Soft Skills: Excellent written and verbal communication, strong collaboration skills, and a positive, growth-oriented mindset.    `
+  }
+  ,{
+    id: 189, company:'Sakon', role:'Associate Engineer',
+    hiringLink:'https://www.naukri.com/job-listings-associate-engineer-product-engineering-sakon-pune-0-to-1-years-270226038118',
+    fullDescription:`
+    As a member of this team, you will play a crucial role in the creating our NextGen SaaS products using software engineering best practices.
+
+
+Responsibilities:
+
+
+Assist in development and maintenance of software modules, APIs, and scripts.
+Support senior engineers in writing, debugging, and testing code.
+Learn and follow coding, documentation, and deployment standards.
+Participate in daily stand-ups, sprint reviews, and team meetings.
+Perform basic database queries and updates under supervision.
+Work on assigned tasks as part of larger product features or enhancements.
+Document learnings, code snippets, and process flows
+Stay informed about industry best practices and emerging technologies in data management.
+
+Qualifications:
+
+
+Bachelor's degree in computer science, Information Technology, or a related field.
+Strong analytical and problem-solving skills.
+Familiarity with data formats and structures (CSV, JSON, XML, etc.).
+Basic understanding of at least one programming language .Net, Python, JavaScript/TypeScript
+Excellent communication and teamwork skills.
+Eagerness to learn and adapt in a fast-paced environment.
+
+Preferred Skills:
+
+
+Knowledge of data integration tools, DevOps
+Exposure to cloud platforms (Azure, AWS).
+Understanding of data warehousing & ReST concepts.
+
+Consent: We will be using your resume for job applications open with us for a full-time appointment and will save them for future reference.
+
+Role: Software Development - Other
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization
+PG: MCA in Any Specialization
+    `
+  }
+  ,{
+    id: 190, company:'Greenman Investments', role:'Junior Developer',
+    hiringLink:'https://www.naukri.com/job-listings-junior-developer-greenman-hyderabad-0-to-1-years-240226931949',
+    fullDescription:`
+    Job highlights
+Strong understanding of JavaScript and ES6+, basic knowledge of MERN stack
+Develop and maintain web applications, collaborate with teams, write clean code, troubleshoot issues
+    Key Responsibilities:
+Develop and maintain web applications using the MERN stack (MongoDB, Express.js, React, Node.js).
+Collaborate with cross-functional teams to define, design, and ship new features.
+Write clean, scalable, and efficient code.
+Troubleshoot and debug application issues.
+Continuously learn and apply new technologies to improve development practices.
+Skills & Qualifications:
+Strong understanding of JavaScript and ES6+.
+Basic knowledge of MongoDB, Express.js, React, and Node.js.
+Familiarity with RESTful APIs and version control (Git).
+Good problem-solving skills and attention to detail.
+Excellent communication skills and a passion for learning.
+Role: Back End Developer
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: Any Graduate
+PG: Any Postgraduate
+Doctorate: Doctorate Not Required
+    `
+  }
 ]
 
 export default companiesData

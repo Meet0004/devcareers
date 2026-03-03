@@ -9,7 +9,7 @@ const partnerTypes = [
   {
     icon: '🎬',
     title: 'Fellow Creators & YouTubers',
-    desc: 'Into career content, tech, or student life? Let\' collaborate on videos, posts, or resource bundles.',
+    desc: "Into career content, tech, or student life? Let's collaborate on videos, posts, or resource bundles.",
   },
   {
     icon: '📖',
@@ -38,12 +38,12 @@ const Partnership = () => {
       <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            🤝 Let\' Build Together
+            🤝 Let's Build Together
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Partner with DevCareers</h1>
           <p className="text-lg font-light max-w-xl mx-auto">
             We're open to meaningful collaborations that genuinely help students. If that sounds like you —
-            let\' talk.
+            Let's talk.
           </p>
         </div>
       </div>

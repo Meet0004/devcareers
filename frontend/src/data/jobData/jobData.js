@@ -5,7 +5,7 @@ const companiesData = [
     role: "Front-End Developer",
     hiringLink: "https://www.naukri.com/job-listings-front-end-developer-meesho-bengaluru-0-to-2-years-271125013614",
     fullDescription: `
-    
+    This job posting is no longer available to apply. Explore other job openings on our Job Portal.
     `
   }, {
     id: 120,
@@ -13,7 +13,29 @@ const companiesData = [
     role: "2026 Campus Hire Engineer SW",
     hiringLink: "https://careers.qualcomm.com/careers/job/446706882270",
     fullDescription: `
-    
+    Engineering Group, Engineering Group > Software Engineering
+General Summary:
+
+Job Area : Engineering - Software
+
+Job Location : Hyderabad / Bangalore / Chennai / Noida
+
+We know our employees’ ideas change the world. For more than three decades, we’ve been a global leader in mobile technology, continually pushing the boundaries of what’s possible. Working with customers across industries — from automotive to health care, from smart cities to robotics— we continue to accelerate innovation and unlock new possibilities in a time where everything is connected. By joining the Qualcomm family, you too can bring the future forward faster.
+
+As a software engineer, you will design, develop Software for Qualcomm’s mobile chipsets which are based on cutting edge technology.
+
+Qualcomm is looking for energetic, creative and self-driven engineer to work in ➢ Multimedia Technologies such as Audio and Video codecs, Image Processing, ➢ Wireless Modem Technologies, such as 4G, WiFi, Bluetooth, Self-Organizing Networks. ➢ Platform Level SW, such as, Linux, Android, Windows, Board Support Packages. ➢ IOT Technologies, for Connected Cameras, Smart Assistants, Drones, Virtual Reality, Augmented Reality.
+
+Campus Grads will be working on following areas: • Development of real-time embedded software and device drivers • Mobile SW development for Windows Mobile, Android or Linux • Good understanding of OS concepts, Data structures, etc • C/C++ and object oriented design • Wireless network standards such as CDMA/GSM/UMTS/LTE • Linux/UNIX, Linux Drivers, Linux Kernel Development • Protocols such TCP/UDP/IP/SIP/RTP etc • Multimedia technologies including Audio, Video, Imaging • Excellent analytical and problem solving skills • Ability to collaborate and work in teams. • Good verbal and written communication skill Opportunities include: • SW development for Android, Window Mobile based Embedded Platforms • Multimedia software stack, firmware and driver Development • Wireless Modem and connectivity Software and Firmware Development • Communication protocol stack Software Development • Kernel, BSP and Device Driver Development • Application SW and UI development. • SW Architecture for embedded devices based on Android, Windows. • Design and development based on Object oriented programming.
+
+Minimum Qualifications:
+
+• Bachelor's degree in Engineering, Information Systems, Computer Science, or related field.
+Education: Masters, Bachelors: Computer Science Engineering, Communication Engineering, ECE,
+
+Applicants: Qualcomm is an equal opportunity employer. If you are an individual with a disability and need an accommodation during the application/hiring process, rest assured that Qualcomm is committed to providing an accessible process. You may e-mail disability-accomodations@qualcomm.com or call Qualcomm's toll-free number found here. Upon request, Qualcomm will provide reasonable accommodations to support individuals with disabilities to be able participate in the hiring process. Qualcomm is also committed to making our workplace accessible for individuals with disabilities. (Keep in mind that this email address is used to provide reasonable accommodations for individuals with disabilities. We will not respond here to requests for updates on applications or resume inquiries).
+
+Qualcomm expects its employees to abide by all applicable policies and procedures, including but not limited to security and other requirements regarding protection of Company confidential information and other confidential and/or proprietary information, to the extent those requirements are permissible under applicable law.
     `
   }
   ,{
@@ -22,7 +44,51 @@ const companiesData = [
     role: 'Node js Developer',
     hiringLink: 'https://www.naukri.com/job-listings-node-js-developer-recipto-hyderabad-0-to-3-years-180226006251',
     fullDescription: `
-    
+    Who Should Apply?
+
+
+Must have built at least 1 complete backend project end-to-end
+Must have deployed a backend project before
+Comfortable working with GraphQL + REST, Authentication, and Payment integrations
+Responsibilities
+
+Build and maintain backend services using Node.js
+Design and maintain GraphQL and REST APIs
+Implement authentication & authorization (JWT / role-based access)
+Integrate payment gateways (Razorpay / Stripe / etc.) including webhook handling
+Work with databases (MongoDB / PostgreSQL / MySQL)
+Deploy backend applications to cloud/VPS environments
+Ensure API security, performance, and scalability
+Collaborate with mobile/frontend teams
+Must Have (Mandatory)
+
+
+Strong Node.js fundamentals
+Experience with GraphQL and REST
+Authentication implementation experience
+Payment gateway integration experience
+Experience with at least one database
+Must have deployed a backend project (AWS / GCP / DigitalOcean / VPS / Render / Railway / etc.)
+Understanding of environment variables, production configs, and basic server setup
+Git knowledge
+At least 1 complete end-to-end project
+Good to Have
+
+
+Apollo Server
+Docker basics
+Nginx / PM2 knowledge
+Basic DevOps understanding
+CI/CD basics
+Role: Back End Developer
+Industry Type: Software Product
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: Any Graduate
+PG: Any Postgraduate
+Doctorate: Any Doctorate
     `
   },{
     id: 160,
@@ -30,7 +96,27 @@ const companiesData = [
     role: 'Python Developer Internship',
     hiringLink: 'https://unstop.com/o/91hUDoS?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
     fullDescription: `
-    
+    Eligibility
+Undergraduate
+Postgraduate
+Engineering Students
+Management
+Arts, Commerce, Sciences & Others
+Details
+Responsibilities of the Intern:
+
+Contribute to the phase of the development lifecycle
+Provide well-designed and efficient code
+Design a high-volume, low-latency application
+Work on front-end using languages such as JavaScript, HTML, and CSS
+Work on frameworks/libraries such as Angular, React, jQuery
+Work on backend such as PHP, Node.js, Python, etc.
+Requirements:
+
+HTML, CSS, Python, Django
+College-pursuing students can apply
+Letter of recommendation
+Flexible work hours
     `
   },{
     id: 161,
@@ -38,7 +124,7 @@ const companiesData = [
     role: 'Full Stack Developer Internship',
     hiringLink: 'https://unstop.com/o/x7Xifbn?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
     fullDescription: `
-    
+    This job posting is no longer available to apply. Explore other job openings on our Job Portal.
     `
   }
   ,{
@@ -47,7 +133,7 @@ const companiesData = [
     role: 'Technical Consultant',
     hiringLink: 'https://careers.adobe.com/us/en/job/ADOBUSR158976EXTERNALENUS/Associate-Technical-Consultant',
     fullDescription: `
-    
+    This job posting is no longer available to apply. Explore other job openings on our Job Portal.
     `
   }
   ,{
@@ -56,7 +142,7 @@ const companiesData = [
     role: 'Graduate Apprentice Trainee',
     hiringLink: 'https://jobs.volvogroup.com/job/Bangalore-Graduate-Apprentice-Trainee-560058/1342119555',
     fullDescription: `
-    
+    This job posting is no longer available to apply. Explore other job openings on our Job Portal.
     `
   }
   ,{
@@ -65,7 +151,110 @@ const companiesData = [
     role: 'Analyst Trainee GenC Hiring',
     hiringLink: 'https://app.joinsuperset.com/join/#/signup/student/jobprofiles/65ac431a-2d60-417a-b1f6-6b0f455a1d33',
     fullDescription: `
-    
+    You will be responsible for performing database queries, CRUD operations, and writing stored procedures. You will prepare and execute tests, analyze and resolve service tickets, and demonstrate proficiency in IT Service Management and Data Analytics tools, with a strong drive for innovation.
+
+Describe relationships between tables and write queries to retrieve data from database.
+Perform CRUD operations and write stored procedures for a given Low-Level Design.
+Prepare test cases / scripts / data and execute manual / automated tests.
+Analyze root cause and fix service tickets as per standard operating procedures.
+Demonstrate proficiency in tools related to IT Service Management and Data Analytics.
+Possess a strong drive to innovate & experiment in projects.
+Skills required
+
+Good time management skills
+Good written & verbal communication skills
+Teamwork & collaboration
+Problem solving skills
+Strong analytical skills
+Critical thinking
+Eligibility criteria:
+
+Candidates from 2024 or 2025 graduated batch of 3-year UG degree in BCA, BSc - Computer Science, Information Technology (allied streams), Mathematics, Physics, Chemistry, Statistics & Electronics with minimum 60% in academics. (rounding off 59.9% is not allowed).
+Candidates should possess consistent academic record with minimum 60% in X, XII, Diploma, UG (rounding off 59.9% is not allowed).
+At the time of joining, all recruits need to have a minimum 60% aggregate in the 3-year UG degree with no arrears.
+Appropriate CGPA to % conversion to be considered as per university norms.
+Flexibility to work from any Cognizant office location in a given shift timing and any technology is mandatory.
+Open to Indian nationals / OCIs who are currently residing in India.
+ 
+
+JOB DESCRIPTION FOR ANALYST TRAINEE ALIGNED TO MULTICLOUD: 
+
+Job description:
+
+You will maintain and administer computing environments, monitor production servers, and handle incident management. Additionally, you will provide support for Windows, Network, Database, Storage, Messaging, Collaboration, and Cloud environments. 
+
+Key responsibilities:
+
+Perform activities based on defined guidelines in SOPs/Runbooks with an understanding of business impact. 
+Adhere to customer security and compliance requirements. 
+Follow customer communication etiquettes. 
+Ensure stated productivity requirements for the engagement. 
+Contribute to continuous service improvement plans (CSI). 
+Participate proactively in knowledge-sharing sessions. 
+Act as a buddy for new hires. 
+Adhere to organizational policies and processes (including Cognizant’s security policies, LP, timelines, etc.). 
+Role expectations:
+
+Associate should be client-focused and able to work with users from different communities and cultures across the globe. 
+Associate should be willing to work in a 24/7 environment and be open to relocating to any part of India based on project requirements. 
+Support available from Cognizant (post joining as Full Time Employee):
+
+Night shift allowance will be paid by the project. 
+Cabs will be provided for pick-up and drop-off, ensuring safety and comfort. 
+Timely rewards and recognition will be given to top performers. 
+Eligibility Criteria:
+
+Candidates from 2024 or 2025 batch of any 3-year UG degree (For e.g. BCA, BSc, BA, BBA, BCom, Bvoc, BMS, etc) with minimum 50% in academics. (rounding off 49.9% is not allowed).
+Candidates with standing arrears are NOT eligible. 
+Flexibility to work from any Cognizant office location in a given shift timing and any technology is mandatory. 
+Open to Indian nationals / OCIs who are currently residing in India. 
+JOB DESCRIPTION FOR ANALYST TRAINEE ALIGNED TO DIGITAL WORKPLACE SERVICES: 
+
+ Job description:
+
+You will be responsible for providing technical support to our clients, including troubleshooting and resolving IT issues and ensuring the smooth functioning of their computer systems and IT services. 
+
+Key responsibilities:
+
+Provide first-line technical support and assistance to end-users, addressing their IT-related issues and inquiries. Log and track all support tickets, ensuring accurate documentation and timely resolution of problems. 
+Troubleshoot hardware and software problems, performing diagnosis and resolving technical issues to minimize downtime. Collaborate with other IT teams to escalate complex issues and ensure prompt resolution. Maintain knowledge base articles and documentation to enhance self-service options and facilitate efficient problem-solving. 
+Role expectations:
+
+Associate should be client focused and able to work with users from different communities and cultures across the globe. 
+Ability to have flawless communication (verbal and written) with our clients and possess sound technical knowledge. 
+Work in shifts and work from office. 
+Support available from Cognizant (post joining as Full Time Employee):
+
+Night shift allowance will be paid by the project. 
+Cognizant provide cabs for pick-up and drop, ensuring safety and comfort. 
+Timely rewards and recognition for top performers. 
+Eligibility Criteria:
+
+Candidates from 2024 or 2025 batch of any 3-year UG degree (For e.g. BCA, BSc, BA, BBA, BCom, Bvoc, BMS, etc) with minimum 50% in academics. (rounding off 49.9% is not allowed).
+Students withstanding arrears are NOT eligible. 
+Flexibility to work from any Cognizant office location in a given shift timing and any technology is mandatory. 
+Open to Indian nationals / OCIs who are currently residing in India.
+Information required: 
+
+Mandatory documents for registration: 
+
+Resume (maximum of 2 pages) with a high-resolution passport size photograph. Please note that the photograph should be clicked in a light background and both the ears of the candidates must be visible. 
+Mandatory documents for interview:
+
+All academic documents including the college ID card (if available) and school/college UG mark sheets, UG degree certificates.
+Mandatory documents for onboarding:
+
+The final Cognizant onboarding would be subject to satisfactory background verification. 
+
+PAN card - It is a mandatory requirement for onboarding. Please ensure that your first name, last name, father's name, and other details are accurate. Please note that background verification will fail if the last name is not updated or if the PAN card name does not match the registered name. 
+Voter Id card / Passport (any one) will be mandatory to verify citizenship. 
+Please note
+
+You will get the communications only to the registered mail ID in Superset. It must be your personal mail ID and shall be considered as the primary email ID. This email ID should not be changed at any point during hiring process or until Full Time Employment (FTE) onboarding. 
+
+If selected, you will join as a fresher as no prior work experience will be considered. 
+
+Candidates who have attended assessments or interview in the last 6 months kindly do not apply.
     `
   }
   ,{
@@ -73,7 +262,26 @@ const companiesData = [
     company: 'Hevo', role: 'SDE I',
     hiringLink: 'https://jobs.lever.co/hevodata/c0c6ce59-880b-46fb-b45f-61e1aec2ad77',
     fullDescription: `
-    
+    What you’ll own as SDE I at Hevo:
+
+. Implement SaaS connectors for assigned applications, learning application specific nuances like basic auth and data extraction.
+. Assist in building simple REST API components, focusing on clean implementation and testing.
+. Debug and optimize code for data pipeline efficiency under mentorship.
+. Contribute to feature breakdown, coding, and documentation for smaller tasks.
+. Apply logical thinking to solve integration issues and improve component quality.
+
+What you’ll bring to the table:
+
+. Basic object-oriented programming skills and familiarity with design principles.
+. Exposure to data pipelines or APIs; eagerness to learn concurrency and performance basics.
+. Foundational knowledge of REST APIs (e.g., making calls, handling JSON) – no deep expertise needed.
+. Proficiency in Java/TypeScript/Python, good problem-solving with data structures and algorithms.
+. Strong analytical and logical thinking for real-world challenges.
+
+Candidate Persona:
+
+. 0-1 years in software development, ideally with internships in integrations or data tools.
+. B Tech in Computer Science or equivalent from a reputed college.
     `
   }
   ,{
@@ -81,7 +289,7 @@ const companiesData = [
     company: 'Binated', role: 'UI UX Desginer',
     hiringLink: 'https://www.linkedin.com/jobs/view/4376013880',
     fullDescription: `
-    
+    This position is closed now
     `
   }
   ,{
@@ -97,7 +305,27 @@ const companiesData = [
     company: 'EY', role: 'SharePoint - Interns',
     hiringLink: 'https://eyglobal.yello.co/jobs/1P5qeCUHqr5QOss5dpjGTw?job_board_id=c1riT--B2O-KySgYWsZO1Q',
     fullDescription: `
-    
+    Position Summary
+
+Graduate degree in Engineering or related discipline with no arrears.
+Enthusiastic in learning new technologies and have right aptitude for innovation.
+Desire to have completed training in SharePoint application building and Power Pages , Automate flow creation.
+Good programming aptitude and logical and reasoning skills.
+Excellent computer skills - proficient in MS Excel, MS PowerPoint, MS Word and MS Outlook.
+Excellent interpersonal skills and communication skills.
+Strong command on verbal and written English language.
+
+Roles and Responsibilities
+
+Essential
+
+Develop applications or automation programs based on guidance provided.
+Learn and develop solutions using SharePoint Platform
+Contribute to unit testing of developed applications
+Create technical documentations
+Should have basic understanding and experience of object-oriented programming concepts, data modelling, UI/UX design.
+Should be able to work with a multi culture global teams and team virtually
+Should be able to build strong relationship with project team members
     `
   }
   ,{
@@ -105,7 +333,47 @@ const companiesData = [
     company: 'Career Creed', role: 'Full stack developer',
     hiringLink: 'https://www.naukri.com/job-listings-full-stack-developer-career-creed-mumbai-0-to-5-years-240226502057',
     fullDescription: `
-    
+    About the Role:
+We are seeking a highly skilled Full Stack Developer with hands-on experience in Java 17, Spring Boot, Microservices, Hibernate, and Angular. The ideal candidate will be responsible for designing, developing, and implementing end-to-end web applications with a focus on performance, scalability, and reliability.
+
+Key Responsibilities:
+Develop and maintain high-quality web applications using Java 17 and Angular.
+
+Design, build, and deploy Microservices architecture for scalable applications.
+
+Integrate APIs and ensure smooth communication between frontend and backend systems.
+
+Work with Spring Boot and Hibernate for efficient data handling and business logic.
+
+Collaborate with cross-functional teams including UI/UX, QA, and DevOps for seamless project execution.
+
+Ensure best practices in coding standards, version control, and application security.
+
+Required Skills & Qualifications:
+Strong proficiency in Java 17, Spring Boot, Microservices, and Hibernate.
+
+Hands-on experience with Angular (mandatory).
+
+Understanding of RESTful APIs and web services.
+
+Knowledge of relational databases (MySQL/PostgreSQL) and ORM concepts.
+
+Experience with Agile/Scrum methodologies.
+
+Excellent problem-solving and analytical skills.
+
+Education:
+Bachelor s or Master s degree in Computer Science, Information Technology, or a related field.
+
+" }
+Role: Full Stack Developer
+Industry Type: Recruitment / Staffing
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: Any Graduate
+PG: Any Postgraduate
     `
   }
   ,{
@@ -113,7 +381,30 @@ const companiesData = [
     company: 'Adengage', role: 'MERN stack developer Intern',
     hiringLink: 'https://www.naukri.com/job-listings-mern-stack-developer-intern-adengage-mumbai-hyderabad-mumbai-hyderabad-0-to-1-years-240226930230cd',
     fullDescription: `
-    
+    Job CategoryInternship
+Job TypeFull Time Part Time
+Job LocationThane & Navi Mum
+Role Overview
+AdEngage is looking for a MERN Stack Developer Intern to join our dynamic team
+This internship provides a platform to develop your skills in MongoDB, Express.js, React, and Node.js, contributing to the development of full-stack web applications
+Key Responsibilities
+Assist in building and maintaining web applications using the MERN stack
+Collaborate with the development team to understand project requirements and contribute to the development process
+Learn and apply best practices in coding, testing, and deployment under the mentorship of experienced developers
+Participate in team discussions, contributing ideas and learning from seasoned professionals
+Ideal Candidate
+Currently pursuing or recently graduated with a degree in Computer Science, Information Technology, or a related field
+Has a foundational understanding of the MERN stack and a strong desire to develop full-stack web applications
+Demonstrates good problem-solving skills and a detail-oriented approach to development
+Is eager to learn, adaptable, and enjoys collaborating with a team to deliver innovative solutions
+Role: Software Development - Other
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization
+PG: Any Postgraduate
     `
   }
   ,{
@@ -121,7 +412,7 @@ const companiesData = [
     company: 'Academian', role: 'Trainee Software Engineer',
     hiringLink: 'https://academian.keka.com/careers/jobdetails/129744',
     fullDescription: `
-    
+    This posting is closed
     `
   }
   ,{
@@ -129,7 +420,34 @@ const companiesData = [
     company: 'HCL', role:'Software Engineer',
     hiringLink:'https://unstop.com/o/QLPRqv3?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
     fullDescription: `
-    
+    Responsibilities of the Candidate:
+
+Designing solutions that will resolve customers' business issues to remove all technical objections
+Managing and facilitating challenging and complex proof of Concepts
+Understanding customer requirements and provide solution to automate the infrastructure operations
+Customization of BigFix deployments to meet customer requirements
+Building scalable, redundant and HA/DR solutions for Bigfix
+Conduct assessments and build automation solutions to reduce manual workloads
+Requirements:
+
+Infrastructure Management for BigFix from implementation to operations
+Patch Management for Windows, Linux and UNIX-based systems through BigFix
+Knowledge of Configuration management, including reporting, change tracking, etc.
+Knowledge of DevOps toolsets such as Puppet, Chef and Ansible
+Compliance and vulnerability management through HCL Automation Suite.
+Practice Server build and hardening through HCL OSD or Tivoli Provisioning Manager.
+Custom software deployment and application release lifecycle
+Cross-platform experience. Candidates should have an understanding of Windows platforms and architecture and be confident working on all flavors of UNIX/Linux
+Knowledge of other System Management and Security tools like Bladelogic, HP SA, Ansible is a benefit
+Good written and oral communication skills, detail-oriented approach to problem-solving
+Self-motivated and able to work effectively with minimal instruction and supervision
+Demonstrated programming/scripting skills (bash, custom relevance etc.)
+Basic working knowledge of SQL and be able to write simple queries
+Demonstrated Windows skills in both Server and workplace solutions, including Active Directory and be proficient on UNIX platforms.
+Have an understanding of CMDB (Change Management Database) and ITSM (IT Service Management)
+Understand operational and security challenges in a large enterprise and common pain points.
+Have a good understanding of IT security.
+Have a good understanding of IaaS, SaaS and PaaS offerings
     `
   }
   ,{

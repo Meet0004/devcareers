@@ -14,7 +14,7 @@ const CompanyDetailMain = ({ selectedCompany }) => {
           to="/company-details"
           className="text-[#FA5500] hover:underline mb-4 inline-flex items-center"
         >
-          ← Back to Home
+          ← Back Job listings
         </Link>
 
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800">{selectedCompany.role}</h2>

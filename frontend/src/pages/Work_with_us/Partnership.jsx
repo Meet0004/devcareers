@@ -103,12 +103,7 @@ const Partnership = () => {
             >
               📩 Go to Contact Page
             </a>
-            <a
-              href="mailto:meethcodes@gmail.com"
-              className="inline-flex items-center justify-center gap-2 bg-white border-2 border-amber-400 text-amber-700 font-bold px-7 py-3.5 rounded-xl hover:bg-amber-50 transition-all"
-            >
-              ✉️ Email Directly
-            </a>
+
           </div>
 
           <p className="text-xs text-gray-400">{import.meta.env.VITE_RECIPIENT_EMAIL} · Response within 6–48 hours</p>

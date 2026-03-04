@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { label: '🏠 Home',              to: '/'                    },
   { label: '💼 Jobs',              to: '/company-details'     },
   { label: '📚 Resources',         to: '/resources'           },
+  { label: '👤 About Us',          to: '/about-us'},
   { label: '📩 Subscribe',         to: '/subscribe-us'        },
   { label: '💬 Contact Us',        to: '/contact-us'          },
 ]

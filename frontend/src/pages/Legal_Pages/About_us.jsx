@@ -1,10 +1,10 @@
 import React from 'react'
-import PageHero        from '../../components/legal/PageHero'
-import SectionHeading  from '../../components/legal/SectionHeading'
+import PageHero from '../../components/legal/PageHero'
+import SectionHeading from '../../components/legal/SectionHeading'
 import IconFeatureCard from '../../components/legal/IconFeatureCard'
-import MeetSoniCard    from '../../components/legal/MeetSoniCard'
-import StatGrid        from '../../components/legal/StatGrid'
-import ContactInfoBox  from '../../components/legal/ContactInfoBox'
+import MeetSoniCard from '../../components/legal/MeetSoniCard'
+import StatGrid from '../../components/legal/StatGrid'
+import ContactInfoBox from '../../components/legal/ContactInfoBox'
 import myImage from '../../assets/myImage.avif'
 
 const About_us = () => {
@@ -35,7 +35,7 @@ const About_us = () => {
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
               <svg className="w-6 h-6 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
               </svg>
             </div>
             <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
@@ -44,7 +44,7 @@ const About_us = () => {
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p className="text-lg">
               DevCareers started with a simple observation: <strong className="text-gray-900">talented students were
-              missing out on amazing opportunities</strong> simply because they didn't know where to look or didn't have
+                missing out on amazing opportunities</strong> simply because they didn't know where to look or didn't have
               access to timely information.
             </p>
             <p>
@@ -72,7 +72,7 @@ const About_us = () => {
             </ul>
             <p>
               DevCareers is built on one core belief: <strong className="text-gray-900">Every student deserves equal
-              access to opportunities</strong>, regardless of their college tier, location, or network. This is a platform
+                access to opportunities</strong>, regardless of their college tier, location, or network. This is a platform
               built by a student, for students — with zero corporate backing and 100% passion.
             </p>
           </div>
@@ -84,7 +84,7 @@ const About_us = () => {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"/>
+                  <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-blue-900">Our Mission</h3>
@@ -101,8 +101,8 @@ const About_us = () => {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-14 h-14 bg-purple-500 rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                  <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                  <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-purple-900">Our Vision</h3>
@@ -115,7 +115,7 @@ const About_us = () => {
           </div>
         </section>
 
-{/* Meet the Team */}
+        {/* Meet the Team */}
         <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <SectionHeading title="Meet the Team" className="mb-6" />
 
@@ -127,12 +127,12 @@ const About_us = () => {
 
             <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
               <div className="flex items-center gap-6 mb-6 flex-col md:flex-row">
-                <div className="w-24 h-24 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg rounded-full overflow-hidden shadow-md flex-shrink-0 border-2 border-amber-300">
-        <img
-          src={myImage}
-          alt="Meet Soni"
-          className="w-full h-full object-cover"
-        />
+                <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-amber-300 shadow-md">
+                  <img
+                    src={myImage}
+                    alt="Meet Soni"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="text-center md:text-left">
                   <h3 className="text-2xl font-bold text-gray-900">Meet Soni</h3>
@@ -147,12 +147,12 @@ const About_us = () => {
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   {[
-                    { emoji: '🔍', label: 'Job Curation',           desc: 'Scans 300+ companies daily, verifies every posting, and updates listings manually' },
-                    { emoji: '💻', label: 'Platform Development',   desc: 'Codes, designs, and maintains the entire DevCareers platform from scratch' },
-                    { emoji: '📹', label: 'Content Creation',       desc: 'Creates YouTube videos, writes newsletters, posts on LinkedIn and WhatsApp' },
-                    { emoji: '💬', label: 'User Support',           desc: 'Responds to every email, resolves issues, and provides personalized guidance' },
-                    { emoji: '📚', label: 'Resource Creation',      desc: 'Curates and creates 35+ educational resources for students' },
-                    { emoji: '📊', label: 'Everything Else',        desc: 'Accounting, planning, marketing, analytics — all handled solo' },
+                    { emoji: '🔍', label: 'Job Curation', desc: 'Scans 300+ companies daily, verifies every posting, and updates listings manually' },
+                    { emoji: '💻', label: 'Platform Development', desc: 'Codes, designs, and maintains the entire DevCareers platform from scratch' },
+                    { emoji: '📹', label: 'Content Creation', desc: 'Creates YouTube videos, writes newsletters, posts on LinkedIn and WhatsApp' },
+                    { emoji: '💬', label: 'User Support', desc: 'Responds to every email, resolves issues, and provides personalized guidance' },
+                    { emoji: '📚', label: 'Resource Creation', desc: 'Curates and creates 35+ educational resources for students' },
+                    { emoji: '📊', label: 'Everything Else', desc: 'Accounting, planning, marketing, analytics — all handled solo' },
                   ].map((item, idx) => (
                     <div key={idx} className="bg-white rounded-lg p-4 shadow-sm">
                       <p className="font-semibold text-amber-700 mb-2">{item.emoji} {item.label}</p>
@@ -295,14 +295,14 @@ const About_us = () => {
           <StatGrid
             variant="card"
             stats={[
-              { icon: '', number: '10K+',    label: 'Active Users' },
-              { icon: '', number: '300+',    label: 'Companies Tracked' },
-              { icon: '', number: '100+',    label: 'Monthly Opportunities' },
-              { icon: '', number: '35+',     label: 'Resources' },
-              { icon: '', number: '399',     label: 'Topmate Bookings' },
-              { icon: '', number: 'Top 0.1%',label: 'Topmate Creator' },
-              { icon: '', number: '100%',    label: 'Verified Listings' },
-              { icon: '', number: '0₹',      label: 'To Browse Jobs' },
+              { icon: '', number: '10K+', label: 'Active Users' },
+              { icon: '', number: '300+', label: 'Companies Tracked' },
+              { icon: '', number: '100+', label: 'Monthly Opportunities' },
+              { icon: '', number: '35+', label: 'Resources' },
+              { icon: '', number: '399', label: 'Topmate Bookings' },
+              { icon: '', number: 'Top 0.1%', label: 'Topmate Creator' },
+              { icon: '', number: '100%', label: 'Verified Listings' },
+              { icon: '', number: '0₹', label: 'To Browse Jobs' },
             ]}
           />
 
@@ -323,7 +323,7 @@ const About_us = () => {
           </div>
         </section>
 
-        
+
 
         {/* Our Commitment */}
         <section className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-8 md:p-12">
@@ -331,12 +331,12 @@ const About_us = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: '✅', title: 'Accurate Information',  description: 'We verify every job posting and update listings regularly. If a role is filled or expired, we remove it promptly.' },
-              { icon: '🔒', title: 'Data Privacy',          description: 'Your personal information is sacred. We never sell your data to third parties and use industry-standard encryption to protect it.' },
-              { icon: '📧', title: 'Responsive Support',    description: 'We respond to every email and resolve issues within 6-48 hours. Real humans, real responses — no bots, no auto-replies.' },
-              { icon: '📋', title: 'Quality Resources',     description: "Every resource we publish is reviewed for accuracy, clarity, and usefulness. We don't publish filler content just to increase numbers." },
-              { icon: '✔️', title: 'Transparency',          description: "We're open about how we operate, what data we collect, and how we make money. No hidden agendas, no fine print tricks." },
-              { icon: '👥', title: 'Community First',       description: "We actively listen to feedback and implement suggestions. You shape our roadmap — we're building this for you, with you." },
+              { icon: '✅', title: 'Accurate Information', description: 'We verify every job posting and update listings regularly. If a role is filled or expired, we remove it promptly.' },
+              { icon: '🔒', title: 'Data Privacy', description: 'Your personal information is sacred. We never sell your data to third parties and use industry-standard encryption to protect it.' },
+              { icon: '📧', title: 'Responsive Support', description: 'We respond to every email and resolve issues within 6-48 hours. Real humans, real responses — no bots, no auto-replies.' },
+              { icon: '📋', title: 'Quality Resources', description: "Every resource we publish is reviewed for accuracy, clarity, and usefulness. We don't publish filler content just to increase numbers." },
+              { icon: '✔️', title: 'Transparency', description: "We're open about how we operate, what data we collect, and how we make money. No hidden agendas, no fine print tricks." },
+              { icon: '👥', title: 'Community First', description: "We actively listen to feedback and implement suggestions. You shape our roadmap — we're building this for you, with you." },
             ].map((item, idx) => (
               <div key={idx} className="flex gap-4 items-start bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-xl">
@@ -363,8 +363,8 @@ const About_us = () => {
             <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
               <h3 className="font-bold text-green-900 mb-3 flex items-center gap-2">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd"/>
+                  <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd" />
                 </svg>
                 Premium Educational Resources
               </h3>
@@ -378,7 +378,7 @@ const About_us = () => {
             <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
               <h3 className="font-bold text-blue-900 mb-3 flex items-center gap-2">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                 </svg>
                 What's Coming Next
               </h3>
@@ -431,7 +431,7 @@ const About_us = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <svg className="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
                 <h3 className="font-bold text-gray-900 text-lg">YouTube Community</h3>
               </div>
@@ -448,7 +448,7 @@ const About_us = () => {
                       <div className="flex gap-1 mb-2">
                         {[...Array(review.stars)].map((_, i) => (
                           <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                           </svg>
                         ))}
                       </div>
@@ -464,7 +464,7 @@ const About_us = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <svg className="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <h3 className="font-bold text-gray-900 text-lg">Topmate Reviews (4.3/5)</h3>
               </div>
@@ -480,7 +480,7 @@ const About_us = () => {
                     <div className="flex gap-1 mb-2">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
@@ -515,8 +515,8 @@ const About_us = () => {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-amber-600 font-bold rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
               Send Us a Message
             </a>
@@ -525,8 +525,8 @@ const About_us = () => {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-600 text-white font-bold rounded-xl hover:bg-amber-700 transition-colors border-2 border-white shadow-lg"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
               Subscribe for Weekly Updates
             </a>

@@ -9,8 +9,11 @@ const Companies_details = () => {
   const [searchTerm, setSearchTerm] = useState('')
 
   const selectedCompany = companyName && role
-    ? companiesData.find(c => c.company === companyName && c.role === role)
-    : null
+  ? companiesData.find(
+      c => c.company === decodeURIComponent(companyName) &&
+           c.role    === decodeURIComponent(role)
+    )
+  : null
 
 const filteredCompanies = companiesData.filter(item =>
   item.company?.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -25,7 +28,7 @@ const filteredCompanies = companiesData.filter(item =>
         <div className="min-h-screen bg-[#FFFDFB] flex items-center justify-center p-4">
           <div className="text-center">
             <h2 className="text-2xl font-bold text-black mb-4">Company Not Found</h2>
-            <Link to="/company-details" className="text-[#FA5500] hover:underline">
+            <Link to="/" className="text-[#FA5500] hover:underline">
               ← Back to Home
             </Link>
           </div>

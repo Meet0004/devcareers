@@ -7,7 +7,7 @@ const CompanyCard = ({ company }) => {
 
   return (
     <Link
-      to={`/company-details/${company.company}/${company.role}`}
+      to={`/company-details/${encodeURIComponent(company.company)}/${encodeURIComponent(company.role)}`}
       className="group bg-[#FFFDFB] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-black/10 hover:border-[#FA5500]"
     >
       <div className="p-6">

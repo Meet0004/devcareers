@@ -948,7 +948,7 @@ Experience with GraphQL is a big plus
     `
   }
   ,{
-    id: 186, company: 'S&P Global Market Intelligence', role:'Apprentice Softare Developmemt Engineering',
+    id: 186, company: 'S&P Global Market Intelligence', role:'Apprentice Software Developmemt Engineering',
     hiringLink: 'https://www.naukri.com/job-listings-apprentice-software-development-engineering-sp-capital-iq-india-pvt-ltd-gurugram-0-to-1-years-270226917427',
     fullDescription: `
     The Team:

@@ -65,7 +65,7 @@ const Terms_and_conditions = () => {
           {/* 1. Agreement */}
           <SectionCard id="agreement" emoji="📜" title="Agreement to Terms" borderColor={borderColors[0]}>
             <p>
-              Welcome to <strong className="text-gray-900">DevCareers</strong> (formerly Tech Job Alert), owned and
+              Welcome to <strong className="text-gray-900">DevCareers</strong> , owned and
               operated by <strong className="text-gray-900">Meet Soni</strong>, a solo developer based in Shimoga,
               Karnataka, India.
             </p>
@@ -93,7 +93,7 @@ const Terms_and_conditions = () => {
             <p>To use DevCareers, you must meet the following conditions:</p>
             <div className="space-y-3">
               {[
-                { icon: '🔞', title: 'Minimum Age', desc: 'You must be at least 13 years old to use this Platform. Users aged 13–17 should review these Terms with a parent or guardian.' },
+                { icon: '🔞', title: 'Minimum Age', desc: 'You must be at least 18 years old to use this Platform. Users aged 18-24 should review these Terms with a parent or guardian.' },
                 { icon: '🤝', title: 'Legal Capacity', desc: 'By using DevCareers, you confirm you have the legal capacity to enter into a binding agreement under applicable Indian law.' },
                 { icon: '✅', title: 'Accurate Information', desc: 'You agree to provide accurate and truthful information when subscribing, purchasing, or contacting us. False information may result in termination of access.' },
               ].map((item, idx) => (

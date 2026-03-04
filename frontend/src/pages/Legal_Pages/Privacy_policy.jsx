@@ -61,7 +61,7 @@ const Privacy_Policy = () => {
           {/* 1. Overview */}
           <SectionCard id="overview" emoji="🛡️" title="Overview" borderColor={borderColors[0]}>
             <p>
-              Welcome to <strong className="text-gray-900">DevCareers</strong> (formerly Tech Job Alert). This Privacy
+              Welcome to <strong className="text-gray-900">DevCareers</strong>. This Privacy
               Policy explains how we handle your personal information when you visit our website, subscribe to our
               newsletter, make a purchase, or contact us.
             </p>
@@ -390,17 +390,17 @@ const Privacy_Policy = () => {
           {/* 10. Children's Privacy */}
           <SectionCard id="children" emoji="👶" title="Children's Privacy" borderColor={borderColors[9]}>
             <p>
-              DevCareers is open to users aged <strong>13 and above</strong>. We do not knowingly collect personal
-              data from children under 13.
+              DevCareers is open to users aged <strong>18 and above</strong>. We do not knowingly collect personal
+              data from children under 18.
             </p>
             <p>
-              If you are a parent or guardian and believe your child under 13 has provided us with personal data,
+              If you are a parent or guardian and believe your child under 18 has provided us with personal data,
               please contact us immediately at <strong>{import.meta.env.VITE_RECIPIENT_EMAIL}</strong> and we will delete that
               information promptly.
             </p>
             <Highlight color="amber">
               <p className="text-sm">
-                📌 <strong>For users aged 13–17:</strong> We recommend reviewing this policy with a parent or
+                📌 <strong>For users aged 18-24:</strong> We recommend reviewing this policy with a parent or
                 guardian. Our platform contains career guidance and job listings appropriate for students of all ages.
               </p>
             </Highlight>

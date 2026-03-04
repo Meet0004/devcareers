@@ -43,7 +43,7 @@ const About_us = () => {
 
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p className="text-lg">
-              DevCareers (formerly Tech Job Alert) started with a simple observation: <strong className="text-gray-900">talented students were
+              DevCareers started with a simple observation: <strong className="text-gray-900">talented students were
               missing out on amazing opportunities</strong> simply because they didn't know where to look or didn't have
               access to timely information.
             </p>
@@ -258,7 +258,7 @@ const About_us = () => {
 
         {/* Why Choose Us */}
         <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <SectionHeading title="Why Students Trust Tech Job Alert" />
+          <SectionHeading title="Why Students Trust Dev Careers" />
 
           <div className="grid md:grid-cols-2 gap-6">
             {[

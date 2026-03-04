@@ -771,34 +771,21 @@ Great interpersonal and communication skills
     hiringLink: 'https://wellfound.com/jobs/3543681-front-end-intern',
     fullDescription: `
     We’re looking for an enthusiastic Front-End Developer Intern who enjoys building clean, responsive, and intuitive user interfaces. You’ll collaborate with our design and engineering teams to bring product ideas to life, polish user experiences, and contribute to features that ship to real users.
-
 If you love crafting smooth UI interactions, experimenting with modern frameworks, or turning rough ideas into pixel-perfect screens — you’ll feel right at home.
-
 What You’ll Work On
-
 Build and refine UI components using React / Next.js (or your preferred stack).
-
 Translate design mockups (Figma, XD) into high-quality, responsive pages.
-
 Integrate frontend components with backend APIs and services.
-
 Improve UI performance, accessibility, and overall user experience.
-
 Debug layout issues, handle component state, and streamline user flows.
-
 Contribute to reusable component libraries and internal design systems.
-
 Collaborate with designers, engineers, and product leads on new features.
-
 What You Should Bring
-
 Strong foundation in HTML, CSS, and JavaScript.
 Hands-on experience with at least one modern framework (React preferred).
 Basic understanding of REST APIs and JSON data handling.
 Curiosity for UI/UX principles and frontend best practices.
-
 Bonus points for:
-
 Projects on GitHub or a small portfolio
 Familiarity with TailwindCSS, Material UI, or Chakra UI
 Experience with Next.js or TypeScript
@@ -810,45 +797,32 @@ Knowledge of Git and collaborative workflows
     hiringLink: 'https://wellfound.com/l/2C5BcA',
     fullDescription: `
     We’re building AI Labour-as-a-Service. Autonomous agents that use software like humans do. They click, type, and navigate real UIs to eliminate painful browser work. No APIs. No integrations. Just agents doing the job end to end, inside the UI.
-
 Watch Demo: https://youtu.be/0KUHWtitzoo
-
 Role: Spring Boot Developer Intern
-
 Location: Remote or Onsite (Bengaluru)
 Type: Full-time Internship (with PPO opportunity)
-
 This isn’t a backseat role. This is real work.
-
 You’ll be building backend systems that power live AI agents — think APIs, task processors, schedulers, and automation logic that operate in the wild.
-
 You’ll be treated like a core team member and expected to contribute from day one.
-
 What you’ll do
-
-• Build and ship backend services using Java and Spring Boot
-• Design and develop REST APIs used by AI-driven systems
-• Work on task queues, background jobs, and event-driven workflows
-• Write clean, scalable code with performance in mind
-• Debug, test, and iterate quickly based on real usage
-• Collaborate with engineers to build reliable backend infrastructure
-
+Build and ship backend services using Java and Spring Boot
+Design and develop REST APIs used by AI-driven systems
+Work on task queues, background jobs, and event-driven workflows
+Write clean, scalable code with performance in mind
+Debug, test, and iterate quickly based on real usage
+Collaborate with engineers to build reliable backend infrastructure
 Who you are
-
-• Strong grasp of Java and Spring Boot fundamentals
-• Comfortable with REST APIs and backend architecture
-• Experience with databases (PostgreSQL/MySQL)
-• Eager to learn, experiment, and take ownership
-• Not afraid of messy problems or undefined paths
-
+Strong grasp of Java and Spring Boot fundamentals
+Comfortable with REST APIs and backend architecture
+Experience with databases (PostgreSQL/MySQL)
+Eager to learn, experiment, and take ownership
+Not afraid of messy problems or undefined paths
 Bonus: if you’ve worked with microservices, Docker, or cloud deployments
-
 What’s in it for you
-
-• A front-row seat to building real AI products, not toy demos
-• Hands-on mentorship from engineers who ship fast
-• PPO opportunity based on performance
-• High trust, real impact, no red tape
+A front-row seat to building real AI products, not toy demos
+Hands-on mentorship from engineers who ship fast
+PPO opportunity based on performance
+High trust, real impact, no red tape
 
 If you're looking for an easy internship, this won’t be it.
 If you want to level up by doing real work that matters, we’re all ears.
@@ -1138,6 +1112,120 @@ PG: Any Postgraduate
 Doctorate: Doctorate Not Required
     `
   }
+   ,{ id: 191, company: 'Tower Research Capital India Private Limited', role: 'Software Engineer',
+    hiringLink:'https://unstop.com/o/Wmfoni1?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`Responsibilities
+Working closely with software developers, QA, support teams and Stakeholders located in the US, Europe, and Asia regions.
+Design test artifacts based on the project requirements, perform end to end testing, defect tracking and reporting prior to the release of numerous internal software systems.
+Signing off on releases as they are ready for deployment, including passing test plans and notifying system users
+Updating and creating specification documents.
+Perform Certifications/Conformances with brokers and exchanges.
+Maintain test environments, identify areas of improvements, automation using BDD framework written in Python - behave.
+Interact with teams globally to ensure effective communication throughout the release cycle. 
+Qualifications
+
+0-2 years of experience as an SDET(Software Development Engineer in Test).
+Bachelor’s Degree in Computer Engineering, Computer Science, or related field.
+Proficiency in Python programming
+Competence using Linux, and good understanding of system, network and environment management.
+Brilliant problem solving skills and ability to work independently.
+Able to prioritize and manage multiple tasks in a fast-paced environment with short deadlines.
+Excellent written and oral communication skills.
+Desired but not mandatory
+Ability to code in C++ will be preferred.
+Knowledge of SQL/Mongo and version control systems such as git will be preferred.
+Experience with Development/Testing methodologies such as BDD/TDD.
+The ability to build and execute test plans from informal specifications given by developers and risk managers
+Familiarity with CI/CD & DevOps tools and technologies.
+Experience within the financial services industry is a plus.
+Tower’s headquarters are in the historic Equitable Building, right in the heart of NYC’s Financial District and our impact is global, with over a dozen offices around the world.
+At Tower, we believe work should be both challenging and enjoyable. That is why we foster a culture where smart, driven people thrive – without the egos. Our open concept workplace, casual dress code, and well-stocked kitchens reflect the value we place on a friendly, collaborative environment where everyone is respected, and great ideas win.
+
+Our benefits include:
+Generous paid time off policies
+Savings plans and other financial wellness tools available in each region
+Hybrid working opportunities
+Free breakfast, lunch and snacks daily
+In-office wellness experiences and reimbursement for select wellness expenses (e.g., gym, personal training and more)
+Company-sponsored sports teams and fitness events.
+Volunteer opportunities and charitable giving
+Social events, happy hours, treats and celebrations throughout the year
+Workshops and continuous learning opportunities
+At Tower, you’ll find a collaborative and welcoming culture, a diverse team and a workplace that values both performance and enjoyment. No unnecessary hierarchy. No ego. Just great people doing great work – together.
+Job Location(s): Gurgaon
+Illustration of project workflow
+Work Detail
+Working Days: 5 Days
+Job Type / Timing
+Job Type/Timing
+Job Type: In Office
+Job Timing: Full Time
+    `
+  }
+   ,{ id: 192, company: 'Cargill India', role: 'Software Engineer',
+    hiringLink:'https://unstop.com/o/4Pm0hNI?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+    Eligibility: Fresher
+
+Cargill India is hiring for the role of Software Engineer!
+
+Responsibilities of the Candidate:
+
+Partners to design and develop high quality software solutions by writing clean, maintainable and efficient codes.
+Applies internal software deployment platform, methodologies and tools to automate the deployment process, ensuring smooth and reliable releases.
+Partners with cross functional team of product managers, designers and other engineers to gather moderately complex requirements and deliver solutions that meet business needs.
+Writes and maintains moderately complex unit tests and integration tests, and performs debugging to maintain the quality and performance of the software.
+Makes suggestions for improving the software development and deployment processes, and implements the approved standards to improve efficiency and reliability. 
+Requirements:
+
+Solid experience with JavaScript (ES6+), TypeScript, HTML5, CSS3. 
+Strong experience with C# and .NET Framework/.NET Core. 
+Solid understanding of object-oriented programming. 
+Experience with unit testing and mocking frameworks (e.g., xUnit, NUnit, Moq). 
+Familiarity with design patterns (e.g., Repository, Factory, Strategy). 
+Job Location(s): Bengaluru
+Illustration of project workflow
+Working Days: 5 Days
+Job Type / Timing
+Job Type/Timing
+Job Type: In Office
+Job Timing: Full Time
+    `
+  }
+   ,{ id: 193, company: 'Procore', role: 'Software Engineer',
+    hiringLink:'https://unstop.com/o/5cUXVOI?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+    Eligibility: Fresher
+Details
+Procore is hiring for the role of Software Engineer!
+Responsibilities of the Candidate:
+Contribute as a hands-on member of the backend team by delivering assigned tasks that support team goals.
+Independently complete well-scoped, routine tickets in areas of familiarity.
+Collaborate with senior engineers on more complex initiatives to expand technical expertise and professional skills.
+Investigate new problem areas, identify potential solutions, and seek guidance when appropriate.
+Design, develop, and maintain backend microservices using Java with Spring Boot, ensuring reliability, scalability, and performance.
+Write clean, maintainable, and well-tested code using modern backend technologies.
+Requirements:
+Proficiency in Java with Spring Boot, with hands-on experience building backend microservices.
+Basic knowledge of CI/CD tools such as CircleCI (or equivalent). Basic understanding of AWS and familiarity with deployment processes.
+Working knowledge of React, Typescript for frontend support is a plus. Foundational understanding of Progress DB and RDBMS concepts, including basic querying .
+Familiarity with microservice architecture patterns, REST APIs, and basic system design concepts.
+Job Location(s): Bengaluru
+Illustration of project workflow
+Work Detail
+Working Days: 5 Days
+Job Type / Timing
+Job Type/Timing
+Job Type: In Office
+Job Timing: Full Time
+
+    `
+  }
+  // ,{ id: , company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
 ]
 
 export default companiesData

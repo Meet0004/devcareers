@@ -1,9 +1,10 @@
 import React from 'react'
+import myImage from '../../assets/myImage.avif'
 
 /**
  * MeetSoniCard
  *
- * Profile card for Meet Soni (Founder). Displays avatar initials, name,
+ * Profile card for Meet Soni (Founder). Displays avatar image, name,
  * role, and contact details. Used in Privacy Policy, Terms & Conditions,
  * About Us, and Disclaimer.
  *
@@ -29,8 +30,12 @@ const MeetSoniCard = ({
 }) => (
   <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-6">
     <div className="flex items-center gap-4 mb-5">
-      <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white text-xl font-bold shadow-md flex-shrink-0">
-        MS
+      <div className="w-14 h-14 rounded-full overflow-hidden shadow-md flex-shrink-0 border-2 border-amber-300">
+        <img
+          src={myImage}
+          alt="Meet Soni"
+          className="w-full h-full object-cover"
+        />
       </div>
       <div>
         <h3 className="font-bold text-gray-900 text-lg">Meet Soni</h3>

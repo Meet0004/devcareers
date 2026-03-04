@@ -5,6 +5,7 @@ import IconFeatureCard from '../../components/legal/IconFeatureCard'
 import MeetSoniCard    from '../../components/legal/MeetSoniCard'
 import StatGrid        from '../../components/legal/StatGrid'
 import ContactInfoBox  from '../../components/legal/ContactInfoBox'
+import myImage from '../../assets/myImage.avif'
 
 const About_us = () => {
   return (
@@ -110,6 +111,71 @@ const About_us = () => {
               To become <strong>India's most trusted career platform</strong> for students and early professionals,
               where <strong>every aspiring professional</strong> — regardless of background, college, or connections —
               has <strong>equal access</strong> to opportunities, resources, and guidance needed to thrive in their careers.
+            </p>
+          </div>
+        </section>
+
+{/* Meet the Team */}
+        <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+          <SectionHeading title="Meet the Team" className="mb-6" />
+
+          <div className="max-w-3xl mx-auto space-y-6">
+            <p className="text-gray-700 leading-relaxed text-center">
+              Unlike most platforms, DevCareers is <strong className="text-gray-900">a one-person operation</strong> built
+              and maintained entirely by Meet Soni — a 21-year-old software developer and BCA graduate from Shimoga, Karnataka.
+            </p>
+
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
+              <div className="flex items-center gap-6 mb-6 flex-col md:flex-row">
+                <div className="w-24 h-24 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                 <div className="w-24 h-24 rounded-full overflow-hidden shadow-md flex-shrink-0 border-2 border-amber-300">
+        <img
+          src={myImage}
+          alt="Meet Soni"
+          className="w-full h-full object-cover"
+        />
+      </div>
+                </div>
+                <div className="text-center md:text-left">
+                  <h3 className="text-2xl font-bold text-gray-900">Meet Soni</h3>
+                  <p className="text-amber-700 font-semibold">Founder & Solo Developer</p>
+                  <p className="text-sm text-gray-600">Software Developer • BCA Graduate • 21 Years Old</p>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-700">
+                <p>
+                  <strong className="text-gray-900">What Meet Does:</strong> Everything. Literally everything.
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {[
+                    { emoji: '🔍', label: 'Job Curation',           desc: 'Scans 300+ companies daily, verifies every posting, and updates listings manually' },
+                    { emoji: '💻', label: 'Platform Development',   desc: 'Codes, designs, and maintains the entire DevCareers platform from scratch' },
+                    { emoji: '📹', label: 'Content Creation',       desc: 'Creates YouTube videos, writes newsletters, posts on LinkedIn and WhatsApp' },
+                    { emoji: '💬', label: 'User Support',           desc: 'Responds to every email, resolves issues, and provides personalized guidance' },
+                    { emoji: '📚', label: 'Resource Creation',      desc: 'Curates and creates 35+ educational resources for students' },
+                    { emoji: '📊', label: 'Everything Else',        desc: 'Accounting, planning, marketing, analytics — all handled solo' },
+                  ].map((item, idx) => (
+                    <div key={idx} className="bg-white rounded-lg p-4 shadow-sm">
+                      <p className="font-semibold text-amber-700 mb-2">{item.emoji} {item.label}</p>
+                      <p className="text-sm">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="bg-amber-100 border-2 border-amber-300 rounded-lg p-4 mt-4">
+                  <p className="text-center font-semibold text-amber-900">
+                    ⏰ Spends <strong>8+ hours daily</strong> maintaining and growing DevCareers while building solutions
+                    that genuinely help students succeed.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-gray-700 leading-relaxed text-center">
+              This is a <strong className="text-gray-900">passion project</strong> built by someone who believes in the
+              power of accessible information. Meet is currently operating as a solo developer, but as DevCareers grows
+              and reaches sustainability, the plan is to acquire a proper domain and potentially expand the team.
             </p>
           </div>
         </section>
@@ -259,64 +325,7 @@ const About_us = () => {
           </div>
         </section>
 
-        {/* Meet the Team */}
-        <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <SectionHeading title="Meet the Team" className="mb-6" />
-
-          <div className="max-w-3xl mx-auto space-y-6">
-            <p className="text-gray-700 leading-relaxed text-center">
-              Unlike most platforms, DevCareers is <strong className="text-gray-900">a one-person operation</strong> built
-              and maintained entirely by Meet Soni — a 21-year-old software developer and BCA graduate from Shimoga, Karnataka.
-            </p>
-
-            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
-              <div className="flex items-center gap-6 mb-6 flex-col md:flex-row">
-                <div className="w-24 h-24 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                  MS
-                </div>
-                <div className="text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-gray-900">Meet Soni</h3>
-                  <p className="text-amber-700 font-semibold">Founder & Solo Developer</p>
-                  <p className="text-sm text-gray-600">Software Developer • BCA Graduate • 21 Years Old</p>
-                </div>
-              </div>
-
-              <div className="space-y-4 text-gray-700">
-                <p>
-                  <strong className="text-gray-900">What Meet Does:</strong> Everything. Literally everything.
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {[
-                    { emoji: '🔍', label: 'Job Curation',           desc: 'Scans 300+ companies daily, verifies every posting, and updates listings manually' },
-                    { emoji: '💻', label: 'Platform Development',   desc: 'Codes, designs, and maintains the entire DevCareers platform from scratch' },
-                    { emoji: '📹', label: 'Content Creation',       desc: 'Creates YouTube videos, writes newsletters, posts on LinkedIn and WhatsApp' },
-                    { emoji: '💬', label: 'User Support',           desc: 'Responds to every email, resolves issues, and provides personalized guidance' },
-                    { emoji: '📚', label: 'Resource Creation',      desc: 'Curates and creates 35+ educational resources for students' },
-                    { emoji: '📊', label: 'Everything Else',        desc: 'Accounting, planning, marketing, analytics — all handled solo' },
-                  ].map((item, idx) => (
-                    <div key={idx} className="bg-white rounded-lg p-4 shadow-sm">
-                      <p className="font-semibold text-amber-700 mb-2">{item.emoji} {item.label}</p>
-                      <p className="text-sm">{item.desc}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="bg-amber-100 border-2 border-amber-300 rounded-lg p-4 mt-4">
-                  <p className="text-center font-semibold text-amber-900">
-                    ⏰ Spends <strong>8+ hours daily</strong> maintaining and growing DevCareers while building solutions
-                    that genuinely help students succeed.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <p className="text-gray-700 leading-relaxed text-center">
-              This is a <strong className="text-gray-900">passion project</strong> built by someone who believes in the
-              power of accessible information. Meet is currently operating as a solo developer, but as DevCareers grows
-              and reaches sustainability, the plan is to acquire a proper domain and potentially expand the team.
-            </p>
-          </div>
-        </section>
+        
 
         {/* Our Commitment */}
         <section className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-8 md:p-12">

@@ -2803,6 +2803,36 @@ Mentorship from senior developers
 Potential PPO based on performance
     `
   }
+  ,{ id: 203, company: 'Google', role: 'Web Application Engineer',
+    hiringLink:'https://unstop.com/o/ZOqcaKl?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+Note: By applying to this position you will have an opportunity to share your preferred working location from the following: Bengaluru, Karnataka, India; Pune, Maharashtra, India.
+
+Minimum qualifications:
+Bachelor's degree in Computer Science, Engineering, Mathematics, a related field, or equivalent practical experience.
+Experience with Angular.
+Experience with a public cloud provider, such as Google Cloud Platform.
+Experience with one or more languages such as Java, Python, JavaScript, or similar.
+
+Preferred qualifications:
+Google Cloud Platform or other cloud certification(s).
+Experience working with a cross-functional, geographically dispersed team and customer base and collaborating with channel partners, systems integrators, and third-party developers to deliver solutions.
+Understanding of authentication and authorization in web applications.
+Understanding of the cloud marketplace and the differentiators of various cloud offerings.
+Ability to learn and work with new and emerging technologies, methodologies, and solutions in the cloud/IT technology space.
+About the job
+The Google Cloud Platform team helps customers transform and build what's next for their business — all with technology built in the cloud. Our products are developed for security, reliability and scalability, running the full stack from infrastructure to applications to devices and hardware. Our teams are dedicated to helping our customers — developers, small and large businesses, educational institutions and government agencies — see the benefits of our technology come to life. As part of an entrepreneurial team in this rapidly growing business, you will play a key role in understanding the needs of our customers and help shape the future of businesses of all sizes use technology to connect with customers, employees and partners.
+
+Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.
+
+Responsibilities
+Design, develop, and maintain web applications deployed on cloud infrastructure.
+Work with product managers, technical leads, and developers to deliver implementations of web applications.
+Collaborate with a cross-functional team to deliver solutions that meet the evolving needs of the business.
+Understand client requirements and translate them into functional web applications.
+Leverage cloud platforms to build and deploy web applications.
+    `
+  }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

@@ -2499,6 +2499,310 @@ Job Timing: Full Time
 
     `
   }
+  ,{ id: 200 , company: 'Cop&Drop', role: 'Full-Stack Engineer',
+    hiringLink:'https://wellfound.com/l/2C6e6B',
+    fullDescription:`
+Remote | Bangalore Urban | No experience required | Internship
+Skills
+CSS
+MongoDB
+API
+TypeScript
+React.js
+React Native
+TailwindCSS
+MERN Stack - Javascript (ES5 & ES6), MongoDB, Express.Js, React, Node.Js
+Zod
+About the job
+You should:
+
+Know basic *React & JavaScript
+Be comfortable with TypeScript (or willing to learn fast)
+Understand basic REST APIs
+Have used Git properly (branching, commits, PRs)
+Be obsessed with clean UI alignment (Figma → Tailwind accuracy)
+Care about writing scalable code, not hacks
+Frontend -
+
+Next.js 13+ (App Router)
+TypeScript
+Tailwind CSS
+Headless UI
+React Hook Form + Zod
+SWR
+Backend-
+
+Next.js API Routes
+Prisma ORM
+MongoDB Atlas
+Zod Validation
+Service-layer architecture
+Media & Infra -
+
+Cloudinary (image optimization)
+Google Drive ingestion pipelines
+Vercel deployment
+Background job logic
+Bonus if you:
+Have used Next.js App Router
+Understand databases (MongoDB / Prisma)
+Have built something beyond tutorials
+    `
+  }
+  ,{ id: 201, company: 'Zerotrail', role: 'Software Engineer- Intern',
+    hiringLink:'https://wellfound.com/l/2Bpvaj',
+    fullDescription:`
+    Compensation
+
+Stipend: $1,000 – $3,000
+
+Equity: 1.0% – 2.0%
+
+Job Type
+
+Internship
+
+Experience Required: No experience required
+
+Location
+
+Remote (Worldwide)
+
+Onsite options available in:
+
+London
+
+Bengaluru
+
+Kolkata
+
+Remote Work Policy
+
+Onsite or Remote
+
+Remote Hiring Regions
+
+Hiring remotely worldwide
+
+Visa Sponsorship
+
+Not available
+
+Preferred Timezones
+
+Eastern Time (ET)
+
+Relocation
+
+Allowed
+
+Required Skills
+
+Python
+
+JavaScript
+
+About the Company
+
+The company is building an AI-native security agent.
+
+Product name: Zerotrail
+
+Goal: Find and fix vulnerabilities before code is even written.
+
+Focus areas:
+
+LLM-first architecture
+
+Autonomous security systems
+
+Developer-speed security automation
+
+Company stage:
+
+Early stage
+
+Funded
+
+Highly technical team
+
+Role Overview
+
+You will work across the entire stack including:
+
+Backend infrastructure
+
+AI workflows
+
+Frontend user experience
+
+There are no strict silos, meaning you will:
+
+Work on product development
+
+Collaborate on design decisions
+
+Help shape the features being shipped
+
+Responsibilities
+
+You will:
+
+Build and ship features end-to-end
+
+Dashboards
+
+Integrations
+
+Backend jobs
+
+Own parts of the AI pipeline
+
+Prompt engineering
+
+Prompt chaining
+
+Evaluations
+
+Work closely with the founder
+
+Technical decisions
+
+Product decisions
+
+Integrate the product with developer tools such as:
+
+GitHub
+
+Linear
+
+Other dev tools
+
+Write clean, testable code
+
+Ship features quickly and efficiently
+
+Tech Stack
+Frontend
+
+TypeScript
+
+Next.js
+
+Tailwind CSS
+
+Backend
+
+Node.js
+
+Python
+
+PostgreSQL
+
+Redis
+
+AI Stack
+
+OpenAI
+
+LangChain
+
+LlamaIndex
+
+Vector Databases
+
+Infrastructure
+
+Railway
+
+Supabase
+
+Docker
+
+Ideal Candidate
+
+They are looking for someone who:
+
+Builds fast and efficiently
+
+Writes clear and maintainable code
+
+Can debug problems independently
+
+Does not require constant guidance
+
+Has built real projects
+
+Side projects are valued more than internships
+
+Has experience with AI tools or is willing to learn them quickly
+
+Bonus Skills (Nice to Have)
+
+Interest in developer tools
+
+Interest in security
+
+Interest in autonomous AI agents
+
+Why Join
+
+Opportunity to become part of the early team
+
+Work directly with the founder
+
+Build and ship real products
+
+Strong growth potential — if performance is good, the role may convert beyond an internship
+    `
+  }
+  ,{ id: 202, company: 'Purple Block', role: 'Shopify Developer Intern',
+    hiringLink:'https://wellfound.com/l/2C5wR6',
+    fullDescription:`
+Bangalore Urban | No experience required | Internship
+Job Location: Bangalore Urban
+Remote Work Policy: Onsite or remote
+Hires remotely in India
+Visa Sponsorship: Not Available
+
+Preferred Timezones: Central Time, Eastern Time
+Relocation: Allowed
+
+We are looking for a Shopify Developer Intern who is eager to build, customize, and optimize Shopify stores. This role offers hands-on experience in theme customization, performance optimization, and real-world eCommerce development.
+
+This is not a passive internship — you’ll work on live stores and real client projects.
+
+Key Responsibilities
+
+Assist in developing and customizing Shopify themes
+Modify and optimize Shopify stores using Liquid, HTML, CSS, and JavaScript
+Work on Shopify app integrations and third-party APIs
+Implement UI/UX improvements for better conversion rates
+Optimize store performance and page speed
+Debug issues and provide technical support
+Collaborate with design and marketing teams
+Required Skills
+
+Basic understanding of Shopify platform
+Knowledge of Liquid templating language
+Good understanding of HTML, CSS, JavaScript
+Familiarity with responsive design principles
+Understanding of REST APIs (bonus)
+Git/GitHub knowledge (preferred)
+Good to Have
+
+Experience working on a live Shopify store
+Knowledge of Shopify apps & plugin ecosystem
+Understanding of CRO (Conversion Rate Optimization)
+Basic SEO knowledge for eCommerce
+What You’ll Gain
+
+Hands-on experience with real Shopify projects
+Exposure to end-to-end eCommerce development
+Mentorship from senior developers
+Potential PPO based on performance
+    `
+  }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

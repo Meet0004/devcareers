@@ -1,33 +1,33 @@
 import React, { useState } from 'react'
-import SectionCard      from '../../components/legal/SectionCard'
-import Highlight        from '../../components/legal/Highlight'
+import SectionCard from '../../components/legal/SectionCard'
+import Highlight from '../../components/legal/Highlight'
 import StickySidebarNav from '../../components/legal/StickySidebarNav'
-import PageHero         from '../../components/legal/PageHero'
-import MeetSoniCard     from '../../components/legal/MeetSoniCard'
-import BulletList       from '../../components/legal/BulletList'
+import PageHero from '../../components/legal/PageHero'
+import MeetSoniCard from '../../components/legal/MeetSoniCard'
+import BulletList from '../../components/legal/BulletList'
 
 const sections = [
-  { id: 'agreement',      title: 'Agreement to Terms',      emoji: '📜' },
-  { id: 'eligibility',    title: 'Eligibility',             emoji: '🎓' },
-  { id: 'services',       title: 'Our Services',            emoji: '🛠️' },
-  { id: 'permitted-use',  title: 'Permitted Use',           emoji: '✅' },
-  { id: 'prohibited-use', title: 'Prohibited Use',          emoji: '🚫' },
-  { id: 'intellectual',   title: 'Intellectual Property',   emoji: '©️'  },
-  { id: 'purchases',      title: 'Purchases & Refunds',     emoji: '🛒' },
-  { id: 'disclaimer',     title: 'Disclaimers',             emoji: '⚠️' },
-  { id: 'liability',      title: 'Limitation of Liability', emoji: '⚖️' },
-  { id: 'third-party',    title: 'Third-Party Links',       emoji: '🔗' },
-  { id: 'termination',    title: 'Termination',             emoji: '🔒' },
-  { id: 'changes',        title: 'Changes to Terms',        emoji: '📝' },
-  { id: 'governing-law',  title: 'Governing Law',           emoji: '🏛️' },
-  { id: 'contact',        title: 'Contact Us',              emoji: '💬' },
+  { id: 'agreement', title: 'Agreement to Terms', emoji: '📜' },
+  { id: 'eligibility', title: 'Eligibility', emoji: '🎓' },
+  { id: 'services', title: 'Our Services', emoji: '🛠️' },
+  { id: 'permitted-use', title: 'Permitted Use', emoji: '✅' },
+  { id: 'prohibited-use', title: 'Prohibited Use', emoji: '🚫' },
+  { id: 'intellectual', title: 'Intellectual Property', emoji: '©️' },
+  { id: 'purchases', title: 'Purchases & Refunds', emoji: '🛒' },
+  { id: 'disclaimer', title: 'Disclaimers', emoji: '⚠️' },
+  { id: 'liability', title: 'Limitation of Liability', emoji: '⚖️' },
+  { id: 'third-party', title: 'Third-Party Links', emoji: '🔗' },
+  { id: 'termination', title: 'Termination', emoji: '🔒' },
+  { id: 'changes', title: 'Changes to Terms', emoji: '📝' },
+  { id: 'governing-law', title: 'Governing Law', emoji: '🏛️' },
+  { id: 'contact', title: 'Contact Us', emoji: '💬' },
 ]
 
 const borderColors = [
-  'border-amber-400',  'border-orange-400', 'border-blue-400',    'border-green-400',
-  'border-red-400',    'border-purple-400', 'border-teal-400',    'border-pink-400',
-  'border-yellow-400', 'border-indigo-400', 'border-rose-400',    'border-cyan-400',
-  'border-emerald-400','border-orange-500',
+  'border-amber-400', 'border-orange-400', 'border-blue-400', 'border-green-400',
+  'border-red-400', 'border-purple-400', 'border-teal-400', 'border-pink-400',
+  'border-yellow-400', 'border-indigo-400', 'border-rose-400', 'border-cyan-400',
+  'border-emerald-400', 'border-orange-500',
 ]
 
 const Terms_and_conditions = () => {
@@ -176,7 +176,6 @@ const Terms_and_conditions = () => {
               ))}
             </div>
           </SectionCard>
-
           {/* 6. Intellectual Property */}
           <SectionCard id="intellectual" emoji="©️" title="Intellectual Property" borderColor={borderColors[5]}>
             <p>All content on DevCareers falls into two categories of ownership:</p>
@@ -222,6 +221,81 @@ const Terms_and_conditions = () => {
               </p>
             </Highlight>
           </SectionCard>
+          {/* 7. Purchases & Refunds */}
+          <SectionCard id="purchases" emoji="🛒" title="Purchases & Refunds" borderColor={borderColors[6]}>
+            <p>
+              Premium digital resources are currently sold via <strong>Topmate</strong>. Razorpay integration is
+              coming soon for direct in-platform purchases.
+            </p>
+
+            <div className="space-y-4">
+              <div className="bg-teal-50 border-2 border-teal-200 rounded-xl p-5">
+                <h3 className="font-bold text-teal-900 mb-3">💳 Payment</h3>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li className="flex items-start gap-2"><span className="text-teal-500 font-bold mt-0.5">•</span><span>All payments are processed securely through <strong>Topmate</strong>. DevCareers does not store your payment card details.</span></li>
+                  <li className="flex items-start gap-2"><span className="text-teal-500 font-bold mt-0.5">•</span><span>Prices are listed in <strong>Indian Rupees (₹)</strong> and are inclusive of any applicable taxes.</span></li>
+                  <li className="flex items-start gap-2"><span className="text-teal-500 font-bold mt-0.5">•</span><span>Resource prices range from <strong>Free to ₹49</strong> to ensure accessibility for all students.</span></li>
+                </ul>
+              </div>
+
+              <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-5">
+                <h3 className="font-bold text-orange-900 mb-3">↩️ Refund Policy</h3>
+                <p className="text-sm text-gray-700 mb-3">
+                  Because our products are <strong>digital downloads</strong>, all sales are generally final.
+                  However, we handle refund requests on a <strong>case-by-case basis</strong> with genuine empathy:
+                </p>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li className="flex items-start gap-2"><span className="text-green-500 font-bold mt-0.5">✓</span><span><strong>Eligible:</strong> Resource is significantly different from its description, file is corrupted or inaccessible, or technical error prevented delivery.</span></li>
+                  <li className="flex items-start gap-2"><span className="text-red-500 font-bold mt-0.5">✗</span><span><strong>Not eligible:</strong> Change of mind after download, or claiming a resource is "not useful" after full access has been granted.</span></li>
+                </ul>
+                <p className="text-sm text-gray-700 mt-3">
+  To raise any purchase concern, please submit a{' '}
+  <a href="/purchase-query" className="text-amber-600 hover:underline font-medium">Purchase Query</a>{' '}
+  on our website. We will respond within <strong>48 hours</strong>.
+</p>
+              </div>
+
+              {/* NEW: Duplicate Purchase / Goodwill Policy */}
+              <div className="bg-green-50 border-2 border-green-200 rounded-xl p-5">
+                <h3 className="font-bold text-green-900 mb-3">🎁 Duplicate Purchase & Goodwill Policy</h3>
+                <p className="text-sm text-gray-700 mb-3">
+                  If you accidentally purchase a resource that is already included in a bundle you own (e.g., buying
+                  an individual guide that is part of the Complete Placement Kit), we want to make it right.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-700 mb-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 font-bold mt-0.5">✓</span>
+                    <span>
+                      <strong>No cash refunds</strong> are issued in such cases. Instead, as a goodwill gesture,
+                      you may choose <strong>any other resource of equivalent value</strong> at no extra cost.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 font-bold mt-0.5">✓</span>
+                    <span>
+                      To claim your goodwill resource, you must first submit a{' '}
+                      <a href="/purchase-query" className="text-amber-600 hover:underline font-medium">Purchase Query</a>{' '}
+                      on our website so we can verify your purchase and process your request.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 font-bold mt-0.5">✓</span>
+                    <span>
+                      Once your query is submitted, Meet will personally review it and follow up within{' '}
+                      <strong>48 hours</strong>.
+                    </span>
+                  </li>
+                </ul>
+                <Highlight color="amber">
+                  <p className="text-sm">
+                    💡 <strong>Tip:</strong> Before purchasing, check whether the resource is already included in any
+                    bundle listed on our Resources tab to avoid duplicate purchases.
+                  </p>
+                </Highlight>
+              </div>
+            </div>
+          </SectionCard>
+
 
           {/* 7. Purchases & Refunds */}
           <SectionCard id="purchases" emoji="🛒" title="Purchases & Refunds" borderColor={borderColors[6]}>
@@ -385,7 +459,7 @@ const Terms_and_conditions = () => {
             <Highlight color="amber">
               <p className="text-sm">
                 If your access is terminated due to a Terms violation, you will <strong>not be entitled to a
-                refund</strong> for any purchases made. If you believe a termination was made in error, you may
+                  refund</strong> for any purchases made. If you believe a termination was made in error, you may
                 appeal by emailing <strong>{import.meta.env.VITE_RECIPIENT_EMAIL}</strong>.
               </p>
             </Highlight>

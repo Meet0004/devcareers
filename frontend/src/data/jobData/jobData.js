@@ -2499,7 +2499,7 @@ Job Timing: Full Time
 
     `
   }
-  ,{ id: 200 , company: 'Cop&Drop', role: 'Full-Stack Engineer',
+  ,{ id: 194 , company: 'Cop&Drop', role: 'Full-Stack Engineer',
     hiringLink:'https://wellfound.com/l/2C6e6B',
     fullDescription:`
 Remote | Bangalore Urban | No experience required | Internship
@@ -2549,7 +2549,114 @@ Understand databases (MongoDB / Prisma)
 Have built something beyond tutorials
     `
   }
-  ,{ id: 201, company: 'Zerotrail', role: 'Software Engineer- Intern',
+  ,{ id: 195, company: 'Purple Block', role: 'Shopify Developer Intern',
+    hiringLink:'https://wellfound.com/l/2C5wR6',
+    fullDescription:`
+Bangalore Urban | No experience required | Internship
+Job Location: Bangalore Urban
+Remote Work Policy: Onsite or remote
+Hires remotely in India
+Visa Sponsorship: Not Available
+
+Preferred Timezones: Central Time, Eastern Time
+Relocation: Allowed
+
+We are looking for a Shopify Developer Intern who is eager to build, customize, and optimize Shopify stores. This role offers hands-on experience in theme customization, performance optimization, and real-world eCommerce development.
+
+This is not a passive internship — you’ll work on live stores and real client projects.
+
+Key Responsibilities
+
+Assist in developing and customizing Shopify themes
+Modify and optimize Shopify stores using Liquid, HTML, CSS, and JavaScript
+Work on Shopify app integrations and third-party APIs
+Implement UI/UX improvements for better conversion rates
+Optimize store performance and page speed
+Debug issues and provide technical support
+Collaborate with design and marketing teams
+Required Skills
+
+Basic understanding of Shopify platform
+Knowledge of Liquid templating language
+Good understanding of HTML, CSS, JavaScript
+Familiarity with responsive design principles
+Understanding of REST APIs (bonus)
+Git/GitHub knowledge (preferred)
+Good to Have
+
+Experience working on a live Shopify store
+Knowledge of Shopify apps & plugin ecosystem
+Understanding of CRO (Conversion Rate Optimization)
+Basic SEO knowledge for eCommerce
+What You’ll Gain
+
+Hands-on experience with real Shopify projects
+Exposure to end-to-end eCommerce development
+Mentorship from senior developers
+Potential PPO based on performance
+    `
+  }
+  ,{ id: 196, company: 'Google', role: 'Web Application Engineer',
+    hiringLink:'https://unstop.com/o/ZOqcaKl?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+Note: By applying to this position you will have an opportunity to share your preferred working location from the following: Bengaluru, Karnataka, India; Pune, Maharashtra, India.
+
+Minimum qualifications:
+Bachelor's degree in Computer Science, Engineering, Mathematics, a related field, or equivalent practical experience.
+Experience with Angular.
+Experience with a public cloud provider, such as Google Cloud Platform.
+Experience with one or more languages such as Java, Python, JavaScript, or similar.
+
+Preferred qualifications:
+Google Cloud Platform or other cloud certification(s).
+Experience working with a cross-functional, geographically dispersed team and customer base and collaborating with channel partners, systems integrators, and third-party developers to deliver solutions.
+Understanding of authentication and authorization in web applications.
+Understanding of the cloud marketplace and the differentiators of various cloud offerings.
+Ability to learn and work with new and emerging technologies, methodologies, and solutions in the cloud/IT technology space.
+About the job
+The Google Cloud Platform team helps customers transform and build what's next for their business — all with technology built in the cloud. Our products are developed for security, reliability and scalability, running the full stack from infrastructure to applications to devices and hardware. Our teams are dedicated to helping our customers — developers, small and large businesses, educational institutions and government agencies — see the benefits of our technology come to life. As part of an entrepreneurial team in this rapidly growing business, you will play a key role in understanding the needs of our customers and help shape the future of businesses of all sizes use technology to connect with customers, employees and partners.
+
+Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.
+
+Responsibilities
+Design, develop, and maintain web applications deployed on cloud infrastructure.
+Work with product managers, technical leads, and developers to deliver implementations of web applications.
+Collaborate with a cross-functional team to deliver solutions that meet the evolving needs of the business.
+Understand client requirements and translate them into functional web applications.
+Leverage cloud platforms to build and deploy web applications.
+    `
+  }
+  ,{ id: 197, company: 'Siemens Healthcare Private Limited', role: 'Data Engineer',
+    hiringLink:'https://unstop.com/jobs/data-engineer-siemens-healthcare-private-limited-1652056?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+    Eligibility: Fresher
+
+Siemens Healthcare is hiring for the role of Data Engineer!
+Responsibilities of the Candidate:
+Data Preparation & Processing: Identify, collect, clean, and preprocess large datasets from various sources. Apply statistical analysis, machine learning algorithms, and data mining techniques to extract meaningful insights.
+Prototype & Tool Development: Develop, test, and deploy quick proof-of-concept models and data products to validate potential solutions.
+Communication & Visualization: Effectively communicate complex technical concepts and findings to non-technical stakeholders through clear presentations and compelling data visualizations.
+Cross-functional Collaboration: Work closely with cross-functional teams, including product, engineering, quality and service, to ensure data solutions are aligned with business goals.
+Continuous Learning & Improvement: Engage in continuous upskilling in Python, SQL, statistical analysis, and fundamental machine‑learning concepts.
+Requirements:
+Bachelor’s degree or Master’s in Computer Science, Statistics, Mathematics, Data Science, or a related quantitative field.
+Proficiency in programming languages such as Python (with libraries like pandas, scikit-learn, TensorFlow).
+Strong understanding of statistical modeling, machine learning algorithms, and data mining techniques.
+Experience with data visualization tools (e.g., Power BI, Power Apps, Matplotlib, etc.)
+Solid understanding of SQL and experience working with databases
+Strong problem‑solving mindset and ability to work independently on well-defined tasks.
+Clear communication skills for explaining basic analytical findings.
+Job Location(s): Bengaluru
+Illustration of project workflow
+Work Detail
+Working Days: 5 Days
+Job Type / Timing
+Job Type/Timing
+Job Type: In Office
+Job Timing: Full Time
+    `
+  }
+  ,{ id: 198, company: 'Zerotrail', role: 'Software Engineer- Intern',
     hiringLink:'https://wellfound.com/l/2Bpvaj',
     fullDescription:`
     Compensation
@@ -2607,232 +2714,222 @@ About the Company
 The company is building an AI-native security agent.
 
 Product name: Zerotrail
-
 Goal: Find and fix vulnerabilities before code is even written.
-
 Focus areas:
-
 LLM-first architecture
-
 Autonomous security systems
-
 Developer-speed security automation
-
 Company stage:
-
 Early stage
-
 Funded
-
 Highly technical team
-
 Role Overview
-
 You will work across the entire stack including:
-
 Backend infrastructure
-
 AI workflows
-
 Frontend user experience
-
 There are no strict silos, meaning you will:
-
 Work on product development
-
 Collaborate on design decisions
-
 Help shape the features being shipped
-
 Responsibilities
-
 You will:
-
 Build and ship features end-to-end
-
 Dashboards
-
 Integrations
-
 Backend jobs
-
-Own parts of the AI pipeline
-
+Own parts of the AI pipelin
 Prompt engineering
-
 Prompt chaining
-
 Evaluations
-
 Work closely with the founder
-
 Technical decisions
-
 Product decisions
-
 Integrate the product with developer tools such as:
-
 GitHub
-
 Linear
-
 Other dev tools
-
 Write clean, testable code
-
 Ship features quickly and efficiently
-
 Tech Stack
 Frontend
-
 TypeScript
-
 Next.js
-
 Tailwind CSS
-
 Backend
-
 Node.js
-
 Python
-
 PostgreSQL
-
 Redis
-
 AI Stack
-
 OpenAI
-
 LangChain
-
 LlamaIndex
-
 Vector Databases
-
 Infrastructure
-
 Railway
-
 Supabase
-
 Docker
-
 Ideal Candidate
-
 They are looking for someone who:
-
 Builds fast and efficiently
-
 Writes clear and maintainable code
-
 Can debug problems independently
-
 Does not require constant guidance
-
 Has built real projects
-
 Side projects are valued more than internships
-
 Has experience with AI tools or is willing to learn them quickly
-
 Bonus Skills (Nice to Have)
-
 Interest in developer tools
-
 Interest in security
-
 Interest in autonomous AI agents
-
 Why Join
-
 Opportunity to become part of the early team
-
 Work directly with the founder
-
 Build and ship real products
-
 Strong growth potential — if performance is good, the role may convert beyond an internship
     `
   }
-  ,{ id: 202, company: 'Purple Block', role: 'Shopify Developer Intern',
-    hiringLink:'https://wellfound.com/l/2C5wR6',
+  ,{ id: 199, company: 'OneAssure', role: 'SDE - Intern (Platform Engineering)',
+    hiringLink:'https://wellfound.com/l/2C67d1',
     fullDescription:`
-Bangalore Urban | No experience required | Internship
-Job Location: Bangalore Urban
-Remote Work Policy: Onsite or remote
-Hires remotely in India
-Visa Sponsorship: Not Available
-
-Preferred Timezones: Central Time, Eastern Time
-Relocation: Allowed
-
-We are looking for a Shopify Developer Intern who is eager to build, customize, and optimize Shopify stores. This role offers hands-on experience in theme customization, performance optimization, and real-world eCommerce development.
-
-This is not a passive internship — you’ll work on live stores and real client projects.
-
-Key Responsibilities
-
-Assist in developing and customizing Shopify themes
-Modify and optimize Shopify stores using Liquid, HTML, CSS, and JavaScript
-Work on Shopify app integrations and third-party APIs
-Implement UI/UX improvements for better conversion rates
-Optimize store performance and page speed
-Debug issues and provide technical support
-Collaborate with design and marketing teams
-Required Skills
-
-Basic understanding of Shopify platform
-Knowledge of Liquid templating language
-Good understanding of HTML, CSS, JavaScript
-Familiarity with responsive design principles
-Understanding of REST APIs (bonus)
-Git/GitHub knowledge (preferred)
-Good to Have
-
-Experience working on a live Shopify store
-Knowledge of Shopify apps & plugin ecosystem
-Understanding of CRO (Conversion Rate Optimization)
-Basic SEO knowledge for eCommerce
-What You’ll Gain
-
-Hands-on experience with real Shopify projects
-Exposure to end-to-end eCommerce development
-Mentorship from senior developers
-Potential PPO based on performance
+    Monthly Stipend: ₹20,000 – ₹25,000
+Internship Duration: 6 Months
+PPO Oppurtunity: Yes
+CTC Range Post Full Time Conversion: 7-9 LPA
+The Mission
+At OneAssure, we aren't just selling policies; we are tearing down the legacy walls of the Indian health insurance sector. To build a highly available, multi-tier discovery and distribution engine, we need an unbreakable foundation. We are looking for a Platform Engineering Intern to join our core team. You won't just be building features; you will be building the forge where all features are made.
+Who You Are
+You are a systems thinker and the ultimate aspiring generalist. We know that a fresher won't walk through the door with a masterclass in multi-cloud Kubernetes federation or SOC2 compliance. What we do expect is a relentless, obsessive appetite to learn how large-scale systems actually work under the hood Reliably.
+This is an umbrella role. You will get exposure, oppurtunity, & mentoring across the entire engineering domain: from cloud infrastructure and security to data pipelines and site reliability. If your idea of fun involves tearing down a Linux OS, setting up a home lab, debugging an application's 503 / 504 status code or figuring out why a network packet was dropped, you belong here.
+What You'll Ship & Own
+The Foundation Builder: You will write reusable technology modules and core libraries in Golang and Python that empower the rest of the engineering team to move faster and safer.
+The Multi-Cloud Orchestrator: You will learn to treat infrastructure as software. You'll get hands-on with AWS, GCP, Azure, and Bare Metal environments, orchestrating containers via Docker and Kubernetes.
+Infrastructure as Code (IaC) & Resilience: You will help architect Business Continuity (BCP) and Disaster Recovery (DR) strategies. You will leverage Terraform, Terragrunt, Helm, Ansible, Argo Workflows, and Jenkins to ensure our infrastructure is reproducible, scalable, and resilient.
+Monthly Stipend: ₹20,000 – ₹25,000
+Internship Duration: 6 Months
+PPO Oppurtunity: Yes
+CTC Range Post Full Time Conversion: 7-9 LPA
+The Mission
+At OneAssure, we aren't just selling policies; we are tearing down the legacy walls of the Indian health insurance sector. To build a highly available, multi-tier discovery and distribution engine, we need an unbreakable foundation. We are looking for a Platform Engineering Intern to join our core team. You won't just be building features; you will be building the forge where all features are made.
+Who You Are
+You are a systems thinker and the ultimate aspiring generalist. We know that a fresher won't walk through the door with a masterclass in multi-cloud Kubernetes federation or SOC2 compliance. What we do expect is a relentless, obsessive appetite to learn how large-scale systems actually work under the hood Reliably.
+This is an umbrella role. You will get exposure, oppurtunity, & mentoring across the entire engineering domain: from cloud infrastructure and security to data pipelines and site reliability. If your idea of fun involves tearing down a Linux OS, setting up a home lab, debugging an application's 503 / 504 status code or figuring out why a network packet was dropped, you belong here.
+What You'll Ship & Own
+The Foundation Builder: You will write reusable technology modules and core libraries in Golang and Python that empower the rest of the engineering team to move faster and safer.
+The Multi-Cloud Orchestrator: You will learn to treat infrastructure as software. You'll get hands-on with AWS, GCP, Azure, and Bare Metal environments, orchestrating containers via Docker and Kubernetes.
+Infrastructure as Code (IaC) & Resilience: You will help architect Business Continuity (BCP) and Disaster Recovery (DR) strategies. You will leverage Terraform, Terragrunt, Helm, Ansible, Argo Workflows, and Jenkins to ensure our infrastructure is reproducible, scalable, and resilient.
+The Guardian of the Gates (DevSecOps): You will be heavily involved in securing our public-facing applications against vulnerabilities (VAPT & OWASP). You’ll learn the art of encryption, managing secrets (via Kubernetes External Secrets, HashiCorp Vault), and locking down physical/network security on the cloud using VPNs.
+Governance & Compliance: You will help us ensure our infrastructure doesn't just run well, but runs legally and securely, aligning with strict IRDAI (ISNP), ISO 27001 and SOC2 Type 2 compliance standards through periodic assessments.
+Data Pipelines & Observability: You will assist in the creation and maintenance of robust data pipelines and Business Intelligence (BI) tools, ensuring data flows securely and reliably across our ecosystem.
+The AI Pragmatist (Infra Edition): You leverage AI to write boilerplate Terraform or parse complex logs, but you never blindly deploy LLM-generated IAM policies or security groups. You understand the core concepts enough to spot when the AI is hallucinating a critical vulnerability.
+Your Arsenal (Qualifications)
+The Mindset: A deeply ingrained curiosity about how things work. You aren't satisfied with a "Hello World" app; you want to know how the traffic reached the server, how the DNS resolved, how the memory was allocated and why it spiked when your server is at a certain throughput.
+The Core Fundamentals: A strong grasp of Linux operating systems, basic networking (TCP/IP, DNS, BGP, ARP, NAT), and strong exposure to programming languages such as Python or GoLang.
+The Proof of Passion: We don't expect a polished resume of enterprise experience. We do expect proof of interest. Show us a messy but functional Dockerized side project, a script you wrote to automate a personal task, your GitHub contributions, a home lab setup that you did or a bare metal K8s setup that you did, application vulnerabilities you identified, IAC setup you did in the past, or tell us about a time you accidentally broke your system and had to fix it from the command line. You are welcome to show any opensource contributions you did or any tools / libraries that you have opensourced. It can also include work such as a K8s Cluster setup with Gateway Controllers, Ingestion Webhooks, Service Mesh setup with custom Networking Policies.
+The Communicator: Exceptional analytical skills, a low ego, and the ability to read dense documentation without losing your mind.
+How To Apply
+Candidates who have thoroughly read and understood the JD, believe they are qualified, can share your profiles at engineering+platformintern@oneassure.in
     `
   }
-  ,{ id: 203, company: 'Google', role: 'Web Application Engineer',
-    hiringLink:'https://unstop.com/o/ZOqcaKl?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+  ,{ id: 200, company: 'Full Stack Developer', role: 'HBL ENGINEERING LIMITED',
+    hiringLink:'https://www.naukri.com/job-listings-full-stack-developer-hbl-engineering-limited-shamirpet-hyderabad-0-to-2-years-280226013906',
     fullDescription:`
-Note: By applying to this position you will have an opportunity to share your preferred working location from the following: Bengaluru, Karnataka, India; Pune, Maharashtra, India.
+  Job highlights
+B.Tech in CSE or IT with strong programming skills in Python and React.js
+Develop and maintain desktop and IoT applications, implement backend services, and collaborate with teams
+Salary commensurate with skills and experience
+Job match score
+Early Applicant
+Keyskills
+Location
+Work Experience
+Job description
+Subject:
+Urgent Hiring - Full Stack Developer (0-2Year Experience) - Onsite Role
+Job Title: Full Stack Developer
+Location: Shameerpet, Hyderabad - HBL Engineering Limited
+Working Days: 6 Days a Week (Onsite)
+Experience: 0-2 Years
+Age Criteria: 21-25 Years
+About the Role:
+We are looking for a passionate and self-driven Full Stack Developer with a strong foundation in computer science fundamentals. The ideal candidate must be able to write clean, efficient code independently without relying on AI tools. You will be involved in developing desktop applications and IoT applications for our engineering solutions.
+Mandatory Qualification:
 
-Minimum qualifications:
-Bachelor's degree in Computer Science, Engineering, Mathematics, a related field, or equivalent practical experience.
-Experience with Angular.
-Experience with a public cloud provider, such as Google Cloud Platform.
-Experience with one or more languages such as Java, Python, JavaScript, or similar.
+B.Tech in Computer Science Engineering (CSE) or Information Technology (IT) ONLY. Should not have backlogs
+Salary: Commensurate with Skills & Experience.
+Roles & Responsibilities:
 
-Preferred qualifications:
-Google Cloud Platform or other cloud certification(s).
-Experience working with a cross-functional, geographically dispersed team and customer base and collaborating with channel partners, systems integrators, and third-party developers to deliver solutions.
-Understanding of authentication and authorization in web applications.
-Understanding of the cloud marketplace and the differentiators of various cloud offerings.
-Ability to learn and work with new and emerging technologies, methodologies, and solutions in the cloud/IT technology space.
-About the job
-The Google Cloud Platform team helps customers transform and build what's next for their business — all with technology built in the cloud. Our products are developed for security, reliability and scalability, running the full stack from infrastructure to applications to devices and hardware. Our teams are dedicated to helping our customers — developers, small and large businesses, educational institutions and government agencies — see the benefits of our technology come to life. As part of an entrepreneurial team in this rapidly growing business, you will play a key role in understanding the needs of our customers and help shape the future of businesses of all sizes use technology to connect with customers, employees and partners.
+Develop and maintain desktop applications using Python (Tkinter) and QT5 framework
+Work on IoT applications and integrate hardware-software solutions
+Design and implement responsive frontend interfaces using React.js
+Build scalable backend services using FastAPI and REST APIs
+Manage and optimize PostgreSQL databases
+Implement multithreading concepts for performance optimization
+Write optimized, clean, and maintainable code
+Collaborate with cross-functional teams for end-to-end project delivery
+Use Git for version control and participate in CI/CD pipeline integration
+Debug, troubleshoot, and resolve technical issues independently
+Create basic documentation using MS Excel, Word, and PowerPoint
 
-Google Cloud accelerates every organization’s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.
 
-Responsibilities
-Design, develop, and maintain web applications deployed on cloud infrastructure.
-Work with product managers, technical leads, and developers to deliver implementations of web applications.
-Collaborate with a cross-functional team to deliver solutions that meet the evolving needs of the business.
-Understand client requirements and translate them into functional web applications.
-Leverage cloud platforms to build and deploy web applications.
+Technical Skills Required:
+Programming & Core Concepts:
+
+Strong grasp of Data Structures & Algorithms (DSA)
+Object-Oriented Programming (OOPS) concepts
+Multithreading concepts
+Code optimization techniques
+Python (including Tkinter for GUI applications)
+QT5 framework knowledge
+Frontend Development:
+
+HTML, CSS, JavaScript (ES6)
+React.js (strong knowledge required)
+Backend Development:
+
+FastAPI
+REST API development
+Database:
+
+PostgreSQL/MySQL/SQL
+DevOps & Tools:
+
+Docker
+CI/CD pipeline knowledge
+Git version control
+Additional Skills (Preferred):
+
+Basic knowledge of IoT platforms/protocols (MQTT, HTTP, etc.)
+Full Stack Development certification (added advantage)
+Basic MS Excel, Word, PowerPoint skills
+Good communication skills
+Important Note:
+
+Candidate must be able to write code independently without AI assistance (AI tools will NOT be accessible during work)
+Onsite role | 6 days working
+1
+
+Role: Full Stack Developer
+Industry Type: Electronics Manufacturing (Electronic Manufacturing Services (EMS))
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE)
+Key Skills
     `
   }
+  // ,{ id: , company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
+  // ,{ id: , company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

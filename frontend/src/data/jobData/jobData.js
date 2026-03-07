@@ -2790,136 +2790,136 @@ Build and ship real products
 Strong growth potential — if performance is good, the role may convert beyond an internship
     `
   }
-//   ,{ id: 199, company: 'OneAssure', role: 'SDE - Intern (Platform Engineering)',
-//     hiringLink:'https://wellfound.com/l/2C67d1',
-//     fullDescription:`
-//     Monthly Stipend: ₹20,000 – ₹25,000
-// Internship Duration: 6 Months
-// PPO Oppurtunity: Yes
-// CTC Range Post Full Time Conversion: 7-9 LPA
-// The Mission
-// At OneAssure, we aren't just selling policies; we are tearing down the legacy walls of the Indian health insurance sector. To build a highly available, multi-tier discovery and distribution engine, we need an unbreakable foundation. We are looking for a Platform Engineering Intern to join our core team. You won't just be building features; you will be building the forge where all features are made.
-// Who You Are
-// You are a systems thinker and the ultimate aspiring generalist. We know that a fresher won't walk through the door with a masterclass in multi-cloud Kubernetes federation or SOC2 compliance. What we do expect is a relentless, obsessive appetite to learn how large-scale systems actually work under the hood Reliably.
-// This is an umbrella role. You will get exposure, oppurtunity, & mentoring across the entire engineering domain: from cloud infrastructure and security to data pipelines and site reliability. If your idea of fun involves tearing down a Linux OS, setting up a home lab, debugging an application's 503 / 504 status code or figuring out why a network packet was dropped, you belong here.
-// What You'll Ship & Own
-// The Foundation Builder: You will write reusable technology modules and core libraries in Golang and Python that empower the rest of the engineering team to move faster and safer.
-// The Multi-Cloud Orchestrator: You will learn to treat infrastructure as software. You'll get hands-on with AWS, GCP, Azure, and Bare Metal environments, orchestrating containers via Docker and Kubernetes.
-// Infrastructure as Code (IaC) & Resilience: You will help architect Business Continuity (BCP) and Disaster Recovery (DR) strategies. You will leverage Terraform, Terragrunt, Helm, Ansible, Argo Workflows, and Jenkins to ensure our infrastructure is reproducible, scalable, and resilient.
-// Monthly Stipend: ₹20,000 – ₹25,000
-// Internship Duration: 6 Months
-// PPO Oppurtunity: Yes
-// CTC Range Post Full Time Conversion: 7-9 LPA
-// The Mission
-// At OneAssure, we aren't just selling policies; we are tearing down the legacy walls of the Indian health insurance sector. To build a highly available, multi-tier discovery and distribution engine, we need an unbreakable foundation. We are looking for a Platform Engineering Intern to join our core team. You won't just be building features; you will be building the forge where all features are made.
-// Who You Are
-// You are a systems thinker and the ultimate aspiring generalist. We know that a fresher won't walk through the door with a masterclass in multi-cloud Kubernetes federation or SOC2 compliance. What we do expect is a relentless, obsessive appetite to learn how large-scale systems actually work under the hood Reliably.
-// This is an umbrella role. You will get exposure, oppurtunity, & mentoring across the entire engineering domain: from cloud infrastructure and security to data pipelines and site reliability. If your idea of fun involves tearing down a Linux OS, setting up a home lab, debugging an application's 503 / 504 status code or figuring out why a network packet was dropped, you belong here.
-// What You'll Ship & Own
-// The Foundation Builder: You will write reusable technology modules and core libraries in Golang and Python that empower the rest of the engineering team to move faster and safer.
-// The Multi-Cloud Orchestrator: You will learn to treat infrastructure as software. You'll get hands-on with AWS, GCP, Azure, and Bare Metal environments, orchestrating containers via Docker and Kubernetes.
-// Infrastructure as Code (IaC) & Resilience: You will help architect Business Continuity (BCP) and Disaster Recovery (DR) strategies. You will leverage Terraform, Terragrunt, Helm, Ansible, Argo Workflows, and Jenkins to ensure our infrastructure is reproducible, scalable, and resilient.
-// The Guardian of the Gates (DevSecOps): You will be heavily involved in securing our public-facing applications against vulnerabilities (VAPT & OWASP). You’ll learn the art of encryption, managing secrets (via Kubernetes External Secrets, HashiCorp Vault), and locking down physical/network security on the cloud using VPNs.
-// Governance & Compliance: You will help us ensure our infrastructure doesn't just run well, but runs legally and securely, aligning with strict IRDAI (ISNP), ISO 27001 and SOC2 Type 2 compliance standards through periodic assessments.
-// Data Pipelines & Observability: You will assist in the creation and maintenance of robust data pipelines and Business Intelligence (BI) tools, ensuring data flows securely and reliably across our ecosystem.
-// The AI Pragmatist (Infra Edition): You leverage AI to write boilerplate Terraform or parse complex logs, but you never blindly deploy LLM-generated IAM policies or security groups. You understand the core concepts enough to spot when the AI is hallucinating a critical vulnerability.
-// Your Arsenal (Qualifications)
-// The Mindset: A deeply ingrained curiosity about how things work. You aren't satisfied with a "Hello World" app; you want to know how the traffic reached the server, how the DNS resolved, how the memory was allocated and why it spiked when your server is at a certain throughput.
-// The Core Fundamentals: A strong grasp of Linux operating systems, basic networking (TCP/IP, DNS, BGP, ARP, NAT), and strong exposure to programming languages such as Python or GoLang.
-// The Proof of Passion: We don't expect a polished resume of enterprise experience. We do expect proof of interest. Show us a messy but functional Dockerized side project, a script you wrote to automate a personal task, your GitHub contributions, a home lab setup that you did or a bare metal K8s setup that you did, application vulnerabilities you identified, IAC setup you did in the past, or tell us about a time you accidentally broke your system and had to fix it from the command line. You are welcome to show any opensource contributions you did or any tools / libraries that you have opensourced. It can also include work such as a K8s Cluster setup with Gateway Controllers, Ingestion Webhooks, Service Mesh setup with custom Networking Policies.
-// The Communicator: Exceptional analytical skills, a low ego, and the ability to read dense documentation without losing your mind.
-// How To Apply
-// Candidates who have thoroughly read and understood the JD, believe they are qualified, can share your profiles at engineering+platformintern@oneassure.in
-//     `
-//   }
-//   ,{ id: 200, company: 'Full Stack Developer', role: 'HBL ENGINEERING LIMITED',
-//     hiringLink:'https://www.naukri.com/job-listings-full-stack-developer-hbl-engineering-limited-shamirpet-hyderabad-0-to-2-years-280226013906',
-//     fullDescription:`
-//   Job highlights
-// B.Tech in CSE or IT with strong programming skills in Python and React.js
-// Develop and maintain desktop and IoT applications, implement backend services, and collaborate with teams
-// Salary commensurate with skills and experience
-// Job match score
-// Early Applicant
-// Keyskills
-// Location
-// Work Experience
-// Job description
-// Subject:
-// Urgent Hiring - Full Stack Developer (0-2Year Experience) - Onsite Role
-// Job Title: Full Stack Developer
-// Location: Shameerpet, Hyderabad - HBL Engineering Limited
-// Working Days: 6 Days a Week (Onsite)
-// Experience: 0-2 Years
-// Age Criteria: 21-25 Years
-// About the Role:
-// We are looking for a passionate and self-driven Full Stack Developer with a strong foundation in computer science fundamentals. The ideal candidate must be able to write clean, efficient code independently without relying on AI tools. You will be involved in developing desktop applications and IoT applications for our engineering solutions.
-// Mandatory Qualification:
+  ,{ id: 199, company: 'OneAssure', role: 'SDE - Intern (Platform Engineering)',
+    hiringLink:'https://wellfound.com/l/2C67d1',
+    fullDescription:`
+    Monthly Stipend: ₹20,000 – ₹25,000
+Internship Duration: 6 Months
+PPO Oppurtunity: Yes
+CTC Range Post Full Time Conversion: 7-9 LPA
+The Mission
+At OneAssure, we aren't just selling policies; we are tearing down the legacy walls of the Indian health insurance sector. To build a highly available, multi-tier discovery and distribution engine, we need an unbreakable foundation. We are looking for a Platform Engineering Intern to join our core team. You won't just be building features; you will be building the forge where all features are made.
+Who You Are
+You are a systems thinker and the ultimate aspiring generalist. We know that a fresher won't walk through the door with a masterclass in multi-cloud Kubernetes federation or SOC2 compliance. What we do expect is a relentless, obsessive appetite to learn how large-scale systems actually work under the hood Reliably.
+This is an umbrella role. You will get exposure, oppurtunity, & mentoring across the entire engineering domain: from cloud infrastructure and security to data pipelines and site reliability. If your idea of fun involves tearing down a Linux OS, setting up a home lab, debugging an application's 503 / 504 status code or figuring out why a network packet was dropped, you belong here.
+What You'll Ship & Own
+The Foundation Builder: You will write reusable technology modules and core libraries in Golang and Python that empower the rest of the engineering team to move faster and safer.
+The Multi-Cloud Orchestrator: You will learn to treat infrastructure as software. You'll get hands-on with AWS, GCP, Azure, and Bare Metal environments, orchestrating containers via Docker and Kubernetes.
+Infrastructure as Code (IaC) & Resilience: You will help architect Business Continuity (BCP) and Disaster Recovery (DR) strategies. You will leverage Terraform, Terragrunt, Helm, Ansible, Argo Workflows, and Jenkins to ensure our infrastructure is reproducible, scalable, and resilient.
+Monthly Stipend: ₹20,000 – ₹25,000
+Internship Duration: 6 Months
+PPO Oppurtunity: Yes
+CTC Range Post Full Time Conversion: 7-9 LPA
+The Mission
+At OneAssure, we aren't just selling policies; we are tearing down the legacy walls of the Indian health insurance sector. To build a highly available, multi-tier discovery and distribution engine, we need an unbreakable foundation. We are looking for a Platform Engineering Intern to join our core team. You won't just be building features; you will be building the forge where all features are made.
+Who You Are
+You are a systems thinker and the ultimate aspiring generalist. We know that a fresher won't walk through the door with a masterclass in multi-cloud Kubernetes federation or SOC2 compliance. What we do expect is a relentless, obsessive appetite to learn how large-scale systems actually work under the hood Reliably.
+This is an umbrella role. You will get exposure, oppurtunity, & mentoring across the entire engineering domain: from cloud infrastructure and security to data pipelines and site reliability. If your idea of fun involves tearing down a Linux OS, setting up a home lab, debugging an application's 503 / 504 status code or figuring out why a network packet was dropped, you belong here.
+What You'll Ship & Own
+The Foundation Builder: You will write reusable technology modules and core libraries in Golang and Python that empower the rest of the engineering team to move faster and safer.
+The Multi-Cloud Orchestrator: You will learn to treat infrastructure as software. You'll get hands-on with AWS, GCP, Azure, and Bare Metal environments, orchestrating containers via Docker and Kubernetes.
+Infrastructure as Code (IaC) & Resilience: You will help architect Business Continuity (BCP) and Disaster Recovery (DR) strategies. You will leverage Terraform, Terragrunt, Helm, Ansible, Argo Workflows, and Jenkins to ensure our infrastructure is reproducible, scalable, and resilient.
+The Guardian of the Gates (DevSecOps): You will be heavily involved in securing our public-facing applications against vulnerabilities (VAPT & OWASP). You’ll learn the art of encryption, managing secrets (via Kubernetes External Secrets, HashiCorp Vault), and locking down physical/network security on the cloud using VPNs.
+Governance & Compliance: You will help us ensure our infrastructure doesn't just run well, but runs legally and securely, aligning with strict IRDAI (ISNP), ISO 27001 and SOC2 Type 2 compliance standards through periodic assessments.
+Data Pipelines & Observability: You will assist in the creation and maintenance of robust data pipelines and Business Intelligence (BI) tools, ensuring data flows securely and reliably across our ecosystem.
+The AI Pragmatist (Infra Edition): You leverage AI to write boilerplate Terraform or parse complex logs, but you never blindly deploy LLM-generated IAM policies or security groups. You understand the core concepts enough to spot when the AI is hallucinating a critical vulnerability.
+Your Arsenal (Qualifications)
+The Mindset: A deeply ingrained curiosity about how things work. You aren't satisfied with a "Hello World" app; you want to know how the traffic reached the server, how the DNS resolved, how the memory was allocated and why it spiked when your server is at a certain throughput.
+The Core Fundamentals: A strong grasp of Linux operating systems, basic networking (TCP/IP, DNS, BGP, ARP, NAT), and strong exposure to programming languages such as Python or GoLang.
+The Proof of Passion: We don't expect a polished resume of enterprise experience. We do expect proof of interest. Show us a messy but functional Dockerized side project, a script you wrote to automate a personal task, your GitHub contributions, a home lab setup that you did or a bare metal K8s setup that you did, application vulnerabilities you identified, IAC setup you did in the past, or tell us about a time you accidentally broke your system and had to fix it from the command line. You are welcome to show any opensource contributions you did or any tools / libraries that you have opensourced. It can also include work such as a K8s Cluster setup with Gateway Controllers, Ingestion Webhooks, Service Mesh setup with custom Networking Policies.
+The Communicator: Exceptional analytical skills, a low ego, and the ability to read dense documentation without losing your mind.
+How To Apply
+Candidates who have thoroughly read and understood the JD, believe they are qualified, can share your profiles at engineering+platformintern@oneassure.in
+    `
+  }
+  ,{ id: 200, company: 'Full Stack Developer', role: 'HBL ENGINEERING LIMITED',
+    hiringLink:'https://www.naukri.com/job-listings-full-stack-developer-hbl-engineering-limited-shamirpet-hyderabad-0-to-2-years-280226013906',
+    fullDescription:`
+  Job highlights
+B.Tech in CSE or IT with strong programming skills in Python and React.js
+Develop and maintain desktop and IoT applications, implement backend services, and collaborate with teams
+Salary commensurate with skills and experience
+Job match score
+Early Applicant
+Keyskills
+Location
+Work Experience
+Job description
+Subject:
+Urgent Hiring - Full Stack Developer (0-2Year Experience) - Onsite Role
+Job Title: Full Stack Developer
+Location: Shameerpet, Hyderabad - HBL Engineering Limited
+Working Days: 6 Days a Week (Onsite)
+Experience: 0-2 Years
+Age Criteria: 21-25 Years
+About the Role:
+We are looking for a passionate and self-driven Full Stack Developer with a strong foundation in computer science fundamentals. The ideal candidate must be able to write clean, efficient code independently without relying on AI tools. You will be involved in developing desktop applications and IoT applications for our engineering solutions.
+Mandatory Qualification:
 
-// B.Tech in Computer Science Engineering (CSE) or Information Technology (IT) ONLY. Should not have backlogs
-// Salary: Commensurate with Skills & Experience.
-// Roles & Responsibilities:
+B.Tech in Computer Science Engineering (CSE) or Information Technology (IT) ONLY. Should not have backlogs
+Salary: Commensurate with Skills & Experience.
+Roles & Responsibilities:
 
-// Develop and maintain desktop applications using Python (Tkinter) and QT5 framework
-// Work on IoT applications and integrate hardware-software solutions
-// Design and implement responsive frontend interfaces using React.js
-// Build scalable backend services using FastAPI and REST APIs
-// Manage and optimize PostgreSQL databases
-// Implement multithreading concepts for performance optimization
-// Write optimized, clean, and maintainable code
-// Collaborate with cross-functional teams for end-to-end project delivery
-// Use Git for version control and participate in CI/CD pipeline integration
-// Debug, troubleshoot, and resolve technical issues independently
-// Create basic documentation using MS Excel, Word, and PowerPoint
+Develop and maintain desktop applications using Python (Tkinter) and QT5 framework
+Work on IoT applications and integrate hardware-software solutions
+Design and implement responsive frontend interfaces using React.js
+Build scalable backend services using FastAPI and REST APIs
+Manage and optimize PostgreSQL databases
+Implement multithreading concepts for performance optimization
+Write optimized, clean, and maintainable code
+Collaborate with cross-functional teams for end-to-end project delivery
+Use Git for version control and participate in CI/CD pipeline integration
+Debug, troubleshoot, and resolve technical issues independently
+Create basic documentation using MS Excel, Word, and PowerPoint
 
 
-// Technical Skills Required:
-// Programming & Core Concepts:
+Technical Skills Required:
+Programming & Core Concepts:
 
-// Strong grasp of Data Structures & Algorithms (DSA)
-// Object-Oriented Programming (OOPS) concepts
-// Multithreading concepts
-// Code optimization techniques
-// Python (including Tkinter for GUI applications)
-// QT5 framework knowledge
-// Frontend Development:
+Strong grasp of Data Structures & Algorithms (DSA)
+Object-Oriented Programming (OOPS) concepts
+Multithreading concepts
+Code optimization techniques
+Python (including Tkinter for GUI applications)
+QT5 framework knowledge
+Frontend Development:
 
-// HTML, CSS, JavaScript (ES6)
-// React.js (strong knowledge required)
-// Backend Development:
+HTML, CSS, JavaScript (ES6)
+React.js (strong knowledge required)
+Backend Development:
 
-// FastAPI
-// REST API development
-// Database:
+FastAPI
+REST API development
+Database:
 
-// PostgreSQL/MySQL/SQL
-// DevOps & Tools:
+PostgreSQL/MySQL/SQL
+DevOps & Tools:
 
-// Docker
-// CI/CD pipeline knowledge
-// Git version control
-// Additional Skills (Preferred):
+Docker
+CI/CD pipeline knowledge
+Git version control
+Additional Skills (Preferred):
 
-// Basic knowledge of IoT platforms/protocols (MQTT, HTTP, etc.)
-// Full Stack Development certification (added advantage)
-// Basic MS Excel, Word, PowerPoint skills
-// Good communication skills
-// Important Note:
+Basic knowledge of IoT platforms/protocols (MQTT, HTTP, etc.)
+Full Stack Development certification (added advantage)
+Basic MS Excel, Word, PowerPoint skills
+Good communication skills
+Important Note:
 
-// Candidate must be able to write code independently without AI assistance (AI tools will NOT be accessible during work)
-// Onsite role | 6 days working
-// 1
+Candidate must be able to write code independently without AI assistance (AI tools will NOT be accessible during work)
+Onsite role | 6 days working
+1
 
-// Role: Full Stack Developer
-// Industry Type: Electronics Manufacturing (Electronic Manufacturing Services (EMS))
-// Department: Engineering - Software & QA
-// Employment Type: Full Time, Permanent
-// Role Category: Software Development
-// Education
-// UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE)
-// Key Skills
-//     `
-//   }
+Role: Full Stack Developer
+Industry Type: Electronics Manufacturing (Electronic Manufacturing Services (EMS))
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE)
+Key Skills
+    `
+  }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

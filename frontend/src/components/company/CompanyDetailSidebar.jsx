@@ -15,7 +15,7 @@ const CompanyDetailSidebar = () => {
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
     }
 
-    const limitedShuffled = shuffled.slice(0, 13)
+    const limitedShuffled = shuffled.slice(0, 25)
     return firstItem ? [firstItem, ...limitedShuffled] : limitedShuffled
   }, [])
 

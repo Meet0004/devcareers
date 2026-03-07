@@ -3,6 +3,7 @@ import ApplySection from './ApplySection'
 import CompanyDetailSidebar from './CompanyDetailSidebar'
 import { Link } from 'react-router-dom'
 import JobDescription from './JobDescription'
+import BelowDescriptionPanels from './BelowDescriptionPanels'
 
 const CompanyDetailMain = ({ selectedCompany }) => {
   return (
@@ -25,6 +26,7 @@ const CompanyDetailMain = ({ selectedCompany }) => {
         <ApplySection selectedCompany={selectedCompany} />
 
         <JobDescription description={selectedCompany.fullDescription} />
+        <BelowDescriptionPanels/>
       </div>
 
       {/* RIGHT - Sidebar (full width on mobile, 25% on desktop) */}

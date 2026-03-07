@@ -65,7 +65,7 @@ const Footer = () => (
           <h3 className="font-bold text-white text-base mb-4 uppercase tracking-wide">Social Links</h3>
           <ul className="space-y-2 text-sm">
             {SOCIAL_LINKS.map(({ href, label, icon }) => (
-              <li key={href}>
+              <li key={label}>
                 <a href={href} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline hover:text-white/80 transition-colors">
                   {icon} {label}
@@ -79,7 +79,7 @@ const Footer = () => (
           <h3 className="font-bold text-white text-base mb-2 uppercase tracking-wide">Work With Us</h3>
           <ul className="space-y-2">
             {BUSINESS_LINKS.map(({ href, label }) => (
-              <li key={href}>
+              <li key={label}>
                 <a href={href} className="hover:underline hover:text-white/80 transition-colors">{label}</a>
               </li>
             ))}
@@ -89,11 +89,11 @@ const Footer = () => (
 
     </div>
 
-    <p className="text-center mt-8 text-whitetext-xs border-t border-white/60 pt-4">
-      <p className="text-white text-sm">Last updated: March 2026</p>
-      <p className="text-white text-sm">© 2026 DevCareers. All rights reserved.</p>
-      <p className="text-white font-medium">Built with ❤️ by Meet Soni for students everywhere</p>
-    </p>
+    <div className="text-center mt-8 text-xs border-t border-white/60 pt-4">
+  <p className="text-white text-sm">Last updated: March 2026</p>
+  <p className="text-white text-sm">© 2026 DevCareers. All rights reserved.</p>
+  <p className="text-white font-medium">Built with ❤️ by Meet Soni for students everywhere</p>
+</div>
   </footer>
 )
 

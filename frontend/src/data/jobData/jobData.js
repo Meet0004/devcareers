@@ -2920,6 +2920,122 @@ UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and E
 Key Skills
     `
   }
+  ,{ id: 201, company: 'EY', role: 'Associate Software Engineer',
+    hiringLink:'https://unstop.com/o/xgK7S8J?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+    Category: Software Development, Full Stack Development, Software Development
+
+Eligibility: Fresher
+
+EY is hiring for the role of Associate Software Engineer!
+
+Requirements:
+
+ob Description for Consulting - Engineering
+
+
+About EY
+
+At EY, our purpose is Building a better working world that acts as our “North Star” guiding our more than 400,000 people – providing the context and meaning for the work we do every day. We help digital pioneers fight data piracy; guide governments through cash-flow crises; unlock new medical treatments with data analytics; and pursue high quality audits to build trust in financial markets and business.
+
+Through our integrated service lines – Assurance, Consulting, Strategy and Transactions, and Tax – and our deep sector knowledge, we help our clients to capitalize on new opportunities and assess and manage risk to deliver responsible growth.
+
+EY Global Delivery Services (GDS) is a delivery network spread across ten locations–Spain, Mexico, Sri Lanka, Argentina, India, the Philippines, Poland, Hungary and the UK. From accountants to coders to advisory consultants, we offer a wide variety of fulfilling career opportunities that span all service lines.
+
+Here, you will collaborate with EY teams on exciting projects and work with renowned brands from across the globe. We’ll introduce you to an expanding ecosystem of people, learning, skills and insights that will stay with you throughout your career. To know more about EY GDS, click here.
+
+
+About Consulting Service Line
+
+Our Consulting practice provides differentiated focus on the key business themes to help our clients solve better questions around technology. Our vision is to be recognized as a leading provider of differentiated technology consulting services, harnessing new disruptive technology, alliances and attracting talented people to solve our clients' issues. It's an exciting time to join us and grow your career as a technology professional. A technology career is about far more than leading-edge innovations. It’s about the application of these technologies in the real world to make a real, meaningful impact. We are looking for highly motivated, articulate individuals who have the skills to the technology lifecycle and are passionate about designing innovative solutions to solve complex business problems.
+
+
+Your career in Consulting can span across these technology areas/ services lines:
+
+Digital Technologies: We are a globally integrated digital architecture and engineering team. Our mission is to deliver tailored, custom-built end to end solutions to our customers that are Digital, Cloud Native and Open Source. Our skills include Experience design, UI development, Design Thinking, Architecture & Design, Full stack development (.Net/ Java/ SharePoint/ Power Platform), Emerging Technologies like Block Chain, IoT, AR\VR, Drones, Cloud and DevSecOps. We use industrialized techniques, built on top of agile methods utilizing our global teams to deliver end to end solutions at best unit cost proposition.
+
+Testing Services: We are the yardstick of quality software product. We break something to makethe product stronger and successful. We provide entire gamut of testing services including Business / User acceptance testing. Hence this is a team with all round skills such as functional, technical and process.
+
+Data & Analytics: Data and Analytics is amongst the largest and most versatile practices withinEY. Our sector and domain expertise combined with technical skills in data, cloud, advanced analytics and artificial intelligence differentiates us in the industry. Our talented team possesses cross-sector and cross-domain expertise and a wide array of skills in Information Management (IM), Business Intelligence (BI), Advance Analytics (AA) and Artificial Intelligence (AI).
+
+Oracle: We provide one-stop solution for end-to-end project implementation enabled by Oracle and IBM Products. We use proven methodologies, tools and accelerators to jumpstart and support large Risk and Finance Transformation. We develop solutions using various languages such as SQL or PL/ SQL, Java, Java Script, Python, IBM Maximo and other Oracle Utilities. We also provide consulting services for streamlining the current reporting process using various Enterprise Performance Management tools.
+
+SAP: By building on SAP’s S/4HANA digital core and cloud services, EY and SAP are working to help organizations leverage industry-leading technologies to improve operational performance.This collaboration helps drive digital transformation for our clients across areas including finance, human resources, supply chain and procurement. Our goal is to support clients as they initiate or undergo major transformation. Our capabilities span end-to-end solution implementation services from strategy and architecture to production deployment. EY supports clients in three main areas, Technology implementation support, Enterprise and Industry application implementation, Governance Risk Compliance (GRC) Technology.
+
+Banking and Capital Market Services: Banking and Capital Market Services companies aretransforming their complex tax and finance functions with technologies such as AI and ML. With the right blend of core competencies, tax and finance personnel will shift to data, process and technology skills to service global clients on their Core Banking Platforms and support their business / digital transformation like Deposit system replacements, lending / leasing modernization, Cloud–native architecture (Containerization) etc.
+
+Wealth and Asset Management: We help our clients thrive in a transformative age by providing innovative services to global and domestic asset management clients to increase efficiency,effectiveness and manage the overall impact on bottom line profitability by leveraging the technology, data and digital teams. We do many operational efficiency programs and Technology Enabled Transformation to re-platform their front and Back offices with emerging technologies like AI, ML, Blockchain etc.
+
+Insurance Transformation: The current changing Macroeconomic trends continue to challenge Insurers globally. However, with disruptive technologies – including IoT, autonomous vehicles, Blockchain etc, we help companies through these challenges and create innovative strategies to transform their business through technology enabled transformation programs. We provide end to end services to Global P&C (General), Life and Health Insurers, Reinsurers and Insurance brokers.
+
+Cyber Security: The ever-increasing risk and complexity surrounding cybersecurity and privacy has put cybersecurity at the top of the agenda for senior management, the Board of Directors, and regulators. We help our clients to understand and quantify their cyber risk, prioritize investments, and embed security, privacy and resilience into every digitally-enabled initiative – from day one.
+
+Technology Risk: A practice that is a unique, industry-focused business unit that provides a broad range of integrated services where you’ll contribute technically to IT Risk and Assurance client engagements and internal projects. An important part of your role will be to actively establish, maintain and strengthen internal and external relationships. You’ll also identify potential business opportunities for EY within existing engagements and escalate these as appropriate. Similarly, you’ll anticipate and identify risks within engagements and share any issues with senior members of the team.
+
+Behavioural Competencies:
+
+Adaptive to team and fosters collaborative approach
+Innovative approach to the project, when required
+Shows passion and curiosity, desire to learn and can think digital
+Agile mindset and ability to multi-task
+Must have an eye for detail
+
+Skills needed:
+
+Should have understanding and/or experience of software development best practices and software development life cycle
+Understanding of one/more programming languages such as Java/ .Net/ Python, data analytics or databases such as SQL/ Oracle/ Teradata etc.
+Internship in a relevant technology domain will be an added advantage
+
+Qualification:
+
+BE - B. Tech / (IT/ Computer Science/ Circuit branches)
+Should have secured 60% and above
+No active Backlogs
+    `
+  }
+  ,{ id: 202, company: 'OrangeLabs', role: 'Software Engineer and Research Internship',
+    hiringLink:'https://wellfound.com/l/2C6qi9',
+    fullDescription:`
+Remote (India)
+No experience required
+Internship
+Posted: 2 days ago• Recruiter recently active
+Hires remotely in India
+Remote only
+
+Company Location
+San Francisco
+Visa Sponsorship
+Not Available
+
+Preferred Timezones: Maldives Time
+Relocation: Allowed
+Skills
+Artificial Intelligence
+Research and Development
+Research
+Software
+About the job
+Company Description
+
+OrangeLabs is an AI-driven data visualization platform dedicated to transforming the way businesses interact with and interpret data. By bridging the gap between data and design, OrangeLabs simplifies complex information into visually intuitive formats. Our mission is to enable users to access and restructure data effortlessly, transforming it into actionable insights. Through advanced technology, we aim to revolutionize the landscape of data communication.
+
+Role Description
+
+We are seeking a motivated individual for a Software Engineer and Research Internship. In this remote internship role, you will be responsible for researching and maintaining software solutions, with a focus on Artificial Intelligence and Machine learning research. Key tasks include researching LLMs, AI-models, and contributing to the improvement of OrangeLabs' AI data visualization platform. You will also conduct research to enhance existing functionalities and stay current with software development advancements.
+
+Qualifications
+
+Foundational knowledge in Computer Science and familiarity with core computational concepts.
+Experience or coursework in Back-End Web Development and Software Development processes.
+Competency in Programming and Object-Oriented Programming (OOP) principles.
+Proficiency in at least one programming language (e.g., Python, Java, C++) is preferred.
+Strong analytical and problem-solving skills with the ability to work independently in a remote environment.
+Familiarity with AI-driven platforms and data visualization tools is a plus.
+Enrolled in or recently graduated from a Computer Science, Software Engineering, or related academic program.
+Based on salary data from early 2026, software engineering and research internships at Orange (including Orange Business and Orange Labs) in India offer competitive compensation, with typical monthly salaries for interns ranging between ₹21,000 and ₹35,000 per month, or roughly ₹4.9 lakhs to ₹6.5 lakhs per year for certain roles. 
+    `
+  }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

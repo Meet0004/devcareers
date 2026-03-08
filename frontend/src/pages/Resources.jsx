@@ -173,7 +173,16 @@ const organizedResources = useMemo(() => {
             </div>
           </div>
 
-          <ResourcesGrid resources={filteredResources} />
+          <ResourcesGrid
+  resources={filteredResources}
+  searchQuery={searchQuery}
+  selectedFilters={selectedFilters}
+  onClearSearch={(val) => {
+    setSearchQuery(val ?? '')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }}
+  onClearFilters={clearFilters}
+/>
         </>
       )}
 

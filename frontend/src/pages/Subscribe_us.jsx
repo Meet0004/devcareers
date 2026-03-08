@@ -34,13 +34,14 @@ const TESTIMONIALS = [
 const SOCIAL_CHANNELS = [
   {
     href: YOUTUBE_LINK,
-    border: 'border-red-400',
-    headerBg: 'bg-gradient-to-r from-red-500 to-red-600',
-    iconBg: 'bg-white/20',
-    iconColor: 'text-white',
-    badgeBg: 'bg-red-50',
-    badgeText: 'text-red-600',
-    badgeBorder: 'border-red-200',
+    accentBorder: '#fca5a5',        // red-300 — soft left border
+    iconBg: '#fff1f1',              // very pale red
+    iconColor: '#dc2626',           // red-600
+    statColor: '#dc2626',
+    ctaBg: '#fef2f2',
+    ctaText: '#dc2626',
+    ctaBorder: '#fecaca',
+    ctaHover: '#fee2e2',
     label: 'YouTube',
     tag: 'Watch & Learn',
     desc: 'Career tips, job walkthroughs, interview prep videos, and company-specific advice — all for free.',
@@ -51,13 +52,14 @@ const SOCIAL_CHANNELS = [
   },
   {
     href: WHATSAPP_LINK,
-    border: 'border-green-400',
-    headerBg: 'bg-gradient-to-r from-green-500 to-green-600',
-    iconBg: 'bg-white/20',
-    iconColor: 'text-white',
-    badgeBg: 'bg-green-50',
-    badgeText: 'text-green-600',
-    badgeBorder: 'border-green-200',
+    accentBorder: '#86efac',        // green-300 — soft left border
+    iconBg: '#f0fdf4',              // very pale green
+    iconColor: '#16a34a',           // green-600
+    statColor: '#16a34a',
+    ctaBg: '#f0fdf4',
+    ctaText: '#16a34a',
+    ctaBorder: '#bbf7d0',
+    ctaHover: '#dcfce7',
     label: 'WhatsApp',
     tag: 'Instant Alerts',
     desc: 'Get real-time job alerts and internship drops straight to your WhatsApp. Never miss a fresh opening.',
@@ -107,35 +109,45 @@ const SocialChannels = () => {
 
   return (
     <div ref={ref} className="grid md:grid-cols-2 gap-5 mb-10">
-      {SOCIAL_CHANNELS.map(({ href, border, headerBg, iconBg, iconColor, badgeBg, badgeText, badgeBorder, label, tag, desc, cta, svgPath, statLabel }, i) => (
-        <div key={label} className={`bg-white rounded-2xl border ${border} overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group`}>
-          {/* Coloured header */}
-          <div className={`${headerBg} px-6 py-5 flex items-center justify-between`}>
+      {SOCIAL_CHANNELS.map(({ href, accentBorder, iconBg, iconColor, statColor, ctaBg, ctaText, ctaBorder, ctaHover, label, tag, desc, cta, svgPath, statLabel }, i) => (
+        <div
+          key={label}
+          className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group"
+          style={{ border: '1.5px solid #f3f4f6', borderLeft: `4px solid ${accentBorder}` }}
+        >
+          {/* Card top row */}
+          <div className="px-6 pt-5 pb-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className={`w-11 h-11 ${iconBg} rounded-full flex items-center justify-center`}>
-                <svg className={`w-6 h-6 ${iconColor}`} fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ background: iconBg }}>
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" style={{ color: iconColor }}>
                   <path d={svgPath} />
                 </svg>
               </div>
               <div>
-                <h3 className="text-white font-bold text-base">{label}</h3>
-                <span className={`text-xs font-semibold ${badgeBg} ${badgeText} border ${badgeBorder} px-2 py-0.5 rounded-full`}>{tag}</span>
+                <h3 className="font-bold text-gray-800 text-base">{label}</h3>
+                <span className="text-xs font-semibold text-gray-400">{tag}</span>
               </div>
             </div>
             <div className="text-right">
-              <p className="text-white font-extrabold text-2xl leading-none">{counts[i]}+</p>
-              <p className="text-white/70 text-xs mt-0.5">{statLabel}</p>
+              <p className="font-extrabold text-2xl leading-none" style={{ color: statColor }}>{counts[i]}+</p>
+              <p className="text-xs text-gray-400 mt-0.5">{statLabel}</p>
             </div>
           </div>
 
+          {/* Divider */}
+          <div className="mx-6 h-px bg-gray-100" />
+
           {/* Body */}
-          <div className="px-6 py-5">
-            <p className="text-gray-600 text-sm leading-relaxed mb-5">{desc}</p>
+          <div className="px-6 py-4">
+            <p className="text-gray-500 text-sm leading-relaxed mb-4">{desc}</p>
             <a
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-semibold text-sm border ${border} ${badgeText} hover:opacity-80 transition-all group-hover:shadow-sm`}
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-semibold text-sm transition-all"
+              style={{ background: ctaBg, color: ctaText, border: `1.5px solid ${ctaBorder}` }}
+              onMouseEnter={e => e.currentTarget.style.background = ctaHover}
+              onMouseLeave={e => e.currentTarget.style.background = ctaBg}
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d={svgPath} />
@@ -148,7 +160,8 @@ const SocialChannels = () => {
           </div>
         </div>
       ))}
-    </div>
+        </div>
+
   )
 }
 
@@ -338,7 +351,6 @@ const SubscribeUs = () => {
             </div>
           </div>
 
-         
 
         </div>
       </div>

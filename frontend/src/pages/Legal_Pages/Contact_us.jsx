@@ -384,7 +384,17 @@ const Contact_Us = () => {
       `}</style>
 
       <div className="min-h-screen bg-gradient-to-b from-white to-orange-50 px-4 py-12">
+        
         <div className="max-w-3xl mx-auto space-y-10">
+          <button
+          onClick={() => navigate('/')}
+          className="flex items-center gap-2 text-amber-600 hover:text-amber-700 font-medium text-sm transition-colors"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to Home
+        </button>
 
           {/* ── Page Title ── */}
           <div className="text-center fade-up">

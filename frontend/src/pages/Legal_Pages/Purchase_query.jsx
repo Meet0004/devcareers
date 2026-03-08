@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
-const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID_MEETCODES;
-const EMAILJS_PURCHASE_QUERY_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_PURCHASE_QUERY_MEETCODES;
-const EMAILJS_PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_MEETCODES;
+const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID_MEETSONI;
+const EMAILJS_PURCHASE_QUERY_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_PURCHASE_QUERY_MEETSONI;
+const EMAILJS_PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_MEETSONI;
 const email = import.meta.env.VITE_RECIPIENT_EMAIL;
 const RESOURCES = [
   'SQL Beginner to Advanced (0 - 100)',

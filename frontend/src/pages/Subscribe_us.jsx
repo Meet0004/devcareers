@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 
-const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID_MEETCODES;
-const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_SUBSCRIBE_US_MEETCODES;
-const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_MEETCODES;
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID_MEETSONI;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_SUBSCRIBE_US_MEETSONI;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_MEETSONI;
 const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL;
 const YOUTUBE_LINK = import.meta.env.VITE_YOUTUBE_LINK;
 const WHATSAPP_LINK = import.meta.env.VITE_WHATSAPP_LINK;

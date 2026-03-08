@@ -1,8 +1,42 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useMemo } from 'react'
 import companiesData from '../../data/jobData/jobData'
 
 const CompanyNotFound = ({ searchTerm, setSearchTerm }) => {
+
+  const { topCompanies, topRoles } = useMemo(() => {
+    const sorted = [...companiesData].sort((a, b) => b.id - a.id)
+
+    // 4 unique company names
+    const seenCompanies = new Set()
+    const topCompanies = []
+    for (const c of sorted) {
+      if (!seenCompanies.has(c.company)) {
+        seenCompanies.add(c.company)
+        topCompanies.push(c.company)
+      }
+      if (topCompanies.length === 4) break
+    }
+
+    // 3 unique role names (random from full list)
+    const shuffled = [...companiesData].sort(() => Math.random() - 0.5)
+    const seenRoles = new Set()
+    const topRoles = []
+    for (const c of shuffled) {
+      if (!seenRoles.has(c.role)) {
+        seenRoles.add(c.role)
+        topRoles.push(c.role)
+      }
+      if (topRoles.length === 3) break
+    }
+
+    return { topCompanies, topRoles }
+  }, [])
+
+  const handleChip = (term) => {
+    setSearchTerm(term)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <div className="flex flex-col items-center justify-center py-16 px-4">
 
@@ -42,25 +76,46 @@ const CompanyNotFound = ({ searchTerm, setSearchTerm }) => {
         ✕ Clear Search
       </button>
 
+      {/* Suggestions */}
+      <div className="w-full max-w-lg text-left border-t border-gray-100 pt-6 space-y-4">
 
-      {/* Suggested companies */}
-      <div className="w-full max-w-lg text-left border-t border-gray-100 pt-6">
-        <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
-          You might be looking for
-        </p>
-        <div className="flex flex-wrap gap-2">
-          {[...companiesData].sort((a, b) => b.id - a.id).slice(0, 6).map((c, i) => (
-            <Link
-              key={i}
-              to={`/company-details/${encodeURIComponent(c.company)}/${encodeURIComponent(c.role)}`}
-              className="text-sm px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-600 hover:border-[#FA5500] hover:text-[#FA5500] transition-colors"
-            >
-              {c.company}
-            </Link>
-          ))}
+        {/* Companies */}
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
+            Companies
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {topCompanies.map((name, i) => (
+              <button
+                key={i}
+                onClick={() => handleChip(name)}
+                className="text-sm px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-600 hover:border-[#FA5500] hover:text-[#FA5500] transition-colors"
+              >
+                {name}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
 
+        {/* Roles */}
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
+            Roles
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {topRoles.map((role, i) => (
+              <button
+                key={i}
+                onClick={() => handleChip(role)}
+                className="text-sm px-3 py-1.5 rounded-full bg-white border border-orange-200 text-orange-500 hover:border-[#FA5500] hover:text-[#FA5500] transition-colors"
+              >
+                {role}
+              </button>
+            ))}
+          </div>
+        </div>
+
+      </div>
     </div>
   )
 }

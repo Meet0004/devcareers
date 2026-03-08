@@ -3036,17 +3036,145 @@ Enrolled in or recently graduated from a Computer Science, Software Engineering,
 Based on salary data from early 2026, software engineering and research internships at Orange (including Orange Business and Orange Labs) in India offer competitive compensation, with typical monthly salaries for interns ranging between ₹21,000 and ₹35,000 per month, or roughly ₹4.9 lakhs to ₹6.5 lakhs per year for certain roles. 
     `
   }
-  // ,{ id: , company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
-  // ,{ id: , company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
-  // ,{ id: , company: '', role: '',
+  ,{ id: 203, company: 'Fractal', role: 'Data Engineer',
+    hiringLink:'https://unstop.com/o/n9Fo7eq?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+    Location: Bengaluru, Chennai, Pune
+    Eligibility: Freshers
+    Fractal is hiring for the role of Data Engineer!
+
+Responsibilities of the Candidate:
+
+Investigate complex failures in ADF pipelines, Databricks jobs, and SQL processes beyond L1 scope.
+Perform root cause analysis for recurring issues, document findings, and propose permanent fixes. 
+Debug Python scripts, SQL queries, and Databricks notebooks to resolve data ingestion and transformation errors. 
+Analyze logs, metrics, and telemetry using Azure Monitor, Log Analytics, and Databricks cluster logs. 
+Apply hotfixes for broken pipelines, scripts, or queries in non-production and coordinate controlled deployment to production. 
+Optimize ADF activities, Databricks jobs, and SQL queries for performance and cost efficiency. 
+Implement data quality checks, schema validation, and error handling improvements. 
+Requirements:
+
+Strong knowledge of ITIL (Incident, Problem, Change).
+Ability to lead technical bridges, communicate RCA, and propose permanent fixes.
+Excellent documentation and stakeholder communication skills.
+Drive Incident/Problem resolution by assisting in key operational activities in terms of delivery, fixes, and supportability with operations team.
+Experience working in ServiceNow is preferred.
+Attention to detail a must, with focus on quality and accuracy. 
+
+Illustration of salary/stipend breakdown for the position
+Salary : Not Disclosed
+
+Work Detail
+Working Days: 5 Days
+
+Job Type / Timing
+Job Type/Timing
+Job Type: In Office
+
+Job Timing: Full Time
+    `
+  }
+  ,{ id: 204, company: 'Dancing Numbers Pvt Ltd', role: 'Trainee/Intern (AI/ML Engineer)',
+    hiringLink:'https://www.naukri.com/job-listings-trainee-intern-ai-ml-engineer-agile-ventures-hyderabad-gurugram-bengaluru-0-to-2-years-060326022521',
+    fullDescription:`Designation: Trainee/Intern - AI / ML Engineer
+
+Qualification: B.Tech / B.E. (Computer Science / IT) or MCA, or any related Computer Science / AI / Data Science discipline
+
+Experience: 0 to 2 Year Training Location: Gurugram Job Location: Pan India (Candidates must be flexible to relocate based on project requirements)
+
+Bond: 2 Year
+
+Training Period: 3 - 4 Months
+
+Package: As per Industry Standard
+
+
+Role Overview:
+
+We are seeking motivated candidates interested in building a career in Artificial Intelligence, Machine Learning, and Data Analytics. Selected candidates will undergo a 3 - 4 month structured classroom training program covering Python, SQL, Data Analytics, and AI/ML fundamentals, followed by hands-on project work.
+
+Upon successful completion of training, candidates will be deployed on live client or internal projects across India based on business requirements.
+
+
+Key Responsibilities:
+
+Participate in the structured training program and complete assigned technical modules.
+Develop Python scripts for data processing and analytics tasks.
+Assist in building and testing basic machine learning models.
+Work on hands-on projects related to data analytics and AI applications.
+Collaborate with engineering teams on AI-based solutions.
+Document project work, technical learnings, and implementation details.
+
+Required Skills:
+
+Basic knowledge of Python programming
+Understanding of SQL and relational databases
+Exposure to data analysis concepts or tools
+Basic understanding or interest in AI / Machine Learning concepts
+Strong analytical, problem-solving, and communication skills
+Willingness to learn and adapt to new technologies
+
+Deployment & Service Agreement:
+
+Candidates must be open to deployment at any project location across India after training.
+Selected candidates will be required to sign an 18-month service agreement (bond) upon completion of the training program.
+Role: Data Science & Machine Learning - Other
+Industry Type: Internet (E-Commerce)
+Department: Data Science & Analytics
+Employment Type: Full Time, Permanent
+Role Category: Data Science & Machine Learning
+Education
+UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE), Information Technology, Artificial Intelligence, Artificial Intelligence And Data Science, Artificial Intelligence And Machine Learning
+    `
+  }
+  ,{ id: 205, company: 'easpire technolabs pvt ltd', role: 'Mobile Application Developer',
+    hiringLink:'https://www.naukri.com/job-listings-mobile-application-developer-bangalore-evoke-hr-bengaluru-0-to-1-years-060326015790',
+    fullDescription:`
+    Job description
+
+Job Title:  (Bangalore)
+
+
+Location: Bangalore, Karnataka
+
+
+Department: Software Development
+
+
+Role: Mobile / App Developer
+
+
+Job Summary:
+We are looking for a passionate Mobile Application Developer to join our Software Development team in Bangalore. The candidate will be responsible for building and maintaining mobile applications that deliver smooth performance and an engaging user experience. This role involves collaborating with designers and backend developers to create functional and reliable mobile solutions for Android or iOS platforms.
+
+
+Key Responsibilities:
+
+Develop and maintain mobile applications for Android or iOS platforms.
+Write clean, efficient, and well-documented code for mobile applications.
+Collaborate with UI/UX designers to implement user-friendly app interfaces.
+Test applications to ensure performance, usability, and responsiveness.
+Identify and fix bugs or performance issues in mobile applications.
+Integrate mobile applications with backend services and APIs.
+Key Skills :
+
+Basic knowledge of mobile development frameworks such as Flutter, React Native, or native Android/iOS development.
+Familiarity with programming languages such as Java, Kotlin, Swift, or Dart.
+Understanding of REST APIs and mobile application architecture.
+Problem-solving ability and strong logical thinking.
+Good teamwork and communication skills.
+Attention to detail and ability to deliver quality code.
+
+Role: Mobile / App Developer
+Industry Type: Recruitment / Staffing
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: BCA - Bachelor of Computer Applications in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE), Information Technology
+    `
+  }
+    // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`
   //   `

@@ -61,7 +61,7 @@ const App = () => {
         </Routes>
       </Suspense>
       <Footer />
-      {import.meta.env.PROD && <Analytics />}
+      <Analytics/>
     </div>
   )
 }

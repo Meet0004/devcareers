@@ -46,7 +46,7 @@ const App = () => {
           <Route path="/company-details/:companyName/:role"      element={<Companies_details />}       />
           <Route path="/resource/:id"                            element={<ResourceDetailToPurchase />}/>
           <Route path="/resources"                               element={<Resources />}               />
-          <Route path="/contact-us"                              element={<Contact_us />}              />
+          <Route path="/contact-us"                             element={<Contact_us />}              />
           <Route path="/subscribe-us"                            element={<SubscribeUs />}             />
           <Route path="/purchase-query"                          element={<PurchaseQueryPage />}       />
           <Route path="/about-us"                                element={<About_us />}                />
@@ -55,13 +55,11 @@ const App = () => {
           <Route path="/disclaimer"                              element={<Disclaimer />}              />
           <Route path="/advertise-with-us"                       element={<Advertise_with_us />}       />
           <Route path="/partnership"                             element={<Partnership />}             />
-
-          {/* 404 — catches all unmatched routes */}
           <Route path="*"                                        element={<NotFound />}                />
         </Routes>
+        <Footer />
       </Suspense>
-      <Footer />
-      <Analytics/>
+      <Analytics />
     </div>
   )
 }

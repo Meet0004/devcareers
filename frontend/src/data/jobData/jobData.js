@@ -3074,7 +3074,7 @@ Job Type: In Office
 Job Timing: Full Time
     `
   }
-  ,{ id: 204, company: 'Dancing Numbers Pvt Ltd', role: 'Trainee/Intern (AI/ML Engineer)',
+  ,{ id: 204, company: 'Dancing Numbers Pvt Ltd', role: 'Trainee/Intern AI/ML Engineer',
     hiringLink:'https://www.naukri.com/job-listings-trainee-intern-ai-ml-engineer-agile-ventures-hyderabad-gurugram-bengaluru-0-to-2-years-060326022521',
     fullDescription:`Designation: Trainee/Intern - AI / ML Engineer
 

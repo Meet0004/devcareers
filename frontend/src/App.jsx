@@ -1,5 +1,5 @@
-import React, { lazy, Suspense } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import React, { lazy, Suspense, useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 
 // Eager — on every page
 import Header      from './components/common/Header'
@@ -7,7 +7,6 @@ import Header1     from './components/common/Header1'
 import ScrollToTop from './components/common/ScrollToTop'
 import Footer      from './components/common/Footer'
 import PageLoader  from './pages/PageLoader'
-import { Analytics } from "@vercel/analytics/react"
 
 // Lazy — Quick Links
 const Home        = lazy(() => import('./pages/Home'))
@@ -34,6 +33,17 @@ const Partnership       = lazy(() => import('./pages/Work_with_us/Partnership'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 const App = () => {
+  const location = useLocation();
+
+  // Track page views on route change
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('config', 'G-WEDNMH34VY', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]);
+
   return (
     <div>
       <Header1 />
@@ -46,7 +56,7 @@ const App = () => {
           <Route path="/company-details/:companyName/:role"      element={<Companies_details />}       />
           <Route path="/resource/:id"                            element={<ResourceDetailToPurchase />}/>
           <Route path="/resources"                               element={<Resources />}               />
-          <Route path="/contact-us"                             element={<Contact_us />}              />
+          <Route path="/contact-us"                              element={<Contact_us />}              />
           <Route path="/subscribe-us"                            element={<SubscribeUs />}             />
           <Route path="/purchase-query"                          element={<PurchaseQueryPage />}       />
           <Route path="/about-us"                                element={<About_us />}                />
@@ -59,7 +69,6 @@ const App = () => {
         </Routes>
         <Footer />
       </Suspense>
-      <Analytics />
     </div>
   )
 }

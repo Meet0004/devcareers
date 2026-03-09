@@ -1,4 +1,3 @@
-import React, { useEffect, useState, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 const NAV_LINKS = [

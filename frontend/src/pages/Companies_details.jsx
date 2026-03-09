@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import companiesData from '../data/jobData/jobData'
 import CompanyDetailPage from '../components/company/CompanyDetailPage'
 import CompanyListPage from '../components/company/CompanyListPage'
+import NotFound from './NotFound'
 
 const Companies_details = () => {
   const { companyName, role } = useParams()
@@ -25,14 +26,7 @@ const filteredCompanies = companiesData.filter(item =>
     if (!selectedCompany) {
       return (
         // ❌ Company Not Found UI
-        <div className="min-h-screen bg-[#FFFDFB] flex items-center justify-center p-4">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold text-black mb-4">Company Not Found</h2>
-            <Link to="/" className="text-[#FA5500] hover:underline">
-              ← Back to Home
-            </Link>
-          </div>
-        </div>
+        <NotFound/>
 
       )
     }

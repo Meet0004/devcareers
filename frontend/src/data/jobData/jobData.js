@@ -3223,9 +3223,7 @@ UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization
     hiringLink:'https://www.naukri.com/job-listings-java-full-stack-developer-sag-infotech-jaipur-0-to-3-years-050326003893',
     fullDescription:`
     We are looking for immediate Full stack developer. Candidates who would be interested for the below skill set.
-
 Job Summary
-
 Looking for JAVA Full stack developer (0-3 years) with Angular/ React js hands on development experience in building and maintaining highly performant scalable web application
 Must have experience on Web application development.
 Must have experience on HTML, CSS3, Typescript
@@ -3234,12 +3232,10 @@ Should have exposure to backend technologies like Java, Spring Boot or Hibernate
 Should be able to write Unit test and system test in proven test framework.
 Able to own the User story or module to be implemented
 What you will do
-
 Develop or Enhance features for web application.
 Fix and improve web application based on internal and external customer feedbacks.
 Abide to squad practices and processes and work for team with team
 Primary skills:
-
 Strong HTML, CSS development experience
 Strong working experience on Linux platform
 Strong understanding of front end supporting frameworks like Angular 8.0 and 8+version
@@ -3318,16 +3314,242 @@ CONTACT:
 7871386342    
 `
   }
-  // ,{ id: , company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
-  // ,{ id: , company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
+//   ,{ id: 209, company: 'Tele Infotech', role: 'Software Developer',
+//     hiringLink:'https://www.naukri.com/job-listings-software-developer-tele-infotech-pimpri-chinchwad-pune-0-to-2-years-080326004373',
+//     fullDescription:`
+    
+// Experience required: 0 - 2 years
+// Salary package: 2.75-5 Lacs P.A.
+// Job highlights
+// Passionate and skilled in software development with expertise in Java, Python, and web frameworks
+// Design, develop, and maintain software applications to meet user and business needs
+
+// We are seeking a passionate and skilled Software Engineer to join our dynamic team. The ideal candidate will be responsible for designing, developing, and maintaining software applications that meet the needs of our users and business objectives.
+
+// Required Candidate profile
+
+// 1. Communication: Excellent communication and problem-solving skills.
+// 2 Teamwork: Ability to work collaboratively in a team environment.
+// Role: IT & Information Security - Other
+// Industry Type: IT Services & Consulting
+// Department: IT & Information Security
+// Employment Type: Full Time, Permanent
+// Role Category: IT & Information Security - Other
+// Education
+// UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization, B.Sc - Bachelor of Science in Any Specialization, BCA - Bachelor of Computer Applications in Computer Applications (General), Diploma in Any Specialization
+// Key Skills
+// Java (Important)
+// IT Development (Important)
+// Software Development Methodologies (Important)
+// React.js (Important)
+// Web Development (Important)
+// Python Web Framework
+// AngularJS
+// C++
+// MySQL Database
+// HTML
+// Node.js
+// Web Framework
+// Web Application Development
+// Web Designing
+// CSS and JavaScript
+// Java Frameworks
+// MySQL
+// JavaScript
+// XHTML
+// PHP
+// Python
+//     `
+//   }
+//   ,{ id: 210, company: 'Shashwath Solution', role: 'Full stack developer',
+//     hiringLink:'https://www.naukri.com/job-listings-full-stack-developer-shashwath-solution-chennai-0-to-1-years-050326903643',
+//     fullDescription:`
+//     Job highlights
+// Motivated Full Stack Developer with experience in modern web technologies and cloud-based applications
+// Design and maintain scalable web applications, manage backend services, and support AI-powered features
+// Job Summary
+// We are looking for a motivated and skilled Full Stack Developer with hands-on experience in modern web technologies and cloud-based application development. The ideal candidate will have experience building responsive web applications, working with backend APIs, and supporting AI-driven or data-intensive solutions. This role involves collaborating with cross-functional teams to design, develop, and deploy scalable applications using modern frameworks and cloud platforms.
+
+// Key Responsibilities
+
+// Design, develop, and maintain scalable web applications using React.js, Angular, and Next.js
+// Build and manage backend services using Node.js, NestJS, ASP.NET, and Python frameworks (Django/FastAPI)
+// Develop and integrate RESTful APIs for frontend and backend communication
+// Work with MS SQL Server, PostgreSQL, and MongoDB for data modeling and database management
+// Support AI-powered features using Generative AI, OpenAI APIs, LangChain, and RAG frameworks
+// Collaborate with cloud platforms such as Azure and AWS for deployment and scalability
+// Implement secure, scalable, and high-performance solutions following best practices
+// Work closely with designers, product teams, and stakeholders to deliver user-centric applications
+// Contribute to CI/CD pipelines and version control using Git.
+// Required Skills
+
+// Frontend: React.js, Angular, Next.js, HTML, CSS, TypeScript
+// Backend: Node.js, NestJS, ASP.NET, C#
+// Databases: MS SQL Server, PostgreSQL, MongoDB
+// Cloud & DevOps: Azure, AWS, Docker, CI/CD
+// AI & Automation: Generative AI, OpenAI, LangChain, RAG
+// Tools: Git, REST APIs.
+// Role: Full Stack Developer
+// Industry Type: IT Services & Consulting
+// Department: Engineering - Software & QA
+// Employment Type: Full Time, Permanent
+// Role Category: Software Development
+// Education
+// UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization
+// PG: Any Postgraduate
+// Doctorate: Doctorate Not Required
+// Key Skills
+// Next.js (Important)
+
+// Angular (Important)
+
+// React.js (Important)
+
+// Full Stack Developer (Important)
+ 
+// C#
+
+// PostgreSQL
+
+// RAG Frameworks
+
+// HTML
+
+// TypeScript
+
+// Docker
+
+// MS SQL Server
+
+// OpenAI APIs
+
+// AWS
+
+// NestJS
+
+// Python
+
+// CSS
+
+// Azure
+
+// Generative AI
+
+// LangChain
+
+// Node.js
+
+// Django
+
+// CI/CD
+
+// ASP.NET
+
+// FastAPI
+
+// MongoDB
+
+// RESTful APIs
+
+// Repo (likely Repository / Version Control)
+// About company
+// We are a young, dynamic IT solutions and umbrella services company. System Audit is our thrust area and we have expanded our sphere to include various aspects of the same in our business endeavor. Founded on a vast IT experience, Shashwat is a technically sound and professionally reliable company with long term business relations as its singular objective. Our key differentiation in Audit space is our sound technological knowledge which helps us go beyond merely identifying and pinpointing the discrepancies. We give solutions In a short span of time since inception, we have earned the trust of customers across Maharashtra and our customers include business enterprises, educational institutes, banks and IT companies of repute.
+//     `
+//   }
+//   ,{ id: 211, company: 'Pravin Ratilal Share & Stock Brokers Ltd', role: 'Associate Full-Stack Engineer',
+//     hiringLink:'https://www.naukri.com/job-listings-associate-full-stack-engineer-pravin-ratilal-share-stock-brokers-ltd-ahmedabad-0-to-2-years-070326018836',
+//     fullDescription:`
+//     Job highlights
+// Entry-level candidate with strong proficiency in Python, JavaScript/TypeScript, and experience with SQL/NoSQL databases
+// Design, develop, and maintain features across the application lifecycle, manage data flow, and tackle technical challenges
+// Job description
+
+// Role: Associate Full-Stack Engineer
+
+// Location: Ahmedabad (Shyamal)
+
+// Type: Full-Time
+
+// Experience: Entry Level (Fresh Graduate or 0-2 years)
+
+
+// The Opportunity
+
+// We are seeking a high-aptitude, versatile Engineer to join our Fintech team. This is a role for a "first-principles" thinkersomeone who doesn't just write code that works, but deeply understands the systems they build. You will work in a fast-moving environment where you will touch every layer of the stack, from database internals and data pipelines to high-performance user interfaces.
+
+// As a generalist, you will work closely with a Senior Developer in a mentorship-heavy environment, taking ownership of features that handle real financial data. We value independent problem-solvers who are eager to master the complexities of financial technology and grow into world-class engineers.
+
+
+// Core Responsibilities
+
+// End-to-End Development: Design, develop, and maintain features across the entire application lifecycle.
+// Data Integration & Extraction: Build robust systems to pull, scrape, and normalize data from various financial sources into a cohesive internal ecosystem.
+// System Architecture: Manage data flow across hybrid database environments (SQL and NoSQL), ensuring high availability and data integrity.
+// Reliability & Performance: Write clean, testable, and performant code that meets the precision standards of a fintech environment.
+// Independent Research: Tackle ambiguous technical challenges by researching best practices and implementing modern engineering solutions.
+
+// Technical Skills & Requirements
+
+// Backend: Strong proficiency in Python and its core ecosystem.
+// Frontend: Solid command of JavaScript/TypeScript and modern UI frameworks.
+// Databases: Hands-on experience with Relational (SQL) and Non-Relational (NoSQL) systems.
+// Networking: Understanding of web protocols (HTTP/S, WebSockets) and API design (REST/JSON).
+// Proof of Work: An active GitHub profile or a personal website/portfolio demonstrating your ability to build and document complex projects independently.
+
+// To Apply:
+// Please send your resume on hr@pravinratilal.com or you may directly contact on 07926553774.
+
+// Role: Technology / IT - Other
+// Industry Type: Financial Services (Broking)
+// Department: Project & Program Management
+// Employment Type: Full Time, Permanent
+// Role Category: Technology / IT
+// Education
+// UG: Diploma in Computer Science and Engineering, IT, ITI Certification in Information Technology, B.B.A/ B.M.S - Bachelor of Business Admin / Mgmt Studies in Computer Application, B.Com - Bachelor of Commerce in Any Specialization, B.Sc - Bachelor of Science in Any Specialization, Bachelor of Artificial Intelligence in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization, Other Graduate
+// PG: Any Postgraduate
+// Key Skills
+// GitHub (Important)
+
+// Code Writing (Important)
+
+// JavaScript (Important)
+
+// API Design and Development (Important)
+
+// Python (Important)
+
+// WebSocket
+
+// HTML
+
+// Node.js
+
+// SQL
+
+// NoSQL
+
+// TypeScript
+
+// UI Automation Framework
+
+// HTTP Protocol
+
+
+
+
+// About company
+
+// We are PHYGITAL = Physical + Digital” experience
+// Over the years, the name of PRSSB Limited has often been associated with Ethics, Integrity, Transparency and Seamless Customer experience. Second and Third generations of clients continue to be associated with us.
+// Apart from providing hands-on, quick and personalized solutions through our highly experienced management and qualified staff, we continue to evolve with times to provide easy to use Online Trading Platform along with a fully automated Digital Dashboard to ensure that the experience of our clients in the Stock markets is world class.
+
+// Company Info
+// Link:
+// Pravin Ratilal Share & Stock Brokers Ltd website
+// Address:
+// 506,5TH FLOOR, NR GANDHIGRAM RLY STATION,SAKAR 1,A SHRAM ROAD,NAVRANGPURA , AHMEDABAD, Gujarat, India
+//     `
+//   }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

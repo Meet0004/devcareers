@@ -3174,7 +3174,161 @@ Education
 UG: BCA - Bachelor of Computer Applications in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE), Information Technology
     `
   }
-    // ,{ id: , company: '', role: '',
+  ,{ id: 206, company: 'Thyrocare', role: 'Software Engineer - Backend Developer',
+    hiringLink:'https://www.naukri.com/job-listings-software-engineer-backend-developer-thyrocare-bengaluru-0-to-2-years-100425000180',
+    fullDescription:`
+    In this role, you will be responsible for building world-class technology products and platforms that are at the forefront of the technology revolution in the Indian healthcare ecosystem. You are someone who
+insists on the highest standards for quality, maintainability, and performance. You will be working in a fast paced and agile work environment delivering quality solutions that have immediate business impact.
+Our projects are focused on Software and Systems Design, development, comprehensive testing, Data Science and Analytics, Systems and Infrastructure engineering, etc. The candidate will get an opportunity to be part of the team creating world-class technology products and platforms that are at the forefront of the technology revolution in the Indian healthcare ecosystem. You will be exposed to software development life cycle (SDLC), agile methodologies, open source technologies, and how they are leveraged at Industrial scale and in a practical manner.
+Responsibilities :
+Research, design and build highly reliable, available and scalable solutions that can handle
+Millions of API calls across systems.
+Own large technical deliverables and execute in a structured manner, complete ownership of
+functional Services that your team is responsible for.
+Take the accountability of the overall health of the products you build and predictability of the
+deliverables of your team
+Platformize components as libraries, utilities and servicify and promote reuse.
+Be able to conceptualize and develop prototypes quickly
+What are we looking for?
+BTech/B.E in Computer Science or a related technical discipline (or equivalent). Or high technical
+acumen and rich technical experience.
+Ability to take ownership of projects under the guidance of your mentor.
+Must be an excellent problem solver.
+Must be familiar with one of the languages ava, Kotlin, JavaScript, Ruby, PHP, any
+object-oriented high level proprietary or open-source language with strong programming constructs.
+Solid understanding of DS and algorithms, OOP concepts, and MVC architecture.
+Good knowledge of database technologies and use of relational and non-relational databases.
+What we offer:
+Exposed to cutting edge and open source technologies
+Ownership of designing and building products end to end
+Pace - our results-oriented culture makes you see the impact of your work at amazing pace
+Real world problem - solve real world and India specific healthcare problems at a massive scale
+Openness - good ideas win not titles; Flat organisation.
+Growth - both professionally and personally; grow with one of the fastest growing health-tech
+companies in the world
+Trying - innovate and experiment without the fear of failure
+Flexi-timings - work for your satisfaction; not for the clock
+Casual settings - informal talk and dress, but do it well
+Fun - we work really hard, but party harder
+Role: Back End Developer
+Industry Type: Pharmaceutical & Life Sciences
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization
+    `
+  }
+  ,{ id: 207, company: 'SAG Infotech', role: 'Java Full Stack Developer',
+    hiringLink:'https://www.naukri.com/job-listings-java-full-stack-developer-sag-infotech-jaipur-0-to-3-years-050326003893',
+    fullDescription:`
+    We are looking for immediate Full stack developer. Candidates who would be interested for the below skill set.
+
+Job Summary
+
+Looking for JAVA Full stack developer (0-3 years) with Angular/ React js hands on development experience in building and maintaining highly performant scalable web application
+Must have experience on Web application development.
+Must have experience on HTML, CSS3, Typescript
+Must have good understanding of JAVA API implementation.
+Should have exposure to backend technologies like Java, Spring Boot or Hibernate.
+Should be able to write Unit test and system test in proven test framework.
+Able to own the User story or module to be implemented
+What you will do
+
+Develop or Enhance features for web application.
+Fix and improve web application based on internal and external customer feedbacks.
+Abide to squad practices and processes and work for team with team
+Primary skills:
+
+Strong HTML, CSS development experience
+Strong working experience on Linux platform
+Strong understanding of front end supporting frameworks like Angular 8.0 and 8+version
+Strong understanding of interface with backend e.g. REST, SOAP APIs
+Strong fundamentals of programming concepts like Multi-threading, Micro services Architecture, data structures etc.
+Good understanding of RDBMS (MySQL, MSSQL, Oracle)
+Good knowledge of web servers e.g. Tomcat, Apache
+Exposure to data streaming technologies
+Exposure to backend technologies i.e Java. Spring Boot
+Exposure to frontend technologies i.e. Angular/ React js
+Required aptitude:
+
+Open mind to learn and adapt new technologies and aim to become full stack developer
+Acquaintance to Agile methodology and operations
+Note - Candidate from Jaipur (Rajasthan)Immediate joiner preferable
+
+Interested Candidate can share there details on hr@saginfotech.com.
+
+
+Role: Full Stack Developer
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Sc - Bachelor of Science in Any Specialization, BCA - Bachelor of Computer Applications in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization
+    `
+  }
+  ,{ id: 208, company: 'Infotroz solutions', role: 'Software Developer',
+    hiringLink:'https://www.naukri.com/job-listings-software-developer-infotroz-solutions-chennai-0-to-1-years-060326022308',
+    fullDescription:`
+    Candidates with 0 - 1 years are eligible
+Expected Salary: 2.75-4 Lacs P.A.
+Location: Chennai
+Job highlights
+Experience in Java, Python, and web development; knowledge of RESTful APIs
+Develop and maintain server-side applications and APIs for mobile applications
+
+Develop and maintain server-side applications using
+Java,Python Html,CSS,Java Script,Node js,sql,web development,Oracle
+Develop RESTful APIs for and mobile applications,
+front-end developers using applications.
+
+CON:7871386342
+Role: IT Support - Other
+Industry Type: IT Services & Consulting
+Department: IT & Information Security
+Employment Type: Full Time, Permanent
+Role Category: IT Support
+Education
+UG: B.Sc - Bachelor of Science in Any Specialization, BCA - Bachelor of Computer Applications in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization, Any Graduate
+Key Skills
+Java (Important)
+SQL (Important)
+Html/Css (Important)
+Javascript (Important)
+Python (Important)
+Angularjs
+Full Stack
+Node.Js
+Spring
+Boot
+HTML
+Angular
+MySQL
+MongoDB
+React.Js
+About company
+Infotroz Solutions
+
+https://infotrozsolutions.com/
+
+NEED:JAVA,PHYTHON,REACT,NODE JS, DIGITAL MARKETTING,FRONT END DEVELOPER ,FULL STACK DEVELOPER
+
+CONTACT:
+7871386342    
+`
+  }
+  // ,{ id: , company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
+  // ,{ id: , company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
+  // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`
   //   `

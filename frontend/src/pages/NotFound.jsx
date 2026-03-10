@@ -1,5 +1,5 @@
+import { useState, useEffect, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-
 const NAV_LINKS = [
   { label: 'Home',      emoji: '⌂',  to: '/'                },
   { label: 'Jobs',      emoji: '◈',  to: '/company-details' },

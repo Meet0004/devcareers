@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const ArrowIcon = () => (
 	<svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,44 +48,152 @@ const VerifiedBadge = () => (
 	</a>
 )
 
-const Card = ({ icon, title, description, link, badge }) => (
-	<div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border-t-4 border-orange-500">
-		<div className={`${badge ? 'flex items-start justify-between' : ''} mb-6`}>
-			<div className="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center">
-				<CardIcon d={icon} />
-			</div>
-			{badge && <VerifiedBadge />}
-		</div>
-		<h3 className="text-2xl font-bold text-gray-800 mb-3">{title}</h3>
-		<p className="text-gray-600 mb-6">{description}</p>
-		{link.type === 'button' ? (
-			<a href={link.href} className="w-full bg-orange-500 text-white font-semibold py-3 rounded-lg hover:bg-orange-600 transition-colors inline-flex items-center justify-center group">
-				{link.label} <ArrowIcon />
-			</a>
-		) : (
-			<a href={link.href} className="text-orange-500 font-semibold hover:text-orange-600 inline-flex items-center group">
-				{link.label} <ArrowIcon />
-			</a>
-		)}
-	</div>
-)
+const Card = ({ icon, title, description, link, badge, index, visible }) => {
+	const delay = index * 120
 
-const Hero = () => (
-	<div className="max-w-7xl mx-auto px-8 py-20">
-		<div className="text-center mb-16">
-			<h1 className="text-5xl font-bold text-gray-800 mb-4">
-				Your Gateway to <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">Career Success</span>
-			</h1>
-			<p className="text-xl text-gray-600 max-w-3xl mx-auto">
-				Discover the latest job opportunities, access valuable career resources, and connect with top employers all in one place.
-			</p>
-		</div>
-		<div className="grid md:grid-cols-3 gap-8">
-			{CARDS.map((card) => (
-				<Card key={card.title} {...card} />
-			))}
-		</div>
-	</div>
-)
+	return (
+		<>
+			<style>{`
+				@keyframes slideUpFade {
+					from {
+						opacity: 0;
+						transform: translateY(32px);
+					}
+					to {
+						opacity: 1;
+						transform: translateY(0);
+					}
+				}
+
+				@keyframes iconPop {
+					0%   { transform: scale(1); }
+					40%  { transform: scale(1.18); }
+					70%  { transform: scale(0.93); }
+					100% { transform: scale(1); }
+				}
+
+				.hero-card {
+					opacity: 0;
+					transform: translateY(32px);
+					transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+				}
+
+				.hero-card.visible {
+					animation: slideUpFade 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+				}
+
+				.hero-card:hover {
+					transform: translateY(-7px) !important;
+					box-shadow: 0 20px 40px rgba(249, 115, 22, 0.15), 0 4px 12px rgba(0,0,0,0.08) !important;
+				}
+
+				.hero-card:hover .icon-circle {
+					animation: iconPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+				}
+
+				@media (prefers-reduced-motion: reduce) {
+					.hero-card, .hero-card.visible {
+						animation: none !important;
+						opacity: 1 !important;
+						transform: none !important;
+					}
+				}
+			`}</style>
+			<div
+				className={`hero-card${visible ? ' visible' : ''} bg-white rounded-lg shadow-lg p-8 border-t-4 border-orange-500`}
+				style={{ animationDelay: `${delay}ms` }}
+			>
+				<div className={`${badge ? 'flex items-start justify-between' : ''} mb-6`}>
+					<div className="icon-circle w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center">
+						<CardIcon d={icon} />
+					</div>
+					{badge && <VerifiedBadge />}
+				</div>
+				<h3 className="text-2xl font-bold text-gray-800 mb-3">{title}</h3>
+				<p className="text-gray-600 mb-6">{description}</p>
+				{link.type === 'button' ? (
+					<a href={link.href} className="w-full bg-orange-500 text-white font-semibold py-3 rounded-lg hover:bg-orange-600 transition-colors inline-flex items-center justify-center group">
+						{link.label} <ArrowIcon />
+					</a>
+				) : (
+					<a href={link.href} className="text-orange-500 font-semibold hover:text-orange-600 inline-flex items-center group">
+						{link.label} <ArrowIcon />
+					</a>
+				)}
+			</div>
+		</>
+	)
+}
+
+const Hero = () => {
+	const [cardsVisible, setCardsVisible] = useState(false)
+
+	useEffect(() => {
+		// Slight delay so the page has rendered before triggering
+		const t = setTimeout(() => setCardsVisible(true), 100)
+		return () => clearTimeout(t)
+	}, [])
+
+	return (
+		<>
+			<style>{`
+				@keyframes gradientShimmer {
+					0%   { background-position: 0% 50%; }
+					50%  { background-position: 100% 50%; }
+					100% { background-position: 0% 50%; }
+				}
+
+				@keyframes headingFadeDown {
+					from { opacity: 0; transform: translateY(-18px); }
+					to   { opacity: 1; transform: translateY(0); }
+				}
+
+				@keyframes subtitleFade {
+					from { opacity: 0; }
+					to   { opacity: 1; }
+				}
+
+				.hero-heading {
+					animation: headingFadeDown 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+				}
+
+				.hero-subtitle {
+					animation: subtitleFade 0.7s ease 0.25s both;
+				}
+
+				.shimmer-text {
+					background: linear-gradient(90deg, #f97316, #ea580c, #fb923c, #f97316);
+					background-size: 250% auto;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+					animation: gradientShimmer 3.5s ease infinite;
+				}
+
+				@media (prefers-reduced-motion: reduce) {
+					.shimmer-text { animation: none; }
+					.hero-heading, .hero-subtitle { animation: none; }
+				}
+			`}</style>
+
+			<div className="max-w-7xl mx-auto px-8 py-20">
+				<div className="text-center mb-16">
+					<h1 className="hero-heading text-5xl font-bold text-gray-800 mb-4">
+						Your Gateway to{' '}
+						<span className="shimmer-text">Career Success</span>
+					</h1>
+					<p className="hero-subtitle text-xl text-gray-600 max-w-3xl mx-auto">
+						Discover the latest job opportunities, access valuable career resources, and connect with top employers all in one place.
+					</p>
+				</div>
+				<div className="grid md:grid-cols-3 gap-8">
+					{CARDS.map((card, i) => (
+						<Card key={card.title} {...card} index={i} visible={cardsVisible} />
+					))}
+				</div>
+			</div>
+		</>
+	)
+}
 
 export default Hero

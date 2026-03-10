@@ -19,7 +19,7 @@ const Home = () => {
           />
         </div>
 
-        <div className="px-4 py-4 md:px-10 md:py-10 lg:px-36 lg:py-5">
+        <div className="px-7 py-4 md:px-12 md:py-10 lg:px-36 lg:py-5">
           <Mission />
         </div>
 

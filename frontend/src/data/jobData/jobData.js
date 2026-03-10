@@ -3554,21 +3554,28 @@ Address:
     Number of Openings:  1 
     Category: Software Development, Software Development, Software Development Engineer / jobs
     Core Responsibilities:
-Use SPSS to conduct descriptive and inferential statistical analyses.
-Perform regression analysis, ANOVA, hypothesis testing, and survey analysis.
-Evaluate experimental design and sampling techniques for research projects.
-Develop and maintain complex SQL queries to extract and manipulate data from relational databases (e.g., MySQL, PostgreSQL, SQL Server).
-Optimize queries for performance and scalability.
-Perform data cleansing, validation, and transformation to ensure data accuracy and consistency.
-Use Python for data wrangling, automation, and analytics using libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn.
-Automate repetitive reporting tasks and develop reusable scripts for data processing.
-Integrate data from APIs or flat files (CSV, JSON, Excel) into databases or analysis pipelines.
-Create dynamic dashboards and reports using Tableau to provide real-time insights to stakeholders.
-Develop KPIs and performance metrics to track organizational objectives.
-Translate complex findings into clear, actionable recommendations using visuals.
-Collaborate with stakeholders from marketing, operations, finance, and product teams to define requirements and deliver analytics solutions.
-Present findings to leadership and non-technical audiences in a concise, story-driven format.
-Serve as a data advocate, promoting a data-driven culture across departments.
+Key Responsibilities:
+Design, develop, and maintain software features and modules
+Write clean, efficient, and well-documented code
+Collaborate with team members to understand requirements and deliver solutions
+Debug, test, and fix issues to ensure high performance and reliability
+Participate in code reviews and follow best practices
+Stay updated with modern technologies and contribute new ideas
+Skills & Qualifications:
+Strong understanding of Data Structures, Algorithms, and OOP concepts
+Good knowledge of at least one programming language (Python, Java, C++, or Go)
+Problem-solving mindset and ability to approach challenges logically
+Familiarity with databases (SQL or NoSQL) and basic backend concepts
+Comfort working in Linux/Unix environments and using Git
+Experience with cloud platforms (AWS, GCP, Azure)
+Exposure to containers and orchestration tools
+Understanding of distributed systems or messaging queues
+Knowledge of system design fundamentals
+What You Get:
+Hands-on learning and real project ownership
+Guidance from experienced engineers
+Opportunity to build scalable systems and gain end-to-end development experience
+Dynamic and collaborative work environment
 Salary
 Min Salary: ₹ 4,80,000 /Year
 Max Salary: ₹ 8,60,000 /Year

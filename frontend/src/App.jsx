@@ -12,6 +12,7 @@ import PageLoader  from './pages/PageLoader'
 const Home        = lazy(() => import('./pages/Home'))
 const SubscribeUs = lazy(() => import('./pages/Subscribe_us'))
 const Resources   = lazy(() => import('./pages/Resources'))
+const Packages = lazy(() => import('./pages/PackageResources'));
 
 // Lazy — Resource & Company
 const ResourceDetailToPurchase = lazy(() => import('./components/resource/ResourceDetailToPurchase'))
@@ -55,7 +56,8 @@ const App = () => {
           <Route path="/company-details"                         element={<Companies_details />}       />
           <Route path="/company-details/:companyName/:role"      element={<Companies_details />}       />
           <Route path="/resource/:id"                            element={<ResourceDetailToPurchase />}/>
-          <Route path="/resources"                               element={<Resources />}               />
+          <Route path="/resources"                               element={<Resources />} />
+          <Route path="/resources/packages" element={<Packages />} />
           <Route path="/contact-us"                              element={<Contact_us />}              />
           <Route path="/subscribe-us"                            element={<SubscribeUs />}             />
           <Route path="/purchase-query"                          element={<PurchaseQueryPage />}       />

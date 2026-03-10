@@ -2948,46 +2948,28 @@ Here, you will collaborate with EY teams on exciting projects and work with reno
 About Consulting Service Line
 
 Our Consulting practice provides differentiated focus on the key business themes to help our clients solve better questions around technology. Our vision is to be recognized as a leading provider of differentiated technology consulting services, harnessing new disruptive technology, alliances and attracting talented people to solve our clients' issues. It's an exciting time to join us and grow your career as a technology professional. A technology career is about far more than leading-edge innovations. It’s about the application of these technologies in the real world to make a real, meaningful impact. We are looking for highly motivated, articulate individuals who have the skills to the technology lifecycle and are passionate about designing innovative solutions to solve complex business problems.
-
-
 Your career in Consulting can span across these technology areas/ services lines:
-
-Digital Technologies: We are a globally integrated digital architecture and engineering team. Our mission is to deliver tailored, custom-built end to end solutions to our customers that are Digital, Cloud Native and Open Source. Our skills include Experience design, UI development, Design Thinking, Architecture & Design, Full stack development (.Net/ Java/ SharePoint/ Power Platform), Emerging Technologies like Block Chain, IoT, AR\VR, Drones, Cloud and DevSecOps. We use industrialized techniques, built on top of agile methods utilizing our global teams to deliver end to end solutions at best unit cost proposition.
-
+Digital Technologies: We are a globally integrated digital architecture and engineering team. Our mission is to deliver tailored, custom-built end to end solutions to our customers that are Digital, Cloud Native and Open Source. Our skills include Experience design, UI development, Design Thinking, Architecture & Design, Full stack development (.Net/ Java/ SharePoint/ Power Platform), Emerging Technologies like Block Chain, IoT, ARR, Drones, Cloud and DevSecOps. We use industrialized techniques, built on top of agile methods utilizing our global teams to deliver end to end solutions at best unit cost proposition.
 Testing Services: We are the yardstick of quality software product. We break something to makethe product stronger and successful. We provide entire gamut of testing services including Business / User acceptance testing. Hence this is a team with all round skills such as functional, technical and process.
-
 Data & Analytics: Data and Analytics is amongst the largest and most versatile practices withinEY. Our sector and domain expertise combined with technical skills in data, cloud, advanced analytics and artificial intelligence differentiates us in the industry. Our talented team possesses cross-sector and cross-domain expertise and a wide array of skills in Information Management (IM), Business Intelligence (BI), Advance Analytics (AA) and Artificial Intelligence (AI).
-
 Oracle: We provide one-stop solution for end-to-end project implementation enabled by Oracle and IBM Products. We use proven methodologies, tools and accelerators to jumpstart and support large Risk and Finance Transformation. We develop solutions using various languages such as SQL or PL/ SQL, Java, Java Script, Python, IBM Maximo and other Oracle Utilities. We also provide consulting services for streamlining the current reporting process using various Enterprise Performance Management tools.
-
 SAP: By building on SAP’s S/4HANA digital core and cloud services, EY and SAP are working to help organizations leverage industry-leading technologies to improve operational performance.This collaboration helps drive digital transformation for our clients across areas including finance, human resources, supply chain and procurement. Our goal is to support clients as they initiate or undergo major transformation. Our capabilities span end-to-end solution implementation services from strategy and architecture to production deployment. EY supports clients in three main areas, Technology implementation support, Enterprise and Industry application implementation, Governance Risk Compliance (GRC) Technology.
-
 Banking and Capital Market Services: Banking and Capital Market Services companies aretransforming their complex tax and finance functions with technologies such as AI and ML. With the right blend of core competencies, tax and finance personnel will shift to data, process and technology skills to service global clients on their Core Banking Platforms and support their business / digital transformation like Deposit system replacements, lending / leasing modernization, Cloud–native architecture (Containerization) etc.
-
 Wealth and Asset Management: We help our clients thrive in a transformative age by providing innovative services to global and domestic asset management clients to increase efficiency,effectiveness and manage the overall impact on bottom line profitability by leveraging the technology, data and digital teams. We do many operational efficiency programs and Technology Enabled Transformation to re-platform their front and Back offices with emerging technologies like AI, ML, Blockchain etc.
-
 Insurance Transformation: The current changing Macroeconomic trends continue to challenge Insurers globally. However, with disruptive technologies – including IoT, autonomous vehicles, Blockchain etc, we help companies through these challenges and create innovative strategies to transform their business through technology enabled transformation programs. We provide end to end services to Global P&C (General), Life and Health Insurers, Reinsurers and Insurance brokers.
-
 Cyber Security: The ever-increasing risk and complexity surrounding cybersecurity and privacy has put cybersecurity at the top of the agenda for senior management, the Board of Directors, and regulators. We help our clients to understand and quantify their cyber risk, prioritize investments, and embed security, privacy and resilience into every digitally-enabled initiative – from day one.
-
 Technology Risk: A practice that is a unique, industry-focused business unit that provides a broad range of integrated services where you’ll contribute technically to IT Risk and Assurance client engagements and internal projects. An important part of your role will be to actively establish, maintain and strengthen internal and external relationships. You’ll also identify potential business opportunities for EY within existing engagements and escalate these as appropriate. Similarly, you’ll anticipate and identify risks within engagements and share any issues with senior members of the team.
-
 Behavioural Competencies:
-
 Adaptive to team and fosters collaborative approach
 Innovative approach to the project, when required
 Shows passion and curiosity, desire to learn and can think digital
 Agile mindset and ability to multi-task
 Must have an eye for detail
-
 Skills needed:
-
 Should have understanding and/or experience of software development best practices and software development life cycle
 Understanding of one/more programming languages such as Java/ .Net/ Python, data analytics or databases such as SQL/ Oracle/ Teradata etc.
 Internship in a relevant technology domain will be an added advantage
-
 Qualification:
-
 BE - B. Tech / (IT/ Computer Science/ Circuit branches)
 Should have secured 60% and above
 No active Backlogs
@@ -3317,7 +3299,6 @@ CONTACT:
 //   ,{ id: 209, company: 'Tele Infotech', role: 'Software Developer',
 //     hiringLink:'https://www.naukri.com/job-listings-software-developer-tele-infotech-pimpri-chinchwad-pune-0-to-2-years-080326004373',
 //     fullDescription:`
-    
 // Experience required: 0 - 2 years
 // Salary package: 2.75-5 Lacs P.A.
 // Job highlights
@@ -3364,14 +3345,12 @@ CONTACT:
 //   ,{ id: 210, company: 'Shashwath Solution', role: 'Full stack developer',
 //     hiringLink:'https://www.naukri.com/job-listings-full-stack-developer-shashwath-solution-chennai-0-to-1-years-050326903643',
 //     fullDescription:`
-//     Job highlights
+// Job highlights
 // Motivated Full Stack Developer with experience in modern web technologies and cloud-based applications
 // Design and maintain scalable web applications, manage backend services, and support AI-powered features
 // Job Summary
 // We are looking for a motivated and skilled Full Stack Developer with hands-on experience in modern web technologies and cloud-based application development. The ideal candidate will have experience building responsive web applications, working with backend APIs, and supporting AI-driven or data-intensive solutions. This role involves collaborating with cross-functional teams to design, develop, and deploy scalable applications using modern frameworks and cloud platforms.
-
 // Key Responsibilities
-
 // Design, develop, and maintain scalable web applications using React.js, Angular, and Next.js
 // Build and manage backend services using Node.js, NestJS, ASP.NET, and Python frameworks (Django/FastAPI)
 // Develop and integrate RESTful APIs for frontend and backend communication
@@ -3382,7 +3361,6 @@ CONTACT:
 // Work closely with designers, product teams, and stakeholders to deliver user-centric applications
 // Contribute to CI/CD pipelines and version control using Git.
 // Required Skills
-
 // Frontend: React.js, Angular, Next.js, HTML, CSS, TypeScript
 // Backend: Node.js, NestJS, ASP.NET, C#
 // Databases: MS SQL Server, PostgreSQL, MongoDB
@@ -3400,166 +3378,209 @@ CONTACT:
 // Doctorate: Doctorate Not Required
 // Key Skills
 // Next.js (Important)
-
 // Angular (Important)
-
 // React.js (Important)
-
 // Full Stack Developer (Important)
- 
 // C#
-
 // PostgreSQL
-
 // RAG Frameworks
-
 // HTML
-
 // TypeScript
-
 // Docker
-
 // MS SQL Server
-
 // OpenAI APIs
-
 // AWS
-
 // NestJS
-
 // Python
-
 // CSS
-
 // Azure
-
 // Generative AI
-
 // LangChain
-
 // Node.js
-
 // Django
-
 // CI/CD
-
 // ASP.NET
-
 // FastAPI
-
 // MongoDB
-
 // RESTful APIs
-
 // Repo (likely Repository / Version Control)
 // About company
 // We are a young, dynamic IT solutions and umbrella services company. System Audit is our thrust area and we have expanded our sphere to include various aspects of the same in our business endeavor. Founded on a vast IT experience, Shashwat is a technically sound and professionally reliable company with long term business relations as its singular objective. Our key differentiation in Audit space is our sound technological knowledge which helps us go beyond merely identifying and pinpointing the discrepancies. We give solutions In a short span of time since inception, we have earned the trust of customers across Maharashtra and our customers include business enterprises, educational institutes, banks and IT companies of repute.
-//     `
+// `
 //   }
-//   ,{ id: 211, company: 'Pravin Ratilal Share & Stock Brokers Ltd', role: 'Associate Full-Stack Engineer',
-//     hiringLink:'https://www.naukri.com/job-listings-associate-full-stack-engineer-pravin-ratilal-share-stock-brokers-ltd-ahmedabad-0-to-2-years-070326018836',
-//     fullDescription:`
-//     Job highlights
-// Entry-level candidate with strong proficiency in Python, JavaScript/TypeScript, and experience with SQL/NoSQL databases
-// Design, develop, and maintain features across the application lifecycle, manage data flow, and tackle technical challenges
-// Job description
+  ,{ id: 211, company: 'Ingram Micro', role: 'Data Analyst',
+    hiringLink:'https://unstop.com/o/9bxVsvw?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+Category: Data Analysis, Data Engineering, Business Intelligence & Analytics
+Eligibility: Fresher
+Core Responsibilities:
+Use SPSS to conduct descriptive and inferential statistical analyses.
+Perform regression analysis, ANOVA, hypothesis testing, and survey analysis.
+Evaluate experimental design and sampling techniques for research projects.
+Develop and maintain complex SQL queries to extract and manipulate data from relational databases (e.g., MySQL, PostgreSQL, SQL Server).
+Optimize queries for performance and scalability.
+Perform data cleansing, validation, and transformation to ensure data accuracy and consistency.
+Use Python for data wrangling, automation, and analytics using libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn.
+Automate repetitive reporting tasks and develop reusable scripts for data processing.
+Integrate data from APIs or flat files (CSV, JSON, Excel) into databases or analysis pipelines.
+Create dynamic dashboards and reports using Tableau to provide real-time insights to stakeholders.
+Develop KPIs and performance metrics to track organizational objectives.
+Translate complex findings into clear, actionable recommendations using visuals.
+Collaborate with stakeholders from marketing, operations, finance, and product teams to define requirements and deliver analytics solutions.
+Present findings to leadership and non-technical audiences in a concise, story-driven format.
+Serve as a data advocate, promoting a data-driven culture across departments.
+Experience
+No prior experience required
+Illustration of salary/stipend breakdown for the position
+Salary
+Min Salary: ₹ 4,60,000 /Year
+Max Salary: ₹ 6,10,000 /Year
+ESOPs available
+Work Detail:
+Working Days: 5 Days
+Job Type/Timing
+Job Type: Work From Home
+Job Timing: Full Time
+Perks: Transport
 
-// Role: Associate Full-Stack Engineer
+Updated On: 03 Mar 26, 06:49 PM IST
+The data on this page gets updated in every 15 minutes.
+This opportunity has been listed by Ingram Micro. Unstop is not liable for any content mentioned in this opportunity or the process followed by the organizers for this opportunity. However, please raise a complaint if you want Unstop to look into the matter.
+`
+  }
+  ,{ id: 213, company: 'Pravin Ratilal Share & Stock Brokers Ltd', role: 'Associate Full-Stack Engineer',
+    hiringLink:'https://www.naukri.com/job-listings-associate-full-stack-engineer-pravin-ratilal-share-stock-brokers-ltd-ahmedabad-0-to-2-years-070326018836',
+    fullDescription:`
+    Experience: 0 - 2 years
+Salary: 2.5-4.5 Lacs P.A.
+Location: Ahmedabad
+Openings: 1
+Note: Prefers women candidates, women returning to work, ex-defence personnel
 
-// Location: Ahmedabad (Shyamal)
+    Job highlights
+Entry-level candidate with strong proficiency in Python, JavaScript/TypeScript, and experience with SQL/NoSQL databases
+Design, develop, and maintain features across the application lifecycle, manage data flow, and tackle technical challenges
+Job description
 
-// Type: Full-Time
+Role: Associate Full-Stack Engineer
 
-// Experience: Entry Level (Fresh Graduate or 0-2 years)
+Location: Ahmedabad (Shyamal)
 
+Type: Full-Time
 
-// The Opportunity
-
-// We are seeking a high-aptitude, versatile Engineer to join our Fintech team. This is a role for a "first-principles" thinkersomeone who doesn't just write code that works, but deeply understands the systems they build. You will work in a fast-moving environment where you will touch every layer of the stack, from database internals and data pipelines to high-performance user interfaces.
-
-// As a generalist, you will work closely with a Senior Developer in a mentorship-heavy environment, taking ownership of features that handle real financial data. We value independent problem-solvers who are eager to master the complexities of financial technology and grow into world-class engineers.
-
-
-// Core Responsibilities
-
-// End-to-End Development: Design, develop, and maintain features across the entire application lifecycle.
-// Data Integration & Extraction: Build robust systems to pull, scrape, and normalize data from various financial sources into a cohesive internal ecosystem.
-// System Architecture: Manage data flow across hybrid database environments (SQL and NoSQL), ensuring high availability and data integrity.
-// Reliability & Performance: Write clean, testable, and performant code that meets the precision standards of a fintech environment.
-// Independent Research: Tackle ambiguous technical challenges by researching best practices and implementing modern engineering solutions.
-
-// Technical Skills & Requirements
-
-// Backend: Strong proficiency in Python and its core ecosystem.
-// Frontend: Solid command of JavaScript/TypeScript and modern UI frameworks.
-// Databases: Hands-on experience with Relational (SQL) and Non-Relational (NoSQL) systems.
-// Networking: Understanding of web protocols (HTTP/S, WebSockets) and API design (REST/JSON).
-// Proof of Work: An active GitHub profile or a personal website/portfolio demonstrating your ability to build and document complex projects independently.
-
-// To Apply:
-// Please send your resume on hr@pravinratilal.com or you may directly contact on 07926553774.
-
-// Role: Technology / IT - Other
-// Industry Type: Financial Services (Broking)
-// Department: Project & Program Management
-// Employment Type: Full Time, Permanent
-// Role Category: Technology / IT
-// Education
-// UG: Diploma in Computer Science and Engineering, IT, ITI Certification in Information Technology, B.B.A/ B.M.S - Bachelor of Business Admin / Mgmt Studies in Computer Application, B.Com - Bachelor of Commerce in Any Specialization, B.Sc - Bachelor of Science in Any Specialization, Bachelor of Artificial Intelligence in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization, Other Graduate
-// PG: Any Postgraduate
-// Key Skills
-// GitHub (Important)
-
-// Code Writing (Important)
-
-// JavaScript (Important)
-
-// API Design and Development (Important)
-
-// Python (Important)
-
-// WebSocket
-
-// HTML
-
-// Node.js
-
-// SQL
-
-// NoSQL
-
-// TypeScript
-
-// UI Automation Framework
-
-// HTTP Protocol
+Experience: Entry Level (Fresh Graduate or 0-2 years)
 
 
+The Opportunity
+
+We are seeking a high-aptitude, versatile Engineer to join our Fintech team. This is a role for a "first-principles" thinkersomeone who doesn't just write code that works, but deeply understands the systems they build. You will work in a fast-moving environment where you will touch every layer of the stack, from database internals and data pipelines to high-performance user interfaces.
+
+As a generalist, you will work closely with a Senior Developer in a mentorship-heavy environment, taking ownership of features that handle real financial data. We value independent problem-solvers who are eager to master the complexities of financial technology and grow into world-class engineers.
 
 
-// About company
+Core Responsibilities
 
-// We are PHYGITAL = Physical + Digital” experience
-// Over the years, the name of PRSSB Limited has often been associated with Ethics, Integrity, Transparency and Seamless Customer experience. Second and Third generations of clients continue to be associated with us.
-// Apart from providing hands-on, quick and personalized solutions through our highly experienced management and qualified staff, we continue to evolve with times to provide easy to use Online Trading Platform along with a fully automated Digital Dashboard to ensure that the experience of our clients in the Stock markets is world class.
+End-to-End Development: Design, develop, and maintain features across the entire application lifecycle.
+Data Integration & Extraction: Build robust systems to pull, scrape, and normalize data from various financial sources into a cohesive internal ecosystem.
+System Architecture: Manage data flow across hybrid database environments (SQL and NoSQL), ensuring high availability and data integrity.
+Reliability & Performance: Write clean, testable, and performant code that meets the precision standards of a fintech environment.
+Independent Research: Tackle ambiguous technical challenges by researching best practices and implementing modern engineering solutions.
 
-// Company Info
-// Link:
-// Pravin Ratilal Share & Stock Brokers Ltd website
-// Address:
-// 506,5TH FLOOR, NR GANDHIGRAM RLY STATION,SAKAR 1,A SHRAM ROAD,NAVRANGPURA , AHMEDABAD, Gujarat, India
-//     `
-//   }
-// ,{ id: , company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
-  // ,{ id: , company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
+Technical Skills & Requirements
+
+Backend: Strong proficiency in Python and its core ecosystem.
+Frontend: Solid command of JavaScript/TypeScript and modern UI frameworks.
+Databases: Hands-on experience with Relational (SQL) and Non-Relational (NoSQL) systems.
+Networking: Understanding of web protocols (HTTP/S, WebSockets) and API design (REST/JSON).
+Proof of Work: An active GitHub profile or a personal website/portfolio demonstrating your ability to build and document complex projects independently.
+
+To Apply:
+Please send your resume on hr@pravinratilal.com or you may directly contact on 07926553774.
+
+Role: Technology / IT - Other
+Industry Type: Financial Services (Broking)
+Department: Project & Program Management
+Employment Type: Full Time, Permanent
+Role Category: Technology / IT
+Education
+UG: Diploma in Computer Science and Engineering, IT, ITI Certification in Information Technology, B.B.A/ B.M.S - Bachelor of Business Admin / Mgmt Studies in Computer Application, B.Com - Bachelor of Commerce in Any Specialization, B.Sc - Bachelor of Science in Any Specialization, Bachelor of Artificial Intelligence in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization, Other Graduate
+PG: Any Postgraduate
+Key Skills
+GitHub (Important)
+
+Code Writing (Important)
+
+JavaScript (Important)
+
+API Design and Development (Important)
+
+Python (Important)
+
+WebSocket
+
+HTML
+
+Node.js
+
+SQL
+
+NoSQL
+
+TypeScript
+
+UI Automation Framework
+
+HTTP Protocol
+
+
+
+
+About company
+
+We are PHYGITAL = Physical + Digital” experience
+Over the years, the name of PRSSB Limited has often been associated with Ethics, Integrity, Transparency and Seamless Customer experience. Second and Third generations of clients continue to be associated with us.
+Apart from providing hands-on, quick and personalized solutions through our highly experienced management and qualified staff, we continue to evolve with times to provide easy to use Online Trading Platform along with a fully automated Digital Dashboard to ensure that the experience of our clients in the Stock markets is world class.
+
+Company Info
+Link:
+Pravin Ratilal Share & Stock Brokers Ltd website
+Address:
+506,5TH FLOOR, NR GANDHIGRAM RLY STATION,SAKAR 1,A SHRAM ROAD,NAVRANGPURA , AHMEDABAD, Gujarat, India
+    `
+  }
+  ,{id: 212, company: 'Wikasta Business and Techincal solutions', role: 'Software Development Engineer',
+    hiringLink: 'https://unstop.com/o/fdUjk1E?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription: `
+    Number of Openings:  1 
+    Category: Software Development, Software Development, Software Development Engineer / jobs
+    Core Responsibilities:
+Use SPSS to conduct descriptive and inferential statistical analyses.
+Perform regression analysis, ANOVA, hypothesis testing, and survey analysis.
+Evaluate experimental design and sampling techniques for research projects.
+Develop and maintain complex SQL queries to extract and manipulate data from relational databases (e.g., MySQL, PostgreSQL, SQL Server).
+Optimize queries for performance and scalability.
+Perform data cleansing, validation, and transformation to ensure data accuracy and consistency.
+Use Python for data wrangling, automation, and analytics using libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn.
+Automate repetitive reporting tasks and develop reusable scripts for data processing.
+Integrate data from APIs or flat files (CSV, JSON, Excel) into databases or analysis pipelines.
+Create dynamic dashboards and reports using Tableau to provide real-time insights to stakeholders.
+Develop KPIs and performance metrics to track organizational objectives.
+Translate complex findings into clear, actionable recommendations using visuals.
+Collaborate with stakeholders from marketing, operations, finance, and product teams to define requirements and deliver analytics solutions.
+Present findings to leadership and non-technical audiences in a concise, story-driven format.
+Serve as a data advocate, promoting a data-driven culture across departments.
+Salary
+Min Salary: ₹ 4,80,000 /Year
+Max Salary: ₹ 8,60,000 /Year
+Illustration of project workflow
+Work Detail
+Working Days: 5 Days
+Job Type/Timing
+Job Type: Work From Home
+Job Timing: Full Time
+Perks: Flexible Hours
+    `
+  }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

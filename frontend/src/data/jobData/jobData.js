@@ -3588,6 +3588,220 @@ Job Timing: Full Time
 Perks: Flexible Hours
     `
   }
+  ,{
+  id: 215,
+  company: "Unext Learning",
+  role: "Backend Operations & Data Analysis",
+  hiringLink: "https://www.naukri.com/job-listings-placement-support-backend-operations-data-analysis-unext-learning-bengaluru-0-to-5-years-110326037317",
+  fullDescription:`
+
+Company: Online Manipal (Unext)
+
+Experience: 0 - 2 Years
+
+Location: Bangalore (Virtual Interview Process)
+
+
+Salary Details:
+
+Freshers: 30,000 Take-Home per month.
+Experienced (Up to 2 years): Up to 40,000 Take-Home per month.
+
+Job Description
+
+We are looking for a candidate who thrives on numbers and operational efficiency. This role focuses heavily on Data Analysis to support the placement wing of Online Manipal.
+
+
+Primary Focus: Data Analysis & Reporting
+
+Collect and clean large datasets related to learners, placements, and recruiters.
+Highlight: Analyze data reports to present insights that support high-level decision-making.
+Expertise in Advanced Excel and PowerPoint is mandatory.
+Knowledge of PowerBI or similar visualization tools is highly preferred.
+
+Operational Responsibilities:
+
+Manage the University Placement Portal and maintain all job postings.
+Coordinate with front-end placement teams to share candidate applications.
+Resolve student queries via email and coordinate learner engagement sessions.
+Monitor dashboards to ensure all operational matrices are on track.
+
+Desired Candidate Profile
+
+Education: Graduate (Any stream).
+Skills: Excellent written/verbal communication and strong problem-solving abilities.
+Tech Savvy: Comfortable with CRM, Excel, and virtual communication platforms.
+Availability: Immediate joiners preferred.
+
+Recruiter Contact Information
+
+Contact Person: HR Komal
+Mobile: 8660410070
+Email: komal.bhagirath@u-next.com
+Role: Operations - Other
+Industry Type: Education / Training
+Department: Customer Success, Service & Operations
+Employment Type: Full Time, Permanent
+Role Category: Operations
+Education
+UG: Any Graduate
+Key Skills
+Skills highlighted with 'Important' are preferred keyskills
+Data Analysis (Important)
+Communication Skills
+Power Bi
+Problem Solving
+Advanced Excel
+Placement Coordination
+`
+}
+,{
+  id: 216,
+  company: "Auto Wisdom",
+  role: "Software Developer Backend Intern 1 2026-27",
+  hiringLink: "https://wellfound.com/l/2C44QW",
+  fullDescription:`
+About the job
+Important: This is an unpaid, high-intensity internship for ambitious self-starters who want to push their technical limits and accelerate their growth.
+
+About AutoWisdom:
+AutoWisdom is building the future of automotive intelligence. We create high-performance platforms that simplify car ownership, enhance decision-making, and power digital transformation for automotive brands. Right now, we’re founder-led — which means you’ll work directly with the founder, gaining first-hand exposure to product, tech, and startup building from the ground up. You won’t just be writing code — you’ll be shipping live systems that real users depend on.
+
+Why Join Us:
+At AutoWisdom, your work won’t sit in a repo — it will go live in production. You’ll:
+
+Ship scalable microservices & APIs that power real-world automotive intelligence.
+Work directly with the founder, learning backend engineering and product thinking.
+Get hands-on mentorship and rapid feedback loops.
+Solve tough technical problems in databases, APIs, and distributed systems.
+Build a portfolio of production-ready backend services you can showcase.
+What You’ll Do:
+
+Design and develop robust backend services in Go (Golang)
+Build and maintain RESTful APIs and optimize for performance
+Design efficient PostgreSQL schemas and write optimized queries
+Implement microservices architecture and containerize with Docker
+Participate in code reviews and architecture discussions
+Set up and maintain CI/CD pipelines (GitHub Actions, AWS)
+Document APIs and backend services for future developers
+What We Expect:
+
+Strong foundation in Golang and its ecosystem
+Solid understanding of PostgreSQL & relational database design
+Experience with REST API design and backend–frontend integration
+Familiarity with Git and version control workflows
+Curiosity, grit, and ability to learn fast
+Ownership mindset — you take initiative and deliver outcomes
+Bonus Points For:
+
+Knowledge of Docker and containerization
+Familiarity with AWS services (EC2, RDS, S3, Lambda)
+Experience with Redis for caching and session management
+Understanding of message queues (Kafka, RabbitMQ)
+Exposure to gRPC and Protocol Buffers
+Knowledge of OAuth 2.0 / JWT authentication
+Familiarity with CI/CD principles and deployment pipelines
+Interest in system design, distributed systems, and scalability
+Open-source contributions or personal backend projects
+Eligibility:
+
+B.Tech students (CS/IT or similar), graduated in 2025 or graduating in 2026 or 2027
+Minimum 4-month availability (starting immediately)
+We welcome candidates from all colleges — outstanding projects matter more than resumes
+What You’ll Gain:
+
+Work closely with the founder and see how backend infrastructure powers a startup from scratch
+High ownership & autonomy over live APIs and microservices
+Fast-paced learning with direct mentorship
+A strong backend developer portfolio with production-deployed systems
+Letter of Recommendation (performance-based)
+Priority consideration for future paid roles at AutoWisdom
+Ready to build scalable systems that impact real users?
+Apply now — share your GitHub, portfolio, or the most challenging backend project you’ve built.
+
+Hires remotely in
+Bengaluru 
+Pune 
+Hyderabad 
+Nagpur
+Mumbai
+Raipur
+Karnataka
+Maharashtra
+Rajasthan
+Punjab
+Work Policy: Remote only
+
+Company Location
+Bengaluru • Nagpur
+Visa Sponsorship: Not Available
+
+Relocation: Not Allowed
+Skills
+Redis
+API
+Docker
+DBMS
+Go (Golang)
+AWS
+Psql
+CICD`
+}
+,{
+  id: 217,
+  company: "Zynnex AI",
+  role: "Software Intern – AI / Python (BFSI AI Voice Agents)",
+  hiringLink: "https://wellfound.com/l/2C6HmK",
+  fullDescription:`
+Eligibility: No experience required
+Job Type: Internship
+Hires remotely in: India
+Work Policy: Remote only
+
+Company Location: India
+Visa Sponsorship: Not Available
+
+Preferred Timezones: Maldives Time
+Relocation: Not Allowed
+Skills
+Python
+Machine Learning
+Artificial Intelligence
+Automation
+Backend Development
+API
+LLMs
+About the job
+Zynnex AI is an AI-driven fintech company building AI voice and chat agents for the Wealth and Lending (BFSI) sector. Our technology helps financial institutions automate customer interactions, improve conversion, and operate 24/7 at enterprise scale.
+
+We are looking for a Software Intern who is excited about building innovative AI products and working on real-world AI applications.
+
+As part of the engineering team, you will work on building AI voice agents, backend services, and automation tools for fintech use cases.
+
+Responsibilities
+
+Build and improve AI voice agents and automation tools
+Develop backend logic using Python
+Assist in building AI models and LLM-based workflows
+Integrate APIs and build scalable AI solutions for BFSI use cases
+Collaborate with the product and engineering team
+Requirements
+
+B.Tech (4th year) student or recent graduate
+Good knowledge of Python
+Interest in AI / Machine Learning / LLMs
+Strong problem-solving mindset
+Passion for building real-world AI products
+What We Offer
+
+Paid internship (stipend provided)
+Hands-on experience building real AI products in fintech
+Exposure to AI models, voice agents, and automation tools
+Work Schedule
+
+6-day work week (Monday – Saturday)
+`
+}
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

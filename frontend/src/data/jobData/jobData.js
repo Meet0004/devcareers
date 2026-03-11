@@ -37,7 +37,7 @@ Implement necessary changes - and even re-write the entire product when needed
   hiringLink: "https://job-boards.greenhouse.io/coursera/jobs/5692355004",
   location: "India",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 We are looking for an enthusiastic entry-level Software Engineer to join our Internal Tools team at Coursera. This team builds high-leverage internal products that support our employees across functions such as content operations, learner support, finance, and legal to work more efficiently and improve how we run our business. As part of this team, you’ll work on critical backend operational workflows that support various business functions, including Engineering and Data. This role requires a process-oriented individual with exceptional attention to detail, strong organizational skills, and the ability to effectively manage multiple tasks simultaneously. 
 
 Key Responsibilities
@@ -80,7 +80,7 @@ Be part of a mission-driven company transforming global access to education.
   hiringLink: "https://jobs.intuit.com/job/-/-/27595/90402464720?cid=job_li_click_in_active-fy20_cn_text_job_intuit-talent",
   location: "Bangalore, India",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Responsibilities
 
 Frontend Engineering:
@@ -136,7 +136,7 @@ Intuit provides a competitive compensation package with a strong pay for perform
   hiringLink: "https://www.hackerearth.com/challenges/new/competitive/cepheid-hiring-challenge-2026/",
   location: "Online",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 This position is for the Cepheid team located at Danaher India Development Center (IDC), Bangalore.
 Eligibility Criteria:
 
@@ -163,7 +163,7 @@ Software architects good with building quality software designs and design think
   hiringLink: "https://app.wisowl.com/jobs/430448",
   location: "Bengaluru, Delhi / NCR",
   Stipend: "5 - 8 LPA",
-  fulldescription:`
+  fullDescription:`
 We are looking for a passionate Software Engineer (Fresher) who is eager to build scalable applications and learn modern technologies. You will work closely with senior engineers and product teams to develop, test, and deploy high-quality software solutions.
 
 Responsibilities
@@ -199,7 +199,7 @@ Fresh graduates or up to 1 year experience
   email:"giribabu@pranathiss.com",
   location: "Hyderabad",
   Stipend: "Not disclosed",
-  fulldescription:`
+  fullDescription:`
 
 We are looking for a Full Stack Developer Intern with basic knowledge of frontend and backend technologies.
 
@@ -249,7 +249,7 @@ Role:Full Stack Developer Internship | HYD
   hiringLink: "https://unstop.com/o/fb1Xsjd?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Remote",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Design, develop, and maintain robust backend systems and APIs.
 Write clean, efficient, and well-documented code in relevant programming languages.
 Collaborate with frontend developers and other stakeholders to integrate user-facing elements with server-side logic.
@@ -271,7 +271,7 @@ Must Be a Graduated
   hiringLink: "https://app.joinsuperset.com/join/#/signup/student/jobprofiles/8ef54342-9e29-4069-a055-d9cbba6b30f1",
   location: "PAN India",
   Stipend: "400,000.00 per Annum",
-  fulldescription:`
+  fullDescription:`
 Job Description
  
 
@@ -310,7 +310,7 @@ This position is open only for Indian Citizens.
   hiringLink: "https://careers.swiggy.com/#/careers?src%3Dcareers=&career_page_category%3DTechnology=&location%3DBangalore=&search%3Dtitle:Associate%20Software%20Development%20Engineer%26p%3DeyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjI0MDgzLCJyZXF1ZXN0ZXIiOnsiaWQiOiIiLCJjb2RlIjoiIiwibmFtZSI6IiJ9LCJwYWdlIjoiY2FyZWVycyIsImJ1ZmlsdGVyIjotMSwiY3VzdG9tRmllbGRzIjp7ImNhcmVlcl9wYWdlX2NhdGVnb3J5IjoiVGVjaG5vbG9neSIsImxvY2F0aW9uIjoiQmFuZ2Fsb3JlIiwic2VhcmNoIjoidGl0bGU6QXNzb2NpYXRlIFNvZnR3YXJlIERldmVsb3BtZW50IEVuZ2luZWVyIn19=",
   location: "Bangalore and Hybrid ",
   Stipend: "10 LPA",
-  fulldescription:`
+  fullDescription:`
 Position Overview: 
 
 We are looking for highly motivated individuals who can join our engineering team as aSDEs. As an aSDE, you will have the opportunity to work alongside our experienced engineers and contribute to the design, development, and implementation of cutting-edge backend systems. You will gain hands-on experience with technologies like Java, Go, Elastic Cache, Elasticsearch, Kafka, SQS, DynamoDB, and other innovative tools.
@@ -346,7 +346,7 @@ We are an equal opportunity employer and all qualified applicants will receive c
   hiringLink: "https://app.joinsuperset.com/join/#/signup/student/jobprofiles/65ac431a-2d60-417a-b1f6-6b0f455a1d33",
   location: "PAN India",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Please note: Role will be aligned to Multicloud or Digital Workplace Services or Integrated Smart Operations or IT practice based on candidate’s credentials & performance in the hiring process. 
 
 JOB DESCRIPTION FOR ANALYST TRAINEE ALIGNED TO IT & INTEGRATED SMART OPERATIONS: 
@@ -476,7 +476,7 @@ To ascertain that you are receiving a genuine call from Cognizant, please ensure
   hiringLink: "https://superprocure.freshteam.com/jobs/uSdkSAMq2Db1/software-development-engineer-intern",
   location: "Remote, Kolkata",
   Stipend: "15k and upto 9LPA",
-  fulldescription:`
+  fullDescription:`
 Job Summary :SuperProcure is looking for an enthusiastic software developer who will own the product modules and ensure delivery. Keep pace with growing client requirements, the candidate will perform development and assist the team in building a scalable, robust and high-performance application
 
 Job Responsibilities 
@@ -527,7 +527,7 @@ CTC Offered : 7- 9 LPA
   hiringLink: "https://unstop.com/o/iUIcpMy?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Gurgaon",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Responsibilities of the Candidate :
 
 Follow Agile software development methodology to gather requirements, design, and develop.
@@ -554,7 +554,7 @@ Open to explore and work in new languages.
   hiringLink: "https://unstop.com/o/S1bT4xy?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Bengaluru",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Responsibilities of the Candidate:
 
  Test multidisciplinary Embedded Systems (SW/HW)
@@ -577,7 +577,7 @@ Requirements:
   hiringLink: "https://unstop.com/o/su29d8W?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Hyderabad",
   Stipend: "₹ 2.5 LPA - 12.5 LPA",
-  fulldescription:`
+  fullDescription:`
 Responsibilities
 Develop and deliver engaging, outcome-focused course content
 
@@ -616,7 +616,7 @@ Prior experience in academic instruction, training, or EdTech environments
   hiringLink: "https://unstop.com/o/pELiBAh?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Bengaluru",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Responsibilities of the Candidates:
 
 Design analytical experiences: build intuitive React interfaces for exploring data, comparing metrics, and visualizing trends and causal drivers.
@@ -644,7 +644,7 @@ Excellent communication — explain analytical logic, trade-offs, and findings c
   hiringLink: "https://unstop.com/o/RS1ZVyx?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Pune",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Responsibilities of the Candidate:
 
 You will design, develop, test, deploy, maintain and improve software
@@ -670,7 +670,7 @@ You have the ability to operate across a broad and complex business unit with mu
   hiringLink: "https://unstop.com/o/bVDTWgz?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Internships",
   location: " Hybrid / Ghaziabad Uttar Pradesh",
   Stipend: "25000 - 40000",
-  fulldescription:`
+  fullDescription:`
 About The Project:
 itsmyscreen is an in-house digital platform to enable online listing, booking, and promotion of outdoor advertising media, including hoardings, billboards, and other OOH assets.
 The platform aims to streamline inventory management, bookings, and digital visibility for outdoor media through a structured, scalable, and performance-driven web solution.
@@ -737,7 +737,7 @@ Salary revision and role expansion based on performance and business requirement
   hiringLink: "https://forms.office.com/pages/responsepage.aspx?id=vxDiq1cfnk6NTrMghdOpkRvXmlW7JBlLkmFH3OBxlOxUNTRLQlNKSFMwWjcyS09ZWVU5MkNFNUIzNy4u",
   location: "N/A",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Sasken is inviting applications from fresh engineers who meet the following criteria:
 1. Bachelor in Engineering/Technology (or) Master in Engineering/Technology in Computer Science Engineering (and related branches) or Electronics and Communication Engineering (or) MCA (with BCA/BSc Computer Science) (or) MSc in Computer Science (with BCA/BSc Computer Science)
 2. Marks/CGPA in Highest Qualification: >= 75% (or) 7.5 CGPA on 10.0
@@ -774,7 +774,7 @@ No Reimbursement: Sasken will not reimburse any expenses incurred by candidates 
   hiringLink: "https://redhat.wd5.myworkdayjobs.com/jobs/job/Pune/Associate-Software-Engineer_R-053402-1",
   location: "Pune",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 The Red Hat Experience Engineering (XE) team is looking for an Associate Software Engineer to join us in India. In this role, you will contribute value to Red Hat's customers and support associates through the development, testing, and enhancement of both customer-facing and internal systems as part of an agile and globally distributed product development team. This role requires a blended Development and Quality Engineering skill set, with ownership of both feature development and end-to-end testing to ensure high-quality, scalable systems. This is a great opportunity to develop and test applications and refine existing code bases to help scale them across the complexities of deployment.
 
 What will you do: 
@@ -838,7 +838,7 @@ Experience working on message-driven architecture.
   hiringLink: "https://wellfound.com/l/2C1ppM",
   location: "Bangalore Urban HSR Layout",
   Stipend: "₹50,000 to ₹80,000per month",
-  fulldescription:`
+  fullDescription:`
 You'd own the webapp frontend. This is where users sign up, connect their accounts, see what Aira is doing, and control how it behaves. There's also a chat interface and an animated character (Rive) that lives in the app.
 You'd work directly with the founder. Ship daily. Things change fast because we're still learning what works.
 
@@ -864,8 +864,7 @@ You want to build something, not just collect a paycheck
   hiringLink: "https://fynd.keka.com/careers/jobdetails/118311",
   location: "Mumbai",
   Stipend: "N/A",
-  fulldescription:`
-
+  fullDescription:`
 What will you do at Fynd?
 Collaborate with our development team to design, develop, and maintain web applications using Python, Node.js, Next.js, Mongodb and PostgreSQL.
 Assist in building responsive user interfaces with Tailwind CSS.
@@ -903,7 +902,7 @@ Potential for full-time employment based on performance.
   hiringLink: "https://life.cloudredux.com/jobs/ux-ui-designer-internship/",
   location: "Pune",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 What about You?
 You must be witty, smart, and sometimes sarcastic, but all the time a quirky, creative individual(s), ready to immerse into the world of wireframes, prototypes, colors, fonts, and a lot more.
 
@@ -945,7 +944,7 @@ Important Note: This is a full-time, in-ofﬁce position. The organization is he
   hiringLink: "https://career.virtualinternships.com/jobs/7004284-software-development-intern-fully-remote",
   location: "Remote",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 As a Software Engineer Intern within our vibrant 15+ member product and engineering organization, you'll be getting real, hands-on software engineering experience while being at the forefront of crafting innovative solutions for our global student intern community. 
 
 Depend on your experience, strengths and interests, you can choose to specialize in one area: Backend or Frontend Web Engineering, while maintaining a basic understanding of the other. You'll work alongside experienced engineers to build and improve systems used by students and companies.
@@ -1031,7 +1030,7 @@ Post Internship: Explore long-term opportunities internally, or get support with
   hiringLink: "https://www.naukri.com/job-listings-software-development-amts-professional-athenahealth-technology-private-limited-bengaluru-0-to-2-years-030226915285",
   location: "Bengaluru",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Work Experience 6 month-2 Years of work Experience.
 
 Role summary
@@ -1091,7 +1090,7 @@ PG: Any Postgraduate
   hiringLink: "https://unstop.com/o/V2uYJWg?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Navi Mumbai",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Responsibilities of the Candidate:
 
 Design, develop, test, and maintain applications using .NET technologies (C#, ASP.NET / .NET Core)
@@ -1117,7 +1116,7 @@ Good problem-solving and communication skills
   hiringLink: "https://unstop.com/o/BQntKCi?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Internships",
   location: "Remote",
   Stipend: "₹15,000 - 17,000 per month",
-  fulldescription:`
+  fullDescription:`
 Responsibilities of the Intern:
 
 Perform basic exploratory data analysis (EDA) to identify patterns and insights
@@ -1135,7 +1134,7 @@ Participate in team meetings and share updates or observations
   hiringLink: "https://unstop.com/o/mDVTeaN?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Internships",
   location: "N/A",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 Requirements:
 
 B.Tech/ BE Computer Science branch
@@ -1155,7 +1154,7 @@ Read Less
   hiringLink: "https://www.naukri.com/job-listings-front-end-developer-bluescope-information-technology-chennai-0-to-2-years-040226922168",
   location: "Chennai",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 We are seeking passionate and enthusiastic Frontend Developers (Freshers) with a strong interest in building modern, responsive, and dynamic web applications using ReactJS and/or Angular. The role involves close collaboration with UI/UX designers and backend teams to deliver high-quality user experiences.
 
 
@@ -1192,7 +1191,7 @@ UG: Any Graduate
   hiringLink: "https://www.naukri.com/job-listings-web-developer-sarc-technology-dehradun-0-to-3-years-030226501496",
   location: "Dehradun",
   Stipend: "N/A",
-  fulldescription:`
+  fullDescription:`
 We are looking for a skilled Web Developer to join our team at SARC Technology. The ideal candidate will have a strong foundation in web development and be able to design, develop, and maintain high-quality websites.
 
 Roles and Responsibility
@@ -1221,7 +1220,7 @@ Role: Back End Developer
   hiringLink: "https://unstop.com/o/uIA32rm?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Remote",
   Stipend: "₹ 4.8 LPA - 8.6 LPA",
-  fulldescription:`
+  fullDescription:`
 Key Responsibilities:
 
 Design, develop, and maintain software features and modules
@@ -1255,7 +1254,7 @@ Dynamic and collaborative work environment
   hiringLink: "https://unstop.com/o/VkjxyiD?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Banglore Urban",
   Stipend: "₹ 6 LPA - 8 LPA",
-  fulldescription:`
+  fullDescription:`
 Key Responsibilities:
 
 Assist in developing backend features and services using Python
@@ -3588,8 +3587,7 @@ Job Timing: Full Time
 Perks: Flexible Hours
     `
   }
-  ,{
-  id: 215,
+  ,{ id: 215,
   company: "Unext Learning",
   role: "Backend Operations & Data Analysis",
   hiringLink: "https://www.naukri.com/job-listings-placement-support-backend-operations-data-analysis-unext-learning-bengaluru-0-to-5-years-110326037317",
@@ -3655,97 +3653,60 @@ Advanced Excel
 Placement Coordination
 `
 }
-,{
-  id: 216,
-  company: "Auto Wisdom",
-  role: "Software Developer Backend Intern 1 2026-27",
-  hiringLink: "https://wellfound.com/l/2C44QW",
+,{id: 216,
+  company: "eAspire Technolabs Inc.",
+  role: "AI/ML Engineer",
+  hiringLink: "https://www.naukri.com/job-listings-ai-ml-engineer-hyderabad-evoke-hr-hyderabad-0-to-1-years-110326032548",
   fullDescription:`
-About the job
-Important: This is an unpaid, high-intensity internship for ambitious self-starters who want to push their technical limits and accelerate their growth.
+Job highlights
+Experience with TensorFlow, PyTorch, or Scikit-learn; strong programming skills in Python or R; understanding of statistics and data modeling
+Develop and deploy machine learning models; preprocess and analyze datasets; collaborate with engineers to integrate models
+Department: Data Science & Machine Learning
 
-About AutoWisdom:
-AutoWisdom is building the future of automotive intelligence. We create high-performance platforms that simplify car ownership, enhance decision-making, and power digital transformation for automotive brands. Right now, we’re founder-led — which means you’ll work directly with the founder, gaining first-hand exposure to product, tech, and startup building from the ground up. You won’t just be writing code — you’ll be shipping live systems that real users depend on.
 
-Why Join Us:
-At AutoWisdom, your work won’t sit in a repo — it will go live in production. You’ll:
+Role: Machine Learning Engineer
 
-Ship scalable microservices & APIs that power real-world automotive intelligence.
-Work directly with the founder, learning backend engineering and product thinking.
-Get hands-on mentorship and rapid feedback loops.
-Solve tough technical problems in databases, APIs, and distributed systems.
-Build a portfolio of production-ready backend services you can showcase.
-What You’ll Do:
 
-Design and develop robust backend services in Go (Golang)
-Build and maintain RESTful APIs and optimize for performance
-Design efficient PostgreSQL schemas and write optimized queries
-Implement microservices architecture and containerize with Docker
-Participate in code reviews and architecture discussions
-Set up and maintain CI/CD pipelines (GitHub Actions, AWS)
-Document APIs and backend services for future developers
-What We Expect:
+Location: Hyderabad , Telangana
 
-Strong foundation in Golang and its ecosystem
-Solid understanding of PostgreSQL & relational database design
-Experience with REST API design and backend–frontend integration
-Familiarity with Git and version control workflows
-Curiosity, grit, and ability to learn fast
-Ownership mindset — you take initiative and deliver outcomes
-Bonus Points For:
 
-Knowledge of Docker and containerization
-Familiarity with AWS services (EC2, RDS, S3, Lambda)
-Experience with Redis for caching and session management
-Understanding of message queues (Kafka, RabbitMQ)
-Exposure to gRPC and Protocol Buffers
-Knowledge of OAuth 2.0 / JWT authentication
-Familiarity with CI/CD principles and deployment pipelines
-Interest in system design, distributed systems, and scalability
-Open-source contributions or personal backend projects
-Eligibility:
+Job Summary:
 
-B.Tech students (CS/IT or similar), graduated in 2025 or graduating in 2026 or 2027
-Minimum 4-month availability (starting immediately)
-We welcome candidates from all colleges — outstanding projects matter more than resumes
-What You’ll Gain:
+We are seeking a dynamic AI/ML Engineer to join our Hyderabad team. In this role, you will help design, develop, and deploy machine learning solutions that solve complex business problems. You will work with large datasets, implement ML algorithms, and support AI initiatives to drive innovation across products and services.
 
-Work closely with the founder and see how backend infrastructure powers a startup from scratch
-High ownership & autonomy over live APIs and microservices
-Fast-paced learning with direct mentorship
-A strong backend developer portfolio with production-deployed systems
-Letter of Recommendation (performance-based)
-Priority consideration for future paid roles at AutoWisdom
-Ready to build scalable systems that impact real users?
-Apply now — share your GitHub, portfolio, or the most challenging backend project you’ve built.
 
-Hires remotely in
-Bengaluru 
-Pune 
-Hyderabad 
-Nagpur
-Mumbai
-Raipur
-Karnataka
-Maharashtra
-Rajasthan
-Punjab
-Work Policy: Remote only
+Key Responsibilities:
 
-Company Location
-Bengaluru • Nagpur
-Visa Sponsorship: Not Available
+Develop and train machine learning and deep learning models using frameworks such as TensorFlow, PyTorch, or Scikit-learn.
+Preprocess and analyze large datasets to identify patterns and insights.
+Collaborate with data engineers and software developers to integrate ML models into applications and workflows.
+Evaluate model performance and fine-tune algorithms for accuracy and efficiency.
+Create visualizations and reports to communicate findings to technical and non-technical stakeholders.
+Stay updated with emerging trends in AI/ML and contribute to innovation in projects.
+Assist in deploying ML models into production environments and monitoring their performance.
+Key Skills:
 
-Relocation: Not Allowed
-Skills
-Redis
-API
-Docker
-DBMS
-Go (Golang)
-AWS
-Psql
-CICD`
+Strong programming skills in Python or R, with experience in ML libraries and tools.
+Understanding of statistics, probability, and data modeling.
+Knowledge of supervised, unsupervised, and reinforcement learning techniques.
+Familiarity with data pipelines, SQL, and cloud ML services (AWS SageMaker, Azure ML, or Google AI Platform).
+Analytical thinking, problem-solving skills, and ability to work in teams.
+Good communication skills to convey complex technical concepts effectively.
+
+
+Role: Machine Learning Engineer
+Industry Type: IT Services & Consulting
+Department: Data Science & Analytics
+Employment Type: Full Time, Permanent
+Role Category: Data Science & Machine Learning
+Education
+UG: BCA - Bachelor of Computer Applications in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE), Information Technology, Artificial Intelligence And Machine Learning
+Key Skills
+Skills highlighted with 'Important' are preferred keyskills
+Artificial Intelligence (Important)
+Machine Learning (Important)
+Python (Important)
+  `
 }
 ,{
   id: 217,

@@ -3763,6 +3763,151 @@ Work Schedule
 6-day work week (Monday – Saturday)
 `
 }
+,{id: 218, company: 'Honeycomb Telnet', role: 'Junior Full Stack Engineer',
+  hiringLink:'https://www.naukri.com/job-listings-junior-full-stack-engineer-honeycomb-telnet-bengaluru-0-to-1-years-120326018762',
+  fullDescription:`
+Experience Required: 0 - 1 years
+Package: 8-9 Lacs P.A.
+Work mode: Hybrid | Bengaluru
+  Job highlights
+Experience with JavaScript/TypeScript, basic React and Node.js knowledge
+Develop features under guidance, understand and extend codebase
+  Take on well-scoped features and deliver them with guidance from senior engineers
+– Read the codebase before extending it — understand the patterns, then work within them
+– Ask good questions when genuinely blocked — after you’ve tried, not instead
+
+Required Candidate profile
+
+– JavaScript / TypeScript fundamentals — you can write clean, readable code
+– Basic React knowledge — components, hooks, state; you’ve built something with it
+– Basic Node.js understanding — you know
+Role: Full Stack Developer
+Industry Type: Telecom / ISP
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization
+Key Skills
+Skills highlighted with 'Important' are preferred keyskills
+Fullstack Development (Important)
+JavaScript (Important)
+React (Important)
+Node.Js
+Python
+  `
+}
+  ,{ id: 219, company: 'SmartDocs Business Solutions', role: 'Software Developer',
+    hiringLink:'https://www.naukri.com/job-listings-software-developer-smartdocs-business-solutions-hyderabad-0-to-2-years-110326030681',
+    fullDescription:`
+    Job highlights
+Bachelor's or Master's in Computer Science; foundational knowledge of frontend and backend technologies; strong problem-solving skills
+Design, develop, and maintain web applications; collaborate with teams; troubleshoot and resolve issues
+Job Synopsis:
+
+Are you a passionate coder eager to build real-world applications from the ground up? At SmartDocs, we are looking for a motivated Software Developer to join our engineering team. If you enjoy solving problems, writing clean code, and seeing your work come to life in production, we want you on our team.
+
+
+Key Responsibilities:
+
+Design, develop, and maintain responsive web applications across both frontend and backend using modern frameworks and technologies.
+Write clean, scalable, and well-documented code while collaborating with senior developers and cross-functional teams.
+Participate in the full software development lifecycle including requirement gathering, development, testing, deployment, and maintenance.
+Troubleshoot, debug, and resolve application issues in a timely manner to ensure smooth performance across all platforms.
+Contribute to code reviews, technical discussions, and continuous improvement of development processes and standards.
+
+Nice to Have:
+
+Exposure to cloud platforms such as AWS, Azure, or Google Cloud.
+Familiarity with containerization tools like Docker or Kubernetes.
+Basic understanding of CI/CD pipelines and DevOps practices.
+Experience with version control systems such as Git in a collaborative team setting.
+
+Qualifications:
+
+Bachelor's or Master's degree in Computer Science, Information Technology, or a related field.
+Foundational knowledge of frontend technologies (HTML, CSS, JavaScript, React or Angular) and backend technologies (Node.js, Python, or Java).
+Understanding of databases both relational (MySQL, PostgreSQL) and non-relational (MongoDB).
+Strong problem-solving mindset with a willingness to learn and adapt in a fast-paced development environment.
+
+
+Role: Full Stack Developer
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: Any Graduate
+
+About company
+
+
+SmartDocs is a comprehensive Enterprise Source to Pay tech platform enabling organizations to quickly and continuously realize Source to Pay innovations.
+
+
+We are here to revolutionize the way you handle S2P processes. With over a decade of experience, we have been partnering with global corporations, transforming their S2P operations into streamlined, efficient, and profitable endeavors.
+
+Company Info
+Address:
+SY No. 64, Plot No. 14/1, Huda Techno Enclave Madh apur, HITEC City, Hyderabad, Telangana 500081 , Hyderabad, Telangana, India
+
+    `
+  }
+  ,{ 
+    id: 220, company: 'Lorven Technologies', role: 'Full stack developer',
+    hiringLink:'https://www.naukri.com/job-listings-full-stack-developer-lorventech-solutions-india-pvt-ltd-bengaluru-0-to-5-years-090326502171',
+    fullDescription:`
+    
+Experience Required: 0 - 5 years
+
+Location: Bengaluru
+    Job highlights
+Optimize applications for maximum speed and scalability
+Proficient understanding of code versioning tools (e.g.,Git)
+Proven experience as a React and Node.js Developer or similar role
+Experience with popular React.js workflows (such as Redux) and server-side frameworks (Express,Koa,etc.)
+Job description
+ 
+Design and implement responsive user interfaces using React.js.
+Develop and maintain efficient and scalable server-side applications using Node.js.
+Optimize applications for maximum speed and scalability.
+Implement security and data protection measures.
+Collaborate with UI/UX designers to ensure the technical feasibility of designs.
+Troubleshoot and debug issues across the application stack.
+Requirements:
+Proven experience as a React and Node.js Developer or similar role.
+Strong proficiency in React.js and Node.js, along with their core principles.
+Experience with popular React.js workflows (such as Redux) and server-side frameworks (Express, Koa, etc.).
+Familiarity with RESTful APIs and API integration.
+Proficient understanding of code versioning tools (e.g., Git).
+Solid understanding of web application architecture and design patterns.
+Excellent problem-solving skills and attention to detail.
+Strong communication and teamwork abilities.
+Nice to have:
+Experience with other front-end frameworks like Angular or Vue.js.
+Knowledge of serverless architecture and cloud platforms (AWS, Azure, etc.).
+ 
+Role: Full Stack Developer
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: Any Graduate
+PG: Any Postgraduate
+Key Skills
+SIDE
+Front end
+GIT
+HP data protector
+Architecture
+Web application
+Cloud
+Javascript
+application architecture
+AWS
+    `
+  }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

@@ -27,7 +27,7 @@ const Header = () => {
       }`}>
       <div className="py-5 px-8 sm:px-8 flex justify-between items-center">
         <h2 className="md:ml-5 sm:ml-1 text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-          Dev Careers
+          <a href='/'>Dev Careers</a>
         </h2>
 
         {/* Desktop Navigation */}

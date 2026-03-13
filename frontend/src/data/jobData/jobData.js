@@ -3908,11 +3908,122 @@ application architecture
 AWS
     `
   }
-  // ,{ id: , company: '', role: '',
+  ,{ id: 221, company: 'Intuit', role: 'Software Engineer 1',
+    hiringLink:'https://jobs.intuit.com/job/bengaluru/software-engineer-1/27595/90402464720',
+    fullDescription:`
+    Company Overview
+Intuit is the global financial technology platform that powers prosperity for the people and communities we serve. With approximately 100 million customers worldwide using products such as TurboTax, Credit Karma, QuickBooks, and Mailchimp, we believe that everyone should have the opportunity to prosper. We never stop working to find new, innovative ways to make that possible.
+
+Job Overview
+This role is ideal for those at the start of their professional journey, with less than two years of industry experience who are eager to learn, grow, and make an immediate impact. As this is a general posting, we’ll align you with a team based on your skills, interests, and career aspirations to set you up for success.
+
+We're cultivating a culture that prioritizes innovators, risk-takers, and imaginative thinkers. You’ll help create solutions that transform how millions of consumers and small businesses manage their finances in cloud, platform, mobile, and SaaS environments. Working in a culture that embraces experimentation and rapid prototyping, you’ll collaborate closely with customers and cross-functional teams, turning ideas into real impact while building the skills to launch a rewarding career.
+
+
+Responsibilities
+
+Frontend Engineering:
+
+Experience developing scalable, responsive, and dynamic web-based applications
+Familiarity with modern frontend tools and frameworks such as React, AngularJS, or Vue.js
+Knowledge of HTML, CSS, and JavaScript standards
+Strong ability to collaborate with designers, UX specialists, and backend engineers
+Backend Engineering:
+
+Experience developing web applications using server-side languages, such as Java, Python, or Node.js.
+Familiarity with database technologies such as MySQL, PostgreSQL, or MongoDB
+Understanding of RESTful API design principles and ability to work with API integrations
+Experience with server frameworks such as Express, Spring MVC or Django
+Fullstack Engineering:
+
+Familiarity with both frontend and backend development
+Ability to work effectively with developers and designers, discussing application and API architectures
+Understanding of Agile methodologies and ability to work with Scrum teams
+Familiarity with tools such as Git, Jenkins, or Travis
+Mobile Engineering:
+
+Experience developing applications for one or more platforms such as Android and iOS
+Familiarity with mobile application development frameworks such as React Native or Flutter
+Understanding of development tools such as XCode, Android Studio and SDK languages such as Objective-C, Swift or Java
+Ability to work with designers and backend engineers to integrate mobile applications with cloud-based APIs
+Across all tech stacks:
+
+Contribute to our core products and services, as well as systems that power critical engineering operations.
+See your work launched and help solve meaningful problems for customers.
+Learn and apply proven best practices in designing, building, and supporting software projects.
+Receive hands-on guidance, detailed feedback, and mentorship from experienced team members.
+Collaborate closely with peers across disciplines and build strong, supportive working relationships.
+
+Qualifications
+
+Qualifications
+
+Bachelor’s or Master’s degree in Computer Science, a related technical field, or equivalent practical experience.
+Foundational understanding of Agile development, object-oriented design, and programming principles.
+Coursework, internships, personal projects, or academic experience with one or more programming languages (e.g., Java, Python, JavaScript, C++, etc.).
+Basic knowledge of front-end web technologies (e.g., HTML, CSS, JavaScript) and familiarity with frameworks or tools is a plus.
+Strong written, verbal, and collaboration skills with the ability to work effectively in a team environment.
+Awareness of AI concepts and a basic understanding of capabilities like Generative AI.
+Willingness to learn and adapt to new priorities, tools, and technologies in a fast-paced, dynamic environment.
+
+Intuit provides a competitive compensation package with a strong pay for performance rewards approach. This position will be eligible for a cash bonus, equity rewards and benefits, in accordance with our applicable plans and programs (see more about our compensation and benefits at Intuit®: Careers | Benefits). Pay offered is based on factors such as job-related knowledge, skills, experience, and work location. To drive ongoing fair pay for employees, Intuit conducts regular comparisons across categories of ethnicity and gender.
+    `
+  }
+    ,{ id: 222, company: 'BluePMS Software Solutions Pvt Ltd', role: 'Technical Support Engineer',
+    hiringLink:'',
+    fullDescription:`
+    Number of Openings: 5
+    Eligibility: Fresher and Experienced Professionals 
+    Details
+We are looking for a motivated Technical Support Engineer (0–3 years experience) to provide technical assistance for software, hardware, and network-related issues. The candidate will troubleshoot problems, assist users, and ensure smooth system operations.
+Key Responsibilities
+Provide technical support via phone, email, chat, or remote tools.
+Troubleshoot hardware, software, and networking issues.
+Install, configure, and maintain systems and applications.
+Diagnose technical problems and provide timely solutions.
+Document issues and resolutions in the support system.
+Escalate complex issues to senior technical teams when required.
+Assist users with system setup, updates, and configurations.
+Ensure high levels of customer satisfaction and service quality.
+Required Skills
+
+Basic knowledge of Windows/Linux operating systems.
+Understanding of computer hardware and software troubleshooting.
+Basic networking knowledge (TCP/IP, DNS, LAN).
+Strong problem-solving and analytical skills.
+Good communication and interpersonal skills.
+Ability to learn quickly and work in a team environment.
+Education
+
+Bachelor’s degree in Computer Science, Information Technology, Electronics, or related field (B.E / B.Tech / B.Sc / BCA / MCA / Diploma).
+Experience
+0–3 years in Technical Support / IT Support / Helpdesk roles.
+Freshers with strong technical knowledge are encouraged to apply.
+Application Deadline: 19 Mar 26, 12:00 AM IST
+HR: kalidas@bluepms.com
+Job Location(s): Chennai
+Work Detail
+Working Days: 5 Days
+Job Type: Work From Home
+Job Timing: Full Time
+    `
+  }
+      // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`
   //   `
   // }
+      // ,{ id: , company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
+      // ,{ id: , company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
+  
 ]
 
 export default companiesData

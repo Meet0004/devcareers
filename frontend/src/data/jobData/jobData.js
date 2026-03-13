@@ -3970,7 +3970,7 @@ Intuit provides a competitive compensation package with a strong pay for perform
     `
   }
     ,{ id: 222, company: 'BluePMS Software Solutions Pvt Ltd', role: 'Technical Support Engineer',
-    hiringLink:'',
+    hiringLink:'https://unstop.com/o/DEyLJm5?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
     fullDescription:`
     Number of Openings: 5
     Eligibility: Fresher and Experienced Professionals 

@@ -3718,10 +3718,8 @@ Eligibility: No experience required
 Job Type: Internship
 Hires remotely in: India
 Work Policy: Remote only
-
 Company Location: India
 Visa Sponsorship: Not Available
-
 Preferred Timezones: Maldives Time
 Relocation: Not Allowed
 Skills
@@ -3734,32 +3732,25 @@ API
 LLMs
 About the job
 Zynnex AI is an AI-driven fintech company building AI voice and chat agents for the Wealth and Lending (BFSI) sector. Our technology helps financial institutions automate customer interactions, improve conversion, and operate 24/7 at enterprise scale.
-
 We are looking for a Software Intern who is excited about building innovative AI products and working on real-world AI applications.
-
 As part of the engineering team, you will work on building AI voice agents, backend services, and automation tools for fintech use cases.
-
 Responsibilities
-
 Build and improve AI voice agents and automation tools
 Develop backend logic using Python
 Assist in building AI models and LLM-based workflows
 Integrate APIs and build scalable AI solutions for BFSI use cases
 Collaborate with the product and engineering team
 Requirements
-
 B.Tech (4th year) student or recent graduate
 Good knowledge of Python
 Interest in AI / Machine Learning / LLMs
 Strong problem-solving mindset
 Passion for building real-world AI products
 What We Offer
-
 Paid internship (stipend provided)
 Hands-on experience building real AI products in fintech
 Exposure to AI models, voice agents, and automation tools
 Work Schedule
-
 6-day work week (Monday – Saturday)
 `
 }

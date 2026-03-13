@@ -9,7 +9,7 @@ const CompanyDetailMain = ({ selectedCompany }) => {
   return (
     <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto px-4">
 
-      {/* LEFT - Main Content (full width on mobile, 65% on desktop) */}
+      {/* LEFT - Main Content */}
       <div className="w-full lg:flex-[65] min-w-0 bg-white rounded-lg shadow-md p-6 lg:p-8">
         <Link
           to="/company-details"
@@ -25,11 +25,13 @@ const CompanyDetailMain = ({ selectedCompany }) => {
 
         <ApplySection selectedCompany={selectedCompany} />
 
-        <JobDescription description={selectedCompany.fullDescription} />
-        <BelowDescriptionPanels/>
+        {/* Pass the whole object — JobDescription reads .quickInfo and .sections */}
+        <JobDescription selectedCompany={selectedCompany} />
+
+        <BelowDescriptionPanels />
       </div>
 
-      {/* RIGHT - Sidebar (full width on mobile, 25% on desktop) */}
+      {/* RIGHT - Sidebar */}
       <div className="w-full lg:flex-[25] min-w-0">
         <div className="lg:sticky lg:top-4">
           <CompanyDetailSidebar />

@@ -3407,498 +3407,715 @@ CONTACT:
 // We are a young, dynamic IT solutions and umbrella services company. System Audit is our thrust area and we have expanded our sphere to include various aspects of the same in our business endeavor. Founded on a vast IT experience, Shashwat is a technically sound and professionally reliable company with long term business relations as its singular objective. Our key differentiation in Audit space is our sound technological knowledge which helps us go beyond merely identifying and pinpointing the discrepancies. We give solutions In a short span of time since inception, we have earned the trust of customers across Maharashtra and our customers include business enterprises, educational institutes, banks and IT companies of repute.
 // `
 //   }
-  ,{ id: 211, company: 'Ingram Micro', role: 'Data Analyst',
-    hiringLink:'https://unstop.com/o/9bxVsvw?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
-    fullDescription:`
-Category: Data Analysis, Data Engineering, Business Intelligence & Analytics
-Eligibility: Fresher
-Core Responsibilities:
-Use SPSS to conduct descriptive and inferential statistical analyses.
-Perform regression analysis, ANOVA, hypothesis testing, and survey analysis.
-Evaluate experimental design and sampling techniques for research projects.
-Develop and maintain complex SQL queries to extract and manipulate data from relational databases (e.g., MySQL, PostgreSQL, SQL Server).
-Optimize queries for performance and scalability.
-Perform data cleansing, validation, and transformation to ensure data accuracy and consistency.
-Use Python for data wrangling, automation, and analytics using libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn.
-Automate repetitive reporting tasks and develop reusable scripts for data processing.
-Integrate data from APIs or flat files (CSV, JSON, Excel) into databases or analysis pipelines.
-Create dynamic dashboards and reports using Tableau to provide real-time insights to stakeholders.
-Develop KPIs and performance metrics to track organizational objectives.
-Translate complex findings into clear, actionable recommendations using visuals.
-Collaborate with stakeholders from marketing, operations, finance, and product teams to define requirements and deliver analytics solutions.
-Present findings to leadership and non-technical audiences in a concise, story-driven format.
-Serve as a data advocate, promoting a data-driven culture across departments.
-Experience
-No prior experience required
-Illustration of salary/stipend breakdown for the position
-Salary
-Min Salary: ₹ 4,60,000 /Year
-Max Salary: ₹ 6,10,000 /Year
-ESOPs available
-Work Detail:
-Working Days: 5 Days
-Job Type/Timing
-Job Type: Work From Home
-Job Timing: Full Time
-Perks: Transport
+// ─────────────────────────────────────────────────────────────
+// JOB DATA — manually structured for JobDescription component
+// Section types: overview | responsibilities | skills |
+//   nice_to_have | benefits | salary | work_details |
+//   education | about_company | contact
+// Leave items: [] to hide a section automatically
+// ─────────────────────────────────────────────────────────────
 
-Updated On: 03 Mar 26, 06:49 PM IST
-The data on this page gets updated in every 15 minutes.
-This opportunity has been listed by Ingram Micro. Unstop is not liable for any content mentioned in this opportunity or the process followed by the organizers for this opportunity. However, please raise a complaint if you want Unstop to look into the matter.
-`
-  }
-  ,{ id: 213, company: 'Pravin Ratilal Share & Stock Brokers Ltd', role: 'Associate Full-Stack Engineer',
-    hiringLink:'https://www.naukri.com/job-listings-associate-full-stack-engineer-pravin-ratilal-share-stock-brokers-ltd-ahmedabad-0-to-2-years-070326018836',
-    fullDescription:`
-    Experience: 0 - 2 years
-Salary: 2.5-4.5 Lacs P.A.
-Location: Ahmedabad
-Openings: 1
-Note: Prefers women candidates, women returning to work, ex-defence personnel
+  // ── 211: Ingram Micro ─────────────────────────────────────
+  ,{
+    id: 211,
+    company: 'Ingram Micro',
+    role: 'Data Analyst',
+    hiringLink: 'https://unstop.com/o/9bxVsvw?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
 
-    Job highlights
-Entry-level candidate with strong proficiency in Python, JavaScript/TypeScript, and experience with SQL/NoSQL databases
-Design, develop, and maintain features across the application lifecycle, manage data flow, and tackle technical challenges
-Job description
+    quickInfo: [
+      { label: 'Experience', value: 'Fresher' },
+      { label: 'Job Type',   value: 'Full Time' },
+      { label: 'Work Mode',  value: 'Work From Home' },
+      { label: 'Salary',     value: '₹4.6L – ₹6.1L / Year' },
+      { label: 'Perks',      value: 'Transport, ESOPs' },
+      { label: 'Days',       value: '5 Days / Week' },
+    ],
 
-Role: Associate Full-Stack Engineer
+    sections: [
+      {
+        type: 'responsibilities',
+        items: [
+          'Use SPSS to conduct descriptive and inferential statistical analyses',
+          'Perform regression analysis, ANOVA, hypothesis testing, and survey analysis',
+          'Evaluate experimental design and sampling techniques for research projects',
+          'Develop and maintain complex SQL queries to extract and manipulate data from relational databases (MySQL, PostgreSQL, SQL Server)',
+          'Optimize queries for performance and scalability',
+          'Perform data cleansing, validation, and transformation to ensure data accuracy and consistency',
+          'Use Python for data wrangling, automation, and analytics using pandas, numpy, matplotlib, seaborn, and scikit-learn',
+          'Automate repetitive reporting tasks and develop reusable scripts for data processing',
+          'Integrate data from APIs or flat files (CSV, JSON, Excel) into databases or analysis pipelines',
+          'Create dynamic dashboards and reports using Tableau to provide real-time insights to stakeholders',
+          'Develop KPIs and performance metrics to track organizational objectives',
+          'Translate complex findings into clear, actionable recommendations using visuals',
+          'Collaborate with stakeholders from marketing, operations, finance, and product teams',
+          'Present findings to leadership and non-technical audiences in a concise, story-driven format',
+          'Serve as a data advocate, promoting a data-driven culture across departments',
+        ],
+      },
+      {
+        type: 'salary',
+        items: [
+          'Min Salary: ₹4,60,000 / Year',
+          'Max Salary: ₹6,10,000 / Year',
+          'ESOPs: Available',
+        ],
+      },
+      {
+        type: 'work_details',
+        items: [
+          'Working Days: 5 Days',
+          'Job Type: Work From Home',
+          'Job Timing: Full Time',
+          'Perks: Transport',
+        ],
+      },
+    ],
+  },
 
-Location: Ahmedabad (Shyamal)
-
-Type: Full-Time
-
-Experience: Entry Level (Fresh Graduate or 0-2 years)
-
-
-The Opportunity
-
-We are seeking a high-aptitude, versatile Engineer to join our Fintech team. This is a role for a "first-principles" thinkersomeone who doesn't just write code that works, but deeply understands the systems they build. You will work in a fast-moving environment where you will touch every layer of the stack, from database internals and data pipelines to high-performance user interfaces.
-
-As a generalist, you will work closely with a Senior Developer in a mentorship-heavy environment, taking ownership of features that handle real financial data. We value independent problem-solvers who are eager to master the complexities of financial technology and grow into world-class engineers.
-
-
-Core Responsibilities
-
-End-to-End Development: Design, develop, and maintain features across the entire application lifecycle.
-Data Integration & Extraction: Build robust systems to pull, scrape, and normalize data from various financial sources into a cohesive internal ecosystem.
-System Architecture: Manage data flow across hybrid database environments (SQL and NoSQL), ensuring high availability and data integrity.
-Reliability & Performance: Write clean, testable, and performant code that meets the precision standards of a fintech environment.
-Independent Research: Tackle ambiguous technical challenges by researching best practices and implementing modern engineering solutions.
-
-Technical Skills & Requirements
-
-Backend: Strong proficiency in Python and its core ecosystem.
-Frontend: Solid command of JavaScript/TypeScript and modern UI frameworks.
-Databases: Hands-on experience with Relational (SQL) and Non-Relational (NoSQL) systems.
-Networking: Understanding of web protocols (HTTP/S, WebSockets) and API design (REST/JSON).
-Proof of Work: An active GitHub profile or a personal website/portfolio demonstrating your ability to build and document complex projects independently.
-
-To Apply:
-Please send your resume on hr@pravinratilal.com or you may directly contact on 07926553774.
-
-Role: Technology / IT - Other
-Industry Type: Financial Services (Broking)
-Department: Project & Program Management
-Employment Type: Full Time, Permanent
-Role Category: Technology / IT
-Education
-UG: Diploma in Computer Science and Engineering, IT, ITI Certification in Information Technology, B.B.A/ B.M.S - Bachelor of Business Admin / Mgmt Studies in Computer Application, B.Com - Bachelor of Commerce in Any Specialization, B.Sc - Bachelor of Science in Any Specialization, Bachelor of Artificial Intelligence in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization, Other Graduate
-PG: Any Postgraduate
-Key Skills
-GitHub (Important)
-
-Code Writing (Important)
-
-JavaScript (Important)
-
-API Design and Development (Important)
-
-Python (Important)
-
-WebSocket
-
-HTML
-
-Node.js
-
-SQL
-
-NoSQL
-
-TypeScript
-
-UI Automation Framework
-
-HTTP Protocol
-
-
-
-
-About company
-
-We are PHYGITAL = Physical + Digital” experience
-Over the years, the name of PRSSB Limited has often been associated with Ethics, Integrity, Transparency and Seamless Customer experience. Second and Third generations of clients continue to be associated with us.
-Apart from providing hands-on, quick and personalized solutions through our highly experienced management and qualified staff, we continue to evolve with times to provide easy to use Online Trading Platform along with a fully automated Digital Dashboard to ensure that the experience of our clients in the Stock markets is world class.
-
-Company Info
-Link:
-Pravin Ratilal Share & Stock Brokers Ltd website
-Address:
-506,5TH FLOOR, NR GANDHIGRAM RLY STATION,SAKAR 1,A SHRAM ROAD,NAVRANGPURA , AHMEDABAD, Gujarat, India
-    `
-  }
-  ,{id: 212, company: 'Wikasta Business and Techincal solutions', role: 'Software Development Engineer',
+  // ── 212: Wikasta ──────────────────────────────────────────
+  {
+    id: 212,
+    company: 'Wikasta Business and Technical Solutions',
+    role: 'Software Development Engineer',
     hiringLink: 'https://unstop.com/o/fdUjk1E?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
-    fullDescription: `
-    Number of Openings:  1 
-    Category: Software Development, Software Development, Software Development Engineer / jobs
-    Core Responsibilities:
-Key Responsibilities:
-Design, develop, and maintain software features and modules
-Write clean, efficient, and well-documented code
-Collaborate with team members to understand requirements and deliver solutions
-Debug, test, and fix issues to ensure high performance and reliability
-Participate in code reviews and follow best practices
-Stay updated with modern technologies and contribute new ideas
-Skills & Qualifications:
-Strong understanding of Data Structures, Algorithms, and OOP concepts
-Good knowledge of at least one programming language (Python, Java, C++, or Go)
-Problem-solving mindset and ability to approach challenges logically
-Familiarity with databases (SQL or NoSQL) and basic backend concepts
-Comfort working in Linux/Unix environments and using Git
-Experience with cloud platforms (AWS, GCP, Azure)
-Exposure to containers and orchestration tools
-Understanding of distributed systems or messaging queues
-Knowledge of system design fundamentals
-What You Get:
-Hands-on learning and real project ownership
-Guidance from experienced engineers
-Opportunity to build scalable systems and gain end-to-end development experience
-Dynamic and collaborative work environment
-Salary
-Min Salary: ₹ 4,80,000 /Year
-Max Salary: ₹ 8,60,000 /Year
-Illustration of project workflow
-Work Detail
-Working Days: 5 Days
-Job Type/Timing
-Job Type: Work From Home
-Job Timing: Full Time
-Perks: Flexible Hours
-    `
-  }
-  ,{ id: 215,
-  company: "Unext Learning",
-  role: "Backend Operations & Data Analysis",
-  hiringLink: "https://www.naukri.com/job-listings-placement-support-backend-operations-data-analysis-unext-learning-bengaluru-0-to-5-years-110326037317",
-  fullDescription:`
 
-Company: Online Manipal (Unext)
+    quickInfo: [
+      { label: 'Openings',  value: '1' },
+      { label: 'Job Type',  value: 'Full Time' },
+      { label: 'Work Mode', value: 'Work From Home' },
+      { label: 'Salary',    value: '₹4.8L – ₹8.6L / Year' },
+      { label: 'Perks',     value: 'Flexible Hours' },
+      { label: 'Days',      value: '5 Days / Week' },
+    ],
 
-Experience: 0 - 2 Years
+    sections: [
+      {
+        type: 'responsibilities',
+        items: [
+          'Design, develop, and maintain software features and modules',
+          'Write clean, efficient, and well-documented code',
+          'Collaborate with team members to understand requirements and deliver solutions',
+          'Debug, test, and fix issues to ensure high performance and reliability',
+          'Participate in code reviews and follow best practices',
+          'Stay updated with modern technologies and contribute new ideas',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'Strong understanding of Data Structures, Algorithms, and OOP concepts',
+          'Good knowledge of at least one programming language: Python, Java, C++, or Go',
+          'Problem-solving mindset and ability to approach challenges logically',
+          'Familiarity with databases (SQL or NoSQL) and basic backend concepts',
+          'Comfort working in Linux/Unix environments and using Git',
+        ],
+      },
+      {
+        type: 'nice_to_have',
+        items: [
+          'Experience with cloud platforms (AWS, GCP, Azure)',
+          'Exposure to containers and orchestration tools',
+          'Understanding of distributed systems or messaging queues',
+          'Knowledge of system design fundamentals',
+        ],
+      },
+      {
+        type: 'benefits',
+        items: [
+          'Hands-on learning and real project ownership',
+          'Guidance from experienced engineers',
+          'Opportunity to build scalable systems and gain end-to-end development experience',
+          'Dynamic and collaborative work environment',
+        ],
+      },
+      {
+        type: 'salary',
+        items: [
+          'Min Salary: ₹4,80,000 / Year',
+          'Max Salary: ₹8,60,000 / Year',
+        ],
+      },
+      {
+        type: 'work_details',
+        items: [
+          'Working Days: 5 Days',
+          'Job Type: Work From Home',
+          'Job Timing: Full Time',
+          'Perks: Flexible Hours',
+        ],
+      },
+    ],
+  },
 
-Location: Bangalore (Virtual Interview Process)
+  // ── 213: Pravin Ratilal ───────────────────────────────────
+  {
+    id: 213,
+    company: 'Pravin Ratilal Share & Stock Brokers Ltd',
+    role: 'Associate Full-Stack Engineer',
+    hiringLink: 'https://www.naukri.com/job-listings-associate-full-stack-engineer-pravin-ratilal-share-stock-brokers-ltd-ahmedabad-0-to-2-years-070326018836',
 
+    quickInfo: [
+      { label: 'Experience', value: '0 – 2 Years' },
+      { label: 'Location',   value: 'Ahmedabad (Shyamal)' },
+      { label: 'Salary',     value: '₹2.5L – ₹4.5L / Year' },
+      { label: 'Openings',   value: '1' },
+      { label: 'Job Type',   value: 'Full Time, Permanent' },
+      { label: 'Domain',     value: 'Fintech / Stock Broking' },
+    ],
 
-Salary Details:
+    sections: [
+      {
+        type: 'overview',
+        items: [
+          'Seeking a high-aptitude, versatile Engineer to join the Fintech team — a "first-principles" thinker who deeply understands the systems they build',
+          'You will work in a fast-moving environment touching every layer of the stack, from database internals and data pipelines to high-performance user interfaces',
+          'Work closely with a Senior Developer in a mentorship-heavy environment, taking ownership of features that handle real financial data',
+          'Prefers women candidates, women returning to work, and ex-defence personnel',
+        ],
+      },
+      {
+        type: 'responsibilities',
+        items: [
+          'End-to-End Development: Design, develop, and maintain features across the entire application lifecycle',
+          'Data Integration & Extraction: Build robust systems to pull, scrape, and normalize data from various financial sources into a cohesive internal ecosystem',
+          'System Architecture: Manage data flow across hybrid database environments (SQL and NoSQL), ensuring high availability and data integrity',
+          'Reliability & Performance: Write clean, testable, and performant code that meets the precision standards of a fintech environment',
+          'Independent Research: Tackle ambiguous technical challenges by researching best practices and implementing modern engineering solutions',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'Backend: Strong proficiency in Python and its core ecosystem',
+          'Frontend: Solid command of JavaScript / TypeScript and modern UI frameworks',
+          'Databases: Hands-on experience with Relational (SQL) and Non-Relational (NoSQL) systems',
+          'Networking: Understanding of web protocols (HTTP/S, WebSockets) and API design (REST/JSON)',
+          'Proof of Work: Active GitHub profile or personal portfolio demonstrating ability to build and document complex projects independently',
+        ],
+      },
+      {
+        type: 'education',
+        items: [
+          'UG: Diploma (CS/IT), BBA/BMS (Computer Application), B.Com, B.Sc, B.Tech/B.E. (Any Specialization), Bachelor of AI, or Other Graduate',
+          'PG: Any Postgraduate',
+        ],
+      },
+      {
+        type: 'about_company',
+        items: [
+          'PRSSB Limited — "PHYGITAL = Physical + Digital" experience',
+          'Known for Ethics, Integrity, Transparency and Seamless Customer experience over decades',
+          'Provides an Online Trading Platform with a fully automated Digital Dashboard for world-class client experience',
+          'Address: 506, 5th Floor, Sakar 1, Ashram Road, Navrangpura, Ahmedabad, Gujarat',
+        ],
+      },
+      {
+        type: 'contact',
+        items: [
+          'Email: hr@pravinratilal.com',
+          'Phone: 07926553774',
+        ],
+      },
+    ],
+  },
 
-Freshers: 30,000 Take-Home per month.
-Experienced (Up to 2 years): Up to 40,000 Take-Home per month.
+  // ── 215: Unext Learning ───────────────────────────────────
+  {
+    id: 215,
+    company: 'Unext Learning (Online Manipal)',
+    role: 'Backend Operations & Data Analysis',
+    hiringLink: 'https://www.naukri.com/job-listings-placement-support-backend-operations-data-analysis-unext-learning-bengaluru-0-to-5-years-110326037317',
 
-Job Description
+    quickInfo: [
+      { label: 'Experience', value: '0 – 2 Years' },
+      { label: 'Location',   value: 'Bangalore' },
+      { label: 'Interview',  value: 'Virtual' },
+      { label: 'Job Type',   value: 'Full Time, Permanent' },
+      { label: 'Salary',     value: '₹30K – ₹40K / Month' },
+      { label: 'Joining',    value: 'Immediate Preferred' },
+    ],
 
-We are looking for a candidate who thrives on numbers and operational efficiency. This role focuses heavily on Data Analysis to support the placement wing of Online Manipal.
+    sections: [
+      {
+        type: 'overview',
+        items: [
+          'Role focuses heavily on Data Analysis to support the placement wing of Online Manipal',
+          'Looking for a candidate who thrives on numbers and operational efficiency',
+        ],
+      },
+      {
+        type: 'responsibilities',
+        items: [
+          'Collect and clean large datasets related to learners, placements, and recruiters',
+          'Analyze data reports to present insights that support high-level decision-making',
+          'Manage the University Placement Portal and maintain all job postings',
+          'Coordinate with front-end placement teams to share candidate applications',
+          'Resolve student queries via email and coordinate learner engagement sessions',
+          'Monitor dashboards to ensure all operational matrices are on track',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'Expertise in Advanced Excel and PowerPoint — mandatory',
+          'Knowledge of PowerBI or similar visualization tools — highly preferred',
+          'Excellent written and verbal communication skills',
+          'Strong problem-solving abilities',
+          'Comfortable with CRM and virtual communication platforms',
+          'Education: Graduate (Any stream)',
+        ],
+      },
+      {
+        type: 'salary',
+        items: [
+          'Freshers: ₹30,000 take-home per month',
+          'Experienced (up to 2 years): Up to ₹40,000 take-home per month',
+        ],
+      },
+      {
+        type: 'contact',
+        items: [
+          'Contact Person: HR Komal',
+          'Mobile: 8660410070',
+          'Email: komal.bhagirath@u-next.com',
+        ],
+      },
+    ],
+  },
 
+  // ── 216: eAspire Technolabs ───────────────────────────────
+  {
+    id: 216,
+    company: 'eAspire Technolabs Inc.',
+    role: 'AI/ML Engineer',
+    hiringLink: 'https://www.naukri.com/job-listings-ai-ml-engineer-hyderabad-evoke-hr-hyderabad-0-to-1-years-110326032548',
 
-Primary Focus: Data Analysis & Reporting
+    quickInfo: [
+      { label: 'Experience', value: '0 – 1 Year' },
+      { label: 'Location',   value: 'Hyderabad, Telangana' },
+      { label: 'Department', value: 'Data Science & Machine Learning' },
+      { label: 'Job Type',   value: 'Full Time, Permanent' },
+    ],
 
-Collect and clean large datasets related to learners, placements, and recruiters.
-Highlight: Analyze data reports to present insights that support high-level decision-making.
-Expertise in Advanced Excel and PowerPoint is mandatory.
-Knowledge of PowerBI or similar visualization tools is highly preferred.
+    sections: [
+      {
+        type: 'overview',
+        items: [
+          'Seeking a dynamic AI/ML Engineer to join the Hyderabad team',
+          'You will design, develop, and deploy machine learning solutions that solve complex business problems',
+          'Work with large datasets, implement ML algorithms, and support AI initiatives to drive innovation',
+        ],
+      },
+      {
+        type: 'responsibilities',
+        items: [
+          'Develop and train machine learning and deep learning models using TensorFlow, PyTorch, or Scikit-learn',
+          'Preprocess and analyze large datasets to identify patterns and insights',
+          'Collaborate with data engineers and software developers to integrate ML models into applications',
+          'Evaluate model performance and fine-tune algorithms for accuracy and efficiency',
+          'Create visualizations and reports to communicate findings to technical and non-technical stakeholders',
+          'Stay updated with emerging trends in AI/ML and contribute to innovation in projects',
+          'Assist in deploying ML models into production environments and monitoring their performance',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'Strong programming skills in Python or R, with experience in ML libraries and tools',
+          'Understanding of statistics, probability, and data modeling',
+          'Knowledge of supervised, unsupervised, and reinforcement learning techniques',
+          'Familiarity with data pipelines, SQL, and cloud ML services (AWS SageMaker, Azure ML, or Google AI Platform)',
+          'Analytical thinking, problem-solving skills, and ability to work in teams',
+          'Good communication skills to convey complex technical concepts effectively',
+        ],
+      },
+      {
+        type: 'education',
+        items: [
+          'BCA — Bachelor of Computer Applications (Any Specialization)',
+          'B.Tech / B.E. in Computer Science, Information Technology, or AI & Machine Learning',
+        ],
+      },
+    ],
+  },
 
-Operational Responsibilities:
+  // ── 217: Zynnex AI ────────────────────────────────────────
+  {
+    id: 217,
+    company: 'Zynnex AI',
+    role: 'Software Intern – AI / Python (BFSI AI Voice Agents)',
+    hiringLink: 'https://wellfound.com/l/2C6HmK',
 
-Manage the University Placement Portal and maintain all job postings.
-Coordinate with front-end placement teams to share candidate applications.
-Resolve student queries via email and coordinate learner engagement sessions.
-Monitor dashboards to ensure all operational matrices are on track.
+    quickInfo: [
+      { label: 'Experience', value: 'No experience required' },
+      { label: 'Job Type',   value: 'Internship' },
+      { label: 'Work Mode',  value: 'Remote Only' },
+      { label: 'Location',   value: 'India' },
+      { label: 'Stipend',    value: 'Paid' },
+      { label: 'Schedule',   value: 'Mon – Sat (6 days)' },
+    ],
 
-Desired Candidate Profile
+    sections: [
+      {
+        type: 'overview',
+        items: [
+          'Zynnex AI is an AI-driven fintech company building AI voice and chat agents for the Wealth and Lending (BFSI) sector',
+          'Technology helps financial institutions automate customer interactions, improve conversion, and operate 24/7 at enterprise scale',
+          'Looking for a Software Intern excited about building innovative AI products and working on real-world applications',
+        ],
+      },
+      {
+        type: 'responsibilities',
+        items: [
+          'Build and improve AI voice agents and automation tools',
+          'Develop backend logic using Python',
+          'Assist in building AI models and LLM-based workflows',
+          'Integrate APIs and build scalable AI solutions for BFSI use cases',
+          'Collaborate with the product and engineering team',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'B.Tech (4th year) student or recent graduate',
+          'Good knowledge of Python',
+          'Interest in AI / Machine Learning / LLMs',
+          'Strong problem-solving mindset',
+          'Passion for building real-world AI products',
+        ],
+      },
+      {
+        type: 'benefits',
+        items: [
+          'Paid internship — stipend provided',
+          'Hands-on experience building real AI products in fintech',
+          'Exposure to AI models, voice agents, and automation tools',
+        ],
+      },
+      {
+        type: 'work_details',
+        items: [
+          'Work Schedule: 6-day work week (Monday – Saturday)',
+          'Work Policy: Remote only',
+          'Visa Sponsorship: Not Available',
+          'Relocation: Not Allowed',
+        ],
+      },
+    ],
+  },
 
-Education: Graduate (Any stream).
-Skills: Excellent written/verbal communication and strong problem-solving abilities.
-Tech Savvy: Comfortable with CRM, Excel, and virtual communication platforms.
-Availability: Immediate joiners preferred.
+  // ── 218: Honeycomb Telnet ─────────────────────────────────
+  {
+    id: 218,
+    company: 'Honeycomb Telnet',
+    role: 'Junior Full Stack Engineer',
+    hiringLink: 'https://www.naukri.com/job-listings-junior-full-stack-engineer-honeycomb-telnet-bengaluru-0-to-1-years-120326018762',
 
-Recruiter Contact Information
+    quickInfo: [
+      { label: 'Experience', value: '0 – 1 Year' },
+      { label: 'Location',   value: 'Bengaluru' },
+      { label: 'Work Mode',  value: 'Hybrid' },
+      { label: 'Salary',     value: '₹8 – 9 LPA' },
+      { label: 'Job Type',   value: 'Full Time, Permanent' },
+    ],
 
-Contact Person: HR Komal
-Mobile: 8660410070
-Email: komal.bhagirath@u-next.com
-Role: Operations - Other
-Industry Type: Education / Training
-Department: Customer Success, Service & Operations
-Employment Type: Full Time, Permanent
-Role Category: Operations
-Education
-UG: Any Graduate
-Key Skills
-Skills highlighted with 'Important' are preferred keyskills
-Data Analysis (Important)
-Communication Skills
-Power Bi
-Problem Solving
-Advanced Excel
-Placement Coordination
-`
-}
-,{id: 216,
-  company: "eAspire Technolabs Inc.",
-  role: "AI/ML Engineer",
-  hiringLink: "https://www.naukri.com/job-listings-ai-ml-engineer-hyderabad-evoke-hr-hyderabad-0-to-1-years-110326032548",
-  fullDescription:`
-Job highlights
-Experience with TensorFlow, PyTorch, or Scikit-learn; strong programming skills in Python or R; understanding of statistics and data modeling
-Develop and deploy machine learning models; preprocess and analyze datasets; collaborate with engineers to integrate models
-Department: Data Science & Machine Learning
+    sections: [
+      {
+        type: 'overview',
+        items: [
+          'Take on well-scoped features and deliver them with guidance from senior engineers',
+          'Read the codebase before extending it — understand the patterns, then work within them',
+          'Ask good questions when genuinely blocked — after you\'ve tried, not instead',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'JavaScript / TypeScript fundamentals — write clean, readable code',
+          'Basic React knowledge — components, hooks, state; you\'ve built something with it',
+          'Basic Node.js understanding — you know how a server works',
+        ],
+      },
+      {
+        type: 'education',
+        items: [
+          'B.Tech / B.E. in Any Specialization',
+        ],
+      },
+      {
+        type: 'work_details',
+        items: [
+          'Work Mode: Hybrid',
+          'Location: Bengaluru',
+          'Job Type: Full Time, Permanent',
+          'Industry: Telecom / ISP',
+        ],
+      },
+    ],
+  },
 
+  // ── 219: SmartDocs ────────────────────────────────────────
+  {
+    id: 219,
+    company: 'SmartDocs Business Solutions',
+    role: 'Software Developer',
+    hiringLink: 'https://www.naukri.com/job-listings-software-developer-smartdocs-business-solutions-hyderabad-0-to-2-years-110326030681',
 
-Role: Machine Learning Engineer
+    quickInfo: [
+      { label: 'Experience', value: '0 – 2 Years' },
+      { label: 'Location',   value: 'Hyderabad, HITEC City' },
+      { label: 'Job Type',   value: 'Full Time, Permanent' },
+      { label: 'Education',  value: 'Any Graduate' },
+    ],
 
+    sections: [
+      {
+        type: 'overview',
+        items: [
+          'Looking for a motivated Software Developer to join the engineering team at SmartDocs',
+          'SmartDocs is a comprehensive Enterprise Source-to-Pay tech platform helping global corporations streamline S2P operations',
+        ],
+      },
+      {
+        type: 'responsibilities',
+        items: [
+          'Design, develop, and maintain responsive web applications across frontend and backend using modern frameworks',
+          'Write clean, scalable, and well-documented code while collaborating with senior developers and cross-functional teams',
+          'Participate in the full software development lifecycle: requirement gathering, development, testing, deployment, and maintenance',
+          'Troubleshoot, debug, and resolve application issues to ensure smooth performance across all platforms',
+          'Contribute to code reviews, technical discussions, and continuous improvement of development processes',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'Foundational knowledge of frontend technologies: HTML, CSS, JavaScript, React or Angular',
+          'Backend technologies: Node.js, Python, or Java',
+          'Understanding of relational databases (MySQL, PostgreSQL) and non-relational databases (MongoDB)',
+          'Strong problem-solving mindset with willingness to learn in a fast-paced environment',
+        ],
+      },
+      {
+        type: 'nice_to_have',
+        items: [
+          'Exposure to cloud platforms such as AWS, Azure, or Google Cloud',
+          'Familiarity with containerization tools like Docker or Kubernetes',
+          'Basic understanding of CI/CD pipelines and DevOps practices',
+          'Experience with version control systems such as Git in a collaborative team setting',
+        ],
+      },
+      {
+        type: 'education',
+        items: [
+          'Bachelor\'s or Master\'s degree in Computer Science, Information Technology, or a related field',
+        ],
+      },
+      {
+        type: 'about_company',
+        items: [
+          'Comprehensive Enterprise Source to Pay tech platform enabling organizations to realize S2P innovations',
+          'Over a decade of experience partnering with global corporations, transforming their S2P operations',
+          'Address: SY No. 64, Plot No. 14/1, Huda Techno Enclave, Madhapur, HITEC City, Hyderabad, Telangana 500081',
+        ],
+      },
+    ],
+  },
 
-Location: Hyderabad , Telangana
+  // ── 220: Lorven Technologies ──────────────────────────────
+  {
+    id: 220,
+    company: 'Lorven Technologies',
+    role: 'Full Stack Developer',
+    hiringLink: 'https://www.naukri.com/job-listings-full-stack-developer-lorventech-solutions-india-pvt-ltd-bengaluru-0-to-5-years-090326502171',
 
+    quickInfo: [
+      { label: 'Experience', value: '0 – 5 Years' },
+      { label: 'Location',   value: 'Bengaluru' },
+      { label: 'Job Type',   value: 'Full Time, Permanent' },
+      { label: 'Education',  value: 'Any Graduate / Postgraduate' },
+    ],
 
-Job Summary:
+    sections: [
+      {
+        type: 'responsibilities',
+        items: [
+          'Design and implement responsive user interfaces using React.js',
+          'Develop and maintain efficient and scalable server-side applications using Node.js',
+          'Optimize applications for maximum speed and scalability',
+          'Implement security and data protection measures',
+          'Collaborate with UI/UX designers to ensure technical feasibility of designs',
+          'Troubleshoot and debug issues across the application stack',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'Proven experience as a React and Node.js Developer or similar role',
+          'Strong proficiency in React.js and Node.js, along with their core principles',
+          'Experience with React.js workflows such as Redux, and server-side frameworks like Express or Koa',
+          'Familiarity with RESTful APIs and API integration',
+          'Proficient understanding of code versioning tools, e.g. Git',
+          'Solid understanding of web application architecture and design patterns',
+          'Excellent problem-solving skills and attention to detail',
+        ],
+      },
+      {
+        type: 'nice_to_have',
+        items: [
+          'Experience with other front-end frameworks like Angular or Vue.js',
+          'Knowledge of serverless architecture and cloud platforms (AWS, Azure, etc.)',
+        ],
+      },
+      {
+        type: 'education',
+        items: [
+          'UG: Any Graduate',
+          'PG: Any Postgraduate',
+        ],
+      },
+    ],
+  },
 
-We are seeking a dynamic AI/ML Engineer to join our Hyderabad team. In this role, you will help design, develop, and deploy machine learning solutions that solve complex business problems. You will work with large datasets, implement ML algorithms, and support AI initiatives to drive innovation across products and services.
+  // ── 221: Intuit ───────────────────────────────────────────
+  {
+    id: 221,
+    company: 'Intuit',
+    role: 'Software Engineer 1',
+    hiringLink: 'https://jobs.intuit.com/job/bengaluru/software-engineer-1/27595/90402464720',
 
+    quickInfo: [
+      { label: 'Experience', value: 'Less than 2 Years' },
+      { label: 'Location',   value: 'Bengaluru' },
+      { label: 'Job Type',   value: 'Full Time' },
+      { label: 'Domain',     value: 'Fintech / SaaS' },
+    ],
 
-Key Responsibilities:
+    sections: [
+      {
+        type: 'overview',
+        items: [
+          'Intuit is the global financial technology platform powering prosperity for ~100 million customers via TurboTax, Credit Karma, QuickBooks, and Mailchimp',
+          'Ideal for those at the start of their professional journey with less than 2 years of experience',
+          'You\'ll be aligned to a team based on your skills, interests, and career aspirations',
+          'Work in a culture that embraces experimentation and rapid prototyping across cloud, platform, mobile, and SaaS environments',
+        ],
+      },
+      {
+        type: 'responsibilities',
+        items: [
+          'Frontend: Build scalable, responsive, dynamic web apps using React, AngularJS, or Vue.js with HTML, CSS, and JavaScript',
+          'Backend: Develop server-side apps using Java, Python, or Node.js with databases like MySQL, PostgreSQL, or MongoDB',
+          'Fullstack: Work across frontend and backend, discussing application and API architectures with Agile/Scrum teams',
+          'Mobile: Develop for Android and/or iOS using React Native, Flutter, Swift, or Java',
+          'Contribute to core products and systems that power critical engineering operations',
+          'Receive hands-on guidance, detailed feedback, and mentorship from experienced team members',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'Foundational understanding of Agile development, object-oriented design, and programming principles',
+          'Experience with one or more programming languages: Java, Python, JavaScript, C++, etc.',
+          'Basic knowledge of front-end web technologies (HTML, CSS, JavaScript) — frameworks are a plus',
+          'Strong written, verbal, and collaboration skills',
+          'Awareness of AI concepts and a basic understanding of Generative AI capabilities',
+          'Willingness to learn and adapt to new priorities, tools, and technologies',
+        ],
+      },
+      {
+        type: 'benefits',
+        items: [
+          'Competitive compensation package with strong pay-for-performance rewards',
+          'Eligible for cash bonus, equity rewards, and benefits',
+          'Regular pay comparisons across categories of ethnicity and gender for ongoing fairness',
+        ],
+      },
+      {
+        type: 'education',
+        items: [
+          'Bachelor\'s or Master\'s degree in Computer Science, a related technical field, or equivalent practical experience',
+        ],
+      },
+    ],
+  },
 
-Develop and train machine learning and deep learning models using frameworks such as TensorFlow, PyTorch, or Scikit-learn.
-Preprocess and analyze large datasets to identify patterns and insights.
-Collaborate with data engineers and software developers to integrate ML models into applications and workflows.
-Evaluate model performance and fine-tune algorithms for accuracy and efficiency.
-Create visualizations and reports to communicate findings to technical and non-technical stakeholders.
-Stay updated with emerging trends in AI/ML and contribute to innovation in projects.
-Assist in deploying ML models into production environments and monitoring their performance.
-Key Skills:
+  // ── 222: BluePMS ──────────────────────────────────────────
+  {
+    id: 222,
+    company: 'BluePMS Software Solutions Pvt Ltd',
+    role: 'Technical Support Engineer',
+    hiringLink: '',
 
-Strong programming skills in Python or R, with experience in ML libraries and tools.
-Understanding of statistics, probability, and data modeling.
-Knowledge of supervised, unsupervised, and reinforcement learning techniques.
-Familiarity with data pipelines, SQL, and cloud ML services (AWS SageMaker, Azure ML, or Google AI Platform).
-Analytical thinking, problem-solving skills, and ability to work in teams.
-Good communication skills to convey complex technical concepts effectively.
+    quickInfo: [
+      { label: 'Openings',   value: '5' },
+      { label: 'Experience', value: '0 – 3 Years' },
+      { label: 'Location',   value: 'Chennai' },
+      { label: 'Job Type',   value: 'Full Time' },
+      { label: 'Work Mode',  value: 'Work From Home' },
+      { label: 'Deadline',   value: '19 Mar 2026' },
+    ],
 
+    sections: [
+      {
+        type: 'overview',
+        items: [
+          'Looking for a motivated Technical Support Engineer to provide technical assistance for software, hardware, and network-related issues',
+          'The candidate will troubleshoot problems, assist users, and ensure smooth system operations',
+          'Eligibility: Freshers and Experienced Professionals both welcome',
+        ],
+      },
+      {
+        type: 'responsibilities',
+        items: [
+          'Provide technical support via phone, email, chat, or remote tools',
+          'Troubleshoot hardware, software, and networking issues',
+          'Install, configure, and maintain systems and applications',
+          'Diagnose technical problems and provide timely solutions',
+          'Document issues and resolutions in the support system',
+          'Escalate complex issues to senior technical teams when required',
+          'Assist users with system setup, updates, and configurations',
+          'Ensure high levels of customer satisfaction and service quality',
+        ],
+      },
+      {
+        type: 'skills',
+        items: [
+          'Basic knowledge of Windows/Linux operating systems',
+          'Understanding of computer hardware and software troubleshooting',
+          'Basic networking knowledge: TCP/IP, DNS, LAN',
+          'Strong problem-solving and analytical skills',
+          'Good communication and interpersonal skills',
+          'Ability to learn quickly and work in a team environment',
+        ],
+      },
+      {
+        type: 'education',
+        items: [
+          'Bachelor\'s degree in Computer Science, Information Technology, Electronics, or related field',
+          'Accepted degrees: B.E / B.Tech / B.Sc / BCA / MCA / Diploma',
+          '0–3 years in Technical Support / IT Support / Helpdesk roles',
+          'Freshers with strong technical knowledge are encouraged to apply',
+        ],
+      },
+      {
+        type: 'work_details',
+        items: [
+          'Working Days: 5 Days',
+          'Job Type: Work From Home',
+          'Job Timing: Full Time',
+          'Location: Chennai',
+        ],
+      },
+      {
+        type: 'contact',
+        items: [
+          'HR Email: kalidas@bluepms.com',
+          'Application Deadline: 19 March 2026, 12:00 AM IST',
+        ],
+      },
+    ],
+  },
 
-Role: Machine Learning Engineer
-Industry Type: IT Services & Consulting
-Department: Data Science & Analytics
-Employment Type: Full Time, Permanent
-Role Category: Data Science & Machine Learning
-Education
-UG: BCA - Bachelor of Computer Applications in Any Specialization, B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE), Information Technology, Artificial Intelligence And Machine Learning
-Key Skills
-Skills highlighted with 'Important' are preferred keyskills
-Artificial Intelligence (Important)
-Machine Learning (Important)
-Python (Important)
-  `
-}
-,{
-  id: 217,
-  company: "Zynnex AI",
-  role: "Software Intern – AI / Python (BFSI AI Voice Agents)",
-  hiringLink: "https://wellfound.com/l/2C6HmK",
-  fullDescription:`
-Eligibility: No experience required
-Job Type: Internship
-Hires remotely in: India
-Work Policy: Remote only
-Company Location: India
-Visa Sponsorship: Not Available
-Preferred Timezones: Maldives Time
-Relocation: Not Allowed
-Skills
-Python
-Machine Learning
-Artificial Intelligence
-Automation
-Backend Development
-API
-LLMs
-About the job
-Zynnex AI is an AI-driven fintech company building AI voice and chat agents for the Wealth and Lending (BFSI) sector. Our technology helps financial institutions automate customer interactions, improve conversion, and operate 24/7 at enterprise scale.
-We are looking for a Software Intern who is excited about building innovative AI products and working on real-world AI applications.
-As part of the engineering team, you will work on building AI voice agents, backend services, and automation tools for fintech use cases.
-Responsibilities
-Build and improve AI voice agents and automation tools
-Develop backend logic using Python
-Assist in building AI models and LLM-based workflows
-Integrate APIs and build scalable AI solutions for BFSI use cases
-Collaborate with the product and engineering team
-Requirements
-B.Tech (4th year) student or recent graduate
-Good knowledge of Python
-Interest in AI / Machine Learning / LLMs
-Strong problem-solving mindset
-Passion for building real-world AI products
-What We Offer
-Paid internship (stipend provided)
-Hands-on experience building real AI products in fintech
-Exposure to AI models, voice agents, and automation tools
-Work Schedule
-6-day work week (Monday – Saturday)
-`
-}
-,{id: 218, company: 'Honeycomb Telnet', role: 'Junior Full Stack Engineer',
-  hiringLink:'https://www.naukri.com/job-listings-junior-full-stack-engineer-honeycomb-telnet-bengaluru-0-to-1-years-120326018762',
-  fullDescription:`
-Experience Required: 0 - 1 years
-Package: 8-9 Lacs P.A.
-Work mode: Hybrid | Bengaluru
-  Job highlights
-Experience with JavaScript/TypeScript, basic React and Node.js knowledge
-Develop features under guidance, understand and extend codebase
-  Take on well-scoped features and deliver them with guidance from senior engineers
-– Read the codebase before extending it — understand the patterns, then work within them
-– Ask good questions when genuinely blocked — after you’ve tried, not instead
-
-Required Candidate profile
-
-– JavaScript / TypeScript fundamentals — you can write clean, readable code
-– Basic React knowledge — components, hooks, state; you’ve built something with it
-– Basic Node.js understanding — you know
-Role: Full Stack Developer
-Industry Type: Telecom / ISP
-Department: Engineering - Software & QA
-Employment Type: Full Time, Permanent
-Role Category: Software Development
-Education
-UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Any Specialization
-Key Skills
-Skills highlighted with 'Important' are preferred keyskills
-Fullstack Development (Important)
-JavaScript (Important)
-React (Important)
-Node.Js
-Python
-  `
-}
-  ,{ id: 219, company: 'SmartDocs Business Solutions', role: 'Software Developer',
-    hiringLink:'https://www.naukri.com/job-listings-software-developer-smartdocs-business-solutions-hyderabad-0-to-2-years-110326030681',
-    fullDescription:`
-    Job highlights
-Bachelor's or Master's in Computer Science; foundational knowledge of frontend and backend technologies; strong problem-solving skills
-Design, develop, and maintain web applications; collaborate with teams; troubleshoot and resolve issues
-Job Synopsis:
-
-Are you a passionate coder eager to build real-world applications from the ground up? At SmartDocs, we are looking for a motivated Software Developer to join our engineering team. If you enjoy solving problems, writing clean code, and seeing your work come to life in production, we want you on our team.
-
-
-Key Responsibilities:
-
-Design, develop, and maintain responsive web applications across both frontend and backend using modern frameworks and technologies.
-Write clean, scalable, and well-documented code while collaborating with senior developers and cross-functional teams.
-Participate in the full software development lifecycle including requirement gathering, development, testing, deployment, and maintenance.
-Troubleshoot, debug, and resolve application issues in a timely manner to ensure smooth performance across all platforms.
-Contribute to code reviews, technical discussions, and continuous improvement of development processes and standards.
-
-Nice to Have:
-
-Exposure to cloud platforms such as AWS, Azure, or Google Cloud.
-Familiarity with containerization tools like Docker or Kubernetes.
-Basic understanding of CI/CD pipelines and DevOps practices.
-Experience with version control systems such as Git in a collaborative team setting.
-
-Qualifications:
-
-Bachelor's or Master's degree in Computer Science, Information Technology, or a related field.
-Foundational knowledge of frontend technologies (HTML, CSS, JavaScript, React or Angular) and backend technologies (Node.js, Python, or Java).
-Understanding of databases both relational (MySQL, PostgreSQL) and non-relational (MongoDB).
-Strong problem-solving mindset with a willingness to learn and adapt in a fast-paced development environment.
-
-
-Role: Full Stack Developer
-Industry Type: IT Services & Consulting
-Department: Engineering - Software & QA
-Employment Type: Full Time, Permanent
-Role Category: Software Development
-Education
-UG: Any Graduate
-
-About company
-
-
-SmartDocs is a comprehensive Enterprise Source to Pay tech platform enabling organizations to quickly and continuously realize Source to Pay innovations.
-
-
-We are here to revolutionize the way you handle S2P processes. With over a decade of experience, we have been partnering with global corporations, transforming their S2P operations into streamlined, efficient, and profitable endeavors.
-
-Company Info
-Address:
-SY No. 64, Plot No. 14/1, Huda Techno Enclave Madh apur, HITEC City, Hyderabad, Telangana 500081 , Hyderabad, Telangana, India
-
-    `
-  }
-  ,{ 
-    id: 220, company: 'Lorven Technologies', role: 'Full stack developer',
-    hiringLink:'https://www.naukri.com/job-listings-full-stack-developer-lorventech-solutions-india-pvt-ltd-bengaluru-0-to-5-years-090326502171',
-    fullDescription:`
-    
-Experience Required: 0 - 5 years
-
-Location: Bengaluru
-    Job highlights
-Optimize applications for maximum speed and scalability
-Proficient understanding of code versioning tools (e.g.,Git)
-Proven experience as a React and Node.js Developer or similar role
-Experience with popular React.js workflows (such as Redux) and server-side frameworks (Express,Koa,etc.)
-Job description
- 
-Design and implement responsive user interfaces using React.js.
-Develop and maintain efficient and scalable server-side applications using Node.js.
-Optimize applications for maximum speed and scalability.
-Implement security and data protection measures.
-Collaborate with UI/UX designers to ensure the technical feasibility of designs.
-Troubleshoot and debug issues across the application stack.
-Requirements:
-Proven experience as a React and Node.js Developer or similar role.
-Strong proficiency in React.js and Node.js, along with their core principles.
-Experience with popular React.js workflows (such as Redux) and server-side frameworks (Express, Koa, etc.).
-Familiarity with RESTful APIs and API integration.
-Proficient understanding of code versioning tools (e.g., Git).
-Solid understanding of web application architecture and design patterns.
-Excellent problem-solving skills and attention to detail.
-Strong communication and teamwork abilities.
-Nice to have:
-Experience with other front-end frameworks like Angular or Vue.js.
-Knowledge of serverless architecture and cloud platforms (AWS, Azure, etc.).
- 
-Role: Full Stack Developer
-Industry Type: IT Services & Consulting
-Department: Engineering - Software & QA
-Employment Type: Full Time, Permanent
-Role Category: Software Development
-Education
-UG: Any Graduate
-PG: Any Postgraduate
-Key Skills
-SIDE
-Front end
-GIT
-HP data protector
-Architecture
-Web application
-Cloud
-Javascript
-application architecture
-AWS
-    `
-  }
   // ,{ id: , company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

@@ -3986,7 +3986,6 @@ Escalate complex issues to senior technical teams when required.
 Assist users with system setup, updates, and configurations.
 Ensure high levels of customer satisfaction and service quality.
 Required Skills
-
 Basic knowledge of Windows/Linux operating systems.
 Understanding of computer hardware and software troubleshooting.
 Basic networking knowledge (TCP/IP, DNS, LAN).
@@ -3994,7 +3993,6 @@ Strong problem-solving and analytical skills.
 Good communication and interpersonal skills.
 Ability to learn quickly and work in a team environment.
 Education
-
 Bachelor’s degree in Computer Science, Information Technology, Electronics, or related field (B.E / B.Tech / B.Sc / BCA / MCA / Diploma).
 Experience
 0–3 years in Technical Support / IT Support / Helpdesk roles.
@@ -4006,7 +4004,7 @@ Work Detail
 Working Days: 5 Days
 Job Type: Work From Home
 Job Timing: Full Time
-    `
+`
   }
   ,{ id: 223, company: 'Orcapod Consulting Services', role: 'Java / SAP / python/ BTP / react / aws',
     hiringLink:'https://www.naukri.com/job-listings-java-sap-python-btp-react-aws-multiple-openings-orcapod-consulting-services-bengaluru-0-to-5-years-130326000153',
@@ -4022,10 +4020,7 @@ Job highlights
 Experience with Java-based systems, SAP, Salesforce CRM, and troubleshooting skills
 Develop, configure, and support enterprise applications; participate in coding, testing, and deployment activities
 If you're exploring new opportunities or wish to apply, please share your updated profile at: 9866164712 (WhatsApp)
-
 Role & responsibilities
-
-
 Work on development, configuration, support, or operations tasks based on the assigned technology area
 Participate in coding, testing, troubleshooting, and deployment activities
 Collaborate with project teams to understand requirements and deliver assigned modules
@@ -4071,7 +4066,7 @@ Sap Ariba
 DBMS
 About company
 Infosys is a global leader in next-generation digital services and consulting, enabling clients in more than 50 countries to navigate their digital transformation. With over four decades of experience in managing the systems and workings of global enterprises, Infosys expertly steers clients through their digital journey by applying AI-powered core, agile digital at scale, and continuous improvement to drive business growth. Infosys is known for its strong focus on innovation, cloud, data, AI, engineering, and enterprise modernization.
-    `
+`
   }
       ,{ id: 224, company: 'Java Back End Developer', role: 'The Glove',
     hiringLink:'https://www.naukri.com/job-listings-java-back-end-developer-the-glove-india-0-to-6-years-110326025705',
@@ -4079,18 +4074,13 @@ Infosys is a global leader in next-generation digital services and consulting, e
 Experience Required: 0 - 6 years
 Work mode: Remote
 Hiring office located in India
-
 Postedon 12-03-2026
 Openings: 30
-
 Job highlights
 Proficient in Java, Spring Boot, REST APIs, SQL, and Microservices
 Develop and maintain Java-based backend applications, write efficient code, and collaborate with frontend developers
-
 Job Description
-
 Roles & Responsibilities:
-
 Develop and maintain Java-based backend applications.
 Write clean, scalable, and efficient code.
 Work with databases and APIs for backend integration.
@@ -4098,9 +4088,6 @@ Collaborate with frontend developers and QA teams.
 Debug, troubleshoot, and optimize backend systems.
 Key Skills Required:
 Java, Spring Boot, REST APIs, SQL, Backend Development, Microservices, Hibernate, Git
-
-
-
 Role: Back End Developer
 Industry Type: IT Services & Consulting
 Department: Engineering - Software & QA
@@ -4117,23 +4104,17 @@ About the Company
 Delivering Exceptional Quality and Unparalleled Expertise
 At The Glove, we are more than just a recruitment company—we are trusted partners dedicated to fostering lasting relationships with both our clients and team members. We strive to understand your business deeply and align our recruitment solutions with your specific needs, ensuring steady and successful hiring outcomes.
 Relationship-Driven Approach: Long-term partnerships are our priority, with several client relationships spanning over a decade.
-
 Expertise and Reliability: Our team’s industry knowledge and proven track record ensure timely delivery of high-quality profiles
-
 AI-Enhanced Recruitment: We utilize advanced AI tools to streamline candidate analysis and improve efficiency, offering faster, more strategic hiring solutions.
-
 Diverse Talent Pool: With AI-driven search technologies, we ensure a broad talent pool to meet changing needs.
 At The Glove, we’re more than just a recruitment consultant; we’re a trusted partner with deep expertise across ITES, software, cloud, data analytics, and AI. We believe in building long-term relationships: with clients who trust us, and with candidates who want more than just a job.
 Our approach is holistic. We don’t just match resumes to roles; we understand your skills, career aspirations, and the kind of organisation you want to work for. Whether it’s mid-level hiring or leadership positions, we use our proprietary database and proven networks to find opportunities that truly fit.
 If you choose to work with us, you can expect a collaborative and transparent experience. We act with integrity, build trust, and support your growth every step of the way. Join us, where the right fit matters.
-
-
-    `
+`
   }
   ,{ id: 225, company: 'Sasti group of companies', role: 'Software Developer',
     hiringLink:'https://www.naukri.com/job-listings-software-developer-python-java-sasti-group-of-companies-chennai-0-to-1-years-130326030552',
     fullDescription:`
-    
 Experience Required: 0 - 1 years
 Package: 2.75-4.5 Lacs P.A.
 Job Location: Chennai
@@ -4144,7 +4125,6 @@ Experience in Java, Python, and web development; knowledge of RESTful APIs
 Develop and maintain server-side applications and APIs for mobile applications
 Job description
 SOFTWARE DEVELOPER
-
 Develop and maintain server-side applications using
 Java,Python Html,CSS,Java Script,Node js,sql,web development,Oracle
 Develop RESTful APIs for and mobile applications,

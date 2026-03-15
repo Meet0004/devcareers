@@ -7,7 +7,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
 		<div style={{
 			display: 'flex',
 			justifyContent: 'center',
-			marginBottom: 48,
+			marginBottom: 32,
 		}}>
 			<div style={{
 				position: 'relative',

@@ -1,188 +1,137 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const ArrowIcon = () => (
-	<svg width={13} height={13} fill="none" stroke="currentColor" viewBox="0 0 24 24"
-		style={{ transition: 'transform 0.2s', flexShrink: 0 }}>
-		<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-	</svg>
+const ArrowIcon = ({ hovered }) => (
+  <svg
+    width={12} height={12} fill="none" stroke="currentColor" viewBox="0 0 24 24"
+    style={{ transition: 'transform 0.2s', transform: hovered ? 'translateX(3px)' : 'none', flexShrink: 0 }}
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+  </svg>
 )
 
 const LocationIcon = () => (
-	<svg width={12} height={12} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-		<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-			d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-		<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-	</svg>
+  <svg width={11} height={11} fill="none" stroke="currentColor" viewBox="0 0 24 24" className="flex-shrink-0">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>
 )
 
 const CompanyCard = ({ company }) => {
-	const [hovered, setHovered] = useState(false)
+  const [hovered, setHovered] = useState(false)
 
-	const initials = company.company
-		? company.company.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase()
-		: '??'
+  const initials = company.company
+    ? company.company.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase()
+    : '??'
 
-	return (
-		<Link
-			to={`/company-details/${encodeURIComponent(company.company)}/${encodeURIComponent(company.role)}`}
-			style={{ textDecoration: 'none' }}
-			onMouseEnter={() => setHovered(true)}
-			onMouseLeave={() => setHovered(false)}
-		>
-			<div style={{
-				background: 'rgba(255,255,255,0.72)',
-				backdropFilter: 'blur(20px)',
-				WebkitBackdropFilter: 'blur(20px)',
-				border: hovered
-					? '1px solid rgba(249,115,22,0.32)'
-					: '1px solid rgba(249,115,22,0.12)',
-				borderRadius: 20,
-				padding: '22px 24px',
-				height: '100%',
-				boxSizing: 'border-box',
-				cursor: 'pointer',
-				transition: 'all 0.35s cubic-bezier(0.34,1.2,0.64,1)',
-				transform: hovered ? 'translateY(-6px) scale(1.01)' : 'translateY(0) scale(1)',
-				boxShadow: hovered
-					? '0 20px 40px rgba(249,115,22,0.13), 0 4px 12px rgba(0,0,0,0.05)'
-					: '0 2px 8px rgba(0,0,0,0.04)',
-				position: 'relative',
-				overflow: 'hidden',
-				display: 'flex',
-				flexDirection: 'column',
-				gap: 14,
-			}}>
-				{/* Top shimmer on hover */}
-				<div style={{
-					position: 'absolute', top: 0, left: 0, right: 0, height: 1,
-					background: 'linear-gradient(90deg, transparent, rgba(249,115,22,0.5), transparent)',
-					opacity: hovered ? 1 : 0,
-					transition: 'opacity 0.3s',
-				}} />
+  return (
+    <Link
+      to={`/company-details/${encodeURIComponent(company.company)}/${encodeURIComponent(company.role)}`}
+      className="block w-full no-underline"
+      style={{ overflow: 'hidden', maxWidth: '100%', display: 'block' }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div
+        className="relative flex flex-col gap-3 p-4 rounded-2xl overflow-hidden cursor-pointer transition-all duration-300"
+        style={{
+          minWidth: 0,
+          width: '100%',
+          boxSizing: 'border-box',
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          border: '1px solid rgba(249,115,22,0.5)',
+          boxShadow
+            : '0 1px 4px rgba(0,0,0,0.04)',
+          transform: hovered ? 'Scale(1)' : 'none',
+        }}
+      >
+        {/* Shimmer top line */}
+        <div
+          className="absolute top-0 left-0 right-0 h-px transition-opacity duration-300"
+          style={{
+            background: 'linear-gradient(90deg, transparent, rgba(249,115,22,0.5), transparent)',
+            opacity: hovered ? 1 : 0,
+          }}
+        />
 
-				{/* Header row */}
-				<div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
-					{/* Company avatar */}
-					<div style={{
-						width: 44, height: 44, flexShrink: 0,
-						background: hovered
-							? 'rgba(249,115,22,0.18)'
-							: 'rgba(249,115,22,0.10)',
-						borderRadius: 12,
-						display: 'flex', alignItems: 'center', justifyContent: 'center',
-						fontSize: 14, fontWeight: 700,
-						color: '#f97316',
-						transition: 'all 0.35s cubic-bezier(0.34,1.56,0.64,1)',
-						transform: hovered ? 'scale(1.1) rotate(-4deg)' : 'scale(1) rotate(0)',
-						letterSpacing: '-0.02em',
-						fontFamily: 'system-ui, -apple-system, sans-serif',
-					}}>
-						{initials}
-					</div>
+        {/* Header: avatar + company + role */}
+        <div className="flex items-start gap-3" style={{ minWidth: 0, overflow: 'hidden' }}>
+          {/* Avatar */}
+          <div
+            className="flex-shrink-0 flex items-center justify-center rounded-xl text-xs font-bold tracking-tight transition-all duration-300"
+            style={{
+              width: 42, height: 42,
+              background: hovered ? 'rgba(249,115,22,0.18)' : 'rgba(249,115,22,0.10)',
+              color: '#f97316',
+              transform: hovered ? 'scale(1.08) rotate(-4deg)' : 'none',
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+            }}
+          >
+            {initials}
+          </div>
 
-					<div style={{ flex: 1, minWidth: 0 }}>
-						<h3 style={{
-							fontSize: 15, fontWeight: 700,
-							color: '#111',
-							margin: '0 0 3px',
-							letterSpacing: '-0.02em',
-							whiteSpace: 'nowrap',
-							overflow: 'hidden',
-							textOverflow: 'ellipsis',
-						}}>
-							{company.company}
-						</h3>
-						<p style={{
-							fontSize: 13, fontWeight: 500,
-							color: '#f97316',
-							margin: 0,
-							whiteSpace: 'nowrap',
-							overflow: 'hidden',
-							textOverflow: 'ellipsis',
-						}}>
-							{company.role}
-						</p>
-					</div>
-				</div>
+          {/* Company + Role */}
+          <div style={{ flex: 1, minWidth: 0, overflow: 'hidden' }}>
+            <h3 className="text-sm font-bold text-gray-900 truncate m-0 leading-tight" style={{ letterSpacing: '-0.02em' }}>
+              {company.company}
+            </h3>
+            <p className="text-xs font-medium truncate m-0 mt-0.5" style={{ color: '#f97316' }}>
+              {company.role}
+            </p>
+          </div>
+        </div>
 
-				{/* Location + meta */}
-				<div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-					{company.location && (
-						<span style={{
-							display: 'inline-flex', alignItems: 'center', gap: 4,
-							fontSize: 12, color: '#9ca3af', fontWeight: 400,
-						}}>
-							<LocationIcon />
-							{company.location}
-						</span>
-					)}
-					{company.type && (
-						<span style={{
-							fontSize: 11, fontWeight: 600,
-							color: '#f97316',
-							background: 'rgba(249,115,22,0.08)',
-							border: '1px solid rgba(249,115,22,0.18)',
-							padding: '2px 9px',
-							borderRadius: 100,
-							letterSpacing: '0.03em',
-						}}>
-							{company.type}
-						</span>
-					)}
-					{company.experience && (
-						<span style={{
-							fontSize: 11, fontWeight: 500,
-							color: '#6b7280',
-							background: 'rgba(107,114,128,0.08)',
-							border: '1px solid rgba(107,114,128,0.15)',
-							padding: '2px 9px',
-							borderRadius: 100,
-						}}>
-							{company.experience}
-						</span>
-					)}
-				</div>
+        {/* Tags row */}
+        {(company.location || company.jobType || company.experience) && (
+          <div className="flex flex-wrap gap-1.5 items-center" style={{ minWidth: 0 }}>
+            {company.location && (
+              <span className="inline-flex items-center gap-1 text-gray-800 font-normal" style={{ fontSize: 11, minWidth: 0, overflow: 'hidden' }}>
+                <LocationIcon />
+                <span className="truncate" style={{ maxWidth: 120 }}>{company.location}</span>
+              </span>
+            )}
+            {company.jobType && (
+              <span
+                className="text- text-gray-800 font-semibold px-2 py-0.5 rounded-full whitespace-nowrap"
+                style={{ fontSize: 10, color: '#f97316', background: 'rgba(249,115,22,0.08)', border: '1px solid rgba(249,115,22,0.18)' }}
+              >
+                {company.jobType}
+              </span>
+            )}
+            {company.experience && (
+              <span
+                className="text-xs text-gray-800 font-medium px-2 py-0.5 rounded-full whitespace-nowrap"
+                style={{ fontSize: 10, color: '#6b7280', background: 'rgba(107,114,128,0.08)', border: '1px solid rgba(107,114,128,0.15)' }}
+              >
+                {company.experience}
+              </span>
+            )}
+          </div>
+        )}
 
-				{/* Description snippet */}
-				{company.description && (
-					<p style={{
-						fontSize: 13, color: '#9ca3af',
-						lineHeight: 1.6, margin: 0,
-						display: '-webkit-box',
-						WebkitLineClamp: 2,
-						WebkitBoxOrient: 'vertical',
-						overflow: 'hidden',
-					}}>
-						{company.description}
-					</p>
-				)}
-
-				{/* Footer CTA */}
-				<div style={{
-					display: 'flex',
-					alignItems: 'center',
-					justifyContent: 'space-between',
-					marginTop: 'auto',
-					paddingTop: 4,
-				}}>
-					{company.deadline && (
-						<span style={{ fontSize: 11, color: '#d1d5db', fontWeight: 400 }}>
-							Due {company.deadline}
-						</span>
-					)}
-					<span style={{
-						display: 'inline-flex', alignItems: 'center', gap: hovered ? 8 : 4,
-						color: '#f97316', fontSize: 13, fontWeight: 600,
-						marginLeft: 'auto',
-						transition: 'gap 0.2s',
-					}}>
-						View Details <ArrowIcon />
-					</span>
-				</div>
-			</div>
-		</Link>
-	)
+        {/* Footer: deadline + CTA */}
+        <div className="flex items-center justify-between mt-auto pt-0.5" style={{ minWidth: 0 }}>
+          {company.deadline
+            ? <span className="text-gray-800 font-normal" style={{ fontSize: 10 }}>Due {company.deadline}</span>
+            : <span />
+          }
+          <span
+            className="inline-flex items-center font-semibold ml-auto transition-all duration-200"
+            style={{
+              gap: hovered ? 7 : 4,
+              color: '#f97316',
+              fontSize: 12,
+              flexShrink: 0,
+            }}
+          >
+            View Details <ArrowIcon hovered={hovered} />
+          </span>
+        </div>
+      </div>
+    </Link>
+  )
 }
 
 export default CompanyCard

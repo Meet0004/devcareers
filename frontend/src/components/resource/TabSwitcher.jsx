@@ -1,6 +1,6 @@
 function TabSwitcher({ activeTab, onTabChange }) {
   return (
-    <div className="flex items-center justify-center gap-2 mb-6">
+    <div className="flex items-center justify-center gap-2 ">
       <button
         onClick={() => onTabChange('resources')}
         className={`px-6 py-2.5 rounded-lg font-semibold transition-all ${

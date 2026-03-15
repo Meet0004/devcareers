@@ -10,7 +10,7 @@ const CompanyDetailMain = ({ selectedCompany }) => {
     <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto px-4">
 
       {/* LEFT - Main Content */}
-      <div className="w-full lg:flex-[65] min-w-0 bg-white rounded-lg shadow-md p-6 lg:p-8">
+      <div className="w-full lg:flex-[65] min-w-0 bg-white rounded-lg shadow-md p-3 lg:p-8">
         <Link
           to="/company-details"
           className="text-[#FA5500] hover:underline mb-4 inline-flex items-center"

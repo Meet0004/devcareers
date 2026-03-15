@@ -23,7 +23,6 @@ const CompanyDetailSidebar = () => {
 
   return (
     <div className="w-full lg:w-80 flex-shrink-0">
-      <NaukriSidebarBanner referralLink="https://www.naukri.com/campus/contests/career-fair-2026?action=enrol&referral=e2000084-rEKBRXA-pses&uapp=801&utm_source=share_desktop&utm_medium=referral" />
 
       <div className="bg-white rounded-lg shadow-md p-6 sticky top-4">
         <h3 className="text-xl font-bold text-gray-800 mb-4">

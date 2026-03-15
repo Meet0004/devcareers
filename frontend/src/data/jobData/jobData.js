@@ -4158,16 +4158,95 @@ CONTACT:
 7395996779
     `
   }
-  // ,{ id: 226, company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
-  // ,{ id: 227, company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
+
+  ,{ id: 226, company: 'Barclays', role: 'BI & Data Analyst',
+    hiringLink:'https://unstop.com/o/3Xvw849?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+    Eligibility: Fresher
+
+Responsibilities of the Candidate:
+
+Investigation and analysis of data issues related to quality, lineage, controls, and authoritative source identification.
+Execution of data cleansing and transformation tasks to prepare data for analysis.
+Designing and building data pipelines to automate data movement and processing.
+Development and application of advanced analytical techniques, including machine learning and AI, to solve complex business problems.
+Documentation of data quality findings and recommendations for improvement.
+Requirements:
+
+Proficiency in Advanced Excel (Power Query, Pivot Tables, VBA, complex formulas).
+SharePoint PowerApp/PowerAutomate hands-on development experience.
+Experience accessing data from BI tools such as Tableau, SAP Business Objects, or Power BI.
+Strong analytical and problem-solving skills with a keen eye for detail.
+Excellent communication and stakeholder management abilities.
+Ability to work independently and manage multiple priorities in a fast-paced environment.
+Execute data enrichment, validation and transformation tasks to prepare datasets for analysis.
+Design and build datasets for efficient data movement and processing.
+Dashboard development using tools like Tableau/SAP BO/PowerBI.
+Workflow Automations using Alteryx/Tableau Prep/PowerApp-PowerAutomate.
+Apply advanced analytical techniques to solve complex business problems.
+Document data quality findings and provide actionable recommendations for improvement.
+Identification and analysis of business requirements to define report content and format.
+Maintenance and updating of existing reports and dashboards to reflect changing business needs, including co-ordination of reporting template releases and related administrative tasks.
+
+If an employer asks you to pay any kind of fee, please notify us immediately. Unstop does not charge any fee from the applicants and we do not allow other companies also to do so.
+Additional Information
+Job Location(s): Noida
+Work Detail
+Working Days: 5 Days
+
+Job Type / Timing
+Job Type: In Office
+
+Job Timing: Full Time
+About Barclays
+A British multinational investment bank and financial services company, Barclays PLC’s ancestry traces back to two goldsmith bankers, John Freame and Thomas Gould, who were doing business in Lombard Street, London in 1690. James Barclay, after whom the Bank is named, became a partner in the business in 1736.
+    `
+  }
+    ,{ id: 227, company: 'Unnanu', role: 'Data Science Consultant',
+    hiringLink:'https://unstop.com/o/LYFIS0c?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+Location: Hyderabad
+Eligibility: Fresher
+Roles and Responsibilities:
+Analyze complex datasets to extract meaningful insights and identify trends.
+Develop and implement statistical models and machine learning algorithms to solve business problems.
+Design and conduct experiments to test hypotheses and validate findings.
+Collaborate with stakeholders to understand business needs and translate them into data science solutions.
+Communicate findings and recommendations effectively to both technical and non-technical audiences.
+Build data visualizations and dashboards to present insights and monitor key metrics.
+Stay abreast of the latest advancements in data science, machine learning, and artificial intelligence.
+Contribute to the development of data-driven strategies and best practices within the organization.
+Ensure data quality and integrity throughout the analysis process.
+Mentor junior team members and share knowledge within the data science community.
+Requirements:
+
+Skills and Qualifications:
+
+Instead of listing skills plainly, write an engaging, concise, and compelling , professional bullet points (2 -3 ) as required highlighting the candidate profile. Mention the required skills and qualifications exactly as given in the input, but frame them in a way that communicates their importance and relevance to the role with should posses.
+    About the Organization:
+
+Provide a comprehensive description of the organization, including background information, industry focus, company culture, mission, and what makes them unique as an employer. This should give candidates insight into the company they would be joining.
+
+
+Important dates & deadlines?
+Application Deadline: 25 Mar 26, 12:00 AM IST
+
+Contact the organisers
+HR: santhan@unnanu.com
++918367581448
+Additional Information
+
+Illustration of salary/stipend breakdown for the position
+Salary
+Min Salary: ₹ 2,50,000 /Year
+Max Salary: ₹ 4,50,000 /Year
+Work Detail
+Working Days: 5 Days
+Job Type / Timing
+Job Type: In Office
+Job Timing: Full Time
+`
+  }
   // ,{ id: 228, company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

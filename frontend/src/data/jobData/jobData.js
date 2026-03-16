@@ -4247,16 +4247,96 @@ Job Type: In Office
 Job Timing: Full Time
 `
   }
-  // ,{ id: 228, company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
-  // ,{ id: 228, company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
+  ,{ id: 228, company: 'REint AI', role: 'Full Stack Software Engineer',
+    hiringLink:'https://wellfound.com/l/2C7x2K',
+    fullDescription:`
+
+The Role
+We are looking for a highly capable Full Stack Software Engineer to take ownership of core systems. You will be responsible for hands-on development across both frontend and backend technologies, building systems from the ground up using modern software design principles. Beyond standard web development, you will also dive into data engineering, analyze datasets, and integrate complex mathematical models into our production environment.
+
+Key Responsibilities
+Design and build high-quality software across the frontend and backend.
+Build robust data pipelines and handle mathematical models for energy applications.
+Set up system alert monitoring to ensure high availability and continuous uptime.
+Apply strong software design principles to maintain a clean and adaptable codebase.
+Take full ownership of features and work independently within a fast-paced environment.
+Participate in high-intensity remote collaboration with syncs every two to three hours.
+Ideal Candidate
+Up to three years of engineering experience, though highly capable freshers are strongly encouraged to apply.
+Exceptional logical rigor, analytical skills, and a methodical approach to problem-solving.
+Willingness to quickly learn our evolving tech stack, which is currently centered around Python on the backend and modern JavaScript frameworks on the frontend. Full stack capability (not restricted to python+js-frameworks) is expected during the hiring process.
+Strong foundational understanding of software architecture and data structures.
+Comfort working independently while staying highly communicative in a fully remote setting.
+Optional Screening Challenge
+This is an optional screening dev and analysis challenge we have for this position: https://docs.google.com/document/d/11UEGtGVGueTh6Xwc3QyCXmhWOmcSNS7u6aYuQKJxEGQ/edit?usp=sharing
+
+We encourage you to attempt this challenge. This challenge could take up to 8-16 hours to complete. Submitting this challenge is not mandatory for your application. However, submitting the challenge will expedite your application's review and the next steps relative to other applicants.
+    
+Package: ₹15L – ₹30L 
+Equity: 0.1% – 1.0%
+Eligibility: No experience required
+Work type: Full Time
+Hires remotely in India
+Work Policy: Remote only
+Company Location: India • United States
+Visa Sponsorship: Not Available
+
+Preferred Timezones: Astana Time
+Relocation: Not Allowed
+Skills: Full Stack Development
+    About Us
+We are an early-stage VC-backed startup building the next-generation software and AI stack for the energy sector. We operate in a fully remote, high-intensity environment that demands extreme rigor, logical clarity, and rapid execution. Our team works closely together with frequent check-ins throughout the day to iterate fast and build high-quality solutions.
+
+`
+  }
+  ,{ id: 229, company: 'Odoo', role: 'Software Developer Specialist',
+    hiringLink:'https://unstop.com/o/lBufbmO?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+    fullDescription:`
+    Eligibility: Fresher
+Roles and Responsibilities:
+
+Assist in the implementation and customization of Odoo modules to meet client requirements.
+Configure Odoo settings and workflows for various business processes.
+Provide support and troubleshooting for Odoo-related issues.
+Collaborate with senior consultants and project managers on Odoo deployment projects.
+Participate in client training sessions and documentation.
+Conduct research on new Odoo features and best practices.
+Test and validate Odoo functionalities after development or configuration changes.
+Contribute to the continuous improvement of Odoo solutions and internal processes.
+Engage in learning and development to stay updated with Odoo advancements.
+Support data migration activities within the Odoo environment.
+Requirements:
+
+This role is open to freshers with a strong interest in Odoo and business software.
+Candidates should possess a foundational understanding of business processes or IT systems.
+Excellent analytical and problem-solving skills are essential.
+Strong communication and interpersonal skills for effective teamwork and client interaction.
+A proactive attitude and eagerness to learn and adapt to new technologies.
+Skills and Qualifications:
+
+While specific technical skills are not mandatory, a keen interest in learning Odoo's modular framework and its applications in business management is highly valued.
+Candidates should demonstrate a capacity for logical thinking and a methodical approach to problem-solving, which are crucial for understanding and configuring business software.
+The ability to work collaboratively within a team and communicate effectively is important for success in this role.
+Job Summary:
+
+This is an exciting job opportunity for freshers to kickstart their career at Odoo, a global leader in business management software. As an Odoo SDI (Software Deployment & Implementation) specialist, you will be instrumental in helping clients leverage the full potential of our integrated solutions. You will gain hands-on experience in configuring, customizing, and deploying Odoo across various industries. We offer a supportive environment with a Certificate of Completion upon successful training, access to an Office Library for continuous learning, and complimentary Food & Beverages. Enjoy the flexibility of Flexible Hours and the significant advantage of a Pre-Placement Offer, paving the way for a promising career within Odoo.
+
+Read Less
+If an employer asks you to pay any kind of fee, please notify us immediately. Unstop does not charge any fee from the applicants and we do not allow other companies also to do so.
+Application Deadline: 24 Mar 26, 02:00 PM IST
+Contact the organisers
+Support
+mrde@odoo.com
++919904406274
+Additional Information
+Job Location(s): Gandhinagar
+Salary : ₹ 8,00,000 /Year
+Work Detail
+Working Days: 5 Days
+Job Type: In Office
+Job Timing: Full Time
+    `
+  }
   // ,{ id: 229, company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

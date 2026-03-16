@@ -9,6 +9,7 @@ import SearchBar from '../components/resource/SearchBar'
 import FilterDropdown, { filterOptions } from '../components/resource/FilterDropdown'
 import ResourcesGrid from '../components/resource/ResourcesGrid'
 import HelpCTA from '../components/common/HelpCTA'
+import BundleNudgeToast from '../components/resource/BundleToast'
 
 const priorityIds = [1, 3, 28]
 
@@ -31,6 +32,7 @@ function Resources() {
 	const [selectedFilters, setSelectedFilters] = useState([])
 	const [isFilterOpen, setIsFilterOpen] = useState(false)
 	const [visible, setVisible] = useState(false)
+	const [navigating, setNavigating] = useState(false)
 
 	useEffect(() => {
 		const t = setTimeout(() => setVisible(true), 60)
@@ -101,7 +103,10 @@ function Resources() {
 	const clearFilters = () => setSelectedFilters([])
 
 	const handleTabChange = (tab) => {
-		if (tab === 'packages') navigate('/resources/packages')
+		if (tab === 'packages') {
+			setNavigating(true)
+			setTimeout(() => navigate('/resources/packages'), 50)
+		}
 	}
 
 	const filteredResources = organizedResources.filter((resource) => {
@@ -148,7 +153,7 @@ function Resources() {
 				minHeight: '100vh',
 				fontFamily: 'system-ui, -apple-system, sans-serif',
 			}}>
-				{/* Ambient orbs — same as Hero */}
+				{/* Ambient orbs */}
 				<div style={{
 					position: 'absolute', width: 500, height: 500, borderRadius: '50%',
 					background: '#ff6b00', filter: 'blur(90px)', opacity: 0.10,
@@ -176,7 +181,6 @@ function Resources() {
 					width: '100%', padding: '56px 40px 72px',
 					boxSizing: 'border-box',
 				}}>
-
 					{/* Header */}
 					<div style={{
 						opacity: visible ? 1 : 0,
@@ -276,19 +280,21 @@ function Resources() {
 						)}
 					</div>
 
-					{/* Grid */}
-					<div style={{ position: 'relative', zIndex: 1 }}>
-						<ResourcesGrid
-							resources={filteredResources}
-							searchQuery={searchQuery}
-							selectedFilters={selectedFilters}
-							onClearSearch={(val) => {
-								setSearchQuery(val ?? '')
-								window.scrollTo({ top: 0, behavior: 'smooth' })
-							}}
-							onClearFilters={clearFilters}
-						/>
-					</div>
+					{/* Grid — unmounts before navigation to prevent ResourceCard crash */}
+					{!navigating && (
+						<div style={{ position: 'relative', zIndex: 1 }}>
+							<ResourcesGrid
+								resources={filteredResources}
+								searchQuery={searchQuery}
+								selectedFilters={selectedFilters}
+								onClearSearch={(val) => {
+									setSearchQuery(val ?? '')
+									window.scrollTo({ top: 0, behavior: 'smooth' })
+								}}
+								onClearFilters={clearFilters}
+							/>
+						</div>
+					)}
 
 					{/* Help CTA */}
 					<div style={{
@@ -299,6 +305,9 @@ function Resources() {
 					</div>
 				</div>
 			</div>
+
+			{/* Custom bundle nudge toast — no react-toastify needed */}
+			<BundleNudgeToast />
 		</>
 	)
 }

@@ -8,9 +8,9 @@ const YOUTUBE_REVIEWS = [
 ]
 
 const TOPMATE_REVIEWS = [
+	{ text: '"The complete question answer especially if you are targeting the specific role in top MNCs is very helpful resource to find And in a well formatted way, with even visual looks calming while preparing"', author: 'Kunal Khadgi', sub: '15th Mar, 2026', stars: 5 },
 	{ text: '"It is helpful for me.. Thank you so much"', author: 'Jyoti Yadav', sub: '2nd Mar, 2026', stars: 5 },
 	{ text: '"good"', author: 'Anonymous', sub: '22nd Feb, 2026', stars: 5 },
-	{ text: '"Great mentoring session"', author: 'M Durga Prasad', sub: '24th Feb, 2026', stars: 5 },
 	{ text: '"Very helpful"', author: 'Meghana N', sub: '21st Feb, 2026', stars: 5 },
 ]
 

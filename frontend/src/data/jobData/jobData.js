@@ -4439,7 +4439,7 @@ Work mode: Remote (India) , Bengaluru
 
     `
   }
-  ,{ id: 232, company: 'Flutter Mobile Developer Intern', role: 'Pitchmatter',
+  ,{ id: 232, company: 'Pitchmatter', role: 'Flutter Mobile Developer Intern',
     hiringLink:'https://wellfound.com/l/2BwtY7',
     fullDescription:`
     About the Role

@@ -4337,12 +4337,136 @@ Job Type: In Office
 Job Timing: Full Time
     `
   }
-  // ,{ id: 229, company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
-  // ,{ id: 230, company: '', role: '',
+  ,{ id: 230, company: 'Terrabyte', role: 'Full Stack Intern',
+    hiringLink:'https://wellfound.com/l/2C7MD8',
+    fullDescription:`
+    Terra's next breakthrough platform is PlotPix, an AI native microdrama platform that turns ideas into bingeable, vertical episodic animated stories with studio grade quality. Alongside the platform, we create in-house flagship titles to set the creative and craft benchmark, proving what "great" looks like in pacing, emotion, edits, and retention. Our mission is to make production dramatically faster and cheaper without losing consistency or storytelling punch, and to become both a creation suite and a distribution network for new IP.
+
+Terra is one the most ambitious entertainment startups built for Globe, from India. Founded by ex-PlayShifu Founder, with alumni from Stanford GSB, Zynga, MPL forming the core team at PlotPix.
+
+About the Role
+
+We are looking for a motivated Full Stack Developer Intern who is eager to learn and contribute to real product development. You will work with our engineering team to build and improve web and mobile applications using modern technologies like NodeJS, React, Flutter, and CSS.
+This role is ideal for someone who enjoys building products, experimenting with new technologies, and working in a fast-paced startup environment.
+
+Responsibilities
+
+Assist in developing web and mobile applications using React and Flutter
+Build and maintain backend APIs using NodeJS
+Develop responsive user interfaces using HTML, CSS, and modern UI frameworks
+Collaborate with designers and developers to implement product features
+Debug issues and improve application performance
+Participate in code reviews and team discussions
+Write clean, maintainable, and scalable code
+Required Skills
+
+Basic knowledge of JavaScript, NodeJS, and React
+Understanding of HTML, CSS, and responsive design
+Familiarity with Flutter for mobile development
+Basic understanding of REST APIs
+Knowledge of Git / version control
+What We Are Looking For:
+
+Currently pursuing / recent grad of Computer Science or a related field.
+Basic understanding of Git and version control systems.
+Eagerness to learn and adapt to new technologies and industry best practices.
+Strong problem-solving and critical-thinking skills.
+Excellent communication and teamwork skills.
+What We Offer
+
+Working with a highly skilled, motivated and passionate group of people.
+Exposure to the full product development process from ideation to launch.
+Our culture of experimentation and creativity allows everyone to explore new ideas and approaches and think outside the box.
+Building a product for the global audience.
+Competitive stipend.
+A full pantry of munchies.
+Duration: 6 months internship
+
+Stipend: INR 30,000
+
+Location: In office. HSR Layout, Bengaluru
+    `
+  }
+  ,{ id: 231, company: 'TheInnerlabs', role: 'Full Stack Software Engineer - Intern',
+    hiringLink:'https://wellfound.com/l/2BLdzs',
+    fullDescription:`This is a hands-on, building role, not a theory or coursework internship, with a minimum time requirement of 30 hours/week.
+
+We’re a small team building a data-heavy product around how modern AI systems interpret and surface information. The work is mostly backend and systems-oriented — ingesting large volumes of unstructured data, integrating with external APIs (including AI systems), and turning that into structured, comparable signals.
+
+Our core services are in Java, but we’re very language-pragmatic and also use Python where it makes sense for data and AI workflows. We care far more about how you think than the specific stack you’ve used. But having a core and deep understanding of Java is obviously a huge bonus.
+
+If you enjoy messy data, ambiguous problems, and building systems that evolve quickly, this could be a good fit.
+
+We’re building a product focused on analyzing large-scale, unstructured data and making it understandable and actionable. The systems we’re working on sit close to modern AI models, external data sources, and competitive intelligence workflows.
+
+This is an early-stage, hands-on role with real ownership over core backend and data systems.
+
+What you’ll work on:
+
+Designing backend systems for ingesting and processing unstructured text data
+Integrating with external APIs, including AI/LLM-based services
+Building data models and pipelines for comparison, tracking, and analysis
+Developing internal APIs and tools that surface insights from complex data
+Improving performance and reliability as data volume grows
+Our stack & approach
+
+Core backend services in Java
+Python used where it makes sense for data processing and AI-related workflows
+SQL and NoSQL databases
+Cloud-hosted, with pragmatic infrastructure choices
+You don’t need to be an expert in all of this — we value engineers who can learn and adapt.
+
+What we’re looking for
+
+Strong backend or systems engineering experience
+Comfort working with messy, real-world data
+Experience with APIs and data-driven systems
+Ability to reason about tradeoffs and design decisions
+High ownership and comfort with ambiguity
+Nice to have
+
+Python experience for data or analysis work
+Familiarity with NLP, text processing, or AI APIs
+Experience with scalable or distributed systems
+Any exposure to dashboards or data visualization
+Why this role
+
+Early team, real influence on architecture and direction
+Practical engineering problems — not research, not theory
+Opportunity to work close to modern AI systems without being an ML researcher
+Package: ₹2.4L – ₹3L
+Work mode: Remote (India) , Bengaluru
+
+    `
+  }
+  ,{ id: 232, company: 'Flutter Mobile Developer Intern', role: 'Pitchmatter',
+    hiringLink:'https://wellfound.com/l/2BwtY7',
+    fullDescription:`
+    About the Role
+
+We are looking for Flutter developer interns passionate about building mobile experiences that empower founders, investors, and talent to connect and grow. You’ll work closely on our flagship product Zynk.ing, a swipe-style AI matchmaking platform for the startup ecosystem (think LinkedIn meets Tinder for business).
+
+What You’ll Work On
+
+Building swipe-based matchmaking UI
+Developing modules like profile, login/signup, digital business cards
+Working with Firebase, REST APIs, and backend integration
+Participating in weekly sprints, testing, and launch cycles
+You Should Have
+
+Strong knowledge of Flutter & Dart
+Familiarity with Firebase or backend API integration
+Willingness to learn and build in a fast-paced environment
+A portfolio, GitHub, or sample apps (preferred)
+Why Join Us
+
+Real startup exposure with global roadmap
+Direct mentorship from core product team
+Potential for full-time offer post internship
+Work on an app expected to onboard 1M+ users in 2026
+    `
+  }
+  // ,{ id: 232, company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`
   //   `

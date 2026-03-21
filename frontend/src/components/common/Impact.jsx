@@ -6,7 +6,7 @@ const STATS = [
 	{ number: '300+',     label: 'Companies Tracked' },
 	{ number: '100+',     label: 'Monthly Opportunities' },
 	{ number: '35+',      label: 'Resources' },
-	{ number: '399',      label: 'Topmate Bookings' },
+	{ number: import.meta.env.VITE_TOTAL_SALES,      label: 'Topmate Bookings' },
 	{ number: 'Top 0.1%', label: 'Topmate Creator' },
 	{ number: '100%',     label: 'Verified Listings' },
 	{ number: '0₹',       label: 'To Browse Jobs' },

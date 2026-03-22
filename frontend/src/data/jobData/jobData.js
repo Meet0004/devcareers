@@ -4466,12 +4466,146 @@ Potential for full-time offer post internship
 Work on an app expected to onboard 1M+ users in 2026
     `
   }
-  // ,{ id: 232, company: '', role: '',
+  ,{ id: 233, company: 'Ibrowsejobs Technologies', role: 'Associate Software Engineer',
+    hiringLink:'https://www.naukri.com/job-listings-associate-software-engineer-ibrowsejobs-technologies-bengaluru-0-to-4-years-200326007505',
+    fullDescription:`
+    We are seeking a motivated and enthusiastic fresher to join our team as a Software Engineer - Python. In this role, you will be responsible for developing and maintaining software applications using Python. You will work closely with senior engineers to understand project requirements and deliver high-quality solutions. This is an excellent opportunity to start your career in software development and grow your skills in a supportive and dynamic environment.
+
+
+Responsibilities:
+
+Develop, test, and maintain software applications using Python.
+Write clean, efficient, and well-documented code.
+Collaborate with cross-functional teams to gather requirements and deliver solutions.
+Assist in troubleshooting and debugging issues in existing applications.
+Participate in code reviews and contribute to improving code quality.
+
+
+Role: Data Science & Analytics - Other
+Industry Type: IT Services & Consulting
+Department: Data Science & Analytics
+Employment Type: Full Time, Permanent
+Role Category: Data Science & Analytics - Other
+Education
+UG: Any Graduate
+
+Key Skills
+Skills highlighted with are preferred keyskills
+☆ Communication Skills
+☆ python basics
+☆ Python
+Soft Skills
+Analytical Skills
+SQL
+
+Eligibilty: 0 - 4 years of experience
+Package: 5-14 Lacs P.A.
+Work mode: Remote
+Hiring office located in Bengaluru
+    `
+  }
+  ,{ id: 234, company: 'Deltek', role: 'Associate Software Engineer',
+    hiringLink:'https://www.naukri.com/job-listings-associate-software-engineer-freshers-b-e-b-tech-passouts-deltek-bengaluru-0-to-0-years-050525018905',
+    fullDescription:`
+    Important 1: These positions are open for 2025 and 2026 Full time regular B.E. / B.Tech. in CSE / ECE / IT pass-outs ONLY. with all documents required including marks card and passing certificates.
+Role: Associate Software Engineer
+Key Responsibilities:
+Development & Customization: Develop and support client-specific customizations, integration, and automation under guidance.
+Ownership: Deliver assigned development tasks with quality, within estimated effort and timelines
+Established Tools and Processes: Follow established tools, coding standards, SDLC, CI/CD, and security practices.
+Collaboration: Partner effectively across a global team, including Team Lead/Senior Developers, consultants, project managers, Deltek partners and subcontractors, and cloud operations.
+Quality Assurance: Follow established security, quality, and testing protocols. Support testing activities, fix defects and rework items under guidance to maintain customer satisfaction and governance standards.
+Leverage AI-first methodology throughout the project lifecycle: use AI-powered tools to design, develop, and maintain scalable technical solutions.
+Continuous Improvement: Actively engage in learning new tools, technologies, and Deltek product capabilities.
+Qualifications :
+
+Required Skills:
+Academic qualification: Bachelors degree (2025/2026 Pass out) in Computer Science/IT & E&C/ MCA. Minimum 70% & above in academics throughout.
+Job Location: Only Bangalore Candidates
+Project experience: Entrylevel experience through academic projects, internships, labs, or personal/opensource projects.
+Development & Engineering Practices: Knowledge of object-oriented programming, core software development principles, and computer science fundamentals such as data structures, algorithms, and logical problem solving.
+Analytical and ProblemSolving Skills: Strong analytical and problemsolving skills, with the ability to learn and apply new concepts quickly
+Communication Skills: Good verbal and written communication skills in English, with the ability to participate in technical discussions and explain ideas clearly.
+Learning Mindset: Strong analytical and problemsolving skills, with the ability to learn and apply new concepts quickly
+Technical Skills
+Programming Fundamentals: Basic proficiency in at least one programming language such as Python, JavaScript (Node.js preferred), Java, or C/C++, with understanding of objectoriented programming concepts.
+Computer Science Foundations: Knowledge of data structures, algorithms, and basic software design principles gained through academic or project work.
+Web & Integration (Exposure): Introductory experience with web applications, APIs, integrations, or automation through coursework or handson projects.
+Testing & Debugging: Basic Understanding of unit testing, debugging, and defect fixing as part of the development lifecycle.
+Tools & Platforms (Exposure): Familiarity with development tools such as IDEs, version control (Git), and basic build or deployment concepts.
+AI Tools (Plus): Handson experience or foundational knowledge of AI/LLMbased tools (such as AI assistants or copilots) and prompt engineering.
+Success Criteria for the Role
+Requirement Clarity: Quickly grasp and clarify assigned requirements or technical specifications, ensuring tasks are well-defined and minimizing the need for rework.
+Execution: Consistently completes development tasks and project assignments within agreed timelines, proactively communicating risks or blockers to avoid delays or scope drift.
+Quality: Delivers code with low defect rates by following coding standards and thorough testing, leading to successful QA/UAT outcomes with minimal rework or iterations.
+Collaboration & Communication: Receives positive feedback from team leads/Senior developer, peers, and stakeholders for clear communication, teamwork, and reliable technical contributions.
+AI Adoption: Demonstrate efficiency gains through AI usage including faster specification writing, improved code quality, automated testing.
+Why Join Deltek?
+At Deltek, you'll be part of a forward-thinking team dedicated to delivering innovative ERP solutions that empower organizations to achieve their goals. Our culture values collaboration, professional growth, and flexibility, providing you with opportunities to work on impactful projects and advance your career. You'll benefit from our commitment to leveraging cutting-edge AI capabilities, enabling you to design more innovative, more efficient solutions for our clients. Join us to make a difference in a supportive environment where your expertise is valued and your contributions drive real business success.
+
+Shift Timings:
+
+2:00 PM to 11:00 PM IST
+
+
+
+Role: Back End Developer
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Tech/B.E. - Bachelor of Technology / Engineering in Computer Science and Engineering (CSE), Information Technology, Electronics And Computer Engineering
+    
+Key Skills
+Skills highlighted with are preferred keyskills
+✩ Java
+✩ Engineering Fresher
+☆ Javascript
+✩ Fresher Hiring
+☆ Python
+Software Development
+Software Engineering
+
+About company
+
+Deltek is a Multinational Product-based Software Development Company headquartered in Herndon, Virginia (USA) with over 4800 employees across 13 countries. Deltek was founded in 1983.
+
+
+We are a 40-year-old organisation, and our revenue is close to a Billion Dollars. Also, we are part of a larger group, which is Roper Technologies https://www.ropertech.com/, which is a 130-year-old listed company. It was acquired long ago in 2016.
+
+
+We have more than 30,000 customers in 80 countries, and we specialise in Project Management Software, ERP-based projects, Accounting Software, and Federal Government Contracting.
+
+
+Deltek is proud to be recognised as one of the top 3 tech companies for culture and values by Glassdoor. We are in the 8th Spot in Glassdoor's 2024 Best Places to Work list globally.
+
+
+Deltek has been named one of America's Best Midsize Employers by Forbes, a Top Workplace by The Washington Post, and a Best Place to Work in Asia by the World HRD Congress.
+
+
+We are the leading provider of software and solutions for project-based business globally.
+
+Company Info
+Address:
+Salarpuria Supreme, 2nd Floor Wing &acirc;€“ B, Khata No.137, Survey No 92/5 Munnekolalu village, Marathahalli, Varthur Hobli, Bengaluru - 560037, BANGALORE, Karnataka, India
+`
+  }
+  // ,{ id: 235, company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`
   //   `
   // }
-  
+  // ,{ id: 236, company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
+  // ,{ id: 237, company: '', role: '',
+  //   hiringLink:'',
+  //   fullDescription:`
+  //   `
+  // }
 ]
 
 export default companiesData

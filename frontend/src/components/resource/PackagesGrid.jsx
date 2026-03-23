@@ -138,9 +138,9 @@ const PackageCard = ({ pkg, index }) => {
         {/* Resource preview thumbnails */}
         {includedResources.length > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 0, marginBottom: 20 }}>
-            {includedResources.slice(0, 5).map((resource, idx) => (
+            {includedResources.slice(0, 4).map((resource, idx) => (
               <div key={resource.id ?? idx} style={{
-                width: 64, height: 64,
+                width: 88, height: 88,
                 borderRadius: 12,
                 border: '1px solid #fff',
                 overflow: 'hidden',

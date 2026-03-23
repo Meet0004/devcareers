@@ -180,7 +180,7 @@ function Resources() {
 
 				<div style={{
 					position: 'relative', zIndex: 5,
-					width: '100%', padding: '56px 20px 20px',
+					width: '100%', padding: '56px 12px 20px',
 					boxSizing: 'border-box',
 				}}>
 

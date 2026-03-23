@@ -84,10 +84,10 @@ function ResourceCard({ resource, isMobile = false }) {
         onMouseLeave={() => setHovered(false)}
         style={{
           display: 'flex', alignItems: 'center', gap: 14,
-          padding: '14px 16px',
+          padding: '14px 8px',
           borderRadius: 16,
           background: hovered ? 'rgba(255,255,255,0.97)' : 'rgba(255,255,255,0.88)',
-          border: hovered ? '1px solid rgba(249,115,22,0.3)' : '1px solid rgba(249,115,22,0.12)',
+          border: hovered ? '2px solid rgba(249,115,22,0.3)' : '2px solid rgba(249,115,22,0.12)',
           boxShadow: hovered
             ? '0 12px 32px rgba(249,115,22,0.12), 0 2px 8px rgba(0,0,0,0.04)'
             : '0 1px 4px rgba(0,0,0,0.04)',
@@ -107,7 +107,7 @@ function ResourceCard({ resource, isMobile = false }) {
 
         {/* Image */}
         <div style={{
-          width: 80, height: 80, borderRadius: 12, overflow: 'hidden',
+          width: 102, height: 102, borderRadius: 12, overflow: 'hidden',
           flexShrink: 0,
           boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
           transform: hovered ? 'scale(1.04)' : 'scale(1)',
@@ -120,7 +120,7 @@ function ResourceCard({ resource, isMobile = false }) {
         {/* Text */}
         <div style={{ flex: 1, minWidth: 0 }}>
           <h4 style={{
-            fontSize: 14, fontWeight: 700, color: '#0a0a0a',
+            fontSize: 18, fontWeight: 700, color: '#0a0a0a',
             margin: '0 0 4px', letterSpacing: '-0.02em',
             overflow: 'hidden', textOverflow: 'ellipsis',
             display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',

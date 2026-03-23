@@ -299,13 +299,13 @@ const PackageCard = ({ pkg, index }) => {
 
 function PackagesGrid() {
   return (
-    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 0 40px', gap: '2' }}>
+    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 0 40px', gap: '2'}}>
 
       <div style={{ marginBottom: 32 }}>
         <h2 style={{
           fontSize: 30, fontWeight: 800,
           color: '#0a0a0a', margin: '20px 0px',
-          letterSpacing: '-0.03em', lineHeight: 1.15,
+          letterSpacing: '-0.03em', lineHeight: 1.15, textAlign: 'center' 
         }}>
           Bundle &{' '}
           <span style={{
@@ -315,7 +315,7 @@ function PackagesGrid() {
             Save Big
           </span>
         </h2>
-        <p style={{ fontSize: 14, color: '#9ca3af', margin: 0, fontWeight: 400 }}>
+        <p style={{ fontSize: 14, color: '#9ca3af', margin: 0, fontWeight: 400, textAlign: 'center'  }}>
           Get multiple resources at a discounted price
         </p>
       </div>

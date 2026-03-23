@@ -1,5 +1,4 @@
 import { useState, useEffect, useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
 import ResourcesData from '../data/resourceData/resourceData'
 import { placeholderWords } from '../data/resourceData/searchBarData'
 
@@ -8,6 +7,7 @@ import TabSwitcher from '../components/resource/TabSwitcher'
 import SearchBar from '../components/resource/SearchBar'
 import FilterDropdown, { filterOptions } from '../components/resource/FilterDropdown'
 import ResourcesGrid from '../components/resource/ResourcesGrid'
+import PackagesGrid from '../components/resource/PackagesGrid'
 import HelpCTA from '../components/common/HelpCTA'
 import BundleNudgeToast from '../components/resource/BundleToast'
 
@@ -23,7 +23,7 @@ const shuffleArray = (array) => {
 }
 
 function Resources() {
-	const navigate = useNavigate()
+	const [activeTab, setActiveTab] = useState('resources')
 
 	const [searchQuery, setSearchQuery] = useState('')
 	const [placeholder, setPlaceholder] = useState('')
@@ -32,7 +32,6 @@ function Resources() {
 	const [selectedFilters, setSelectedFilters] = useState([])
 	const [isFilterOpen, setIsFilterOpen] = useState(false)
 	const [visible, setVisible] = useState(false)
-	const [navigating, setNavigating] = useState(false)
 
 	useEffect(() => {
 		const t = setTimeout(() => setVisible(true), 60)
@@ -103,9 +102,12 @@ function Resources() {
 	const clearFilters = () => setSelectedFilters([])
 
 	const handleTabChange = (tab) => {
+		setActiveTab(tab)
+		// Reset search/filter state when switching tabs
 		if (tab === 'packages') {
-			setNavigating(true)
-			setTimeout(() => navigate('/resources/packages'), 50)
+			setSearchQuery('')
+			setSelectedFilters([])
+			setIsFilterOpen(false)
 		}
 	}
 
@@ -178,10 +180,11 @@ function Resources() {
 
 				<div style={{
 					position: 'relative', zIndex: 5,
-					width: '100%', padding: '56px 40px 72px',
+					width: '100%', padding: '56px 20px 20px',
 					boxSizing: 'border-box',
 				}}>
-					{/* Header */}
+
+					{/* ── ALWAYS VISIBLE: Header ── */}
 					<div style={{
 						opacity: visible ? 1 : 0,
 						transform: visible ? 'translateY(0)' : 'translateY(20px)',
@@ -190,109 +193,120 @@ function Resources() {
 						<ResourcesHeader />
 					</div>
 
-					{/* Tab switcher */}
+					{/* ── ALWAYS VISIBLE: Tab switcher ── */}
 					<div style={{
 						opacity: visible ? 1 : 0,
 						transform: visible ? 'translateY(0)' : 'translateY(16px)',
 						transition: 'all 0.65s cubic-bezier(0.22,1,0.36,1) 0.12s',
 						display: 'flex', justifyContent: 'center', marginBottom: 32,
 					}}>
-						<TabSwitcher activeTab="resources" onTabChange={handleTabChange} />
+						<TabSwitcher activeTab={activeTab} onTabChange={handleTabChange} />
 					</div>
 
-					{/* Search + Filter row */}
-					<div style={{
-						opacity: visible ? 1 : 0,
-						transform: visible ? 'translateY(0)' : 'translateY(16px)',
-						transition: 'all 0.65s cubic-bezier(0.22,1,0.36,1) 0.2s',
-						display: 'flex', flexDirection: 'column', alignItems: 'center',
-						marginBottom: 32,
-						position: 'relative', zIndex: 100,
-					}}>
-						<div style={{
-							display: 'flex', alignItems: 'center', gap: 12,
-							width: '100%', maxWidth: 640,
-						}}>
-							<SearchBar
-								value={searchQuery}
-								onChange={setSearchQuery}
-								placeholder={placeholder}
-							/>
-							<FilterDropdown
-								selectedFilters={selectedFilters}
-								onToggle={toggleFilter}
-								onClear={clearFilters}
-								isOpen={isFilterOpen}
-								onOpenChange={setIsFilterOpen}
-							/>
-						</div>
-
-						{/* Active filter chips */}
-						{selectedFilters.length > 0 && (
+					{/* ── TAB CONTENT ── */}
+					{activeTab === 'resources' ? (
+						<>
+							{/* Search + Filter row */}
 							<div style={{
-								display: 'flex', alignItems: 'center', gap: 8,
-								flexWrap: 'wrap', justifyContent: 'center',
-								marginTop: 14,
+								opacity: visible ? 1 : 0,
+								transform: visible ? 'translateY(0)' : 'translateY(16px)',
+								transition: 'all 0.65s cubic-bezier(0.22,1,0.36,1) 0.2s',
+								display: 'flex', flexDirection: 'column', alignItems: 'center',
+								marginBottom: 32,
+								position: 'relative', zIndex: 100,
 							}}>
-								{selectedFilters.map(filterId => {
-									const filter = filterOptions.find(f => f.id === filterId)
-									return (
-										<span key={filterId} style={{
-											display: 'inline-flex', alignItems: 'center', gap: 6,
-											background: filter.bg,
-											border: `1px solid ${filter.border}`,
-											color: filter.color,
-											fontSize: 12, fontWeight: 600,
-											padding: '4px 10px 4px 10px',
-											borderRadius: 100,
-										}}>
-											{filter.icon}
-											{filter.label}
-											<button
-												onClick={() => toggleFilter(filterId)}
-												style={{
-													background: 'none', border: 'none',
-													color: 'inherit', cursor: 'pointer',
-													padding: 0, display: 'flex',
-													alignItems: 'center', marginLeft: 2,
-												}}
-											>
-												<svg width={10} height={10} fill="currentColor" viewBox="0 0 20 20">
-													<path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-												</svg>
-											</button>
-										</span>
-									)
-								})}
+								<div style={{
+									display: 'flex', alignItems: 'center', gap: 12,
+									width: '100%', maxWidth: 640,
+								}}>
+									<SearchBar
+										value={searchQuery}
+										onChange={setSearchQuery}
+										placeholder={placeholder}
+									/>
+									<FilterDropdown
+										selectedFilters={selectedFilters}
+										onToggle={toggleFilter}
+										onClear={clearFilters}
+										isOpen={isFilterOpen}
+										onOpenChange={setIsFilterOpen}
+									/>
+								</div>
+
+								{/* Active filter chips */}
+								{selectedFilters.length > 0 && (
+									<div style={{
+										display: 'flex', alignItems: 'center', gap: 8,
+										flexWrap: 'wrap', justifyContent: 'center',
+										marginTop: 14,
+									}}>
+										{selectedFilters.map(filterId => {
+											const filter = filterOptions.find(f => f.id === filterId)
+											return (
+												<span key={filterId} style={{
+													display: 'inline-flex', alignItems: 'center', gap: 6,
+													background: filter.bg,
+													border: `1px solid ${filter.border}`,
+													color: filter.color,
+													fontSize: 12, fontWeight: 600,
+													padding: '4px 10px 4px 10px',
+													borderRadius: 100,
+												}}>
+													{filter.icon}
+													{filter.label}
+													<button
+														onClick={() => toggleFilter(filterId)}
+														style={{
+															background: 'none', border: 'none',
+															color: 'inherit', cursor: 'pointer',
+															padding: 0, display: 'flex',
+															alignItems: 'center', marginLeft: 2,
+														}}
+													>
+														<svg width={10} height={10} fill="currentColor" viewBox="0 0 20 20">
+															<path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+														</svg>
+													</button>
+												</span>
+											)
+										})}
+									</div>
+								)}
+
+								{/* Results count */}
+								{(searchQuery || selectedFilters.length > 0) && (
+									<p style={{
+										marginTop: 12, fontSize: 13, color: '#9ca3af', fontWeight: 400,
+									}}>
+										<span style={{ color: '#f97316', fontWeight: 600 }}>
+											{filteredResources.length}
+										</span>{' '}
+										resource{filteredResources.length !== 1 ? 's' : ''} found
+									</p>
+								)}
 							</div>
-						)}
 
-						{/* Results count */}
-						{(searchQuery || selectedFilters.length > 0) && (
-							<p style={{
-								marginTop: 12, fontSize: 13, color: '#9ca3af', fontWeight: 400,
-							}}>
-								<span style={{ color: '#f97316', fontWeight: 600 }}>
-									{filteredResources.length}
-								</span>{' '}
-								resource{filteredResources.length !== 1 ? 's' : ''} found
-							</p>
-						)}
-					</div>
-
-					{/* Grid — unmounts before navigation to prevent ResourceCard crash */}
-					{!navigating && (
-						<div style={{ position: 'relative', zIndex: 1 }}>
-							<ResourcesGrid
-								resources={filteredResources}
-								searchQuery={searchQuery}
-								selectedFilters={selectedFilters}
-								onClearSearch={(val) => {
-									setSearchQuery(val ?? '')
-									window.scrollTo({ top: 0, behavior: 'smooth' })
-								}}
-								onClearFilters={clearFilters}
-							/>
+							{/* Resources grid */}
+							<div style={{ position: 'relative', zIndex: 1 }}>
+								<ResourcesGrid
+									resources={filteredResources}
+									searchQuery={searchQuery}
+									selectedFilters={selectedFilters}
+									onClearSearch={(val) => {
+										setSearchQuery(val ?? '')
+										window.scrollTo({ top: 0, behavior: 'smooth' })
+									}}
+									onClearFilters={clearFilters}
+								/>
+							</div>
+						</>
+					) : (
+						/* Packages grid */
+						<div style={{
+							animation: 'fadeUp 0.35s cubic-bezier(0.22,1,0.36,1)',
+							position: 'relative', zIndex: 1,
+						}}>
+							<PackagesGrid />
 						</div>
 					)}
 
@@ -306,7 +320,6 @@ function Resources() {
 				</div>
 			</div>
 
-			{/* Custom bundle nudge toast — no react-toastify needed */}
 			<BundleNudgeToast />
 		</>
 	)

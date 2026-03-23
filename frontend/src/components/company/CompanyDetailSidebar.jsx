@@ -20,9 +20,6 @@ const CompanyDetailSidebar = () => {
   return (
     <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 16, fontFamily: 'system-ui,-apple-system,sans-serif' }}>
 
-      {/* Naukri Banner */}
-      <NaukriSidebarBanner referralLink="https://www.naukri.com/campus/contests/career-fair-2026?action=enrol&referral=e2000084-rEKBRXA-pses&uapp=801&utm_source=share_desktop&utm_medium=referral" />
-
       {/* Resources Card */}
       <div style={{
         background: '#fff',
@@ -77,7 +74,7 @@ const CompanyDetailSidebar = () => {
         </div>
 
         {/* Resource list */}
-        <div style={{ padding: '12px 14px', display: 'flex', flexDirection: 'column', gap: 6, maxHeight: 520, overflowY: 'auto' }}>
+        <div style={{ padding: '12px 14px', display: 'flex', flexDirection: 'column', gap: 6, maxHeight: 600, overflowY: 'auto' }}>
           {shuffledData.map((item, idx) => {
             const isFree = !item.price || item.price === ''
             const topmateLink = ResourcesTopmate[item.id]

@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from 'react'
 import SectionHeading from '../legal/SectionHeading'
 
 const STATS = [
-	{ number: '10K+',     label: 'Active Users' },
-	{ number: '300+',     label: 'Companies Tracked' },
+	{ number: `${import.meta.env.VITE_MONTHLY_USERS}`,     label: 'Monthly Active Users' },
+	{ number: `${import.meta.emv.VITE_TOTAL_COMPANIES_TRACKED}+`,     label: 'Companies Tracked' },
 	{ number: '100+',     label: 'Monthly Opportunities' },
 	{ number: '35+',      label: 'Resources' },
-	{ number: '399',      label: 'Topmate Bookings' },
-	{ number: 'Top 0.1%', label: 'Topmate Creator' },
+	{ number: `${import.meta.env.VITE_TOTAL_SALES}`,      label: 'Topmate Bookings' },
+	{ number: `Top ${import.meta.env.VITE_TOTAL_RANK}%`, label: 'Topmate Creator' },
 	{ number: '100%',     label: 'Verified Listings' },
 	{ number: '0₹',       label: 'To Browse Jobs' },
 ]

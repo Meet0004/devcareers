@@ -19,7 +19,7 @@ const CATEGORIES = [
 ]
 
 const WHY_SUBSCRIBE = [
-  { emoji: '🎯', title: 'Curated for Freshers', desc: 'Only entry-level, internship, and campus roles — no noise from senior listings.' },
+  { emoji: '🎯', title: 'Curated for Freshers', desc: 'Only entry-level, internship, and campus roles - no noise from senior listings.' },
   { emoji: '⚡', title: 'Early Access', desc: 'Get notified about new job postings before they fill up.' },
   { emoji: '📚', title: 'Free Resources', desc: 'Receive cheatsheets, roadmaps, and interview prep guides directly in your inbox.' },
   { emoji: '🔕', title: 'No Spam, Ever', desc: 'We send only what matters. You can unsubscribe any time in one click.' },

@@ -157,7 +157,7 @@ const StatCard = ({ delay }) => {
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent)', opacity: hov ? 1 : 0, transition: 'opacity 0.3s' }} />
         <div>
           {/* ✏️ Edit the number and label below */}
-          <div style={{ fontSize: 34, fontWeight: 800, color: '#fff', letterSpacing: '-0.04em', lineHeight: 1 }}>200+</div>
+          <div style={{ fontSize: 34, fontWeight: 800, color: '#fff', letterSpacing: '-0.04em', lineHeight: 1 }}>{import.meta.env.VITE_TOTAL_JOBS}+</div>
           <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', marginTop: 4, fontWeight: 500 }}>Jobs posted this year</div>
         </div>
         <svg width={28} height={28} fill="none" stroke="rgba(255,255,255,0.5)" viewBox="0 0 24 24">

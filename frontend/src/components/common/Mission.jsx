@@ -25,7 +25,7 @@ const CARDS = [
     body: [
       { text: 'To ' },
       { text: 'empower students and early-career professionals', bold: true },
-      { text: ' by providing timely access to curated job opportunities tailored to their preferences, high-quality educational resources, and actionable career guidance — enabling them to ' },
+      { text: ' by providing timely access to curated job opportunities tailored to their preferences, high-quality educational resources, and actionable career guidance - enabling them to ' },
       { text: 'secure their dream roles', bold: true },
       { text: ' and build successful careers in technology and beyond.' },
     ],
@@ -50,7 +50,7 @@ const CARDS = [
       { text: "India's most trusted career platform", bold: true },
       { text: ' for students and early professionals, where ' },
       { text: 'every aspiring professional', bold: true },
-      { text: ' — regardless of background, college, or connections — has ' },
+      { text: ' - regardless of background, college, or connections - has ' },
       { text: 'equal access', bold: true },
       { text: ' to opportunities, resources, and guidance needed to thrive in their careers.' },
     ],

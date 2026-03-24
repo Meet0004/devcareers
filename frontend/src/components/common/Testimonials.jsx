@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const YOUTUBE_REVIEWS = [
-	{ text: '"CONGRATS bro. hope you hit 100k and million soon."', author: '@photon7404', sub: 'YouTube', stars: 5 },
+	{ text: '"❤Thank you for posting such amazing opportunity Keep growing, you deserve more subscribers."', author:'@Batman-6909', sub:'1 day ago', stars:0},
+	{ text: '"CONGRATS bro. hope you hit 100k and million soon."', author: '@photon7404', sub: '1 week ago', stars: 5 },
 	{ text: '"Very informative"', author: '@sonalsshet6133', sub: '1 month ago', stars: 0 },
 	{ text: '"Thank you bro. bring more..."', author: '@nilesh__', sub: '2 weeks ago', stars: 0 },
 	{ text: '"keep posting sir"', author: '@himanshudwivedi2235', sub: '1 month ago', stars: 0 },
@@ -394,7 +395,7 @@ const Testimonials = () => {
 						<div className="ts-col-head">
 							<div className="ts-col-icon ts-col-icon-tm"><TopmateIcon /></div>
 							<span className="ts-col-label">Topmate Reviews</span>
-							<span className="ts-col-rating">4.3 / 5</span>
+							<span className="ts-col-rating">{import.meta.env.VITE_TOPMATE_RATING}</span>
 						</div>
 						<div className="ts-cards">
 							{TOPMATE_REVIEWS.map((review, idx) => (
@@ -412,7 +413,7 @@ const Testimonials = () => {
 					<div className="ts-footer-inner">
 						<div className="ts-stats">
 							<div className="ts-stat">
-								<div className="ts-stat-val">0.1%</div>
+								<div className="ts-stat-val">{import.meta.env.VITE_TOPMATE_RANK}%</div>
 								<div className="ts-stat-lbl">Top Creator</div>
 							</div>
 							<div className="ts-stat-sep" />
@@ -422,7 +423,7 @@ const Testimonials = () => {
 							</div>
 							<div className="ts-stat-sep" />
 							<div className="ts-stat">
-								<div className="ts-stat-val">4.3/5</div>
+								<div className="ts-stat-val">{import.meta.env.VITE_TOPMATE_RATING}</div>
 								<div className="ts-stat-lbl">Rating</div>
 							</div>
 						</div>

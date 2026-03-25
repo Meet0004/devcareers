@@ -4591,16 +4591,120 @@ Address:
 Salarpuria Supreme, 2nd Floor Wing &acirc;€“ B, Khata No.137, Survey No 92/5 Munnekolalu village, Marathahalli, Varthur Hobli, Bengaluru - 560037, BANGALORE, Karnataka, India
 `
   }
-  // ,{ id: 235, company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
-  // ,{ id: 236, company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
+  ,{ id: 235, company: 'Vansun Mediatech', role: 'AI Research / Data Science Intern',
+    hiringLink:'https://wellfound.com/l/2C9auQ',
+    fullDescription:`
+Location: Gurgaon (Hybrid)
+Remote: Available (Everywhere)
+ Stipend: ₹70,000 – ₹80,000 per month
+ Duration: 6 months (PPO potential available)
+ Role Overview
+
+We are hiring high-potential AI Research Interns who are curious about the evolving AI landscape and excited to build real-world applications using cutting-edge technologies.
+
+This role focuses on research + rapid prototyping across AI use cases.
+
+Key Responsibilities
+Research latest trends in LLMs, Generative AI, and applied AI
+Evaluate tools like OpenAI, LangChain, HuggingFace
+Build POCs and prototypes for business use cases
+Work on prompt engineering, API integrations, model optimization
+Collaborate with product & engineering teams
+Document learnings and suggest scalable solutions
+Eligibility Criteria
+Students from top-tier institutes (IITs, IIITs, BITS, top NITs, etc.)
+Strong foundation in Python, ML, and problem-solving
+Experience in AI via projects, internships, or hackathons
+Ability to execute ideas quickly (idea → execution)
+Good to Have
+Experience with LLMs, vector databases, AI toolchains
+Active GitHub / portfolio with AI projects
+Additional Details
+Experience Required: No experience required
+Job Type: Internship
+Salary Range (Full-time conversion): ₹8L – ₹10L
+Visa Sponsorship: Not available
+Relocation: Allowed
+Skills: Python, Machine Learning
+Posted: Yesterday (Recruiter recently active)
+
+    `
+  }
+  ,{ id: 236, company: 'Hurrey Inc', role: 'Full Stack Engineer',
+    hiringLink:'https://www.naukri.com/job-listings-full-stack-engineer-hurrey-inc-bengaluru-0-to-2-years-230326503549',
+    fullDescription:`
+    We are seeking a skilled React.js Developer to join our dynamic team. In this role, you will be responsible for developing and implementing user interface components using React.js concepts and workflows. Additionally, you will collaborate with backend developers to integrate APIs and ensure seamless deployment on cloud platforms like AWS or GCP.
+
+Develop new user-facing features using React.js
+
+Build reusable components and front-end libraries for future use
+
+Translate designs and wireframes into high-quality code
+
+Optimize components for maximum performance across a vast array of web-capable devices and browsers
+
+Collaborate with cross-functional teams to define, design, and ship new features
+
+Integrate RESTful APIs developed in Node.js into the front-end application
+
+Assist in deploying applications and APIs on cloud platforms such as AWS or GCP
+
+Maintain code and write automated tests to ensure the product is of the highest quality
+
+Stay up-to-date with emerging technologies and apply them into operations and activities
+
+
+Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model
+
+Thorough understanding of React.js and its core principles
+
+Experience with popular React.js workflows (such as Flux or Redux)
+
+Familiarity with newer specifications of EcmaScript
+
+Experience with data structure libraries (e.g., Immutable.js)
+
+Knowledge of isomorphic React is a plus
+
+Familiarity with RESTful APIs and integration with backend services
+
+Experience with Node.js and Express.js for backend development
+
+Knowledge of cloud platforms like AWS or GCP, including deployment and management of applications
+
+Familiarity with modern front-end build pipelines and tools
+
+Experience with common front-end development tools such as Babel, Webpack, NPM, etc.
+
+Ability to understand business requirements and translate them into technical requirements
+
+A knack for benchmarking and optimization
+
+Familiarity with code versioning tools such as Git
+
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: Any Graduate
+PG: Any Postgraduate
+Key Skills
+Backend
+Frontend
+GIT
+DOM
+GCP 
+Cloud
+Javascript
+Deployment 
+Management
+AWS
+
+About company
+Hurrey Inc is a technology company specializing in artificial intelligence-driven platforms that enhance decision-making and operational efficiency. Its offerings focus on building intelligent systems that leverage data, automation, and advanced analytics to solve complex business challenges. By combining innovation with scalable AI solutions, Hurrey Inc positions itself as a trusted partner for organizations seeking to integrate cutting-edge technology into their workflows.
+    `
+  }
   // ,{ id: 237, company: '', role: '',
   //   hiringLink:'',
   //   fullDescription:`

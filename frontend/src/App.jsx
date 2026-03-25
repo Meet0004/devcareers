@@ -7,6 +7,7 @@ import Header1     from './components/common/Header1'
 import ScrollToTop from './components/common/ScrollToTop'
 import Footer      from './components/common/Footer'
 import PageLoader  from './pages/PageLoader'
+import PackageDetailPage from './components/resource/PackageDetailPage'
 
 // Lazy — Quick Links
 const Home        = lazy(() => import('./pages/Home'))
@@ -102,12 +103,14 @@ const App = () => {
       <ErrorBoundary>
         <Suspense fallback={<PageLoader />}>
           <Routes>
+            
             <Route path="/"                                        element={<Home />}                     />
             <Route path="/company-details"                         element={<Companies_details />}        />
             <Route path="/company-details/:companyName/:role"      element={<Companies_details />}        />
             <Route path="/resource/:id"                            element={<ResourceDetailToPurchase />} />
             <Route path="/resources"                               element={<Resources />}                />
             <Route path="/resources/packages"                      element={<Packages />}                 />
+            <Route path="/resources/packages/:id"                  element={<PackageDetailPage />} />
             <Route path="/contact-us"                              element={<Contact_us />}               />
             <Route path="/subscribe-us"                            element={<SubscribeUs />}              />
             <Route path="/purchase-query"                          element={<PurchaseQueryPage />}        />

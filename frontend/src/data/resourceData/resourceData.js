@@ -57,7 +57,7 @@ const resourceData = [
     Covers SQL from beginner to advanced in one place
 Includes real interview-level scenario questions
 Helps you understand query optimization clearly
-Perfect for placements, internships, and backend roles
+Perfect for placements, internships, and backend rolesohh
 Quick revision using the structured cheatsheet`
   },
   {

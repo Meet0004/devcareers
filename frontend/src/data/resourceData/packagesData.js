@@ -7,16 +7,17 @@ const packagesData = [
     description: 'Everything you need to ace technical interviews',
     includedResourceIds: [3, 14, 32], // IDs of resources included
     originalPrice: 67,
-    discountedPrice: 49,
-    link: 'https://topmate.io/meet_g/1969991',
+    discountedPrice: 1,
+    // driveLink: 'https://drive.google.com/drive/folders/1eKkVa3WcA4qF9PBRc0vO3xztmycRcgL6?usp=sharing',
+    link:'https://topmate.io/meet_g/1969991 ',
     savings: 26,
-    expDate: '20-03-2026'
+    expDate: '20-04-2026'
   }
   , {
     id: 'pkg-2',
     title: 'Ultimate DSA Preparation Bundle',
     description: '15+ top company LeetCode sheets, 100+ structured DSA questions, Oracle-specific interview problems, plus 40 foundational coding questions (Free) — perfect for placement and product-based company preparation.',
-    includedResourceIds: [28, 12],
+    includedResourceIds: [7,12,28],
     originalPrice: 48,
     discountedPrice: 29,
     link: 'https://topmate.io/meet_g/1980496',

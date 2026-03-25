@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ResourcesData from '../../data/resourceData/resourceData';
 import packagesData from '../../data/resourceData/packagesData';
 
@@ -43,6 +44,7 @@ const accents = [
 ]
 
 const PackageCard = ({ pkg, index }) => {
+  const navigate = useNavigate()
   const [expanded, setExpanded] = useState(false)
   const [visible, setVisible] = useState(false)
   const cardRef = useRef(null)
@@ -138,7 +140,7 @@ const PackageCard = ({ pkg, index }) => {
         {/* Resource preview thumbnails */}
         {includedResources.length > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 0, marginBottom: 20 }}>
-            {includedResources.slice(0, 4).map((resource, idx) => (
+            {includedResources.slice(0, 3).map((resource, idx) => (
               <div key={resource.id ?? idx} style={{
                 width: 88, height: 88,
                 borderRadius: 12,
@@ -169,22 +171,27 @@ const PackageCard = ({ pkg, index }) => {
               </div>
             ))}
 
-            +{includedResources.length - 5}
-          </div>
-        )}{includedResources.length > 5 && (
-          <div style={{
-            width: 64, height: 64, borderRadius: 12,
-            border: '2.5px solid #fff',
-            background: accent.badge,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            marginLeft: -12, zIndex: 5, position: 'relative',
-            fontSize: 11, fontWeight: 700, color: accent.badgeText, flexShrink: 0,
-          }}>
-            <span style={{ marginLeft: 14, fontSize: 12, color: '#9ca3af', fontWeight: 500 }}>
-              {includedResources.length} resource{includedResources.length !== 1 ? 's' : ''}
-            </span>
+            {includedResources.length > 3 && (
+              <div style={{
+                width: 88, height: 88, borderRadius: 12,
+                border: '0px solid #fff',
+                background: accent.badge,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                marginLeft: -12, zIndex: 5, position: 'relative',
+                fontSize: 22, fontWeight: 700, color: accent.badgeText, flexShrink: 0,
+              }}>
+                +{includedResources.length - 3}
+              </div>
+            )}
           </div>
         )}
+
+        {/* Resource count label */}
+        <div style={{ marginBottom: 16 }}>
+          <span style={{ fontSize: 12, color: '#9ca3af', fontWeight: 500 }}>
+            {includedResources.length} resource{includedResources.length !== 1 ? 's' : ''} included
+          </span>
+        </div>
 
         {/* Divider */}
         <div style={{ height: 1, background: 'rgba(0,0,0,0.06)', margin: '0 0 18px' }} />
@@ -216,36 +223,32 @@ const PackageCard = ({ pkg, index }) => {
           )}
         </div>
 
-        {/* CTA */}
-        {pkg.link && (
-          <a
-            href={pkg.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              gap: 8, width: '100%', padding: '13px 0',
-              background: `linear-gradient(135deg, ${accent.from} 0%, ${accent.to} 100%)`,
-              color: '#fff', fontWeight: 700, fontSize: 14,
-              borderRadius: 12, textDecoration: 'none',
-              letterSpacing: '0.01em',
-              boxShadow: `0 4px 16px ${accent.glow}`,
-              transition: 'filter 0.2s ease, transform 0.15s ease',
-              boxSizing: 'border-box',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.filter = 'brightness(1.07)'
-              e.currentTarget.style.transform = 'translateY(-1px)'
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.filter = 'brightness(1)'
-              e.currentTarget.style.transform = 'translateY(0)'
-            }}
-          >
-            Get Package Now
-            <ArrowIcon />
-          </a>
-        )}
+        {/* CTA — navigates to PackageDetailPage */}
+        <button
+          onClick={() => navigate(`/resources/packages/${pkg.id}`)}
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            gap: 8, width: '100%', padding: '13px 0',
+            background: `linear-gradient(135deg, ${accent.from} 0%, ${accent.to} 100%)`,
+            color: '#fff', fontWeight: 700, fontSize: 14,
+            borderRadius: 12, border: 'none', cursor: 'pointer',
+            letterSpacing: '0.01em',
+            boxShadow: `0 4px 16px ${accent.glow}`,
+            transition: 'filter 0.2s ease, transform 0.15s ease',
+            boxSizing: 'border-box',
+          }}
+          onMouseEnter={e => {
+            e.currentTarget.style.filter = 'brightness(1.07)'
+            e.currentTarget.style.transform = 'translateY(-1px)'
+          }}
+          onMouseLeave={e => {
+            e.currentTarget.style.filter = 'brightness(1)'
+            e.currentTarget.style.transform = 'translateY(0)'
+          }}
+        >
+          Get Package Now
+          <ArrowIcon />
+        </button>
 
         {/* Expandable included list */}
         {includedResources.length > 0 && (
@@ -299,13 +302,13 @@ const PackageCard = ({ pkg, index }) => {
 
 function PackagesGrid() {
   return (
-    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 0 40px', gap: '2'}}>
+    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 0 40px' }}>
 
       <div style={{ marginBottom: 32 }}>
         <h2 style={{
           fontSize: 30, fontWeight: 800,
           color: '#0a0a0a', margin: '20px 0px',
-          letterSpacing: '-0.03em', lineHeight: 1.15, textAlign: 'center' 
+          letterSpacing: '-0.03em', lineHeight: 1.15, textAlign: 'center',
         }}>
           Bundle &{' '}
           <span style={{
@@ -315,7 +318,7 @@ function PackagesGrid() {
             Save Big
           </span>
         </h2>
-        <p style={{ fontSize: 14, color: '#9ca3af', margin: 0, fontWeight: 400, textAlign: 'center'  }}>
+        <p style={{ fontSize: 14, color: '#9ca3af', margin: 0, fontWeight: 400, textAlign: 'center' }}>
           Get multiple resources at a discounted price
         </p>
       </div>

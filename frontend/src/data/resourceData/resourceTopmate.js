@@ -34,6 +34,7 @@ const ResourcesTopmate = {
   30: 'https://topmate.io/meet_g/1851224',  // 100+ React Interview Questions + Guide 8 PDFs - ₹29
   31: 'https://topmate.io/meet_g/1851084',  // 40 Node.js Interview Questions + Answers - ₹9
   32: 'https://topmate.io/meet_g/1870617',  // 2000+ HR emails and Famous IT companies emails - ₹19
+  // pkg-1:'https://topmate.io/meet_g/1969991'
 };
 
 export default ResourcesTopmate;

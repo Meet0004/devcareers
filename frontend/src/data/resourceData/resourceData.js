@@ -569,7 +569,7 @@ Helps you build and deploy real projects confidently`
     id: 28,
     title: "15+ Top Company DSA & LeetCode Sheets",
     description: "LeetCode problems organized by top tech companies",
-    price: "₹29",
+    price: "₹1",
     link: "https://drive.google.com/drive/folders/1H6hbJE9ER0XpugK6prjEh2cXNnbMnVRg?usp=sharing",
     image: companyWise,
     isPopular: true,

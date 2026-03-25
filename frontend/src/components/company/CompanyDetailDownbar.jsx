@@ -2,7 +2,6 @@ import React, { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import ResourcesData from '../../data/resourceData/resourceData'
 import ResourcesTopmate from '../../data/resourceData/resourceTopmate'
-import NaukriCareerVerseBanner from '../common/NaukriCareerVerseBanner'
 const CompanyDetailDownbar = () => {
 
   const shuffledData = useMemo(() => {

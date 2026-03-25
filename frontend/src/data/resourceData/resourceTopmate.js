@@ -19,7 +19,7 @@ const ResourcesTopmate = {
 //   29: 'https://topmate.io/meet_g/1850801',  // 7 coding Principles Every Developer Should Know
 
   // PAID RESOURCES
-  1: 'https://topmate.io/meet_g/1850885',   // SQL Beginner to Advanced (0 - 100) - ₹9
+  // 1: 'https://topmate.io/meet_g/1850885',   // SQL Beginner to Advanced (0 - 100) - ₹9
   3: 'https://topmate.io/meet_g/1809459',   // 100+ Tips, Templates, Harvard Sample & Rules - ₹29
   12: 'https://topmate.io/meet_g/1851020',  // 100+ DSA Questions with Solutions (Multiple) - ₹19
   14: 'https://topmate.io/meet_g/1963977',  // Complete Interview Preparation Pack (HR questions) - ₹19

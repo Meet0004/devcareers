@@ -84,7 +84,7 @@ function ResourceCard({ resource, isMobile = false }) {
         onMouseLeave={() => setHovered(false)}
         style={{
           display: 'flex', alignItems: 'center', gap: 14,
-          padding: '14px 8px',
+          padding: '14px 14px 14px 10px',
           borderRadius: 16,
           background: hovered ? 'rgba(255,255,255,0.97)' : 'rgba(255,255,255,0.88)',
           border: hovered ? '2px solid rgba(249,115,22,0.3)' : '2px solid rgba(249,115,22,0.12)',

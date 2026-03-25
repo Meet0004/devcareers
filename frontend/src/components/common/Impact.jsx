@@ -3,11 +3,11 @@ import SectionHeading from '../legal/SectionHeading'
 
 const STATS = [
 	{ number: `${import.meta.env.VITE_MONTHLY_USERS}`,     label: 'Monthly Active Users' },
-	{ number: `${import.meta.emv.VITE_TOTAL_COMPANIES_TRACKED}+`,     label: 'Companies Tracked' },
+	{ number: `${import.meta.env.VITE_TOTAL_COMPANIES_TRACKED}+`,     label: 'Companies Tracked' },
 	{ number: '100+',     label: 'Monthly Opportunities' },
 	{ number: '35+',      label: 'Resources' },
 	{ number: `${import.meta.env.VITE_TOTAL_SALES}`,      label: 'Topmate Bookings' },
-	{ number: `Top ${import.meta.env.VITE_TOTAL_RANK}%`, label: 'Topmate Creator' },
+	{ number: `Top ${import.meta.env.VITE_TOPMATE_RANK}%`, label: 'Topmate Creator' },
 	{ number: '100%',     label: 'Verified Listings' },
 	{ number: '0₹',       label: 'To Browse Jobs' },
 ]

@@ -26,7 +26,7 @@ import js100Interview from '../../assets/100jsinterview.avif';
 import java150Interview from '../../assets/150java.avif';
 import nodeDeployment from '../../assets/0-100node.js.avif';
 import node40Interview from '../../assets/40nodejs.avif';
-import resumeTips from '../../assets/resumetips.avif';
+import resumeTips from '../../assets/resumetips.avif'; 
 import hremails from '../../assets/hremails.avif';
 import systemDesign from '../../assets/systemDesign.avif';
 import HRques from '../../assets/HRques.avif';

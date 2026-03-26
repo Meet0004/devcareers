@@ -5,12 +5,12 @@ import React, { useEffect, useRef, useState } from 'react'
 // ============================================================
 const ANIM = {
   revealDuration: 0.65,  // seconds — card fade+slide duration
-                         //   fast: 0.35  |  default: 0.65  |  slow: 1.0
-  revealSlide:    24,    // px — how far up cards slide in from
-                         //   subtle: 10  |  default: 24  |  dramatic: 50
-  cardDelay:      120,   // ms — stagger between Mission and Vision card
-                         //   instant: 0  |  default: 120  |  slow: 300
-  headerDelay:    0,     // ms — delay before header appears
+  //   fast: 0.35  |  default: 0.65  |  slow: 1.0
+  revealSlide: 24,    // px — how far up cards slide in from
+  //   subtle: 10  |  default: 24  |  dramatic: 50
+  cardDelay: 120,   // ms — stagger between Mission and Vision card
+  //   instant: 0  |  default: 120  |  slow: 300
+  headerDelay: 0,     // ms — delay before header appears
 }
 
 // ============================================================
@@ -106,6 +106,9 @@ const MissionCard = ({ card, delay }) => {
         onMouseLeave={() => setHov(false)}
         style={{
           height: '100%',
+          width: '100%',
+          maxWidth: '460px',
+          margin: '8px auto',
           background: hov
             ? `linear-gradient(145deg, ${card.accentLight}, #fff 60%)`
             : `linear-gradient(145deg, ${card.accentLight} 0%, #fff 70%)`,
@@ -256,7 +259,9 @@ const Mission = () => {
             Delay staggered by ANIM.cardDelay ms             */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 460px))',
+          justifyContent: 'center',
+          marginBottom: '16px',
           gap: 16,
         }}>
           {CARDS.map((card, i) => (

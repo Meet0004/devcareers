@@ -13,7 +13,7 @@ import PaymentButton from './PaymentButton'
 import { notifyPurchase } from '../../services/notifyService'
 import HelpCTA from '../common/HelpCTA'
 import DriveLinkBanner from './DriveLinkBanner'
-
+import NotFound from '../../pages/NotFound'
 // ─── helpers ────────────────────────────────────────────────────────────────
 
 const getResourceById = (id) => ResourcesData.find((r) => r.id === id) ?? null
@@ -769,39 +769,7 @@ function PackageDetailPage() {
 
   // ── not found ──────────────────────────────────────────────────────────────
   if (!pkg) return (
-    <div style={{
-      minHeight: '100vh', display: 'flex', flexDirection: 'column',
-      alignItems: 'center', justifyContent: 'center',
-      background: '#fafaf9', padding: 24,
-    }}>
-      <div style={{ textAlign: 'center' }}>
-        <div style={{
-          width: 80, height: 80, borderRadius: '50%',
-          background: '#fff7ed', border: '1px solid #fed7aa',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          margin: '0 auto 16px',
-        }}>
-          <svg width={36} height={36} fill="none" stroke="#fb923c" strokeWidth={1.5} viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h2 style={{ fontSize: 20, fontWeight: 800, color: '#111', marginBottom: 8 }}>Package Not Found</h2>
-        <p style={{ fontSize: 14, color: '#9ca3af', marginBottom: 24 }}>
-          The package you're looking for doesn't exist or has been removed.
-        </p>
-        <button
-          onClick={() => navigate('/resources/packages')}
-          style={{
-            padding: '10px 24px', color: '#fff', fontSize: 14, fontWeight: 700,
-            borderRadius: 100, border: 'none', cursor: 'pointer',
-            background: 'linear-gradient(135deg,#f97316,#ea580c)',
-            boxShadow: '0 4px 14px rgba(249,115,22,0.3)',
-          }}
-        >
-          Back to Packages
-        </button>
-      </div>
-    </div>
+    <NotFound />
   )
 
   // ── resolve included resources ─────────────────────────────────────────────

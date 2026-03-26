@@ -576,7 +576,7 @@ Helps you build and deploy real projects confidently`
     isBestSeller: false,
     isPlacementFocused: true,
     isAdvancedLevel: false,
-    copiesSold: "",
+    copiesSold: "11",
     longDescription: `Google – Tagged & Top Interview Questions (Part 1 & 2)
 Amazon – Multiple Sets + 6 Months Preparation Sheet
 Microsoft – Multiple LeetCode Sets + Master Sheet

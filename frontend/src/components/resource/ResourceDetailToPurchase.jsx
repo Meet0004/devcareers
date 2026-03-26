@@ -69,7 +69,6 @@ const WhatsIncluded = ({ resource }) => {
 }
 
 const PriceCard = ({ resource, numericPrice, onSuccess, onError }) => {
-  const [hov, setHov] = useState(false)
   return (
     <div
       className="rounded-2xl overflow-hidden"
@@ -79,11 +78,8 @@ const PriceCard = ({ resource, numericPrice, onSuccess, onError }) => {
         boxShadow: '0 4px 24px rgba(249,115,22,0.08)',
       }}
     >
-      {/* Top accent line */}
       <div style={{ height: 3, background: 'linear-gradient(90deg,#f97316,#ea580c,#ff8c42)' }} />
-
       <div className="p-5 space-y-4">
-        {/* Price row */}
         <div className="flex items-center justify-between">
           <div>
             <p className="text-xs text-gray-400 font-medium mb-0.5 uppercase tracking-wide">Price</p>
@@ -93,8 +89,6 @@ const PriceCard = ({ resource, numericPrice, onSuccess, onError }) => {
           </div>
           <RazorpayBadge />
         </div>
-
-        {/* Payment button */}
         <PaymentButton
           amount={numericPrice}
           resourceTitle={resource.title}
@@ -103,8 +97,6 @@ const PriceCard = ({ resource, numericPrice, onSuccess, onError }) => {
           onSuccess={onSuccess}
           onError={onError}
         />
-
-        {/* Security note */}
         <div className="flex items-start gap-2 bg-green-50 rounded-xl px-3 py-2.5 border border-green-100">
           <svg className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
@@ -252,11 +244,17 @@ function ResourceDetailToPurchase() {
         @keyframes rdpShimmer { 0%{background-position:0% center} 100%{background-position:200% center} }
       `}</style>
 
-      <div className="min-h-screen" style={{ background: '#fafaf9', fontFamily: 'system-ui,-apple-system,sans-serif', position: 'relative', overflow: 'hidden' }}>
+      {/*
+        IMPORTANT: overflow must NOT be 'hidden' here — that breaks CSS sticky.
+        The orbs are clipped with a wrapping div instead.
+      */}
+      <div className="min-h-screen" style={{ background: '#fafaf9', fontFamily: 'system-ui,-apple-system,sans-serif', position: 'relative' }}>
 
-        {/* Ambient orbs */}
-        <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: '#ff6b00', filter: 'blur(90px)', opacity: 0.07, top: -120, right: -80, animation: 'rdpOrbFloat 9s ease-in-out infinite', pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', width: 280, height: 280, borderRadius: '50%', background: '#ff9440', filter: 'blur(80px)', opacity: 0.06, bottom: 60, left: -60, animation: 'rdpOrbFloat 12s ease-in-out infinite reverse', pointerEvents: 'none' }} />
+        {/* Orb clip wrapper — isolates overflow:hidden away from sticky context */}
+        <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 0 }}>
+          <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: '#ff6b00', filter: 'blur(90px)', opacity: 0.07, top: -120, right: -80, animation: 'rdpOrbFloat 9s ease-in-out infinite' }} />
+          <div style={{ position: 'absolute', width: 280, height: 280, borderRadius: '50%', background: '#ff9440', filter: 'blur(80px)', opacity: 0.06, bottom: 60, left: -60, animation: 'rdpOrbFloat 12s ease-in-out infinite reverse' }} />
+        </div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8" style={{ position: 'relative', zIndex: 2 }}>
 
@@ -277,23 +275,49 @@ function ResourceDetailToPurchase() {
           {/* Drive Link Banner */}
           {purchasedLink && <DriveLinkBanner purchasedLink={purchasedLink} buyerName={buyerName} />}
 
-          {/* Main Card */}
+          {/*
+            Main Card
+            — overflow is NOT hidden here (would break sticky)
+            — rounded corners preserved via border-radius
+            — the shimmer accent line gets its own border-radius to match
+          */}
           <div
-            className="rounded-3xl overflow-hidden"
+            className="rounded-3xl"
             style={{
               background: '#fff',
               border: '1px solid rgba(249,115,22,0.1)',
               boxShadow: '0 4px 32px rgba(0,0,0,0.06)',
+              
             }}
           >
-            {/* Top orange accent */}
-            <div style={{ height: 3, background: 'linear-gradient(90deg,#f97316,#ea580c,#ff8c42,#f97316)', backgroundSize: '200% auto', animation: 'rdpShimmer 3s linear infinite' }} />
+            {/* Top shimmer accent — manually rounded to match card */}
+            {/* <div style={{
+              height: 3,
+              borderRadius: '24px 40px 0 0',
+              background: 'linear-gradient(90deg,#f97316,#ea580c,#ff8c42,#f97316)',
+              backgroundSize: '200% auto',
+              animation: 'rdpShimmer 3s linear infinite',
+            }} /> */}
 
-            <div className="grid md:grid-cols-2 gap-0">
+            {/*
+              Two-column layout using flex so each column is independently sized.
+              align-items: start on the flex container is what allows sticky to work —
+              without it the left col stretches to full height and sticky has nothing to scroll against.
+            */}
+            <div style={{ display: 'flex', alignItems: 'flex-start' }}>
 
-              {/* LEFT COLUMN */}
-              <div className="p-6 md:p-8 space-y-5" style={{ borderRight: '1px solid #f3f4f6' }}>
-
+              {/* LEFT COLUMN — sticky with pure CSS */}
+              <div
+                style={{
+                  width: '50%',
+                  flexShrink: 0,
+                  borderRight: '1px solid #f3f4f6',
+                  position: 'sticky',
+                  top: 54,         // adjust to your navbar height if needed
+                  alignSelf: 'start',
+                }}
+                className="p-6 md:p-8 space-y-5"
+              >
                 {/* Mobile: Title + badges */}
                 <div className="md:hidden space-y-2">
                   <h1 className="text-xl font-bold text-gray-900" style={{ letterSpacing: '-0.02em' }}>{resource.title}</h1>
@@ -343,8 +367,8 @@ function ResourceDetailToPurchase() {
                 <div className="md:hidden"><PriceCard {...paymentProps} /></div>
               </div>
 
-              {/* RIGHT COLUMN — desktop only */}
-              <div className="hidden md:flex flex-col p-8 space-y-6">
+              {/* RIGHT COLUMN — desktop only, scrolls naturally */}
+              <div className="hidden md:flex flex-col p-8 space-y-6" style={{ width: '50%' }}>
                 <div className="space-y-2">
                   <h1 className="text-2xl font-bold text-gray-900" style={{ letterSpacing: '-0.025em' }}>{resource.title}</h1>
                   <LevelBadges resource={resource} />
@@ -354,6 +378,7 @@ function ResourceDetailToPurchase() {
                   <PriceCard {...paymentProps} />
                 </div>
               </div>
+
             </div>
           </div>
 

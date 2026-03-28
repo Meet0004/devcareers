@@ -14,6 +14,7 @@ import { notifyPurchase } from '../../services/notifyService'
 import HelpCTA from '../common/HelpCTA'
 import DriveLinkBanner from './DriveLinkBanner'
 import NotFound from '../../pages/NotFound'
+
 // ─── helpers ────────────────────────────────────────────────────────────────
 
 const getResourceById = (id) => ResourcesData.find((r) => r.id === id) ?? null
@@ -232,105 +233,9 @@ const ImageCarousel = ({ images = [], title = '' }) => {
 
 // ─── Why You Should Buy This ─────────────────────────────────────────────────
 
-// const WhyShouldBuy = ({ resources }) => {
-//   // For each resource, parse shouldYouBuyFor lines and pick 2 random ones
-//   const points = resources.flatMap((resource) => {
-//     const lines = parseLines(resource.shouldYouBuyFor ?? '')
-//     const picked = pickRandom(lines, Math.min(4))
-//     return picked.map((point) => ({
-//       point,
-//       resourceTitle: resource.title,
-//       resourceImage: resource.image ?? null,
-//     }))
-//   })
-
-//   if (points.length === 0) return null
-
-//   return (
-//     <div>
-//       <h2 style={{
-//         fontSize: 12, fontWeight: 700, color: '#6b7280',
-//         letterSpacing: '0.08em', textTransform: 'uppercase',
-//         marginBottom: 14, display: 'flex', alignItems: 'center', gap: 8,
-//       }}>
-//         <span style={{
-//           width: 7, height: 7, borderRadius: '50%',
-//           background: '#f97316', flexShrink: 0, display: 'inline-block',
-//         }} />
-//         Why You Should Buy This
-//       </h2>
-
-//       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-//         {points.map(({ point, resourceTitle, resourceImage }, idx) => (
-//           <div
-//             key={idx}
-//             style={{
-//               display: 'flex', alignItems: 'flex-start', gap: 12,
-//               background: idx % 2 === 0 ? 'linear-gradient(135deg,#fff8f5,#fff)' : '#fafaf9',
-//               border: '1px solid rgba(249,115,22,0.1)',
-//               borderRadius: 14,
-//               padding: '12px 14px',
-//             }}
-//           >
-//             {/* Orange check circle */}
-//             <div style={{
-//               width: 22, height: 22, borderRadius: '50%', flexShrink: 0,
-//               background: 'rgba(249,115,22,0.1)',
-//               display: 'flex', alignItems: 'center', justifyContent: 'center',
-//               marginTop: 1,
-//             }}>
-//               <svg width={10} height={10} fill="none" stroke="#f97316" strokeWidth={3} viewBox="0 0 24 24">
-//                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-//               </svg>
-//             </div>
-
-//             <div style={{ flex: 1, minWidth: 0 }}>
-//               {/* The benefit point */}
-//               <p style={{
-//                 fontSize: 13, color: '#1f2937', lineHeight: 1.55,
-//                 margin: '0 0 6px', fontWeight: 500,
-//               }}>
-//                 {point}
-//               </p>
-
-//               {/* Source tag: tiny thumbnail + resource name */}
-//               {/* <div style={{
-//                 display: 'inline-flex', alignItems: 'center', gap: 5,
-//                 background: '#f3f4f6', borderRadius: 100,
-//                 padding: '2px 8px 2px 4px',
-//               }}>
-//                 {resourceImage && (
-//                   <div style={{
-//                     width: 16, height: 16, borderRadius: '50%',
-//                     overflow: 'hidden', flexShrink: 0,
-//                     border: '1px solid #e5e7eb', background: '#fff',
-//                   }}>
-//                     <img
-//                       src={resourceImage}
-//                       alt=""
-//                       style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-//                     />
-//                   </div>
-//                 )}
-//                 <span style={{
-//                   fontSize: 10, fontWeight: 600, color: '#9ca3af',
-//                   whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 180,
-//                 }}>
-//                   {resourceTitle}
-//                 </span>
-//               </div> */}
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   )
-// }
 const WhyShouldBuy = ({ resources, minPoints = 4, maxPoints = 7 }) => {
-  // Step 1: collect ALL points
   const allPoints = resources.flatMap((resource) => {
     const lines = parseLines(resource.shouldYouBuyFor ?? '')
-
     return lines.map((point) => ({
       point,
       resourceTitle: resource.title,
@@ -340,140 +245,63 @@ const WhyShouldBuy = ({ resources, minPoints = 4, maxPoints = 7 }) => {
 
   if (allPoints.length === 0) return null
 
-  // Step 2: shuffle all points
   const shuffled = [...allPoints].sort(() => Math.random() - 0.5)
-
-  // Step 3: pick random count between min & max
   const randomCount =
     Math.floor(Math.random() * (maxPoints - minPoints + 1)) + minPoints
-
   const totalToShow = Math.min(randomCount, allPoints.length)
-
   const points = shuffled.slice(0, totalToShow)
 
   return (
     <div>
       <h2
         style={{
-          fontSize: 12,
-          fontWeight: 700,
-          color: '#6b7280',
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          marginBottom: 14,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 8,
+          fontSize: 12, fontWeight: 700, color: '#6b7280',
+          letterSpacing: '0.08em', textTransform: 'uppercase',
+          marginBottom: 14, display: 'flex', alignItems: 'center', gap: 8,
         }}
       >
         <span
           style={{
-            width: 7,
-            height: 7,
-            borderRadius: '50%',
-            background: '#f97316',
-            flexShrink: 0,
-            display: 'inline-block',
+            width: 7, height: 7, borderRadius: '50%',
+            background: '#f97316', flexShrink: 0, display: 'inline-block',
           }}
         />
         Why You Should Buy This
       </h2>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-        {points.map(({ point, resourceTitle, resourceImage }, idx) => (
+        {points.map(({ point }, idx) => (
           <div
             key={idx}
             style={{
-              display: 'flex',
-              alignItems: 'flex-start',
-              gap: 12,
-              background:
-                idx % 2 === 0
-                  ? 'linear-gradient(135deg,#fff8f5,#fff)'
-                  : '#fafaf9',
+              display: 'flex', alignItems: 'flex-start', gap: 12,
+              background: idx % 2 === 0 ? 'linear-gradient(135deg,#fff8f5,#fff)' : '#fafaf9',
               border: '1px solid rgba(249,115,22,0.1)',
               borderRadius: 14,
               padding: '12px 14px',
             }}
           >
-            {/* Orange check circle */}
             <div
               style={{
-                width: 22,
-                height: 22,
-                borderRadius: '50%',
-                flexShrink: 0,
+                width: 22, height: 22, borderRadius: '50%', flexShrink: 0,
                 background: 'rgba(249,115,22,0.1)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
                 marginTop: 1,
               }}
             >
-              <svg
-                width={10}
-                height={10}
-                fill="none"
-                stroke="#f97316"
-                strokeWidth={3}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
+              <svg width={10} height={10} fill="none" stroke="#f97316" strokeWidth={3} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
-
             <div style={{ flex: 1, minWidth: 0 }}>
-              {/* Benefit point */}
               <p
                 style={{
-                  fontSize: 13,
-                  color: '#1f2937',
-                  lineHeight: 1.55,
-                  margin: '0 0 6px',
-                  fontWeight: 500,
+                  fontSize: 13, color: '#1f2937', lineHeight: 1.55,
+                  margin: 0, fontWeight: 500,
                 }}
               >
                 {point}
               </p>
-
-              {/* Optional source tag (kept commented like yours) */}
-              {/*
-              <div style={{
-                display: 'inline-flex', alignItems: 'center', gap: 5,
-                background: '#f3f4f6', borderRadius: 100,
-                padding: '2px 8px 2px 4px',
-              }}>
-                {resourceImage && (
-                  <div style={{
-                    width: 16, height: 16, borderRadius: '50%',
-                    overflow: 'hidden', flexShrink: 0,
-                    border: '1px solid #e5e7eb', background: '#fff',
-                  }}>
-                    <img
-                      src={resourceImage}
-                      alt=""
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        display: 'block'
-                      }}
-                    />
-                  </div>
-                )}
-                <span style={{
-                  fontSize: 10, fontWeight: 600, color: '#9ca3af',
-                  whiteSpace: 'nowrap', overflow: 'hidden',
-                  textOverflow: 'ellipsis', maxWidth: 180,
-                }}>
-                  {resourceTitle}
-                </span>
-              </div>
-              */}
             </div>
           </div>
         ))}
@@ -481,6 +309,7 @@ const WhyShouldBuy = ({ resources, minPoints = 4, maxPoints = 7 }) => {
     </div>
   )
 }
+
 // ─── Included Resources accordion ────────────────────────────────────────────
 
 const ResourceAccordionItem = ({ resource, defaultOpen = false }) => {
@@ -768,9 +597,7 @@ function PackageDetailPage() {
   )
 
   // ── not found ──────────────────────────────────────────────────────────────
-  if (!pkg) return (
-    <NotFound />
-  )
+  if (!pkg) return <NotFound />
 
   // ── resolve included resources ─────────────────────────────────────────────
   const includedResources = (pkg.includedResourceIds ?? [])
@@ -798,26 +625,29 @@ function PackageDetailPage() {
         }
       `}</style>
 
+      {/*
+        IMPORTANT: overflow must NOT be 'hidden' on this wrapper —
+        that breaks CSS sticky. Orbs are clipped in their own wrapper instead.
+      */}
       <div style={{
         minHeight: '100vh',
         background: '#fafaf9',
         fontFamily: 'system-ui,-apple-system,sans-serif',
         position: 'relative',
-        overflow: 'hidden',
       }}>
-        {/* Ambient orbs */}
-        <div style={{
-          position: 'absolute', width: 420, height: 420, borderRadius: '50%',
-          background: '#f97316', filter: 'blur(100px)', opacity: 0.06,
-          top: -130, right: -100, animation: 'pkgOrbFloat 10s ease-in-out infinite',
-          pointerEvents: 'none',
-        }} />
-        <div style={{
-          position: 'absolute', width: 300, height: 300, borderRadius: '50%',
-          background: '#10b981', filter: 'blur(90px)', opacity: 0.05,
-          bottom: 80, left: -80, animation: 'pkgOrbFloat 13s ease-in-out infinite reverse',
-          pointerEvents: 'none',
-        }} />
+        {/* Orb clip wrapper — isolates overflow:hidden away from sticky context */}
+        <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 0 }}>
+          <div style={{
+            position: 'absolute', width: 420, height: 420, borderRadius: '50%',
+            background: '#f97316', filter: 'blur(100px)', opacity: 0.06,
+            top: -130, right: -100, animation: 'pkgOrbFloat 10s ease-in-out infinite',
+          }} />
+          <div style={{
+            position: 'absolute', width: 300, height: 300, borderRadius: '50%',
+            background: '#10b981', filter: 'blur(90px)', opacity: 0.05,
+            bottom: 80, left: -80, animation: 'pkgOrbFloat 13s ease-in-out infinite reverse',
+          }} />
+        </div>
 
         <div style={{
           maxWidth: 1080, margin: '0 auto',
@@ -848,30 +678,42 @@ function PackageDetailPage() {
 
           {/* Main card */}
           <div style={{
-            borderRadius: 28, overflow: 'hidden',
+            borderRadius: 28,
             background: '#fff',
             border: '1px solid rgba(249,115,22,0.1)',
             boxShadow: '0 4px 40px rgba(0,0,0,0.06)',
+            // overflow: 'hidden',   // ← add this
           }}>
             {/* Shimmer top bar */}
             <div style={{
               height: 3,
+              borderRadius: '28px',
               background: 'linear-gradient(90deg,#f97316,#ea580c,#ff8c42,#f97316)',
               backgroundSize: '200% auto',
               animation: 'pkgShimmer 3s linear infinite',
+              overflow: 'hidden'
             }} />
 
-            {/* Two-column grid */}
+            {/*
+              Two-column layout using flex so each column is independently sized.
+              alignItems: 'flex-start' on the container is what allows sticky to work —
+              without it the left col stretches to full height and sticky has nothing to scroll against.
+            */}
             <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))',
+              display: 'flex',
+              alignItems: 'flex-start',
             }}>
 
-              {/* ── LEFT: carousel + why buy ── */}
+              {/* ── LEFT COLUMN — sticky ── */}
               <div style={{
+                width: '50%',
+                flexShrink: 0,
                 padding: '28px 24px',
                 borderRight: '1px solid #f3f4f6',
                 display: 'flex', flexDirection: 'column', gap: 24,
+                position: 'sticky',
+                top: 54,          // adjust to your navbar height
+                alignSelf: 'start',
               }}>
 
                 {/* Mobile-only title */}
@@ -921,7 +763,7 @@ function PackageDetailPage() {
                 {/* Image carousel */}
                 <ImageCarousel images={galleryImages} title={pkg.title} />
 
-                {/* ── Why You Should Buy This ── */}
+                {/* Why You Should Buy This */}
                 <WhyShouldBuy resources={includedResources} />
 
                 {/* Mobile: price card */}
@@ -934,8 +776,12 @@ function PackageDetailPage() {
                 </div>
               </div>
 
-              {/* ── RIGHT: title + what's included + price ── */}
-              <div className="pkg-desktop-right" style={{ padding: '28px 24px', display: 'flex', flexDirection: 'column', gap: 24 }}>
+              {/* ── RIGHT COLUMN — desktop only, scrolls naturally ── */}
+              <div className="pkg-desktop-right" style={{
+                width: '50%',
+                padding: '28px 24px',
+                display: 'flex', flexDirection: 'column', gap: 24,
+              }}>
 
                 <div>
                   <h1 style={{

@@ -187,10 +187,11 @@ const TipList = ({ items, variant = 'check' }) => (
 // ── Recent Openings — top 6 by highest id, excludes current job ───────────────
 const RecentOpenings = ({ currentCompany, currentRole }) => {
   const currentJob = companiesData.find(
-    c => c.company === currentCompany && c.role === currentRole
+    c => c?.company === currentCompany && c?.role === currentRole
   )
 
   const recent = [...companiesData]
+    .filter(Boolean)                          // ← remove undefined entries
     .sort((a, b) => b.id - a.id)
     .filter(c => c.id !== currentJob?.id)
     .slice(0, 6)

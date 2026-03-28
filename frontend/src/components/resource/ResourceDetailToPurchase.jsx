@@ -6,7 +6,7 @@ import { notifyPurchase } from '../../services/notifyService'
 import HelpCTA from '../common/HelpCTA'
 import Faq from '../common/Faq'
 import DriveLinkBanner from './DriveLinkBanner'
-
+import NotFound from '../../pages/NotFound'
 // ── Sub-components ────────────────────────────────────────────
 
 const RazorpayBadge = () => (
@@ -213,22 +213,7 @@ function ResourceDetailToPurchase() {
   )
 
   if (!resource) return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ background: '#fafaf9' }}>
-      <div className="text-center">
-        <div className="w-20 h-20 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-4">
-          <svg className="w-10 h-10 text-orange-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h2 className="text-xl font-bold text-gray-800 mb-2">Resource Not Found</h2>
-        <p className="text-gray-500 mb-6 text-sm">The resource you're looking for doesn't exist.</p>
-        <button onClick={() => navigate('/resources')}
-          className="px-6 py-2.5 text-white text-sm font-semibold rounded-full transition-all"
-          style={{ background: 'linear-gradient(135deg,#f97316,#ea580c)', boxShadow: '0 4px 14px rgba(249,115,22,0.3)' }}>
-          Back to Resources
-        </button>
-      </div>
-    </div>
+    <NotFound />
   )
 
   const numericPrice = parseFloat(resource.price.replace(/[^0-9.]/g, ''))
@@ -289,7 +274,8 @@ function ResourceDetailToPurchase() {
               boxShadow: '0 4px 32px rgba(0,0,0,0.06)',
               
             }}
-          >
+          > 
+           
             {/* Top shimmer accent — manually rounded to match card */}
             {/* <div style={{
               height: 3,

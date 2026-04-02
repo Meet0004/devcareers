@@ -217,7 +217,7 @@ const StatsCounter = () => {
         ref={sectionRef}
         style={{
           background: '#fff',
-          padding: '72px 24px 80px',
+          padding: '52px 24px 0px',
           position: 'relative',
           overflow: 'hidden',
           fontFamily: 'system-ui, -apple-system, sans-serif',
@@ -245,7 +245,7 @@ const StatsCounter = () => {
         {/* Stat cards */}
         <div
           className="sc-cards-grid"
-          style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, maxWidth: 900, margin: '0 auto 52px' }}
+          style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, maxWidth: 900, margin: '0 auto 24px' }}
         >
           {STATS.map((stat, i) => (
             <StatCard key={stat.id} stat={stat} count={counts[i]} />
@@ -258,7 +258,7 @@ const StatsCounter = () => {
           style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             gap: 32, flexWrap: 'wrap',
-            paddingTop: 36, borderTop: '1px solid #f3f4f6',
+            paddingTop: 12, borderTop: '1px solid #f3f4f6',
             maxWidth: 900, margin: '0 auto',
           }}
         >

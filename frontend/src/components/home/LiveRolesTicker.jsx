@@ -261,7 +261,7 @@ const LiveRolesTicker = () => {
         @media(prefers-reduced-motion:reduce){ *{animation:none!important;transition:none!important;} }
       `}</style>
 
-      <section style={{ background: 'transparent', padding: '80px 32px', position: 'relative', overflow: 'hidden', fontFamily: 'system-ui,-apple-system,sans-serif' }}>
+      <section style={{ background: 'transparent', padding: '55px 32px', position: 'relative', overflow: 'hidden', fontFamily: 'system-ui,-apple-system,sans-serif' }}>
         {/* Ambient background orbs — purely decorative blurred circles */}
         {/* <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: '#ff6b00', filter: 'blur(100px)', opacity: 0.07, top: -160, right: -100, animation: 'lrOrbFloat 9s ease-in-out infinite', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', width: 300, height: 300, borderRadius: '50%', background: '#ff9440', filter: 'blur(80px)', opacity: 0.06, bottom: 0, left: -80, animation: 'lrOrbFloat 12s ease-in-out infinite reverse', pointerEvents: 'none' }} /> */}

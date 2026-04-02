@@ -2694,7 +2694,117 @@ Job Timing: Full Time`,
     contact: `HR Email: kalidas@bluepms.com
 Application Deadline: 19 March 2026, 12:00 AM IST`,
   },
+{
+  id: 223,
+  company: 'Habuild',
+  role: 'Software Development Engineer (SDE 1)',
+  hiringLink: 'jj',
 
+  location: 'Bengaluru / Nagpur',
+  experience: '0 – 2 Years',
+  jobType: 'Full Time',
+  workMode: 'Onsite',
+
+  overview: `Habuild is a rapidly growing wellness-focused platform in India, helping millions of users adopt healthier lifestyles through yoga, mindfulness, and consistent habits. With a strong community-driven approach and millions of daily active participants, the company focuses on building impactful digital products that encourage long-term well-being.
+
+As an SDE 1, you will be part of a product-driven team working on scalable applications that serve a massive user base. This role offers an opportunity to contribute to meaningful technology that directly impacts users' daily lives while working in a fast-paced and innovation-oriented environment.`,
+
+  responsibilities: `Develop clean, efficient, and maintainable code across various stages of the development lifecycle
+Contribute to both frontend and backend development of applications and services
+Collaborate with cross-functional teams including product managers, designers, and engineers to deliver features
+Participate in code reviews and follow established engineering best practices
+Identify, debug, and resolve production-level issues efficiently
+Improve system performance, scalability, and reliability continuously
+Work within Agile processes including sprint planning, stand-ups, and retrospectives
+Explore and implement modern technologies where applicable
+Maintain proper documentation and share technical knowledge within the team`,
+
+  skills: `Java or Python or JavaScript
+Data Structures and Algorithms
+Object-Oriented Programming (OOP)
+Node.js or Spring Boot or Django
+REST APIs
+MySQL or PostgreSQL or MongoDB
+Git
+Linux or Unix systems
+Problem Solving
+Communication Skills`,
+
+  nice_to_have: `Familiarity with Agile development methodologies
+Exposure to cloud platforms such as AWS, GCP, or Azure
+Experience working on fitness, wellness, ed-tech, or habit-based applications`,
+
+  benefits: `Opportunity to work on products impacting millions of users
+Collaborative and growth-oriented work culture
+Exposure to real-world scalable systems
+Learning-focused environment with ownership and responsibility`,
+
+  salary: `₹4 LPA – ₹9 LPA (Estimated range for SDE 1 role)`,
+
+  work_details: `Working Days: 5 Days (Typical)
+Job Type: Full Time
+Work Mode: Onsite
+Environment: Agile-based development with regular team collaboration`,
+
+  education: `Bachelor’s degree in Computer Science, Engineering, or a related technical field`,
+
+  about_company: `Habuild is a wellness-tech company focused on transforming lives through consistent habits like yoga and mindfulness. With millions of users and a strong community base, the platform emphasizes discipline, personal growth, and long-term health through technology-driven solutions.`,
+
+
+}, {
+  id: 224,
+  company: 'Red Hat',
+  role: 'Trainee - Associate Software Engineer',
+  hiringLink: 'k',
+
+  location: 'Pune',
+  experience: '0 – 1 Year',
+  jobType: 'Full Time',
+  workMode: 'Onsite',
+
+  overview: `Red Hat is a globally recognized enterprise open-source solutions provider, known for its contributions to Linux, cloud computing, and container technologies. This trainee role is designed for fresh graduates who want to kickstart their careers in a highly collaborative and innovation-driven environment.
+
+During this structured training period, candidates will work alongside experienced engineers, gaining exposure to real-world projects and modern technologies such as OpenShift, Ansible, and AI-driven systems. The role provides hands-on learning combined with mentorship and global team collaboration.`,
+
+  responsibilities: `Work under the guidance of senior engineers to design, develop, and maintain software solutions
+Write and enhance code using programming languages like Python or Golang
+Identify bugs, troubleshoot issues, and contribute to improving existing products
+Participate in adding new features to enterprise-grade platforms such as RHEL and OpenShift
+Collaborate with cross-functional teams including product, design, and quality engineering
+Contribute throughout the product lifecycle from development to deployment
+Engage with internal teams and peers to enhance technical and communication skills`,
+
+  skills: `Python or Golang
+Basic Software Development Knowledge
+Problem Solving
+Debugging
+Git or Version Control
+JavaScript (basic understanding)
+Agile Development Basics
+Communication Skills`,
+
+  nice_to_have: `Familiarity with Linux or open-source environments
+Exposure to cloud technologies or container platforms
+Understanding of DevOps practices
+Interest in AI or automation tools`,
+
+  benefits: `Structured training with mentorship from experienced engineers
+Opportunity to work on real enterprise-level projects
+Exposure to global teams and modern technologies
+Strong learning environment with career growth opportunities`,
+
+  salary: `₹7 LPA – ₹12.5 LPA (Approximate range based on market data)`,
+
+  work_details: `Duration: 6 Months (June – December 2026)
+Working Days: 5 Days
+Job Type: Full Time
+Work Mode: Onsite
+Environment: Collaborative and Agile-based development`,
+
+  education: `Bachelor’s degree in Engineering, Technology, Computer Science, IT, or related field (2025 or 2026 graduates)`,
+
+  about_company: `Red Hat is a leading provider of enterprise open-source solutions, enabling organizations to build, deploy, and manage applications across hybrid cloud environments. Known for products like Red Hat Enterprise Linux and OpenShift, the company focuses on innovation, collaboration, and open technology ecosystems.`,
+}
 
 
   // ,{ id: , company: '', role: '',

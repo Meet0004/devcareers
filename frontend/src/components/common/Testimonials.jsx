@@ -104,7 +104,7 @@ const Testimonials = () => {
 				.ts-section {
 					font-family: 'Plus Jakarta Sans', sans-serif;
 					background: #transparent;
-					padding: 72px 48px;
+					padding: 64px 48px 8px 48px;
 					border-radius: 24px;
 				}
 
@@ -113,7 +113,6 @@ const Testimonials = () => {
 					.ts-cols { grid-template-columns: 1fr !important; }
 					.ts-footer-inner { padding: 24px 20px !important; }
 				}
-
 				.ts-head {
 					text-align: center;
 					margin-bottom: 52px;
@@ -121,12 +120,10 @@ const Testimonials = () => {
 					transform: translateY(12px);
 					transition: opacity 0.55s ease, transform 0.55s ease;
 				}
-
 				.ts-section.ts-visible .ts-head {
 					opacity: 1;
 					transform: none;
 				}
-
 				.ts-pill {
 					display: inline-block;
 					font-size: 11px;
@@ -139,7 +136,6 @@ const Testimonials = () => {
 					border-radius: 20px;
 					margin-bottom: 16px;
 				}
-
 				.ts-title {
 					font-size: clamp(26px, 4vw, 40px);
 					font-weight: 600;
@@ -147,7 +143,6 @@ const Testimonials = () => {
 					line-height: 1.15;
 					margin-bottom: 10px;
 				}
-
 				.ts-subtitle {
 					font-size: 15px;
 					font-weight: 300;

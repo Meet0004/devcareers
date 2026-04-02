@@ -103,7 +103,7 @@ const Testimonials = () => {
 
 				.ts-section {
 					font-family: 'Plus Jakarta Sans', sans-serif;
-					background: #fafaf9;
+					background: #transparent;
 					padding: 72px 48px;
 					border-radius: 24px;
 				}

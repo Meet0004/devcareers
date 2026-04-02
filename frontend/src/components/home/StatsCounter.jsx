@@ -221,11 +221,12 @@ const StatsCounter = () => {
           position: 'relative',
           overflow: 'hidden',
           fontFamily: 'system-ui, -apple-system, sans-serif',
+          background:"transparent"
         }}
       >
         {/* Ambient orbs */}
-        <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: '#ff6b00', filter: 'blur(90px)', opacity: 0.07, top: -180, right: -120, animation: 'scOrbFloat 8s ease-in-out infinite', pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', width: 300, height: 300, borderRadius: '50%', background: '#ff9440', filter: 'blur(80px)', opacity: 0.06, bottom: 0, left: -80, animation: 'scOrbFloat 12s ease-in-out infinite reverse', pointerEvents: 'none' }} />
+        {/* <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: '#ff6b00', filter: 'blur(90px)', opacity: 0.07, top: -180, right: -120, animation: 'scOrbFloat 8s ease-in-out infinite', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', width: 300, height: 300, borderRadius: '50%', background: '#ff9440', filter: 'blur(80px)', opacity: 0.06, bottom: 0, left: -80, animation: 'scOrbFloat 12s ease-in-out infinite reverse', pointerEvents: 'none' }} /> */}
 
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: 52 }}>

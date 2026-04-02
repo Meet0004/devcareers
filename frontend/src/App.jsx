@@ -14,7 +14,8 @@ const Home        = lazy(() => import('./pages/Home'))
 const SubscribeUs = lazy(() => import('./pages/Subscribe_us'))
 const Resources   = lazy(() => import('./pages/Resources'))
 const Packages    = lazy(() => import('./pages/PackageResources'))
-
+const Blogs       = lazy(() => import('./pages/Blogs'))
+const BlogsDetailPage       = lazy(() => import('./components/blog/BlogsDetailPage'))
 // Lazy — Resource & Company
 const ResourceDetailToPurchase = lazy(() => import('./components/resource/ResourceDetailToPurchase'))
 const Companies_details        = lazy(() => import('./pages/Companies_details'))
@@ -105,6 +106,8 @@ const App = () => {
           <Routes>
             
             <Route path="/"                                        element={<Home />}                     />
+            <Route path="/blogs"                                   element={<Blogs />} />
+            <Route path="/blogs/:id"                               element={<BlogsDetailPage />} />
             <Route path="/company-details"                         element={<Companies_details />}        />
             <Route path="/company-details/:companyName/:role"      element={<Companies_details />}        />
             <Route path="/resource/:id"                            element={<ResourceDetailToPurchase />} />

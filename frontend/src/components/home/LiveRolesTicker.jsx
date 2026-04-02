@@ -8,7 +8,7 @@ const ANIM = {
                           //   faster: 0.3  |  default: 0.55  |  slow: 0.9
   revealSlide:     18,    // px — how far cards slide up from when they appear
                           //   subtle: 10  |  default: 18  |  dramatic: 40
-  staggerStep:     40,    // ms — delay added between each card in the cascade
+  staggerStep:     5,    // ms — delay added between each card in the cascade
                           //   fast: 30  |  default: 60  |  slow: 120
   countTickMs:     20,    // ms — speed of the number count-up (lower = faster)
                           //   fast: 20  |  default: 50  |  slow: 100

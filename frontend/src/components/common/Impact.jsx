@@ -3,14 +3,9 @@ import SectionHeading from '../legal/SectionHeading'
 
 const STATS = [
 	{ number: `${import.meta.env.VITE_MONTHLY_USERS}`,     label: 'Monthly Active Users' },
-	{ number: `${import.meta.env.VITE_TOTAL_COMPANIES_TRACKED}+`,     label: 'Companies Tracked' },
 	{ number: '100+',     label: 'Monthly Opportunities' },
-	{ number: '35+',      label: 'Resources' },
-	{ number: `${import.meta.env.VITE_TOTAL_SALES}`,      label: 'Topmate Bookings' },
 	{ number: `Top ${import.meta.env.VITE_TOPMATE_RANK}%`, label: 'Topmate Creator' },
-	{ number: '100%',     label: 'Verified Listings' },
-	{ number: '0₹',       label: 'To Browse Jobs' },
-]
+	{ number: '100%',     label: 'Verified Listings' },]
 
 function parse(raw) {
 	if (raw.startsWith('Top ')) {
@@ -28,7 +23,7 @@ function easeOutCubic(t) {
 	return 1 - Math.pow(1 - t, 3)
 }
 
-const BADGES = ['Community Care', 'Curator', "People's Choice", 'Top 1%']
+const BADGES = ['Community Care', 'Curator', "People's Choice"]
 
 const Impact = () => {
 	const sectionRef = useRef(null)

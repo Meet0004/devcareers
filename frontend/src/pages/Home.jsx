@@ -20,9 +20,6 @@ const Home = () => {
         <StatsCounter />
 
         <div className="px-4 py-4 md:px-10 md:py-10 lg:px-36 lg:py-5">
-          <Impact />
-        </div>
-        <div className="px-4 py-4 md:px-10 md:py-10 lg:px-36 lg:py-5">
           <Testimonials />
         </div>
       </div>

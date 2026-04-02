@@ -4,7 +4,7 @@ const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/company-details', label: 'Job Posting' },
   { href: '/resources', label: 'Resources' },
-  { href: '/subscribe-us', label: 'Subscribe' },
+  { href: '/Blogs', label: 'Blogs' },
   { href: '/about-us', label: 'About Us' },
   { href: '/contact-us', label: 'Contact Us' },
 ]

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const YOUTUBE_REVIEWS = [
-	{ text: '"❤Thank you for posting such amazing opportunity Keep growing, you deserve more subscribers."', author:'@Batman-6909', sub:'1 day ago', stars:0},
-	{ text: '"CONGRATS bro. hope you hit 100k and million soon."', author: '@photon7404', sub: '1 week ago', stars: 5 },
-	{ text: '"Very informative"', author: '@sonalsshet6133', sub: '1 month ago', stars: 0 },
-	{ text: '"Thank you bro. bring more..."', author: '@nilesh__', sub: '2 weeks ago', stars: 0 },
-	{ text: '"keep posting sir"', author: '@himanshudwivedi2235', sub: '1 month ago', stars: 0 },
+	{ text: '"❤Thank you for posting such amazing opportunity Keep growing, you deserve more subscribers."', author: '@Batman-6909', sub: '24th Mar 2026', stars: 0 },
+	{ text: '"CONGRATS bro. hope you hit 100k and million soon."', author: '@photon7404', sub: '27 Feb 2026', stars: 0 },
+	{ text: '"Thank you bro. bring more..."', author: '@nilesh__', sub: '11th Feb 2026', stars: 0 },
+	{ text: '"keep posting sir"', author: '@himanshudwivedi2235', sub: '31 Jan 2026', stars: 0 },
+	{ text: '"Very informative"', author: '@sonalsshet6133', sub: '26 Jan 2026', stars: 0 },
 ]
 
 const TOPMATE_REVIEWS = [
@@ -79,7 +79,7 @@ const TopmateIcon = () => (
 	</svg>
 )
 
-const BADGES = ["Community Care", "Curator", "People's Choice", "Top 1%"]
+const BADGES = ["Community Care", "Curator", "People's Choice"]
 
 const Testimonials = () => {
 	const sectionRef = useRef(null)
@@ -160,6 +160,8 @@ const Testimonials = () => {
 					display: grid;
 					grid-template-columns: 1fr 1fr;
 					gap: 24px;
+					max-width: 1100px;   /* 👈 limit full section width */
+	margin: 0 auto; 
 				}
 
 				.ts-col-head {
@@ -202,7 +204,7 @@ const Testimonials = () => {
 					border-radius: 12px;
 				}
 
-				.ts-cards { display: flex; flex-direction: column; gap: 12px; }
+				.ts-cards { display: flex; flex-direction: column; gap: 12px; justify-content: center}
 
 				.ts-card {
 					padding: 18px 20px;
@@ -215,6 +217,8 @@ const Testimonials = () => {
 						box-shadow 0.2s ease;
 					will-change: transform;
 					cursor: default;
+					max-width: 600px;
+					
 				}
 
 				.ts-card-yt {
@@ -293,7 +297,7 @@ const Testimonials = () => {
 					flex-direction: column;
 					align-items: center;
 					gap: 16px;
-					max-width: 560px;
+					max-width: 440px;
 					width: 100%;
 				}
 
@@ -415,11 +419,6 @@ const Testimonials = () => {
 							<div className="ts-stat">
 								<div className="ts-stat-val">{import.meta.env.VITE_TOPMATE_RANK}%</div>
 								<div className="ts-stat-lbl">Top Creator</div>
-							</div>
-							<div className="ts-stat-sep" />
-							<div className="ts-stat">
-								<div className="ts-stat-val">{import.meta.env.VITE_TOTAL_SALES}</div>
-								<div className="ts-stat-lbl">Bookings</div>
 							</div>
 							<div className="ts-stat-sep" />
 							<div className="ts-stat">

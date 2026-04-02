@@ -1,9 +1,10 @@
 import React from 'react'
-import { Youtube, MessageCircle, Linkedin } from 'lucide-react'
+import { Youtube, MessageCircle, Linkedin, InstagramIcon } from 'lucide-react'
 
 const youtube_link = import.meta.env.VITE_YOUTUBE_LINK
 const whatsapp_link = import.meta.env.VITE_WHATSAPP_LINK
 const linkedin_link = import.meta.env.VITE_LINKEDIN_LINK
+const instagram_link = import.meta.env.VITE_INSTAGRAM_LINK
 const QUICK_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/company-details', label: 'Job Posting' },
@@ -23,6 +24,7 @@ const LEGAL_LINKS = [
 const SOCIAL_LINKS = [
   { href: youtube_link, label: 'YouTube Channel', icon: <Youtube className="w-4 h-4" /> },
   { href: whatsapp_link, label: 'WhatsApp Channel', icon: <MessageCircle className="w-4 h-4" /> },
+  { href: instagram_link, label: 'Instagram Profile', icon: <InstagramIcon className="w-4 h-4"/> },
   { href: linkedin_link, label: 'LinkedIn Channel', icon: <Linkedin className="w-4 h-4" /> },
 ]
 

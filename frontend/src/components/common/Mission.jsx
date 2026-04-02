@@ -217,7 +217,7 @@ const Mission = () => {
         }
       `}</style>
 
-      <section style={{ fontFamily: 'system-ui,-apple-system,sans-serif' }}>
+      <section style={{ fontFamily: 'system-ui,-apple-system,sans-serif', background: 'transparent' }}>
 
         {/* Section header — fades in when scrolled into view */}
         <div ref={headerRef} style={{ ...revealStyle(headerVisible), textAlign: 'center', marginBottom: 48 }}>

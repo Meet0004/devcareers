@@ -8,7 +8,7 @@ const TITLES = {
   '/company-details':           `Jobs & Internships - ${SITE}`,
   '/resources':                 `Career Resources - ${SITE}`,
   '/resources/packages':        `Resource Packages - ${SITE}`,
-  'resources/packages/:id"': `Resource Detail - ${SITE}`,
+  // 'resources/packages/:id"': `Resource Detail - ${SITE}`,
   '/blogs':                     `Blogs - ${SITE}`,
   '/subscribe-us':              `Subscribe for Job Alerts - ${SITE}`,
   '/about-us':                  `About Us - ${SITE}`,

@@ -53,9 +53,7 @@ const PackageCard = ({ pkg, index }) => {
     .map(getResourceById)
     .filter(Boolean)
 
-  const discountPct = pkg.originalPrice
-    ? Math.round((pkg.savings / pkg.originalPrice) * 100)
-    : 0
+  const discountPct = pkg.savings
 
   const accent = accents[index % accents.length]
 
@@ -82,7 +80,6 @@ const PackageCard = ({ pkg, index }) => {
         overflow: 'hidden',
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(24px)',
-        transition: `opacity 0.5s ease ${index * 0.12}s, transform 0.5s cubic-bezier(0.22,1,0.36,1) ${index * 0.12}s`,
       }}
     >
       {/* Top accent line */}
@@ -111,12 +108,12 @@ const PackageCard = ({ pkg, index }) => {
             {discountPct}% OFF
           </span>
 
-          {pkg.expDate && (
+          {/* {pkg.expDate && (
             <span style={{ fontSize: 11, fontWeight: 400, color: '#9ca3af' }}>
               Valid till{' '}
               <span style={{ color: '#ef4444', fontWeight: 600 }}>{pkg.expDate}</span>
             </span>
-          )}
+          )} */}
         </div>
 
         {/* Title */}
@@ -224,8 +221,8 @@ const PackageCard = ({ pkg, index }) => {
         </div>
 
         {/* CTA — navigates to PackageDetailPage */}
-        <button
-          onClick={() => navigate(`/resources/packages/${pkg.id}`)}
+        <a href={`${pkg.link}`} target="_blank">
+          <button
           style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             gap: 8, width: '100%', padding: '13px 0',
@@ -249,6 +246,7 @@ const PackageCard = ({ pkg, index }) => {
           Get Package Now
           <ArrowIcon />
         </button>
+        </a>
 
         {/* Expandable included list */}
         {includedResources.length > 0 && (

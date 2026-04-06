@@ -16,7 +16,7 @@ const packagesData = [
   , {
     id: 'pkg-2',
     title: 'Ultimate DSA Preparation Bundle',
-    description: '15+ top company LeetCode sheets, 100+ structured DSA questions, Oracle-specific interview problems, plus 40 foundational coding questions (Free) — perfect for placement and product-based company preparation.',
+    description: '15+ top company LeetCode sheets, 100+ structured DSA questions, Oracle-specific interview problems, plus 40 foundational coding questions (Free)',
     includedResourceIds: [7,12,28],
     originalPrice: 48,
     discountedPrice: 29,
@@ -37,12 +37,12 @@ const packagesData = [
   }
   ,{
     id: 'pkg-4',
-    title:'Ultimate DSA + Technical Round Preparation Bundle',
+    title:'DSA + TECHINCAL INTERVIEW SOLVER',
     description:'15+ top company LeetCode sheets, 100+ structured DSA questions, 400+ curated interview questions with answers across Node.js, React, JavaScript, Java, and SQL - perfect for complete tech interview preparation.',
-    includedResourceIds: [28, 30, 20,7,12,22, 31, 1, 2],
+    includedResourceIds: [28, 12, 30, 20,7,12,22, 31, 1, 2],
     originalPrice: 123,
     discountedPrice: 79,
-    link: 'https://topmate.io/meet_g/1980309',
+    link: 'https://topmate.io/meet_g/2035369',
     savings: 44,
     expDate: '27-03-2026',
   }

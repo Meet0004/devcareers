@@ -19,7 +19,7 @@ const ResourcesTopmate = {
 //   29: 'https://topmate.io/meet_g/1850801',  // 7 coding Principles Every Developer Should Know
 
   // PAID RESOURCES
-  // 1: 'https://topmate.io/meet_g/1850885',   // SQL Beginner to Advanced (0 - 100) - ₹9
+  1: 'https://topmate.io/meet_g/1850885',   // SQL Beginner to Advanced (0 - 100) - ₹9
   3: 'https://topmate.io/meet_g/1809459',   // 100+ Tips, Templates, Harvard Sample & Rules - ₹29
   12: 'https://topmate.io/meet_g/1851020',  // 100+ DSA Questions with Solutions (Multiple) - ₹19
   14: 'https://topmate.io/meet_g/1963977',  // Complete Interview Preparation Pack (HR questions) - ₹19
@@ -30,11 +30,10 @@ const ResourcesTopmate = {
   22: 'https://topmate.io/meet_g/1851103',  // 150 Most Asked Java Interview Questions - ₹19
   23: 'https://topmate.io/meet_g/1850830',  // OOPS Concept in java complete notes + code - ₹9
   26: 'https://topmate.io/meet_g/1851094',  // Node.js CheatSheet - 0 to Deployment - ₹9
-  // 28: 'https://topmate.io/meet_g/1851044',  // 15+ Top Company DSA & LeetCode Sheets - ₹29
+  28: 'https://topmate.io/meet_g/1851044',  // 15+ Top Company DSA & LeetCode Sheets - ₹29
   30: 'https://topmate.io/meet_g/1851224',  // 100+ React Interview Questions + Guide 8 PDFs - ₹29
   31: 'https://topmate.io/meet_g/1851084',  // 40 Node.js Interview Questions + Answers - ₹9
   32: 'https://topmate.io/meet_g/1870617',  // 2000+ HR emails and Famous IT companies emails - ₹19
-  // pkg-1:'https://topmate.io/meet_g/1969991'
 };
 
 export default ResourcesTopmate;

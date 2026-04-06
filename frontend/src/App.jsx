@@ -7,17 +7,17 @@ import Header1 from './components/common/Header1'
 import ScrollToTop from './components/common/ScrollToTop'
 import Footer from './components/common/Footer'
 import PageLoader from './pages/PageLoader'
-import PackageDetailPage from './components/resource/PackageDetailPage'
+// import PackageDetailPage from './components/resource/PackageDetailPage'
 
 // Lazy — Quick Links
 import Home from './pages/Home'
 const SubscribeUs = lazy(() => import('./pages/Subscribe_us'))
 const Resources = lazy(() => import('./pages/Resources'))
-const Packages = lazy(() => import('./pages/PackageResources'))
+const Packages = lazy(() => import('./components/resource/PackageResources'))
 const Blogs = lazy(() => import('./pages/Blogs'))
 const BlogsDetailPage = lazy(() => import('./components/blog/BlogsDetailPage'))
 // Lazy — Resource & Company
-const ResourceDetailToPurchase = lazy(() => import('./components/resource/ResourceDetailToPurchase'))
+// const ResourceDetailToPurchase = lazy(() => import('./components/resource/ResourceDetailToPurchase'))
 const Companies_details = lazy(() => import('./pages/Companies_details'))
 
 // Lazy — Legal Links
@@ -110,10 +110,10 @@ const App = () => {
             <Route path="/company-details" element={<Companies_details />} />
             <Route path="/company-details/:companyName/:role" element={<Companies_details />} />
 
-            <Route path="/resource/:id" element={<ResourceDetailToPurchase />} />
+            {/* <Route path="/resource/:id" element={<ResourceDetailToPurchase />} /> */}
             <Route path="/resources" element={<Resources />} />
-            <Route path="/resources/packages" element={<Packages />} />
-            <Route path="/resources/packages/:id" element={<PackageDetailPage />} />
+            <Route path="/resources/packages" element={<Resources  />} />
+            {/* <Route path="/resources/packages/:id" element={<PackageDetailPage />} /> */}
 
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blogs/:id" element={<BlogsDetailPage />} />

@@ -4,7 +4,6 @@ import ResourcesHeader from '../components/resource/ResourcesHeader';
 import TabSwitcher from '../components/resource/TabSwitcher';
 import PackagesGrid from '../components/resource/PackagesGrid';
 import HelpCTA from '../components/common/HelpCTA';
-
 function PackageResources() {
   const navigate = useNavigate();
 

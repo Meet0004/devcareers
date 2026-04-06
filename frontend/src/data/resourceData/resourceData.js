@@ -416,7 +416,7 @@ Ideal for frontend and full-stack interview preparation`
   },
   {
     id: 21,
-    title: "HTML CSS INterview Questions",
+    title: "HTML CSS Interview Questions",
     description: "Common interview questions and answers for HTML and CSS",
     price: "",
     link: "https://topmate.io/meet_g/1850823",

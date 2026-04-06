@@ -2,33 +2,124 @@ import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ResourcesData from '../../data/resourceData/resourceData'
 import ResourcesTopmate from '../../data/resourceData/resourceTopmate'
-
+import blogData from '../../data/blogData/index'
 const CompanyDetailSidebar = () => {
   const shuffledData = useMemo(() => {
-    const firstItem = ResourcesData.find(item => item.id === 34)
-    const otherItems = ResourcesData.filter(item => item.id !== 34)
-    const shuffled = [...otherItems]
+  const allowedIds = [1,2,3,7,10,14,16,18,20,21,22,23,24,25,26,28,29,30,] // only these IDs allowed
+  const filtered = ResourcesData.filter(item => allowedIds.includes(item.id))
+  const shuffled = [...filtered]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  const limitedShuffled = shuffled.slice(0, 15)
+
+  return limitedShuffled
+}, [])
+
+  const blogs = useMemo(() => {
+    const shuffled = [...blogData]
+
     for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+      const j = Math.floor(Math.random() * (i + 1))
+        ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
     }
-    const limitedShuffled = shuffled.slice(0, 25)
-    return firstItem ? [firstItem, ...limitedShuffled] : limitedShuffled
+
+    return shuffled.slice(0, 5)
   }, [])
 
   return (
     <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 16, fontFamily: 'system-ui,-apple-system,sans-serif' }}>
-
-      {/* Resources Card */}
+      {/* Blogs Card */}
       <div style={{
         background: '#fff',
         borderRadius: 20,
         border: '1px solid rgba(0,0,0,0.07)',
         boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
-        overflow: 'hidden',
-        position: 'sticky',
-        top: 16,
+        overflow: 'hidden'
       }}>
+
+        <div style={{
+          padding: '18px 20px 14px',
+          borderBottom: '1px solid #f3f4f6'
+        }}>
+          <h3 style={{
+            fontSize: 15,
+            fontWeight: 700,
+            margin: 0,
+            color: '#111827'
+          }}>
+            Useful Career Reads
+          </h3>
+
+          <p style={{
+            fontSize: 12,
+            color: '#9ca3af',
+            margin: '4px 0 0'
+          }}>
+            Short guides that help in interviews
+          </p>
+        </div>
+
+        <div style={{
+          padding: 14,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 8
+        }}>
+          {blogs.map(blog => (
+            <Link
+              key={blog.id}
+              to={`/blog/${blog.slug}`}
+              style={{
+                textDecoration: 'none',
+                padding: '10px 12px',
+                borderRadius: 10,
+                border: '1px solid rgba(0,0,0,0.06)',
+                background: '#fafafa',
+                fontSize: 13,
+                fontWeight: 600,
+                color: '#111827',
+                lineHeight: 1.4
+              }}
+            >
+              {blog.title}
+            </Link>
+          ))}
+        </div>
+
+        <div style={{ padding: '0 14px 14px' }}>
+          <Link
+            to="/blogs"
+            style={{
+              display: 'block',
+              textAlign: 'center',
+              padding: '10px 16px',
+              borderRadius: 12,
+              border: '1px solid #e5e7eb',
+              fontSize: 12,
+              fontWeight: 700,
+              color: '#111827',
+              textDecoration: 'none'
+            }}
+          >
+            View All Blogs
+          </Link>
+        </div>
+
+      </div>
+      {/* Resources Card */}
+      <div
+        style={{
+          background: '#fff',
+          borderRadius: 20,
+          border: '1px solid rgba(0,0,0,0.07)',
+          boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
+          overflow: 'hidden',
+          position: 'sticky',
+          top: 0
+        }}
+      >
 
         {/* Header */}
         <div style={{
@@ -73,7 +164,7 @@ const CompanyDetailSidebar = () => {
         </div>
 
         {/* Resource list */}
-        <div style={{ padding: '12px 14px', display: 'flex', flexDirection: 'column', gap: 6, maxHeight: 600, overflowY: 'auto' }}>
+        <div style={{ padding: '12px 14px', display: 'flex', flexDirection: 'column', gap: 6, maxHeight: '500px', overflowY: 'auto' }}>
           {shuffledData.map((item, idx) => {
             const isFree = !item.price || item.price === ''
             const topmateLink = ResourcesTopmate[item.id]
@@ -112,14 +203,6 @@ const CompanyDetailSidebar = () => {
                   display: '-webkit-box', WebkitLineClamp: 2,
                   WebkitBoxOrient: 'vertical', overflow: 'hidden',
                 }}>
-                  {isFirst && (
-                    <span style={{
-                      display: 'inline-block', fontSize: 9, fontWeight: 700,
-                      background: '#f97316', color: '#fff',
-                      borderRadius: 4, padding: '1px 5px', marginRight: 5,
-                      verticalAlign: 'middle', letterSpacing: '0.05em',
-                    }}>TOP</span>
-                  )}
                   {item.title}
                 </span>
 
@@ -172,9 +255,9 @@ const CompanyDetailSidebar = () => {
               )
             }
 
-            if (isFree)     return <HoverCard key={item.id} href={item.link} />
+            if (isFree) return <HoverCard key={item.id} href={item.link} />
             if (topmateLink) return <HoverCard key={item.id} href={topmateLink} />
-            return          <HoverCard key={item.id} to={`/resource/${item.id}`} />
+            return <HoverCard key={item.id} to={`/resource/${item.id}`} />
           })}
         </div>
 

@@ -346,7 +346,33 @@ const Testimonials = () => {
 					padding: 4px 10px;
 					border-radius: 20px;
 				}
+.ts-topmate-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid #e0d6ff;        /* light purple border */
+  border-radius: 999px;
+  background: #f5f0ff;               /* very light purple bg */
+  text-decoration: none;
+  font-size: 12px;
+  color: #5b3fc8;                    /* topmate purple */
+  transition: background 0.15s;
+}
 
+.ts-topmate-badge:hover {
+  background: #ebe3ff;
+}
+
+.ts-topmate-badge-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.ts-topmate-badge-text strong {
+  font-weight: 600;
+}
 				@media (prefers-reduced-motion: reduce) {
 					.star-item, .star-item.star-animate {
 						animation: none !important;
@@ -394,7 +420,6 @@ const Testimonials = () => {
 						<div className="ts-col-head">
 							<div className="ts-col-icon ts-col-icon-tm"><TopmateIcon /></div>
 							<span className="ts-col-label">Topmate Reviews</span>
-							<span className="ts-col-rating">{import.meta.env.VITE_TOPMATE_RATING}</span>
 						</div>
 						<div className="ts-cards">
 							{TOPMATE_REVIEWS.map((review, idx) => (
@@ -421,6 +446,23 @@ const Testimonials = () => {
 								<div className="ts-stat-lbl">Rating</div>
 							</div>
 						</div>
+
+						<a
+							href="https://topmate.io"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="ts-topmate-badge"
+						>
+							<img
+								src="https://topmate.io/favicon.ico"
+								alt=""
+								className="ts-topmate-badge-icon"
+							/>
+							<span className="ts-topmate-badge-text">
+								Verified on <strong>topmate.io</strong>
+							</span>
+						</a>
+
 						<div className="ts-badges">
 							{BADGES.map(b => <span key={b} className="ts-badge">{b}</span>)}
 						</div>

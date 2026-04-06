@@ -1,400 +1,176 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import ContactBlock from '../../components/common/ContactBlock'
 
-// ─── Data ────────────────────────────────────────────────────────────────────
+const FOUNDER_NAME    = import.meta.env.VITE_FOUNDER_NAME     || 'Meet Soni'
+const FOUNDER_LOC     = import.meta.env.VITE_FOUNDER_LOCATION || 'Shimoga, Karnataka, India'
+const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL  || 'hello@devcareers.in'
+const SITE_NAME       = import.meta.env.VITE_SITE_NAME        || 'DevCareers'
 
-const stats = [
-  { number: '10,000+',  label: 'Active Users',      icon: '👥' },
-  { number: '60,000+',  label: 'Website Views',     icon: '👁️' },
-  { number: '300+',     label: 'Companies Tracked', icon: '🏢' },
-  { number: 'Top 0.1%', label: 'Topmate Creator',   icon: '⭐' },
+const audience = [
+  'Final-year college students across India',
+  'Graduates in the tech field',
+  'Students actively applying to entry-level roles and internships',
+  'Professionals upskilling for career transitions',
 ]
 
-const adFormats = [
-  {
-    icon: '🖼️',
-    title: 'Website Banner Ads',
-    billing: 'Monthly rate',
-    desc: 'Your brand displayed prominently across DevCareers pages visited by 10,000+ students every month.',
-    tags: ['High visibility', 'Brand awareness', 'Mobile-friendly'],
-    color: 'bg-blue-50 border-blue-200',
-    head: 'text-blue-900',
-    tag: 'bg-blue-100 text-blue-700',
-  },
-  {
-    icon: '📌',
-    title: 'Sponsored Job Listings',
-    billing: 'Per listing',
-    desc: 'Pin your hiring opportunity at the top of our job board. Reach motivated, job-ready students actively applying.',
-    tags: ['Top placement', 'Targeted reach', 'Verified audience'],
-    color: 'bg-green-50 border-green-200',
-    head: 'text-green-900',
-    tag: 'bg-green-100 text-green-700',
-  },
-  {
-    icon: '📧',
-    title: 'Newsletter Shoutouts',
-    billing: 'Per edition',
-    desc: 'Feature your product or course in our weekly job alert email to 500–2,000 highly engaged subscribers.',
-    tags: ['Direct inbox', 'High open rates', 'Engaged readers'],
-    color: 'bg-amber-50 border-amber-200',
-    head: 'text-amber-900',
-    tag: 'bg-amber-100 text-amber-700',
-  },
-  {
-    icon: '🎬',
-    title: 'YouTube Sponsorships',
-    billing: 'Per video',
-    desc: 'Get a dedicated shoutout or integration in our career-focused YouTube videos targeting students and freshers.',
-    tags: ['Video content', 'Long shelf-life', 'Growing channel'],
-    color: 'bg-red-50 border-red-200',
-    head: 'text-red-900',
-    tag: 'bg-red-100 text-red-700',
-  },
+const reach = [
+  { platform: 'Website',  detail: 'Job listings, career guides, and company reviews' },
+  { platform: 'YouTube',  detail: 'Career-focused videos on job tips and application strategy' },
+  { platform: 'WhatsApp', detail: 'Active community receiving daily job alerts' },
+  { platform: 'LinkedIn', detail: 'Regular posts on job opportunities and career advice' },
 ]
 
-const idealFor = [
-  { icon: '🏢', title: 'Tech Companies Hiring Freshers',  desc: 'Reach candidates actively applying for entry-level roles and internships.' },
-  { icon: '📖', title: 'EdTech Platforms & Bootcamps',     desc: 'Promote courses and certifications to students already investing in their skills.' },
-  { icon: '🙋', title: 'Individual Creators & Mentors',    desc: 'Grow your community or sell resources to a ready, engaged student audience.' },
-  { icon: '🛠️', title: 'SaaS Tools for Job Seekers',      desc: 'Showcase resume builders, portfolio tools, or productivity apps to job-hunters.' },
-  { icon: '🌐', title: 'Google Ads (Programmatic)',        desc: 'AdSense integration coming soon — programmatic ad slots opening up automatically.' },
+const accepted = [
+  'Companies hiring freshers or interns in tech, finance, or operations',
+  'EdTech platforms offering legitimate certifications',
+  'SaaS tools that help job seekers like resume builders, portfolio platforms',
+  'Creators or mentors offering career guidance to students',
 ]
 
-const perks = [
-  { icon: '💬', title: 'WhatsApp Community Shoutout', desc: 'Your brand announced directly in our active WhatsApp job alert community.' },
-  { icon: '🔗', title: 'LinkedIn Featured Post',      desc: 'Dedicated LinkedIn post promoting your brand to our professional network.' },
-  { icon: '📊', title: 'Performance Report',          desc: 'Post-campaign report with impressions, clicks, and reach data for your format.' },
-  { icon: '⬆️', title: 'Priority Placement',          desc: 'Your sponsored content appears above all organic listings and posts.' },
+const formats = [
+  { title: 'Website Banner Ads',      billing: 'Monthly rate' },
+  { title: 'Sponsored Job Listings',  billing: 'Per listing'  },
+  { title: 'Newsletter Sponsorships', billing: 'Per edition'  },
+  { title: 'YouTube Sponsorships',    billing: 'Per video'    },
 ]
 
-const notAllowed = [
-  'MLM / Pyramid Schemes',
-  'Fake Job or Internship Scams',
-  'Crypto, Gambling, or Betting',
-  'Products Unrelated to Students or Careers',
-]
+export default function Advertise_with_us() {
+  const [visible, setVisible] = useState(false)
 
-const steps = [
-  { number: '01', icon: '📩', title: 'Reach Out',        desc: 'Head to our Contact Us page and tell us about your brand and what you want to promote.' },
-  { number: '02', icon: '💬', title: 'We Discuss',       desc: 'Meet personally reviews every request and responds within 48 hrs to discuss format, fit, and pricing.' },
-  { number: '03', icon: '✅', title: 'Review & Approve', desc: 'All ads are reviewed against our brand safety guidelines before going live.' },
-  { number: '04', icon: '🚀', title: 'Go Live',          desc: 'Your ad launches across agreed channels. We share confirmation and track performance for you.' },
-]
+  useEffect(() => {
+    const t = setTimeout(() => setVisible(true), 80)
+    return () => clearTimeout(t)
+  }, [])
 
-const faqs = [
-  { q: 'Is there a minimum budget?',              a: 'No. We work with all budgets — from individual creators to growing companies. Just tell us what you have in mind.' },
-  { q: 'How quickly can my ad go live?',           a: 'After approval, typically within 2–5 business days depending on the format.' },
-  { q: 'Can I run ads across multiple formats?',   a: 'Absolutely. We can put together a custom multi-format deal around your specific goals and budget.' },
-  { q: 'What about Google AdSense slots?',         a: 'Google AdSense integration is coming soon. Once live, programmatic ad slots will be available automatically.' },
-]
+  const fade = (delay = 0) => ({
+    opacity:    visible ? 1 : 0,
+    transform:  visible ? 'translateY(0)' : 'translateY(16px)',
+    transition: `opacity 0.6s ease ${delay}ms, transform 0.6s ease ${delay}ms`,
+  })
 
-// ─── Component ───────────────────────────────────────────────────────────────
-
-const Advertise_with_us = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-amber-50">
+    <div className="min-h-screen bg-white">
+      <style>{`
+        @keyframes shimmerText {
+          0%   { background-position: 0% center }
+          100% { background-position: 200% center }
+        }
+        @keyframes pulseRing {
+          0%   { transform: scale(1); opacity: 0.5 }
+          100% { transform: scale(2.4); opacity: 0 }
+        }
+        .shimmer-text {
+          background: linear-gradient(135deg, #f97316 0%, #ea580c 45%, #ff8c42 100%);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: shimmerText 3s linear infinite;
+        }
+        .pulse-ring { animation: pulseRing 1.8s ease infinite; }
+      `}</style>
 
-      {/* ── Hero ── */}
-      <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-5">
-            📣 Reach 10,000+ Motivated Students
+      {/* ── Header ── */}
+      <div className="relative overflow-hidden">
+        <div
+          className="absolute top-0 left-0 right-0 h-[2px]"
+          style={{ background: 'linear-gradient(90deg, transparent, #f97316, transparent)' }}
+        />
+        <div className="relative z-10 px-4 sm:px-8 md:px-12 pt-10 sm:pt-14 md:pt-16 pb-8 max-w-[1100px] mx-auto text-center">
+
+          <div style={fade(0)} className="inline-flex items-center gap-[7px] bg-orange-500/[0.08] border border-orange-500/[0.22] text-orange-500 text-[11px] font-bold px-4 py-1.5 rounded-full tracking-[0.08em] uppercase mb-5">
+            <span className="relative inline-block w-[7px] h-[7px] bg-green-500 rounded-full shrink-0">
+              <span className="pulse-ring absolute inset-[-3px] rounded-full bg-green-500" />
+            </span>
+            Partner with us
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-5">Advertise with DevCareers</h1>
-          <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-8">
-            Put your brand, product, or opportunity in front of India's most ambitious students
-            and early-career professionals — at a fraction of the cost of big platforms.
+
+          <h1 style={fade(80)} className="text-[clamp(28px,7vw,64px)] font-bold leading-[1.05] tracking-[-0.035em] text-[#0a0a0a] mb-4">
+            Advertise with <span className="shimmer-text">{SITE_NAME}</span>
+          </h1>
+
+          <p style={fade(160)} className="text-[15px] sm:text-[17px] text-gray-500 leading-[1.65] max-w-[500px] mx-auto mb-7">
+            Reach students and early-career professionals actively looking for jobs, tools, and career resources.
           </p>
-          <div className="flex justify-center gap-4 flex-wrap mb-8">
-            {stats.map((s, i) => (
-              <div key={i} className="bg-white/20 backdrop-blur-sm px-5 py-3 rounded-2xl text-center">
-                <div className="text-2xl font-bold">{s.icon} {s.number}</div>
-                <div className="text-white/80 text-xs mt-1 uppercase tracking-wide">{s.label}</div>
-              </div>
-            ))}
-          </div>
-          <a
-            href="/contact-us"
-            className="inline-flex items-center gap-2 bg-white text-amber-600 font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors shadow-lg text-lg"
-          >
-            📩 Get in Touch
-          </a>
+
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-16 space-y-20">
+      {/* ── Body ── */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-14">
 
-        {/* ── Why Advertise ── */}
-        <section>
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Why Advertise with DevCareers?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              A niche, high-intent audience at affordable rates — something the big job boards simply can't offer.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { icon: '🎯', title: 'Hyper-Niche Audience',    desc: 'Every user is a student or early-career professional actively seeking jobs, internships, or career tools. Zero ad wastage.' },
-              { icon: '💰', title: 'Affordable vs Big Boards', desc: 'LinkedIn, Naukri, and Indeed charge thousands for basic visibility. DevCareers gives you direct reach at a fraction of the cost.' },
-              { icon: '🤝', title: 'Personal Partnership',     desc: 'No ad dashboards or bots. Meet personally reviews every deal to ensure it\'s the right fit for you and the audience.' },
-              { icon: '📊', title: 'Multi-Channel Reach',      desc: 'One campaign can span your website, YouTube, WhatsApp, and LinkedIn — everywhere your audience lives.' },
-              { icon: '✅', title: 'Brand-Safe Environment',   desc: 'Strictly no scams, MLMs, or irrelevant content. Your brand sits alongside trusted, student-loved content only.' },
-              { icon: '⚡', title: 'High-Intent Users',        desc: 'Our audience is in active job-hunt mode — motivated, engaged, and ready to click, sign up, or apply.' },
-            ].map((item, idx) => (
-              <div key={idx} className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:border-amber-200 transition-all group">
-                <span className="text-4xl">{item.icon}</span>
-                <h3 className="text-lg font-bold text-gray-900 mt-3 mb-2 group-hover:text-amber-700 transition-colors">{item.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* Advertising Disclosure — stated once, here only */}
+        <div className="bg-amber-50 border-l-4 border-orange-500 rounded-r-lg px-4 py-3.5 text-sm text-gray-700 leading-relaxed">
+          <strong className="text-orange-700">Advertising disclosure:</strong>{' '}
+          {SITE_NAME} displays advertisements through direct sponsorship arrangements. All sponsored content is clearly labelled as such. Our editorial decisions — including which job listings and resources we feature — are made independently of any commercial relationships. For more information see our{' '}
+          <a href="/disclaimer" className="text-orange-500 hover:underline">Disclaimer</a> and{' '}
+          <a href="/privacy-policy" className="text-orange-500 hover:underline">Privacy Policy</a>.
+        </div>
 
-        {/* ── Audience ── */}
-        <section className="bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-3xl p-10 md:p-14">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3">Who You're Reaching</h2>
-            <p className="text-white/80 max-w-xl mx-auto">A single, clearly defined audience — making targeting effortless.</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="font-bold text-xl mb-5">🧑‍💻 Audience Profile</h3>
-              <div className="space-y-3">
-                {[
-                  { icon: '🎓', label: 'Final-year college students' },
-                  { icon: '💻', label: 'BCA / B.Tech / MCA graduates' },
-                  { icon: '🔍', label: 'Active job & internship seekers' },
-                  { icon: '📚', label: 'Career-upskilling professionals' },
-                  { icon: '🇮🇳', label: 'Primarily India-based audience' },
-                  { icon: '⚡', label: 'High intent — ready to act' },
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3 bg-white/15 rounded-xl px-4 py-3">
-                    <span className="text-xl">{item.icon}</span>
-                    <span className="font-medium">{item.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-bold text-xl mb-5">📈 Platform Reach</h3>
-              <div className="space-y-4">
-                {[
-                  { platform: '🌐 Website',             detail: '10,000+ active users · 60,000+ total views as of March 2026' },
-                  { platform: '▶️ YouTube',              detail: 'Growing channel focused on student jobs and career guidance' },
-                  { platform: '💬 WhatsApp & LinkedIn',  detail: 'Active community receiving daily job alerts and updates' },
-                  { platform: '🌐 Google Ads (Soon)',    detail: 'AdSense integration coming — programmatic slots opening soon' },
-                ].map((item, idx) => (
-                  <div key={idx} className="bg-white/15 rounded-xl px-4 py-3">
-                    <p className="font-bold text-sm">{item.platform}</p>
-                    <p className="text-white/80 text-sm mt-0.5">{item.detail}</p>
-                  </div>
-                ))}
-              </div>
+        {/* Audience */}
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <p className="text-xs font-bold tracking-[0.08em] uppercase text-orange-500 mb-1.5">Who you reach</p>
+            <h2 className="text-2xl font-bold text-gray-900 tracking-tight mb-4">Our audience</h2>
+            <div className="flex flex-col gap-2.5">
+              {audience.map((item) => (
+                <div key={item} className="flex items-start gap-2.5 text-sm text-gray-700 leading-relaxed">
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0 mt-[0.45rem]" />
+                  {item}
+                </div>
+              ))}
             </div>
           </div>
-        </section>
-
-        {/* ── Ad Formats ── */}
-        <section>
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Advertising Formats</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Choose the format that fits your goal — or combine them for maximum impact. All pricing is custom.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {adFormats.map((f, idx) => (
-              <div key={idx} className={`border-2 rounded-2xl p-7 hover:shadow-lg transition-all ${f.color}`}>
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-4xl">{f.icon}</span>
-                  <span className="text-xs font-bold bg-white border border-gray-200 px-3 py-1 rounded-full text-gray-600">
-                    {f.billing}
-                  </span>
-                </div>
-                <h3 className={`text-xl font-bold mb-2 ${f.head}`}>{f.title}</h3>
-                <p className="text-gray-700 text-sm leading-relaxed mb-4">{f.desc}</p>
-                <div className="flex flex-wrap gap-2">
-                  {f.tags.map((tag, i) => (
-                    <span key={i} className={`px-3 py-1 rounded-full text-xs font-semibold ${f.tag}`}>{tag}</span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Google AdSense Notice */}
-          <div className="mt-6 bg-blue-50 border-2 border-blue-200 rounded-2xl p-6 flex gap-4 items-start">
-            <span className="text-3xl flex-shrink-0">🌐</span>
-            <div>
-              <h3 className="font-bold text-blue-900 text-lg mb-1">Google AdSense — Coming Soon</h3>
-              <p className="text-blue-800 text-sm leading-relaxed">
-                We're in the process of integrating <strong>Google AdSense</strong> into DevCareers. Once live,
-                programmatic Google Ads will automatically serve to our audience based on relevance — opening up
-                an additional advertising channel for brands running Google Ads campaigns.
-                <span className="ml-1 font-semibold">We'll announce when it's live!</span>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ── Perks ── */}
-        <section>
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">What Advertisers Get</h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
-              Perks that go beyond just running an ad — included depending on the format agreed.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {perks.map((perk, idx) => (
-              <div key={idx} className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 text-center hover:border-amber-300 hover:shadow-lg transition-all">
-                <span className="text-4xl">{perk.icon}</span>
-                <h3 className="font-bold text-gray-900 mt-3 mb-2">{perk.title}</h3>
-                <p className="text-sm text-gray-600">{perk.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ── Ideal For ── */}
-        <section>
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Who Should Advertise?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Perfect for anyone trying to reach India's student and fresher community.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {idealFor.map((item, idx) => (
-              <div key={idx} className="flex gap-4 items-start bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:border-amber-300 hover:shadow-lg transition-all">
-                <span className="text-4xl flex-shrink-0">{item.icon}</span>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ── How It Works ── */}
-        <section>
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">How It Works</h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
-              Simple, personal, and fast — no ad dashboards or automated systems.
-            </p>
-          </div>
-          <div className="relative">
-            <div className="hidden md:block absolute top-10 left-0 right-0 h-0.5 bg-amber-200 mx-28" />
-            <div className="grid md:grid-cols-4 gap-6 relative">
-              {steps.map((step, idx) => (
-                <div key={idx} className="text-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-3xl mx-auto shadow-lg relative z-10">
-                    {step.icon}
-                  </div>
-                  <div className="mt-4">
-                    <span className="text-xs font-bold text-amber-500 uppercase tracking-widest">Step {step.number}</span>
-                    <h3 className="font-bold text-gray-900 text-lg mt-1 mb-2">{step.title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{step.desc}</p>
-                  </div>
+          <div>
+            <h3 className="text-sm font-semibold text-gray-900 mb-4 mt-7 md:mt-9">Platform presence</h3>
+            <div className="flex flex-col gap-3">
+              {reach.map((item) => (
+                <div key={item.platform} className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-3">
+                  <p className="font-semibold text-sm text-gray-900 mb-0.5">{item.platform}</p>
+                  <p className="text-xs text-gray-500 m-0">{item.detail}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ── Brand Safety ── */}
-        <section className="bg-gray-900 text-white rounded-3xl p-10 md:p-14">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-3">Our Brand Safety Commitment</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              We take our audience's trust seriously. We will{' '}
-              <strong className="text-white">reject any ad</strong> that doesn't meet our standards — no exceptions.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-10">
-            <div>
-              <h3 className="font-bold text-red-400 text-lg mb-4">🚫 We Do NOT Accept Ads For:</h3>
-              <div className="space-y-3">
-                {notAllowed.map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3 bg-red-900/30 border border-red-700/40 rounded-xl px-4 py-3">
-                    <span className="text-red-400 font-bold">✗</span>
-                    <span className="text-gray-200 font-medium">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-bold text-green-400 text-lg mb-4">✅ We Welcome Ads That:</h3>
-              <div className="space-y-3">
-                {[
-                  'Help students find genuine jobs or internships',
-                  'Offer legitimate courses, certifications, or skill training',
-                  'Provide tools that make the job hunt easier',
-                  'Connect students with credible mentors or creators',
-                  'Add real value to the DevCareers community',
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3 bg-green-900/30 border border-green-700/40 rounded-xl px-4 py-3">
-                    <span className="text-green-400 font-bold">✓</span>
-                    <span className="text-gray-200 font-medium text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ── FAQ + CTA ── */}
+        {/* Formats — titles + billing only, no repetitive descriptions */}
         <section>
-          <div className="grid md:grid-cols-2 gap-10 items-start">
-
-            {/* FAQ */}
-            <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8">
-              <h3 className="font-bold text-gray-900 text-2xl mb-6">❓ Frequently Asked Questions</h3>
-              <div className="space-y-5">
-                {faqs.map((faq, idx) => (
-                  <div key={idx} className="border-b border-gray-100 pb-5 last:border-0 last:pb-0">
-                    <p className="font-semibold text-gray-900 text-sm mb-1">Q: {faq.q}</p>
-                    <p className="text-gray-600 text-sm">{faq.a}</p>
-                  </div>
-                ))}
+          <p className="text-xs font-bold tracking-[0.08em] uppercase text-orange-500 mb-1.5">What we offer</p>
+          <h2 className="text-2xl font-bold text-gray-900 tracking-tight mb-2">Advertising formats</h2>
+          <p className="text-gray-500 text-sm mb-6 max-w-xl">
+            All pricing is discussed directly and tailored to your budget. Reach out to start a conversation.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {formats.map((f) => (
+              <div key={f.title} className="flex items-center justify-between bg-white border border-gray-200 rounded-xl px-4 py-3.5 hover:border-orange-200 hover:shadow-sm transition-all duration-200">
+                <span className="text-sm font-semibold text-gray-900">{f.title}</span>
+                <span className="text-xs font-semibold bg-gray-100 text-gray-600 rounded-full px-3 py-0.5 ml-3 whitespace-nowrap">{f.billing}</span>
               </div>
-            </div>
-
-            {/* CTA */}
-            <div className="bg-gradient-to-br from-amber-500 to-orange-500 text-white rounded-2xl p-10 text-center shadow-xl flex flex-col items-center justify-center gap-6">
-              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center text-4xl">
-                📩
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2">Ready to Advertise?</h3>
-                <p className="text-white/80 text-sm leading-relaxed max-w-xs mx-auto">
-                  All pricing is negotiable and tailored to your budget. Meet personally handles every
-                  advertising partnership — no middlemen.
-                </p>
-              </div>
-              <div className="space-y-3 w-full max-w-xs">
-                <a
-                  href="/contact-us"
-                  className="block w-full bg-white text-amber-600 font-bold py-4 rounded-xl hover:bg-gray-100 transition-colors shadow-md text-center text-lg"
-                >
-                  Get in Touch →
-                </a>
-                <p className="text-white/70 text-xs">We respond within 6–48 hours</p>
-              </div>
-              <div className="bg-white/15 rounded-xl px-5 py-4 w-full max-w-xs text-sm space-y-1">
-                <p><strong>📧</strong> {import.meta.env.VITE_RECIPIENT_EMAIL}</p>
-                <p><strong>📍</strong> Shimoga, Karnataka, India</p>
-              </div>
-            </div>
-
+            ))}
           </div>
         </section>
+
+        {/* Who we work with */}
+        <section>
+          <p className="text-xs font-bold tracking-[0.08em] uppercase text-orange-500 mb-1.5">Content policy</p>
+          <h2 className="text-2xl font-bold text-gray-900 tracking-tight mb-2">Who we partner with</h2>
+          <p className="text-gray-500 text-sm mb-6 max-w-xl">
+            We only partner with brands that genuinely benefit students and early-career professionals. Every request is reviewed personally before going live.
+          </p>
+          <div className="flex flex-col gap-2">
+            {accepted.map((item) => (
+              <div key={item} className="flex items-start gap-2.5 bg-green-50 text-green-800 rounded-xl px-3.5 py-2.5 text-sm leading-relaxed">
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0 mt-[0.45rem]" />
+                {item}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <ContactBlock description="For partnership enquiries, reach out directly." />
 
       </div>
     </div>
   )
 }
-
-export default Advertise_with_us

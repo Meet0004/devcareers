@@ -23,19 +23,17 @@ const CompanyDetailMain = ({ selectedCompany }) => {
           Company: {selectedCompany.company}
         </h2>
 
-        <ApplySection selectedCompany={selectedCompany} />
-
         {/* Pass the whole object — JobDescription reads .quickInfo and .sections */}
         <JobDescription selectedCompany={selectedCompany} />
 
+        <ApplySection selectedCompany={selectedCompany} />
+        
         <BelowDescriptionPanels />
       </div>
 
       {/* RIGHT - Sidebar */}
-      <div className="w-full lg:flex-[25] min-w-0">
-        <div className="lg:sticky lg:top-4">
-          <CompanyDetailSidebar />
-        </div>
+<div className="w-full lg:flex-[25] min-w-0 self-start sticky top-[-275px]">
+        <CompanyDetailSidebar />
       </div>
 
     </div>

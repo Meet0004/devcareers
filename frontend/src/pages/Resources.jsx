@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
+import { useNavigate, useMatch } from 'react-router-dom'
 import ResourcesData from '../data/resourceData/resourceData'
 import { placeholderWords } from '../data/resourceData/searchBarData'
 
@@ -23,7 +24,11 @@ const shuffleArray = (array) => {
 }
 
 function Resources() {
-	const [activeTab, setActiveTab] = useState('resources')
+	const navigate = useNavigate()
+
+	// Derives active tab purely from the URL — no useState needed for this
+	const isPackagesRoute = useMatch('/resources/packages')
+	const activeTab = isPackagesRoute ? 'packages' : 'resources'
 
 	const [searchQuery, setSearchQuery] = useState('')
 	const [placeholder, setPlaceholder] = useState('')
@@ -101,13 +106,15 @@ function Resources() {
 
 	const clearFilters = () => setSelectedFilters([])
 
+	// Clicking a tab navigates to the correct URL — the URL then drives activeTab
 	const handleTabChange = (tab) => {
-		setActiveTab(tab)
-		// Reset search/filter state when switching tabs
 		if (tab === 'packages') {
+			navigate('/resources/packages')
 			setSearchQuery('')
 			setSelectedFilters([])
 			setIsFilterOpen(false)
+		} else {
+			navigate('/resources')
 		}
 	}
 
@@ -184,7 +191,7 @@ function Resources() {
 					boxSizing: 'border-box',
 				}}>
 
-					{/* ── ALWAYS VISIBLE: Header ── */}
+					{/* Header */}
 					<div style={{
 						opacity: visible ? 1 : 0,
 						transform: visible ? 'translateY(0)' : 'translateY(20px)',
@@ -193,7 +200,7 @@ function Resources() {
 						<ResourcesHeader />
 					</div>
 
-					{/* ── ALWAYS VISIBLE: Tab switcher ── */}
+					{/* Tab switcher */}
 					<div style={{
 						opacity: visible ? 1 : 0,
 						transform: visible ? 'translateY(0)' : 'translateY(16px)',
@@ -203,7 +210,7 @@ function Resources() {
 						<TabSwitcher activeTab={activeTab} onTabChange={handleTabChange} />
 					</div>
 
-					{/* ── TAB CONTENT ── */}
+					{/* Tab content */}
 					{activeTab === 'resources' ? (
 						<>
 							{/* Search + Filter row */}
@@ -301,7 +308,6 @@ function Resources() {
 							</div>
 						</>
 					) : (
-						/* Packages grid */
 						<div style={{
 							animation: 'fadeUp 0.35s cubic-bezier(0.22,1,0.36,1)',
 							position: 'relative', zIndex: 1,

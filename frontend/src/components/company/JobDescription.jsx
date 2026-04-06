@@ -17,17 +17,18 @@ const SECTIONS = [
 ]
 
 // ─────────────────────────────────────────────────────────────
-// QUICK INFO FIELDS — shown as pills at the top
+// QUICK INFO FIELDS — shown as a table
 // Only displayed if the field exists and is non-empty
+// deadline falls back to 'ASAP' if not provided
 // ─────────────────────────────────────────────────────────────
 const QUICK_FIELDS = [
-  { key: 'experience', label: 'Experience' },
-  { key: 'location',   label: 'Location'   },
-  { key: 'salary',     label: 'Salary'     },
-  { key: 'jobType',    label: 'Job Type'   },
-  { key: 'workMode',   label: 'Work Mode'  },
-  { key: 'openings',   label: 'Openings'   },
-  { key: 'deadline',   label: 'Deadline'   },
+  { key: 'experience', label: 'Experience'                },
+  { key: 'location',   label: 'Location'                  },
+  { key: 'salary',     label: 'Salary'                    },
+  { key: 'jobType',    label: 'Job Type'                  },
+  { key: 'workMode',   label: 'Work Mode'                 },
+  { key: 'openings',   label: 'Openings'                  },
+  { key: 'deadline',   label: 'Deadline', default: 'ASAP' },
 ]
 
 // ─────────────────────────────────────────────────────────────
@@ -81,26 +82,20 @@ const SectionCard = ({ label, color, colorLight, colorBorder, text }) => {
       onMouseEnter={e => e.currentTarget.style.boxShadow = `0 8px 28px ${color}15`}
       onMouseLeave={e => e.currentTarget.style.boxShadow = '0 1px 4px rgba(0,0,0,0.04)'}
     >
-      {/* Header — click to collapse */}
-      <button
-        onClick={() => setOpen(o => !o)}
+      <div
         style={{
           width: '100%', background: colorLight,
           borderBottom: open ? `1px solid ${colorBorder}` : 'none',
           padding: '12px 20px',
           display: 'flex', alignItems: 'center', gap: 10,
-          cursor: 'pointer', border: 'none', outline: 'none',
           transition: 'background 0.2s',
         }}
       >
-        {/* Colored dot */}
         <div style={{
           width: 8, height: 8, borderRadius: '50%',
           background: color, flexShrink: 0,
           boxShadow: `0 0 0 3px ${color}22`,
         }} />
-
-        {/* Label */}
         <span style={{
           fontSize: 11, fontWeight: 700,
           letterSpacing: '0.09em',
@@ -110,28 +105,8 @@ const SectionCard = ({ label, color, colorLight, colorBorder, text }) => {
           {label}
         </span>
 
-        {/* Count badge */}
-        <span style={{
-          fontSize: 10, fontWeight: 700,
-          background: color + '18', color,
-          border: `1px solid ${color}30`,
-          borderRadius: 100, padding: '1px 8px',
-          marginRight: 8,
-        }}>
-          {lines.length}
-        </span>
+      </div>
 
-        {/* Chevron */}
-        <svg
-          width={14} height={14} viewBox="0 0 24 24" fill="none"
-          stroke={color} strokeWidth={2.5} strokeLinecap="round"
-          style={{ transition: 'transform 0.25s', transform: open ? 'rotate(0deg)' : 'rotate(-90deg)', flexShrink: 0 }}
-        >
-          <path d="M6 9l6 6 6-6" />
-        </svg>
-      </button>
-
-      {/* Body — collapsible */}
       <div style={{
         maxHeight: open ? 2000 : 0,
         overflow: 'hidden',
@@ -153,39 +128,81 @@ const SectionCard = ({ label, color, colorLight, colorBorder, text }) => {
 }
 
 // ─────────────────────────────────────────────────────────────
-// QuickInfoBar — pill row of at-a-glance details
+// QuickInfoBar — full-width table, no emojis
+// Alternating row shading, label | value layout
+// deadline always shows — falls back to 'ASAP' if missing
 // ─────────────────────────────────────────────────────────────
 const QuickInfoBar = ({ job }) => {
-  const pills = QUICK_FIELDS.filter(f => job[f.key]?.trim())
-  if (pills.length === 0) return null
+  const rows = QUICK_FIELDS.filter(f => job[f.key]?.trim() || f.default)
+  if (rows.length === 0) return null
 
   return (
     <div style={{
-      display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 20,
-      padding: '14px 10px',
-      background: 'linear-gradient(135deg, #fafaf9, #fff)',
+      marginBottom: 20,
       border: '1px solid #e5e7eb',
       borderRadius: 14,
-      boxShadow: '0 1px 4px rgba(0,0,0,0.03)',
+      overflow: 'hidden',
+      boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
     }}>
-      {pills.map(f => (
-        <div key={f.key} style={{
-          display: 'inline-flex', alignItems: 'center', gap: 6,
-          background: '#fff',
-          border: '1px solid #e5e7eb',
-          borderRadius: 100, padding: '5px 14px',
-          fontSize: 12,
-          boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
-          transition: 'border-color 0.2s, box-shadow 0.2s',
-        }}
-          onMouseEnter={e => { e.currentTarget.style.borderColor = '#f97316aa'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(249,115,22,0.12)' }}
-          onMouseLeave={e => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.05)' }}
-        >
-          <span style={{ color: '#9ca3af', fontWeight: 600, fontSize: 11 }}>{f.label}</span>
-          <span style={{ width: 3, height: 3, borderRadius: '50%', background: '#d1d5db', flexShrink: 0 }} />
-          <span style={{ color: '#111827', fontWeight: 600 }}>{job[f.key]}</span>
-        </div>
-      ))}
+      <table style={{
+        width: '100%',
+        borderCollapse: 'collapse',
+        fontSize: 13,
+      }}>
+        <thead>
+          <tr>
+            <th
+              colSpan={2}
+              style={{
+                background: 'linear-gradient(135deg, #fff7ed, #fffbeb)',
+                borderBottom: '1px solid #fed7aa',
+                padding: '9px 16px',
+                textAlign: 'left',
+                fontSize: 11,
+                fontWeight: 700,
+                letterSpacing: '0.09em',
+                textTransform: 'uppercase',
+                color: '#f97316',
+              }}
+            >
+              Job at a Glance
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((f, i) => (
+            <tr
+              key={f.key}
+              style={{
+                borderTop: '1px solid #f3f4f6',
+                background: i % 2 === 0 ? '#fff' : '#fafafa',
+              }}
+            >
+              <td style={{
+                padding: '10px 16px',
+                width: '35%',
+                color: '#6b7280',
+                fontWeight: 600,
+                fontSize: 12,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                borderRight: '1px solid #f3f4f6',
+                whiteSpace: 'nowrap',
+              }}>
+                {f.label}
+              </td>
+              <td style={{
+                padding: '10px 20px',
+                color: '#111827',
+                fontWeight: 600,
+                fontSize: 14,
+              }}>
+                {job[f.key] || f.default}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }
@@ -198,18 +215,15 @@ const QuickInfoBar = ({ job }) => {
 const JobDescription = ({ selectedCompany }) => {
   if (!selectedCompany) return null
 
-  // Count how many sections have content
   const filledSections = SECTIONS.filter(s => selectedCompany[s.key]?.trim())
 
   return (
     <div style={{ fontFamily: 'system-ui,-apple-system,sans-serif', marginTop: 28 }}>
 
-      {/* Section heading */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
         <h3 style={{ fontSize: 17, fontWeight: 700, color: '#111827', margin: 0, whiteSpace: 'nowrap' }}>
           Job Description
         </h3>
-        {/* Section count badge */}
         <span style={{
           fontSize: 11, fontWeight: 700, color: '#f97316',
           background: '#fff7ed', border: '1px solid #fed7aa',
@@ -220,10 +234,8 @@ const JobDescription = ({ selectedCompany }) => {
         <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, #e5e7eb, transparent)' }} />
       </div>
 
-      {/* Quick info pills */}
       <QuickInfoBar job={selectedCompany} />
 
-      {/* Section cards */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
         {SECTIONS.map(s => (
           <SectionCard

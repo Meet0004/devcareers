@@ -1,456 +1,421 @@
-import React, { useState } from 'react'
-import SectionCard      from '../../components/legal/SectionCard'
-import Highlight        from '../../components/legal/Highlight'
-import StickySidebarNav from '../../components/legal/StickySidebarNav'
-import PageHero         from '../../components/legal/PageHero'
-import MeetSoniCard     from '../../components/legal/MeetSoniCard'
+import React, { useState, useEffect, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
+import ContactBlock from '../../components/common/ContactBlock'
+const FOUNDER_NAME = import.meta.env.VITE_FOUNDER_NAME || 'Meet Soni'
+const FOUNDER_LOCATION = import.meta.env.VITE_FOUNDER_LOCATION || 'Shimoga, Karnataka, India'
+const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL || 'hello@devcareers.in'
+const SITE_NAME = import.meta.env.VITE_SITE_NAME || 'DevCareers'
+const LAST_UPDATED = import.meta.env.VITE_POLICY_LAST_UPDATED || 'March 2026'
 
 const sections = [
-  { id: 'overview',        title: 'Overview',                emoji: '🛡️' },
-  { id: 'data-collected',  title: 'Data We Collect',         emoji: '📋' },
-  { id: 'how-collected',   title: 'How We Collect Data',     emoji: '🔍' },
-  { id: 'how-used',        title: 'How We Use Your Data',    emoji: '⚙️' },
-  { id: 'storage',         title: 'Data Storage & Security', emoji: '🔒' },
-  { id: 'analytics',       title: 'Analytics & Cookies',     emoji: '📊' },
-  { id: 'third-party',     title: 'Third-Party Services',    emoji: '🔗' },
-  { id: 'communications',  title: 'Communications',          emoji: '📧' },
-  { id: 'your-rights',     title: 'Your Rights',             emoji: '✅' },
-  { id: 'children',        title: "Children's Privacy",      emoji: '👶' },
-  { id: 'changes',         title: 'Policy Changes',          emoji: '📝' },
-  { id: 'contact',         title: 'Contact Us',              emoji: '💬' },
+  { id: 'overview', title: 'Overview' },
+  { id: 'data-collected', title: 'Data We Collect' },
+  { id: 'how-collected', title: 'How We Collect Data' },
+  { id: 'how-used', title: 'How We Use Your Data' },
+  { id: 'storage', title: 'Data Storage and Security' },
+  { id: 'analytics', title: 'Analytics and Cookies' },
+  { id: 'third-party', title: 'Third-Party Services' },
+  { id: 'communications', title: 'Communications' },
+  { id: 'your-rights', title: 'Your Rights' },
+  { id: 'children', title: "Children's Privacy" },
+  { id: 'changes', title: 'Policy Changes' },
+  { id: 'contact', title: 'Contact' },
 ]
 
-const borderColors = [
-  'border-amber-400', 'border-orange-400', 'border-blue-400',  'border-green-400',
-  'border-purple-400','border-teal-400',   'border-pink-400',  'border-yellow-400',
-  'border-indigo-400','border-rose-400',   'border-cyan-400',  'border-emerald-400',
-]
-
-const Privacy_Policy = () => {
+export default function Privacy_Policy() {
+  const navigate = useNavigate()
   const [activeSection, setActiveSection] = useState('overview')
+  const observerRef = useRef(null)
+
+  const lastScrollY = useRef(typeof window !== 'undefined' ? window.scrollY : 0)
+
+  useEffect(() => {
+    const onScroll = () => { lastScrollY.current = window.scrollY }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const scrollingDown = window.scrollY >= lastScrollY.current
+
+          if (scrollingDown && entry.isIntersecting) {
+            // Scrolling down: activate when section enters the top zone
+            setActiveSection(entry.target.id)
+          } else if (!scrollingDown && !entry.isIntersecting) {
+            // Scrolling up: activate the previous section when current one leaves top
+            const idx = sections.findIndex(s => s.id === entry.target.id)
+            if (idx > 0) setActiveSection(sections[idx - 1].id)
+          }
+        })
+      },
+      { rootMargin: '-10% 0px -85% 0px' }
+    )
+    sections.forEach(({ id }) => {
+      const el = document.getElementById(id)
+      if (el) observerRef.current.observe(el)
+    })
+    return () => observerRef.current?.disconnect()
+  }, [])
 
   const scrollTo = (id) => {
-    setActiveSection(id)
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    const el = document.getElementById(id)
+    if (!el) return
+    const offset = 80 // adjust this to match your navbar height in px
+    const top = el.getBoundingClientRect().top + window.scrollY - offset
+    window.scrollTo({ top, behavior: 'smooth' })
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-amber-50">
+    <div className="min-h-screen bg-white">
+      <style>{`
+        .policy-body h2 { font-size: 1.5rem; font-weight: 700; color: #111827; margin-bottom: 0.75rem; padding-bottom: 0.5rem;}
+        .policy-body h3 { font-size: 1rem; font-weight: 600; color: #1f2937; margin: 1.25rem 0 0.5rem; }
+        .policy-body p  { font-size: 0.9375rem; color: #374151; line-height: 1.75; margin-bottom: 0.75rem; }
+        .policy-body ul { list-style: none; padding: 0; margin: 0.5rem 0 0.75rem; }
+        .policy-body ul li { font-size: 0.9375rem; color: #374151; line-height: 1.75; padding-left: 1.25rem; position: relative; margin-bottom: 0.25rem; }
+        .policy-body ul li::before { content: ''; position: absolute; left: 0; top: 0.7rem; width: 5px; height: 5px; border-radius: 50%; background: #f97316; }
+        .policy-body a  { color: #fff; text-decoration: underline; }
+        .policy-body a:hover { color: #ea580c; }
+        .policy-body .notice { background: #fff7ed; border-left: 3px solid #f97316; padding: 0.875rem 1rem; border-radius: 0 0.5rem 0.5rem 0; margin: 1rem 0; font-size: 0.9rem; color: #374151; line-height: 1.7; }
+        .policy-body .notice strong { color: #c2410c; }
+        .policy-body .notice-green { background: #f0fdf4; border-left-color: #22c55e; }
+        .policy-body .notice-red   { background: #fff5f5; border-left-color: #ef4444; }
+        .policy-body section { padding: 1.2rem 0; border-bottom: 1px solid #f3f4f6; }
+        .policy-body section:last-child { border-bottom: none; }
+        .sidebar-link { display: block; padding: 0.375rem 0.75rem; font-size: 0.8125rem; color: #6b7280; border-left: 2px solid transparent; transition: all 0.15s; line-height: 1.5; cursor: pointer; background: none; border-top: none; border-right: none; border-bottom: none; text-align: left; width: 100%; }
+        .sidebar-link:hover  { color: #f97316; border-left-color: #fed7aa; }
+        .sidebar-link.active { color: #f97316; border-left-color: #f97316; font-weight: 600; background: #fff7ed; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 0.75rem 0; }
+        @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+        .data-box { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem 1.25rem; }
+        .data-box h3 { margin-top: 0; }
+        .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0.75rem 0; }
+        @media (max-width: 640px) { .three-col { grid-template-columns: 1fr; } }
+        .right-item { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem 1.25rem; }
+        .right-item h3 { margin-top: 0; }
+        .service-block { border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+        .service-block h3 { margin-top: 0; }
+        .service-block a { font-size: 0.8125rem; }
+      `}</style>
 
-      <PageHero
-        eyebrow="🔒 Your Privacy Matters"
-        title="Privacy Policy"
-        subtitle="We believe in complete transparency. Here's exactly what data we collect, how we use it, and your rights."
-        badges={[
-          { label: '📅 Last Updated: March 2026' },
-          { label: '🏠 Solo Operated by Meet Soni' },
-          { label: '📍 Shimoga, Karnataka, India' },
-        ]}
-      />
-
-      <div className="max-w-6xl mx-auto px-4 py-12 flex gap-8">
-
-        <StickySidebarNav
-          sections={sections}
-          activeSection={activeSection}
-          onScrollTo={scrollTo}
-        />
-
-        <main className="flex-1 space-y-8 min-w-0">
-
-          {/* 1. Overview */}
-          <SectionCard id="overview" emoji="🛡️" title="Overview" borderColor={borderColors[0]}>
-            <p>
-              Welcome to <strong className="text-gray-900">DevCareers</strong>. This Privacy
-              Policy explains how we handle your personal information when you visit our website, subscribe to our
-              newsletter, make a purchase, or contact us.
-            </p>
-            <p>
-              DevCareers is a <strong className="text-gray-900">solo-operated platform</strong> run entirely by{' '}
-              <strong className="text-gray-900">Meet Soni</strong>. There are no corporate shareholders, no data
-              brokerage deals, and no hidden agenda — just a passion project built to help students find jobs.
-            </p>
-            <Highlight color="amber">
-              <p className="font-semibold">
-                🤝 Our Privacy Promise: We will <u>never sell your personal data</u> to any third party. Ever.
-              </p>
-            </Highlight>
-            <p>
-              By using DevCareers, you agree to the practices described in this policy. If you have any questions,
-              reach out at <strong>{import.meta.env.VITE_RECIPIENT_EMAIL}</strong>.
-            </p>
-          </SectionCard>
-
-          {/* 2. Data We Collect */}
-          <SectionCard id="data-collected" emoji="📋" title="Data We Collect" borderColor={borderColors[1]}>
-            <p>We collect only the minimum data necessary to provide our services. Here's exactly what we collect:</p>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-5">
-                <h3 className="font-bold text-blue-900 mb-3">👤 Personal Information</h3>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 font-bold mt-0.5">•</span>
-                    <span><strong>Name</strong> — collected via subscription form, purchase/query form, or Topmate bookings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 font-bold mt-0.5">•</span>
-                    <span><strong>Email Address</strong> — collected via subscription form, purchase/query form, or Topmate bookings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 font-bold mt-0.5">•</span>
-                    <span><strong>Phone Number</strong> — collected only Topmate where you buy something</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-green-50 border-2 border-green-200 rounded-xl p-5">
-                <h3 className="font-bold text-green-900 mb-3">📊 Usage Data (Anonymous)</h3>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold mt-0.5">•</span>
-                    <span><strong>Pages visited</strong> — which pages you view on our site</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold mt-0.5">•</span>
-                    <span><strong>Traffic sources</strong> — how you found DevCareers</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold mt-0.5">•</span>
-                    <span><strong>Device/browser type</strong> — for platform optimisation</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold mt-0.5">•</span>
-                    <span><strong>Geographic region</strong> — country/city level only, via Vercel Analytics</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <Highlight color="green">
-              <p className="text-sm">
-                ✅ <strong>We do NOT collect:</strong> passwords, payment card details (handled entirely by Topmate),
-                government IDs, or any sensitive personal information.
-              </p>
-            </Highlight>
-          </SectionCard>
-
-          {/* 3. How We Collect Data */}
-          <SectionCard id="how-collected" emoji="🔍" title="How We Collect Data" borderColor={borderColors[2]}>
-            <p>Your data reaches us through the following touchpoints only:</p>
-
-            <div className="space-y-4">
-              {[
-                {
-                  emoji: '📬',
-                  title: 'Email Subscription Form',
-                  desc: 'When you subscribe on our website to receive weekly job alerts and platform updates, you provide your name, email address and job category. This is entirely voluntary.',
-                },
-                {
-                  emoji: '🛒',
-                  title: 'Purchase / Query Form',
-                  desc: 'When you fill out a form to buy a resource or enquire about a product, you provide your name, email, and optionally phone number. Used solely to process your request.',
-                },
-                {
-                  emoji: '📅',
-                  title: 'Topmate Bookings',
-                  desc: "When you book a session or purchase a resource via Topmate, your name and email are shared with us through Topmate's platform. Topmate's own privacy policy also applies.",
-                },
-                {
-                  emoji: '📈',
-                  title: 'Vercel Analytics (Automatic)',
-                  desc: 'Our website is hosted on Vercel, which automatically collects anonymous usage data (page views, performance metrics, device type). Not linked to any individual identity.',
-                },
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4 items-start p-4 bg-gray-50 rounded-xl border border-gray-200">
-                  <span className="text-2xl flex-shrink-0">{item.emoji}</span>
-                  <div>
-                    <h3 className="font-bold text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </SectionCard>
-
-          {/* 4. How We Use Your Data */}
-          <SectionCard id="how-used" emoji="⚙️" title="How We Use Your Data" borderColor={borderColors[3]}>
-            <p>Your data is used for one purpose only: to provide and improve DevCareers' services for you.</p>
-
-            <div className="space-y-3">
-              {[
-                { icon: '📧', title: 'Send weekly job alerts & updates', desc: 'We email you curated job opportunities, new resource announcements, and platform news — only if you subscribed.' },
-                { icon: '💬', title: 'Respond to your queries', desc: 'If you fill out a purchase/query form or contact us, we use your details to respond to you directly.' },
-                { icon: '🛒', title: 'Process resource purchases', desc: 'Name and email are used to deliver digital products and confirm transactions made through Topmate.' },
-                { icon: '📊', title: 'Improve the platform', desc: 'Anonymous Vercel Analytics data helps us understand which pages are popular, identify bugs, and improve performance.' },
-                { icon: '🔔', title: 'Important service announcements', desc: 'Occasionally we may send you notices about significant platform changes or policy updates.' },
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4 items-start p-4 hover:bg-amber-50 rounded-xl transition-colors border border-transparent hover:border-amber-200">
-                  <span className="text-2xl flex-shrink-0">{item.icon}</span>
-                  <div>
-                    <h3 className="font-bold text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <Highlight color="red">
-              <p className="font-semibold">
-                🚫 <strong>We will NEVER:</strong> sell your data, share it with advertisers, use it for profiling,
-                send unsolicited spam, or use it for any purpose beyond those listed above.
-              </p>
-            </Highlight>
-          </SectionCard>
-
-          {/* 5. Storage & Security */}
-          <SectionCard id="storage" emoji="🔒" title="Data Storage & Security" borderColor={borderColors[4]}>
-            <p>We take reasonable steps to keep your data safe. Here's exactly how your information is stored:</p>
-
-            <div className="bg-purple-50 border-2 border-purple-200 rounded-xl p-5 space-y-4">
-              {[
-                {
-                  icon: '📄',
-                  title: 'Google Sheets (Subscriber Data)',
-                  desc: 'Subscriber names and emails are stored in a private Google Sheet accessible only by Meet Soni, protected by Google account security with 2-factor authentication.',
-                },
-                {
-                  icon: '🌐',
-                  title: 'Vercel (Website Hosting)',
-                  desc: "Our website is hosted on Vercel's infrastructure with industry-standard security. Anonymous analytics data is stored on Vercel's servers per their data retention policy.",
-                },
-                {
-                  icon: '📅',
-                  title: 'Topmate (Booking & Purchase Data)',
-                  desc: "Booking and payment data is stored securely on Topmate's platform. We do not store payment card information ourselves.",
-                },
-              ].map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3">
-                  <span className="text-xl">{item.icon}</span>
-                  <div>
-                    <h3 className="font-bold text-purple-900">{item.title}</h3>
-                    <p className="text-sm text-gray-700 mt-1">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-sm text-gray-600">
-              We retain your personal data for as long as needed to provide services. If you request deletion, we
-              will remove your data from our records within <strong>7 business days</strong>.
-            </p>
-
-            <Highlight color="amber">
-              <p className="text-sm">
-                ⚠️ <strong>Note:</strong> While we take reasonable precautions, no method of electronic storage is
-                100% secure. We encourage you to use strong passwords on your email account.
-              </p>
-            </Highlight>
-          </SectionCard>
-
-          {/* 6. Analytics & Cookies */}
-          <SectionCard id="analytics" emoji="📊" title="Analytics & Cookies" borderColor={borderColors[5]}>
-            <h3 className="font-bold text-gray-900 text-lg">Vercel Analytics</h3>
-            <p>
-              We use <strong>Vercel Analytics</strong> to understand how visitors use DevCareers. This collects
-              anonymous, aggregated data including page views, visitor counts, referral sources, device types, and
-              geographic region. This data is <strong>not linked to any individual identity</strong>.
-            </p>
-
-            <h3 className="font-bold text-gray-900 text-lg">Cookies</h3>
-            <p>
-              Currently, DevCareers does <strong>not use cookies</strong> for tracking or advertising purposes.
-            </p>
-
-            <Highlight color="amber">
-              <p className="text-sm">
-                🔜 <strong>Future Update — Google AdSense:</strong> We plan to introduce Google AdSense ads to help
-                sustain the platform. When implemented, AdSense uses cookies to serve relevant ads. We will update
-                this policy and add a cookie consent banner <strong>before</strong> enabling ads. You will be
-                informed and given a choice.
-              </p>
-            </Highlight>
-
-            <p className="text-sm text-gray-600">
-              Once ads are enabled, you can manage cookie preferences via the consent banner or your browser's
-              built-in settings.
-            </p>
-          </SectionCard>
-
-          {/* 7. Third-Party Services */}
-          <SectionCard id="third-party" emoji="🔗" title="Third-Party Services" borderColor={borderColors[6]}>
-            <p>
-              DevCareers integrates with a small number of trusted third-party services. Each has its own privacy
-              policy which we encourage you to review:
-            </p>
-
-            <div className="space-y-4">
-              {[
-                {
-                  name: 'Topmate',
-                  url: 'https://topmate.io/privacy',
-                  purpose: 'Handles bookings and resource purchases. Collects your name, email, and payment information on their platform.',
-                  color: 'bg-purple-50 border-purple-200',
-                  headColor: 'text-purple-900',
-                },
-                {
-                  name: 'Vercel',
-                  url: 'https://vercel.com/legal/privacy-policy',
-                  purpose: 'Website hosting and anonymous performance analytics. Data is aggregated and non-identifiable.',
-                  color: 'bg-gray-50 border-gray-200',
-                  headColor: 'text-gray-900',
-                },
-                {
-                  name: 'Google AdSense (Upcoming)',
-                  url: 'https://policies.google.com/privacy',
-                  purpose: 'Will be used for non-intrusive ads to sustain the platform. Uses cookies for ad personalisation. Will only be implemented with proper user consent.',
-                  color: 'bg-blue-50 border-blue-200',
-                  headColor: 'text-blue-900',
-                },
-              ].map((service, idx) => (
-                <div key={idx} className={`border-2 rounded-xl p-5 ${service.color}`}>
-                  <h3 className={`font-bold text-lg mb-1 ${service.headColor}`}>{service.name}</h3>
-                  <p className="text-sm text-gray-700 mb-2">{service.purpose}</p>
-                  <a href={service.url} target="_blank" rel="noopener noreferrer"
-                    className="text-xs text-amber-600 hover:underline font-medium">
-                    View their Privacy Policy →
-                  </a>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-sm text-gray-600">
-              We do not embed any social media tracking pixels (e.g. Facebook Pixel, Twitter Pixel) on our website.
-            </p>
-          </SectionCard>
-
-          {/* 8. Communications */}
-          <SectionCard id="communications" emoji="📧" title="Communications" borderColor={borderColors[7]}>
-            <p>If you subscribe to DevCareers, here's exactly what you'll receive from us:</p>
-
-            <div className="grid md:grid-cols-3 gap-4">
-              {[
-                { icon: '💼', title: 'Weekly Job Alerts', desc: 'Curated internships and entry-level roles from 300+ companies, delivered weekly.' },
-                { icon: '📚', title: 'New Resource Announcements', desc: 'Notifications when new guides, templates, or cheat sheets become available.' },
-                { icon: '🔔', title: 'Platform Updates', desc: 'Important news about DevCareers features, improvements, or policy changes.' },
-              ].map((item, idx) => (
-                <div key={idx} className="bg-amber-50 border-2 border-amber-200 rounded-xl p-4 text-center">
-                  <span className="text-3xl">{item.icon}</span>
-                  <h3 className="font-bold text-amber-900 mt-2 mb-1">{item.title}</h3>
-                  <p className="text-sm text-gray-700">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            <Highlight color="green">
-              <p className="text-sm">
-                🚪 <strong>Unsubscribe anytime:</strong> Every email contains an unsubscribe link at the bottom.
-                You can also email <strong>{import.meta.env.VITE_RECIPIENT_EMAIL}</strong> to be removed. We'll process your
-                request within 48 hours.
-              </p>
-            </Highlight>
-
-            <p className="text-sm text-gray-600">
-              We will never send unsolicited promotional emails, spam, or sell access to our mailing list.
-            </p>
-          </SectionCard>
-
-          {/* 9. Your Rights */}
-          <SectionCard id="your-rights" emoji="✅" title="Your Rights" borderColor={borderColors[8]}>
-            <p>
-              You have full control over your personal data. Exercise any of the rights below by emailing{' '}
-              <strong>{import.meta.env.VITE_RECIPIENT_EMAIL}</strong> or using our contact form:
-            </p>
-
-            <div className="space-y-3">
-              {[
-                { icon: '👁️', right: 'Right to Access', desc: 'Request a copy of all personal data we hold about you.' },
-                { icon: '✏️', right: 'Right to Correction', desc: 'Ask us to correct inaccurate or incomplete information.' },
-                { icon: '🗑️', right: 'Right to Deletion', desc: 'Request that we delete all your personal data. We will process this within 7 business days.' },
-                { icon: '📤', right: 'Right to Portability', desc: 'Request your data in a portable format (e.g., CSV).' },
-                { icon: '🚫', right: 'Right to Withdraw Consent', desc: 'Unsubscribe from emails or withdraw consent for data processing at any time.' },
-                { icon: '🛑', right: 'Right to Object', desc: 'Object to your data being used for any purpose beyond those you originally consented to.' },
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4 items-start p-4 bg-gray-50 rounded-xl border border-gray-200 hover:border-amber-300 hover:bg-amber-50 transition-all">
-                  <span className="text-2xl flex-shrink-0">{item.icon}</span>
-                  <div>
-                    <h3 className="font-bold text-gray-900">{item.right}</h3>
-                    <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-sm text-gray-600">
-              We respond to all requests within <strong>7 business days</strong>. There is no fee for exercising
-              your rights.
-            </p>
-          </SectionCard>
-
-          {/* 10. Children's Privacy */}
-          <SectionCard id="children" emoji="👶" title="Children's Privacy" borderColor={borderColors[9]}>
-            <p>
-              DevCareers is open to users aged <strong>18 and above</strong>. We do not knowingly collect personal
-              data from children under 18.
-            </p>
-            <p>
-              If you are a parent or guardian and believe your child under 18 has provided us with personal data,
-              please contact us immediately at <strong>{import.meta.env.VITE_RECIPIENT_EMAIL}</strong> and we will delete that
-              information promptly.
-            </p>
-            <Highlight color="amber">
-              <p className="text-sm">
-                📌 <strong>For users aged 18-24:</strong> We recommend reviewing this policy with a parent or
-                guardian. Our platform contains career guidance and job listings appropriate for students of all ages.
-              </p>
-            </Highlight>
-          </SectionCard>
-
-          {/* 11. Policy Changes */}
-          <SectionCard id="changes" emoji="📝" title="Policy Changes" borderColor={borderColors[10]}>
-            <p>
-              We may update this Privacy Policy from time to time to reflect changes in our practices or legal
-              requirements. When we do:
-            </p>
-            <ul className="space-y-3 pl-2">
-              {[
-                'The "Last Updated" date at the top will be revised.',
-                'For significant changes (e.g., introduction of ads or new data collection), we will notify subscribers via email in advance.',
-                'Continued use of DevCareers after a policy update constitutes acceptance of the revised policy.',
-              ].map((point, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <span className="text-amber-500 font-bold flex-shrink-0 mt-0.5">→</span>
-                  <span className="text-gray-700">{point}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-sm text-gray-600 mt-2">
-              Previous versions of this policy can be requested by emailing us.
-            </p>
-          </SectionCard>
-
-          {/* 12. Contact */}
-          <SectionCard id="contact" emoji="💬" title="Contact Us" borderColor={borderColors[11]}>
-            <p>
-              Have questions, concerns, or data requests? As a solo-operated platform, Meet personally reads and
-              responds to every message.
-            </p>
-
-            <MeetSoniCard />
-
-            <p className="text-center text-sm text-gray-500 italic">
-              You can also use the{' '}
-              <a href="/contact-us" className="text-amber-600 hover:underline font-medium">
-                Contact Us page
-              </a>{' '}
-              on our website for a quicker response.
-            </p>
-          </SectionCard>
-
-        </main>
+      {/* Top bar */}
+      <div style={{ background: '#fff7ed', borderBottom: '1px solid #fed7aa', padding: '0.625rem 1.5rem' }}>
+        <div style={{ maxWidth: '72rem', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+          <span style={{ fontSize: '0.8125rem', color: '#92400e', fontWeight: 500 }}>Last Updated: {LAST_UPDATED}</span>
+          <span style={{ fontSize: '0.8125rem', color: '#92400e' }}>Operated by {FOUNDER_NAME} · {FOUNDER_LOCATION}</span>
+        </div>
       </div>
+
+      <div style={{ maxWidth: '72rem', margin: '0 auto', padding: '2.5rem 1rem 4rem' }}>
+        {/* Page header */}
+        <div style={{ marginBottom: '.5rem' }}>
+          <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', fontWeight: 800, color: '#111827', letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>Privacy Policy</h1>
+          <p style={{ fontSize: '1rem', color: '#6b7280', lineHeight: 1.7 }}>
+            We believe in complete transparency about how your data is handled. This policy explains exactly what we collect, why we collect it, and what rights you have over it.
+          </p>
+        </div>
+
+        {/* Layout */}
+        <div style={{ display: 'flex', gap: '3rem', alignItems: 'flex-start' }}>
+
+          {/* Main content */}
+          <main style={{ flex: 1, minWidth: 0 }} className="policy-body">
+
+            <section id="overview">
+              <h2>Overview</h2>
+              <p>
+                Welcome to <strong>{SITE_NAME}</strong>. This Privacy Policy explains how we handle your personal information when you visit our website, subscribe to our newsletter, make a purchase, or contact us.
+              </p>
+              <p>
+                {SITE_NAME} is a solo-operated platform run entirely by <strong>{FOUNDER_NAME}</strong>. There are no corporate shareholders, no data brokerage deals, and no hidden agenda. This is a passion project built to help students find jobs.
+              </p>
+              <div className="notice">
+                <strong>Our privacy promise:</strong> We will never sell your personal data to any third party, under any circumstance. If you have questions, reach out at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a>.
+              </div>
+              <p>
+                By using {SITE_NAME}, you agree to the practices described in this policy. This policy should be read alongside our <a href="/terms-and-conditions">Terms and Conditions</a> and <a href="/disclaimer">Disclaimer</a>.
+              </p>
+            </section>
+
+            <section id="data-collected">
+              <h2>Data We Collect</h2>
+              <p>We collect only the minimum data necessary to provide our services. Here is exactly what we collect and nothing more.</p>
+              <div className="two-col">
+                <div className="data-box">
+                  <h3>Personal Information</h3>
+                  <ul>
+                    <li><strong>Name</strong> — collected via subscription form, contact form, or Topmate bookings</li>
+                    <li><strong>Email address</strong> — collected via subscription form, contact form, or Topmate bookings</li>
+                    <li><strong>Phone number</strong> — collected only through Topmate when you make a purchase</li>
+                    <li><strong>Message content</strong> — when you contact us through our contact form</li>
+                  </ul>
+                </div>
+                <div className="data-box">
+                  <h3>Usage Data (Anonymous)</h3>
+                  <ul>
+                    <li><strong>Pages visited</strong> — which pages you view on our site</li>
+                    <li><strong>Traffic sources</strong> — how you found {SITE_NAME}</li>
+                    <li><strong>Device and browser type</strong> — for platform optimisation</li>
+                    <li><strong>Geographic region</strong> — country and city level only, via Google Analytics</li>
+                    <li><strong>Performance metrics</strong> — page load times and error rates</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="notice notice-green">
+                <strong>What we do not collect:</strong> passwords, payment card details (handled entirely by Topmate), government IDs, social security numbers, biometric data, or any sensitive personal information not listed above.
+              </div>
+              <h3>Google AdSense and Advertising Cookies</h3>
+              <p>
+                We currently use Google AdSense to display advertisements on this platform. Google AdSense uses cookies and similar tracking technologies to serve advertisements that are relevant to you based on your browsing activity. This includes the use of the DoubleClick cookie, which enables Google and its partners to serve ads based on your visit to this site and other sites on the internet.
+              </p>
+              <p>
+                You may opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a> or by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer">aboutads.info</a>. You can also opt out of a third-party vendor's use of cookies by visiting the <a href="https://www.networkadvertising.org/choices/" target="_blank" rel="noopener noreferrer">Network Advertising Initiative opt-out page</a>.
+              </p>
+            </section>
+
+            <section id="how-collected">
+              <h2>How We Collect Data</h2>
+              <p>Your data reaches us through the following touchpoints only.</p>
+
+              <h3>Email Subscription Form</h3>
+              <p>When you subscribe on our website to receive weekly job alerts and platform updates, you voluntarily provide your name and email address. Subscription is entirely optional and you can unsubscribe at any time.</p>
+
+              <h3>Contact and Query Forms</h3>
+              <p>When you fill out our contact form or purchase query form, you provide your name, email, and the content of your message. This information is used solely to respond to your enquiry.</p>
+
+              <h3>Topmate Bookings and Purchases</h3>
+              <p>When you book a session or purchase a resource via Topmate, your name and email are shared with us through Topmate's platform. Topmate's own privacy policy also applies to these transactions. We encourage you to review it at <a href="https://topmate.io/privacy" target="_blank" rel="noopener noreferrer">topmate.io/privacy</a>.</p>
+
+              <h3>Google Analytics (Automatic)</h3>
+              <p>We use Google Analytics to collect anonymous usage data including page views, traffic sources, session duration, device type, and geographic region. This data is aggregated and cannot be used to identify you personally. Google Analytics uses cookies to collect this information. You can opt out of Google Analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</p>
+
+              <h3>Google AdSense (Advertising)</h3>
+              <p>
+                Google AdSense automatically collects certain information through cookies and web beacons when you visit pages on our site that display ads. This collection is subject to Google's privacy policy, which you can review at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.
+              </p>
+            </section>
+
+            <section id="how-used">
+              <h2>How We Use Your Data</h2>
+              <p>Your data is used only to provide and improve {SITE_NAME}'s services. We do not use your data for any purpose you have not explicitly consented to.</p>
+
+              <h3>Delivering Services</h3>
+              <ul>
+                <li>Sending weekly job alerts and platform updates to subscribers</li>
+                <li>Responding to your queries sent through our contact form</li>
+                <li>Processing and confirming resource purchases made through Topmate</li>
+                <li>Delivering digital resources to your email when purchased</li>
+              </ul>
+
+              <h3>Improving the Platform</h3>
+              <ul>
+                <li>Analysing anonymous Google Analytics data to understand which pages are most useful</li>
+                <li>Identifying and fixing technical issues and broken links</li>
+                <li>Improving page performance and user experience based on usage patterns</li>
+              </ul>
+
+              <h3>Legal and Compliance</h3>
+              <ul>
+                <li>Maintaining transaction records as required by applicable Indian law</li>
+                <li>Responding to lawful requests from government or regulatory authorities</li>
+                <li>Enforcing our Terms and Conditions and protecting our rights</li>
+              </ul>
+
+              <div className="notice notice-red">
+                <strong>We will never:</strong> sell your data, share it with advertisers for targeting purposes, use it for profiling unrelated to our services, send unsolicited promotional emails, or use it for any purpose not listed in this policy.
+              </div>
+            </section>
+
+            <section id="storage">
+              <h2>Data Storage and Security</h2>
+              <p>We take reasonable and appropriate measures to protect your data. Here is exactly where and how your information is stored.</p>
+
+              <h3>Subscriber Data</h3>
+              <p>Subscriber names and email addresses are stored in a private Google Sheet accessible only by {FOUNDER_NAME}. This sheet is protected by Google account security with two-factor authentication enabled.</p>
+
+              <h3>Website Hosting</h3>
+              <p>Our website is hosted on Hostinger's infrastructure, which employs industry-standard security practices. You can review Hostinger's security and privacy practices at <a href="https://www.hostinger.com/privacy-policy" target="_blank" rel="noopener noreferrer">hostinger.com/privacy-policy</a>.</p>
+
+              <h3>Purchase and Booking Data</h3>
+              <p>Booking and payment data is stored securely on Topmate's platform. We do not store, process, or have access to your payment card information at any point.</p>
+
+              <h3>Data Retention</h3>
+              <p>We retain your personal data only for as long as necessary to provide our services or as required by applicable law. If you request deletion of your data, we will remove it from our records within seven business days.</p>
+
+              <div className="notice">
+                <strong>Security limitation notice:</strong> While we take reasonable precautions, no method of electronic storage is 100% secure. In the unlikely event of a data breach that affects your personal information, we will notify you promptly by email.
+              </div>
+            </section>
+
+            <section id="analytics">
+              <h2>Analytics and Cookies</h2>
+
+              <h3>Google Analytics</h3>
+              <p>
+                We use Google Analytics to understand how visitors use {SITE_NAME}. This collects anonymous, aggregated data including page views, visitor counts, referral sources, session duration, device types, and geographic region. Google Analytics uses cookies to collect this data. While the data is aggregated and non-personally-identifying on our end, Google's own data practices apply — you can review them at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>. To opt out of Google Analytics tracking entirely, you can install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.
+              </p>
+
+              <h3>Cookies</h3>
+              <p>
+                Our website uses cookies for the following purposes:
+              </p>
+              <ul>
+                <li><strong>Essential cookies:</strong> Required for the website to function correctly. These cannot be disabled.</li>
+                <li><strong>Analytics cookies:</strong> Used by Google Analytics to collect anonymous usage statistics. These do not identify you personally on our end, though they are subject to Google's data policies.</li>
+                <li><strong>Advertising cookies:</strong> Used by Google AdSense to serve relevant advertisements. These may track your browsing activity across websites to personalise the ads you see.</li>
+              </ul>
+
+              <h3>Managing Cookie Preferences</h3>
+              <p>
+                You can control advertising cookies at any time through <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>. You can opt out of Google Analytics through the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Add-on</a>. You can also disable cookies entirely through your browser settings, though this may affect how parts of the website function. Most browsers allow you to refuse cookies, delete existing cookies, or be notified when cookies are set.
+              </p>
+
+              <h3>Google AdSense and the DoubleClick Cookie</h3>
+              <p>
+                Google, as a third-party vendor, uses cookies to serve ads on our site. Google's use of the DoubleClick cookie enables it and its partners to serve ads based on your visit to this site and other sites on the internet. Users may opt out of the use of the DoubleClick cookie by visiting the <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ad Settings page</a>. Alternatively, you can opt out of a third-party vendor's use of cookies by visiting the <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer">aboutads.info</a> opt-out page.
+              </p>
+            </section>
+
+            <section id="third-party">
+              <h2>Third-Party Services</h2>
+              <p>{SITE_NAME} integrates with a small number of trusted third-party services. Each operates under its own privacy policy, which we encourage you to review.</p>
+
+              <div className="service-block">
+                <h3>Topmate</h3>
+                <p>Handles resource purchases and session bookings. Collects your name, email, and payment information on their platform. We receive only your name, email, and details of what you purchased.</p>
+                <a href="https://topmate.io/privacy" target="_blank" rel="noopener noreferrer">View Topmate's Privacy Policy</a>
+              </div>
+
+              <div className="service-block">
+                <h3>Hostinger</h3>
+                <p>Our website is hosted on Hostinger's servers. Hostinger provides the infrastructure on which {SITE_NAME} runs. Server-level logs (such as IP addresses and request timestamps) may be retained by Hostinger in accordance with their own data retention policies.</p>
+                <a href="https://www.hostinger.com/privacy-policy" target="_blank" rel="noopener noreferrer">View Hostinger's Privacy Policy</a>
+              </div>
+
+              <div className="service-block">
+                <h3>Google Analytics</h3>
+                <p>Used to collect anonymous, aggregated data about how visitors use {SITE_NAME}, including page views, traffic sources, session duration, device types, and geographic region. This helps us understand what content is most useful and how to improve the platform. Google Analytics uses cookies and may process data on Google's servers. You can opt out at any time using the Google Analytics Opt-out Browser Add-on.</p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">View Google's Privacy Policy</a>
+              </div>
+
+              <div className="service-block">
+                <h3>Google AdSense</h3>
+                <p>Used to display relevant advertisements on our platform to support its continued operation. Google may use cookies to serve ads based on your prior visits to this website and other websites. You may opt out of personalised advertising through Google's ad settings.</p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">View Google's Privacy Policy</a>
+              </div>
+
+              <div className="service-block">
+                <h3>EmailJS</h3>
+                <p>Used to transmit messages submitted through our contact form to our email inbox. Your name, email, and message content are passed through EmailJS's servers solely to deliver your message. EmailJS does not retain your data after delivery.</p>
+                <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">View EmailJS's Privacy Policy</a>
+              </div>
+
+              <p>We do not embed any social media tracking pixels such as Facebook Pixel or Twitter Pixel on our website.</p>
+            </section>
+
+            <section id="communications">
+              <h2>Communications</h2>
+              <p>If you subscribe to {SITE_NAME}, here is exactly what you will receive from us and nothing else.</p>
+
+              <h3>What We Send</h3>
+              <ul>
+                <li><strong>Weekly job alerts:</strong> Curated internships and entry-level roles verified from company career pages, delivered once per week.</li>
+                <li><strong>New resource announcements:</strong> Notifications when new guides, templates, or cheat sheets become available on the platform.</li>
+                <li><strong>Platform updates:</strong> Occasional notices about significant changes to {SITE_NAME}, our policies, or features.</li>
+                <li><strong>Purchase confirmations:</strong> Transactional emails confirming your resource purchase and delivery details.</li>
+              </ul>
+
+              <h3>Unsubscribing</h3>
+              <p>
+                Every email we send contains an unsubscribe link at the bottom. You can also email <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> to be removed from our mailing list. We will process your request within 48 hours.
+              </p>
+
+              <div className="notice notice-green">
+                We will never send unsolicited promotional emails, spam, or sell access to our mailing list to any third party.
+              </div>
+            </section>
+
+            <section id="your-rights">
+              <h2>Your Rights</h2>
+              <p>
+                You have full control over your personal data. To exercise any of the rights below, email <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> with the subject line "Data Rights Request". We respond to all requests within seven business days at no charge.
+              </p>
+
+              <div className="three-col">
+                {[
+                  { title: 'Right to Access', desc: 'Request a copy of all personal data we hold about you.' },
+                  { title: 'Right to Correction', desc: 'Ask us to correct inaccurate or incomplete information.' },
+                  { title: 'Right to Deletion', desc: 'Request that we permanently delete all your personal data within 7 business days.' },
+                  { title: 'Right to Portability', desc: 'Request your data in a portable, machine-readable format such as CSV.' },
+                  { title: 'Right to Withdraw Consent', desc: 'Unsubscribe from emails or withdraw consent for data processing at any time.' },
+                  { title: 'Right to Object', desc: 'Object to your data being used for any purpose beyond those you originally consented to.' },
+                ].map((item) => (
+                  <div key={item.title} className="right-item">
+                    <h3>{item.title}</h3>
+                    <p style={{ margin: 0, fontSize: '0.875rem' }}>{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section id="children">
+              <h2>Children's Privacy</h2>
+              <p>
+                {SITE_NAME} is intended for users who are 18 years of age or older. We do not knowingly collect personal data from anyone under the age of 18.
+              </p>
+              <p>
+                If you are a parent or guardian and believe your child under 18 has provided us with personal data, please contact us immediately at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a>. We will delete that information promptly upon verification.
+              </p>
+              <p>
+                By using {SITE_NAME} and providing us with your personal information, you represent that you are at least 18 years of age.
+              </p>
+            </section>
+
+            <section id="changes">
+              <h2>Policy Changes</h2>
+              <p>
+                We may update this Privacy Policy from time to time to reflect changes in our practices, the services we offer, or applicable legal requirements. When we make changes:
+              </p>
+              <ul>
+                <li>The "Last Updated" date at the top of this page will be revised immediately.</li>
+                <li>For significant changes such as the introduction of new data collection practices or new advertising partners, we will notify subscribers by email at least seven days before the changes take effect.</li>
+                <li>Continued use of {SITE_NAME} after a policy update constitutes your acceptance of the revised policy.</li>
+                <li>If you disagree with any updated terms, you may unsubscribe and discontinue use of the platform. You may also request deletion of your data as described in the Your Rights section above.</li>
+              </ul>
+              <p>
+                Previous versions of this policy are available upon request by emailing <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a>.
+              </p>
+            </section>
+
+            <section id="contact">
+              <ContactBlock
+  description="For privacy-related questions or data requests, contact us directly."
+  note={`We respond to privacy requests within ${import.meta.env.VITE_SUPPORT_RESPONSE_TIME_MIN}–${import.meta.env.VITE_SUPPORT_RESPONSE_TIME_MAX} hours.`}
+/>
+            </section>
+
+          </main>
+
+          {/* Sticky sidebar */}
+          <aside style={{ width: '220px', flexShrink: 0, position: 'sticky', top: '5.5rem', alignSelf: 'flex-start', display: 'none' }} className="policy-sidebar">
+            <p style={{ fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#9ca3af', marginBottom: '0.75rem', paddingLeft: '0.75rem' }}>On this page</p>
+            <nav>
+              {sections.map(({ id, title }) => (
+                <button key={id} onClick={() => scrollTo(id)} className={`sidebar-link ${activeSection === id ? 'active' : ''}`}>
+                  {title}
+                </button>
+              ))}
+            </nav>
+          </aside>
+        </div>
+      </div>
+
+      <style>{`
+        @media (min-width: 1024px) { .policy-sidebar { display: block !important; } }
+      `}</style>
     </div>
   )
 }
-
-export default Privacy_Policy

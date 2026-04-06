@@ -6,7 +6,10 @@ import Testimonials from '../components/common/Testimonials'
 import Impact from '../components/common/Impact'
 import Mission from '../components/common/Mission'
 import LiveRolesTicker from '../components/home/LiveRolesTicker'
+import usePageTitle from '../hooks/usePageTitle'
+
 const Home = () => {
+  usePageTitle('Home')
   return (
     <>
       <div className="min-h-screen  bg-gradient-to-b from-white to-orange-50">

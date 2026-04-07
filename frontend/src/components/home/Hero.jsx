@@ -84,11 +84,11 @@ const GlassCard = ({ icon, title, description, link, badge, index, visible }) =>
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={icon} />
           </svg>
         </div>
-        {badge && <VerifiedBadge />}
+        {badge}
       </div>
 
       <h3 style={{ fontSize: 16, fontWeight: 700, color: '#111', margin: '0 0 6px', letterSpacing: '-0.01em' }}>{title}</h3>
-      <p style={{ fontSize: 14, color: '#9ca3af', lineHeight: 1.6, margin: '0 0 16px' }}>{description}</p>
+      <p style={{ fontSize: 14, color: '#636363', lineHeight: 1.6, margin: '0 0 16px', fontweight:900 }}>{description}</p>
 
       {link.type === 'button' ? (
         <a href={link.href} style={{
@@ -191,7 +191,7 @@ const Hero = () => {
         <div style={{ position: 'absolute', width: 300, height: 300, borderRadius: '50%', background: '#ff9440', filter: 'blur(80px)', opacity: 0.10, bottom: 60, left: -80, animation: 'orbFloat 11s ease-in-out infinite reverse', pointerEvents: 'none' }} />
 
         {/* Main */}
-        <div className="hero-wrap" style={{ padding: '56px 48px 72px', position: 'relative', zIndex: 5, maxWidth: 1100, margin: '0 auto' }}>
+        <div className="hero-wrap" style={{ padding: '56px 48px 48px 48px', position: 'relative', zIndex: 5, maxWidth: 1100, margin: '0 auto' }}>
 
           {/* Eyebrow row */}
           <div className="hero-eyebrow" style={{
@@ -205,10 +205,6 @@ const Hero = () => {
                 <span style={{ position: 'absolute', inset: -3, borderRadius: '50%', background: '#22c55e', animation: 'pulseRing 1.8s ease infinite' }} />
               </span>
               Real Jobs Updated Daily
-            </div>
-            <div className="hero-eyebrow-right" style={{ display: 'flex', gap: 8, alignItems: 'center', marginLeft: 'auto', flexWrap: 'wrap' }}>
-              <VerifiedBadge />
-              <a href="/company-details" className="hero-nav-pill">Browse Jobs →</a>
             </div>
           </div>
 
@@ -244,7 +240,7 @@ const Hero = () => {
             We collect real job openings, create useful resources, and keep things simple so you can focus on getting hired.          </p>
 
           {/* CTA buttons */}
-          <div className="hero-cta-row" style={{
+          {/* <div className="hero-cta-row" style={{
             display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', marginBottom: 56,
             opacity: visible ? 1 : 0,
             transform: visible ? 'translateY(0)' : 'translateY(20px)',
@@ -262,7 +258,7 @@ const Hero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13" />
               </svg>
             </a>
-          </div>
+          </div> */}
 
           {/* Glass cards */}
           <div className="hero-cards-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 14 }}>
@@ -273,7 +269,7 @@ const Hero = () => {
         </div>
 
         {/* Trust bar */}
-        <div className="hero-trust" style={{
+        {/* <div className="hero-trust" style={{
           display: 'flex', alignItems: 'center', gap: 20, flexWrap: 'wrap',
           padding: '0 48px 44px', maxWidth: 1100, margin: '0 auto',
           position: 'relative', zIndex: 5,
@@ -293,12 +289,12 @@ const Hero = () => {
               </div>
             </React.Fragment>
           ))}
-        </div>
+        </div> */}
 
         {/* Scroll hint — hidden on mobile */}
         <div className="hero-scroll" style={{
           display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
-          paddingBottom: 20, position: 'relative', zIndex: 5,
+          paddingBottom: 0, position: 'relative', zIndex: 5,
           opacity: visible ? 1 : 0, transition: 'opacity 0.7s ease 0.9s',
         }}>
           <div style={{ fontSize: 10, color: '#d1d5db', letterSpacing: '0.1em', fontWeight: 500, textTransform: 'uppercase' }}>Scroll</div>

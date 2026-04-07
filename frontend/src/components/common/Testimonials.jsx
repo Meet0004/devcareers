@@ -1,5 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import topmateLogo from '../../assets/topmateLogo.avif'
+const ANIM = {
+  revealDuration: 0.55,
+  revealSlide: 18,
+  staggerStep: 5,
+  countTickMs: 20,
+  countStartMs: 400,
+}
+
 const YOUTUBE_REVIEWS = [
 	{ text: '"❤Thank you for posting such amazing opportunity Keep growing, you deserve more subscribers."', author: '@Batman-6909', sub: '24th Mar 2026', stars: 0 },
 	{ text: '"CONGRATS bro. hope you hit 100k and million soon."', author: '@photon7404', sub: '27 Feb 2026', stars: 0 },
@@ -121,12 +129,33 @@ const YouTubeIcon = () => (
 		<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
 	</svg>
 )
+// ── Scroll-reveal hook ───────────────────────────────────────
+const useReveal = (delay = 0) => {
+  const ref = useRef(null)
+  const [visible, setVisible] = useState(false)
+  useEffect(() => {
+	const el = ref.current
+	if (!el) return
+	const obs = new IntersectionObserver(([entry]) => {
+	  if (entry.isIntersecting) { setTimeout(() => setVisible(true), delay); obs.disconnect() }
+	}, { threshold: 0.12 })
+	obs.observe(el)
+	return () => obs.disconnect()
+  }, [delay])
+  return [ref, visible]
+}
 
+const revealStyle = (visible) => ({
+  opacity: visible ? 1 : 0,
+  transform: visible ? 'translateY(0)' : `translateY(${ANIM.revealSlide}px)`,
+  transition: `opacity ${ANIM.revealDuration}s cubic-bezier(0.22,1,0.36,1), transform ${ANIM.revealDuration}s cubic-bezier(0.22,1,0.36,1)`,
+})
 /* ─── Main Component ─── */
 const Testimonials = () => {
 	const sectionRef = useRef(null)
 	const [visible, setVisible] = useState(false)
-
+const [count, setCount] = useState(0)
+  const [headerRef, headerVisible] = useReveal(0)
 	useEffect(() => {
 		const el = sectionRef.current
 		if (!el) return
@@ -144,27 +173,16 @@ const Testimonials = () => {
 
 			<section
 				ref={sectionRef}
-				style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
 				className="bg-transparent px-12 pt-16 pb-2 rounded-3xl max-sm:px-5 max-sm:py-12"
 			>
 				{/* ── Header ── */}
-				<div
-					className={[
-						'text-center mb-[52px]',
-						'transition-[opacity,transform] duration-[0.55s] ease-in-out',
-						visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3',
-					].join(' ')}
-				>
-					<div className="inline-block text-[11px] font-semibold tracking-[0.12em] uppercase text-[#7C6FF7] bg-[#F0EFFE] px-[14px] py-[5px] rounded-full mb-4">
-						Success Stories
-					</div>
-					<h2 className="text-[clamp(26px,4vw,40px)] font-semibold text-[#111] leading-[1.15] mb-[10px]">
-						What students are saying
-					</h2>
-					<p className="text-[15px] font-light text-[#999] max-w-[440px] mx-auto">
-						Real feedback from real people who've learned with us
-					</p>
-				</div>
+				<div ref={headerRef} style={{ ...revealStyle(headerVisible), textAlign: 'center', marginBottom: 52, position: 'relative', zIndex: 2 }}>
+
+          <h2 style={{ fontSize: 'clamp(28px,4vw,52px)', fontWeight: 700, color: '#0a0a0a', letterSpacing: '-0.035em', lineHeight: 1.1, margin: '0 0 12px' }}>
+            What{' '}
+            <em style={{ fontStyle: 'normal', background: 'linear-gradient(135deg,#f97316,#ea580c,#ff8c42)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', backgroundSize: '200% auto', animation: 'lrShimmer 3s linear infinite' }}>Students</em> are saying
+          </h2>
+        </div>
 
 				{/* ── Two-column grid ── */}
 				<div className="grid grid-cols-2 gap-6 max-w-[1100px] mx-auto max-sm:grid-cols-1">

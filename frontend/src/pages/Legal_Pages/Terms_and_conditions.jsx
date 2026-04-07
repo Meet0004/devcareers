@@ -84,6 +84,9 @@ export default function Terms_and_conditions() {
         @media (max-width: 640px) { .tc-three-col { grid-template-columns: 1fr; } }
         .tc-grid-item { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem 1.25rem; }
         .tc-grid-item h3 { margin-top: 0; }
+        #contact a.link {
+  color: white;
+}
       `}</style>
 
       {/* Top bar */}

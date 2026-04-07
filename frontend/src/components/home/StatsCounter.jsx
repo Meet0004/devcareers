@@ -9,7 +9,7 @@ const STATS = [
     target: Number(import.meta.env.VITE_TOTAL_JOBS) || 10000,
     suffix: '+',
     label: 'Job Opportunities Posted',
-    subtitle: { type: 'text', text: 'Updated daily' },
+    // subtitle: { type: 'text', text: 'Updated daily' },
     icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
     verified: false,
   },
@@ -19,7 +19,7 @@ const STATS = [
     target: Number(import.meta.env.VITE_TOTAL_CUSTOMERS) || 500,
     suffix: '+',
     label: 'Happy Customers',
-    subtitle: { type: 'verified' },
+    // subtitle: { type: 'false' },
     icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
     verified: true,
   },
@@ -29,7 +29,7 @@ const STATS = [
     target: Number(import.meta.env.VITE_TOTAL_SALES) || 399,
     suffix: '',
     label: 'Successful Purchases',
-    subtitle: { type: 'verified' },
+    // subtitle: { type: 'false' },
     icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
     verified: true,
   },
@@ -148,18 +148,45 @@ const StatCard = ({ stat, count }) => {
         {stat.label}
       </div>
 
-      {/* Subtitle */}
+      {/* Subtitle
       {stat.subtitle.type === 'verified' ? (
         <VerifiedBadge />
       ) : (
         <div style={{ fontSize: 12, color: '#d1d5db', fontStyle: 'italic' }}>
           {stat.subtitle.text}
         </div>
-      )}
+      )} */}
     </div>
   )
 }
+// ============================================================
+const ANIM = {
+  revealDuration: 0.55,
+  revealSlide: 18,
+  staggerStep: 5,
+  countTickMs: 20,
+  countStartMs: 400,
+}
+const useReveal = (delay = 0) => {
+  const ref = useRef(null)
+  const [visible, setVisible] = useState(false)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const obs = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { setTimeout(() => setVisible(true), delay); obs.disconnect() }
+    }, { threshold: 0.12 })
+    obs.observe(el)
+    return () => obs.disconnect()
+  }, [delay])
+  return [ref, visible]
+}
 
+const revealStyle = (visible) => ({
+  opacity: visible ? 1 : 0,
+  transform: visible ? 'translateY(0)' : `translateY(${ANIM.revealSlide}px)`,
+  transition: `opacity ${ANIM.revealDuration}s cubic-bezier(0.22,1,0.36,1), transform ${ANIM.revealDuration}s cubic-bezier(0.22,1,0.36,1)`,
+})
 const StatsCounter = () => {
   const [counts, setCounts] = useState(STATS.map(() => 0))
   const [isVisible, setIsVisible] = useState(false)
@@ -192,6 +219,8 @@ const StatsCounter = () => {
 
     return () => clearInterval(timer)
   }, [isVisible])
+  const [headerRef, headerVisible] = useReveal(0)
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -217,7 +246,7 @@ const StatsCounter = () => {
         ref={sectionRef}
         style={{
           background: '#fff',
-          padding: '52px 24px 0px',
+          padding: '10px 24px 0px',
           position: 'relative',
           overflow: 'hidden',
           fontFamily: 'system-ui, -apple-system, sans-serif',
@@ -229,17 +258,17 @@ const StatsCounter = () => {
         <div style={{ position: 'absolute', width: 300, height: 300, borderRadius: '50%', background: '#ff9440', filter: 'blur(80px)', opacity: 0.06, bottom: 0, left: -80, animation: 'scOrbFloat 12s ease-in-out infinite reverse', pointerEvents: 'none' }} /> */}
 
         {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: 52 }}>
-          <h2 style={{ fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 700, color: '#0a0a0a', letterSpacing: '-0.03em', margin: '0 0 10px' }}>
+        {/* Header */}
+        <div ref={headerRef} style={{ ...revealStyle(headerVisible), textAlign: 'center', marginBottom: 52, position: 'relative', zIndex: 2 }}>
+          <h2 style={{ fontSize: 'clamp(28px,4vw,52px)', fontWeight: 700, color: '#0a0a0a', letterSpacing: '-0.035em', lineHeight: 1.1, margin: '0 0 12px' }}>
             Trusted by{' '}
-            <em style={{ fontStyle: 'normal', background: 'linear-gradient(135deg, #f97316, #ea580c, #ff8c42)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', backgroundSize: '200% auto', animation: 'scShimmer 3s linear infinite' }}>
-              Professionals
-            </em>
-            {' '}Worldwide
+            <em style={{ fontStyle: 'normal', background: 'linear-gradient(135deg,#f97316,#ea580c,#ff8c42)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', backgroundSize: '200% auto', animation: 'lrShimmer 3s linear infinite' }}>Professionals</em> Worldwide
           </h2>
-          <p style={{ fontSize: 17, color: '#9ca3af', maxWidth: 480, margin: '0 auto', lineHeight: 1.6 }}>
-            Real results from real people. Our track record speaks for itself.
-          </p>
+          
+          {/* <p style={{ fontSize: 16, color: '#9ca3af' }}>
+            <strong style={{ fontSize: 20, fontWeight: 700, color: '#f97316' }}>{count}+</strong> 
+          </p> */}
+         
         </div>
 
         {/* Stat cards */}

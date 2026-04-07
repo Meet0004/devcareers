@@ -27,7 +27,7 @@ const PageHero = ({ title, subtitle, badges = [], eyebrow, children }) => {
 
         {/* Top accent line REMOVED — was causing the weird border artifact */}
 
-        <div className="relative z-10 px-12 pt-8 pb-2 max-w-[1100px] mx-auto text-center">
+        <div className="relative z-10 px-12 pt-8 max-w-[1100px] mx-auto text-center">
 
           {/* Eyebrow */}
           {eyebrow && (

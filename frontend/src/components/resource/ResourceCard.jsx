@@ -194,7 +194,7 @@ function ResourceCard({ resource, isMobile = false }) {
       }} />
 
       {/* Free badge overlay */}
-      {isFree && (
+      {/* {isFree && (
         <div style={{
           position: 'absolute', top: 12, right: 12, zIndex: 3,
           background: 'linear-gradient(135deg, #22c55e, #16a34a)',
@@ -205,7 +205,7 @@ function ResourceCard({ resource, isMobile = false }) {
         }}>
           Free
         </div>
-      )}
+      )} */}
 
       {/* Image */}
       <div style={{

@@ -7,7 +7,7 @@ import ContactBlock from '../../components/common/ContactBlock'
 const About_us = () => {
   
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" style={ {'margin':'15px 0px'}}>
 
       {/* Hero Section */}
       <PageHero
@@ -164,7 +164,7 @@ const About_us = () => {
         <Impact />
 
         {/* Contact CTA */}
-        <section className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 sm:p-5 mb-6">
+        <section className="bg-amber-50 border-2 border-amber-200 rounded-2xl sm:p-5">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <h2 className="text-base font-bold text-gray-900 mb-1">Got something to say?</h2>

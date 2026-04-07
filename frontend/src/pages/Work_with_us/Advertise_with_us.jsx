@@ -6,18 +6,24 @@ const FOUNDER_LOC     = import.meta.env.VITE_FOUNDER_LOCATION || 'Shimoga, Karna
 const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL  || 'hello@devcareers.in'
 const SITE_NAME       = import.meta.env.VITE_SITE_NAME        || 'DevCareers'
 
-const audience = [
-  'Final-year college students across India',
-  'Graduates in the tech field',
-  'Students actively applying to entry-level roles and internships',
-  'Professionals upskilling for career transitions',
+const metrics = [
+  { num: '50K+',  label: 'Monthly reach'   },
+  { num: '4',     label: 'Platforms'        },
+  { num: 'India', label: 'Primary market'   },
+]
+
+const segments = [
+  { tag: 'Segment 01', title: 'Final-year college students', sub: 'Across India → first job',       bar: '80%' },
+  { tag: 'Segment 02', title: 'Tech graduates',              sub: 'Entry-level roles',               bar: '65%' },
+  { tag: 'Segment 03', title: 'Active job seekers',          sub: 'Internships & fresher roles',     bar: '55%' },
+  { tag: 'Segment 04', title: 'Career transitioners',        sub: 'Upskilling → new field',          bar: '40%' },
 ]
 
 const reach = [
-  { platform: 'Website',  detail: 'Job listings, career guides, and company reviews' },
-  { platform: 'YouTube',  detail: 'Career-focused videos on job tips and application strategy' },
-  { platform: 'WhatsApp', detail: 'Active community receiving daily job alerts' },
-  { platform: 'LinkedIn', detail: 'Regular posts on job opportunities and career advice' },
+  { platform: 'Website',   detail: 'Job listings, career guides, and company reviews',      pill: 'Live',    pillClass: 'pill-web' },
+  { platform: 'YouTube',   detail: 'Career videos, job tips, application strategy',         pill: 'Active',  pillClass: 'pill-yt'  },
+  { platform: 'WhatsApp',  detail: 'Daily job alerts to an active community',               pill: 'Daily',   pillClass: 'pill-wa'  },
+  { platform: 'LinkedIn',  detail: 'Job opportunities and career advice posts',              pill: 'Regular', pillClass: 'pill-li'  },
 ]
 
 const accepted = [
@@ -49,15 +55,11 @@ export default function Advertise_with_us() {
   })
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white mb-12">
       <style>{`
         @keyframes shimmerText {
           0%   { background-position: 0% center }
           100% { background-position: 200% center }
-        }
-        @keyframes pulseRing {
-          0%   { transform: scale(1); opacity: 0.5 }
-          100% { transform: scale(2.4); opacity: 0 }
         }
         .shimmer-text {
           background: linear-gradient(135deg, #f97316 0%, #ea580c 45%, #ff8c42 100%);
@@ -67,7 +69,25 @@ export default function Advertise_with_us() {
           background-clip: text;
           animation: shimmerText 3s linear infinite;
         }
-        .pulse-ring { animation: pulseRing 1.8s ease infinite; }
+        .seg-card {
+          border: 1px solid #e5e7eb;
+          border-radius: 10px;
+          padding: 12px 14px;
+          position: relative;
+          overflow: hidden;
+          background: #fff;
+        }
+        .seg-bar-track {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          background: #f97316;
+        }
+        .pill-web { background: #fff7ed; color: #c2410c; }
+        .pill-yt  { background: #fef2f2; color: #b91c1c; }
+        .pill-wa  { background: #f0fdf4; color: #15803d; }
+        .pill-li  { background: #eff6ff; color: #1d4ed8; }
       `}</style>
 
       {/* ── Header ── */}
@@ -76,65 +96,72 @@ export default function Advertise_with_us() {
           className="absolute top-0 left-0 right-0 h-[2px]"
           style={{ background: 'linear-gradient(90deg, transparent, #f97316, transparent)' }}
         />
-        <div className="relative z-10 px-4 sm:px-8 md:px-12 pt-10 sm:pt-14 md:pt-16 pb-8 max-w-[1100px] mx-auto text-center">
-
-          <div style={fade(0)} className="inline-flex items-center gap-[7px] bg-orange-500/[0.08] border border-orange-500/[0.22] text-orange-500 text-[11px] font-bold px-4 py-1.5 rounded-full tracking-[0.08em] uppercase mb-5">
-            <span className="relative inline-block w-[7px] h-[7px] bg-green-500 rounded-full shrink-0">
-              <span className="pulse-ring absolute inset-[-3px] rounded-full bg-green-500" />
-            </span>
-            Partner with us
-          </div>
-
-          <h1 style={fade(80)} className="text-[clamp(28px,7vw,64px)] font-bold leading-[1.05] tracking-[-0.035em] text-[#0a0a0a] mb-4">
+        <div className="relative z-10 px-4 sm:px-8 md:px-12 sm:pt-14 md:pt-14 pb-2 max-w-[1100px] mx-auto text-center">
+          <h1 style={fade(80)} className="text-[clamp(28px,7vw,64px)] font-bold leading-[1.05] tracking-[-0.035em] text-[#0a0a0a] mb-2">
             Advertise with <span className="shimmer-text">{SITE_NAME}</span>
           </h1>
-
           <p style={fade(160)} className="text-[15px] sm:text-[17px] text-gray-500 leading-[1.65] max-w-[500px] mx-auto mb-7">
             Reach students and early-career professionals actively looking for jobs, tools, and career resources.
           </p>
-
         </div>
       </div>
 
       {/* ── Body ── */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-0 space-y-10">
 
-        {/* Advertising Disclosure — stated once, here only */}
-        <div className="bg-amber-50 border-l-4 border-orange-500 rounded-r-lg px-4 py-3.5 text-sm text-gray-700 leading-relaxed">
-          <strong className="text-orange-700">Advertising disclosure:</strong>{' '}
-          {SITE_NAME} displays advertisements through direct sponsorship arrangements. All sponsored content is clearly labelled as such. Our editorial decisions — including which job listings and resources we feature — are made independently of any commercial relationships. For more information see our{' '}
-          <a href="/disclaimer" className="text-orange-500 hover:underline">Disclaimer</a> and{' '}
-          <a href="/privacy-policy" className="text-orange-500 hover:underline">Privacy Policy</a>.
-        </div>
-
-        {/* Audience */}
+        {/* ── Audience + Platform ── */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <p className="text-xs font-bold tracking-[0.08em] uppercase text-orange-500 mb-1.5">Who you reach</p>
-            <h2 className="text-2xl font-bold text-gray-900 tracking-tight mb-4">Our audience</h2>
-            <div className="flex flex-col gap-2.5">
-              {audience.map((item) => (
-                <div key={item} className="flex items-start gap-2.5 text-sm text-gray-700 leading-relaxed">
-                  <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0 mt-[0.45rem]" />
-                  {item}
+
+          {/* Left — metrics + segments */}
+          <div className="flex flex-col gap-4">
+            <div>
+              <p className="text-xs font-bold tracking-[0.08em] uppercase text-orange-500 mb-1.5">Who you reach</p>
+              <h2 className="text-2xl font-bold text-gray-900 tracking-tight">Our audience</h2>
+            </div>
+
+            {/* Metric chips */}
+            <div className="grid grid-cols-3 gap-2">
+              {metrics.map((m) => (
+                <div key={m.label} className="border border-gray-200 rounded-lg p-3">
+                  <span className="block text-xl font-bold text-orange-500 leading-tight">{m.num}</span>
+                  <span className="block text-[11px] text-gray-900 mt-0.5">{m.label}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Segment grid */}
+            <div className="grid grid-cols-2 gap-2">
+              {segments.map((s) => (
+                <div key={s.tag} className="seg-card">
+                  {/* <span className="seg-bar-track" style={{ width: s.bar }} /> */}
+                  <span className="block text-[10px] font-semibold tracking-widest uppercase text-orange-500 mb-1">{s.tag}</span>
+                  <span className="block text-[13px] font-semibold text-gray-900 leading-snug">{s.title}</span>
+                  <span className="block text-[11px] text-gray-900 mt-1.5">{s.sub}</span>
                 </div>
               ))}
             </div>
           </div>
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-4 mt-7 md:mt-9">Platform presence</h3>
-            <div className="flex flex-col gap-3">
-              {reach.map((item) => (
-                <div key={item.platform} className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-3">
-                  <p className="font-semibold text-sm text-gray-900 mb-0.5">{item.platform}</p>
-                  <p className="text-xs text-gray-500 m-0">{item.detail}</p>
-                </div>
-              ))}
-            </div>
+
+          {/* Right — platform presence */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-m font-semibold text-gray-900 mt-5 md:mt-[65px]">Platform presence</h3>
+            {reach.map((item) => (
+              <div
+                key={item.platform}
+                className="grid items-center gap-3 border border-gray-200 rounded-xl px-4 py-3"
+                style={{ gridTemplateColumns: '80px 1fr 56px' }}
+              >
+                <span className="text-sm font-semibold text-gray-900">{item.platform}</span>
+                <span className="text-xs text-gray-900 leading-snug">{item.detail}</span>
+                <span className={`text-[10px] font-semibold rounded-full px-2 py-1 text-center whitespace-nowrap ${item.pillClass}`}>
+                  {item.pill}
+                </span>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* Formats — titles + billing only, no repetitive descriptions */}
+        {/* ── Formats ── */}
         <section>
           <p className="text-xs font-bold tracking-[0.08em] uppercase text-orange-500 mb-1.5">What we offer</p>
           <h2 className="text-2xl font-bold text-gray-900 tracking-tight mb-2">Advertising formats</h2>
@@ -151,7 +178,7 @@ export default function Advertise_with_us() {
           </div>
         </section>
 
-        {/* Who we work with */}
+        {/* ── Who we work with ── */}
         <section>
           <p className="text-xs font-bold tracking-[0.08em] uppercase text-orange-500 mb-1.5">Content policy</p>
           <h2 className="text-2xl font-bold text-gray-900 tracking-tight mb-2">Who we partner with</h2>
@@ -169,7 +196,6 @@ export default function Advertise_with_us() {
         </section>
 
         <ContactBlock description="For partnership enquiries, reach out directly." />
-
       </div>
     </div>
   )

@@ -10,7 +10,7 @@ export default function ContactBlock({ description, note }) {
       <div className="flex items-center gap-3">
         <a
           href="/contact-us"
-          className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm px-5 py-2.5 rounded-xl transition-colors duration-200 no-underline"
+          className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 !text-white font-bold text-sm px-5 py-2.5 rounded-xl transition-colors duration-200 no-underline"
         >
           Contact Us
           <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">

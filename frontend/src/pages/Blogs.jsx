@@ -372,7 +372,7 @@ const Blogs = () => {
         <div className="blogs-wrap" style={{
           maxWidth: 1160, margin: '0 auto',
           padding: '56px 48px 80px',
-          position: 'relative', zIndex: 5,
+          position: 'relative', zIndex: 5
         }}>
 
           {/* ── Hero Header ── */}
@@ -381,8 +381,9 @@ const Blogs = () => {
             opacity: visible ? 1 : 0,
             transform: visible ? 'translateY(0)' : 'translateY(20px)',
             transition: 'all 0.6s cubic-bezier(0.22,1,0.36,1)',
+            textAlign: 'center'
           }}>
-            <div style={{
+            {/* <div style={{
               display: 'inline-flex', alignItems: 'center', gap: 7,
               fontSize: 11, fontWeight: 700, letterSpacing: '0.08em',
               textTransform: 'uppercase', color: '#f97316', marginBottom: 16,
@@ -397,7 +398,7 @@ const Blogs = () => {
                 }} />
               </span>
               Career Guides & Resources
-            </div>
+            </div> */}
 
             <h1 className="blogs-hero-title" style={{
               fontSize: 56, fontWeight: 700, color: '#0a0a0a',
@@ -416,7 +417,12 @@ const Blogs = () => {
             </h1>
 
             <p className="blogs-hero-sub" style={{
-              fontSize: 16, color: '#6b7280', lineHeight: 1.65, maxWidth: 480, margin: 0,
+              fontSize: 16,
+              color: '#6b7280',
+              lineHeight: 1.65,
+              maxWidth: 480,
+              margin: '0 auto',   // THIS centers the block
+              textAlign: 'center' // THIS centers the text inside
             }}>
               In-depth guides, roadmaps, and tips crafted to help freshers land their first job faster.
             </p>
@@ -460,8 +466,8 @@ const Blogs = () => {
           <div className="blogs-grid">
             {filtered.length > 0
               ? filtered.map((blog, i) => (
-                  <BlogCard key={blog.id} blog={blog} index={i} visible={visible} />
-                ))
+                <BlogCard key={blog.id} blog={blog} index={i} visible={visible} />
+              ))
               : <EmptyState searchTerm={searchTerm} />
             }
           </div>

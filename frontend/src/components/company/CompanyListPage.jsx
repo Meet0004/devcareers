@@ -79,12 +79,7 @@ const CompanyListPage = ({ filteredCompanies, searchTerm, setSearchTerm }) => {
 						transform: visible ? 'translateY(0)' : 'translateY(20px)',
 						transition: 'all 0.65s cubic-bezier(0.22,1,0.36,1) 0.05s',
 					}}>
-						<div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#f97316', marginBottom: 18 }}>
-							<span style={{ width: 7, height: 7, background: '#22c55e', borderRadius: '50%', position: 'relative', display: 'inline-block' }}>
-								<span style={{ position: 'absolute', inset: -3, borderRadius: '50%', background: '#22c55e', animation: 'pulseRing 1.8s ease infinite' }} />
-							</span>
-							Updated Daily
-						</div>
+						
 
 						<h1 className="cl-title" style={{ fontSize: isMobile ? 36 : 56, fontWeight: 700, lineHeight: 1.06, letterSpacing: '-0.03em', color: '#0a0a0a', margin: '0 0 12px' }}>
 							Company{' '}

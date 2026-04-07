@@ -88,6 +88,7 @@ const SUBJECT_OPTIONS = [
   { value: 'Technical Support', label: 'Technical Support' },
   { value: 'Resource / Purchase Issue', label: 'Resource or Purchase Issue' },
   { value: 'Feedback & Complaint', label: 'Feedback and Complaint' },
+  { value: 'Unsubscribe / Data Deletion Request', label: 'Unsubscribe / Data Deletion Request'},
   { value: 'Partnership Opportunity', label: 'Partnership Opportunity' },
   { value: 'General Question', label: 'General Question' },
 ]
@@ -459,15 +460,16 @@ const Contact_Us = () => {
         .faq-answer { padding:12px 18px 16px; font-size:13px; color:#4b5563; line-height:1.7; border-top:1px solid #f3f4f6; }
       `}</style>
 
-      <div className="min-h-screen bg-gradient-to-b from-white to-orange-50 px-4 py-12">
-        <div className="max-w-3xl mx-auto space-y-10">
+      <div className="min-h-screen bg-gradient-to-b from-white to-orange-50 py-4 pb-16" >
+        <div className="max-w-3xl mx-auto space-y-3">
 
           {/* Title */}
           <PageHero title='Contact Us' subtitle='Have a question, an issue, or just want to say hi? We read every message and reply as soon as we can.' />
 
 
-          {/* Hero Profile Card */}
-          <div className="hero-card p-7 fade-up d1">
+          <div className='space-y-10'>
+            {/* Hero Profile Card */}
+          <div className="hero-card p-7 fade-up d1 ">
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
               <div className="avatar-ring scale-in d2">
                 <img src={myImage} alt="Meet Soni" />
@@ -513,7 +515,7 @@ const Contact_Us = () => {
 
           {/* Contact Form */}
           <div className="contact-form-card fade-up d2">
-            <div className="mb-6">
+            <div>
               <h2 className="text-lg font-bold text-gray-800 mb-1">Send a Message</h2>
               <p className="text-sm text-gray-500">Fill in the form below and we will reply to your inbox directly.</p>
             </div>
@@ -663,6 +665,7 @@ const Contact_Us = () => {
                 />
               ))}
             </div>
+          </div>
           </div>
 
         </div>

@@ -252,7 +252,7 @@ export default function Terms_and_conditions() {
 
               <h3>Copyright Infringement Claims</h3>
               <p>
-                If you believe any content on the Platform infringes your copyright or other intellectual property rights, please contact us at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> with a description of the work, proof of ownership, and the URL of the allegedly infringing content. We will investigate and respond within seven business days.
+                If you believe any content on the Platform infringes your copyright or other intellectual property rights, please contact us at {RECIPIENT_EMAIL} with a description of the work, proof of ownership, and the URL of the allegedly infringing content. We will investigate and respond within seven business days.
               </p>
             </section>
 
@@ -399,7 +399,7 @@ export default function Terms_and_conditions() {
                 <li>Used the Platform for any fraudulent or unlawful purpose.</li>
               </ul>
               <div className="notice notice-red">
-                If your access is terminated due to a Terms violation, you will not be entitled to a refund for any purchases made. If you believe a termination was made in error, you may appeal by emailing <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> with full details of your situation.
+                If your access is terminated due to a Terms violation, you will not be entitled to a refund for any purchases made. If you believe a termination was made in error, you may appeal by emailing {RECIPIENT_EMAIL} with full details of your situation.
               </div>
             </section>
 
@@ -412,7 +412,7 @@ export default function Terms_and_conditions() {
                 <li>Continued use of {SITE_NAME} after updated Terms are published constitutes your acceptance of the revised Terms.</li>
                 <li>If you disagree with any updated Terms, you may unsubscribe and discontinue use of the Platform. You may also request deletion of your personal data as described in our Privacy Policy.</li>
               </ul>
-              <p>Previous versions of these Terms are available upon request by emailing <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a>.</p>
+              <p>Previous versions of these Terms are available upon request by our <a href="/contact-us">Contact page</a>.</p>
             </section>
 
             <section id="governing">
@@ -434,7 +434,7 @@ export default function Terms_and_conditions() {
 
               <h3>Dispute Resolution</h3>
               <p>
-                Any disputes arising out of or in connection with these Terms shall first to be resolved amicably by contacting {FOUNDER_NAME} directly at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a>. We ask that you give us a fair opportunity to resolve your concern before escalating.
+                Any disputes arising out of or in connection with these Terms shall first to be resolved amicably by contacting {FOUNDER_NAME} directly at {RECIPIENT_EMAIL}. We ask that you give us a fair opportunity to resolve your concern before escalating.
               </p>
               <p>
                 If a dispute cannot be resolved amicably within 30 days of notice, it shall be subject to the exclusive jurisdiction of the courts located in Shimoga (Shivamogga), Karnataka, India.

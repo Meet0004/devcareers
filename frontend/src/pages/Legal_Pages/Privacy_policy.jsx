@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ContactBlock from '../../components/common/ContactBlock'
-const FOUNDER_NAME = import.meta.env.VITE_FOUNDER_NAME || 'Meet Soni'
-const FOUNDER_LOCATION = import.meta.env.VITE_FOUNDER_LOCATION || 'Shimoga, Karnataka, India'
-const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL || 'hello@devcareers.in'
-const SITE_NAME = import.meta.env.VITE_SITE_NAME || 'DevCareers'
-const LAST_UPDATED = import.meta.env.VITE_POLICY_LAST_UPDATED || 'March 2026'
+import { siteData } from '../../config/siteData'
+
+const FOUNDER_NAME = siteData.founder.name
+const FOUNDER_LOCATION = siteData.founder.location
+const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL
+const SITE_NAME = import.meta.env.VITE_SITE_NAME
+const LAST_UPDATED = import.meta.env.VITE_POLICY_LAST_UPDATED
 
 const sections = [
   { id: 'overview', title: 'Overview' },
@@ -77,7 +79,7 @@ export default function Privacy_Policy() {
         .policy-body ul { list-style: none; padding: 0; margin: 0.5rem 0 0.75rem; }
         .policy-body ul li { font-size: 0.9375rem; color: #374151; line-height: 1.75; padding-left: 1.25rem; position: relative; margin-bottom: 0.25rem; }
         .policy-body ul li::before { content: ''; position: absolute; left: 0; top: 0.7rem; width: 5px; height: 5px; border-radius: 50%; background: #f97316; }
-        .policy-body a  { color: #fff; text-decoration: underline; }
+        .policy-body a  { color: #ea580c; text-decoration: underline; }
         .policy-body a:hover { color: #ea580c; }
         .policy-body .notice { background: #fff7ed; border-left: 3px solid #f97316; padding: 0.875rem 1rem; border-radius: 0 0.5rem 0.5rem 0; margin: 1rem 0; font-size: 0.9rem; color: #374151; line-height: 1.7; }
         .policy-body .notice strong { color: #c2410c; }
@@ -133,7 +135,7 @@ export default function Privacy_Policy() {
                 {SITE_NAME} is a solo-operated platform run entirely by <strong>{FOUNDER_NAME}</strong>. There are no corporate shareholders, no data brokerage deals, and no hidden agenda. This is a passion project built to help students find jobs.
               </p>
               <div className="notice">
-                <strong>Our privacy promise:</strong> We will never sell your personal data to any third party, under any circumstance. If you have questions, reach out at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a>.
+                <strong>Our privacy promise:</strong> We will never sell your personal data to any third party, under any circumstance. If you have questions, reach out via our <a href="/contact-us">Contact page</a>.
               </div>
               <p>
                 By using {SITE_NAME}, you agree to the practices described in this policy. This policy should be read alongside our <a href="/terms-and-conditions">Terms and Conditions</a> and <a href="/disclaimer">Disclaimer</a>.
@@ -147,20 +149,20 @@ export default function Privacy_Policy() {
                 <div className="data-box">
                   <h3>Personal Information</h3>
                   <ul>
-                    <li><strong>Name</strong> — collected via subscription form, contact form, or Topmate bookings</li>
-                    <li><strong>Email address</strong> — collected via subscription form, contact form, or Topmate bookings</li>
-                    <li><strong>Phone number</strong> — collected only through Topmate when you make a purchase</li>
-                    <li><strong>Message content</strong> — when you contact us through our contact form</li>
+                    <li><strong>Name</strong> - collected via subscription form, contact form, or Topmate bookings</li>
+                    <li><strong>Email address</strong> - collected via subscription form, contact form, or Topmate bookings</li>
+                    <li><strong>Phone number</strong> - collected only through Topmate when you make a purchase</li>
+                    <li><strong>Message content</strong> - when you contact us through our contact form</li>
                   </ul>
                 </div>
                 <div className="data-box">
                   <h3>Usage Data (Anonymous)</h3>
                   <ul>
-                    <li><strong>Pages visited</strong> — which pages you view on our site</li>
-                    <li><strong>Traffic sources</strong> — how you found {SITE_NAME}</li>
-                    <li><strong>Device and browser type</strong> — for platform optimisation</li>
-                    <li><strong>Geographic region</strong> — country and city level only, via Google Analytics</li>
-                    <li><strong>Performance metrics</strong> — page load times and error rates</li>
+                    <li><strong>Pages visited</strong> - which pages you view on our site</li>
+                    <li><strong>Traffic sources</strong> - how you found {SITE_NAME}</li>
+                    <li><strong>Device and browser type</strong> - for platform optimisation</li>
+                    <li><strong>Geographic region</strong> - country and city level only, via Google Analytics</li>
+                    <li><strong>Performance metrics</strong> - page load times and error rates</li>
                   </ul>
                 </div>
               </div>
@@ -255,7 +257,7 @@ export default function Privacy_Policy() {
 
               <h3>Google Analytics</h3>
               <p>
-                We use Google Analytics to understand how visitors use {SITE_NAME}. This collects anonymous, aggregated data including page views, visitor counts, referral sources, session duration, device types, and geographic region. Google Analytics uses cookies to collect this data. While the data is aggregated and non-personally-identifying on our end, Google's own data practices apply — you can review them at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>. To opt out of Google Analytics tracking entirely, you can install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.
+                We use Google Analytics to understand how visitors use {SITE_NAME}. This collects anonymous, aggregated data including page views, visitor counts, referral sources, session duration, device types, and geographic region. Google Analytics uses cookies to collect this data. While the data is aggregated and non-personally-identifying on our end, Google's own data practices apply - you can review them at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>. To opt out of Google Analytics tracking entirely, you can install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.
               </p>
 
               <h3>Cookies</h3>
@@ -298,7 +300,7 @@ export default function Privacy_Policy() {
               <div className="service-block">
                 <h3>Google Analytics</h3>
                 <p>Used to collect anonymous, aggregated data about how visitors use {SITE_NAME}, including page views, traffic sources, session duration, device types, and geographic region. This helps us understand what content is most useful and how to improve the platform. Google Analytics uses cookies and may process data on Google's servers. You can opt out at any time using the Google Analytics Opt-out Browser Add-on.</p>
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">View Google's Privacy Policy</a>
+                <a href="https://support.google.com/analytics/answer/7318509?hl=en" target="_blank" rel="noopener noreferrer">View Google's Privacy Policy</a>
               </div>
 
               <div className="service-block">
@@ -330,7 +332,7 @@ export default function Privacy_Policy() {
 
               <h3>Unsubscribing</h3>
               <p>
-                Every email we send contains an unsubscribe link at the bottom. You can also email <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> to be removed from our mailing list. We will process your request within 48 hours.
+                Every email we send contains an unsubscribe link at the bottom. You can also reach out via our <a href="/contact-us">Contact page</a> to be removed from our mailing list. We will process your request within 48 hours.
               </p>
 
               <div className="notice notice-green">
@@ -341,7 +343,7 @@ export default function Privacy_Policy() {
             <section id="your-rights">
               <h2>Your Rights</h2>
               <p>
-                You have full control over your personal data. To exercise any of the rights below, email <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> with the subject line "Data Rights Request". We respond to all requests within seven business days at no charge.
+                You have full control over your personal data. To exercise any of the rights below, email {RECIPIENT_EMAIL} with the subject line "Data Rights Request". We respond to all requests within seven business days at no charge.
               </p>
 
               <div className="three-col">
@@ -367,7 +369,7 @@ export default function Privacy_Policy() {
                 {SITE_NAME} is intended for users who are 18 years of age or older. We do not knowingly collect personal data from anyone under the age of 18.
               </p>
               <p>
-                If you are a parent or guardian and believe your child under 18 has provided us with personal data, please contact us immediately at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a>. We will delete that information promptly upon verification.
+                If you are a parent or guardian and believe your child under 18 has provided us with personal data, please contact us immediately at {RECIPIENT_EMAIL}. We will delete that information promptly upon verification.
               </p>
               <p>
                 By using {SITE_NAME} and providing us with your personal information, you represent that you are at least 18 years of age.
@@ -386,7 +388,7 @@ export default function Privacy_Policy() {
                 <li>If you disagree with any updated terms, you may unsubscribe and discontinue use of the platform. You may also request deletion of your data as described in the Your Rights section above.</li>
               </ul>
               <p>
-                Previous versions of this policy are available upon request by emailing <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a>.
+                Previous versions of this policy are available upon request by contacting us via our <a href="/contact-us">Contact page</a>.
               </p>
             </section>
 

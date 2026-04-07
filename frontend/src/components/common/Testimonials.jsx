@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import topmateLogo from '../../assets/topmateLogo.avif'
+import { metrics } from '../../config/metrics'
 const ANIM = {
-  revealDuration: 0.55,
-  revealSlide: 18,
-  staggerStep: 5,
-  countTickMs: 20,
-  countStartMs: 400,
+	revealDuration: 0.55,
+	revealSlide: 18,
+	staggerStep: 5,
+	countTickMs: 20,
+	countStartMs: 400,
 }
 
 const YOUTUBE_REVIEWS = [
@@ -131,31 +132,31 @@ const YouTubeIcon = () => (
 )
 // ── Scroll-reveal hook ───────────────────────────────────────
 const useReveal = (delay = 0) => {
-  const ref = useRef(null)
-  const [visible, setVisible] = useState(false)
-  useEffect(() => {
-	const el = ref.current
-	if (!el) return
-	const obs = new IntersectionObserver(([entry]) => {
-	  if (entry.isIntersecting) { setTimeout(() => setVisible(true), delay); obs.disconnect() }
-	}, { threshold: 0.12 })
-	obs.observe(el)
-	return () => obs.disconnect()
-  }, [delay])
-  return [ref, visible]
+	const ref = useRef(null)
+	const [visible, setVisible] = useState(false)
+	useEffect(() => {
+		const el = ref.current
+		if (!el) return
+		const obs = new IntersectionObserver(([entry]) => {
+			if (entry.isIntersecting) { setTimeout(() => setVisible(true), delay); obs.disconnect() }
+		}, { threshold: 0.12 })
+		obs.observe(el)
+		return () => obs.disconnect()
+	}, [delay])
+	return [ref, visible]
 }
 
 const revealStyle = (visible) => ({
-  opacity: visible ? 1 : 0,
-  transform: visible ? 'translateY(0)' : `translateY(${ANIM.revealSlide}px)`,
-  transition: `opacity ${ANIM.revealDuration}s cubic-bezier(0.22,1,0.36,1), transform ${ANIM.revealDuration}s cubic-bezier(0.22,1,0.36,1)`,
+	opacity: visible ? 1 : 0,
+	transform: visible ? 'translateY(0)' : `translateY(${ANIM.revealSlide}px)`,
+	transition: `opacity ${ANIM.revealDuration}s cubic-bezier(0.22,1,0.36,1), transform ${ANIM.revealDuration}s cubic-bezier(0.22,1,0.36,1)`,
 })
 /* ─── Main Component ─── */
 const Testimonials = () => {
 	const sectionRef = useRef(null)
 	const [visible, setVisible] = useState(false)
-const [count, setCount] = useState(0)
-  const [headerRef, headerVisible] = useReveal(0)
+	const [count, setCount] = useState(0)
+	const [headerRef, headerVisible] = useReveal(0)
 	useEffect(() => {
 		const el = sectionRef.current
 		if (!el) return
@@ -178,11 +179,11 @@ const [count, setCount] = useState(0)
 				{/* ── Header ── */}
 				<div ref={headerRef} style={{ ...revealStyle(headerVisible), textAlign: 'center', marginBottom: 52, position: 'relative', zIndex: 2 }}>
 
-          <h2 style={{ fontSize: 'clamp(28px,4vw,52px)', fontWeight: 700, color: '#0a0a0a', letterSpacing: '-0.035em', lineHeight: 1.1, margin: '0 0 12px' }}>
-            What{' '}
-            <em style={{ fontStyle: 'normal', background: 'linear-gradient(135deg,#f97316,#ea580c,#ff8c42)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', backgroundSize: '200% auto', animation: 'lrShimmer 3s linear infinite' }}>Students</em> are saying
-          </h2>
-        </div>
+					<h2 style={{ fontSize: 'clamp(28px,4vw,52px)', fontWeight: 700, color: '#0a0a0a', letterSpacing: '-0.035em', lineHeight: 1.1, margin: '0 0 12px' }}>
+						What{' '}
+						<em style={{ fontStyle: 'normal', background: 'linear-gradient(135deg,#f97316,#ea580c,#ff8c42)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', backgroundSize: '200% auto', animation: 'lrShimmer 3s linear infinite' }}>Students</em> are saying
+					</h2>
+				</div>
 
 				{/* ── Two-column grid ── */}
 				<div className="grid grid-cols-2 gap-6 max-w-[1100px] mx-auto max-sm:grid-cols-1">
@@ -293,7 +294,7 @@ const [count, setCount] = useState(0)
 						<div className="flex items-center gap-5 flex-shrink-0">
 							<div className="flex flex-col items-center gap-[2px]">
 								<div className="text-[26px] font-semibold text-[#111] leading-none">
-									{import.meta.env.VITE_TOPMATE_RANK}%
+									{metrics.topmateRanking}%
 								</div>
 								<div className="text-[10px] font-semibold tracking-[0.1em] uppercase text-[#bbb]">
 									Top Creator
@@ -302,7 +303,7 @@ const [count, setCount] = useState(0)
 							<div className="w-px h-7 bg-[#e8e4f0] flex-shrink-0" />
 							<div className="flex flex-col items-center gap-[2px]">
 								<div className="text-[26px] font-semibold text-[#111] leading-none">
-									{import.meta.env.VITE_TOPMATE_RATING}
+									{metrics.topmateRating}
 								</div>
 								<div className="text-[10px] font-semibold tracking-[0.1em] uppercase text-[#bbb]">
 									Rating

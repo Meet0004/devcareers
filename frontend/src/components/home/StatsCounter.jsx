@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { metrics } from '../../config/metrics'
 
 const TOPMATE_LINK = import.meta.env.VITE_TOPMATELINK || 'https://topmate.io/meet_g/'
 
@@ -6,7 +7,7 @@ const STATS = [
   {
     id: 'jobs',
     envKey: 'VITE_TOTAL_JOBS',
-    target: Number(import.meta.env.VITE_TOTAL_JOBS) || 10000,
+    target: metrics.totalJobs,
     suffix: '+',
     label: 'Job Opportunities Posted',
     // subtitle: { type: 'text', text: 'Updated daily' },
@@ -16,7 +17,7 @@ const STATS = [
   {
     id: 'customers',
     envKey: 'VITE_TOTAL_CUSTOMERS',
-    target: Number(import.meta.env.VITE_TOTAL_CUSTOMERS) || 500,
+    target: metrics.totalCustomers,
     suffix: '+',
     label: 'Happy Customers',
     // subtitle: { type: 'false' },
@@ -26,7 +27,7 @@ const STATS = [
   {
     id: 'sales',
     envKey: 'VITE_TOTAL_SALES',
-    target: Number(import.meta.env.VITE_TOTAL_SALES) || 399,
+    target: metrics.totalCustomers,
     suffix: '',
     label: 'Successful Purchases',
     // subtitle: { type: 'false' },

@@ -3,6 +3,8 @@ import PageHero from '../../components/legal/PageHero'
 import Impact from '../../components/common/Impact'
 import myImage from '../../assets/myImage.avif'
 import ContactBlock from '../../components/common/ContactBlock'
+import { siteData } from '../../config/siteData'
+import { metrics } from '../../config/metrics'
 
 const About_us = () => {
   
@@ -31,7 +33,7 @@ const About_us = () => {
                   <div className="w-64 h-64 sm:w-32 sm:h-32 md:w-full md:h-full rounded-full md:rounded-none overflow-hidden ring-4 ring-orange-200 md:ring-0 flex-shrink-0">
                     <img
                       src={myImage}
-                      alt={import.meta.env.VITE_FOUNDER_NAME}
+                      alt={siteData.founder.name}
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
@@ -43,10 +45,10 @@ const About_us = () => {
                     Founder & the only person here
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">
-                    {import.meta.env.VITE_FOUNDER_NAME}
+                    {siteData.founder.name}
                   </h3>
                   <p className="text-sm text-gray-500 mb-4">
-                    {import.meta.env.VITE_FOUNDER_DEGREE} Graduate · {import.meta.env.VITE_FOUNDER_AGE} yrs · {import.meta.env.VITE_FOUNDER_LOCATION}
+                    {siteData.founder.degree} Graduate · {siteData.founder.age} yrs · {siteData.founder.location}
                   </p>
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     I was fresh out of college, applying everywhere and spending more time searching for openings than actually preparing for them. A lot of listings were already expired, and the rest were scattered across different sites. So I started keeping a simple list for myself and later shared it on YouTube. Over time, it slowly turned into what it is today.
@@ -68,7 +70,7 @@ const About_us = () => {
                         </svg>
                       ),
                       label: 'Job Curation',
-                      desc: `Every month I go through ${import.meta.env.VITE_TOTAL_COMPANIES_TRACKED}+ career pages myself. No scraper, no shortcuts — if I can't verify it, it doesn't go up`,
+                      desc: `Every month I go through ${metrics.totalCompaniesTracked}+ career pages myself. No scraper, no shortcuts. If I can't verify it, it doesn't go up`,
                     },
                     {
                       icon: (
@@ -149,7 +151,7 @@ const About_us = () => {
               To address this, a system was created to collect active job openings, verify links, and organize them in a way that is easy to access and understand. What began as a small, personal tracking process gradually evolved into something more structured and publicly shared.
             </p>
             <p>
-              In beginning 2026, this information started being shared through YouTube, focusing only on real and currently active opportunities. As more students began following these updates, it became clear that there was a wider need for a reliable and consistent source of job information.
+              In beginning {siteData.founder.year}, this information started being shared through YouTube, focusing only on real and currently active opportunities. As more students began following these updates, it became clear that there was a wider need for a reliable and consistent source of job information.
             </p>
             <p>
               Shortly after, a basic website was developed to make access even simpler. The focus remained on clarity, usability, and accuracy rather than design complexity. Over time, improvements were made based on feedback including better organization, more companies, and additional resources.

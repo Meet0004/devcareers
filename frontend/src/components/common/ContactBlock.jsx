@@ -1,6 +1,3 @@
-const FOUNDER_NAME    = import.meta.env.VITE_FOUNDER_NAME    || 'Meet Soni'
-const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL || 'meetgssoni04@gmail.com'
-
 export default function ContactBlock({ description, note }) {
   return (
     <div className="border border-gray-200 rounded-2xl p-5">

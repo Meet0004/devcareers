@@ -6,6 +6,9 @@ import usePageTitle from '../../hooks/usePageTitle'
 
 const email = import.meta.env.VITE_RECIPIENT_EMAIL
 const phone = import.meta.env.VITE_PHONE_NUMBER
+const alternateEmail = import.meta.env.VITE_RECIPIENT_ALTERNATE_EMAIL
+
+// In the hero card, after the primary email pill:
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID_CONTACT_US
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT_US
@@ -16,6 +19,7 @@ const PURCHASE_QUERY_ICON = "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7
 import resourceData from '../../data/resourceData/resourceData'
 import packageData from '../../data/resourceData/packagesData'
 import PageHero from '../../components/legal/PageHero'
+import { businessRules } from '../../config/businessRules'
 
 const RESOURCES = [
   ...resourceData.map(r => r.title),
@@ -58,27 +62,27 @@ const CONTACT_REASONS = [
 const FAQS = [
   {
     q: "How quickly will I get a reply?",
-    a: "We try to respond within 24 to 48 hours on weekdays. For purchase-related queries, we usually get back within 6 hours. If something is time-sensitive, just mention it at the top of your message."
+    a: `We try to respond within ${businessRules.supportResponse.min} - ${businessRules.supportResponse.max} hours on weekdays. For purchase-related queries, we usually get back within ${businessRules.supportResponse.min} hours. If something is time-sensitive, just mention it at the top of your message.`
   },
   {
     q: "I bought a resource on Topmate but missed the download. What do I do?",
-    a: "Select Resource or Purchase Issue in the contact form, pick the resource you bought, and submit. Once we verify your payment, we will send it directly to your email within 6 hours."
+    a: `Select Resource or Purchase Issue in the contact form, pick the resource you bought, and submit. Once we verify your payment, we will send it directly to your email within ${businessRules.supportResponse.min}.`
   },
   {
     q: "Can I suggest a resource or topic you should cover?",
-    a: "Absolutely. Send us a message and we will consider it for an upcoming resource. We read every suggestion, even if we cannot always respond individually."
+    a: `Absolutely. Send us a message and we will consider it for an upcoming resource. We read every suggestion, even if we cannot always respond individually.`
   },
   {
     q: "I found a broken link or bug on the site. How do I report it?",
-    a: "Use the contact form and select Technical Support. Include the page URL and a brief description. A screenshot helps a lot. We treat bug reports as high priority and usually fix them within 24 hours."
+    a: `Use the contact form and select Technical Support. Include the page URL and a brief description. A screenshot helps a lot. We treat bug reports as high priority and usually fix them within ${businessRules.supportResponse.min} hours.`
   },
   {
     q: "I want to advertise or sponsor content on DevCareers. Who do I contact?",
-    a: "Use the contact form and select Partnership Opportunity. Include your brand, target audience, and what kind of collaboration you have in mind. We respond within 2 to 3 business days."
+    a: `Use the contact form and select Partnership Opportunity. Include your brand, target audience, and what kind of collaboration you have in mind. We respond within ${businessRules.partnershipResponse.min} to ${businessRules.partnershipResponse.max} business days.`
   },
   {
     q: "Is my personal information safe when I contact you?",
-    a: "Yes. Any information you share is used only to resolve your query. We do not share, sell, or store your personal data beyond what is needed to respond to you."
+    a: `Yes. Any information you share is used only to resolve your query. We do not share, sell, or store your personal data beyond what is needed to respond to you.`
   },
 ]
 
@@ -88,7 +92,7 @@ const SUBJECT_OPTIONS = [
   { value: 'Technical Support', label: 'Technical Support' },
   { value: 'Resource / Purchase Issue', label: 'Resource or Purchase Issue' },
   { value: 'Feedback & Complaint', label: 'Feedback and Complaint' },
-  { value: 'Unsubscribe / Data Deletion Request', label: 'Unsubscribe / Data Deletion Request'},
+  { value: 'Unsubscribe / Data Deletion Request', label: 'Unsubscribe / Data Deletion Request' },
   { value: 'Partnership Opportunity', label: 'Partnership Opportunity' },
   { value: 'General Question', label: 'General Question' },
 ]
@@ -118,7 +122,7 @@ const ResourcePicker = ({ value, onChange, error, onClearError }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <p className="text-xs text-orange-700">
-          Our resources are sold on <strong>Topmate.io</strong>. After payment the download is available on the Topmate page. Missed it? Submit below and we will resend within <strong>6 hours</strong>.
+          Our resources are sold on <strong>Topmate.io</strong>. After payment the download is available on the Topmate page. Missed it? Submit below and we will resend within <strong>{businessRules.supportResponse.min} - {businessRules.supportResponse.max} hours</strong>.
         </p>
       </div>
 
@@ -469,203 +473,209 @@ const Contact_Us = () => {
 
           <div className='space-y-10'>
             {/* Hero Profile Card */}
-          <div className="hero-card p-7 fade-up d1 ">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-              <div className="avatar-ring scale-in d2">
-                <img src={myImage} alt="Meet Soni" />
-              </div>
-              <div className="flex-1 w-full">
-                <div className="text-center sm:text-left mb-4">
-                  <h2 className="text-xl font-bold text-gray-900">Meet Soni</h2>
-                  <p className="text-xs text-orange-500 font-semibold mt-0.5 uppercase tracking-wide">Founder and Solo Operator, DevCareers</p>
+            <div className="hero-card p-7 fade-up d1 ">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <div className="avatar-ring scale-in d2">
+                  <img src={myImage} alt="Meet Soni" />
                 </div>
-                <div className="space-y-2.5">
-                  <div className="contact-pill">
-                    <svg className="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <a href={`mailto:${email}`} className="text-sm font-medium text-gray-800 hover:text-orange-500 transition-colors truncate">{email}</a>
-                    <button className="copy-btn" onClick={copyEmail} title="Copy email">
-                      {copiedEmail
-                        ? <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
-                        : <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
-                      }
-                    </button>
-                    {copiedEmail && <span className="text-xs text-orange-500 font-semibold">Copied!</span>}
+                <div className="flex-1 w-full">
+                  <div className="text-center sm:text-left mb-4">
+                    <h2 className="text-xl font-bold text-gray-900">Meet Soni</h2>
+                    <p className="text-xs text-orange-500 font-semibold mt-0.5 uppercase tracking-wide">Founder and Solo Operator, DevCareers</p>
                   </div>
-                  {phone && (
+                  <div className="space-y-2.5">
                     <div className="contact-pill">
                       <svg className="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
-                      <a href={`tel:${phone}`} className="text-sm font-medium text-gray-800 hover:text-orange-500 transition-colors truncate">{phone}</a>
-                      <button className="copy-btn" onClick={copyPhone} title="Copy phone">
-                        {copiedPhone
+                      <a href={`mailto:${email}`} className="text-sm font-medium text-gray-800 hover:text-orange-500 transition-colors truncate">{email}</a>
+                      <button className="copy-btn" onClick={copyEmail} title="Copy email">
+                        {copiedEmail
                           ? <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                           : <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
                         }
                       </button>
-                      {copiedPhone && <span className="text-xs text-orange-500 font-semibold">Copied!</span>}
+                      {copiedEmail && <span className="text-xs text-orange-500 font-semibold">Copied!</span>}
                     </div>
-                  )}
+                    {phone && (
+                      <div className="contact-pill">
+                        <svg className="w-4 h-4 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <a href={`tel:${phone}`} className="text-sm font-medium text-gray-800 hover:text-orange-500 transition-colors truncate">{phone}</a>
+                        <button className="copy-btn" onClick={copyPhone} title="Copy phone">
+                          {copiedPhone
+                            ? <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                            : <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                          }
+                        </button>
+                        {copiedPhone && <span className="text-xs text-orange-500 font-semibold">Copied!</span>}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Contact Form */}
-          <div className="contact-form-card fade-up d2">
-            <div>
-              <h2 className="text-lg font-bold text-gray-800 mb-1">Send a Message</h2>
-              <p className="text-sm text-gray-500">Fill in the form below and we will reply to your inbox directly.</p>
-            </div>
-
-            {formStatus === 'success' ? (
-              <div className="form-success pop-in">
-                <div className="success-icon-wrap">
-                  <svg className="w-9 h-9 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-lg font-bold text-gray-900">Message sent!</p>
-                  <p className="text-sm text-gray-500 mt-1 max-w-xs mx-auto">
-                    {isPurchase
-                      ? "We have received your purchase query. Your resource will be sent to your email within 6 hours."
-                      : "Thanks for reaching out. Meet will get back to you within 24 to 48 hours."
-                    }
-                  </p>
-                </div>
-                <button onClick={resetForm} className="mt-2 px-6 py-2.5 bg-orange-50 hover:bg-orange-100 text-orange-600 font-semibold text-sm rounded-xl border border-orange-200 transition-colors">
-                  Send another message
-                </button>
+            {/* Contact Form */}
+            <div className="contact-form-card fade-up d2">
+              <div>
+                <h2 className="text-lg font-bold text-gray-800 mb-1">Send a Message</h2>
+                <p className="text-sm text-gray-500">Fill in the form below and we will reply to your inbox directly.</p>
               </div>
-            ) : (
-              <form ref={formRef} onSubmit={handleSubmit} noValidate>
 
-                {formStatus === 'error' && (
-                  <div className="form-error-banner">
-                    <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              {formStatus === 'success' ? (
+                <div className="form-success pop-in">
+                  <div className="success-icon-wrap">
+                    <svg className="w-9 h-9 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
-                    <div>
-                      <p className="text-sm font-semibold text-red-700">Something went wrong</p>
-                      <p className="text-xs text-red-500 mt-0.5">Could not send your message. Please try again or email us at <a href={`mailto:${email}`} className="underline">{email}</a></p>
-                    </div>
-                    <button type="button" onClick={resetForm} className="ml-auto flex-shrink-0 text-red-400 hover:text-red-600 transition-colors">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                    </button>
-                  </div>
-                )}
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
-                  <div>
-                    <label className="form-label" htmlFor="from_name">Your Name <span className="req">*</span></label>
-                    <input id="from_name" name="from_name" type="text" autoComplete="name" placeholder="e.g. Rahul Sharma" value={formData.from_name} onChange={handleChange} className={`form-input ${formErrors.from_name ? 'error' : ''}`} />
-                    {formErrors.from_name && <p className="form-error-msg">{errIcon}{formErrors.from_name}</p>}
                   </div>
                   <div>
-                    <label className="form-label" htmlFor="from_email">Your Email <span className="req">*</span></label>
-                    <input id="from_email" name="from_email" type="email" autoComplete="email" placeholder="you@example.com" value={formData.from_email} onChange={handleChange} className={`form-input ${formErrors.from_email ? 'error' : ''}`} />
-                    {formErrors.from_email && <p className="form-error-msg">{errIcon}{formErrors.from_email}</p>}
+                    <p className="text-lg font-bold text-gray-900">Message sent!</p>
+                    <p className="text-sm text-gray-500 mt-1 max-w-xs mx-auto">
+                      {isPurchase
+                        ? `We have received your purchase query. Your resource will be sent to your email within ${businessRules.supportResponse.min}.`
+                        : `Thanks for reaching out. Meet will get back to you within ${businessRules.supportResponse.min} - ${businessRules.supportResponse.max} hours.`
+                      }
+                    </p>
                   </div>
+                  <button onClick={resetForm} className="mt-2 px-6 py-2.5 bg-orange-50 hover:bg-orange-100 text-orange-600 font-semibold text-sm rounded-xl border border-orange-200 transition-colors">
+                    Send another message
+                  </button>
                 </div>
+              ) : (
+                <form ref={formRef} onSubmit={handleSubmit} noValidate>
 
-                <div className="mb-5">
-                  <label className="form-label" htmlFor="subject">Topic <span className="req">*</span></label>
-                  <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className={`form-select ${formErrors.subject ? 'error' : ''}`}>
-                    {SUBJECT_OPTIONS.map(opt => <option key={opt.value} value={opt.value} disabled={opt.value === ''}>{opt.label}</option>)}
-                  </select>
-                  {formErrors.subject && <p className="form-error-msg">{errIcon}{formErrors.subject}</p>}
-                </div>
-
-                {isPurchase && (
-                  <div className="mb-5 slide-down">
-                    <ResourcePicker value={formData.resource_title} onChange={setResource} error={formErrors.resource_title} onClearError={clearResourceError} />
-                    <input type="date" name="purchase_date" value={formData.purchase_date} max={new Date().toISOString().split('T')[0]} onChange={handleChange} className={`form-input mt-1.5 ${formErrors.purchase_date ? 'error' : ''}`} />
-                    {formErrors.purchase_date && <p className="form-error-msg">{errIcon}{formErrors.purchase_date}</p>}
-                  </div>
-                )}
-
-                <div className="mb-6">
-                  <label className="form-label" htmlFor="message">Message <span className="req">*</span></label>
-                  <textarea
-                    id="message" name="message" rows={5}
-                    placeholder={isPurchase
-                      ? "Describe your issue, for example: I purchased the SQL Cheatsheet on Topmate but the download page closed before I could save the file."
-                      : "Describe your query in detail. The more context you give, the faster we can help."
-                    }
-                    value={formData.message} onChange={handleChange} maxLength={MAX_CHARS}
-                    className={`form-textarea ${formErrors.message ? 'error' : ''}`}
-                  />
-                  <div className="flex items-start justify-between">
-                    <div>{formErrors.message && <p className="form-error-msg">{errIcon}{formErrors.message}</p>}</div>
-                    <p className={`char-counter ${charCount > MAX_CHARS * 0.9 ? (charCount >= MAX_CHARS ? 'over' : 'warn') : ''}`}>{charCount}/{MAX_CHARS}</p>
-                  </div>
-                </div>
-
-                <button type="submit" className="submit-btn" disabled={formStatus === 'sending'}>
-                  {formStatus === 'sending' ? (
-                    <><div className="spinner" />Sending...</>
-                  ) : (
-                    <>
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  {formStatus === 'error' && (
+                    <div className="form-error-banner">
+                      <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
-                      {isPurchase ? 'Submit Purchase Query' : 'Send Message'}
-                    </>
+                      <div>
+                        <p className="text-sm font-semibold text-red-700">Something went wrong</p>
+                        <p className="text-xs text-red-500 mt-0.5">Could not send your message. Please try again or email us at <a href={`mailto:${email}`} className="underline">{email}</a></p>
+                      </div>
+                      <button type="button" onClick={resetForm} className="ml-auto flex-shrink-0 text-red-400 hover:text-red-600 transition-colors">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                      </button>
+                    </div>
                   )}
-                </button>
 
-                <p className="text-xs text-gray-400 text-center mt-3">
-                  We will reply to <strong className="text-gray-500">{formData.from_email || 'your email'}</strong>{isPurchase ? ' within 6 hours.' : ' within 24 to 48 hours.'}
-                </p>
-              </form>
-            )}
-          </div>
-
-          <div className="section-divider" />
-
-          {/* What can we help with */}
-          <div className="fade-up d3">
-            <h2 className="text-lg font-bold text-gray-800 mb-1">What can we help you with?</h2>
-            <p className="text-sm text-gray-500 mb-5">Pick the category that best fits your question and we will get to it.</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {CONTACT_REASONS.map(({ icon, title, desc }) => (
-                <div key={title} className="reason-card">
-                  <div className="flex items-start gap-3">
-                    <div className="reason-icon">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d={icon} />
-                      </svg>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+                    <div>
+                      <label className="form-label" htmlFor="from_name">Your Name <span className="req">*</span></label>
+                      <input id="from_name" name="from_name" type="text" autoComplete="name" placeholder="e.g. Rahul Sharma" value={formData.from_name} onChange={handleChange} className={`form-input ${formErrors.from_name ? 'error' : ''}`} />
+                      {formErrors.from_name && <p className="form-error-msg">{errIcon}{formErrors.from_name}</p>}
                     </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-gray-800 text-sm">{title}</h3>
-                      <p className="text-xs text-gray-500 mt-1 leading-relaxed">{desc}</p>
+                    <div>
+                      <label className="form-label" htmlFor="from_email">Your Email <span className="req">*</span></label>
+                      <input id="from_email" name="from_email" type="email" autoComplete="email" placeholder="you@example.com" value={formData.from_email} onChange={handleChange} className={`form-input ${formErrors.from_email ? 'error' : ''}`} />
+                      {formErrors.from_email && <p className="form-error-msg">{errIcon}{formErrors.from_email}</p>}
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          <div className="section-divider" />
+                  <div className="mb-5">
+                    <label className="form-label" htmlFor="subject">Topic <span className="req">*</span></label>
+                    <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className={`form-select ${formErrors.subject ? 'error' : ''}`}>
+                      {SUBJECT_OPTIONS.map(opt => <option key={opt.value} value={opt.value} disabled={opt.value === ''}>{opt.label}</option>)}
+                    </select>
+                    {formErrors.subject && <p className="form-error-msg">{errIcon}{formErrors.subject}</p>}
+                  </div>
 
-          {/* FAQ */}
-          <div className="fade-up d4">
-            <h2 className="text-lg font-bold text-gray-800 mb-1">Frequently Asked Questions</h2>
-            <p className="text-sm text-gray-500 mb-5">Quick answers to the most common questions we receive.</p>
-            <div className="space-y-2.5">
-              {FAQS.map((faq, i) => (
-                <FaqItem
-                  key={i}
-                  faq={faq}
-                  isOpen={openFaq === i}
-                  onToggle={() => setOpenFaq(openFaq === i ? null : i)}
-                />
-              ))}
+                  {isPurchase && (
+                    <div className="mb-5 slide-down">
+                      <ResourcePicker value={formData.resource_title} onChange={setResource} error={formErrors.resource_title} onClearError={clearResourceError} />
+                      <input type="date" name="purchase_date" value={formData.purchase_date} max={new Date().toISOString().split('T')[0]} onChange={handleChange} className={`form-input mt-1.5 ${formErrors.purchase_date ? 'error' : ''}`} />
+                      {formErrors.purchase_date && <p className="form-error-msg">{errIcon}{formErrors.purchase_date}</p>}
+                    </div>
+                  )}
+
+                  <div className="mb-6">
+                    <label className="form-label" htmlFor="message">Message <span className="req">*</span></label>
+                    <textarea
+                      id="message" name="message" rows={5}
+                      placeholder={isPurchase
+                        ? "Describe your issue, for example: I purchased the SQL Cheatsheet on Topmate but the download page closed before I could save the file."
+                        : "Describe your query in detail. The more context you give, the faster we can help."
+                      }
+                      value={formData.message} onChange={handleChange} maxLength={MAX_CHARS}
+                      className={`form-textarea ${formErrors.message ? 'error' : ''}`}
+                    />
+                    <div className="flex items-start justify-between">
+                      <div>{formErrors.message && <p className="form-error-msg">{errIcon}{formErrors.message}</p>}</div>
+                      <p className={`char-counter ${charCount > MAX_CHARS * 0.9 ? (charCount >= MAX_CHARS ? 'over' : 'warn') : ''}`}>{charCount}/{MAX_CHARS}</p>
+                    </div>
+                  </div>
+
+                  <button type="submit" className="submit-btn" disabled={formStatus === 'sending'}>
+                    {formStatus === 'sending' ? (
+                      <><div className="spinner" />Sending...</>
+                    ) : (
+                      <>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                        {isPurchase ? 'Submit Purchase Query' : 'Send Message'}
+                      </>
+                    )}
+                  </button>
+
+                  <p className="text-xs text-gray-400 text-center mt-3">
+                    We will reply to <strong className="text-gray-500">{formData.from_email || 'your email'}</strong>{isPurchase ? ` within {businessRules.supportResponse.min}.` : ' within {businessRules.supportResponse.min} - {businessRules.supportResponse.max} hours.'}
+                  </p>
+
+                  {alternateEmail && (
+                    <p className="text-xs text-gray-400 text-center mt-1">
+                      Alternatively, reach us at <a href={`mailto:${alternateEmail}`} className="text-orange-500 hover:underline">{alternateEmail}</a>
+                    </p>
+                  )}
+                </form>
+              )}
             </div>
-          </div>
+
+            <div className="section-divider" />
+
+            {/* What can we help with */}
+            <div className="fade-up d3">
+              <h2 className="text-lg font-bold text-gray-800 mb-1">What can we help you with?</h2>
+              <p className="text-sm text-gray-500 mb-5">Pick the category that best fits your question and we will get to it.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {CONTACT_REASONS.map(({ icon, title, desc }) => (
+                  <div key={title} className="reason-card">
+                    <div className="flex items-start gap-3">
+                      <div className="reason-icon">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d={icon} />
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-semibold text-gray-800 text-sm">{title}</h3>
+                        <p className="text-xs text-gray-500 mt-1 leading-relaxed">{desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="section-divider" />
+
+            {/* FAQ */}
+            <div className="fade-up d4">
+              <h2 className="text-lg font-bold text-gray-800 mb-1">Frequently Asked Questions</h2>
+              <p className="text-sm text-gray-500 mb-5">Quick answers to the most common questions we receive.</p>
+              <div className="space-y-2.5">
+                {FAQS.map((faq, i) => (
+                  <FaqItem
+                    key={i}
+                    faq={faq}
+                    isOpen={openFaq === i}
+                    onToggle={() => setOpenFaq(openFaq === i ? null : i)}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
 
         </div>

@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import SectionHeading from '../legal/SectionHeading'
+import { metrics } from '../../config/metrics'
 
 const STATS = [
-	{ number: `${import.meta.env.VITE_MONTHLY_USERS}`, label: 'Monthly Active Users' },
-	{ number: '100+', label: 'Monthly Opportunities' },
-	{ number: `Top ${import.meta.env.VITE_TOPMATE_RANK}%`, label: 'Topmate Creator' },
+	{ number: `${metrics.monthlyUsers}`, label: 'Monthly Active Users' },
+	{ number: `${metrics.monthlyJobs}+`, label: 'Monthly Opportunities' },
+	{ number: `Top ${metrics.topmateRanking}%`, label: 'Topmate Creator' },
 	{ number: '100%', label: 'Verified Listings' },]
 
 function parse(raw) {
@@ -168,7 +169,7 @@ const Impact = () => {
 					<div className="divider-line absolute top-0 left-0 right-0 h-px bg-green-300/50" />
 					<div>
 						<p className="text-xl font-semi-bold tracking-tight">
-							Daily Commitment: {import.meta.env.VITE_FOUNDER_DAILY_HOURS}+ Hours Daily Dedicated to finding opportunities, creating content, and supporting users
+							Daily Commitment: {metrics.dedicatedHours}+ Hours Daily Dedicated to finding opportunities, creating content, and supporting users
 						</p>
 					</div>
 				</div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
+import { metrics } from '../config/metrics';
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID_MEETSONI;
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_SUBSCRIBE_US_MEETSONI;
@@ -8,8 +9,8 @@ const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_MEETSONI;
 const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL;
 const YOUTUBE_LINK = import.meta.env.VITE_YOUTUBE_LINK;
 const WHATSAPP_LINK = import.meta.env.VITE_WHATSAPP_LINK;
-const TOTAL_SUBS = import.meta.env.VITE_TOTAL_SUBS;
-const TOTAL_MEMBERS = import.meta.env.VITE_TOTAL_MEMBERS;
+const TOTAL_SUBS = metrics.totalSubs;
+const TOTAL_MEMBERS = metrics.totalMembers;
 
 const CATEGORIES = [
   'Software Developer', 'Java Developer', 'Python Developer', 'Frontend Developer',
@@ -72,7 +73,7 @@ const SOCIAL_CHANNELS = [
     ctaHover: '#fee2e2',
     label: 'YouTube',
     tag: 'Watch & Learn',
-    desc: 'Career tips, job walkthroughs, interview prep videos, and company-specific advice — all for free.',
+    desc: 'Career tips, job walkthroughs, interview prep videos, and company-specific advice',
     stat: TOTAL_SUBS,
     statLabel: 'Subscribers',
     cta: 'Subscribe on YouTube',

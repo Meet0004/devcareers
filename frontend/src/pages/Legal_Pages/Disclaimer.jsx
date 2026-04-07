@@ -119,7 +119,7 @@ export default function Disclaimer() {
 
           <h3>Access Issues and Support</h3>
           <p>
-            If you experience issues with your purchase including payment completed but resource not accessible, broken download links, or payment deducted but resource not received, please contact us at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> with your name, the email used during payment, and the resource name. We will send you the resource within six hours and maintain records of all successful transactions.
+            If you experience issues with your purchase including payment completed but resource not accessible, broken download links, or payment deducted but resource not received, please contact us at {RECIPIENT_EMAIL} with your name, the email used during payment, and the resource name. We will send you the resource within six hours and maintain records of all successful transactions.
           </p>
 
           <h3>Refund Policy</h3>
@@ -127,7 +127,7 @@ export default function Disclaimer() {
             Due to the instant digital nature of our products, all sales are generally final and non-refundable once access has been granted. Refunds may be considered in exceptional circumstances such as: a technical error resulting in double payment, inability to deliver the resource due to a fault on our end, or resource content significantly different from what was described.
           </p>
           <p>
-            Refund requests must be submitted within 48 hours of purchase to <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> with your transaction details. Approved refunds will be processed through Topmate within five to seven business days to your original payment method.
+            Refund requests must be submitted within 48 hours of purchase to {RECIPIENT_EMAIL} with your transaction details. Approved refunds will be processed through Topmate within five to seven business days to your original payment method.
           </p>
 
           <h2>Revenue Disclosure</h2>
@@ -140,7 +140,7 @@ export default function Disclaimer() {
             All original content on this platform including guides, templates, cheat sheets, newsletter content, platform design, code, and branding is the intellectual property of {FOUNDER_NAME} and {SITE_NAME}, protected under the Copyright Act, 1957 and other applicable Indian and international intellectual property laws.
           </p>
           <p>
-            If you believe any content on the platform infringes your copyright or other intellectual property rights, please contact us immediately at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> with a description of the copyrighted work, proof of ownership, and the URL of the allegedly infringing content. We will investigate in good faith and respond within seven business days.
+            If you believe any content on the platform infringes your copyright or other intellectual property rights, please contact us immediately at {RECIPIENT_EMAIL} with a description of the copyrighted work, proof of ownership, and the URL of the allegedly infringing content. We will investigate in good faith and respond within seven business days.
           </p>
 
           <h3>Purchased Resource Usage Rights</h3>
@@ -216,7 +216,7 @@ export default function Disclaimer() {
 
           <h2>Governing Law and Jurisdiction</h2>
           <p>
-            These terms shall be governed by and construed in accordance with the laws of India. Any disputes arising from these terms or use of the platform shall be subject to the exclusive jurisdiction of the courts located in Shimoga, Karnataka, India. We encourage all users to contact us at <a href={`mailto:${RECIPIENT_EMAIL}`}>{RECIPIENT_EMAIL}</a> before initiating any formal legal process, as we are committed to resolving disputes amicably.
+            These terms shall be governed by and construed in accordance with the laws of India. Any disputes arising from these terms or use of the platform shall be subject to the exclusive jurisdiction of the courts located in Shimoga, Karnataka, India. We encourage all users to contact us through our <a href="/contact-us">Contact page</a> before initiating any formal legal process, as we are committed to resolving disputes amicably.
           </p>
 
           <h2>Severability</h2>

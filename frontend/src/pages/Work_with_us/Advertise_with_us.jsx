@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import ContactBlock from '../../components/common/ContactBlock'
+import { siteData } from '../../config/siteData'
 
-const FOUNDER_NAME    = import.meta.env.VITE_FOUNDER_NAME     || 'Meet Soni'
-const FOUNDER_LOC     = import.meta.env.VITE_FOUNDER_LOCATION || 'Shimoga, Karnataka, India'
-const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL  || 'hello@devcareers.in'
-const SITE_NAME       = import.meta.env.VITE_SITE_NAME        || 'DevCareers'
+const FOUNDER_NAME    = siteData.founder.name
+const FOUNDER_LOC     = siteData.founder.location
+const RECIPIENT_EMAIL = import.meta.env.RECIPIENT_EMAIL
+const SITE_NAME       = import.meta.env.VITE_SITE_NAME
 
 const metrics = [
-  { num: '50K+',  label: 'Monthly reach'   },
-  { num: '4',     label: 'Platforms'        },
+  // { num: '50K+',  label: 'Monthly reach'   },
+  { num: `${siteData.founder.platforms}`,     label: 'Platforms'        },
   { num: 'India', label: 'Primary market'   },
 ]
 
@@ -120,10 +121,10 @@ export default function Advertise_with_us() {
             </div>
 
             {/* Metric chips */}
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 gap-4">
               {metrics.map((m) => (
                 <div key={m.label} className="border border-gray-200 rounded-lg p-3">
-                  <span className="block text-xl font-bold text-orange-500 leading-tight">{m.num}</span>
+                  <span className="block text-xl font-bold text-orange-500 leading-tight ">{m.num}</span>
                   <span className="block text-[11px] text-gray-900 mt-0.5">{m.label}</span>
                 </div>
               ))}

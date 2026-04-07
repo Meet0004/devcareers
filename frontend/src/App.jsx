@@ -13,7 +13,7 @@ import PageLoader from './pages/PageLoader'
 import Home from './pages/Home'
 const SubscribeUs = lazy(() => import('./pages/Subscribe_us'))
 const Resources = lazy(() => import('./pages/Resources'))
-const Packages = lazy(() => import('./components/resource/PackageResources'))
+// const Packages = lazy(() => import('./components/resource/PackageResources'))
 const Blogs = lazy(() => import('./pages/Blogs'))
 const BlogsDetailPage = lazy(() => import('./components/blog/BlogsDetailPage'))
 // Lazy — Resource & Company

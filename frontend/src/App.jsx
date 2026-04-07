@@ -104,7 +104,6 @@ const App = () => {
       <ErrorBoundary>
         <Suspense fallback={<PageLoader />}>
           <Routes>
-
             <Route path="/" element={<Home />} />
 
             <Route path="/company-details" element={<Companies_details />} />

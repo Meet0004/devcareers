@@ -31,9 +31,7 @@ const TableOfContents = ({ sections, activeId }) => {
   const [manuallyToggled, setManuallyToggled] = useState(false)
 
   useEffect(() => {
-    if (activeId && !manuallyToggled) {
-      setOpen(true)
-    }
+    if (activeId && !manuallyToggled) setOpen(true)
   }, [activeId, manuallyToggled])
 
   const handleToggle = () => {
@@ -45,22 +43,20 @@ const TableOfContents = ({ sections, activeId }) => {
     e.preventDefault()
     const el = document.getElementById(id)
     if (el) {
-      const offset = 100
-      const top = el.getBoundingClientRect().top + window.scrollY - offset
+      const top = el.getBoundingClientRect().top + window.scrollY - 100
       window.scrollTo({ top, behavior: 'smooth' })
     }
   }
 
   return (
-    <div className="bg-white/95 backdrop-blur-xl border border-orange-500/[0.14] rounded-2xl overflow-hidden mb-6">
+    <div className="bg-white/95 backdrop-blur-xl border border-orange-500/[0.14] rounded-2xl overflow-hidden mb-2">
       <button
         onClick={handleToggle}
-        className="w-full px-[18px] py-[14px] flex items-center justify-between bg-transparent border-none cursor-pointer font-['Playfair_Display',Georgia,serif] text-[13px] font-bold text-[#0a0a0a] tracking-[-0.01em]"
+        className="w-[500px] px-[18px] py-[10px] flex items-center justify-between bg-transparent border-none cursor-pointer font-['Playfair_Display',Georgia,serif] text-[13px] font-bold text-[#0a0a0a] tracking-[-0.01em]"
       >
         <span className="flex items-center gap-2">
           <svg width={14} height={14} fill="none" stroke="#f97316" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-              d="M4 6h16M4 10h16M4 14h10" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h10" />
           </svg>
           Table of Contents
         </span>
@@ -77,7 +73,7 @@ const TableOfContents = ({ sections, activeId }) => {
         className="overflow-hidden transition-[max-height] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
         style={{ maxHeight: open ? '600px' : '0px' }}
       >
-        <div className="border-t border-orange-500/10 py-2 pb-[10px]">
+        <div className="border-t max-w-[500px] border-orange-500/10 py-2 pb-[10px]">
           {sections.map(s => {
             const isActive = activeId === s.id
             return (
@@ -115,8 +111,8 @@ const TableOfContents = ({ sections, activeId }) => {
   )
 }
 
-// ─── Share Buttons ────────────────────────────────────────────────────────────
-const ShareButtons = ({ title }) => {
+// ─── Share + Subscribe ────────────────────────────────────────────────────────
+const ShareAndSubscribe = ({ title }) => {
   const url = encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')
   const text = encodeURIComponent(title)
   const [copied, setCopied] = useState(false)
@@ -127,89 +123,104 @@ const ShareButtons = ({ title }) => {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  const btns = [
+  const socials = [
     {
-      label: 'Twitter', color: '#000',
+      label: 'X',
+      color: '#000',
+      bg: 'rgba(0,0,0,0.06)',
+      bgHover: 'rgba(0,0,0,0.13)',
+      border: 'rgba(0,0,0,0.12)',
+      href: `https://twitter.com/intent/tweet?url=${url}&text=${text}`,
       icon: (
         <svg width={14} height={14} viewBox="0 0 24 24" fill="currentColor">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.735-8.848L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
         </svg>
       ),
-      href: `https://twitter.com/intent/tweet?url=${url}&text=${text}`,
     },
     {
-      label: 'LinkedIn', color: '#0a66c2',
+      label: 'LinkedIn',
+      color: '#0a66c2',
+      bg: 'rgba(10,102,194,0.08)',
+      bgHover: 'rgba(10,102,194,0.16)',
+      border: 'rgba(10,102,194,0.2)',
+      href: `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`,
       icon: (
         <svg width={14} height={14} viewBox="0 0 24 24" fill="currentColor">
           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
         </svg>
       ),
-      href: `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`,
     },
     {
-      label: 'WhatsApp', color: '#25d366',
+      label: 'WhatsApp',
+      color: '#25d366',
+      bg: 'rgba(37,211,102,0.08)',
+      bgHover: 'rgba(37,211,102,0.16)',
+      border: 'rgba(37,211,102,0.2)',
+      href: `https://wa.me/?text=${text}%20${url}`,
       icon: (
         <svg width={14} height={14} viewBox="0 0 24 24" fill="currentColor">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
           <path d="M12 0C5.373 0 0 5.373 0 12c0 2.144.565 4.155 1.55 5.887L.057 23.61a.75.75 0 00.926.93l5.808-1.522A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.67-.502-5.21-1.385l-.375-.214-3.878 1.017 1.002-3.762-.228-.378A9.977 9.977 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
         </svg>
       ),
-      href: `https://wa.me/?text=${text}%20${url}`,
     },
   ]
 
   return (
-    <div className="bg-white/90 backdrop-blur-xl border border-orange-500/[0.14] rounded-2xl p-4 px-[18px]">
-      <p className="text-[11px] font-bold text-gray-400 tracking-[0.08em] uppercase mt-0 mb-3">
-        Share this article
+    <div className="bg-white/90 backdrop-blur-xl border border-orange-500/[0.14] rounded-2xl p-4">
+      <p className="text-[10px] font-bold text-gray-400 tracking-[0.08em] uppercase mt-0 mb-[10px]">
+        Share
       </p>
-      <div className="flex flex-col gap-2">
-        {btns.map(b => (
+
+      <div className="flex gap-2 flex-wrap mb-[10px]">
+        {socials.map(s => (
           <a
-            key={b.label}
-            href={b.href}
+            key={s.label}
+            href={s.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-[10px] px-[14px] py-[9px] rounded-[10px] no-underline text-[12px] font-semibold transition-all duration-200"
+            title={`Share on ${s.label}`}
+            className="flex items-center justify-center rounded-[8px] no-underline transition-all duration-150"
             style={{
-              background: b.color + '0d',
-              border: `1px solid ${b.color}22`,
-              color: b.color,
+              width: 34, height: 34,
+              background: s.bg,
+              border: `0.5px solid ${s.border}`,
+              color: s.color,
             }}
-            onMouseEnter={e => {
-              e.currentTarget.style.background = b.color + '18'
-              e.currentTarget.style.transform = 'translateX(3px)'
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.background = b.color + '0d'
-              e.currentTarget.style.transform = 'none'
-            }}
+            onMouseEnter={e => e.currentTarget.style.background = s.bgHover}
+            onMouseLeave={e => e.currentTarget.style.background = s.bg}
           >
-            {b.icon} {b.label}
+            {s.icon}
           </a>
         ))}
+
         <button
           onClick={copy}
-          className="flex items-center gap-[10px] px-[14px] py-[9px] rounded-[10px] text-[12px] font-semibold cursor-pointer transition-all duration-200"
+          title="Copy link"
+          className="flex items-center justify-center rounded-[8px] cursor-pointer transition-all duration-150"
           style={{
-            background: copied ? 'rgba(34,197,94,0.08)' : 'rgba(107,114,128,0.06)',
-            border: `1px solid ${copied ? 'rgba(34,197,94,0.25)' : 'rgba(107,114,128,0.15)'}`,
+            width: 34, height: 34,
+            background: copied ? 'rgba(34,197,94,0.1)' : 'rgba(107,114,128,0.07)',
+            border: `0.5px solid ${copied ? 'rgba(34,197,94,0.3)' : 'rgba(107,114,128,0.18)'}`,
             color: copied ? '#22c55e' : '#6b7280',
           }}
         >
-          {copied ? (
-            <svg width={14} height={14} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-            </svg>
-          ) : (
-            <svg width={14} height={14} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-            </svg>
-          )}
-          {copied ? 'Copied!' : 'Copy link'}
+          {copied
+            ? <svg width={14} height={14} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+            : <svg width={14} height={14} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+          }
         </button>
       </div>
+
+      <a
+        href="/subscribe-us"
+        className="block text-center text-white text-[12px] font-semibold py-[9px] rounded-[8px] no-underline transition-opacity duration-150"
+        style={{ background: 'linear-gradient(135deg, #f97316, #ea580c)' }}
+        onMouseEnter={e => e.currentTarget.style.opacity = '0.88'}
+        onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+      >
+        Subscribe free →
+      </a>
     </div>
   )
 }
@@ -313,7 +324,7 @@ const SectionBlock = ({ section, index }) => {
   )
 }
 
-// ─── Related Blogs Card ───────────────────────────────────────────────────────
+// ─── Related Blog Card ────────────────────────────────────────────────────────
 const RelatedCard = ({ blog }) => {
   const [hovered, setHovered] = useState(false)
   return (
@@ -357,12 +368,9 @@ const BlogDetailPage = () => {
   const navigate = useNavigate()
   const blog = blogData.find(b => b.id === id)
   const [activeId, setActiveId] = useState('')
-  const [heroVisible, setHeroVisible] = useState(false)
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    const t = setTimeout(() => setHeroVisible(true), 60)
-    return () => clearTimeout(t)
   }, [id])
 
   useEffect(() => {
@@ -403,7 +411,7 @@ const BlogDetailPage = () => {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
         @keyframes orbFloat { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-18px) scale(1.03)} }
-        
+
         @media (max-width: 900px) {
           .detail-layout {
             grid-template-columns: 1fr !important;
@@ -412,17 +420,13 @@ const BlogDetailPage = () => {
           .sidebar-sticky {
             position: static !important;
             order: -1;
-            margin-bottom: 32px;
+            margin-bottom: 0px;
           }
         }
-        
+
         @media (max-width: 600px) {
-          .detail-layout { 
-            padding: 20px 16px 48px !important; 
-          }
-          .hero-title { 
-            font-size: 30px !important; 
-          }
+          .detail-layout { padding: 20px 16px 48px !important; }
+          .hero-title { font-size: 30px !important; }
         }
       `}</style>
 
@@ -430,15 +434,13 @@ const BlogDetailPage = () => {
 
       <div className="font-[system-ui,-apple-system,sans-serif] bg-[#fafafa] min-h-screen">
 
-        {/* ── Hero Section ── */}
+        {/* ── Hero ── */}
         <div className="bg-gradient-to-b from-white to-[#fafafa] border-b border-orange-500/10 px-6 pt-14 pb-10 sm:px-[220px]">
           <div className="max-w-[1200px] mx-auto">
+
             {/* Breadcrumb */}
             <div className="flex items-center gap-[6px] mb-5">
-              <Link
-                to="/blogs"
-                className="text-[12px] text-orange-500 no-underline font-semibold flex items-center gap-[5px]"
-              >
+              <Link to="/blogs" className="text-[12px] text-orange-500 no-underline font-semibold flex items-center gap-[5px]">
                 <svg width={13} height={13} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
                 </svg>
@@ -468,9 +470,7 @@ const BlogDetailPage = () => {
             </div>
 
             {/* Title */}
-            <h1
-              className="hero-title font-['Playfair_Display',Georgia,serif] text-[46px] font-[900] text-[#0a0a0a] mt-0 mb-4 leading-[1.12] tracking-[-0.03em] max-w-[780px]"
-            >
+            <h1 className="hero-title font-['Playfair_Display',Georgia,serif] text-[46px] font-[900] text-[#0a0a0a] mt-0 mb-4 leading-[1.12] tracking-[-0.03em] max-w-[780px]">
               {blog.title}
             </h1>
 
@@ -486,15 +486,10 @@ const BlogDetailPage = () => {
                   {blog.author.charAt(0)}
                 </div>
                 <div>
-                  <p className="m-0 text-[13px] font-bold text-[#111] leading-[1.2]">
-                    {blog.author}
-                  </p>
-                  <p className="m-0 text-[11px] text-gray-400 leading-[1.2]">
-                    {blog.date} · {blog.readTime}
-                  </p>
+                  <p className="m-0 text-[13px] font-bold text-[#111] leading-[1.2]">{blog.author}</p>
+                  <p className="m-0 text-[11px] text-gray-400 leading-[1.2]">{blog.date} · {blog.readTime}</p>
                 </div>
               </div>
-
               <div className="flex gap-[6px] flex-wrap">
                 {blog.tags.map(tag => (
                   <span key={tag} className="text-[10.5px] text-gray-400 font-medium bg-[#f9fafb] border border-[#ebebeb] px-[10px] py-[3px] rounded-full">
@@ -536,12 +531,11 @@ const BlogDetailPage = () => {
           className="detail-layout"
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 320px',
+            gridTemplateColumns: '1fr 220px',
             gap: '48px',
             maxWidth: '1200px',
             margin: '0 auto',
             padding: '40px 48px 80px',
-            position: 'relative',
           }}
         >
 
@@ -617,31 +611,13 @@ const BlogDetailPage = () => {
           {/* ── Sidebar ── */}
           <div
             className="sidebar-sticky"
-            style={{ position: 'sticky', top: '100px', alignSelf: 'start', height: 'auto' }}
+            style={{ position: 'sticky', top: '100px', alignSelf: 'start' }}
           >
             <TableOfContents sections={content.sections} activeId={activeId} />
-            <ShareButtons title={blog.title} />
-
-            <div className="mt-5 px-[18px] py-5 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-[0_8px_28px_rgba(249,115,22,0.30)] text-center">
-              <p className="text-[16px] font-[800] text-white font-['Playfair_Display',Georgia,serif] mt-0 mb-[6px] leading-[1.2]">
-                Get daily job updates
-              </p>
-              <p className="text-[11.5px] text-white/80 mt-0 mb-[14px] leading-[1.5]">
-                Fresh verified openings in your inbox every morning.
-              </p>
-              <a
-                href="/subscribe-us"
-                className="inline-block bg-white text-orange-500 text-[12.5px] font-bold px-[22px] py-[10px] rounded-full no-underline shadow-[0_4px_14px_rgba(0,0,0,0.12)] transition-transform duration-200"
-                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
-                onMouseLeave={e => e.currentTarget.style.transform = 'none'}
-              >
-                Subscribe Free →
-              </a>
-            </div>
+            <ShareAndSubscribe title={blog.title} />
           </div>
 
         </div>
-
       </div>
     </>
   )

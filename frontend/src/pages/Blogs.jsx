@@ -66,27 +66,27 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
 }
 
 // ─── Category Filter Pill ───────────────────────────────────────────────────
-const FilterPill = ({ label, active, onClick }) => {
-  const [hovered, setHovered] = useState(false)
-  return (
-    <button
-      onClick={onClick}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{
-        padding: '7px 18px', borderRadius: 100, fontSize: 12, fontWeight: 600,
-        fontFamily: 'system-ui, -apple-system, sans-serif',
-        cursor: 'pointer', border: 'none', transition: 'all 0.2s ease',
-        background: active ? '#f97316' : hovered ? 'rgba(249,115,22,0.10)' : 'rgba(249,115,22,0.06)',
-        color: active ? '#fff' : hovered ? '#f97316' : '#9ca3af',
-        boxShadow: active ? '0 4px 14px rgba(249,115,22,0.30)' : 'none',
-        transform: hovered && !active ? 'translateY(-1px)' : 'none',
-      }}
-    >
-      {label}
-    </button>
-  )
-}
+// const FilterPill = ({ label, active, onClick }) => {
+//   const [hovered, setHovered] = useState(false)
+//   return (
+//     <button
+//       onClick={onClick}
+//       onMouseEnter={() => setHovered(true)}
+//       onMouseLeave={() => setHovered(false)}
+//       style={{
+//         padding: '7px 18px', borderRadius: 100, fontSize: 12, fontWeight: 600,
+//         fontFamily: 'system-ui, -apple-system, sans-serif',
+//         cursor: 'pointer', border: 'none', transition: 'all 0.2s ease',
+//         background: active ? '#f97316' : hovered ? 'rgba(249,115,22,0.10)' : 'rgba(249,115,22,0.06)',
+//         color: active ? '#fff' : hovered ? '#f97316' : '#9ca3af',
+//         boxShadow: active ? '0 4px 14px rgba(249,115,22,0.30)' : 'none',
+//         transform: hovered && !active ? 'translateY(-1px)' : 'none',
+//       }}
+//     >
+//       {label}
+//     </button>
+//   )
+// }
 
 // ─── Vertical Blog Card ─────────────────────────────────────────────────────
 const BlogCard = ({ blog, index, visible }) => {
@@ -449,7 +449,7 @@ const Blogs = () => {
             transform: visible ? 'translateY(0)' : 'translateY(12px)',
             transition: 'all 0.6s cubic-bezier(0.22,1,0.36,1) 0.18s',
           }}>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+            {/* <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               {ALL_CATEGORIES.map(cat => (
                 <FilterPill
                   key={cat}
@@ -458,11 +458,11 @@ const Blogs = () => {
                   onClick={() => setActiveCategory(cat)}
                 />
               ))}
-            </div>
-            <span style={{ fontSize: 12, color: '#9ca3af', fontWeight: 500, whiteSpace: 'nowrap' }}>
+            </div> */}
+            {/* <span style={{ fontSize: 12, color: '#9ca3af', fontWeight: 500, whiteSpace: 'nowrap' }}>
               {filtered.length} article{filtered.length !== 1 ? 's' : ''}
               {activeCategory !== 'All' ? ` · ${activeCategory}` : ''}
-            </span>
+            </span> */}
           </div>
 
           {/* ── 3-Column Cards Grid ── */}

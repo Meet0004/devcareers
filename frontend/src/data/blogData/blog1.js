@@ -15,7 +15,7 @@ const blog1 = {
     'Answer ideas you can tweak to match your own story and background',
   ],
   tags: ['HR Interview', 'Fresher Jobs', 'Interview Tips'],
-  featured: true,
+  featured: false,
 
   content: {
     hook: {

@@ -2,8 +2,54 @@ import React, { useState, useEffect, useMemo } from 'react'
 import blogData from '../data/blogData'
 
 // ─── SearchBar ──────────────────────────────────────────────────────────────
+const PLACEHOLDERS = [
+  'Search blogs by topic or keyword...',
+  'Try "HR Interview"...',
+  'Try "Resume Tips"...',
+  'Try "Salary Negotiation"...',
+  'Try "Fresher Jobs"...',
+  'Try "Interview Prep"...',
+]
+
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
   const [focused, setFocused] = useState(false)
+  const [placeholderIndex, setPlaceholderIndex] = useState(0)
+  const [displayedText, setDisplayedText] = useState('')
+  const [isDeleting, setIsDeleting] = useState(false)
+  const [isPaused, setIsPaused] = useState(false)
+
+  useEffect(() => {
+    if (focused) return // stop animation when user is focused
+
+    const current = PLACEHOLDERS[placeholderIndex]
+
+    if (isPaused) {
+      const pause = setTimeout(() => setIsPaused(false), 1200)
+      return () => clearTimeout(pause)
+    }
+
+    if (!isDeleting && displayedText === current) {
+      setIsPaused(true)
+      setIsDeleting(true)
+      return
+    }
+
+    if (isDeleting && displayedText === '') {
+      setIsDeleting(false)
+      setPlaceholderIndex(i => (i + 1) % PLACEHOLDERS.length)
+      return
+    }
+
+    const speed = isDeleting ? 40 : 65
+    const timer = setTimeout(() => {
+      setDisplayedText(prev =>
+        isDeleting ? prev.slice(0, -1) : current.slice(0, prev.length + 1)
+      )
+    }, speed)
+
+    return () => clearTimeout(timer)
+  }, [focused, displayedText, isDeleting, isPaused, placeholderIndex])
+
   return (
     <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 32 }}>
       <div style={{
@@ -23,7 +69,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         </div>
         <input
           type="text"
-          placeholder="Search blogs by topic, category, or keyword..."
+          placeholder={focused ? 'Search blogs...' : displayedText}
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
           onFocus={() => setFocused(true)}
@@ -93,8 +139,10 @@ const BlogCard = ({ blog, index, visible }) => {
   const [hovered, setHovered] = useState(false)
 
   return (
+
     <a
       href={`/blogs/${blog.id}`}
+        className="blog-card"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -193,42 +241,45 @@ const BlogCard = ({ blog, index, visible }) => {
         </p>
 
         {/* Divider */}
-        <div style={{ height: 1, background: 'rgba(0,0,0,0.05)', marginBottom: 12 }} />
+        {/* What's covered — includes divider so both hide together */}
+<div className="card-covers">
+  {/* Divider */}
+  <div style={{ height: 1, background: 'rgba(0,0,0,0.05)', marginBottom: 12 }} />
+  
 
-        {/* What's covered label */}
-        <p style={{
-          fontSize: 9.5, fontWeight: 700, color: '#9ca3af',
-          letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 8px',
-        }}>
-          What's covered
-        </p>
+          <p style={{
+            fontSize: 9.5, fontWeight: 700, color: '#9ca3af',
+            letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 8px',
+          }}>
+            What's covered
+          </p>
 
-        {/* Cover points — vertical list, grows to fill card */}
-        <ul style={{
-          listStyle: 'none', padding: 0, margin: '0 0 16px',
-          display: 'flex', flexDirection: 'column', gap: 6,
-          flex: 1,
-        }}>
-          {blog.covers.map((point, i) => (
-            <li key={i} style={{
-              display: 'flex', alignItems: 'flex-start', gap: 8,
-              fontSize: 11.5, color: '#374151', lineHeight: 1.45,
-            }}>
-              <span style={{
-                width: 15, height: 15, borderRadius: '50%',
-                background: 'rgba(34,197,94,0.10)',
-                border: '1px solid rgba(34,197,94,0.28)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                flexShrink: 0, marginTop: 1,
+          <ul style={{
+            listStyle: 'none', padding: 0, margin: '0 0 16px',
+            display: 'flex', flexDirection: 'column', gap: 6,
+            flex: 1,
+          }}>
+            {blog.covers.map((point, i) => (
+              <li key={i} style={{
+                display: 'flex', alignItems: 'flex-start', gap: 8,
+                fontSize: 11.5, color: '#374151', lineHeight: 1.45,
               }}>
-                <svg width={7} height={7} fill="#22c55e" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
-              </span>
-              {point}
-            </li>
-          ))}
-        </ul>
+                <span style={{
+                  width: 15, height: 15, borderRadius: '50%',
+                  background: 'rgba(34,197,94,0.10)',
+                  border: '1px solid rgba(34,197,94,0.28)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  flexShrink: 0, marginTop: 1,
+                }}>
+                  <svg width={7} height={7} fill="#22c55e" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                {point}
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {/* Footer: tags + Read CTA */}
         <div style={{
@@ -324,7 +375,6 @@ const Blogs = () => {
       <style>{`
         @keyframes orbFloat    { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-20px) scale(1.04)} }
         @keyframes shimmerText { 0%{background-position:0% center} 100%{background-position:200% center} }
-        @keyframes pulseRing   { 0%{transform:scale(1);opacity:0.5} 100%{transform:scale(2.4);opacity:0} }
 
         .blogs-page * { box-sizing: border-box; }
 
@@ -335,20 +385,20 @@ const Blogs = () => {
           align-items: start;
         }
 
-        @media (max-width: 640px) {
-          .blogs-hero-title { font-size: 32px !important; }
-          .blogs-hero-sub   { font-size: 14px !important; }
-          .blogs-wrap       { padding: 36px 18px 60px !important; }
-          .blogs-grid       { grid-template-columns: 1fr !important; gap: 14px !important; }
-        }
+@media (max-width: 640px) {
+  .blogs-hero-title { font-size: 32px !important; }
+  .blogs-hero-sub   { font-size: 14px !important; }
+  .blogs-wrap       { padding: 36px 18px 60px !important; }
+  .blogs-grid       { grid-template-columns: 1fr !important; gap: 14px !important; }
+  .card-covers      { display: none !important; }
+  .blog-card        { min-height: unset !important; }  /* ✅ ADD THIS */
+}
+          
         @media (min-width: 641px) and (max-width: 1024px) {
           .blogs-hero-title { font-size: 44px !important; }
           .blogs-wrap       { padding: 48px 32px 72px !important; }
           .blogs-grid       { grid-template-columns: repeat(2, 1fr) !important; }
         }
-          @media (max-width: 640px) {
-  .card-covers { display: none !important; }
-}
       `}</style>
 
       <div className="blogs-page" style={{
@@ -375,7 +425,7 @@ const Blogs = () => {
         <div className="blogs-wrap" style={{
           maxWidth: 1440, margin: '0 auto',
           padding: '56px 64px 80px',
-          position: 'relative', zIndex: 5
+          position: 'relative', zIndex: 5,
         }}>
 
           {/* ── Hero Header ── */}
@@ -384,25 +434,8 @@ const Blogs = () => {
             opacity: visible ? 1 : 0,
             transform: visible ? 'translateY(0)' : 'translateY(20px)',
             transition: 'all 0.6s cubic-bezier(0.22,1,0.36,1)',
-            textAlign: 'center'
+            textAlign: 'center',
           }}>
-            {/* <div style={{
-              display: 'inline-flex', alignItems: 'center', gap: 7,
-              fontSize: 11, fontWeight: 700, letterSpacing: '0.08em',
-              textTransform: 'uppercase', color: '#f97316', marginBottom: 16,
-            }}>
-              <span style={{
-                width: 7, height: 7, background: '#22c55e', borderRadius: '50%',
-                position: 'relative', display: 'inline-block', flexShrink: 0,
-              }}>
-                <span style={{
-                  position: 'absolute', inset: -3, borderRadius: '50%',
-                  background: '#22c55e', animation: 'pulseRing 1.8s ease infinite',
-                }} />
-              </span>
-              Career Guides & Resources
-            </div> */}
-
             <h1 className="blogs-hero-title" style={{
               fontSize: 56, fontWeight: 700, color: '#0a0a0a',
               margin: '0 0 14px', lineHeight: 1.05, letterSpacing: '-0.03em',
@@ -420,12 +453,8 @@ const Blogs = () => {
             </h1>
 
             <p className="blogs-hero-sub" style={{
-              fontSize: 16,
-              color: '#6b7280',
-              lineHeight: 1.65,
-              maxWidth: 480,
-              margin: '0 auto',   // THIS centers the block
-              textAlign: 'center' // THIS centers the text inside
+              fontSize: 16, color: '#6b7280', lineHeight: 1.65,
+              maxWidth: 480, margin: '0 auto', textAlign: 'center',
             }}>
               In-depth guides, roadmaps, and tips crafted to help freshers land their first job faster.
             </p>
@@ -440,32 +469,7 @@ const Blogs = () => {
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
           </div>
 
-          {/* ── Filters + count row ── */}
-          <div style={{
-            display: 'flex', alignItems: 'center',
-            justifyContent: 'space-between', flexWrap: 'wrap',
-            gap: 12, marginBottom: 28,
-            opacity: visible ? 1 : 0,
-            transform: visible ? 'translateY(0)' : 'translateY(12px)',
-            transition: 'all 0.6s cubic-bezier(0.22,1,0.36,1) 0.18s',
-          }}>
-            {/* <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-              {ALL_CATEGORIES.map(cat => (
-                <FilterPill
-                  key={cat}
-                  label={cat}
-                  active={activeCategory === cat}
-                  onClick={() => setActiveCategory(cat)}
-                />
-              ))}
-            </div> */}
-            {/* <span style={{ fontSize: 12, color: '#9ca3af', fontWeight: 500, whiteSpace: 'nowrap' }}>
-              {filtered.length} article{filtered.length !== 1 ? 's' : ''}
-              {activeCategory !== 'All' ? ` · ${activeCategory}` : ''}
-            </span> */}
-          </div>
-
-          {/* ── 3-Column Cards Grid ── */}
+          {/* ── Cards Grid ── */}
           <div className="blogs-grid">
             {filtered.length > 0
               ? filtered.map((blog, i) => (

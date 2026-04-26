@@ -533,7 +533,7 @@ const BlogDetailPage = () => {
             display: 'grid',
             gridTemplateColumns: '1fr 220px',
             gap: '48px',
-            maxWidth: '1200px',
+            maxWidth: '1320px',
             margin: '0 auto',
             padding: '40px 48px 80px',
           }}

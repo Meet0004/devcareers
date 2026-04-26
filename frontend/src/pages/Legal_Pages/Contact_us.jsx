@@ -622,7 +622,7 @@ const Contact_Us = () => {
                   </button>
 
                   <p className="text-xs text-gray-400 text-center mt-3">
-                    We will reply to <strong className="text-gray-500">{formData.from_email || 'your email'}</strong>{isPurchase ? ` within {businessRules.supportResponse.min}.` : ' within {businessRules.supportResponse.min} - {businessRules.supportResponse.max} hours.'}
+                    We will reply to <strong className="text-gray-500">{formData.from_email || 'your email'}</strong>{isPurchase ? ` within ${businessRules.supportResponse.min}.` : ` within ${businessRules.supportResponse.min} - ${businessRules.supportResponse.max} hours.`}
                   </p>
 
                   {alternateEmail && (

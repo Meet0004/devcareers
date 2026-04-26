@@ -330,7 +330,7 @@ const Blogs = () => {
 
         .blogs-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 18px;
           align-items: start;
         }
@@ -346,6 +346,9 @@ const Blogs = () => {
           .blogs-wrap       { padding: 48px 32px 72px !important; }
           .blogs-grid       { grid-template-columns: repeat(2, 1fr) !important; }
         }
+          @media (max-width: 640px) {
+  .card-covers { display: none !important; }
+}
       `}</style>
 
       <div className="blogs-page" style={{
@@ -370,8 +373,8 @@ const Blogs = () => {
         }} />
 
         <div className="blogs-wrap" style={{
-          maxWidth: 1160, margin: '0 auto',
-          padding: '56px 48px 80px',
+          maxWidth: 1440, margin: '0 auto',
+          padding: '56px 64px 80px',
           position: 'relative', zIndex: 5
         }}>
 

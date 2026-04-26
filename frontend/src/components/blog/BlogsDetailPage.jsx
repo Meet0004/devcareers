@@ -2,6 +2,11 @@ import React, { useEffect, useState, useRef } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import blogData from '../../data/blogData'
 
+// ─── Fonts ────────────────────────────────────────────────────────────────────
+// Display/Headings : Fraunces (editorial, a bit literary — pairs perfectly with blog content)
+// Body             : Source Serif 4 (very readable, warm, not boring)
+// Accent/Labels    : DM Sans (clean, modern contrast to the serifs)
+
 // ─── Reading Progress Bar ────────────────────────────────────────────────────
 const ReadingProgress = () => {
   const [progress, setProgress] = useState(0)
@@ -52,7 +57,8 @@ const TableOfContents = ({ sections, activeId }) => {
     <div className="bg-white/95 backdrop-blur-xl border border-orange-500/[0.14] rounded-2xl overflow-hidden mb-2">
       <button
         onClick={handleToggle}
-        className="w-[500px] px-[18px] py-[10px] flex items-center justify-between bg-transparent border-none cursor-pointer font-['Playfair_Display',Georgia,serif] text-[13px] font-bold text-[#0a0a0a] tracking-[-0.01em]"
+        className="w-full px-[18px] py-[10px] flex items-center justify-between bg-transparent border-none cursor-pointer text-[13px] font-bold text-[#0a0a0a] tracking-[-0.01em]"
+        style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
       >
         <span className="flex items-center gap-2">
           <svg width={14} height={14} fill="none" stroke="#f97316" viewBox="0 0 24 24">
@@ -73,7 +79,7 @@ const TableOfContents = ({ sections, activeId }) => {
         className="overflow-hidden transition-[max-height] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
         style={{ maxHeight: open ? '600px' : '0px' }}
       >
-        <div className="border-t max-w-[500px] border-orange-500/10 py-2 pb-[10px]">
+        <div className="border-t border-orange-500/10 py-2 pb-[10px]">
           {sections.map(s => {
             const isActive = activeId === s.id
             return (
@@ -83,6 +89,7 @@ const TableOfContents = ({ sections, activeId }) => {
                 onClick={e => handleLinkClick(e, s.id)}
                 className="block px-[18px] py-[7px] text-[12px] no-underline transition-all duration-200 leading-[1.4]"
                 style={{
+                  fontFamily: "'verdana', system-ui, sans-serif",
                   color: isActive ? '#f97316' : '#6b7280',
                   fontWeight: isActive ? 700 : 400,
                   borderLeft: isActive ? '3px solid #f97316' : '3px solid transparent',
@@ -168,7 +175,10 @@ const ShareAndSubscribe = ({ title }) => {
 
   return (
     <div className="bg-white/90 backdrop-blur-xl border border-orange-500/[0.14] rounded-2xl p-4">
-      <p className="text-[10px] font-bold text-gray-400 tracking-[0.08em] uppercase mt-0 mb-[10px]">
+      <p
+        className="text-[10px] font-bold text-gray-400 tracking-[0.08em] uppercase mt-0 mb-[10px]"
+        style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
+      >
         Share
       </p>
 
@@ -181,12 +191,7 @@ const ShareAndSubscribe = ({ title }) => {
             rel="noopener noreferrer"
             title={`Share on ${s.label}`}
             className="flex items-center justify-center rounded-[8px] no-underline transition-all duration-150"
-            style={{
-              width: 34, height: 34,
-              background: s.bg,
-              border: `0.5px solid ${s.border}`,
-              color: s.color,
-            }}
+            style={{ width: 34, height: 34, background: s.bg, border: `0.5px solid ${s.border}`, color: s.color }}
             onMouseEnter={e => e.currentTarget.style.background = s.bgHover}
             onMouseLeave={e => e.currentTarget.style.background = s.bg}
           >
@@ -215,111 +220,12 @@ const ShareAndSubscribe = ({ title }) => {
       <a
         href="/subscribe-us"
         className="block text-center text-white text-[12px] font-semibold py-[9px] rounded-[8px] no-underline transition-opacity duration-150"
-        style={{ background: 'linear-gradient(135deg, #f97316, #ea580c)' }}
+        style={{ background: 'linear-gradient(135deg, #f97316, #ea580c)', fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
         onMouseEnter={e => e.currentTarget.style.opacity = '0.88'}
         onMouseLeave={e => e.currentTarget.style.opacity = '1'}
       >
         Subscribe free →
       </a>
-    </div>
-  )
-}
-
-// ─── Tip Box ──────────────────────────────────────────────────────────────────
-const TipBox = ({ label, text }) => (
-  <div className="my-6 bg-gradient-to-br from-orange-500/[0.07] to-orange-500/[0.03] border border-orange-500/[0.22] border-l-[4px] border-l-orange-500 rounded-r-[14px] px-5 py-4">
-    <p className="text-[10.5px] font-[800] text-orange-500 tracking-[0.10em] uppercase mt-0 mb-2 flex items-center gap-[6px]">
-      <svg width={12} height={12} viewBox="0 0 24 24" fill="#f97316">
-        <path d="M12 2a7 7 0 017 7c0 2.76-1.58 5.15-3.9 6.36L14 17H10l-.1-1.64C7.58 14.15 6 11.76 6 9a7 7 0 017-7zm2 18v1a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1h4z" />
-      </svg>
-      {label}
-    </p>
-    <p className="text-[13.5px] text-gray-700 leading-[1.7] m-0 italic font-['Playfair_Display',Georgia,serif]">
-      {text}
-    </p>
-  </div>
-)
-
-// ─── Quick-Fire Table ─────────────────────────────────────────────────────────
-const QuickFireTable = ({ items }) => (
-  <div className="my-6 overflow-x-auto">
-    <table className="w-full border-separate border-spacing-0 rounded-[14px] overflow-hidden border border-orange-500/[0.14] text-[13px]">
-      <thead>
-        <tr className="bg-gradient-to-r from-orange-500/10 to-orange-500/5">
-          <th className="px-[18px] py-3 text-left font-['Playfair_Display',Georgia,serif] text-[11.5px] font-bold text-orange-500 tracking-[0.05em] border-b border-orange-500/[0.12] w-[38%]">
-            Question
-          </th>
-          <th className="px-[18px] py-3 text-left font-['Playfair_Display',Georgia,serif] text-[11.5px] font-bold text-orange-500 tracking-[0.05em] border-b border-orange-500/[0.12]">
-            One-Line Answer
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {items.map((item, i) => (
-          <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : 'rgba(249,115,22,0.02)' }}>
-            <td
-              className="px-[18px] py-3 text-[#111] font-semibold leading-[1.4] align-top"
-              style={{ borderBottom: i < items.length - 1 ? '1px solid rgba(0,0,0,0.04)' : 'none' }}
-            >
-              {item.question}
-            </td>
-            <td
-              className="px-[18px] py-3 text-gray-600 leading-[1.55] align-top"
-              style={{ borderBottom: i < items.length - 1 ? '1px solid rgba(0,0,0,0.04)' : 'none' }}
-            >
-              {item.answer}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-)
-
-// ─── Section Block ────────────────────────────────────────────────────────────
-const SectionBlock = ({ section, index }) => {
-  const ref = useRef(null)
-  const [visible, setVisible] = useState(false)
-
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setVisible(true); obs.disconnect() } },
-      { threshold: 0.08 }
-    )
-    if (ref.current) obs.observe(ref.current)
-    return () => obs.disconnect()
-  }, [])
-
-  return (
-    <div
-      ref={ref}
-      id={section.id}
-      className="mb-[52px] transition-all duration-[550ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? 'translateY(0)' : 'translateY(24px)',
-        transitionDelay: `${Math.min(index * 40, 200)}ms`,
-      }}
-    >
-      <div className="mb-4">
-        <h2 className="text-[24px] font-['Playfair_Display',Georgia,serif] font-[800] text-[#0a0a0a] mt-0 mb-[6px] leading-[1.2] tracking-[-0.02em]">
-          {section.heading}
-        </h2>
-        {section.subheading && (
-          <p className="text-[14px] text-orange-500 font-semibold m-0 tracking-[-0.01em]">
-            {section.subheading}
-          </p>
-        )}
-      </div>
-
-      {section.paragraphs && section.paragraphs.map((p, i) => (
-        <p key={i} className="text-[16px] text-gray-700 leading-[1.8] mb-[14px] font-['Lora',Georgia,serif]">
-          {p}
-        </p>
-      ))}
-
-      {section.tip && <TipBox label={section.tip.label} text={section.tip.text} />}
-      {section.quickfire && <QuickFireTable items={section.quickfire} />}
     </div>
   )
 }
@@ -342,6 +248,7 @@ const RelatedCard = ({ blog }) => {
       <span
         className="inline-block text-[9.5px] font-bold px-[9px] py-[3px] rounded-full tracking-[0.05em] mb-2"
         style={{
+          fontFamily: "'Nunito Sans', system-ui, sans-serif",
           background: blog.categoryColor + '18',
           border: `1px solid ${blog.categoryColor}30`,
           color: blog.categoryColor,
@@ -350,52 +257,305 @@ const RelatedCard = ({ blog }) => {
         {blog.category}
       </span>
       <p
-        className="text-[14px] font-bold mt-0 mb-[6px] leading-[1.35] font-['Playfair_Display',Georgia,serif] transition-colors duration-200"
-        style={{ color: hovered ? '#ea580c' : '#0a0a0a' }}
+        className="text-[14px] font-bold mt-0 mb-[6px] leading-[1.35] transition-colors duration-200"
+        style={{
+          fontFamily: "'Instrument Serif', Georgia, serif",
+          color: hovered ? '#ea580c' : '#0a0a0a',
+        }}
       >
         {blog.title}
       </p>
-      <p className="text-[11.5px] text-gray-400 m-0 leading-[1.5]">
+      <p
+        className="text-[11.5px] text-gray-400 m-0 leading-[1.5]"
+        style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
+      >
         {blog.readTime}
       </p>
     </Link>
   )
 }
 
-// ─── MAIN PAGE ────────────────────────────────────────────────────────────────
+// ════════════════════════════════════════════════════════
+// TEMPLATE 1: Q&A
+// ════════════════════════════════════════════════════════
+
+// Answer box — clean left-border, no heavy header bar
+const AnswerBox = ({ label, text }) => (
+  <div
+    className="relative mt-8 mb-5 px-5 pt-5 pb-4 rounded-[12px]"
+    style={{ border: '1.5px solid #f5a86e' }}
+  >
+    <span
+      className="absolute text-[10px] font-[800] tracking-[0.08em] uppercase px-[8px]"
+      style={{
+        top: -10,
+        left: 14,
+        fontFamily: "'Nunito Sans', system-ui, sans-serif",
+        background: '#fafafa',
+        color: '#e07020',
+      }}
+    >
+      {label}
+    </span>
+    <p
+      className="text-[15px] text-gray-700 leading-[1.75] m-0"
+      style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif", fontStyle: 'italic', fontWeight: 400 }}
+    >
+      {text}
+    </p>
+  </div>
+)
+
+// Quick-Fire Table
+const QuickFireTable = ({ items }) => (
+  <div className="my-6 overflow-x-auto">
+    <table className="w-full border-separate border-spacing-0 rounded-[14px] overflow-hidden text-[13px]" style={{ border: '1.5px solid rgba(249,115,22,0.14)' }}>
+      <thead>
+        <tr style={{ background: 'linear-gradient(90deg, rgba(249,115,22,0.08), rgba(249,115,22,0.04))' }}>
+          <th
+            className="px-[18px] py-3 text-left text-[11px] font-bold text-orange-500  tracking-[-0.025em] w-[42%]"
+            style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif", borderBottom: '1px solid rgba(249,115,22,0.12)' }}
+          >
+            Question
+          </th>
+          <th
+            className="px-[18px] py-3 text-left text-[11px] font-bold text-orange-500 tracking-[0.05em]"
+            style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif", borderBottom: '1px solid rgba(249,115,22,0.12)' }}
+          >
+            One-Line Answer
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {items.map((item, i) => (
+          <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : 'rgba(249,115,22,0.015)' }}>
+            <td
+              className="px-[18px] py-3 text-[#111] font-semibold leading-[1.4] align-top"
+              style={{
+                fontFamily: "'Nunito Sans', system-ui, sans-serif",
+                fontSize: 13,
+                borderBottom: i < items.length - 1 ? '1px solid rgba(0,0,0,0.04)' : 'none',
+              }}
+            >
+              {item.question}
+            </td>
+            <td
+              className="px-[18px] py-3 text-gray-600 leading-[1.55] align-top"
+              style={{
+                fontFamily: "'Nunito Sans', system-ui, sans-serif",
+                fontSize: 13,
+                borderBottom: i < items.length - 1 ? '1px solid rgba(0,0,0,0.04)' : 'none',
+              }}
+            >
+              {item.answer}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)
+
+// QA Section Block
+const QASectionBlock = ({ section, index }) => {
+  const ref = useRef(null)
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setVisible(true); obs.disconnect() } },
+      { threshold: 0.08 }
+    )
+    if (ref.current) obs.observe(ref.current)
+    return () => obs.disconnect()
+  }, [])
+
+  return (
+    <div
+      ref={ref}
+      id={section.id}
+      className="mb-[44px] transition-all duration-[550ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0)' : 'translateY(20px)',
+        transitionDelay: `${Math.min(index * 40, 200)}ms`,
+      }}
+    >
+      {/* Q marker + heading */}
+      <div className="mb-3">
+        {section.question && (
+          <span
+            className="text-[11px] font-[800] text-orange-400 tracking-[0.08em] uppercase block mb-[5px]"
+            style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
+          >
+            {section.question}
+          </span>
+        )}
+        <h2
+          className="text-[21px] font-[800] text-[#0a0a0a] mt-0 mb-0  tracking-[-0.025em]"
+          style={{ fontFamily: "'verdana', Georgia, serif" }}
+        >
+          {section.heading}
+        </h2>
+        {section.subheading && (
+          <p
+            className="text-[13px] text-gray-400 font-[600] mt-[5px] mb-0 leading-[1.4]  tracking-[-0.025em]"
+            style={{ fontFamily: "'verdana', system-ui, sans-serif" }}
+          >
+            {section.subheading}
+          </p>
+        )}
+      </div>
+
+      {/* Paragraphs */}
+      {section.paragraphs && section.paragraphs.map((p, i) => (
+        <p
+          key={i}
+          className="text-[15.5px] text-gray-600 leading-[1.82] mb-[10px]"
+          style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
+        >
+          {p}
+        </p>
+      ))}
+
+      {/* Answer box */}
+      {section.answer && <AnswerBox label={section.answer.label} text={section.answer.text} />}
+
+      {/* Quick fire */}
+      {section.quickfire && <QuickFireTable items={section.quickfire} />}
+    </div>
+  )
+}
+
+// ════════════════════════════════════════════════════════
+// TEMPLATE 2: ARTICLE (Subtitle + Paragraph)
+// ════════════════════════════════════════════════════════
+
+const ArticleSectionBlock = ({ section, index }) => {
+  const ref = useRef(null)
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setVisible(true); obs.disconnect() } },
+      { threshold: 0.06 }
+    )
+    if (ref.current) obs.observe(ref.current)
+    return () => obs.disconnect()
+  }, [])
+
+  return (
+    <div
+      ref={ref}
+      id={section.id}
+      className="mb-[52px] transition-all duration-[550ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0)' : 'translateY(22px)',
+        transitionDelay: `${Math.min(index * 40, 200)}ms`,
+      }}
+    >
+      {/* Section number line */}
+      <div className="flex items-center gap-3 mb-4">
+        <span
+          className="text-[11px] font-bold text-orange-400  tracking-[-0.025em] uppercase"
+          style={{ fontFamily: "'verdana', system-ui, sans-serif" }}
+        >
+          0{index + 1}
+        </span>
+        <div className="h-px flex-1 bg-gradient-to-r from-orange-500/20 to-transparent" />
+      </div>
+
+      {/* Heading */}
+      <h2
+        className="text-[26px] font-[800] text-[#0a0a0a] mt-0 mb-2 leading-[1.18] tracking-[-0.025em]"
+        style={{ fontFamily: "'verdana', Georgia, serif" }}
+      >
+        {section.heading}
+      </h2>
+
+      {/* Subheading */}
+      {section.subheading && (
+        <p
+          className="text-[14px] font-[600] text-gray-400 mt-0 mb-5 leading-[1.45] tracking-[-0.025em]"
+          style={{ fontFamily: "'verdana', system-ui, sans-serif" }}
+        >
+          {section.subheading}
+        </p>
+      )}
+
+      {/* Paragraphs */}
+      {section.paragraphs && section.paragraphs.map((p, i) => (
+        <p
+          key={i}
+          className="text-[16px] text-gray-700 leading-[1.85] mb-[10px]"
+          style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
+        >
+          {p}
+        </p>
+      ))}
+    </div>
+  )
+}
+
+// ════════════════════════════════════════════════════════
+// SHARED: Hook block
+// ════════════════════════════════════════════════════════
+const HookBlock = ({ hook }) => (
+  <div className="mb-10 px-7 py-6 bg-white border border-orange-500/[0.10] rounded-[18px]  tracking-[-0.025em]">
+    {hook.paragraphs.map((p, i) => (
+      <p
+        key={i}
+        className="text-[16.5px] text-gray-700 leading-[1.82]"
+        style={{
+          fontFamily: "'verdana', system-ui, sans-serif",
+          margin: i < hook.paragraphs.length - 1 ? '0 0 12px' : '0 0 18px',
+        }}
+      >
+        {p}
+      </p>
+    ))}
+    {hook.closingQuestion && (
+      <p
+        className="text-[16px] text-orange-500 font-bold m-0  tracking-[-0.025em]"
+        style={{ fontFamily: "'verdana', Georgia, serif", fontStyle: 'italic' }}
+      >
+        {hook.closingQuestion}
+      </p>
+    )}
+  </div>
+)
+
+// ════════════════════════════════════════════════════════
+// MAIN PAGE
+// ════════════════════════════════════════════════════════
 const BlogDetailPage = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const blog = blogData.find(b => b.id === id)
   const [activeId, setActiveId] = useState('')
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [id])
+  useEffect(() => { window.scrollTo(0, 0) }, [id])
 
   useEffect(() => {
     if (!blog) return
     const ids = blog.content.sections.map(s => s.id)
     const obs = new IntersectionObserver(
-      entries => {
-        entries.forEach(e => { if (e.isIntersecting) setActiveId(e.target.id) })
-      },
+      entries => { entries.forEach(e => { if (e.isIntersecting) setActiveId(e.target.id) }) },
       { rootMargin: '-20% 0px -65% 0px' }
     )
-    ids.forEach(sid => {
-      const el = document.getElementById(sid)
-      if (el) obs.observe(el)
-    })
+    ids.forEach(sid => { const el = document.getElementById(sid); if (el) obs.observe(el) })
     return () => obs.disconnect()
   }, [blog, id])
 
   if (!blog) {
     return (
-      <div className="min-h-screen flex items-center justify-center font-['Playfair_Display',Georgia,serif] flex-col gap-4">
-        <p className="text-[20px] text-gray-700">Article not found.</p>
+      <div className="min-h-screen flex items-center justify-center flex-col gap-4">
+        <p className="text-[20px] text-gray-700" style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>Article not found.</p>
         <button
           onClick={() => navigate('/blogs')}
           className="px-[22px] py-[10px] rounded-full bg-orange-500 text-white border-none cursor-pointer text-[14px] font-semibold"
+          style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
         >
           ← Back to Blogs
         </button>
@@ -403,13 +563,16 @@ const BlogDetailPage = () => {
     )
   }
 
-  const { content } = blog
+  const { content, template } = blog
   const related = blogData.filter(b => b.id !== blog.id && b.category === blog.category).slice(0, 3)
+
+  // Pick section component based on template
+  const SectionBlock = template === 'article' ? ArticleSectionBlock : QASectionBlock
 
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
         @keyframes orbFloat { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-18px) scale(1.03)} }
 
         @media (max-width: 900px) {
@@ -423,7 +586,6 @@ const BlogDetailPage = () => {
             margin-bottom: 0px;
           }
         }
-
         @media (max-width: 600px) {
           .detail-layout { padding: 20px 16px 48px !important; }
           .hero-title { font-size: 30px !important; }
@@ -432,7 +594,7 @@ const BlogDetailPage = () => {
 
       <ReadingProgress />
 
-      <div className="font-[system-ui,-apple-system,sans-serif] bg-[#fafafa] min-h-screen">
+      <div style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif", fontWeight: 400 }} className="bg-[#fafafa] min-h-screen">
 
         {/* ── Hero ── */}
         <div className="bg-gradient-to-b from-white to-[#fafafa] border-b border-orange-500/10 px-6 pt-14 pb-10 sm:px-[220px]">
@@ -450,15 +612,11 @@ const BlogDetailPage = () => {
               <span className="text-[12px] text-gray-400">{blog.category}</span>
             </div>
 
-            {/* Category + Featured */}
+            {/* Category + Featured + Template badge */}
             <div className="flex gap-2 mb-[18px] flex-wrap items-center">
               <span
                 className="text-[11px] font-bold px-[13px] py-1 rounded-full"
-                style={{
-                  background: blog.categoryColor + '18',
-                  border: `1px solid ${blog.categoryColor}35`,
-                  color: blog.categoryColor,
-                }}
+                style={{ background: blog.categoryColor + '18', border: `1px solid ${blog.categoryColor}35`, color: blog.categoryColor }}
               >
                 {blog.category}
               </span>
@@ -467,22 +625,34 @@ const BlogDetailPage = () => {
                   ★ Featured
                 </span>
               )}
+              {/* Template indicator — subtle, for your reference */}
+              <span className="bg-gray-100 text-gray-400 text-[10px] font-bold px-[10px] py-1 rounded-full tracking-[0.05em] uppercase">
+                {template === 'qa' ? 'Q&A' : 'Guide'}
+              </span>
             </div>
 
             {/* Title */}
-            <h1 className="hero-title font-['Playfair_Display',Georgia,serif] text-[46px] font-[900] text-[#0a0a0a] mt-0 mb-4 leading-[1.12] tracking-[-0.03em] max-w-[780px]">
+            <h1
+              className="hero-title text-[44px] font-[900] text-[#0a0a0a] mt-0 mb-4 leading-[1.1] tracking-[-0.025em]"
+              style={{ fontFamily: "'verdana', Georgia, serif" }}
+            >
               {blog.title}
             </h1>
 
             {/* Overview */}
-            <p className="text-[17px] text-gray-500 leading-[1.7] mt-0 mb-6 font-['Lora',Georgia,serif] italic max-w-[780px]">
+            <p
+              className="text-[17px] text-gray-500 leading-[1.72] mt-0 mb-6 italic max-w-[780px]  tracking-[-0.025em]"
+              style={{ fontFamily: "'Nunito Sans', system-ui, sans-serif" }}
+            >
               {blog.overview}
             </p>
 
             {/* Meta row */}
             <div className="flex items-center flex-wrap gap-5">
               <div className="flex items-center gap-[10px]">
-                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-[14px] font-[800] font-['Playfair_Display',Georgia,serif] shadow-[0_4px_12px_rgba(249,115,22,0.30)]">
+                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-[14px] font-[800] shadow-[0_4px_12px_rgba(249,115,22,0.30)]"
+                  style={{ fontFamily: "'verdana', Georgia, serif" }}
+                >
                   {blog.author.charAt(0)}
                 </div>
                 <div>
@@ -501,7 +671,9 @@ const BlogDetailPage = () => {
 
             {/* What you'll learn */}
             <div className="mt-7 px-5 py-[18px] bg-gradient-to-br from-orange-500/[0.06] to-orange-500/[0.02] border border-orange-500/[0.14] rounded-[14px]">
-              <p className="text-[10.5px] font-[800] text-orange-500 tracking-[0.09em] uppercase mt-0 mb-3 flex items-center gap-[6px]">
+              <p
+                className="text-[10.5px] font-[800] text-orange-500 tracking-[0.09em] uppercase mt-0 mb-3 flex items-center gap-[6px]"
+              >
                 <svg width={12} height={12} viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth={2.5}>
                   <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
                 </svg>
@@ -512,7 +684,9 @@ const BlogDetailPage = () => {
                 style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))' }}
               >
                 {blog.covers.map((c, i) => (
-                  <li key={i} className="flex items-start gap-[9px] text-[13.5px] text-gray-700 leading-[1.5]">
+                  <li key={i} className="flex items-start gap-[9px] text-[13.5px] text-gray-700 leading-[1.5]"
+                    style={{ fontFamily: "'verdana', system-ui, sans-serif" }}
+                  >
                     <span className="w-[18px] h-[18px] rounded-full bg-green-500/10 border border-green-500/30 flex items-center justify-center shrink-0 mt-[2px]">
                       <svg width={8} height={8} fill="#22c55e" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -531,45 +705,19 @@ const BlogDetailPage = () => {
           className="detail-layout"
           style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 220px',
+            gridTemplateColumns: '1fr 260px',
             gap: '48px',
             maxWidth: '1320px',
             margin: '0 auto',
             padding: '40px 48px 80px',
           }}
         >
-
           {/* ── Main Content ── */}
           <main>
-            {content.hook && (
-              <div className="mb-11 px-7 py-6 bg-white border border-orange-500/10 rounded-[18px]">
-                {content.hook.paragraphs.map((p, i) => (
-                  <p
-                    key={i}
-                    className="text-[17px] text-gray-700 leading-[1.8] font-['Lora',Georgia,serif]"
-                    style={{ margin: i < content.hook.paragraphs.length - 1 ? '0 0 14px' : '0 0 18px' }}
-                  >
-                    {p}
-                  </p>
-                ))}
-                {content.hook.closingQuestion && (
-                  <p className="text-[17px] text-orange-500 font-bold font-['Playfair_Display',Georgia,serif] m-0 italic">
-                    {content.hook.closingQuestion}
-                  </p>
-                )}
-              </div>
-            )}
+            {/* Hook */}
+            {content.hook && <HookBlock hook={content.hook} />}
 
-            {content.promise && (
-              <div className="mb-11">
-                {content.promise.paragraphs.map((p, i) => (
-                  <p key={i} className="text-[16px] text-gray-500 leading-[1.75] mb-3 font-['Lora',Georgia,serif] italic">
-                    {p}
-                  </p>
-                ))}
-              </div>
-            )}
-
+            {/* Sections — renders QA or Article blocks */}
             {content.sections.map((section, i) => (
               <React.Fragment key={section.id}>
                 <SectionBlock section={section} index={i} />
@@ -578,27 +726,42 @@ const BlogDetailPage = () => {
 
             <div className="h-px bg-gradient-to-r from-transparent via-orange-500/20 to-transparent my-2 mb-10" />
 
+            {/* Conclusion */}
             {content.conclusion && (
               <div className="px-8 py-7 bg-gradient-to-br from-orange-500/[0.06] to-orange-500/[0.02] border border-orange-500/[0.15] rounded-[18px] mb-10">
-                <h2 className="font-['Playfair_Display',Georgia,serif] text-[22px] font-[800] text-[#0a0a0a] mt-0 mb-4 tracking-[-0.02em]">
+                <h2
+                  className="text-[22px] font-[800] text-[#0a0a0a] mt-0 mb-4 tracking-[-0.025em]"
+                  style={{ fontFamily: "'verdana', Georgia, serif" }}
+                >
                   {content.conclusion.heading}
                 </h2>
                 {content.conclusion.paragraphs.map((p, i) => (
-                  <p key={i} className="text-[15.5px] text-gray-700 leading-[1.8] mb-3 font-['Lora',Georgia,serif]">
+                  <p
+                    key={i}
+                    className="text-[15.5px] text-gray-700 leading-[1.82] mb-3  tracking-[-0.025em]"
+                    style={{ fontFamily: "'verdana', system-ui, sans-serif" }}
+                  >
                     {p}
                   </p>
                 ))}
                 {content.conclusion.callToAction && (
-                  <p className="text-[14px] text-orange-500 font-bold mt-5 mb-0 px-[18px] py-[14px] bg-white border border-orange-500/20 rounded-[10px]">
+                  <p
+                    className="text-[14px] text-orange-500 font-bold mt-5 mb-0 px-[18px] py-[14px] bg-white border border-orange-500/20 rounded-[10px]  tracking-[-0.025em]"
+                    style={{ fontFamily: "'verdana', system-ui, sans-serif" }}
+                  >
                     💡 {content.conclusion.callToAction}
                   </p>
                 )}
               </div>
             )}
 
+            {/* Related */}
             {related.length > 0 && (
               <div>
-                <h3 className="font-['Playfair_Display',Georgia,serif] text-[20px] font-[800] text-[#0a0a0a] mt-0 mb-4 tracking-[-0.02em]">
+                <h3
+                  className="text-[20px] font-[800] text-[#0a0a0a] mt-0 mb-4 tracking-[-0.025em]"
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                >
                   Related Articles
                 </h3>
                 <div className="flex flex-col gap-3">
@@ -609,14 +772,10 @@ const BlogDetailPage = () => {
           </main>
 
           {/* ── Sidebar ── */}
-          <div
-            className="sidebar-sticky"
-            style={{ position: 'sticky', top: '100px', alignSelf: 'start' }}
-          >
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '100px', alignSelf: 'start' }}>
             <TableOfContents sections={content.sections} activeId={activeId} />
             <ShareAndSubscribe title={blog.title} />
           </div>
-
         </div>
       </div>
     </>

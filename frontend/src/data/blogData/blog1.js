@@ -1,5 +1,6 @@
-const hrInterviewBlog = {
+const blog1 = {
   id: 'hr-interview-questions-that-actually-get-you-hired',
+  template: 'qa', // ← tells BlogDetailPage which template to render
   title: 'HR Interview Questions That Actually Get You Hired',
   category: 'Interview Prep',
   categoryColor: '#10b981',
@@ -7,241 +8,257 @@ const hrInterviewBlog = {
   date: 'Mar 30, 2026',
   author: 'Meet Soni',
   overview:
-    'A lot of freshers don’t lose HR rounds because they lack skills. They lose because they don’t know how to answer simple questions properly. This guide walks you through the most common HR questions and how to answer them in a way that actually makes sense.',
+    "A lot of freshers do fine in technical rounds and still lose the offer in HR. Not because they are bad, but because they do not know how to talk about themselves in a clear and simple way. This guide walks you through the most common HR questions and shows you how to answer them in a way that sounds natural and honest, not like a memorised script",
   covers: [
-    'How to answer "Tell me about yourself" in a simple, natural way',
-    'Handling salary, weakness, and tricky questions without overthinking',
-    'Practical answer ideas you can adjust based on your own experience',
+    'How to answer "Tell me about yourself" without freezing',
+    'How to handle salary, weakness and other tricky questions calmly',
+    'Answer ideas you can tweak to match your own story and background',
   ],
   tags: ['HR Interview', 'Fresher Jobs', 'Interview Tips'],
   featured: true,
 
   content: {
-
     hook: {
-      heading: null,
       paragraphs: [
-        "You spend days preparing. You go through your resume again and again. You even plan what you’ll wear.",
-        "Then the interview starts, and the first question is — “Tell me about yourself.”",
-        "And suddenly, everything you prepared disappears.",
-        "This happens to a lot of people. It’s not because you don’t know things. It’s because you didn’t prepare the *right way*.",
-        "Let’s fix that properly.",
+        "You spend days preparing. You go through your resume again and again. You even plan what you will wear.",
+        'Then the interview starts, and the first question is: "Tell me about yourself."',
+        'And suddenly, everything you prepared disappears.',
+        "This happens to a lot of people. It is not because you do not know anything. It is because you did not prepare your answers in the right way.",
       ],
-      closingQuestion: "Let’s make sure the next time you sit for an HR round, you don’t feel stuck on basic questions.",
+      closingQuestion:
+        "Let us make sure that the next time you sit for an HR round, you feel like you know what to say for the basic questions.",
     },
 
-    promise: {
-      heading: null,
-      paragraphs: [
-        "This isn’t about memorising answers. It’s about understanding what the interviewer is actually trying to check — and answering in a way that feels real, not rehearsed.",
-      ],
-    },
-
+    // QA template sections: each section = one Q&A block
     sections: [
-
       {
-        id: 'section-intro',
-        heading: "Why Most Freshers Struggle in HR Rounds",
-        subheading: null,
+        id: 'why-freshers-struggle',
+        question: null, // null = intro section, no Q label
+        heading: 'Why Most Freshers Struggle in HR Rounds',
         paragraphs: [
-          "HR interviews are less about technical knowledge and more about how you think and communicate.",
-          "A lot of freshers either try to memorise perfect answers, which sound robotic, or they go in unprepared and get stuck on simple questions.",
-          "The better approach is somewhere in between — understand the intent behind the question and answer honestly, in your own words.",
-          "Let’s go step by step.",
+          'HR interviews are less about technical knowledge and more about how you think, behave and communicate in simple situations.',
+          'Many freshers try to memorise perfect answers from the internet. In the interview those lines sound robotic and the HR person loses interest. Others go in without any plan and get stuck even on very basic questions.',
+          'The better approach is in the middle. Understand why the question is asked, think of 1 or 2 real examples from your life, and answer in your own words.',
+          'Most HR rounds repeat a small set of questions like "Tell me about yourself", "Why should we hire you", "What are your strengths and weaknesses" and "How much salary do you expect"',
         ],
-        image: null,
       },
 
       {
-        id: 'section-1',
-        heading: "1. Tell Me About Yourself",
-        subheading: "The one question almost everyone overthinks",
+        id: 'tell-me-about-yourself',
+        question: 'Q1',
+        heading: 'Tell Me About Yourself',
+        subheading: 'The one question almost everyone overthinks',
         paragraphs: [
-          "This is usually the first question, and many candidates mess it up by either saying too much or not knowing where to start.",
-          "The interviewer isn’t asking for your life story. They just want a quick, clear idea of who you are.",
-          "Start with your education, mention something relevant you’ve worked on, and briefly say what you’re looking for.",
-          "Keep it simple and under a minute. That’s enough.",
+          "This is usually the first question. Many candidates mess it up by either giving their full life story or giving a one-line answer that tells nothing.",
+          "The interviewer simply wants a quick and clear picture of who you are and why you are relevant for this role. Think of it like a trailer of a movie, not the full movie.",
+          "A simple way is: present, past, future. Start with who you are right now, then a quick background, then what you are looking for next.",
+          'Practise this answer out loud a few times. When you say it three or four times before the interview day, it starts sounding much more natural.',
         ],
-        tip: {
-          label: "Simple Structure",
-          text: '"Good morning. I’m [Name], a [degree] graduate from [college]. I’ve worked on [project/skill], and I’m currently looking for an opportunity where I can learn and contribute in [area]."',
+        answer: {
+          label: 'Simple Structure',
+          text:
+            '"Good morning. I am [Name], a [degree] graduate from [college], batch of [year]. In the last year I have worked on [project or internship] where I [what you did]. Now I am looking for a role where I can use my skills in [area] and keep learning from a strong team."',
         },
-        image: null,
       },
 
       {
-        id: 'section-2',
-        heading: "2. Why Are You Applying for This Job?",
-        subheading: "This shows whether you actually paid attention",
+        id: 'why-this-job',
+        question: 'Q2',
+        heading: 'Why Are You Applying for This Job?',
+        subheading: 'This shows whether you actually paid attention',
         paragraphs: [
-          "Many people answer this casually, but this question matters more than it looks.",
-          "If your answer sounds generic, it gives the impression that you applied randomly.",
-          "Before the interview, just spend a few minutes reading the job description properly.",
-          "Pick 2–3 things that match your skills or interest and talk about those.",
+          'If your answer sounds like you could copy paste it for any company, it clearly looks like you applied everywhere without thinking.',
+          'Before the interview, spend ten minutes with the job description and the company website. Note down 2 or 3 things that match your skills or that genuinely excite you.',
+          'In the answer, connect those points with your own experience. Keep it simple and specific, not dramatic.',
         ],
-        tip: {
-          label: "Better Way to Answer",
-          text: '"I noticed this role involves [specific task], and that matches what I worked on during [project/internship]. That’s one of the main reasons I wanted to apply."',
+        answer: {
+          label: 'Better Way',
+          text:
+            '"I applied for this role because it focuses on [specific task or area] and that is what I have been practising in my [project or internship]. I also saw that your team works on [product or domain], which is something I genuinely want to learn more about."',
         },
-        image: null,
       },
 
       {
-        id: 'section-3',
-        heading: "3. What Are Your Strengths?",
-        subheading: "Keep it real, not generic",
+        id: 'strengths',
+        question: 'Q3',
+        heading: 'What Are Your Strengths?',
+        subheading: 'Keep it real, not rehearsed',
         paragraphs: [
-          "Saying things like “hardworking” or “punctual” doesn’t really help because everyone says that.",
-          "Instead, pick one strength that actually relates to the role and explain it with a small example.",
-          "Even a simple college project example is enough — it just needs to be real.",
+          'Saying only "hardworking" or "punctual" does not help much because almost everyone says that.',
+          'Pick one or two strengths that actually relate to the role. Then add a small, real example from college, a project, an internship or even a part time activity.',
+          'The example is what makes the answer believable. Without it, it sounds like a line from a template.',
         ],
-        tip: {
-          label: "Example",
-          text: '"One of my strengths is paying attention to details. During my final year project, I found an issue during testing that would have caused problems later, so I always make sure to double-check my work."',
+        answer: {
+          label: 'Example',
+          text:
+            '"One of my strengths is paying attention to details. For example, during my final year project I noticed a small mismatch in the test results that others had missed. When I checked again, I found a bug in the logic that would have caused issues later. Since then I always double check my work before calling it finished."',
         },
-        image: null,
       },
 
       {
-        id: 'section-4',
-        heading: "4. What Are Your Weaknesses?",
-        subheading: "Be honest, but don’t harm your chances",
+        id: 'weaknesses',
+        question: 'Q4',
+        heading: 'What Are Your Weaknesses?',
+        subheading: 'Be honest, but also show improvement',
         paragraphs: [
-          "Avoid giving fake answers like “I work too hard.” Interviewers hear that all the time.",
-          "At the same time, don’t mention something that directly affects the job.",
-          "Pick a small, genuine weakness and explain what you’re doing to improve it.",
+          'Answers like "I work too hard" or "I am a perfectionist" are overused and sound fake. Interviewers hear them all the time.',
+          'At the same time, do not pick a weakness that directly kills your chances for that role. For example, saying "I am very bad with deadlines" in a fast paced role is risky.',
+          'Choose a small, genuine weakness and then clearly explain what you are doing to improve it. That shows self awareness and a learning mindset.',
         ],
-        tip: {
-          label: "Balanced Answer",
-          text: '"I sometimes take on more work than I should, which can affect my time management. I’ve been improving this by planning my tasks more clearly before starting."',
+        answer: {
+          label: 'Balanced Answer',
+          text:
+            '"Sometimes I take on more tasks than I should at one time. Earlier this used to affect my time management. In the last few months I have started planning my day on paper, breaking work into smaller parts and checking my priorities with my mentor. It has already made a big difference."',
         },
-        image: null,
       },
 
       {
-        id: 'section-5',
-        heading: "5. Why Should We Hire You?",
-        subheading: "This is where you connect everything",
+        id: 'why-hire-you',
+        question: 'Q5',
+        heading: 'Why Should We Hire You?',
+        subheading: 'This is where you connect your story to their role',
         paragraphs: [
-          "This question is your chance to summarise why you’re a good fit.",
-          "Avoid generic lines. Instead, connect your skills or projects directly to what the company is looking for.",
-          "Even as a fresher, your willingness to learn and your foundation matter.",
+          'Do not repeat your entire resume here. They have already seen it.',
+          'Instead, pick 2 or 3 points that match the role: your main skill, one project or internship, and your attitude towards learning.',
+          'The idea is to show that you understand what they need and you have a starting point which they can build on.',
         ],
-        tip: {
-          label: "Simple Answer",
-          text: '"I may be a fresher, but I’ve worked on [project/skill] which relates to this role. I’m also someone who learns quickly and adapts, so I believe I can contribute and grow here."',
+        answer: {
+          label: 'Simple Answer',
+          text:
+            '"I know I am at the start of my career, but I have already worked on [project or internship] where I used [skills or tools] that are mentioned in your job description. I learn fast, I ask for feedback and I am comfortable putting in the extra effort in the beginning. Because of that, I believe I can contribute to the team and grow with the company."',
         },
-        image: null,
       },
 
       {
-        id: 'section-6',
-        heading: "6. What Are Your Salary Expectations?",
-        subheading: "Don’t rush into numbers",
+        id: 'salary',
+        question: 'Q6',
+        heading: 'What Are Your Salary Expectations?',
+        subheading: 'Answer confidently without rushing into numbers',
         paragraphs: [
-          "If you’re a fresher, it’s better not to give a fixed number immediately.",
-          "You can say you’re open to what the company usually offers for the role.",
-          "If needed, mention a general range based on what you’ve researched.",
+          'For most fresher roles, the company already has a budget or fixed range in mind. If you give a random number without research, it can create an awkward situation.',
+          'If you really have no idea, it is better to show flexibility and mention that you are open to the standard range for this role and location.',
+          'If you have done research on typical packages for similar roles, you can share a broad range but keep the focus on learning and role fit.',
         ],
-        tip: {
-          label: "Safe Way",
-          text: '"I’m mainly looking for the right opportunity to learn and grow. I’m open to the standard package for this role, but based on my research, I understand the general range is around [X–Y]."',
+        answer: {
+          label: 'Safe Way',
+          text:
+            '"For me, the role and the learning opportunity are more important at this stage. I am open to the standard package that you offer freshers in this position. From what I have seen in the market, the range seems to be around [X to Y], but I am happy to follow your company structure."',
         },
-        image: null,
       },
 
       {
-        id: 'section-7',
-        heading: "7. Where Do You See Yourself in 5 Years?",
-        subheading: "They’re just checking your direction",
+        id: 'five-years',
+        question: 'Q7',
+        heading: 'Where Do You See Yourself in 5 Years?',
+        subheading: 'They are checking direction, not a fixed script',
         paragraphs: [
-          "You don’t need a perfect long-term plan.",
-          "Just show that you want to grow — in skills, responsibility, and contribution.",
-          "Keep it realistic.",
+          'No one expects you to know your exact job title and company in five years. Even they do not know that.',
+          'What they want to see is whether you think in terms of growth, skills and responsibility or you are just moving without any plan.',
+          'Keep your answer flexible but positive. Focus on the kind of work you want to do and how you want to grow, not on big designations.',
         ],
-        tip: {
-          label: "Simple Answer",
-          text: '"In the next few years, I want to build strong skills in my field and gradually take on more responsibility within the team."',
+        answer: {
+          label: 'Simple Answer',
+          text:
+            '"In the next few years I want to build strong skills in [your field] and handle bigger responsibilities on real projects. I see myself growing into someone who can own tasks end to end, help new team members and contribute to important decisions in the team."',
         },
-        image: null,
       },
 
       {
-        id: 'section-8',
-        heading: "8. How Do You Handle Stress?",
-        subheading: "Show your approach, not just attitude",
+        id: 'stress',
+        question: 'Q8',
+        heading: 'How Do You Handle Stress?',
+        subheading: 'Show your method, not just a brave face',
         paragraphs: [
-          "Saying “I stay calm” isn’t enough.",
-          "Explain what you actually do when things get hectic.",
-          "Even simple habits like making a list or prioritising tasks are good answers.",
+          'Only saying "I stay calm" is too generic. Everyone says they stay calm.',
+          'Give a small example of what you actually do when you feel pressure: how you organise, how you communicate and how you avoid panic.',
+          'Interviewers are checking if you will completely break when there is a tight deadline or if you have some basic system to manage yourself.',
         ],
-        tip: {
-          label: "Real Answer",
-          text: '"When things get busy, I list out tasks and focus on one at a time. That helps me stay organised and reduces pressure."',
+        answer: {
+          label: 'Real Answer',
+          text:
+            '"When things get busy, I try not to handle everything in my head. I write down all the tasks, mark what is urgent, and then focus on one thing at a time. If I feel stuck, I talk to my senior early instead of waiting till the last moment. This helps me stay organised even when there is pressure."',
         },
-        image: null,
       },
 
       {
-        id: 'section-9',
-        heading: "9. What Do You Know About Our Company?",
-        subheading: "Basic research matters",
+        id: 'company-knowledge',
+        question: 'Q9',
+        heading: 'What Do You Know About Our Company?',
+        subheading: 'Basic research that shows respect',
         paragraphs: [
-          "You don’t need deep knowledge, but you should know what the company does.",
-          "Spend a few minutes checking their website or LinkedIn.",
-          "Mention 1–2 points — that’s enough to show you prepared.",
+          'This is a very simple question, but many freshers still answer “I only know a little” because they did not spend even ten minutes reading about the company.',
+          'You do not need to know every detail. You just need to show that you cared enough to check their website, products or recent news.',
+          'Two or three specific points are enough to show that you are serious about this opportunity.',
         ],
-        tip: {
-          label: "Simple Structure",
-          text: '"I understand that your company works in [industry] and focuses on [what they do]. I also saw [recent update], which I found interesting."',
+        answer: {
+          label: 'Simple Structure',
+          text:
+            '"From your website I understand that your company works in [industry or domain] and focuses on [products or services]. I also noticed [a recent project, client or achievement], which stood out to me because [short reason]. That is one of the reasons I was interested in this role."',
         },
-        image: null,
       },
 
       {
-        id: 'section-10',
-        heading: "10. Do You Have Any Questions?",
-        subheading: "Always ask something",
+        id: 'any-questions',
+        question: 'Q10',
+        heading: 'Do You Have Any Questions for Us?',
+        subheading: 'This is your chance to look genuinely interested',
         paragraphs: [
-          "Saying no here makes it look like you’re not interested.",
-          "Ask something simple about the role or team.",
+          'If you always say “No, everything is clear”, it can look like you just want to run out of the room.',
+          'Good candidates usually have at least one simple and sincere question about the role, team or next steps.',
+          'Avoid questions only about salary, leave or benefits at this stage. Keep those for HR or for later in the process.',
         ],
-        tip: {
-          label: "Good Questions",
-          text: '"What does a typical day in this role look like?" or "What skills should I focus on if I join?"',
+        answer: {
+          label: 'Good Questions',
+          text:
+            '"Yes, I do. For example: What does a typical day in this role look like for a fresher? or What skills should I focus on in the first three months if I join your team?"',
         },
-        image: null,
       },
 
+      // Special quickfire section
       {
-        id: 'section-quickfire',
-        heading: "Quick-Fire: Simple Answers",
-        subheading: null,
-        paragraphs: null,
+        id: 'quickfire',
+        question: null,
+        heading: 'Quick-Fire: Simple, Honest One-Line Answers',
         quickfire: [
-          { question: "Are you a team player?", answer: "Yes, and I can also handle tasks independently when needed." },
-          { question: "What makes you angry?", answer: "Mostly miscommunication, so I try to clear things early." },
-          { question: "Are you applying elsewhere?", answer: "Yes, but I’m particularly interested in this role." },
-          { question: "Rate yourself out of 10.", answer: "Around 8 — I still have room to improve." },
-          { question: "Describe yourself in one word.", answer: "Consistent." },
+          {
+            question: 'Are you a team player?',
+            answer:
+              'Yes, I enjoy working in a team, and I can also handle tasks independently when needed.',
+          },
+          {
+            question: 'What makes you angry?',
+            answer:
+              'Mostly confusion or miscommunication, so I try to clear doubts early instead of letting it build up.',
+          },
+          {
+            question: 'Are you applying elsewhere?',
+            answer:
+              'Yes, I am exploring a few options, but I am genuinely interested in this role and want to see if I can be a good fit here.',
+          },
+          {
+            question: 'Rate yourself out of 10.',
+            answer:
+              'I would say around 8. I have a good base, and I also know there is still a lot to learn.',
+          },
+          {
+            question: 'Describe yourself in one word.',
+            answer: 'Consistent.',
+          },
         ],
-        image: null,
       },
-
     ],
 
     conclusion: {
-      heading: "Final Thought",
+      heading: 'Final Thought',
       paragraphs: [
-        "You don’t need perfect answers for an HR interview.",
-        "You just need to sound clear, honest, and easy to work with.",
-        "Focus on understanding the question instead of memorising answers.",
-        "That alone will put you ahead of most candidates.",
+        'You do not need perfect, movie-style answers for an HR interview.',
+        'You just need to sound clear, honest and easy to work with. That is it.',
+        'If you understand why a question is asked, think of one real example and practise saying your answer out loud a few times, you will already be ahead of most candidates who walk in unprepared.',
       ],
-      callToAction: "If you’re looking for daily fresher job updates, check our homepage — we keep it updated regularly.",
+      callToAction:
+        'If you want more fresher-focused interview tips and job updates, keep checking our homepage. We keep it updated with practical stuff, not just theory.',
     },
-
   },
-}
+};
 
-export default hrInterviewBlog
+export default blog1;

@@ -4,15 +4,16 @@ import companiesData from '../data/jobData/jobData'
 import CompanyDetailPage from '../components/company/CompanyDetailPage'
 import CompanyListPage from '../components/company/CompanyListPage'
 import NotFound from './NotFound'
+import rawData from '../data/jobData/jobData'
 
 const Companies_details = () => {
   const { companyName, role } = useParams()
   const [searchTerm, setSearchTerm] = useState('')
-
+// const companiesData = rawData.filter(Boolean)  // ← strips any undefined slots
   const selectedCompany = companyName && role
   ? companiesData.find(
-      c => c.company === decodeURIComponent(companyName) &&
-           c.role    === decodeURIComponent(role)
+      c => c?.company === decodeURIComponent(companyName) &&
+           c?.role    === decodeURIComponent(role)
     )
   : null
 

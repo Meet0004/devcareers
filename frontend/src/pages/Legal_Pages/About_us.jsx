@@ -1,394 +1,188 @@
 import React from 'react'
 import PageHero from '../../components/legal/PageHero'
-import SectionHeading from '../../components/legal/SectionHeading'
-import IconFeatureCard from '../../components/legal/IconFeatureCard'
-import MeetSoniCard from '../../components/legal/MeetSoniCard'
-import StatGrid from '../../components/legal/StatGrid'
-import ContactInfoBox from '../../components/legal/ContactInfoBox'
-import myImage from '../../assets/myImage.avif'
-import Testimonials from '../../components/common/Testimonials'
 import Impact from '../../components/common/Impact'
-import Mission from '../../components/common/Mission'
+import myImage from '../../assets/myImage.avif'
+import ContactBlock from '../../components/common/ContactBlock'
+import { siteData } from '../../config/siteData'
+import { metrics } from '../../config/metrics'
 
 const About_us = () => {
+  
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-amber-50">
+    <div className="min-h-screen" style={ {'margin':'15px 0px'}}>
 
       {/* Hero Section */}
       <PageHero
         title="About DevCareers"
         subtitle="Empowering Students & Early-Career Professionals to Land Their Dream Jobs"
-      >
-        <StatGrid
-          variant="pill"
-          stats={[
-            { label: '🎯 10,000+ Active Users' },
-            { label: '💼 300+ Companies Tracked' },
-            { label: '📚 35+ Curated Resources' },
-            { label: '⭐ Top 0.1% on Topmate' },
-          ]}
-        />
-      </PageHero>
+      />
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 py-12 space-y-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6 pb-10">
 
-        {/* Our Story */}
-        <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
-              <svg className="w-6 h-6 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
-              </svg>
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
-          </div>
+        {/* Profile Card */}
+        <section className="mt-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-orange-50 via-orange-50 to-orange-100 border-2 border-orange-200 rounded-2xl overflow-hidden shadow-md">
 
-          <div className="space-y-4 text-gray-700 leading-relaxed">
-            <p className="text-lg">
-              DevCareers started with a simple observation: <strong className="text-gray-900">talented students were
-                missing out on amazing opportunities</strong> simply because they didn't know where to look or didn't have
-              access to timely information.
-            </p>
-            <p>
-              In late 2025, Meet Soni — a fresh BCA graduate and aspiring software developer — launched a YouTube channel
-              to help students discover job opportunities. After seeing the overwhelming response and realizing how much
-              students needed a <strong className="text-gray-900">centralized platform</strong> for job listings and resources,
-              he built his first website in December 2025.
-            </p>
-            <p>
-              But Meet didn't stop there. In early 2026, he launched <strong className="text-gray-900">DevCareers</strong> —
-              a completely redesigned platform that aggregates opportunities from 300+ companies, provides curated educational
-              resources, and delivers daily updates across YouTube, WhatsApp, and LinkedIn.
-            </p>
-            <p>
-              Today, DevCareers serves <strong className="text-gray-900">10,000+ students and early-career professionals</strong> across
-              India. What makes this platform unique? <strong className="text-gray-900">It's a one-person operation.</strong> Meet handles
-              everything — from finding and verifying job postings, to creating educational content, managing social channels,
-              building the platform, and providing support.
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li><strong>80-120 job opportunities</strong> curated and posted monthly</li>
-              <li><strong>35+ educational resources</strong> — interview guides, resume templates, coding cheat sheets</li>
-              <li><strong>Multi-channel presence</strong> — YouTube videos, WhatsApp updates, LinkedIn posts</li>
-              <li><strong>Personal touch</strong> — every email answered, every issue resolved by Meet himself</li>
-            </ul>
-            <p>
-              DevCareers is built on one core belief: <strong className="text-gray-900">Every student deserves equal
-                access to opportunities</strong>, regardless of their college tier, location, or network. This is a platform
-              built by a student, for students — with zero corporate backing and 100% passion.
-            </p>
-          </div>
-        </section>
+              {/* Top: Photo + Name */}
+              <div className="flex flex-col md:flex-row items-center md:items-stretch">
 
-        {/* Mission & Vision */}
-        <Mission/>
-
-        {/* Meet the Team */}
-        <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <SectionHeading title="Meet the Team" className="mb-6" />
-
-          <div className="max-w-3xl mx-auto space-y-6">
-            <p className="text-gray-700 leading-relaxed text-center">
-              Unlike most platforms, DevCareers is <strong className="text-gray-900">a one-person operation</strong> built
-              and maintained entirely by Meet Soni — a 21-year-old software developer and BCA graduate from Shimoga, Karnataka.
-            </p>
-
-            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
-              <div className="flex items-center gap-6 mb-6 flex-col md:flex-row">
-                <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-amber-300 shadow-md">
-                  <img
-                    src={myImage}
-                    alt="Meet Soni"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-gray-900">Meet Soni</h3>
-                  <p className="text-amber-700 font-semibold">Founder & Solo Developer</p>
-                  <p className="text-sm text-gray-600">Software Developer • BCA Graduate • 21 Years Old</p>
-                </div>
-              </div>
-
-              <div className="space-y-4 text-gray-700">
-                <p>
-                  <strong className="text-gray-900">What Meet Does:</strong> Everything. Literally everything.
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {[
-                    { emoji: '🔍', label: 'Job Curation', desc: 'Scans 300+ companies daily, verifies every posting, and updates listings manually' },
-                    { emoji: '💻', label: 'Platform Development', desc: 'Codes, designs, and maintains the entire DevCareers platform from scratch' },
-                    { emoji: '📹', label: 'Content Creation', desc: 'Creates YouTube videos, writes newsletters, posts on LinkedIn and WhatsApp' },
-                    { emoji: '💬', label: 'User Support', desc: 'Responds to every email, resolves issues, and provides personalized guidance' },
-                    { emoji: '📚', label: 'Resource Creation', desc: 'Curates and creates 35+ educational resources for students' },
-                    { emoji: '📊', label: 'Everything Else', desc: 'Accounting, planning, marketing, analytics — all handled solo' },
-                  ].map((item, idx) => (
-                    <div key={idx} className="bg-white rounded-lg p-4 shadow-sm">
-                      <p className="font-semibold text-amber-700 mb-2">{item.emoji} {item.label}</p>
-                      <p className="text-sm">{item.desc}</p>
-                    </div>
-                  ))}
+                {/* Image block */}
+                <div className="w-full md:w-64 flex-shrink-0 flex md:block justify-center pt-6 px-6 md:p-0">
+                  <div className="w-64 h-64 sm:w-32 sm:h-32 md:w-full md:h-full rounded-full md:rounded-none overflow-hidden ring-4 ring-orange-200 md:ring-0 flex-shrink-0">
+                    <img
+                      src={myImage}
+                      alt={siteData.founder.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
                 </div>
 
-                <div className="bg-amber-100 border-2 border-amber-300 rounded-lg p-4 mt-4">
-                  <p className="text-center font-semibold text-amber-900">
-                    ⏰ Spends <strong>8+ hours daily</strong> maintaining and growing DevCareers while building solutions
-                    that genuinely help students succeed.
+                {/* Name + bio */}
+                <div className="flex-1 px-5 py-5 md:px-6 md:pt-6 flex flex-col justify-center">
+                  <span className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">
+                    Founder & the only person here
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">
+                    {siteData.founder.name}
+                  </h3>
+                  <p className="text-sm text-gray-500 mb-4">
+                    {siteData.founder.degree} Graduate · {siteData.founder.age} yrs · {siteData.founder.location}
+                  </p>
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                    I was fresh out of college, applying everywhere and spending more time searching for openings than actually preparing for them. A lot of listings were already expired, and the rest were scattered across different sites. So I started keeping a simple list for myself and later shared it on YouTube. Over time, it slowly turned into what it is today.
                   </p>
                 </div>
               </div>
+
+              {/* Bottom: What he does grid */}
+              <div className="border-t-2 border-amber-200 px-4 py-5 sm:px-6 sm:py-6">
+                <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">
+                  What I actually do here
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {[
+                    {
+                      icon: (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+                        </svg>
+                      ),
+                      label: 'Job Curation',
+                      desc: `Every month I go through ${metrics.totalCompaniesTracked}+ career pages myself. No scraper, no shortcuts. If I can't verify it, it doesn't go up`,
+                    },
+                    {
+                      icon: (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
+                        </svg>
+                      ),
+                      label: 'Platform Dev',
+                      desc: "I designed and coded this whole site myself. When something breaks at midnight, I'm the one fixing it",
+                    },
+                    {
+                      icon: (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <polygon points="23 7 16 12 23 17 23 7" /><rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                        </svg>
+                      ),
+                      label: 'Content Creation',
+                      desc: 'YouTube, LinkedIn, WhatsApp, newsletters. I write and record everything you see',
+                    },
+                    {
+                      icon: (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                      ),
+                      label: 'User Support',
+                      desc: 'Every message that comes in, I read and reply to personally. No templates, no bots',
+                    },
+                    {
+                      icon: (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                      ),
+                      label: 'Resource Creation',
+                      desc: `${import.meta.env.VITE_TOTAL_RESOURCES}+ handpicked guides, templates, and cheat sheets to level up`,
+                    },
+                    {
+                      icon: (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" />
+                        </svg>
+                      ),
+                      label: 'Everything Else',
+                      desc: 'Analytics, planning and execution',
+                    },
+                  ].map((item, idx) => (
+                    <div key={idx} className="bg-white/70 rounded-xl p-3 sm:p-4 flex gap-3 items-start hover:bg-white transition-colors">
+                      <div className="text-amber-600 mt-0.5 flex-shrink-0">{item.icon}</div>
+                      <div>
+                        <p className="font-semibold text-gray-900 text-sm mb-1">{item.label}</p>
+                        <p className="text-xs text-gray-600 leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
 
-            <p className="text-gray-700 leading-relaxed text-center">
-              This is a <strong className="text-gray-900">passion project</strong> built by someone who believes in the
-              power of accessible information. Meet is currently operating as a solo developer, but as DevCareers grows
-              and reaches sustainability, the plan is to acquire a proper domain and potentially expand the team.
+        {/* Our Story */}
+        <section className="bg-transparent rounded-2xl shadow-lg p-5 sm:p-8 md:p-12">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-amber-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Our Story</h2>
+          </div>
+
+          <div className="space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+            <p className="text-base sm:text-lg">
+              DevCareers started as a simple effort to track genuine job opportunities in one place. Many listings online remain outdated or unclear, making it difficult for students to identify roles that are actually open and relevant.
             </p>
-          </div>
-        </section>
-
-        {/* What We Do */}
-        <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <SectionHeading title="What We Do" />
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <IconFeatureCard
-              icon="💼"
-              title="Job Aggregation"
-              desc="We scan 500+ companies daily across their career pages, LinkedIn, and job boards to bring you the latest internships and entry-level roles in tech, product, design, marketing, and business — all in one centralized platform. No more endless searching!"
-              color="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200"
-              headColor="text-blue-900"
-            />
-            <IconFeatureCard
-              icon="📚"
-              title="Educational Resources"
-              desc="Access 50+ curated resources including SQL guides, DSA cheat sheets, system design primers, resume templates, and interview prep materials. Over 50% are completely free, and premium resources are priced affordably (₹1-₹99) to ensure accessibility."
-              color="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200"
-              headColor="text-green-900"
-            />
-            <IconFeatureCard
-              icon="❓"
-              title="Career Guidance"
-              desc="Get practical, actionable advice on resume building, LinkedIn optimization, interview strategies, and career planning. Our content is written by experienced professionals who've navigated the same journey you're on now."
-              color="bg-gradient-to-br from-purple-50 to-purple-100 border-2 border-purple-200"
-              headColor="text-purple-900"
-            />
-            <IconFeatureCard
-              icon="📧"
-              title="Job Alerts & Newsletters"
-              desc="Subscribe to receive weekly job updates directly in your inbox, curated based on your preferences. Never miss an opportunity again — we do the searching, you do the applying!"
-              color="bg-gradient-to-br from-orange-50 to-orange-100 border-2 border-orange-200"
-              headColor="text-orange-900"
-            />
-            <IconFeatureCard
-              icon="👥"
-              title="Community Support"
-              desc="Join a community of 10,000+ ambitious students and early professionals. Share experiences, ask questions, and support each other through the job hunt. We're in this together!"
-              color="bg-gradient-to-br from-pink-50 to-pink-100 border-2 border-pink-200"
-              headColor="text-pink-900"
-            />
-            <IconFeatureCard
-              icon="✅"
-              title="Verified Opportunities"
-              desc="Every job posting is verified for legitimacy before being listed. We filter out scams, unpaid 'internships' disguised as free labor, and MLM schemes. Your time is valuable — we ensure you only see genuine opportunities."
-              color="bg-gradient-to-br from-teal-50 to-teal-100 border-2 border-teal-200"
-              headColor="text-teal-900"
-            />
-          </div>
-        </section>
-
-        {/* Our Core Values */}
-        <section className="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-200 rounded-2xl p-8 md:p-12 shadow-lg">
-          <SectionHeading title="Our Core Values" />
-
-          <div className="space-y-6">
-            {[
-              { number: '01', title: 'Accessibility for All', description: "We believe opportunities should be accessible to everyone, regardless of college ranking, location, or socioeconomic background. That's why we offer over 50% of our resources completely free and keep premium resources affordable (₹1-₹99). No paywalls, no gatekeeping.", color: 'bg-blue-500' },
-              { number: '02', title: 'Quality Over Quantity', description: "We don't just aggregate every job posting we find. We curate listings to ensure they're relevant, legitimate, and suitable for early-career professionals. We'd rather show you 10 great opportunities than 100 mediocre ones.", color: 'bg-green-500' },
-              { number: '03', title: 'Transparency & Trust', description: "We're upfront about what we offer and how we operate. No hidden fees, no misleading claims, no spam. We treat your personal information with respect, never sell your data, and are transparent about our privacy practices.", color: 'bg-purple-500' },
-              { number: '04', title: 'Continuous Improvement', description: 'We actively listen to user feedback and constantly evolve. Every feature on our platform exists because users asked for it. Your suggestions shape our roadmap — we\'re building this platform for you, with you.', color: 'bg-orange-500' },
-              { number: '05', title: 'Student-First Mindset', description: "Every decision we make is guided by one question: 'Does this help students and early-career professionals succeed?' If the answer is no, we don't do it. Your success is our success, and we measure our impact by the jobs you land.", color: 'bg-pink-500' },
-              { number: '06', title: 'Empathy & Support', description: "We know how stressful job hunting can be. We've been there. That's why we respond to every email, resolve issues promptly, and treat every user with kindness and respect. You're not just a number — you're part of our community.", color: 'bg-teal-500' },
-            ].map((value, idx) => (
-              <div key={idx} className="flex gap-6 items-start group hover:bg-white hover:shadow-md p-4 rounded-xl transition-all duration-300">
-                <div className={`${value.color} text-white text-2xl font-bold w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                  {value.number}
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h3>
-                  <p className="text-gray-700 leading-relaxed">{value.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Why Choose Us */}
-        <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <SectionHeading title="Why Students Trust Dev Careers" />
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { icon: '✅', title: 'Verified Opportunities Only', desc: 'Every job posting is manually verified for legitimacy before being listed' },
-              { icon: '🔄', title: 'Daily Updates', desc: 'Fresh opportunities added every single day from 500+ companies' },
-              { icon: '🎁', title: '50% Free Resources', desc: 'Over half our educational materials are completely free to access' },
-              { icon: '🚀', title: 'No Registration Required', desc: 'Browse jobs without creating an account (optional for email alerts)' },
-              { icon: '📱', title: 'Mobile-Friendly', desc: 'Access jobs and resources seamlessly from any device, anywhere' },
-              { icon: '⚡', title: 'Fast & Simple', desc: 'Clean interface, no clutter, no ads — just opportunities and resources' },
-              { icon: '💰', title: 'Affordable Premium Content', desc: 'Premium resources priced at ₹1-₹99 to ensure accessibility for all' },
-              { icon: '🛡️', title: 'Privacy Respected', desc: 'Your data is never sold or shared with third parties' },
-              { icon: '💬', title: 'Responsive Support', desc: 'Get help within 6-48 hours via email or contact form' },
-              { icon: '🎯', title: 'Curated, Not Cluttered', desc: 'Quality over quantity — only relevant opportunities for early careers' },
-              { icon: '📊', title: 'Transparent Practices', desc: 'Clear about how we operate, what we collect, and how we use data' },
-              { icon: '🤝', title: 'Community-Driven', desc: 'Built by students, for students, with constant user feedback' },
-            ].map((item, idx) => (
-              <div key={idx} className="flex gap-4 items-start p-4 bg-gray-50 hover:bg-amber-50 rounded-xl transition-colors border border-gray-200 hover:border-amber-300">
-                <span className="text-3xl flex-shrink-0">{item.icon}</span>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-sm text-gray-600">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Our Impact - Statistics */}
-        <Impact/>
-
-
-        {/* Our Commitment */}
-        <section className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-8 md:p-12">
-          <SectionHeading title="Our Commitment to You" />
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { icon: '✅', title: 'Accurate Information', description: 'We verify every job posting and update listings regularly. If a role is filled or expired, we remove it promptly.' },
-              { icon: '🔒', title: 'Data Privacy', description: 'Your personal information is sacred. We never sell your data to third parties and use industry-standard encryption to protect it.' },
-              { icon: '📧', title: 'Responsive Support', description: 'We respond to every email and resolve issues within 6-48 hours. Real humans, real responses — no bots, no auto-replies.' },
-              { icon: '📋', title: 'Quality Resources', description: "Every resource we publish is reviewed for accuracy, clarity, and usefulness. We don't publish filler content just to increase numbers." },
-              { icon: '✔️', title: 'Transparency', description: "We're open about how we operate, what data we collect, and how we make money. No hidden agendas, no fine print tricks." },
-              { icon: '👥', title: 'Community First', description: "We actively listen to feedback and implement suggestions. You shape our roadmap — we're building this for you, with you." },
-            ].map((item, idx) => (
-              <div key={idx} className="flex gap-4 items-start bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-xl">
-                  {item.icon}
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* How We Make Money */}
-        <section className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <SectionHeading title="How We Sustain Our Platform" className="mb-6" />
-
-          <div className="max-w-3xl mx-auto space-y-4 text-gray-700 leading-relaxed">
             <p>
-              We believe in <strong className="text-gray-900">transparency</strong>, so here's exactly how we keep the lights on:
+              To address this, a system was created to collect active job openings, verify links, and organize them in a way that is easy to access and understand. What began as a small, personal tracking process gradually evolved into something more structured and publicly shared.
             </p>
-
-            <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
-              <h3 className="font-bold text-green-900 mb-3 flex items-center gap-2">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd" />
-                </svg>
-                Premium Educational Resources
-              </h3>
-              <p className="text-gray-700">
-                We offer <strong>35+ resources</strong> (50% free, 50% premium) priced affordably from
-                <strong> Free to ₹49</strong>. Premium resources help cover server costs, content creation, and
-                platform maintenance while keeping everything accessible for students.
-              </p>
-            </div>
-
-            <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
-              <h3 className="font-bold text-blue-900 mb-3 flex items-center gap-2">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                </svg>
-                What's Coming Next
-              </h3>
-              <p className="text-gray-700 mb-3">
-                <strong>Razorpay Integration:</strong> Currently implementing direct payment processing through Razorpay
-                for a seamless checkout experience. This will replace the current Topmate links.
-              </p>
-              <p className="text-gray-700">
-                <strong>Future Plans:</strong> Once we reach sustainability, we'll introduce non-intrusive ads to cover
-                server costs and enable better scalability. We'll also acquire a proper <strong>devcareers.com</strong> domain
-                to establish our permanent home.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-6">
-              <h3 className="font-bold text-gray-900 mb-3">What We Don't Do:</h3>
-              <ul className="space-y-2">
-                {[
-                  { icon: '✗', text: "We don't sell your data to recruiters or third parties" },
-                  { icon: '✗', text: "We don't charge companies to post jobs (listings remain unbiased)" },
-                  { icon: '✗', text: "We don't run intrusive ads or slow down the platform with trackers (for now)" },
-                  { icon: '✗', text: "We don't require paid subscriptions to browse job listings" },
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold flex-shrink-0">{item.icon}</span>
-                    <span>{item.text}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <p className="text-center italic text-gray-600">
-              <strong>50% of resources are completely free</strong> to ensure accessibility. DevCareers is built
-              to help you succeed, not to profit off your struggles. This is a passion project funded by affordable
-              premium resources, with plans to add ethical monetization as we grow.
+            <p>
+              In beginning {siteData.founder.year}, this information started being shared through YouTube, focusing only on real and currently active opportunities. As more students began following these updates, it became clear that there was a wider need for a reliable and consistent source of job information.
+            </p>
+            <p>
+              Shortly after, a basic website was developed to make access even simpler. The focus remained on clarity, usability, and accuracy rather than design complexity. Over time, improvements were made based on feedback including better organization, more companies, and additional resources.
+            </p>
+            <p>
+              The goal is straightforward to make job discovery more transparent and accessible, regardless of background, location, or college.
             </p>
           </div>
         </section>
 
-        {/* Testimonials/Success Stories */}
-        <Testimonials/>
+        {/* Impact */}
+        <Impact />
 
         {/* Contact CTA */}
-        <section className="bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-2xl shadow-2xl p-8 md:p-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">Let's Connect!</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Have questions, suggestions, feedback, or partnership opportunities? We'd genuinely love to hear from you.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <section className="bg-amber-50 border-2 border-amber-200 rounded-2xl sm:p-5">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <h2 className="text-base font-bold text-gray-900 mb-1">Got something to say?</h2>
+              <p className="text-gray-500 text-sm">Questions, feedback, suggestions, I read every message myself.</p>
+            </div>
             <a
               href="/contact-us"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-amber-600 font-bold rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-xl transition-colors text-sm flex-shrink-0 w-full sm:w-auto justify-center"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
               </svg>
-              Send Us a Message
-            </a>
-            <a
-              href="/subscribe-us"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-600 text-white font-bold rounded-xl hover:bg-amber-700 transition-colors border-2 border-white shadow-lg"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-              </svg>
-              Subscribe for Weekly Updates
+              Send a Message
             </a>
           </div>
-
-          <ContactInfoBox
-            variant="dark"
-            altEmail="info.techjobalert@gmail.com"
-            responseTime="6-48 hours"
-            note="Solo-operated by Meet Soni • 8+ hours daily dedication"
-          />
         </section>
 
       </div>

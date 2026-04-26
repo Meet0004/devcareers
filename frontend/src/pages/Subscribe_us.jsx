@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
+import { metrics } from '../config/metrics';
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID_MEETSONI;
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_SUBSCRIBE_US_MEETSONI;
@@ -8,8 +9,8 @@ const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_MEETSONI;
 const RECIPIENT_EMAIL = import.meta.env.VITE_RECIPIENT_EMAIL;
 const YOUTUBE_LINK = import.meta.env.VITE_YOUTUBE_LINK;
 const WHATSAPP_LINK = import.meta.env.VITE_WHATSAPP_LINK;
-const TOTAL_SUBS = import.meta.env.VITE_TOTAL_SUBS;
-const TOTAL_MEMBERS = import.meta.env.VITE_TOTAL_MEMBERS;
+const TOTAL_SUBS = metrics.totalSubs;
+const TOTAL_MEMBERS = metrics.totalMembers;
 
 const CATEGORIES = [
   'Software Developer', 'Java Developer', 'Python Developer', 'Frontend Developer',
@@ -19,16 +20,44 @@ const CATEGORIES = [
 ]
 
 const WHY_SUBSCRIBE = [
-  { emoji: '🎯', title: 'Curated for Freshers', desc: 'Only entry-level, internship, and campus roles — no noise from senior listings.' },
-  { emoji: '⚡', title: 'Early Access', desc: 'Get notified about new job postings before they fill up.' },
-  { emoji: '📚', title: 'Free Resources', desc: 'Receive cheatsheets, roadmaps, and interview prep guides directly in your inbox.' },
-  { emoji: '🔕', title: 'No Spam, Ever', desc: 'We send only what matters. You can unsubscribe any time in one click.' },
-]
-
-const TESTIMONIALS = [
-  { name: 'Priya S.', role: 'Frontend Dev at Meesho', text: 'Found my first job through a DevCareers WhatsApp alert. The channel is gold for freshers!' },
-  { name: 'Arjun M.', role: 'SDE Intern at Swiggy', text: 'The newsletter helped me prepare for interviews with the free cheatsheets. Super useful.' },
-  { name: 'Sneha R.', role: 'Data Analyst', text: 'Subscribed 3 months ago. Already got 2 interview calls from the job alerts. Highly recommend.' },
+  {
+    icon: (
+      <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" color='black'>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 2l3 7h7l-5.5 4.2L18 21l-6-4-6 4 1.5-7.8L2 9h7l3-7z"/>
+      </svg>
+    ),
+    title: 'Curated for Freshers',
+    desc: 'Only entry-level, internship, and campus roles'
+  },
+  {
+    icon: (
+      <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"  color='black'>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/>
+      </svg>
+    ),
+    title: 'Early Access',
+    desc: 'Get notified about new job postings before they fill up.'
+  },
+  {
+    icon: (
+      <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"  color='black'>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16v13H6.5A2.5 2.5 0 004 19.5V4z"/>
+      </svg>
+    ),
+    title: 'Free Resources',
+    desc: 'Receive cheatsheets, roadmaps, and interview prep guides directly in your inbox.'
+  },
+  {
+    icon: (
+      <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" color='black'>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.4-1.4A2.032 2.032 0 0118 14.16V11a6.002 6.002 0 00-4-5.65V5a2 2 0 10-4 0v.35C7.67 6.17 6 8.39 6 11v3.16c0 .54-.21 1.06-.59 1.44L4 17h5"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v1a3 3 0 006 0v-1"/>
+      </svg>
+    ),
+    title: 'No Spam, Ever',
+    desc: 'We send only what matters. You can unsubscribe any time in one click.'
+  }
 ]
 
 const SOCIAL_CHANNELS = [
@@ -44,7 +73,7 @@ const SOCIAL_CHANNELS = [
     ctaHover: '#fee2e2',
     label: 'YouTube',
     tag: 'Watch & Learn',
-    desc: 'Career tips, job walkthroughs, interview prep videos, and company-specific advice — all for free.',
+    desc: 'Career tips, job walkthroughs, interview prep videos, and company-specific advice',
     stat: TOTAL_SUBS,
     statLabel: 'Subscribers',
     cta: 'Subscribe on YouTube',
@@ -224,15 +253,12 @@ const SubscribeUs = () => {
 
           {/* Hero */}
           <div className="text-center mb-10 fu d1">
-            <span className="inline-block bg-orange-100 text-orange-600 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
-              Stay in the Loop
-            </span>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3" style={{ letterSpacing: '-0.025em' }}>
               Stay Connected<br />
               <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">With DevCareers</span>
             </h1>
             <p className="text-gray-500 text-base max-w-md mx-auto">
-              Join thousands of developers getting fresh jobs, resources, and career tips — before everyone else.
+              Join thousands of developers getting fresh jobs, resources, and career tips
             </p>
           </div>
 
@@ -242,20 +268,7 @@ const SubscribeUs = () => {
             <SocialChannels />
           </div>
 
-          {/* ── Why Subscribe ── */}
-          <div className="mb-10 fu d3">
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 text-center">Why subscribe?</p>
-            <div className="grid grid-cols-2 gap-3">
-              {WHY_SUBSCRIBE.map(({ emoji, title, desc }) => (
-                <div key={title} className="bg-white border border-gray-100 rounded-xl p-4 hover:border-orange-200 hover:shadow-sm transition-all">
-                  <div className="text-2xl mb-2">{emoji}</div>
-                  <h3 className="font-semibold text-gray-800 text-sm mb-1">{title}</h3>
-                  <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
+          
           {/* ── Newsletter Form ── */}
           <div className="bg-white rounded-2xl shadow-sm border border-orange-100 overflow-hidden mb-10 fu d4">
             {/* Form header */}
@@ -347,7 +360,51 @@ const SubscribeUs = () => {
             </div>
 
             <div className="px-8 pb-6 text-center">
-              <p className="text-xs text-gray-400">🔒 We respect your privacy. Unsubscribe any time.</p>
+  <p className="text-xs text-gray-400 flex items-center justify-center gap-1">
+    
+    {/* Lock SVG */}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="text-gray-900"
+    >
+      <rect x="3" y="11" width="18" height="11" rx="2"></rect>
+      <path d="M7 11V7a5 5 0 0110 0v4"></path>
+    </svg>
+
+    <span className="text-gray-900">
+      We respect your privacy. To unsubscribe or request deletion of your data,
+      please fill out the form on our{" "}
+      <a
+        href="/contact-us"
+        className="text-indigo-600 hover:underline font-medium"
+      >
+        Contact Us
+      </a>{" "}
+      page.
+    </span>
+
+  </p>
+</div>
+          </div>
+{/* ── Why Subscribe ── */}
+          <div className="mb-8 fu d3">
+            <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 text-center">Why subscribe?</p>
+            <div className="grid grid-cols-2 gap-3">
+              {WHY_SUBSCRIBE.map(({ icon, title, desc }) => (
+                <div key={title} className="bg-white border border-gray-100 rounded-xl p-4 hover:border-orange-200 hover:shadow-sm transition-all">
+                  <div className="text-2xl mb-2">{icon}</div>
+                  <h3 className="font-semibold text-gray-800 text-sm mb-1">{title}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
+                </div>
+              ))}
             </div>
           </div>
 

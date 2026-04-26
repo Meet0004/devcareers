@@ -26,7 +26,7 @@ import js100Interview from '../../assets/100jsinterview.avif';
 import java150Interview from '../../assets/150java.avif';
 import nodeDeployment from '../../assets/0-100node.js.avif';
 import node40Interview from '../../assets/40nodejs.avif';
-import resumeTips from '../../assets/resumetips.avif';
+import resumeTips from '../../assets/resumetips.avif'; 
 import hremails from '../../assets/hremails.avif';
 import systemDesign from '../../assets/systemDesign.avif';
 import HRques from '../../assets/HRques.avif';
@@ -57,7 +57,7 @@ const resourceData = [
     Covers SQL from beginner to advanced in one place
 Includes real interview-level scenario questions
 Helps you understand query optimization clearly
-Perfect for placements, internships, and backend roles
+Perfect for placements, internships, and backend rolesohh
 Quick revision using the structured cheatsheet`
   },
   {
@@ -416,7 +416,7 @@ Ideal for frontend and full-stack interview preparation`
   },
   {
     id: 21,
-    title: "HTML CSS INterview Questions",
+    title: "HTML CSS Interview Questions",
     description: "Common interview questions and answers for HTML and CSS",
     price: "",
     link: "https://topmate.io/meet_g/1850823",
@@ -576,7 +576,7 @@ Helps you build and deploy real projects confidently`
     isBestSeller: false,
     isPlacementFocused: true,
     isAdvancedLevel: false,
-    copiesSold: "",
+    copiesSold: "11",
     longDescription: `Google – Tagged & Top Interview Questions (Part 1 & 2)
 Amazon – Multiple Sets + 6 Months Preparation Sheet
 Microsoft – Multiple LeetCode Sets + Master Sheet

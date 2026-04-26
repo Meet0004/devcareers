@@ -17,6 +17,7 @@ const MESSAGES = [
 ]
 
 export default function NotFound() {
+  // usePageTitle('Page not Found') 
   const navigate = useNavigate()
   const [count, setCount]       = useState(10)
   const [msgIndex]              = useState(() => Math.floor(Math.random() * MESSAGES.length))

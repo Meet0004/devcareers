@@ -1,16 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import SectionHeading from '../legal/SectionHeading'
+import { metrics } from '../../config/metrics'
 
 const STATS = [
-	{ number: '10K+',     label: 'Active Users' },
-	{ number: '300+',     label: 'Companies Tracked' },
-	{ number: '100+',     label: 'Monthly Opportunities' },
-	{ number: '35+',      label: 'Resources' },
-	{ number: import.meta.env.VITE_TOTAL_SALES,      label: 'Topmate Bookings' },
-	{ number: 'Top 0.1%', label: 'Topmate Creator' },
-	{ number: '100%',     label: 'Verified Listings' },
-	{ number: '0₹',       label: 'To Browse Jobs' },
-]
+	{ number: `${metrics.monthlyUsers}`, label: 'Monthly Active Users' },
+	{ number: `${metrics.monthlyJobs}+`, label: 'Monthly Opportunities' },
+	{ number: `Top ${metrics.topmateRanking}%`, label: 'Topmate Creator' },
+	{ number: '100%', label: 'Verified Listings' },]
 
 function parse(raw) {
 	if (raw.startsWith('Top ')) {
@@ -28,7 +24,7 @@ function easeOutCubic(t) {
 	return 1 - Math.pow(1 - t, 3)
 }
 
-const BADGES = ['Community Care', 'Curator', "People's Choice", 'Top 1%']
+const BADGES = ['Community Care', 'Curator', "People's Choice"]
 
 const Impact = () => {
 	const sectionRef = useRef(null)
@@ -113,12 +109,10 @@ const Impact = () => {
 				.impact-section.visible .divider-line {
 					animation: dividerGrow 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards;
 				}
-
 				.stat-item:hover .stat-number-val {
 					color: white;
 					opacity: 0.95;
 				}
-
 				@media (prefers-reduced-motion: reduce) {
 					.impact-section,
 					.impact-section.visible,
@@ -133,7 +127,7 @@ const Impact = () => {
 						transform: scaleX(1) !important;
 					}
 				}
-			`}</style>
+				`}</style>
 
 			<section
 				ref={sectionRef}
@@ -142,19 +136,17 @@ const Impact = () => {
 				<SectionHeading
 					title="Our Impact in Numbers"
 					subtitle="Here's what we've achieved together as a community since our launch in 2023"
-					className="mb-10"
+					className="mb-4"
 				/>
 
 				{/* Stat grid */}
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 rounded-xl overflow-hidden">
 					{PARSED.map((stat, i) => {
 						const current = counts[i]
-						const display = `${stat.parsed.prefix}${
-							stat.parsed.decimals
-								? Number(current).toFixed(1)
-								: Math.floor(current)
-						}${stat.parsed.suffix}`
-
+						const display = `${stat.parsed.prefix}${stat.parsed.decimals
+							? Number(current).toFixed(1)
+							: Math.floor(current)
+							}${stat.parsed.suffix}`
 						return (
 							<div
 								key={stat.label}
@@ -164,7 +156,7 @@ const Impact = () => {
 								<span className="stat-number-val text-3xl md:text-4xl font-bold tracking-tight mb-1 tabular-nums transition-opacity duration-200">
 									{display}
 								</span>
-								<span className="text-green-100 text-sm font-normal mt-1 leading-snug">
+								<span className="text-green-50 text-sm font-normal mt-1 leading-snug">
 									{stat.label}
 								</span>
 							</div>
@@ -173,33 +165,12 @@ const Impact = () => {
 				</div>
 
 				{/* Footer */}
-				<div className="footer-row mt-10 pt-8 relative">
+				<div className="footer-row mt-4 pt-4 relative font-sans">
 					<div className="divider-line absolute top-0 left-0 right-0 h-px bg-green-300/50" />
-					<div className="grid md:grid-cols-2 gap-6 text-center md:text-left">
-						<div>
-							<p className="text-sm uppercase tracking-widest text-green-200 font-semibold mb-3">
-								Topmate Achievements
-							</p>
-							<div className="flex flex-wrap gap-2 justify-center md:justify-start">
-								{BADGES.map(badge => (
-									<span
-										key={badge}
-										className="bg-white/10 border border-white/20 px-3 py-1 rounded-full text-sm font-medium"
-									>
-										{badge}
-									</span>
-								))}
-							</div>
-						</div>
-						<div>
-							<p className="text-sm uppercase tracking-widest text-green-200 font-semibold mb-3">
-								Daily Commitment
-							</p>
-							<p className="text-2xl font-bold tracking-tight">8+ Hours Daily</p>
-							<p className="text-green-100 text-sm mt-1">
-								Dedicated to finding opportunities, creating content, and supporting users
-							</p>
-						</div>
+					<div>
+						<p className="text-xl font-semi-bold tracking-tight">
+							Daily Commitment: {metrics.dedicatedHours}+ Hours Daily Dedicated to finding opportunities, creating content, and supporting users
+						</p>
 					</div>
 				</div>
 			</section>

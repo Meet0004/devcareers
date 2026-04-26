@@ -1,87 +1,315 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ResourcesData from '../../data/resourceData/resourceData'
 import ResourcesTopmate from '../../data/resourceData/resourceTopmate'
-import NaukriSidebarBanner from '../common/NaukriSidebarBanner'
-
+import blogData from '../../data/blogData/index'
 const CompanyDetailSidebar = () => {
   const shuffledData = useMemo(() => {
-    const firstItem = ResourcesData.find(item => item.id === 34)
-    const otherItems = ResourcesData.filter(item => item.id !== 34)
+  const allowedIds = [1,2,3,7,10,14,16,18,20,21,22,23,24,25,26,28,29,30,] // only these IDs allowed
+  const filtered = ResourcesData.filter(item => allowedIds.includes(item.id))
+  const shuffled = [...filtered]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  const limitedShuffled = shuffled.slice(0, 15)
 
-    const shuffled = [...otherItems]
+  return limitedShuffled
+}, [])
+
+  const blogs = useMemo(() => {
+    const shuffled = [...blogData]
+
     for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+      const j = Math.floor(Math.random() * (i + 1))
+        ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
     }
 
-    const limitedShuffled = shuffled.slice(0, 25)
-    return firstItem ? [firstItem, ...limitedShuffled] : limitedShuffled
+    return shuffled.slice(0, 5)
   }, [])
 
-  const cardClass = "flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-orange-50 transition-colors border border-gray-200 hover:border-orange-300"
-
   return (
-    <div className="w-full lg:w-80 flex-shrink-0">
+    <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 16, fontFamily: 'system-ui,-apple-system,sans-serif' }}>
+      {/* Blogs Card */}
+      <div style={{
+        background: '#fff',
+        borderRadius: 20,
+        border: '1px solid rgba(0,0,0,0.07)',
+        boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
+        overflow: 'hidden'
+      }}>
 
-      <div className="bg-white rounded-lg shadow-md p-6 sticky top-4">
-        <h3 className="text-xl font-bold text-gray-800 mb-4">
-          Resources to Crack Interviews
-        </h3>
+        <div style={{
+          padding: '18px 20px 14px',
+          borderBottom: '1px solid #f3f4f6'
+        }}>
+          <h3 style={{
+            fontSize: 15,
+            fontWeight: 700,
+            margin: 0,
+            color: '#111827'
+          }}>
+            Useful Career Reads
+          </h3>
 
-        <div className="space-y-3">
-          {shuffledData.map((item) => {
+          <p style={{
+            fontSize: 12,
+            color: '#9ca3af',
+            margin: '4px 0 0'
+          }}>
+            Short guides that help in interviews
+          </p>
+        </div>
+
+        <div style={{
+          padding: 14,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 8
+        }}>
+          {blogs.map(blog => (
+            <Link
+              key={blog.id}
+              to={`/blog/${blog.slug}`}
+              style={{
+                textDecoration: 'none',
+                padding: '10px 12px',
+                borderRadius: 10,
+                border: '1px solid rgba(0,0,0,0.06)',
+                background: '#fafafa',
+                fontSize: 13,
+                fontWeight: 600,
+                color: '#111827',
+                lineHeight: 1.4
+              }}
+            >
+              {blog.title}
+            </Link>
+          ))}
+        </div>
+
+        <div style={{ padding: '0 14px 14px' }}>
+          <Link
+            to="/blogs"
+            style={{
+              display: 'block',
+              textAlign: 'center',
+              padding: '10px 16px',
+              borderRadius: 12,
+              border: '1px solid #e5e7eb',
+              fontSize: 12,
+              fontWeight: 700,
+              color: '#111827',
+              textDecoration: 'none'
+            }}
+          >
+            View All Blogs
+          </Link>
+        </div>
+
+      </div>
+      {/* Resources Card */}
+      <div
+        style={{
+          background: '#fff',
+          borderRadius: 20,
+          border: '1px solid rgba(0,0,0,0.07)',
+          boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
+          overflow: 'hidden',
+          position: 'sticky',
+          top: 0
+        }}
+      >
+
+        {/* Header */}
+        <div style={{
+          padding: '18px 20px 14px',
+          borderBottom: '1px solid #f3f4f6',
+          background: 'linear-gradient(135deg, #fff8f5 0%, #fff 100%)',
+          position: 'relative',
+          overflow: 'hidden',
+        }}>
+          {/* Ambient orb */}
+          <div style={{
+            position: 'absolute', top: -30, right: -30,
+            width: 100, height: 100, borderRadius: '50%',
+            background: '#f97316', opacity: 0.06, filter: 'blur(30px)',
+            pointerEvents: 'none',
+          }} />
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+            {/* Live dot */}
+            <span style={{ position: 'relative', width: 8, height: 8, flexShrink: 0 }}>
+              <span style={{
+                display: 'block', width: 8, height: 8,
+                borderRadius: '50%', background: '#22c55e',
+              }} />
+              <span style={{
+                position: 'absolute', inset: -3, borderRadius: '50%',
+                background: '#22c55e', opacity: 0.3,
+                animation: 'sidebarPulse 1.6s ease infinite',
+              }} />
+            </span>
+            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#ea580c' }}>
+              Curated for You
+            </span>
+          </div>
+
+          <h3 style={{ fontSize: 15, fontWeight: 700, color: '#111827', margin: 0, lineHeight: 1.3 }}>
+            Resources to Crack Interviews
+          </h3>
+          <p style={{ fontSize: 12, color: '#9ca3af', margin: '4px 0 0', fontWeight: 500 }}>
+            {shuffledData.length} handpicked resources
+          </p>
+        </div>
+
+        {/* Resource list */}
+        <div style={{ padding: '12px 14px', display: 'flex', flexDirection: 'column', gap: 6, maxHeight: '500px', overflowY: 'auto' }}>
+          {shuffledData.map((item, idx) => {
             const isFree = !item.price || item.price === ''
             const topmateLink = ResourcesTopmate[item.id]
+            const isFirst = idx === 0
 
-            const content = (
+            const sharedStyle = {
+              display: 'flex',
+              alignItems: 'center',
+              gap: 10,
+              padding: '9px 10px',
+              borderRadius: 12,
+              border: isFirst ? '1px solid #fed7aa' : '1px solid rgba(0,0,0,0.06)',
+              background: isFirst ? 'linear-gradient(135deg,#fff8f5,#fff)' : '#fafaf9',
+              cursor: 'pointer',
+              textDecoration: 'none',
+              transition: 'all 0.2s cubic-bezier(0.22,1,0.36,1)',
+            }
+
+            const CardContent = ({ hov }) => (
               <>
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-16 h-16 object-contain rounded-md flex-shrink-0"
-                />
-                <span className="text-sm font-medium text-gray-800 flex-1">{item.title}</span>
-                <span className="text-orange-500 font-bold text-lg">→</span>
+                {/* Thumbnail */}
+                <div style={{
+                  width: 60, height: 60, borderRadius: 10, flexShrink: 0,
+                  overflow: 'hidden', border: '1px solid rgba(0,0,0,0.06)',
+                  background: '#f9fafb',
+                  transition: 'transform 0.3s cubic-bezier(0.34,1.56,0.64,1)',
+                  transform: hov ? 'scale(1.08) rotate(-3deg)' : 'none',
+                }}>
+                  <img src={item.image} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                </div>
+
+                {/* Title */}
+                <span style={{
+                  fontSize: 12, fontWeight: 600, color: '#111827',
+                  flex: 1, lineHeight: 1.4,
+                  display: '-webkit-box', WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical', overflow: 'hidden',
+                }}>
+                  {item.title}
+                </span>
+
+                {/* Arrow */}
+                <div style={{
+                  width: 24, height: 24, borderRadius: '50%', flexShrink: 0,
+                  background: hov ? '#f97316' : 'rgba(249,115,22,0.1)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  transition: 'all 0.25s cubic-bezier(0.34,1.56,0.64,1)',
+                  transform: hov ? 'scale(1.1) rotate(-30deg)' : 'none',
+                }}>
+                  <svg width={10} height={10} fill="none" stroke={hov ? '#fff' : '#f97316'} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
               </>
             )
 
-            // Free → direct link
-            if (isFree) {
-              return (
-                <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer" className={cardClass}>
-                  {content}
+            // Hover wrapper
+            const HoverCard = ({ href, to, children }) => {
+              const [hov, setHov] = useState(false)
+              const style = {
+                ...sharedStyle,
+                border: isFirst
+                  ? `1px solid ${hov ? '#f97316aa' : '#fed7aa'}`
+                  : `1px solid ${hov ? 'rgba(249,115,22,0.2)' : 'rgba(0,0,0,0.06)'}`,
+                background: hov
+                  ? isFirst ? 'linear-gradient(135deg,#fff5ee,#fff)' : '#fff'
+                  : isFirst ? 'linear-gradient(135deg,#fff8f5,#fff)' : '#fafaf9',
+                boxShadow: hov ? `0 4px 16px rgba(249,115,22,0.1)` : 'none',
+                transform: hov ? 'translateY(-1px)' : 'none',
+              }
+              if (href) return (
+                <a href={href} target="_blank" rel="noopener noreferrer"
+                  style={style}
+                  onMouseEnter={() => setHov(true)}
+                  onMouseLeave={() => setHov(false)}
+                >
+                  <CardContent hov={hov} />
                 </a>
+              )
+              return (
+                <Link to={to}
+                  style={style}
+                  onMouseEnter={() => setHov(true)}
+                  onMouseLeave={() => setHov(false)}
+                >
+                  <CardContent hov={hov} />
+                </Link>
               )
             }
 
-            // Paid + topmate exists → topmate
-            if (topmateLink) {
-              return (
-                <a key={item.id} href={topmateLink} target="_blank" rel="noopener noreferrer" className={cardClass}>
-                  {content}
-                </a>
-              )
-            }
-
-            // Paid + no topmate → internal resource page
-            return (
-              <Link key={item.id} to={`/resource/${item.id}`} className={cardClass}>
-                {content}
-              </Link>
-            )
+            if (isFree) return <HoverCard key={item.id} href={item.link} />
+            if (topmateLink) return <HoverCard key={item.id} href={topmateLink} />
+            return <HoverCard key={item.id} to={`/resource/${item.id}`} />
           })}
+        </div>
 
-          {/* More Resources */}
-          <Link
-            to="/resources"
-            className="flex items-center justify-center p-3 bg-orange-50 rounded-lg border border-orange-300 hover:bg-orange-100 transition-all font-semibold text-orange-600 text-sm"
-          >
-            View More Resources →
-          </Link>
+        {/* Footer CTA */}
+        <div style={{ padding: '0 14px 14px' }}>
+          <ViewMoreBtn />
         </div>
       </div>
+
+      <style>{`
+        @keyframes sidebarPulse {
+          0%,100% { transform: scale(1); opacity: 0.3; }
+          50%      { transform: scale(1.8); opacity: 0; }
+        }
+        /* Custom scrollbar for resource list */
+        div::-webkit-scrollbar { width: 4px; }
+        div::-webkit-scrollbar-track { background: transparent; }
+        div::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
+        div::-webkit-scrollbar-thumb:hover { background: #f97316aa; }
+      `}</style>
     </div>
+  )
+}
+
+// Separate component so hover state is isolated
+const ViewMoreBtn = () => {
+  const [hov, setHov] = useState(false)
+  return (
+    <Link
+      to="/resources"
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={() => setHov(false)}
+      style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+        padding: '10px 16px',
+        background: hov ? 'linear-gradient(135deg,#f97316,#ea580c)' : 'linear-gradient(135deg,#fff8f5,#fff)',
+        border: `1px solid ${hov ? 'transparent' : '#fed7aa'}`,
+        borderRadius: 12,
+        fontSize: 12, fontWeight: 700,
+        color: hov ? '#fff' : '#ea580c',
+        textDecoration: 'none',
+        transition: 'all 0.25s cubic-bezier(0.22,1,0.36,1)',
+        boxShadow: hov ? '0 4px 14px rgba(249,115,22,0.3)' : 'none',
+        transform: hov ? 'translateY(-1px)' : 'none',
+      }}
+    >
+      View All Resources
+      <svg width={12} height={12} fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        style={{ transition: 'transform 0.25s', transform: hov ? 'translateX(3px)' : 'none' }}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+    </Link>
   )
 }
 

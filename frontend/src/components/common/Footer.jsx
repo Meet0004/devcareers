@@ -1,9 +1,10 @@
 import React from 'react'
-import { Youtube, MessageCircle, Linkedin } from 'lucide-react'
+import { Youtube, MessageCircle, Linkedin, InstagramIcon } from 'lucide-react'
 
 const youtube_link = import.meta.env.VITE_YOUTUBE_LINK
 const whatsapp_link = import.meta.env.VITE_WHATSAPP_LINK
 const linkedin_link = import.meta.env.VITE_LINKEDIN_LINK
+const instagram_link = import.meta.env.VITE_INSTAGRAM_LINK
 const QUICK_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/company-details', label: 'Job Posting' },
@@ -12,23 +13,22 @@ const QUICK_LINKS = [
 ]
 
 const LEGAL_LINKS = [
+    { href: '/about-us', label: 'About Us' },
   { href: '/contact-us', label: 'Contact Us' },
-  { href: '/about-us', label: 'About Us' },
-  { href: '/purchase-query', label: 'Purchase Query' },
+    { href: '/disclaimer', label: 'Disclaimer' },
   { href: '/privacy-policy', label: 'Privacy Policy' },
   { href: '/terms-and-conditions', label: 'Terms and Conditions' },
-  { href: '/disclaimer', label: 'Disclaimer' },
 ]
 
 const SOCIAL_LINKS = [
   { href: youtube_link, label: 'YouTube Channel', icon: <Youtube className="w-4 h-4" /> },
   { href: whatsapp_link, label: 'WhatsApp Channel', icon: <MessageCircle className="w-4 h-4" /> },
+  { href: instagram_link, label: 'Instagram Profile', icon: <InstagramIcon className="w-4 h-4"/> },
   { href: linkedin_link, label: 'LinkedIn Channel', icon: <Linkedin className="w-4 h-4" /> },
 ]
 
 const BUSINESS_LINKS = [
   { href: '/advertise-with-us', label: 'Advertise with Us' },
-  { href: '/partnership', label: 'Partnership' },
 ]
 
 const Footer = () => (
@@ -37,7 +37,7 @@ const Footer = () => (
 
       {/* Column 1 */}
       <div>
-        <h3 className="font-bold text-white text-base mb-4 uppercase tracking-wide">Quick Links</h3>
+        <h3 className="font-bold text-white text-base mb-4 uppercase tracking-wide">Candidate</h3>
         <ul className="space-y-2 text-sm">
           {QUICK_LINKS.map(({ href, label }) => (
             <li key={href}>
@@ -89,10 +89,8 @@ const Footer = () => (
 
     </div>
 
-    <div className="text-center mt-8 text-xs border-t border-white/60 pt-4">
-  <p className="text-white text-sm">Last updated: March 2026</p>
+    <div className="text-center mt-8 text-xs pt-4">
   <p className="text-white text-sm">© 2026 DevCareers. All rights reserved.</p>
-  <p className="text-white font-medium">Built with ❤️ by Meet Soni for students everywhere</p>
 </div>
   </footer>
 )

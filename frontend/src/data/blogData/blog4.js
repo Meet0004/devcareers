@@ -8,7 +8,7 @@ const blog4 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "If you're a fresher in 2026 and you like the idea of building the parts of websites people actually see and use, frontend is a great entry point. The problem is, everyone keeps shouting different buzzwords — React, Next.js, TypeScript, Tailwind, Vite, Lighthouse — and you don't know where to start. This roadmap cuts the noise and shows you what to learn first, what to ignore for now, and how to become job-ready step by step.",
+"If you are a fresher in 2026 and want to build the parts of websites people actually use, frontend is a strong starting point. This roadmap cuts the noise and shows you what to learn first, what to ignore, and how to become job-ready.",
   covers: [
     'The exact skills you need as a fresher frontend developer in 2026',
     'A practical phase-wise plan from HTML basics to React and TypeScript',

@@ -8,7 +8,7 @@ const blog12 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "The 2026 job market in India is tough, but it is not dead. Companies are still hiring aggressively for the right skills, especially in AI, data, cloud, security and full stack development. Multiple reports on Indian IT jobs show the same pattern. Roles that sit close to data, cloud and production systems are getting better salaries and stronger demand compared to generic IT support work. This guide breaks down ten in-demand IT roles for 2026, how much they typically pay, and what skills you actually need to start targeting them.",
+    "The 2026 job market in India is tough, but the right roles are still in demand. This guide highlights the IT jobs that matter most, along with the skills and salary ranges freshers should know.",
   covers: [
     'Which IT roles are growing fastest in India in 2026',
     'Typical fresher salary ranges for each role, not just inflated Instagram numbers',

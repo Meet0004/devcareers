@@ -25,7 +25,7 @@ const CompanyDetailSidebar = () => {
         ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
     }
 
-    return shuffled.slice(0, 5)
+    return shuffled.slice(0, 3)
   }, [])
 
   return (
@@ -54,7 +54,7 @@ const CompanyDetailSidebar = () => {
 
           <p style={{
             fontSize: 12,
-            color: '#9ca3af',
+            color: '#2B2A2A',
             margin: '4px 0 0'
           }}>
             Short guides that help in interviews

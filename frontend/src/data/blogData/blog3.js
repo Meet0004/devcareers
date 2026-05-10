@@ -8,7 +8,7 @@ const blog3 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "If you're starting from almost zero in 2026 and want a software developer job, you don't need genius-level IQ or a fancy college. You need a clear path, realistic milestones, and the discipline to execute month after month. This roadmap breaks down exactly what to do in what order so you don't waste years jumping between tutorials, languages and frameworks.",
+"If you are starting from zero in 2026 and want a software developer job, you need a clear path and steady execution. This roadmap breaks the journey into practical steps so you do not waste time jumping between random tutorials.",
   covers: [
     'How to plan your journey from absolute beginner to job-ready in 9–12 months',
     'Which skills actually matter for fresher software developer roles in 2026',

@@ -8,7 +8,7 @@ const blog11 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "Getting an internship is hard. But what most freshers don’t realise is that the real game starts after you join. Many companies quietly treat internships as a long interview — they’re watching whether you’re someone they want to hire full-time. This guide shows you how to behave, what to focus on and when to talk about conversion so that you give yourself the best shot at a full-time offer.",
+    "Getting an internship is only the first step. This guide shows you how to work well, learn the right things, and improve your chances of turning the internship into a full-time offer.",
   covers: [
     'How companies actually think about converting interns to full-time hires',
     'What to do in the first, middle and last phase of your internship',

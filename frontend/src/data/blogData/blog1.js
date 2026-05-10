@@ -8,7 +8,7 @@ const blog1 = {
   date: 'Mar 30, 2026',
   author: 'Meet Soni',
   overview:
-    "A lot of freshers do fine in technical rounds and still lose the offer in HR. Not because they are bad, but because they do not know how to talk about themselves in a clear and simple way. This guide walks you through the most common HR questions and shows you how to answer them in a way that sounds natural and honest, not like a memorised script",
+"Many freshers do well in technical rounds but still lose offers in HR. This guide explains the most common HR questions and shows you how to answer them clearly, naturally, and without sounding memorized.",
   covers: [
     'How to answer "Tell me about yourself" without freezing',
     'How to handle salary, weakness and other tricky questions calmly',

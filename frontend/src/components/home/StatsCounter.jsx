@@ -27,7 +27,7 @@ const STATS = [
   {
     id: 'sales',
     envKey: 'VITE_TOTAL_SALES',
-    target: metrics.totalCustomers,
+    target: metrics.totalSales,
     suffix: '',
     label: 'Successful Purchases',
     // subtitle: { type: 'false' },

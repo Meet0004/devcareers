@@ -8,7 +8,7 @@ const blog15 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "In most offices, people will not call you out for bad email habits. They will just quietly form an opinion and that opinion will follow you. The good part is that email etiquette is not rocket science. Once you understand a few simple rules about subject lines, tone, structure and timing, you can look professional even as a fresher.",
+"Email habits say a lot about how you work, even when nobody points them out. This guide helps freshers write clearer emails, avoid common mistakes, and sound professional from day one.",
   covers: [
     'How to write clear, respectful emails that people actually read',
     'Simple rules for subject lines, CC, Reply All and follow ups',

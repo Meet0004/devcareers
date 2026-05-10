@@ -8,7 +8,7 @@ const blog9 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "If you’re still treating LinkedIn like an online resume dump, you’re wasting its real power. In 2026, recruiters in India are searching, shortlisting and even deciding salary ranges based on what they see on your profile. This guide walks you, as a fresher, through a complete LinkedIn makeover — from photo and headline to About section, projects, skills and content — so that you actually start showing up in searches and messages.",
+"LinkedIn is more than an online resume, especially in 2026. This guide shows freshers how to improve their profile so recruiters can find them and take them seriously.",
   covers: [
     'How recruiters and LinkedIn search actually look at fresher profiles in 2026',
     'Step-by-step makeover: photo, headline, About, experience and projects',

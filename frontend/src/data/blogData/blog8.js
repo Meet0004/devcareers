@@ -8,7 +8,7 @@ const blog8 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "If you’re graduating in 2026, you’re probably drowning in job sites — LinkedIn, Naukri, Internshala, Indeed, company portals, Telegram groups, and ten more apps your friends mention daily. The result? Confusion, not clarity. This guide doesn’t just list job portals; it tells you which ones actually matter for freshers in India, what each is good at, and how to use them smartly instead of blindly applying everywhere.",
+"Job portals can feel overwhelming when you are graduating in 2026. This guide explains which platforms matter for freshers in India and how to use them without wasting time on random applications.",
   covers: [
     'The job portals that actually work for fresh graduates in India in 2026',
     'Which platforms are best for tech, non-tech, off-campus and startup roles',

@@ -8,7 +8,7 @@ const blog6 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    'You think your resume is “fine” because it has all the usual sections — education, skills, projects. But if you’ve been applying to dozens of jobs and not even getting callbacks, chances are your resume is silently killing your chances in the first 10 seconds. This article walks you through ten resume mistakes that make recruiters reject you instantly — and how to fix each one like a smart fresher, not a desperate one.',
+"A resume can look complete and still fail in the first few seconds. This article breaks down the most common resume mistakes freshers make and shows you how to fix them before recruiters move on.",
   covers: [
     'How ATS and recruiters actually screen your resume in a few seconds',
     'The 10 biggest resume mistakes that cause instant rejection',

@@ -8,8 +8,7 @@ const blog13 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "Most students say they are interested in AI, but their projects stop at a basic notebook that predicts house prices. In 2026, that is not enough. Companies care about machine learning that runs reliably in production, uses the right infrastructure, and solves real business problems. This guide walks you through nine advanced AI project ideas that actually feel like real products, not just ML demos.",
-  covers: [
+"Basic machine learning projects are no longer enough to stand out. This guide shares advanced AI project ideas that feel more practical, more useful, and closer to real product work.",  covers: [
     'How to design AI projects that look production ready on your resume',
     'Where MLOps, vector databases and streaming systems fit in real projects',
     'How to talk about these projects in interviews so people take you seriously',

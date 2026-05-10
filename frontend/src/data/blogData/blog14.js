@@ -8,7 +8,7 @@ const blog14 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "Most full stack portfolios are just simple CRUD apps with a login page and a couple of forms. That is fine as a starting point, but it does not stand out. In 2026, companies are looking for developers who understand scalability, real time updates, background jobs and at least some basics of system design. This guide walks you through seven full stack project ideas that feel like real startup products, not just coursework.",
+"Most full stack portfolios stop at basic CRUD apps, which makes them easy to forget. This guide gives you project ideas that feel more like real products and show stronger engineering thinking.",
   covers: [
     'How to design full stack projects that show serious engineering thinking',
     'Where to add real time, microservices and DevOps style elements',

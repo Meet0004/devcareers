@@ -1,20 +1,22 @@
 import React from 'react'
 
+
 // ─────────────────────────────────────────────────────────────
 // SECTION CONFIG — order here = display order on page
 // Each key matches a flat field on the job object
 // ─────────────────────────────────────────────────────────────
 const SECTIONS = [
-  { key: 'overview',        label: 'Role Overview',         color: '#f97316', colorLight: '#fff7ed', colorBorder: '#fed7aa' },
-  { key: 'responsibilities', label: 'Responsibilities',     color: '#3b82f6', colorLight: '#eff6ff', colorBorder: '#bfdbfe' },
-  { key: 'skills',          label: 'Skills & Requirements', color: '#8b5cf6', colorLight: '#faf5ff', colorBorder: '#ddd6fe' },
-  { key: 'nice_to_have',    label: 'Nice to Have',          color: '#10b981', colorLight: '#f0fdf4', colorBorder: '#bbf7d0' },
-  { key: 'benefits',        label: 'What You Get',          color: '#f59e0b', colorLight: '#fffbeb', colorBorder: '#fde68a' },
-  { key: 'work_details',    label: 'Work Details',          color: '#6366f1', colorLight: '#eef2ff', colorBorder: '#c7d2fe' },
-  { key: 'education',       label: 'Education',             color: '#0891b2', colorLight: '#ecfeff', colorBorder: '#a5f3fc' },
-  { key: 'about_company',   label: 'About the Company',     color: '#64748b', colorLight: '#f8fafc', colorBorder: '#cbd5e1' },
-  { key: 'contact',         label: 'Contact & Application', color: '#db2777', colorLight: '#fdf2f8', colorBorder: '#fbcfe8' },
+  { key: 'overview',         label: 'Role Overview',         color: '#d97706', colorLight: '#fff', colorBorder: '#fed7aa' },
+  { key: 'responsibilities', label: 'Responsibilities',      color: '#ea580c', colorLight: '#fff', colorBorder: '#fdba74' },
+  { key: 'skills',           label: 'Skills & Requirements', color: '#c2410c', colorLight: '#fff', colorBorder: '#fed7aa' },
+  { key: 'nice_to_have',     label: 'Nice to Have',          color: '#f59e0b', colorLight: '#fff', colorBorder: '#fde68a' },
+  { key: 'benefits',         label: 'What You Get',          color: '#fb923c', colorLight: '#fff', colorBorder: '#fed7aa' },
+  { key: 'work_details',     label: 'Work Details',          color: '#ea580c', colorLight: '#fff', colorBorder: '#fdba74' },
+  { key: 'education',        label: 'Education',             color: '#d97706', colorLight: '#fff', colorBorder: '#fed7aa' },
+  { key: 'about_company',    label: 'About the Company',     color: '#b45309', colorLight: '#fff', colorBorder: '#fde2c3' },
+  { key: 'contact',          label: 'Contact & Application', color: '#f97316', colorLight: '#fff', colorBorder: '#fec89a' },
 ]
+
 
 // ─────────────────────────────────────────────────────────────
 // QUICK INFO FIELDS — shown as a table
@@ -22,14 +24,15 @@ const SECTIONS = [
 // deadline falls back to 'ASAP' if not provided
 // ─────────────────────────────────────────────────────────────
 const QUICK_FIELDS = [
-  { key: 'experience', label: 'Experience'                },
-  { key: 'location',   label: 'Location'                  },
-  { key: 'salary',     label: 'Salary'                    },
-  { key: 'jobType',    label: 'Job Type'                  },
-  { key: 'workMode',   label: 'Work Mode'                 },
-  { key: 'openings',   label: 'Openings'                  },
-  { key: 'deadline',   label: 'Deadline', default: 'ASAP' },
+  { key: 'experience', label: 'Experience'                 },
+  { key: 'location',   label: 'Location'                   },
+  { key: 'salary',     label: 'Salary'                     },
+  { key: 'jobType',    label: 'Job Type'                   },
+  { key: 'workMode',   label: 'Work Mode'                  },
+  { key: 'openings',   label: 'Openings'                   },
+  { key: 'deadline',   label: 'Deadline', default: 'ASAP'  },
 ]
+
 
 // ─────────────────────────────────────────────────────────────
 // BulletLine — single bullet point
@@ -42,13 +45,13 @@ const BulletLine = ({ text, color }) => {
     <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', lineHeight: 1.75 }}>
       <span style={{
         width: 6, height: 6, borderRadius: '50%',
-        background: color + '99', flexShrink: 0, marginTop: 8,
-        boxShadow: `0 0 0 2px ${color}22`,
+        background: color + 'aa', flexShrink: 0, marginTop: 8,
+        boxShadow: `0 0 0 2px ${color}18`,
       }} />
-      <span style={{ color: '#4b5563', fontSize: 14 }}>
+      <span style={{ color: '#5f5a52', fontSize: 14 }}>
         {hasLabel ? (
           <>
-            <strong style={{ color: '#111827', fontWeight: 600 }}>
+            <strong style={{ color: '#2f2a24', fontWeight: 600 }}>
               {text.slice(0, colonIdx)}
             </strong>
             {text.slice(colonIdx)}
@@ -58,6 +61,7 @@ const BulletLine = ({ text, color }) => {
     </li>
   )
 }
+
 
 // ─────────────────────────────────────────────────────────────
 // SectionCard — one collapsible section block
@@ -76,11 +80,11 @@ const SectionCard = ({ label, color, colorLight, colorBorder, text }) => {
       border: `1px solid ${colorBorder}`,
       borderRadius: 16,
       overflow: 'hidden',
-      boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
+      boxShadow: '0 1px 4px rgba(65, 54, 40, 0.04)',
       transition: 'box-shadow 0.25s ease',
     }}
-      onMouseEnter={e => e.currentTarget.style.boxShadow = `0 8px 28px ${color}15`}
-      onMouseLeave={e => e.currentTarget.style.boxShadow = '0 1px 4px rgba(0,0,0,0.04)'}
+      onMouseEnter={e => e.currentTarget.style.boxShadow = '0 10px 26px rgba(94, 78, 58, 0.08)'}
+      onMouseLeave={e => e.currentTarget.style.boxShadow = '0 1px 4px rgba(65, 54, 40, 0.04)'}
     >
       <div
         style={{
@@ -94,17 +98,16 @@ const SectionCard = ({ label, color, colorLight, colorBorder, text }) => {
         <div style={{
           width: 8, height: 8, borderRadius: '50%',
           background: color, flexShrink: 0,
-          boxShadow: `0 0 0 3px ${color}22`,
+          boxShadow: `0 0 0 3px ${color}15`,
         }} />
         <span style={{
           fontSize: 11, fontWeight: 700,
           letterSpacing: '0.09em',
-          textTransform: 'uppercase', color,
+          textTransform: 'uppercase', color: '#6f5a43',
           flex: 1, textAlign: 'left',
         }}>
           {label}
         </span>
-
       </div>
 
       <div style={{
@@ -127,6 +130,7 @@ const SectionCard = ({ label, color, colorLight, colorBorder, text }) => {
   )
 }
 
+
 // ─────────────────────────────────────────────────────────────
 // QuickInfoBar — full-width table, no emojis
 // Alternating row shading, label | value layout
@@ -139,10 +143,11 @@ const QuickInfoBar = ({ job }) => {
   return (
     <div style={{
       marginBottom: 20,
-      border: '1px solid #e5e7eb',
+      border: '1px solid #fed7aa',
       borderRadius: 14,
       overflow: 'hidden',
-      boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
+      boxShadow: '0 1px 4px rgba(65,54,40,0.04)',
+      background: '#fffdfa',
     }}>
       <table style={{
         width: '100%',
@@ -154,15 +159,15 @@ const QuickInfoBar = ({ job }) => {
             <th
               colSpan={2}
               style={{
-                background: 'linear-gradient(135deg, #fff7ed, #fffbeb)',
-                borderBottom: '1px solid #fed7aa',
+                background: 'linear-gradient(135deg, #fff, #fff)',
+                borderBottom: '1px solid #eee1cf',
                 padding: '9px 16px',
                 textAlign: 'left',
                 fontSize: 11,
                 fontWeight: 700,
                 letterSpacing: '0.09em',
                 textTransform: 'uppercase',
-                color: '#f97316',
+                color: '#8a6742',
               }}
             >
               Job at a Glance
@@ -174,26 +179,26 @@ const QuickInfoBar = ({ job }) => {
             <tr
               key={f.key}
               style={{
-                borderTop: '1px solid #f3f4f6',
-                background: i % 2 === 0 ? '#fff' : '#fafafa',
+                borderTop: '1px solid #f5eee5',
+                background: i % 2 === 0 ? '#fff' : '#fff',
               }}
             >
               <td style={{
                 padding: '10px 16px',
                 width: '35%',
-                color: '#6b7280',
+                color: 'black',
                 fontWeight: 600,
                 fontSize: 12,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
-                borderRight: '1px solid #f3f4f6',
+                borderRight: '1px solid #f3ebe1',
                 whiteSpace: 'nowrap',
               }}>
                 {f.label}
               </td>
               <td style={{
                 padding: '10px 20px',
-                color: '#111827',
+                color: '#2f2a24',
                 fontWeight: 600,
                 fontSize: 14,
               }}>
@@ -207,6 +212,7 @@ const QuickInfoBar = ({ job }) => {
   )
 }
 
+
 // ─────────────────────────────────────────────────────────────
 // JobDescription — main component
 // Reads flat fields from selectedCompany
@@ -219,19 +225,18 @@ const JobDescription = ({ selectedCompany }) => {
 
   return (
     <div style={{ fontFamily: 'system-ui,-apple-system,sans-serif', marginTop: 28 }}>
-
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-        <h3 style={{ fontSize: 17, fontWeight: 700, color: '#111827', margin: 0, whiteSpace: 'nowrap' }}>
+        <h3 style={{ fontSize: 17, fontWeight: 700, color: '#2f2a24', margin: 0, whiteSpace: 'nowrap' }}>
           Job Description
         </h3>
         <span style={{
-          fontSize: 11, fontWeight: 700, color: '#f97316',
-          background: '#fff7ed', border: '1px solid #fed7aa',
+          fontSize: 11, fontWeight: 700, color: '#8a6742',
+          background: '#fbf3e8', border: '1px solid #ecdcc4',
           borderRadius: 100, padding: '2px 10px',
         }}>
           {filledSections.length} sections
         </span>
-        <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, #e5e7eb, transparent)' }} />
+        <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, #e8ddd0, transparent)' }} />
       </div>
 
       <QuickInfoBar job={selectedCompany} />
@@ -248,9 +253,9 @@ const JobDescription = ({ selectedCompany }) => {
           />
         ))}
       </div>
-
     </div>
   )
 }
+
 
 export default JobDescription

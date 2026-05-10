@@ -8,7 +8,7 @@ const blog5 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "If you’re the kind of person who cares more about how things work behind the scenes than how they look on the screen, backend development might be your lane. But in 2026, backend isn’t just 'write some APIs'. Companies expect you to understand databases, authentication, performance, security basics, and deployments. This roadmap walks you from absolute beginner to job‑ready backend fresher in a structured, no‑nonsense way.",
+"If you care more about how things work behind the scenes, backend development may be the right path. This roadmap takes you from beginner to job-ready with the core skills companies expect in 2026.",
   covers: [
     'Core skills every backend fresher is expected to know in 2026',
     'A practical phase-by-phase plan from language basics to real APIs',

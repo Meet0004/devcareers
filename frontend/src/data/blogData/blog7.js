@@ -8,7 +8,7 @@ const blog7 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "Most freshers are not losing because there are no off campus drives. They’re losing because they see them late, forget deadlines, miss follow-ups, or apply randomly without a system. If you treat off campus hiring like a proper project – with sources, tracking, and routines – your chances of getting calls multiply. This article shows you how to build a simple but powerful system to track off campus drives without losing your mind.",
+"Most freshers miss off-campus drives because they do not track them properly. This article shows you how to build a simple system for finding jobs, following deadlines, and applying with more consistency.",
   covers: [
     'Where to find genuine off campus drives (and avoid fake ones)',
     'How to build a simple tracking system using a sheet or Notion',

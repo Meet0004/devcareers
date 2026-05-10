@@ -8,7 +8,7 @@ const blog2 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "Every JavaScript developer starts with console.log. It is simple, quick and feels under your control. But once your app grows, that habit quietly starts wasting your time. Modern tools in Chrome DevTools and VS Code give you a much better way to see what your code is doing, without spamming logs or reloading ten times. This guide shows you how to move from console.log to proper debugging, in a practical way.",
+"Most JavaScript developers begin with console.log, but that habit stops working as projects grow. This guide shows a better way to debug in Chrome DevTools and VS Code without wasting time on repeated logs and reloads.",
   covers: [
     'Why console.log is fine for small checks but bad as your main debugging tool',
     'How to use breakpoints, watch expressions and call stack in Chrome DevTools and VS Code',

@@ -8,8 +8,7 @@ const blog10 = {
   date: 'Apr 26, 2026',
   author: 'Meet Soni',
   overview:
-    "For most 2026 freshers, the real gatekeeper is not the interview — it’s the online test. Companies filter thousands of candidates using aptitude, coding and communication assessments long before you meet a human. This guide breaks down how these tests actually work, what topics matter most, and how to build a realistic preparation plan that fits alongside college, projects and DSA.",
-  covers: [
+"For many 2026 freshers, the real filter is the online test, not the interview. This guide explains how aptitude, coding, and communication tests work and how to prepare without losing focus.",  covers: [
     'The typical pattern of off-campus tests in India for tech roles',
     'What to study for aptitude, coding and communication — without burning out',
     'A 6–8 week prep plan you can start from today',

@@ -31,7 +31,11 @@ import hremails from '../../assets/hremails.avif';
 import systemDesign from '../../assets/systemDesign.avif';
 import HRques from '../../assets/HRques.avif';
 import basicques from '../../assets/basicques.avif';
-
+import pythonNotes from '../../assets/pythonNotes.avif';
+import codingpatters from '../../assets/20codingpatterns.avif';
+import dataAnalysis from '../../assets/dataAnalysis.avif';
+import dsacheatsheet from '../../assets/dsacheatsheet.avif';
+import typescriptNotes from '../../assets/typescriptNotes.avif'
 const resourceData = [
   {
     id: 1,
@@ -693,8 +697,247 @@ Perfect for freshers looking for off-campus roles
 Helps you take control of your job search strategy
 `
   },
+{
+  id: 33,
+  title: "Python Beginner to Advanced Notes",
+  description: "Structured beginner-to-advanced Python notes with libraries, OOP, APIs, and real-world concepts.",
+  price: "₹9",
+  link: "https://topmate.io/meet_g/2086754",
+  image: pythonNotes,
+  isPopular: false,
+  isBestSeller: false,
+  isPlacementFocused: false,
+  isAdvancedLevel: false,
+  copiesSold: "",
+  longDescription: `What It Contains:
+Complete Python Notes from Beginner to Advanced
+Step-by-step explanation of Python fundamentals
+Variables, Data Types, Operators & Control Flow
+Lists, Tuples, Sets, Dictionaries & Strings
+Functions, Modules & File Handling
+Exception Handling & Object-Oriented Programming (OOP)
+Introduction to APIs and Web Development with Flask
+Python Libraries Overview:
+NumPy
+Pandas
+Matplotlib
+Seaborn
+Scikit-learn
+Selenium
+BeautifulSoup
+Real-world examples and practical concepts
+Structured notes for quick revision and interview prep`,
+
+  shouldYouBuyFor: `
+Beginners starting Python
+College students & freshers
+Placement preparation
+Backend & automation learners
+Anyone learning programming from scratch`
+},
+
+{
+  id: 34,
+  title: "20 Coding Patterns to Master MAANG Interviews",
+  description: "Interview-focused coding patterns cheat sheet with problem-solving approaches for DSA rounds.",
+  price: "₹9",
+  link: "https://topmate.io/meet_g/2086787",
+  image: codingpatters,
+  isPopular: false,
+  isBestSeller: false,
+  isPlacementFocused: false,
+  isAdvancedLevel: false,
+  copiesSold: "",
+  longDescription: `What It Contains:
+20 Most Important Coding Patterns for DSA Interviews
+Pattern-wise explanations with usage and logic
+Commonly asked interview problems for each pattern
+Topics Covered:
+Sliding Window
+Two Pointers
+Fast & Slow Pointers
+Merge Intervals
+Cyclic Sort
+BFS & DFS
+Two Heaps
+Binary Search
+Top K Elements
+Dynamic Programming Patterns
+Topological Sort
+K-Way Merge
+Palindromic Subsequence
+Longest Common Substring
+And more...
+Real interview-style problem references
+Structured roadmap to master DSA patterns efficiently`,
+
+  shouldYouBuyFor: `
+DSA & LeetCode learners
+Placement preparation
+MAANG interview preparation
+Software engineering aspirants
+College students & freshers`
+},
+
+{
+  id: 35,
+  title: "Data Analysis CheatSheet (Beginner to Advanced)",
+  description: "Complete data analysis roadmap with SQL, Python libraries, statistics, EDA, and visualization concepts.",
+  price: "₹9",
+  link: "https://topmate.io/meet_g/2086803",
+  image: dataAnalysis,
+  isPopular: true,
+  isBestSeller: false,
+  isPlacementFocused: false,
+  isAdvancedLevel: false,
+  copiesSold: "",
+  longDescription: `What It Contains:
+Complete Data Analysis CheatSheet from Basics to Advanced
+Step-by-step roadmap of the Data Analysis process
+Mathematics & Statistics concepts for Data Analysis
+Data Cleaning, Preprocessing & Transformation techniques
+Exploratory Data Analysis (EDA) concepts and visualizations
+Statistical Analysis & Hypothesis Testing
+Time Series Analysis & Forecasting methods
+Machine Learning basics for predictive analytics
+SQL for Data Analysis:
+SELECT, JOIN, WHERE
+Aggregations & Window Functions
+Python Libraries:
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Plotly
+SciPy
+Power BI, Tableau & Excel concepts
+Real-world Data Analysis project examples
+Data storytelling, reporting & interpretation techniques
+Ethical considerations and data privacy concepts`,
+
+  shouldYouBuyFor: `
+College students & freshers
+Placement preparation
+Python & SQL learners
+Beginners entering Data Science & Analytics
+Anyone learning Data Analysis from scratch`
+},
+
+{
+  id: 36,
+  title: "TypeScript Notes (Beginner to Advanced)",
+  description: "Beginner-friendly TypeScript notes covering typing, interfaces, generics, OOP, and scalable development.",
+  price: "",
+  link: "https://topmate.io/meet_g/2086866",
+  image: typescriptNotes,
+  isPopular: false,
+  isBestSeller: false,
+  isPlacementFocused: false,
+  isAdvancedLevel: false,
+  copiesSold: "",
+  longDescription: `What It Contains:
+Complete Introduction to TypeScript
+Understanding Static Typing & Type Annotations
+Basic Types in TypeScript Explained Clearly
+Interfaces & Object Typing
+Union Types & Type Safety Concepts
+Generics for Reusable and Scalable Code
+Type Inference & Smart Typing Features
+Optional Properties & Optional Parameters
+Enums & Type Aliases
+Classes in TypeScript:
+Constructors
+Access Modifiers
+OOP Concepts
+Non-Nullable Types & Safer Coding Practices
+Beginner-friendly examples and syntax explanations
+Quick revision notes for interviews and projects`,
+
+  shouldYouBuyFor: `
+JavaScript Developers
+React & Next.js Learners
+Frontend & Full-Stack Developers
+College Students & Freshers
+Placement Preparation
+Anyone starting TypeScript from scratch`
+},
+
+{
+  id: 37,
+  title: "DSA CheatSheet (Beginner to Advanced)",
+  description: "Complete DSA cheat sheet with algorithms, coding patterns, graphs, DP, and interview preparation topics.",
+  price: "₹9",
+  link: "https://topmate.io/meet_g/2086825",
+  image: dsacheatsheet,
+  isPopular: false,
+  isBestSeller: false,
+  isPlacementFocused: false,
+  isAdvancedLevel: false,
+  copiesSold: "",
+  longDescription: `What It Contains:
+Complete DSA Roadmap from Beginner to Advanced
+Time Complexity, Space Complexity & Big-O Explained Simply
+Mathematics for DSA:
+Prime Numbers
+GCD & LCM
+Sieve Algorithm
+Fast Exponentiation
+Bit Manipulation
+Arrays Mastery:
+Sliding Window
+Two Pointers
+Prefix Sum
+Kadane’s Algorithm
+Sorting Techniques
+Strings & Pattern Matching:
+KMP Algorithm
+Rabin-Karp
+Z Algorithm
+Manacher’s Algorithm
+Linked Lists, Stacks & Queues Complete Notes
+Recursion & Backtracking:
+N-Queens
+Sudoku Solver
+Permutations & Combinations
+Searching & Sorting Algorithms Explained Clearly
+Hashing & HashMap Concepts with Collision Handling
+Trees & BST:
+Traversals
+LCA
+AVL Tree
+Segment Tree
+Graphs Complete Coverage:
+BFS & DFS
+Dijkstra
+Bellman-Ford
+Floyd-Warshall
+MST (Prim’s & Kruskal’s)
+Union Find (DSU)
+Dynamic Programming:
+0/1 Knapsack
+LCS & LIS
+DP on Grids, Trees & Strings
+Heap / Priority Queue Concepts
+Sliding Window & Two Pointer Patterns
+Segment Tree & Fenwick Tree (BIT)
+Advanced Algorithms:
+Tarjan’s Algorithm
+Convex Hull
+MO’s Algorithm
+Square Root Decomposition
+Common Coding Patterns & Reusable Templates
+Common Beginner Mistakes in DSA & How to Avoid Them`,
+
+  shouldYouBuyFor: `
+Placement Preparation
+MAANG / Product-Based Company Interviews
+LeetCode & Competitive Programming
+College Students & Freshers
+Software Engineering Aspirants
+Anyone learning DSA seriously from scratch`
+}
   // {
-  //   id: 33,
+  //   id: 38,
   //   title: "",
   //   description: "",
   //   price: "₹₹",
@@ -709,7 +952,7 @@ Helps you take control of your job search strategy
   //   shouldYouBuyFor: ``
   // },
   // {
-  //   id: 34,
+  //   id: 39,
   //   title: "",
   //   description: "",
   //   price: "₹₹",
@@ -724,7 +967,7 @@ Helps you take control of your job search strategy
   //   shouldYouBuyFor: ``
   // },
   // {
-  //   id: 35,
+  //   id: 40,
   //   title: "",
   //   description: "",
   //   price: "₹₹",

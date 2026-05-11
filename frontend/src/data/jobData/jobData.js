@@ -688,7 +688,7 @@ Collaborative environment`,
   role: "Junior Product Engineer",jobType: 'Full Time',
   hiringLink: "https://unstop.com/o/VkjxyiD?lb=vhj6xFV&utm_medium=Share&utm_source=meetson4554&utm_campaign=Jobs",
   location: "Banglore Urban",
-  salary: "₹ 6 LPA - 8 LPA",
+  salary: "₹6 LPA - 8 LPA",
 
   overview: `Entry-level backend-focused role working on real-world product systems
 Opportunity to build APIs and scalable backend services`,
@@ -2658,160 +2658,102 @@ Regular pay comparisons across categories of ethnicity and gender for ongoing fa
     education: `Bachelor's or Master's degree in Computer Science, a related technical field, or equivalent practical experience`,
   },
 
-//   { id: 222,
-//     company: 'BluePMS Software Solutions Pvt Ltd',
-//     role: 'Technical Support Engineer',
-//     hiringLink: '',
-//     location: 'Chennai',
-//     openings: '5',
-//     experience: '0 – 3 Years',
-//     jobType: 'Full Time',
-//     workMode: 'Work From Home',
-//     deadline: '19 Mar 2026',
-//     overview: `Looking for a motivated Technical Support Engineer to provide technical assistance for software, hardware, and network-related issues
-// The candidate will troubleshoot problems, assist users, and ensure smooth system operations
-// Eligibility: Freshers and Experienced Professionals both welcome`,
-//     responsibilities: `Provide technical support via phone, email, chat, or remote tools
-// Troubleshoot hardware, software, and networking issues
-// Install, configure, and maintain systems and applications
-// Diagnose technical problems and provide timely solutions
-// Document issues and resolutions in the support system
-// Escalate complex issues to senior technical teams when required
-// Assist users with system setup, updates, and configurations
-// Ensure high levels of customer satisfaction and service quality`,
-//     skills: `Basic knowledge of Windows/Linux operating systems
-// Understanding of computer hardware and software troubleshooting
-// Basic networking knowledge: TCP/IP, DNS, LAN
-// Strong problem-solving and analytical skills
-// Good communication and interpersonal skills
-// Ability to learn quickly and work in a team environment`,
-//     education: `Bachelor's degree in Computer Science, Information Technology, Electronics, or related field
-// Accepted degrees: B.E / B.Tech / B.Sc / BCA / MCA / Diploma
-// Freshers with strong technical knowledge are encouraged to apply`,
-//     work_details: `Working Days: 5 Days
-// Job Type: Work From Home
-// Job Timing: Full Time`,
-//     contact: `HR Email: kalidas@bluepms.com
-// Application Deadline: 19 March 2026, 12:00 AM IST`,
-//   },
-// {
-//   id: 223,
-//   company: 'Habuild',
-//   role: 'Software Development Engineer (SDE 1)',
-//   hiringLink: 'jj',
 
-//   location: 'Bengaluru / Nagpur',
-//   experience: '0 – 2 Years',
-//   jobType: 'Full Time',
-//   workMode: 'Onsite',
+  // MAY 12 - 2026
+    // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+      // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+        // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+          // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+            // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+                // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+              // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+                // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+                  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+                    // MAY 12 - 2026  // MAY 12 - 2026  // MAY 12 - 2026
+                      // MAY 12 - 2026  // MAY 12 - 2026
+                        // MAY 12 - 2026
+                          // MAY 12 - 2026
+                  // MAY 12 - 2026
 
-//   overview: `Habuild is a rapidly growing wellness-focused platform in India, helping millions of users adopt healthier lifestyles through yoga, mindfulness, and consistent habits. With a strong community-driven approach and millions of daily active participants, the company focuses on building impactful digital products that encourage long-term well-being.
+{   id: 222,
+  company: 'Akamai Technologies',
+  role: 'Software Engineer',
+  hiringLink: 'https://unstop.com/o/vN2ykwx?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+  location: 'Pan India',
+  experience: '0 – 2 Years',
+  jobType: 'Full Time',
+  workMode: 'Work From Home',
 
-// As an SDE 1, you will be part of a product-driven team working on scalable applications that serve a massive user base. This role offers an opportunity to contribute to meaningful technology that directly impacts users' daily lives while working in a fast-paced and innovation-oriented environment.`,
+  overview: `Akamai Technologies is hiring Software Engineers to work on backend services, APIs, system integrations, and frontend UI development
+Role involves collaborating with cross-functional teams to build scalable and reliable systems while contributing to feature delivery and automation initiatives`,
 
-//   responsibilities: `Develop clean, efficient, and maintainable code across various stages of the development lifecycle
-// Contribute to both frontend and backend development of applications and services
-// Collaborate with cross-functional teams including product managers, designers, and engineers to deliver features
-// Participate in code reviews and follow established engineering best practices
-// Identify, debug, and resolve production-level issues efficiently
-// Improve system performance, scalability, and reliability continuously
-// Work within Agile processes including sprint planning, stand-ups, and retrospectives
-// Explore and implement modern technologies where applicable
-// Maintain proper documentation and share technical knowledge within the team`,
+  responsibilities: `Design, develop, test, and maintain backend services using Java
+Build and enhance UI components using Angular or React
+Develop and optimize SQL queries and database schemas
+Work on certificate provisioning workflows, APIs, and system integrations
+Troubleshoot and resolve production issues with strong ownership
+Collaborate with product, QA, and DevOps teams for smooth feature delivery
+Propose solutions to improve system performance, automation, and reliability
+Participate in design discussions, code reviews, and technical documentation`,
 
-//   skills: `Java or Python or JavaScript
-// Data Structures and Algorithms
-// Object-Oriented Programming (OOP)
-// Node.js or Spring Boot or Django
-// REST APIs
-// MySQL or PostgreSQL or MongoDB
-// Git
-// Linux or Unix systems
-// Problem Solving
-// Communication Skills`,
+  skills: `Java backend development
+Angular or React frontend development
+SQL and relational databases
+REST APIs
+Understanding of distributed systems
+Problem-solving and analytical skills
+Team collaboration and communication skills`,
 
-//   nice_to_have: `Familiarity with Agile development methodologies
-// Exposure to cloud platforms such as AWS, GCP, or Azure
-// Experience working on fitness, wellness, ed-tech, or habit-based applications`,
+  education: `Bachelor's degree in Computer Science or related technical field`,
 
-//   benefits: `Opportunity to work on products impacting millions of users
-// Collaborative and growth-oriented work culture
-// Exposure to real-world scalable systems
-// Learning-focused environment with ownership and responsibility`,
+  work_details: `Working Days: 5 Days
+Job Type: Work From Home
+Job Timing: Full Time`,
+},
+{   id: 223,
+  company: 'Kravix',
+  role: 'Backend Developer - Fresher',
+  salary: '₹3.2L – ₹5.5L / Year',
+  hiringLink: 'https://internshala.com/job/detail/fresher-remote-backend-developer-job-at-kravix1778409826?utm_source=cp_link&referral=web_share',
+  location: 'Work From Home',
+  openings: '35',
+  experience: 'No experience required',
+  jobType: 'Full Time',
+  workMode: 'Work From Home',
 
-//   salary: `₹4 LPA – ₹9 LPA (Estimated range for SDE 1 role)`,
+  overview: `Kravix is hiring Backend Developers to build scalable backend systems, APIs, and database-driven applications
+Role focuses on backend engineering, web application development, and maintaining secure and high-performance systems for modern digital solutions`,
 
-//   work_details: `Working Days: 5 Days (Typical)
-// Job Type: Full Time
-// Work Mode: Onsite
-// Environment: Agile-based development with regular team collaboration`,
+  responsibilities: `Design and develop backend systems and APIs for frontend applications
+Collaborate with cross-functional teams to integrate MongoDB and MySQL databases
+Write clean, scalable, and efficient code using Java, Python, and Node.js
+Implement security measures to protect data and maintain compliance standards
+Develop and maintain web applications using the Django framework
+Troubleshoot and resolve backend issues to ensure optimal performance
+Stay updated with emerging technologies and industry trends to improve backend infrastructure`,
 
-//   education: `Bachelor’s degree in Computer Science, Engineering, or a related technical field`,
+  skills: `Django
+HTML
+Java
+MongoDB
+MySQL
+Node.js
+Python
+Problem-solving skills
+Communication skills`,
 
-//   about_company: `Habuild is a wellness-tech company focused on transforming lives through consistent habits like yoga and mindfulness. With millions of users and a strong community base, the platform emphasizes discipline, personal growth, and long-term health through technology-driven solutions.`,
+  nice_to_have: `Basic knowledge of Python and databases
+Understanding of backend infrastructure and API development`,
 
-// }
-// , {
-//   id: 224,
-//   company: 'Red Hat',
-//   role: 'Trainee - Associate Software Engineer',
-//   hiringLink: 'k',
+  benefits: `5-day work week
+Opportunity to work on scalable applications and backend systems
+Exposure to modern technologies across software development and cloud-focused projects`,
 
-//   location: 'Pune',
-//   experience: '0 – 1 Year',
-//   jobType: 'Full Time',
-//   workMode: 'Onsite',
+  education: `Computer Science or IT graduates preferred`,
 
-//   overview: `Red Hat is a globally recognized enterprise open-source solutions provider, known for its contributions to Linux, cloud computing, and container technologies. This trainee role is designed for fresh graduates who want to kickstart their careers in a highly collaborative and innovation-driven environment.
-
-// During this structured training period, candidates will work alongside experienced engineers, gaining exposure to real-world projects and modern technologies such as OpenShift, Ansible, and AI-driven systems. The role provides hands-on learning combined with mentorship and global team collaboration.`,
-
-//   responsibilities: `Work under the guidance of senior engineers to design, develop, and maintain software solutions
-// Write and enhance code using programming languages like Python or Golang
-// Identify bugs, troubleshoot issues, and contribute to improving existing products
-// Participate in adding new features to enterprise-grade platforms such as RHEL and OpenShift
-// Collaborate with cross-functional teams including product, design, and quality engineering
-// Contribute throughout the product lifecycle from development to deployment
-// Engage with internal teams and peers to enhance technical and communication skills`,
-
-//   skills: `Python or Golang
-// Basic Software Development Knowledge
-// Problem Solving
-// Debugging
-// Git or Version Control
-// JavaScript (basic understanding)
-// Agile Development Basics
-// Communication Skills`,
-
-//   nice_to_have: `Familiarity with Linux or open-source environments
-// Exposure to cloud technologies or container platforms
-// Understanding of DevOps practices
-// Interest in AI or automation tools`,
-
-//   benefits: `Structured training with mentorship from experienced engineers
-// Opportunity to work on real enterprise-level projects
-// Exposure to global teams and modern technologies
-// Strong learning environment with career growth opportunities`,
-
-//   salary: `₹7 LPA – ₹12.5 LPA (Approximate range based on market data)`,
-
-//   work_details: `Duration: 6 Months (June – December 2026)
-// Working Days: 5 Days
-// Job Type: Full Time
-// Work Mode: Onsite
-// Environment: Collaborative and Agile-based development`,
-
-//   education: `Bachelor’s degree in Engineering, Technology, Computer Science, IT, or related field (2025 or 2026 graduates)`,
-
-//   about_company: `Red Hat is a leading provider of enterprise open-source solutions, enabling organizations to build, deploy, and manage applications across hybrid cloud environments. Known for products like Red Hat Enterprise Linux and OpenShift, the company focuses on innovation, collaboration, and open technology ecosystems.`,
-// }
-
-
-  // ,{ id: , company: '', role: '',
-  //   hiringLink:'',
-  //   fullDescription:`
-  //   `
-  // }
+  about_company: `Kravix is a technology-focused organization working across software development, cloud computing, AI/ML, data engineering, and scalable digital solutions
+The company builds modern applications, database systems, and enterprise technology solutions for businesses`,
+},
 ]
 
 export default companiesData

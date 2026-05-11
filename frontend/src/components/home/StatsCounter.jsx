@@ -265,11 +265,6 @@ const StatsCounter = () => {
             Trusted by{' '}
             <em style={{ fontStyle: 'normal', background: 'linear-gradient(135deg,#f97316,#ea580c,#ff8c42)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', backgroundSize: '200% auto', animation: 'lrShimmer 3s linear infinite' }}>Professionals</em> Worldwide
           </h2>
-          
-          {/* <p style={{ fontSize: 16, color: '#9ca3af' }}>
-            <strong style={{ fontSize: 20, fontWeight: 700, color: '#f97316' }}>{count}+</strong> 
-          </p> */}
-         
         </div>
 
         {/* Stat cards */}

@@ -2754,7 +2754,126 @@ Exposure to modern technologies across software development and cloud-focused pr
   about_company: `Kravix is a technology-focused organization working across software development, cloud computing, AI/ML, data engineering, and scalable digital solutions
 The company builds modern applications, database systems, and enterprise technology solutions for businesses`,
 },
-]
 
+{id: 224,
+  company: 'SingleStore',
+  role: 'Software Engineer (Cloud Foundations)',
+  salary: '₹25+ LPA',
+  hiringLink:'https://job-boards.greenhouse.io/singlestore/jobs/7790325',
+  location: 'India (Remote)',
+  experience: 'Fresher',
+  jobType: 'Internship',
+  workMode: 'Remote',
+
+  overview: `SingleStore is hiring Software Engineers for the Cloud Foundations team to work on cloud infrastructure, backend systems, Kubernetes environments, and developer tooling
+The role focuses on end-to-end ownership, debugging, observability, infrastructure automation, and contributing to production-grade cloud systems using Go, Python, Terraform, and Kubernetes
+Interns will work closely with experienced engineers through mentorship, pair programming, and hands-on project ownership`,
+
+  responsibilities: `Work on core product systems using Kubernetes, Go, and Python
+Contribute reviewed code and collaborate with experienced engineers on backend services
+Apply Kubernetes fundamentals including Deployments, Services, logs, resource limits, and cluster state analysis
+Develop bug fixes, tests, CLI subcommands, and small feature improvements in Go or Python services
+Improve Terraform modules, validation, documentation, and environment configuration workflows
+Support cloud provisioning and infrastructure operations through tooling and diagnostics improvements
+Enhance observability by adding metrics, log fields, trace spans, dashboards, and runbook documentation
+Troubleshoot workloads, analyze logs, validate changes in cluster environments, and identify failure points
+Collaborate across teams on infrastructure, deployment, and operational workflows
+Participate in optional stretch projects involving ingress, orchestration, async jobs, task queues, and internal tooling`,
+
+  skills: `Go
+Python
+Kubernetes
+Terraform
+Git
+Linux command line
+Data Structures and Algorithms
+Backend Development
+Debugging and troubleshooting
+CI/CD concepts
+Infrastructure as Code (IaC)
+Observability practices
+Problem-solving and communication skills`,
+
+  nice_to_have: `Knowledge of Docker or container technologies
+Exposure to cloud platforms and distributed systems
+Understanding of operating systems, networking, or concurrency concepts
+Familiarity with Helm, Pulumi, or Terraform
+Basic understanding of HTTP and DNS
+Interest in end-to-end infrastructure ownership`,
+
+  benefits: `Dedicated mentorship and pair programming opportunities
+Hands-on experience with production-grade cloud infrastructure
+Exposure to Kubernetes, Terraform, observability, and cloud operations
+Opportunity to work on real shipping processes and infrastructure tooling
+Collaborative engineering environment with practical learning and ownership`,
+
+  education: `Pursuing a Bachelor's degree in Computer Science, Computer Engineering, Electrical Engineering, or related technical field
+Equivalent project or coursework experience also considered`,
+
+  work_details: `Job Type: Internship
+Work Mode: Remote
+Location: India
+Environment: Collaborative cloud infrastructure and platform engineering teams`,
+
+  about_company: `SingleStore is a cloud-focused technology company building scalable database and infrastructure solutions for modern applications
+The company works extensively with Kubernetes, cloud platforms, infrastructure automation, and distributed systems to support high-performance data-driven products`,
+},
+{id: 225,
+  company: 'Zensar',
+  role: 'Copilot Studio Developer',
+  location: 'Pune',
+  openings: '1',
+  hiringLink: 'https://www.naukri.com/job-listings-copilot-studio-developer-zensar-technologies-pune-0-to-4-years-120526501591',
+  experience: '0 – 4 Years',
+  jobType: 'Full Time, Permanent',
+  workMode: 'Onsite',
+
+  overview: `Zensar is hiring a Copilot Studio Developer to build AI-powered conversational agents and enterprise automation solutions using Microsoft Power Platform technologies
+Role involves designing conversational workflows, integrating enterprise systems, and implementing secure AI agent deployments for business automation use cases`,
+
+  responsibilities: `Design and build AI agents using Copilot Studio
+Implement topic routing, conversational flows, and agent orchestration
+Integrate enterprise systems using Power Automate, APIs, and connectors
+Configure knowledge sources and RAG-based responses
+Develop adaptive cards and conversational interfaces
+Implement human-in-the-loop workflows
+Ensure governance, compliance, and security controls for agent deployment
+Collaborate with teams on enterprise automation and AI-driven workflows`,
+
+  skills: `Copilot Studio
+Power Automate
+Power Platform development
+API integrations
+Conversational design
+SQL
+React.js
+PowerApps
+ASP.NET
+C#
+HTML
+CSS
+JavaScript
+Python
+Microsoft Azure
+SQL Server
+System integration`,
+
+  nice_to_have: `Experience with AI conversational systems
+Exposure to enterprise Power Platform solutions
+Knowledge of SharePoint and MS Dynamics CRM
+Understanding of orchestration workflows and enterprise integrations`,
+
+  education: `UG: Any Graduate
+PG: Any Postgraduate`,
+
+  work_details: `Job Type: Full Time, Permanent
+Location: Pune
+Industry: IT Services & Consulting
+Department: Engineering - Software & QA`,
+
+  about_company: `Zensar is a technology and digital solutions company delivering enterprise IT services, automation, cloud, and software engineering solutions across industries
+The company focuses on digital transformation, AI-driven systems, enterprise applications, and modern engineering services`,
+},
+]
 export default companiesData
 

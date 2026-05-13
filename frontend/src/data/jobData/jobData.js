@@ -2755,7 +2755,7 @@ Exposure to modern technologies across software development and cloud-focused pr
 The company builds modern applications, database systems, and enterprise technology solutions for businesses`,
 },
 
-{id: 224,
+{   id: 224,
   company: 'SingleStore',
   role: 'Software Engineer (Cloud Foundations)',
   salary: '₹25+ LPA',
@@ -2818,7 +2818,7 @@ Environment: Collaborative cloud infrastructure and platform engineering teams`,
   about_company: `SingleStore is a cloud-focused technology company building scalable database and infrastructure solutions for modern applications
 The company works extensively with Kubernetes, cloud platforms, infrastructure automation, and distributed systems to support high-performance data-driven products`,
 },
-{id: 225,
+{   id: 225,
   company: 'Zensar',
   role: 'Copilot Studio Developer',
   location: 'Pune',
@@ -2873,6 +2873,139 @@ Department: Engineering - Software & QA`,
 
   about_company: `Zensar is a technology and digital solutions company delivering enterprise IT services, automation, cloud, and software engineering solutions across industries
 The company focuses on digital transformation, AI-driven systems, enterprise applications, and modern engineering services`,
+},
+
+{   id: 226,
+  company: 'Tortoise',
+  role: 'Software Developer (Full stack/Backend)',
+  hiringLink: 'https://wellfound.com/l/2CfT6k',
+  salary: '₹10L – ₹18L / Year',
+  location: 'Gurgaon • Gurugram',
+  experience: 'No experience required',
+  jobType: 'Full Time',
+  workMode: 'In Office',
+
+  overview: `Tortoise is building India’s first device leasing benefit ecosystem that helps employees save on smartphones and gadgets through employer-backed benefits
+The company works with leading organizations and is backed by prominent investors from companies like CRED, Swiggy, and NIUM
+This role focuses on backend development, frontend feature building, and developing scalable product experiences for real-world users`,
+
+  responsibilities: `Support backend development and API integrations
+Build and enhance frontend experiences using modern frameworks
+Contribute to web development and product feature rollouts
+Collaborate with design and product teams to deliver seamless user experiences
+Write scalable and maintainable code across frontend and backend systems
+Continuously learn and adapt to new technologies and development tools`,
+
+  skills: `Python
+Node.js
+React.js
+Next.js
+AWS
+Docker
+Kubernetes
+AWS EC2
+AWS ELB
+AWS S3
+AWS DynamoDB
+Problem-solving skills
+Communication skills
+Programming fundamentals
+Data Structures`,
+
+  nice_to_have: `Internship experience in product startups
+Exposure to APIs, databases, or cloud platforms
+Contributions to GitHub or personal projects
+Understanding of modern web development workflows`,
+
+  benefits: `Opportunity to work in a fast-growing startup environment
+Hands-on experience building real-world products
+Exposure to scalable SaaS systems and cloud technologies
+Ownership-driven engineering culture with fast learning opportunities`,
+
+  education: `B.Tech graduation preferred`,
+
+  work_details: `Work Mode: In Office
+Location: Gurgaon / Gurugram
+Visa Sponsorship: Not Available
+Relocation: Allowed
+Job Type: Full Time`,
+
+  about_company: `Tortoise is an employee benefits SaaS platform focused on device leasing and smartphone purchase benefits for employees
+The company partners with major organizations to deliver flexible and rewarding employee device programs while building scalable technology-driven solutions`,
+},
+
+{   id: 227,
+  company: 'Bluemutulfund',
+  role: 'Data Analyst Internship',
+  salary: '₹12K – ₹15K / Month',
+  location: 'Work From Home',
+  openings: '2',
+  hiringLink: 'https://unstop.com/o/xu30Wq7?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
+  experience: 'Fresher',
+  jobType: 'Internship',
+  workMode: 'Work From Home',
+
+  overview: `Bluemutulfund is hiring Data Analyst Interns to work on real-world datasets, dashboards, business analytics, and scalable data systems
+The role focuses on transforming raw data into actionable insights through SQL, Python, visualization tools, statistical analysis, and reporting workflows`,
+
+  responsibilities: `Perform data analysis, data cleaning, and data validation on large datasets
+Write optimized SQL queries for PostgreSQL and similar databases
+Build interactive dashboards and reports using BI tools
+Conduct exploratory data analysis (EDA) to identify trends and patterns
+Collaborate with cross-functional teams to define data requirements and KPIs
+Implement data models and normalization techniques for efficient querying
+Automate reporting workflows using Python and scripting tools
+Analyze user behavior, conversion funnels, and product metrics
+Perform A/B testing and statistical analysis for business insights
+Maintain data accuracy, integrity, and security standards`,
+
+  skills: `SQL
+PostgreSQL
+Python
+Pandas
+NumPy
+R
+Power BI
+Tableau
+Metabase
+Statistics
+Probability
+ETL processes
+Data pipelines
+REST APIs
+Database design
+Git
+Analytical thinking
+Problem-solving skills`,
+
+  nice_to_have: `Experience with Apache Spark or Hadoop
+Exposure to AWS, GCP, or Azure
+Knowledge of data warehousing concepts
+Experience in startup or high-growth environments
+Understanding of product analytics and user engagement metrics`,
+
+  benefits: `Job Offer opportunity
+Certificate of Completion
+Letter of Recommendation
+Learning Allowance
+Flexible Hours
+Hybrid Working
+Counselling Support
+Pre-Placement Offer
+Access to gym or yoga facilities`,
+
+  work_details: `Internship Duration: 3 Months
+Working Days: 5 Days
+Internship Type: Work From Home
+Internship Timing: Full Time`,
+
+  education: `Engineering Students
+Undergraduate Students
+Postgraduate Students
+Management, Arts, Commerce, Sciences, and other streams eligible`,
+
+  about_company: `Bluemutulfund offers internship opportunities focused on analytics, scalable data systems, and business intelligence workflows
+The organization provides hands-on exposure to real-world datasets, dashboarding, automation, and modern data analysis practices`,
 },
 ]
 export default companiesData

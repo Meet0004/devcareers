@@ -2674,7 +2674,7 @@ Regular pay comparisons across categories of ethnicity and gender for ongoing fa
                         // MAY 12 - 2026
                           // MAY 12 - 2026
                   // MAY 12 - 2026
-
+// DAY 1
 {   id: 222,
   company: 'Akamai Technologies',
   role: 'Software Engineer',
@@ -2755,6 +2755,7 @@ Exposure to modern technologies across software development and cloud-focused pr
 The company builds modern applications, database systems, and enterprise technology solutions for businesses`,
 },
 
+// DAY 2
 {   id: 224,
   company: 'SingleStore',
   role: 'Software Engineer (Cloud Foundations)',
@@ -2875,6 +2876,7 @@ Department: Engineering - Software & QA`,
 The company focuses on digital transformation, AI-driven systems, enterprise applications, and modern engineering services`,
 },
 
+// DAY 3
 {   id: 226,
   company: 'Tortoise',
   role: 'Software Developer (Full stack/Backend)',
@@ -3006,6 +3008,158 @@ Management, Arts, Commerce, Sciences, and other streams eligible`,
 
   about_company: `Bluemutulfund offers internship opportunities focused on analytics, scalable data systems, and business intelligence workflows
 The organization provides hands-on exposure to real-world datasets, dashboarding, automation, and modern data analysis practices`,
+},
+
+// DAY 4
+{id: 228,
+  company: 'Bajaj Finance',
+  role: 'Trainee Technology',
+  hiringLink: 'https://www.naukri.com/job-listings-trainee-technology-bajaj-finance-limited-pune-0-to-1-years-120526933344',
+  location: 'Pune',
+  experience: '0 – 1 Year',
+  jobType: 'Full Time, Permanent',
+  workMode: 'Onsite',
+
+  overview: `Bajaj Finance is hiring Trainee Technology professionals to work on software development, technology solutions, and engineering initiatives in a fast-paced banking environment
+The role focuses on building high-quality applications, solving technical challenges, and contributing to innovative technology-driven business solutions`,
+
+  responsibilities: `Collaborate with cross-functional teams to design, develop, and implement new technologies
+Participate in code reviews and contribute to improving code quality
+Develop and maintain software applications using modern programming languages
+Troubleshoot and resolve technical issues efficiently
+Stay updated with emerging technologies and industry trends
+Contribute to innovative solutions that support business requirements`,
+
+  skills: `Java
+Python
+C++
+Data Structures
+Algorithms
+Programming fundamentals
+Software Development
+Code Quality
+Problem-solving skills
+Analytical thinking
+Communication skills
+Team collaboration`,
+
+  nice_to_have: `Understanding of blockchain or quality assurance concepts
+Ability to adapt to changing priorities in fast-paced environments
+Knowledge of software engineering best practices`,
+
+  education: `UG: Any Graduate
+PG: Any Postgraduate`,
+
+  work_details: `Job Type: Full Time, Permanent
+Industry: Banking
+Department: Engineering - Software & QA
+Role Category: Quality Assurance and Testing
+Location: Pune`,
+
+  about_company: `Bajaj Finance is one of India’s leading financial services companies offering lending, insurance, payments, and investment solutions
+The company focuses on technology-driven financial products and digital innovation across consumer and enterprise services`,
+},
+{id: 229,
+  company: 'Fujitsu',
+  role: 'Software Application Developer',
+  hiringLink: 'https://www.naukri.com/job-listings-software-application-developer-fujitsu-india-0-to-1-years-120526037492',
+  salary: '₹3L – ₹5.5L / Year',
+  location: 'Remote',
+  openings: '11',
+  experience: '0 – 1 Year',
+  jobType: 'Full Time, Permanent',
+  workMode: 'Remote',
+
+  overview: `Fujitsu is hiring Software Application Developers to work on backend systems, application development, and software engineering projects
+The role involves collaborating with development teams, maintaining software systems, and contributing to scalable application solutions in a technology consulting environment`,
+
+  responsibilities: `Assist in the design, development, testing, and maintenance of software systems
+Collaborate with the software development team to achieve project goals
+Perform coding according to programming standards and development practices
+Support backend development and application engineering activities
+Contribute to software lifecycle processes and system improvements`,
+
+  skills: `Backend Development
+Application Development
+Software Engineering
+Application Design
+Software Design
+SDLC
+Microservices
+Programming fundamentals
+Software Development Methodologies
+Application Programming
+Problem-solving skills
+Team collaboration`,
+
+  nice_to_have: `Understanding of backend architecture and scalable systems
+Knowledge of software development lifecycle practices
+Ability to work in collaborative development environments`,
+
+  education: `UG: Any Graduate`,
+
+  work_details: `Job Type: Full Time, Permanent
+Work Mode: Remote
+Industry: IT Services & Consulting
+Department: Engineering - Software & QA
+Role Category: Software Development`,
+
+  about_company: `Fujitsu is a global technology company delivering IT services, digital transformation, and enterprise technology solutions across industries
+The company works on software engineering, cloud, infrastructure, and consulting solutions for businesses worldwide`,
+},
+{id: 230,
+  company: 'Swarnim',
+  role: 'Flutter Developer Intern',
+  hiringLink: 'https://wellfound.com/l/2CgTrj',
+  salary: '₹2L – ₹4L / Year',
+  location: 'Remote (India)',
+  experience: 'No experience required',
+  jobType: 'Internship',
+  workMode: 'Remote Only',
+
+  overview: `Swarnim is building AI-first and accessibility-focused digital products including adaptive commerce and AI-powered customer engagement platforms
+The internship focuses on developing Flutter-based mobile applications integrated with AI assistants, voice workflows, automation systems, and inclusive user experiences`,
+
+  responsibilities: `Build mobile application features using Flutter and Dart
+Integrate AI assistants, voice flows, and LLM-powered experiences into mobile apps
+Develop accessible UI/UX experiences for users with diverse accessibility needs
+Integrate APIs, payment systems, marketplace features, and automation workflows
+Improve application performance, usability, and reliability
+Collaborate directly with the founding and product teams on feature development`,
+
+  skills: `Flutter
+Dart
+Flutter Development
+Flutter App Development
+REST APIs
+BLoC state management
+Mobile UI/UX development
+Problem-solving skills
+Communication and collaboration skills`,
+
+  nice_to_have: `Experience with OpenAI, Azure OpenAI, or GenAI APIs
+Understanding of accessibility features like screen readers and scalable text
+Knowledge of Firebase, authentication, notifications, or app deployment
+Interest in AI-powered mobile experiences and inclusive design
+GitHub projects or portfolio contributions`,
+
+  benefits: `Hands-on experience building AI-powered mobile applications
+Opportunity to work directly with founding and product teams
+Exposure to accessibility-focused product development
+Remote-first internship environment with real-world product ownership`,
+
+  work_details: `Internship Duration: 3 – 6 Months
+Work Mode: Remote Only
+Location: India
+Visa Sponsorship: Not Available
+Relocation: Not Allowed`,
+
+  education: `Students and early-career developers eligible`,
+
+  contact: `Email: sunil@swarnim.ai`,
+
+  about_company: `Swarnim is focused on building AI-powered and accessibility-first technology platforms
+Its products include adaptive commerce solutions and AI-driven customer engagement systems designed to create more inclusive digital experiences`,
 },
 ]
 export default companiesData

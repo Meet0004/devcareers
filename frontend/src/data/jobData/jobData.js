@@ -135,7 +135,7 @@ The company builds modern applications, database systems, and enterprise technol
 // DAY 2
 {   id: 224,
   company: 'SingleStore',
-  role: 'Software Engineer (Cloud Foundations)',
+  role: 'Software Engineer Cloud Foundations',
   salary: '₹25+ LPA',
   hiringLink:'https://job-boards.greenhouse.io/singlestore/jobs/7790325',
   location: 'India (Remote)',
@@ -256,7 +256,7 @@ The company focuses on digital transformation, AI-driven systems, enterprise app
 // DAY 3
 {   id: 226,
   company: 'Tortoise',
-  role: 'Software Developer (Full stack/Backend)',
+  role: 'Software Developer Full stack/Backend',
   hiringLink: 'https://wellfound.com/l/2CfT6k',
   salary: '₹10L – ₹18L / Year',
   location: 'Gurgaon • Gurugram',

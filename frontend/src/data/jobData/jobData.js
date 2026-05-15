@@ -539,6 +539,448 @@ Relocation: Not Allowed`,
 Its products include adaptive commerce solutions and AI-driven customer engagement systems designed to create more inclusive digital experiences`,
 },
 
+// DAY 5 - 15/05
+{ id: 231,
+  company: 'NVIDIA',
+  role: 'Formal Verification Engineer - New College Graduate',
+  salary: '₹12.7L – ₹19L+ / Year',
+  hiringLink: 'https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Gurugram/Formal-Verification-Engineer---New-College-Graduate_JR2017808',
+  location: 'Bengaluru / Gurugram',
+  experience: 'Fresher',
+  jobType: 'Full Time',
+  workMode: 'Onsite',
+
+  overview: `NVIDIA is hiring Formal Verification Engineers for its Hardware Team to work on next-generation GPU, AI, and high-performance computing technologies
+The role focuses on applying advanced formal verification methodologies across complex digital designs, IP blocks, and SoCs while collaborating with world-class engineering teams building future computing platforms`,
+
+  responsibilities: `Learn and apply state-of-the-art formal verification methodologies
+Work on verification of complex digital designs, IP blocks, and SoCs
+Develop robust verification test plans for hardware designs
+Execute verification strategies in collaboration with design teams
+Coordinate with verification team members to achieve verification closure
+Analyze RTL designs and validate correctness using formal techniques
+Contribute to verification workflows for high-performance computing and AI hardware systems`,
+
+  skills: `Formal Verification
+Verilog
+SystemVerilog
+RTL Design Understanding
+Temporal Logic Assertions
+Digital Design Verification
+Problem-solving skills
+Analytical thinking
+Hardware Verification Methodologies
+Abstraction techniques
+Team collaboration`,
+
+  nice_to_have: `Understanding of SoC and IP verification flows
+Interest in GPU, AI, and parallel computing architectures
+Knowledge of hardware design and verification best practices`,
+
+  benefits: `Opportunity to work on cutting-edge AI and GPU technologies
+Exposure to advanced hardware verification methodologies
+Collaborative environment with global engineering teams
+Real-world impact across graphics, autonomous systems, and artificial intelligence products`,
+
+  education: `B.Tech or M.Tech in Electrical Engineering, Computer Science, or related fields`,
+
+  work_details: `Job Type: Full Time
+Work Mode: Onsite
+Locations: Bengaluru and Gurugram
+Department: Hardware Engineering and Verification`,
+
+  about_company: `NVIDIA is a global leader in GPU computing, artificial intelligence, accelerated computing, and graphics technologies
+The company develops platforms powering gaming, deep learning, robotics, autonomous vehicles, and large-scale AI infrastructure worldwide`,
+},
+{ id: 232,
+  company: 'Deloitte',
+  role: 'EAD - Engineering - Consultant - Angular',
+  hiringLink: 'https://unstop.com/o/8OTmJV1?lb=vhj6xFV&utm_medium=Share&utm_source=jobs&utm_campaign=Meetson4554',
+  location: 'Pune',
+  experience: 'Fresher',
+  jobType: 'Full Time',
+  workMode: 'Onsite',
+
+  overview: `Deloitte is hiring Angular Developers for its Technology & Transformation practice to build scalable frontend applications and user experiences
+The role focuses on frontend engineering, Angular architecture, API integrations, UI performance optimization, and collaboration with product, design, and backend teams in an Agile development environment`,
+
+  responsibilities: `Build responsive, accessible, and intuitive user interfaces using Angular
+Design and implement scalable and maintainable frontend architecture
+Optimize frontend application performance for smooth user experiences
+Develop reusable Angular components and frontend development standards
+Integrate RESTful APIs and manage asynchronous operations
+Write comprehensive tests using Karma and Jasmine for code quality assurance
+Collaborate with product and design teams to translate mockups into functional interfaces
+Participate in code reviews, sprint planning, and technical discussions
+Troubleshoot frontend issues and improve application reliability`,
+
+  skills: `Angular
+TypeScript
+HTML5
+CSS3
+JavaScript
+REST APIs
+Frontend Development
+Responsive Design
+Cross-browser Compatibility
+Karma
+Jasmine
+UI/UX Implementation
+Component-based Architecture
+Performance Optimization
+Debugging
+Problem-solving skills
+Communication skills`,
+
+  nice_to_have: `Understanding of frontend-backend integration patterns
+Exposure to Agile or Scrum methodologies
+Experience with scalable frontend architectures and reusable component systems`,
+
+  education: `Bachelor's degree in Computer Science, Information Technology, or related field`,
+
+  work_details: `Job Type: Full Time
+Designation: Consultant
+Location: Pune
+Entity: Deloitte Touche Tohmatsu India LLP
+Department: Technology & Transformation Engineering`,
+
+  about_company: `Deloitte is a global professional services and consulting organization providing technology, analytics, cloud, AI, and transformation solutions for enterprises worldwide
+Its Technology & Transformation practice focuses on data, engineering, analytics, cloud platforms, and next-generation digital solutions`,
+},
+
+
+// // DAY 6 - 16/05
+// { id: 233,
+//   company: 'Houlihan Lokey',
+//   role: 'Data Science Internship',
+//   location: 'Mumbai',
+//   experience: 'Fresher',
+//   jobType: 'Internship',
+//   workMode: 'In Office',
+//   hiringLink: 'https://unstop.com/o/1QA0DFI?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
+
+//   overview: `Houlihan Lokey is hiring Data Science Interns to work on financial datasets, analytics workflows, reporting systems, and data warehousing initiatives
+// The role focuses on data analysis, visualization, Python-based transformation workflows, and business intelligence support within financial data environments`,
+
+//   responsibilities: `Collect and process data from financial databases
+// Analyze datasets using advanced Excel functions
+// Perform data extraction and transformation using Python and Dataiku
+// Support data warehousing activities in Snowflake
+// Create dashboards, charts, and visualizations using Power BI or Tableau
+// Document and share best practices for Excel-based workflows
+// Collaborate on analytics and reporting tasks involving structured financial data`,
+
+//   skills: `Excel
+// SQL
+// Python
+// Data Analysis
+// Data Science
+// Power BI
+// Tableau
+// Snowflake
+// Dataiku
+// Data Visualization
+// Quantitative analysis
+// Analytical thinking
+// Communication skills`,
+
+//   nice_to_have: `Previous internship experience in Data Analysis or Data Science
+// Interest in financial analytics and data-driven decision making
+// Understanding of data warehousing and transformation workflows`,
+
+//   benefits: `Job Offer opportunity
+// Hands-on experience with financial datasets and analytics systems
+// Exposure to business intelligence and data warehousing tools`,
+
+//   work_details: `Internship Duration: 6 Months
+// Working Days: 5 Days
+// Internship Type: In Office
+// Internship Timing: Full Time
+// Location: Mumbai`,
+
+//   education: `Engineering Students
+// Undergraduate Students
+// Postgraduate Students eligible`,
+
+//   about_company: `Houlihan Lokey is a global investment bank and financial advisory firm known for expertise in corporate finance, restructuring, valuation, and financial consulting
+// The company works extensively with financial analytics, data-driven insights, and enterprise advisory solutions`,
+// },
+// { id: 234,
+//   company: 'MNC',
+//   role: 'Fullstack Developer',
+//   salary: '₹2.75L – ₹5L / Year',
+//   hiringLink: 'https://www.naukri.com/job-listings-fullstack-developer-tele-infotech-pimpri-chinchwad-pune-0-to-2-years-140526000295',
+//   location: 'Pune, Pimpri-Chinchwad',
+//   openings: '16',
+//   experience: '0 – 2 Years',
+//   jobType: 'Full Time, Permanent',
+//   workMode: 'Onsite',
+
+//   overview: `Tele Infotech is hiring Fullstack Developers for an MNC client to build and maintain modern web applications across frontend and backend systems
+// The role focuses on full stack development, API engineering, database management, and collaboration with cross-functional development teams`,
+
+//   responsibilities: `Develop user-facing features using HTML, CSS, and JavaScript
+// Build server-side logic and APIs for web applications
+// Work with databases to store, manage, and optimize data
+// Collaborate with designers and developers to deliver application features
+// Maintain and enhance frontend and backend application functionality
+// Support development of scalable and responsive web solutions`,
+
+//   skills: `HTML
+// CSS
+// JavaScript
+// Angular
+// AngularJS
+// React.js
+// Vue.js
+// Node.js
+// Express.js
+// Spring Boot
+// Laravel
+// Python
+// Django
+// MongoDB
+// MySQL
+// NoSQL
+// API Development
+// Full Stack Development
+// Database Optimization
+// Authentication systems
+// Problem-solving skills`,
+
+//   nice_to_have: `Understanding of scalable web application architecture
+// Experience with modern frontend and backend frameworks
+// Knowledge of database optimization and API integrations`,
+
+//   benefits: `Growth opportunities in full stack development
+// Exposure to modern frontend and backend technologies
+// Opportunity to work on real-world web applications and APIs`,
+
+//   education: `UG: Diploma in Any Specialization or Any Graduate
+// PG: Any Postgraduate
+// Doctorate: Any Doctorate`,
+
+//   work_details: `Job Type: Full Time, Permanent
+// Industry: IT Services & Consulting
+// Department: IT & Information Security
+// Location: Pune, Pimpri-Chinchwad`,
+
+//   about_company: `Tele Infotech provides staffing and technology hiring solutions for companies across software development and IT services domains
+// The role is for an MNC-focused full stack development requirement involving modern web technologies and backend systems`,
+// },
+
+// // DAY 7 - 17/05
+// { id: 235,
+//   company: 'Hypersonix',
+//   role: 'Junior Data Analyst',
+//   location: 'Remote',
+//   experience: 'Entry Level',
+//   jobType: 'Full Time',
+//   workMode: 'Remote',
+//   hiringLink: 'https://hypersonix.applytojob.com/apply/rMrBwvNSQV/Junior-Data-Analyst',
+//   overview: `Hypersonix is hiring Junior Data Analysts to work with implementation teams, customers, and data scientists on analytics, dashboards, and machine learning-driven insights
+// The role focuses on transforming business requirements into analytical outputs, supporting data warehousing initiatives, and building intelligence dashboards for customer use cases`,
+
+//   responsibilities: `Translate business requirements into analytical dashboards and actionable insights
+// Support data exploration, profiling, and data model development
+// Collaborate with Data Engineering teams to build and validate datasets
+// Coordinate with Data Science teams to perform analytical QA on ML outputs
+// Capture client requirements from business requirement documents
+// Review analytical outputs and prepare insights for customer presentations
+// Develop dashboards and intelligence reporting solutions
+// Work with cross-functional teams to deliver analytics outcomes
+// Support junior analysts through mentoring and training activities`,
+
+//   skills: `SQL
+// Python
+// R
+// Data Analysis
+// Dashboard Development
+// Business Intelligence Tools
+// Data Modeling
+// Machine Learning concepts
+// Statistical analysis
+// Data Validation
+// Analytical thinking
+// Communication skills
+// Problem-solving skills`,
+
+//   nice_to_have: `E-commerce or retail domain knowledge
+// Understanding of AI and ML model outputs
+// Experience generating insights from large datasets
+// Exposure to cross-functional analytics environments`,
+
+//   work_details: `Job Type: Full Time
+// Work Mode: Remote
+// Experience Level: Entry Level`,
+
+//   about_company: `Hypersonix builds AI-driven analytics and intelligence solutions focused on customer insights, machine learning applications, and enterprise data platforms
+// The company works on scalable analytics systems, dashboards, and data-driven business intelligence solutions`,
+// },
+// { id: 236,
+//   company: 'GE Aerospace',
+//   role: 'Data Science Internship',
+//   hiringLink: 'https://unstop.com/o/OtqyUmx?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
+//   location: 'Bangalore',
+//   experience: 'Fresher',
+//   jobType: 'Internship',
+//   workMode: 'In Office',
+
+//   overview: `GE Aerospace is hiring Data Science Interns to work on machine learning, deep learning, GenAI, and advanced analytics projects within engineering and technology teams
+// The internship focuses on developing, analyzing, testing, and integrating data science solutions while collaborating closely with mentors on real-world technical projects`,
+
+//   responsibilities: `Work on Data Science technologies including statistics, machine learning, deep learning, and GenAI
+// Collaborate with mentors on assigned technical projects
+// Analyze, design, test, and integrate components aligned with business and product requirements
+// Document technical data generated during project execution
+// Prepare technical reports, presentations, and communicate project outcomes
+// Support development activities following organizational engineering standards`,
+
+//   skills: `Python
+// Machine Learning
+// Deep Learning
+// Data Science
+// Statistics
+// GenAI
+// Problem-solving skills
+// Technical documentation
+// Communication skills
+// Analytical thinking`,
+
+//   nice_to_have: `Interest in trending software and modern technology tools
+// Understanding of AI and Data Science concepts
+// Ability to work collaboratively within engineering teams`,
+
+//   work_details: `Internship Duration: 3 Months
+// Working Days: 5 Days
+// Internship Type: In Office
+// Internship Timing: Full Time
+// Location: Bangalore`,
+
+//   education: `B.Tech 3rd Year or 4th Year students
+// M.Tech 1st Year or 2nd Year students
+// Preferred specialization: Data Science or AI within CS/IT streams
+// Minimum 7 CGPA or 70 Percentage with no active backlogs
+// NOC from college required before offer issuance`,
+
+//   about_company: `GE Aerospace develops advanced aviation technologies, aerospace systems, and engineering solutions across commercial and defense sectors
+// The company focuses on innovation in AI, analytics, software engineering, and next-generation aerospace technologies`,
+// },
+
+
+// // DAY 8 - 18/05
+// { id: 237,
+//   company: 'Rolls-Royce Power Systems',
+//   role: 'Software Development and Data Science Internship',
+//   hiringLink: 'https://unstop.com/o/qh56XFC?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
+//   salary: '₹40K / Month (Estimated)',
+//   location: 'Pune',
+//   experience: 'Fresher',
+//   jobType: 'Internship',
+//   workMode: 'In Office',
+
+//   overview: `Rolls-Royce Power Systems is hiring Software Development and Data Science Interns to work on analytics, automation, predictive maintenance, and engineering software solutions
+// The internship focuses on developing tools, automating workflows, creating dashboards, and building analytical solutions for maintenance and equipment monitoring systems`,
+
+//   responsibilities: `Perform literature surveys and research for technical solutions
+// Develop and optimize Windows-based tools using C#
+// Develop and deploy analytical and data-driven solutions
+// Automate processes related to maintenance, repair, troubleshooting, and equipment health monitoring
+// Create visualizations and dashboards to generate operational insights
+// Document completed tasks, workflows, and project outcomes
+// Collaborate within Agile engineering and analytics environments`,
+
+//   skills: `C#
+// JavaScript
+// Data Science
+// Analytics Solutions
+// Machine Learning
+// Predictive Analytics
+// Python
+// R
+// PySpark
+// SQL
+// Azure Databricks
+// Hive
+// Hadoop
+// Tableau
+// Power BI
+// Problem-solving skills
+// Analytical thinking
+// Documentation skills`,
+
+//   nice_to_have: `Exposure to predictive analytics and machine learning workflows
+// Experience with big data or cloud analytics tools
+// Understanding of Agile development methodologies
+// Ability to apply logical and innovative thinking to technical challenges`,
+
+//   work_details: `Internship Duration: 6 Months
+// Working Days: 5 Days
+// Internship Type: In Office
+// Internship Timing: Full Time
+// Location: Pune`,
+
+//   education: `Bachelor's or Master's students in Engineering or Computer Science eligible`,
+
+//   about_company: `Rolls-Royce Power Systems develops advanced power generation, propulsion, and engineering solutions across industrial and aerospace sectors
+// The company focuses on innovation in automation, analytics, predictive maintenance, and intelligent engineering systems`,
+// },
+// { id: 238,
+//   company: 'Gyrus.AI',
+//   role: 'AI Test Engineer Intern',
+//   salary: '₹4L – ₹6L / Year',
+//   location: 'Shimoga',
+//   hiringLink: 'https://wellfound.com/l/2CgTMt',
+//   experience: 'No experience required',
+//   jobType: 'Internship',
+//   workMode: 'In Office with WFH Flexibility',
+
+//   overview: `Gyrus.AI is hiring AI Test Engineer Interns to work on AI/ML models, algorithms, and frameworks focused on video analytics and multimedia intelligence systems
+// The internship provides exposure to AI testing workflows, computer vision technologies, multimedia analytics, and cloud-based AI platforms with potential conversion to a full-time role`,
+
+//   responsibilities: `Work with the core engineering team on AI and ML systems for video analytics
+// Develop and execute testing methodologies, test plans, and test cases
+// Build Python-based test frameworks for AI and multimedia applications
+// Validate AI models and analytics systems for audio, image, and video processing
+// Support testing of software products involving multimedia and video technologies
+// Collaborate with engineering teams on quality assurance and debugging workflows`,
+
+//   skills: `Python
+// Software Testing
+// Testing Methodologies
+// OpenCV
+// PyTorch
+// LLMs
+// Video Analytics
+// Audio Engineering
+// Multimedia systems
+// Test Framework Development
+// Computer Vision
+// Problem-solving skills
+// Communication skills`,
+
+//   nice_to_have: `Exposure to TensorFlow, Caffe, or PyTorch
+// Knowledge of AI models for audio, image, or video analytics
+// Experience with video or audio codecs
+// Exposure to AWS or GCP cloud platforms
+// Understanding of QA workflows for AI-driven applications`,
+
+//   benefits: `Opportunity for full-time employment after internship
+// Hands-on experience with AI and video analytics systems
+// Exposure to multimedia AI testing and cloud-based AI platforms
+// Collaboration with core AI engineering teams`,
+
+//   work_details: `Job Type: Internship
+// Work Mode: In Office with WFH Flexibility
+// Location: Shimoga
+// Visa Sponsorship: Not Available
+// Relocation: Not Allowed`,
+
+//   education: `Engineering or Master's degree students from Electronics and Communication or related branches preferred`,
+
+//   about_company: `Gyrus.AI builds AI-driven solutions for video analytics, business intelligence, and IoT predictive analytics
+// The company focuses on multimedia AI systems, computer vision technologies, and enterprise AI applications`,
+// },
 ]
 export default companiesData
 

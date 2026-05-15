@@ -22,14 +22,15 @@ const CompanyDetailMain = ({ selectedCompany }) => {
           Role: {selectedCompany.role}
         </h2>
 
-        <p className="text-gray-900 mt-1">
+        <p className="text-gray-900 mt-6 font-bold">
           Company: {selectedCompany.company}
         </p>
 
+<ApplySection selectedCompany={selectedCompany} />
         {/* Pass the whole object — JobDescription reads .quickInfo and .sections */}
         <JobDescription selectedCompany={selectedCompany} />
 
-        <ApplySection selectedCompany={selectedCompany} />
+        
 
         <BelowDescriptionPanels />
       </div>

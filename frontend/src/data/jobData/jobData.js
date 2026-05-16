@@ -650,124 +650,124 @@ Its Technology & Transformation practice focuses on data, engineering, analytics
 
 
 // // DAY 6 - 16/05
-// { id: 233,
-//   company: 'Houlihan Lokey',
-//   role: 'Data Science Internship',
-//   location: 'Mumbai',
-//   experience: 'Fresher',
-//   jobType: 'Internship',
-//   workMode: 'In Office',
-//   hiringLink: 'https://unstop.com/o/1QA0DFI?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
+{ id: 233,
+  company: 'Houlihan Lokey',
+  role: 'Data Science Internship',
+  location: 'Mumbai',
+  experience: 'Fresher',
+  jobType: 'Internship',
+  workMode: 'In Office',
+  hiringLink: 'https://unstop.com/o/1QA0DFI?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
 
-//   overview: `Houlihan Lokey is hiring Data Science Interns to work on financial datasets, analytics workflows, reporting systems, and data warehousing initiatives
-// The role focuses on data analysis, visualization, Python-based transformation workflows, and business intelligence support within financial data environments`,
+  overview: `Houlihan Lokey is hiring Data Science Interns to work on financial datasets, analytics workflows, reporting systems, and data warehousing initiatives
+The role focuses on data analysis, visualization, Python-based transformation workflows, and business intelligence support within financial data environments`,
 
-//   responsibilities: `Collect and process data from financial databases
-// Analyze datasets using advanced Excel functions
-// Perform data extraction and transformation using Python and Dataiku
-// Support data warehousing activities in Snowflake
-// Create dashboards, charts, and visualizations using Power BI or Tableau
-// Document and share best practices for Excel-based workflows
-// Collaborate on analytics and reporting tasks involving structured financial data`,
+  responsibilities: `Collect and process data from financial databases
+Analyze datasets using advanced Excel functions
+Perform data extraction and transformation using Python and Dataiku
+Support data warehousing activities in Snowflake
+Create dashboards, charts, and visualizations using Power BI or Tableau
+Document and share best practices for Excel-based workflows
+Collaborate on analytics and reporting tasks involving structured financial data`,
 
-//   skills: `Excel
-// SQL
-// Python
-// Data Analysis
-// Data Science
-// Power BI
-// Tableau
-// Snowflake
-// Dataiku
-// Data Visualization
-// Quantitative analysis
-// Analytical thinking
-// Communication skills`,
+  skills: `Excel
+SQL
+Python
+Data Analysis
+Data Science
+Power BI
+Tableau
+Snowflake
+Dataiku
+Data Visualization
+Quantitative analysis
+Analytical thinking
+Communication skills`,
 
-//   nice_to_have: `Previous internship experience in Data Analysis or Data Science
-// Interest in financial analytics and data-driven decision making
-// Understanding of data warehousing and transformation workflows`,
+  nice_to_have: `Previous internship experience in Data Analysis or Data Science
+Interest in financial analytics and data-driven decision making
+Understanding of data warehousing and transformation workflows`,
 
-//   benefits: `Job Offer opportunity
-// Hands-on experience with financial datasets and analytics systems
-// Exposure to business intelligence and data warehousing tools`,
+  benefits: `Job Offer opportunity
+Hands-on experience with financial datasets and analytics systems
+Exposure to business intelligence and data warehousing tools`,
 
-//   work_details: `Internship Duration: 6 Months
-// Working Days: 5 Days
-// Internship Type: In Office
-// Internship Timing: Full Time
-// Location: Mumbai`,
+  work_details: `Internship Duration: 6 Months
+Working Days: 5 Days
+Internship Type: In Office
+Internship Timing: Full Time
+Location: Mumbai`,
 
-//   education: `Engineering Students
-// Undergraduate Students
-// Postgraduate Students eligible`,
+  education: `Engineering Students
+Undergraduate Students
+Postgraduate Students eligible`,
 
-//   about_company: `Houlihan Lokey is a global investment bank and financial advisory firm known for expertise in corporate finance, restructuring, valuation, and financial consulting
-// The company works extensively with financial analytics, data-driven insights, and enterprise advisory solutions`,
-// },
-// { id: 234,
-//   company: 'MNC',
-//   role: 'Fullstack Developer',
-//   salary: '₹2.75L – ₹5L / Year',
-//   hiringLink: 'https://www.naukri.com/job-listings-fullstack-developer-tele-infotech-pimpri-chinchwad-pune-0-to-2-years-140526000295',
-//   location: 'Pune, Pimpri-Chinchwad',
-//   openings: '16',
-//   experience: '0 – 2 Years',
-//   jobType: 'Full Time, Permanent',
-//   workMode: 'Onsite',
+  about_company: `Houlihan Lokey is a global investment bank and financial advisory firm known for expertise in corporate finance, restructuring, valuation, and financial consulting
+The company works extensively with financial analytics, data-driven insights, and enterprise advisory solutions`,
+},
+{ id: 234,
+  company: 'MNC',
+  role: 'Fullstack Developer',
+  salary: '₹2.75L – ₹5L / Year',
+  hiringLink: 'https://www.naukri.com/job-listings-fullstack-developer-tele-infotech-pimpri-chinchwad-pune-0-to-2-years-140526000295',
+  location: 'Pune, Pimpri-Chinchwad',
+  openings: '16',
+  experience: '0 – 2 Years',
+  jobType: 'Full Time, Permanent',
+  workMode: 'Onsite',
 
-//   overview: `Tele Infotech is hiring Fullstack Developers for an MNC client to build and maintain modern web applications across frontend and backend systems
-// The role focuses on full stack development, API engineering, database management, and collaboration with cross-functional development teams`,
+  overview: `Tele Infotech is hiring Fullstack Developers for an MNC client to build and maintain modern web applications across frontend and backend systems
+The role focuses on full stack development, API engineering, database management, and collaboration with cross-functional development teams`,
 
-//   responsibilities: `Develop user-facing features using HTML, CSS, and JavaScript
-// Build server-side logic and APIs for web applications
-// Work with databases to store, manage, and optimize data
-// Collaborate with designers and developers to deliver application features
-// Maintain and enhance frontend and backend application functionality
-// Support development of scalable and responsive web solutions`,
+  responsibilities: `Develop user-facing features using HTML, CSS, and JavaScript
+Build server-side logic and APIs for web applications
+Work with databases to store, manage, and optimize data
+Collaborate with designers and developers to deliver application features
+Maintain and enhance frontend and backend application functionality
+Support development of scalable and responsive web solutions`,
 
-//   skills: `HTML
-// CSS
-// JavaScript
-// Angular
-// AngularJS
-// React.js
-// Vue.js
-// Node.js
-// Express.js
-// Spring Boot
-// Laravel
-// Python
-// Django
-// MongoDB
-// MySQL
-// NoSQL
-// API Development
-// Full Stack Development
-// Database Optimization
-// Authentication systems
-// Problem-solving skills`,
+  skills: `HTML
+CSS
+JavaScript
+Angular
+AngularJS
+React.js
+Vue.js
+Node.js
+Express.js
+Spring Boot
+Laravel
+Python
+Django
+MongoDB
+MySQL
+NoSQL
+API Development
+Full Stack Development
+Database Optimization
+Authentication systems
+Problem-solving skills`,
 
-//   nice_to_have: `Understanding of scalable web application architecture
-// Experience with modern frontend and backend frameworks
-// Knowledge of database optimization and API integrations`,
+  nice_to_have: `Understanding of scalable web application architecture
+Experience with modern frontend and backend frameworks
+Knowledge of database optimization and API integrations`,
 
-//   benefits: `Growth opportunities in full stack development
-// Exposure to modern frontend and backend technologies
-// Opportunity to work on real-world web applications and APIs`,
+  benefits: `Growth opportunities in full stack development
+Exposure to modern frontend and backend technologies
+Opportunity to work on real-world web applications and APIs`,
 
-//   education: `UG: Diploma in Any Specialization or Any Graduate
-// PG: Any Postgraduate
-// Doctorate: Any Doctorate`,
+  education: `UG: Diploma in Any Specialization or Any Graduate
+PG: Any Postgraduate
+Doctorate: Any Doctorate`,
 
-//   work_details: `Job Type: Full Time, Permanent
-// Industry: IT Services & Consulting
-// Department: IT & Information Security
-// Location: Pune, Pimpri-Chinchwad`,
+  work_details: `Job Type: Full Time, Permanent
+Industry: IT Services & Consulting
+Department: IT & Information Security
+Location: Pune, Pimpri-Chinchwad`,
 
-//   about_company: `Tele Infotech provides staffing and technology hiring solutions for companies across software development and IT services domains
-// The role is for an MNC-focused full stack development requirement involving modern web technologies and backend systems`,
-// },
+  about_company: `Tele Infotech provides staffing and technology hiring solutions for companies across software development and IT services domains
+The role is for an MNC-focused full stack development requirement involving modern web technologies and backend systems`,
+},
 
 // // DAY 7 - 17/05
 // { id: 235,

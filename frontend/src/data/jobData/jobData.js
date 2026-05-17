@@ -769,103 +769,103 @@ Location: Pune, Pimpri-Chinchwad`,
 The role is for an MNC-focused full stack development requirement involving modern web technologies and backend systems`,
 },
 
-// // DAY 7 - 17/05
-// { id: 235,
-//   company: 'Hypersonix',
-//   role: 'Junior Data Analyst',
-//   location: 'Remote',
-//   experience: 'Entry Level',
-//   jobType: 'Full Time',
-//   workMode: 'Remote',
-//   hiringLink: 'https://hypersonix.applytojob.com/apply/rMrBwvNSQV/Junior-Data-Analyst',
-//   overview: `Hypersonix is hiring Junior Data Analysts to work with implementation teams, customers, and data scientists on analytics, dashboards, and machine learning-driven insights
-// The role focuses on transforming business requirements into analytical outputs, supporting data warehousing initiatives, and building intelligence dashboards for customer use cases`,
+// DAY 7 - 17/05
+{ id: 235,
+  company: 'Hypersonix',
+  role: 'Junior Data Analyst',
+  location: 'Remote',
+  experience: 'Entry Level',
+  jobType: 'Full Time',
+  workMode: 'Remote',
+  hiringLink: 'https://hypersonix.applytojob.com/apply/rMrBwvNSQV/Junior-Data-Analyst',
+  overview: `Hypersonix is hiring Junior Data Analysts to work with implementation teams, customers, and data scientists on analytics, dashboards, and machine learning-driven insights
+The role focuses on transforming business requirements into analytical outputs, supporting data warehousing initiatives, and building intelligence dashboards for customer use cases`,
 
-//   responsibilities: `Translate business requirements into analytical dashboards and actionable insights
-// Support data exploration, profiling, and data model development
-// Collaborate with Data Engineering teams to build and validate datasets
-// Coordinate with Data Science teams to perform analytical QA on ML outputs
-// Capture client requirements from business requirement documents
-// Review analytical outputs and prepare insights for customer presentations
-// Develop dashboards and intelligence reporting solutions
-// Work with cross-functional teams to deliver analytics outcomes
-// Support junior analysts through mentoring and training activities`,
+  responsibilities: `Translate business requirements into analytical dashboards and actionable insights
+Support data exploration, profiling, and data model development
+Collaborate with Data Engineering teams to build and validate datasets
+Coordinate with Data Science teams to perform analytical QA on ML outputs
+Capture client requirements from business requirement documents
+Review analytical outputs and prepare insights for customer presentations
+Develop dashboards and intelligence reporting solutions
+Work with cross-functional teams to deliver analytics outcomes
+Support junior analysts through mentoring and training activities`,
 
-//   skills: `SQL
-// Python
-// R
-// Data Analysis
-// Dashboard Development
-// Business Intelligence Tools
-// Data Modeling
-// Machine Learning concepts
-// Statistical analysis
-// Data Validation
-// Analytical thinking
-// Communication skills
-// Problem-solving skills`,
+  skills: `SQL
+Python
+R
+Data Analysis
+Dashboard Development
+Business Intelligence Tools
+Data Modeling
+Machine Learning concepts
+Statistical analysis
+Data Validation
+Analytical thinking
+Communication skills
+Problem-solving skills`,
 
-//   nice_to_have: `E-commerce or retail domain knowledge
-// Understanding of AI and ML model outputs
-// Experience generating insights from large datasets
-// Exposure to cross-functional analytics environments`,
+  nice_to_have: `E-commerce or retail domain knowledge
+Understanding of AI and ML model outputs
+Experience generating insights from large datasets
+Exposure to cross-functional analytics environments`,
 
-//   work_details: `Job Type: Full Time
-// Work Mode: Remote
-// Experience Level: Entry Level`,
+  work_details: `Job Type: Full Time
+Work Mode: Remote
+Experience Level: Entry Level`,
 
-//   about_company: `Hypersonix builds AI-driven analytics and intelligence solutions focused on customer insights, machine learning applications, and enterprise data platforms
-// The company works on scalable analytics systems, dashboards, and data-driven business intelligence solutions`,
-// },
-// { id: 236,
-//   company: 'GE Aerospace',
-//   role: 'Data Science Internship',
-//   hiringLink: 'https://unstop.com/o/OtqyUmx?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
-//   location: 'Bangalore',
-//   experience: 'Fresher',
-//   jobType: 'Internship',
-//   workMode: 'In Office',
+  about_company: `Hypersonix builds AI-driven analytics and intelligence solutions focused on customer insights, machine learning applications, and enterprise data platforms
+The company works on scalable analytics systems, dashboards, and data-driven business intelligence solutions`,
+},
+{ id: 236,
+  company: 'GE Aerospace',
+  role: 'Data Science Internship',
+  hiringLink: 'https://unstop.com/o/OtqyUmx?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
+  location: 'Bangalore',
+  experience: 'Fresher',
+  jobType: 'Internship',
+  workMode: 'In Office',
 
-//   overview: `GE Aerospace is hiring Data Science Interns to work on machine learning, deep learning, GenAI, and advanced analytics projects within engineering and technology teams
-// The internship focuses on developing, analyzing, testing, and integrating data science solutions while collaborating closely with mentors on real-world technical projects`,
+  overview: `GE Aerospace is hiring Data Science Interns to work on machine learning, deep learning, GenAI, and advanced analytics projects within engineering and technology teams
+The internship focuses on developing, analyzing, testing, and integrating data science solutions while collaborating closely with mentors on real-world technical projects`,
 
-//   responsibilities: `Work on Data Science technologies including statistics, machine learning, deep learning, and GenAI
-// Collaborate with mentors on assigned technical projects
-// Analyze, design, test, and integrate components aligned with business and product requirements
-// Document technical data generated during project execution
-// Prepare technical reports, presentations, and communicate project outcomes
-// Support development activities following organizational engineering standards`,
+  responsibilities: `Work on Data Science technologies including statistics, machine learning, deep learning, and GenAI
+Collaborate with mentors on assigned technical projects
+Analyze, design, test, and integrate components aligned with business and product requirements
+Document technical data generated during project execution
+Prepare technical reports, presentations, and communicate project outcomes
+Support development activities following organizational engineering standards`,
 
-//   skills: `Python
-// Machine Learning
-// Deep Learning
-// Data Science
-// Statistics
-// GenAI
-// Problem-solving skills
-// Technical documentation
-// Communication skills
-// Analytical thinking`,
+  skills: `Python
+Machine Learning
+Deep Learning
+Data Science
+Statistics
+GenAI
+Problem-solving skills
+Technical documentation
+Communication skills
+Analytical thinking`,
 
-//   nice_to_have: `Interest in trending software and modern technology tools
-// Understanding of AI and Data Science concepts
-// Ability to work collaboratively within engineering teams`,
+  nice_to_have: `Interest in trending software and modern technology tools
+Understanding of AI and Data Science concepts
+Ability to work collaboratively within engineering teams`,
 
-//   work_details: `Internship Duration: 3 Months
-// Working Days: 5 Days
-// Internship Type: In Office
-// Internship Timing: Full Time
-// Location: Bangalore`,
+  work_details: `Internship Duration: 3 Months
+Working Days: 5 Days
+Internship Type: In Office
+Internship Timing: Full Time
+Location: Bangalore`,
 
-//   education: `B.Tech 3rd Year or 4th Year students
-// M.Tech 1st Year or 2nd Year students
-// Preferred specialization: Data Science or AI within CS/IT streams
-// Minimum 7 CGPA or 70 Percentage with no active backlogs
-// NOC from college required before offer issuance`,
+  education: `B.Tech 3rd Year or 4th Year students
+M.Tech 1st Year or 2nd Year students
+Preferred specialization: Data Science or AI within CS/IT streams
+Minimum 7 CGPA or 70 Percentage with no active backlogs
+NOC from college required before offer issuance`,
 
-//   about_company: `GE Aerospace develops advanced aviation technologies, aerospace systems, and engineering solutions across commercial and defense sectors
-// The company focuses on innovation in AI, analytics, software engineering, and next-generation aerospace technologies`,
-// },
+  about_company: `GE Aerospace develops advanced aviation technologies, aerospace systems, and engineering solutions across commercial and defense sectors
+The company focuses on innovation in AI, analytics, software engineering, and next-generation aerospace technologies`,
+},
 
 
 // // DAY 8 - 18/05

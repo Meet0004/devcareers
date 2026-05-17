@@ -17,7 +17,7 @@ const packagesData = [
     id: 'pkg-2',
     title: 'Ultimate DSA Preparation Bundle',
     description: '15+ top company LeetCode sheets, 100+ structured DSA questions, Oracle-specific interview problems, plus 40 foundational coding questions (Free)',
-    includedResourceIds: [7,12,28],
+    includedResourceIds: [28,37,12,34,7],
     originalPrice: 66,
     discountedPrice: 49,
     couponCode: 'dsa10',

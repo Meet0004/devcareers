@@ -47,6 +47,8 @@ const PackageCard = ({ pkg, index }) => {
   const navigate = useNavigate()
   const [expanded, setExpanded] = useState(false)
   const [visible, setVisible] = useState(false)
+  const [couponFlipped, setCouponFlipped] = useState(false)
+  const [couponCopied, setCouponCopied] = useState(false)
   const cardRef = useRef(null)
 
   const includedResources = (pkg.includedResourceIds ?? [])
@@ -54,7 +56,6 @@ const PackageCard = ({ pkg, index }) => {
     .filter(Boolean)
 
   const discountPct = pkg.savings
-
   const accent = accents[index % accents.length]
 
   useEffect(() => {
@@ -91,30 +92,78 @@ const PackageCard = ({ pkg, index }) => {
 
       <div style={{ padding: '24px 24px 20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
 
-        {/* Badge + expiry row */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 18 }}>
-          <span style={{
-            display: 'inline-flex', alignItems: 'center', gap: 5,
-            background: accent.badge,
-            border: `1px solid ${accent.badgeBorder}`,
-            color: accent.badgeText,
-            fontSize: 10, fontWeight: 700,
-            letterSpacing: '0.07em', textTransform: 'uppercase',
-            padding: '4px 10px', borderRadius: 100,
-          }}>
-            <svg width={8} height={8} viewBox="0 0 10 10" fill={accent.from}>
-              <polygon points="5,0 6.2,3.8 10,3.8 7,6.1 8.1,10 5,7.6 1.9,10 3,6.1 0,3.8 3.8,3.8" />
-            </svg>
-            {discountPct}% OFF
-          </span>
+        {/* Badge + coupon row */}
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 18 }}>
+  <span style={{
+    display: 'inline-flex', alignItems: 'center', gap: 5,
+    background: accent.badge,
+    border: `1px solid ${accent.badgeBorder}`,
+    color: accent.badgeText,
+    fontSize: 10, fontWeight: 700,
+    letterSpacing: '0.07em', textTransform: 'uppercase',
+    padding: '4px 10px', borderRadius: 100,
+  }}>
+    <svg width={8} height={8} viewBox="0 0 10 10" fill={accent.from}>
+      <polygon points="5,0 6.2,3.8 10,3.8 7,6.1 8.1,10 5,7.6 1.9,10 3,6.1 0,3.8 3.8,3.8" />
+    </svg>
+    {discountPct}% OFF
+  </span>
 
-          {/* {pkg.expDate && (
-            <span style={{ fontSize: 11, fontWeight: 400, color: '#9ca3af' }}>
-              Valid till{' '}
-              <span style={{ color: '#ef4444', fontWeight: 600 }}>{pkg.expDate}</span>
-            </span>
-          )} */}
+  {pkg.couponCode && (
+    <div style={{ perspective: '600px' }}>
+      <div
+        onClick={() => {
+          if (!couponFlipped) { setCouponFlipped(true); return; }
+          navigator.clipboard.writeText(pkg.couponCode).catch(() => {});
+          setCouponCopied(true);
+          setTimeout(() => setCouponCopied(false), 2500);
+        }}
+        style={{
+          position: 'relative',
+          width: 120,
+          height: 28,
+          transformStyle: 'preserve-3d',
+          transition: 'transform 0.55s cubic-bezier(0.45,0.05,0.1,1)',
+          transform: couponFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+          cursor: 'pointer',
+        }}
+      >
+        {/* FRONT */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden',
+          borderRadius: 100,
+          border: `1.5px dashed ${accent.from}`,
+          background: accent.badge,
+          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5,
+          fontSize: 10, fontWeight: 700, color: accent.badgeText,
+        }}>
+          🎟️ Coupon Code
         </div>
+
+        {/* BACK */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden',
+          transform: 'rotateY(180deg)',
+          borderRadius: 100,
+          background: couponCopied
+            ? 'linear-gradient(135deg,#16a34a,#15803d)'
+            : `linear-gradient(135deg,${accent.from},${accent.to})`,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          transition: 'background 0.3s ease',
+        }}>
+          <span style={{
+            fontSize: 10, fontWeight: 800, color: '#fff',
+            letterSpacing: '0.1em', textTransform: 'uppercase',
+          }}>
+            {couponCopied ? '✓ Copied!' : pkg.couponCode}
+          </span>
+        </div>
+      </div>
+    </div>
+  )}
+</div>
 
         {/* Title */}
         <h3 style={{
@@ -220,32 +269,32 @@ const PackageCard = ({ pkg, index }) => {
           )}
         </div>
 
-        {/* CTA — navigates to PackageDetailPage */}
+        {/* CTA */}
         <a href={`${pkg.link}`} target="_blank">
           <button
-          style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            gap: 8, width: '100%', padding: '13px 0',
-            background: `linear-gradient(135deg, ${accent.from} 0%, ${accent.to} 100%)`,
-            color: '#fff', fontWeight: 700, fontSize: 14,
-            borderRadius: 12, border: 'none', cursor: 'pointer',
-            letterSpacing: '0.01em',
-            boxShadow: `0 4px 16px ${accent.glow}`,
-            transition: 'filter 0.2s ease, transform 0.15s ease',
-            boxSizing: 'border-box',
-          }}
-          onMouseEnter={e => {
-            e.currentTarget.style.filter = 'brightness(1.07)'
-            e.currentTarget.style.transform = 'translateY(-1px)'
-          }}
-          onMouseLeave={e => {
-            e.currentTarget.style.filter = 'brightness(1)'
-            e.currentTarget.style.transform = 'translateY(0)'
-          }}
-        >
-          Get Package Now
-          <ArrowIcon />
-        </button>
+            style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              gap: 8, width: '100%', padding: '13px 0',
+              background: `linear-gradient(135deg, ${accent.from} 0%, ${accent.to} 100%)`,
+              color: '#fff', fontWeight: 700, fontSize: 14,
+              borderRadius: 12, border: 'none', cursor: 'pointer',
+              letterSpacing: '0.01em',
+              boxShadow: `0 4px 16px ${accent.glow}`,
+              transition: 'filter 0.2s ease, transform 0.15s ease',
+              boxSizing: 'border-box',
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.filter = 'brightness(1.07)'
+              e.currentTarget.style.transform = 'translateY(-1px)'
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.filter = 'brightness(1)'
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            Get Package Now
+            <ArrowIcon />
+          </button>
         </a>
 
         {/* Expandable included list */}

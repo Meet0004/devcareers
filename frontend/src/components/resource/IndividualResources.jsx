@@ -5,7 +5,7 @@ import SearchBar from './SearchBar'
 import FilterDropdown, { filterOptions } from './FilterDropdown'
 import ResourcesGrid from './ResourcesGrid'
 
-const priorityIds = [1, 3, 28]
+const priorityIds = [37, 28, 35]
 
 const shuffleArray = (array) => {
   const shuffled = [...array]

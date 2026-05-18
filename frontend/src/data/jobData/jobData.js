@@ -868,119 +868,119 @@ The company focuses on innovation in AI, analytics, software engineering, and ne
 },
 
 
-// // DAY 8 - 18/05
-// { id: 237,
-//   company: 'Rolls-Royce Power Systems',
-//   role: 'Software Development and Data Science Internship',
-//   hiringLink: 'https://unstop.com/o/qh56XFC?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
-//   salary: '₹40K / Month (Estimated)',
-//   location: 'Pune',
-//   experience: 'Fresher',
-//   jobType: 'Internship',
-//   workMode: 'In Office',
+// DAY 8 - 18/05
+{ id: 237,
+  company: 'Rolls-Royce Power Systems',
+  role: 'Software Development and Data Science Internship',
+  hiringLink: 'https://unstop.com/o/qh56XFC?lb=vhj6xFV&utm_medium=Share&utm_source=internships&utm_campaign=Meetson4554',
+  salary: '₹40K / Month (Estimated)',
+  location: 'Pune',
+  experience: 'Fresher',
+  jobType: 'Internship',
+  workMode: 'In Office',
 
-//   overview: `Rolls-Royce Power Systems is hiring Software Development and Data Science Interns to work on analytics, automation, predictive maintenance, and engineering software solutions
-// The internship focuses on developing tools, automating workflows, creating dashboards, and building analytical solutions for maintenance and equipment monitoring systems`,
+  overview: `Rolls-Royce Power Systems is hiring Software Development and Data Science Interns to work on analytics, automation, predictive maintenance, and engineering software solutions
+The internship focuses on developing tools, automating workflows, creating dashboards, and building analytical solutions for maintenance and equipment monitoring systems`,
 
-//   responsibilities: `Perform literature surveys and research for technical solutions
-// Develop and optimize Windows-based tools using C#
-// Develop and deploy analytical and data-driven solutions
-// Automate processes related to maintenance, repair, troubleshooting, and equipment health monitoring
-// Create visualizations and dashboards to generate operational insights
-// Document completed tasks, workflows, and project outcomes
-// Collaborate within Agile engineering and analytics environments`,
+  responsibilities: `Perform literature surveys and research for technical solutions
+Develop and optimize Windows-based tools using C#
+Develop and deploy analytical and data-driven solutions
+Automate processes related to maintenance, repair, troubleshooting, and equipment health monitoring
+Create visualizations and dashboards to generate operational insights
+Document completed tasks, workflows, and project outcomes
+Collaborate within Agile engineering and analytics environments`,
 
-//   skills: `C#
-// JavaScript
-// Data Science
-// Analytics Solutions
-// Machine Learning
-// Predictive Analytics
-// Python
-// R
-// PySpark
-// SQL
-// Azure Databricks
-// Hive
-// Hadoop
-// Tableau
-// Power BI
-// Problem-solving skills
-// Analytical thinking
-// Documentation skills`,
+  skills: `C#
+JavaScript
+Data Science
+Analytics Solutions
+Machine Learning
+Predictive Analytics
+Python
+R
+PySpark
+SQL
+Azure Databricks
+Hive
+Hadoop
+Tableau
+Power BI
+Problem-solving skills
+Analytical thinking
+Documentation skills`,
 
-//   nice_to_have: `Exposure to predictive analytics and machine learning workflows
-// Experience with big data or cloud analytics tools
-// Understanding of Agile development methodologies
-// Ability to apply logical and innovative thinking to technical challenges`,
+  nice_to_have: `Exposure to predictive analytics and machine learning workflows
+Experience with big data or cloud analytics tools
+Understanding of Agile development methodologies
+Ability to apply logical and innovative thinking to technical challenges`,
 
-//   work_details: `Internship Duration: 6 Months
-// Working Days: 5 Days
-// Internship Type: In Office
-// Internship Timing: Full Time
-// Location: Pune`,
+  work_details: `Internship Duration: 6 Months
+Working Days: 5 Days
+Internship Type: In Office
+Internship Timing: Full Time
+Location: Pune`,
 
-//   education: `Bachelor's or Master's students in Engineering or Computer Science eligible`,
+  education: `Bachelor's or Master's students in Engineering or Computer Science eligible`,
 
-//   about_company: `Rolls-Royce Power Systems develops advanced power generation, propulsion, and engineering solutions across industrial and aerospace sectors
-// The company focuses on innovation in automation, analytics, predictive maintenance, and intelligent engineering systems`,
-// },
-// { id: 238,
-//   company: 'Gyrus.AI',
-//   role: 'AI Test Engineer Intern',
-//   salary: '₹4L – ₹6L / Year',
-//   location: 'Shimoga',
-//   hiringLink: 'https://wellfound.com/l/2CgTMt',
-//   experience: 'No experience required',
-//   jobType: 'Internship',
-//   workMode: 'In Office with WFH Flexibility',
+  about_company: `Rolls-Royce Power Systems develops advanced power generation, propulsion, and engineering solutions across industrial and aerospace sectors
+The company focuses on innovation in automation, analytics, predictive maintenance, and intelligent engineering systems`,
+},
+{ id: 238,
+  company: 'Gyrus.AI',
+  role: 'AI Test Engineer Intern',
+  salary: '₹4L – ₹6L / Year',
+  location: 'Shimoga',
+  hiringLink: 'https://wellfound.com/l/2CgTMt',
+  experience: 'No experience required',
+  jobType: 'Internship',
+  workMode: 'In Office with WFH Flexibility',
 
-//   overview: `Gyrus.AI is hiring AI Test Engineer Interns to work on AI/ML models, algorithms, and frameworks focused on video analytics and multimedia intelligence systems
-// The internship provides exposure to AI testing workflows, computer vision technologies, multimedia analytics, and cloud-based AI platforms with potential conversion to a full-time role`,
+  overview: `Gyrus.AI is hiring AI Test Engineer Interns to work on AI/ML models, algorithms, and frameworks focused on video analytics and multimedia intelligence systems
+The internship provides exposure to AI testing workflows, computer vision technologies, multimedia analytics, and cloud-based AI platforms with potential conversion to a full-time role`,
 
-//   responsibilities: `Work with the core engineering team on AI and ML systems for video analytics
-// Develop and execute testing methodologies, test plans, and test cases
-// Build Python-based test frameworks for AI and multimedia applications
-// Validate AI models and analytics systems for audio, image, and video processing
-// Support testing of software products involving multimedia and video technologies
-// Collaborate with engineering teams on quality assurance and debugging workflows`,
+  responsibilities: `Work with the core engineering team on AI and ML systems for video analytics
+Develop and execute testing methodologies, test plans, and test cases
+Build Python-based test frameworks for AI and multimedia applications
+Validate AI models and analytics systems for audio, image, and video processing
+Support testing of software products involving multimedia and video technologies
+Collaborate with engineering teams on quality assurance and debugging workflows`,
 
-//   skills: `Python
-// Software Testing
-// Testing Methodologies
-// OpenCV
-// PyTorch
-// LLMs
-// Video Analytics
-// Audio Engineering
-// Multimedia systems
-// Test Framework Development
-// Computer Vision
-// Problem-solving skills
-// Communication skills`,
+  skills: `Python
+Software Testing
+Testing Methodologies
+OpenCV
+PyTorch
+LLMs
+Video Analytics
+Audio Engineering
+Multimedia systems
+Test Framework Development
+Computer Vision
+Problem-solving skills
+Communication skills`,
 
-//   nice_to_have: `Exposure to TensorFlow, Caffe, or PyTorch
-// Knowledge of AI models for audio, image, or video analytics
-// Experience with video or audio codecs
-// Exposure to AWS or GCP cloud platforms
-// Understanding of QA workflows for AI-driven applications`,
+  nice_to_have: `Exposure to TensorFlow, Caffe, or PyTorch
+Knowledge of AI models for audio, image, or video analytics
+Experience with video or audio codecs
+Exposure to AWS or GCP cloud platforms
+Understanding of QA workflows for AI-driven applications`,
 
-//   benefits: `Opportunity for full-time employment after internship
-// Hands-on experience with AI and video analytics systems
-// Exposure to multimedia AI testing and cloud-based AI platforms
-// Collaboration with core AI engineering teams`,
+  benefits: `Opportunity for full-time employment after internship
+Hands-on experience with AI and video analytics systems
+Exposure to multimedia AI testing and cloud-based AI platforms
+Collaboration with core AI engineering teams`,
 
-//   work_details: `Job Type: Internship
-// Work Mode: In Office with WFH Flexibility
-// Location: Shimoga
-// Visa Sponsorship: Not Available
-// Relocation: Not Allowed`,
+  work_details: `Job Type: Internship
+Work Mode: In Office with WFH Flexibility
+Location: Shimoga
+Visa Sponsorship: Not Available
+Relocation: Not Allowed`,
 
-//   education: `Engineering or Master's degree students from Electronics and Communication or related branches preferred`,
+  education: `Engineering or Master's degree students from Electronics and Communication or related branches preferred`,
 
-//   about_company: `Gyrus.AI builds AI-driven solutions for video analytics, business intelligence, and IoT predictive analytics
-// The company focuses on multimedia AI systems, computer vision technologies, and enterprise AI applications`,
-// },
+  about_company: `Gyrus.AI builds AI-driven solutions for video analytics, business intelligence, and IoT predictive analytics
+The company focuses on multimedia AI systems, computer vision technologies, and enterprise AI applications`,
+},
 ]
 export default companiesData
 

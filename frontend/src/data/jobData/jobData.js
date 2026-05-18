@@ -539,7 +539,7 @@ Relocation: Not Allowed`,
 Its products include adaptive commerce solutions and AI-driven customer engagement systems designed to create more inclusive digital experiences`,
 },
 
-// DAY 5 - 15/05
+// DAY 5 - 16/05
 { id: 231,
   company: 'NVIDIA',
   role: 'Formal Verification Engineer - New College Graduate',
@@ -649,7 +649,7 @@ Its Technology & Transformation practice focuses on data, engineering, analytics
 },
 
 
-// // DAY 6 - 16/05
+// // DAY 6 - 17/05
 { id: 233,
   company: 'Houlihan Lokey',
   role: 'Data Science Internship',
@@ -769,7 +769,7 @@ Location: Pune, Pimpri-Chinchwad`,
 The role is for an MNC-focused full stack development requirement involving modern web technologies and backend systems`,
 },
 
-// DAY 7 - 17/05
+// DAY 7 - 18/05
 { id: 235,
   company: 'Hypersonix',
   role: 'Junior Data Analyst',
@@ -868,7 +868,7 @@ The company focuses on innovation in AI, analytics, software engineering, and ne
 },
 
 
-// DAY 8 - 18/05
+// DAY 8 - 19/05
 { id: 237,
   company: 'Rolls-Royce Power Systems',
   role: 'Software Development and Data Science Internship',
@@ -981,6 +981,223 @@ Relocation: Not Allowed`,
   about_company: `Gyrus.AI builds AI-driven solutions for video analytics, business intelligence, and IoT predictive analytics
 The company focuses on multimedia AI systems, computer vision technologies, and enterprise AI applications`,
 },
+
+// // DAY 9 - 20/05
+// { id: 239,
+//   company: 'Tredence',
+//   role: 'Associate Software Engineer',
+//   location: 'Bengaluru',
+//   experience: '0 – 2 Years',
+//   jobType: 'Full Time, Permanent',
+//   salary: '₹6 - 12 LPA (estimated)',
+//   workMode: 'Onsite',
+//   hiringLink:'https://www.naukri.com/job-listings-associate-software-engineer-tredence-analytics-solutions-private-limited-bengaluru-0-to-2-years-150526009579',
+//   overview: `Tredence is hiring Associate Software Engineers for QA and AI-focused testing roles involving APIs, user interfaces, and AI/ML-based applications
+// The role focuses on software quality assurance, automation testing, AI/LLM validation, data quality testing, and collaboration with engineering teams in modern software delivery environments`,
+
+//   responsibilities: `Design, develop, and execute test cases for APIs, UI components, and AI/ML applications
+// Collaborate with development teams to understand application features and data flows
+// Develop and execute test plans for data quality, accuracy, and consistency validation
+// Perform functional, integration, and regression testing
+// Identify and document defects, inconsistencies, and data discrepancies
+// Create automated testing scripts for validation and monitoring workflows
+// Assist in developing data quality metrics and dashboards
+// Analyze test results and generate reports for stakeholders
+// Support CI/CD processes to maintain software quality across delivery stages
+// Validate AI and LLM outputs including prompt quality, hallucination detection, bias checks, and edge case testing
+// Design testing strategies for non-deterministic AI systems including adversarial and consistency testing`,
+
+//   skills: `Python
+// JavaScript
+// SQL
+// API Testing
+// UI Testing
+// Software Testing
+// Quality Assurance
+// Postman
+// SoapUI
+// Pytest
+// Playwright
+// WebdriverIO
+// AI/ML concepts
+// LLMs
+// Generative AI
+// Data Testing
+// Automation Testing
+// Analytical thinking
+// Problem-solving skills
+// Communication skills
+// Team collaboration`,
+
+//   nice_to_have: `Understanding of Responsible AI practices
+// Experience with AI response evaluation frameworks
+// Knowledge of CI/CD workflows
+// Familiarity with non-deterministic AI system testing methodologies`,
+
+//   education: `Bachelor's degree in Computer Science, Data Science, Information Technology, or related field
+// UG: Any Graduate
+// PG: LLM in Any Specialization`,
+
+//   work_details: `Job Type: Full Time, Permanent
+// Industry: IT Services & Consulting
+// Department: Engineering - Software & QA
+// Role Category: Quality Assurance and Testing
+// Location: Bengaluru`,
+
+//   about_company: `Tredence is a data science and AI-focused technology company delivering analytics, machine learning, and business intelligence solutions for enterprises worldwide
+// The company works across AI, cloud, analytics engineering, and digital transformation domains`,
+// },
+// { id: 240,
+//   company: 'Viatris',
+//   role: 'Graduate Engineer Trainee - 2026',
+//   hiringLink: 'https://www.naukri.com/job-listings-graduate-engineer-trainee-2026-viatris-bengaluru-0-to-0-years-160526000027',
+//   salary: '₹5 LPA',
+//   location: 'Bengaluru',
+//   openings: '20',
+//   experience: '0 Years',
+//   jobType: 'Full Time, Permanent',
+//   overview: `Viatris is hiring 2026 Engineering graduates to support enterprise IT requirements using Agile methodologies
+// Opportunity to work on Sitecore, Android, and iOS-based applications while contributing to cloud and infrastructure solutions
+// Role involves frontend, backend, testing, performance optimization, and collaboration across multiple technical teams`,
+//   responsibilities: `Develop and support custom Sitecore, Android, and iOS applications
+// Understand business requirements and implement scalable technical solutions
+// Create responsive user interfaces matching business and user requirements
+// Participate in testing, validation, and technical documentation processes
+// Build reusable code and libraries for future development
+// Optimize applications for performance and scalability
+// Validate user inputs before backend submission
+// Implement quality and performance improvement modules
+// Identify bugs, troubleshoot issues, and implement fixes
+// Maintain code quality, organization, and automation practices
+// Support On-Premise and Cloud infrastructure solutions
+// Collaborate with internal teams and external vendors
+// Ensure compliance with company, security, and regulatory standards
+// Manage multiple priorities, projects, and timelines effectively`,
+//   skills: `PowerShell
+// Python
+// Bootstrap
+// .NET
+// Node.js
+// Angular
+// Windows Operating Systems
+// Linux Operating Systems
+// Networking
+// Security Fundamentals
+// Cloud Applications
+// Web Services
+// Agile Methodologies
+// Problem Solving
+// Communication Skills`,
+//   education: `B.E / B.Tech — 2026 Batch Only
+// Minimum 60% in 10th, 12th, and B.E / B.Tech
+// No active backlogs
+// No academic year gaps
+// Eligible branches include CSE, IT, ECE, EEE, Data Science, Cyber Security, Mechanical, Civil, Chemical, Electrical, Mechatronics, Medical Electronics, and related streams`,
+//   work_details: `Work Mode: In Office
+// Location: Bengaluru
+// Job Type: Full Time, Permanent
+// Selection Process: Online Test, PPT, and In-Person Interview`,
+//   about_company: `Viatris is a global healthcare and pharmaceutical company focused on providing access to medicines and healthcare solutions worldwide
+// The company works across pharmaceuticals, healthcare technology, cloud systems, and enterprise IT infrastructure`,
+// },
+
+// // DAY 10 - 21/05
+// { id: 241,
+//   company: 'Wipro',
+//   role: 'AI Specialist - For IIT Graduates',
+//   hiringLink: 'https://www.naukri.com/job-listings-ai-specialist-for-iit-graduates-wipro-india-0-to-2-years-150526031416',
+//   location: 'Remote',
+//   openings: '20',
+//   salary: '₹10 LPA to ₹11 LPA (estimated)',
+//   experience: '0 – 2 Years',
+//   jobType: 'Full Time, Freelance/Homebased',
+//   workMode: 'Remote',
+//   overview: `Wipro is hiring IIT graduates for a freelance AI Specialist role focused on evaluating and improving AI-generated STEM content
+// Opportunity involves working closely with AI/ML, Product, Analytics, and Engineering teams on prompt engineering, evaluation datasets, and AI quality systems
+// Ideal for candidates interested in Generative AI, model evaluation, data annotation, and AI content quality improvement`,
+//   responsibilities: `Develop and enforce quality rubrics and style guides for AI-generated STEM content
+// Evaluate AI model outputs for accuracy, clarity, and pedagogical effectiveness
+// Collaborate with AI/ML engineers to improve model behavior and subject-specific quality
+// Design evaluation datasets and benchmark tests for model performance
+// Apply prompt engineering techniques for solving complex multi-step problems
+// Create and refine datasets for AI training and evaluation workflows
+// Communicate findings, insights, and technical requirements with cross-functional teams
+// Support continuous improvement of AI-generated educational and technical content`,
+//   skills: `Artificial Intelligence
+// Machine Learning
+// Python
+// Prompt Engineering
+// AI Data Annotation
+// STEM Content Evaluation
+// Analytical Thinking
+// Problem Solving
+// Communication Skills
+// Cross-Functional Collaboration`,
+//   education: `B.Tech / B.E. in Any Specialization
+// Candidate must be graduated from an IIT institution`,
+//   work_details: `Work Mode: Remote
+// Employment Type: Full Time, Freelance/Homebased
+// Industry: IT Services & Consulting
+// Role Category: Other`,
+//   about_company: `Wipro is a global IT consulting and outsourcing company serving clients across multiple industries worldwide
+// The company operates in over 175 cities and focuses on emerging technologies, AI, cloud, analytics, and digital transformation solutions`,
+// },
+// { id: 242,
+//   company: 'Houston Systems',
+//   role: 'Fullstack Developer',
+//   hiringLink: 'https://www.naukri.com/job-listings-fullstack-developer-houston-systems-greater-noida-0-to-2-years-160526012805',
+//   salary: '₹3.5L – ₹4.5L / Year',
+//   location: 'Greater Noida (Kasna)',
+//   openings: '1',
+//   experience: '0 – 2 Years',
+//   jobType: 'Full Time, Permanent',
+//   overview: `Houston Systems is hiring a Full Stack Developer with Computer Vision expertise to build AI-powered applications for automation systems
+// Role involves integrating AI and image processing models into scalable web applications and real-time analytics systems
+// Opportunity to work closely with AI/ML engineers on production-grade computer vision solutions`,
+//   responsibilities: `Develop and maintain AI-enabled web applications
+// Integrate computer vision and image processing models into applications
+// Design and build scalable frontend and backend systems
+// Develop APIs for image and video analytics workflows
+// Work on real-time image and video processing solutions
+// Collaborate with AI/ML engineers and product teams
+// Optimize application and AI model performance for production environments
+// Troubleshoot and improve existing systems and workflows`,
+//   skills: `Python
+// JavaScript
+// React.js
+// Next.js
+// Angular
+// Node.js
+// FastAPI
+// Flask
+// Django
+// OpenCV
+// REST APIs
+// MongoDB
+// PostgreSQL
+// MySQL
+// Cloud Deployment
+// Debugging
+// Problem Solving`,
+//   nice_to_have: `TensorFlow
+// PyTorch
+// YOLO
+// OCR
+// Object Detection
+// Face Recognition
+// Video Analytics
+// Docker
+// Kubernetes
+// CI/CD Pipelines
+// GPU-Based Model Deployment`,
+//   education: `B.Tech / B.E. in Artificial Intelligence and Machine Learning`,
+//   work_details: `Work Mode: In Office
+// Location: Greater Noida, Uttar Pradesh
+// Industry: Industrial Automation
+// Job Type: Full Time, Permanent`,
+//   about_company: `Houston Systems Private Limited is an automation machinery manufacturing company focused on AI-powered and computer vision-driven industrial solutions
+// Address: D 148, EPIP, Kasna, Surajpur Site V, Greater Noida, Uttar Pradesh 203202`,
+// }
 ]
 export default companiesData
 
